@@ -1,0 +1,13 @@
+# Don't Pin Versions because they will never get updated
+# if they are pinned. Fix issues as they arise.
+
+# Fixes dependency error
+# https://stackoverflow.com/questions/72672196/error-pips-dependency-resolver-does-not-currently-take-into-account-all-the-pa
+wheel
+typing-extensions
+h5py
+
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-katex
+breathe
