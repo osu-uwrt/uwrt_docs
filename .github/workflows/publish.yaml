@@ -11,8 +11,8 @@ jobs:
       - uses: actions/checkout@main
       - name: Install and Build Sphinx Site
         run: |
-          apt update
-          apt install -y python3-pip
-          pip3 install -r requirements.txt
+          sudo apt update
+          sudo apt install -y python3-pip
+          sudo pip3 install -yr requirements.txt
 
-          make html
+          make build
