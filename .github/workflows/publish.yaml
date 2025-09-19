@@ -1,0 +1,18 @@
+name: Build & Publish Docs
+on:
+  push:
+    branch:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Install and Build Sphinx Site
+        run: |
+          apt update
+          apt install -y python3-pip
+          pip3 install -r requirements.txt
+
+          make html
