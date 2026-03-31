@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="FeedforwardPanel_8hpp" kind="file" language="C++">
+    <compoundname>FeedforwardPanel.hpp</compoundname>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">rviz_common/panel.hpp</includes>
+    <includes local="no">geometry_msgs/msg/twist.hpp</includes>
+    <includes local="yes">ui_FeedforwardPanel.h</includes>
+    <includes local="no">ament_index_cpp/get_package_share_directory.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">yaml-cpp/yaml.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/FeedforwardPanel.hpp</label>
+        <link refid="FeedforwardPanel_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="4">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="3">
+        <label>rviz_common/panel.hpp</label>
+      </node>
+      <node id="5">
+        <label>ui_FeedforwardPanel.h</label>
+      </node>
+      <node id="8">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classriptide__rviz_1_1FeedforwardPanel" prot="public">riptide_rviz::FeedforwardPanel</innerclass>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;geometry_msgs/msg/twist.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_FeedforwardPanel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_share_directory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;yaml-cpp/yaml.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Include<sp/>the<sp/>yaml-cpp<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_FeedforwardPanel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18" refid="namespaceriptide__rviz_1a3be98aba57fb69dc153903eb748b83b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="namespaceriptide__rviz_1a3be98aba57fb69dc153903eb748b83b2" kindref="member">CALIB_ACTION_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;vectornav/mag_cal&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classriptide__rviz_1_1FeedforwardPanel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ae31c33e57c094257812b45188cf3f6fc" kindref="member">FeedforwardPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ae31c33e57c094257812b45188cf3f6fc" kindref="member">FeedforwardPanel</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af9ccee8d4f0d70d084445f15803cdc95" kindref="member">~FeedforwardPanel</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a1f217d76e0941044519a2b967814f1bd" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a35338b5fe139dc6bbbd8a78702a44d9f" kindref="member">save</ref>(rviz_common::Config<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a231410a784689dccf1c1a59e8839cc26" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a4c40fd3da7a720ec4bfd0b6c0c51c4d3" kindref="member">XFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a6533032bfa487448ac87a866ae6eb0ad" kindref="member">YFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a69fbd4c6ca931eab7d773cb697ee533b" kindref="member">ZFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aedbf5975a7b4df4e7638767dc43ad839" kindref="member">RFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a05068ca3e3be5056e22cc4584130352e" kindref="member">PFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e0089141706044413d78c553b1ef8df" kindref="member">YAWFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1afb9723af453cebe41be566543ec674ee" kindref="member">togglePublish</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ab4c995f981f9b0b19fa8657289e7312d" kindref="member">timerCb</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>python<sp/>controllerOveseer.py<sp/>line<sp/>60<sp/>:config_path<sp/>=<sp/>os.path.join(get_package_share_directory(&quot;riptide_descriptions2&quot;),<sp/>&quot;config&quot;,<sp/>&quot;talos.yaml&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classriptide__rviz_1_1FeedforwardPanel_1a82823e68234eb00896bcfbba3f4f2777" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a82823e68234eb00896bcfbba3f4f2777" kindref="member">config_path</ref><sp/>=<sp/>ament_index_cpp::get_package_share_directory(</highlight><highlight class="stringliteral">&quot;riptide_descriptions2&quot;</highlight><highlight class="normal">)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/config/talos.yaml&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAML::Node<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref><sp/>=<sp/>YAML::LoadFile(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a82823e68234eb00896bcfbba3f4f2777" kindref="member">config_path</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classriptide__rviz_1_1FeedforwardPanel_1ab24db0be386afe3c38bbbbb228c2c2d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ab24db0be386afe3c38bbbbb228c2c2d9" kindref="member">loaded</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="48" refid="classriptide__rviz_1_1FeedforwardPanel_1a60ad8184e3e2ad348392fa5cb94ae572" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a60ad8184e3e2ad348392fa5cb94ae572" kindref="member">publishing</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="classriptide__rviz_1_1FeedforwardPanel_1a6864041e5a0a475434322ab9ee8b3bef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a6864041e5a0a475434322ab9ee8b3bef" kindref="member">counter</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ui_FeedforwardPanel<sp/>*<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" kindref="member">robotNs</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classriptide__rviz_1_1FeedforwardPanel_1afcd335327f4048d919c4d2b0ffea3c3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1afcd335327f4048d919c4d2b0ffea3c3e" kindref="member">pubTimer</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classriptide__rviz_1_1FeedforwardPanel_1ace1009e450da616409d5a01c7d8423f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;geometry_msgs::msg::Twist&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ace1009e450da616409d5a01c7d8423f1" kindref="member">ffForcePub</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>geometry_msgs::msg::Twist<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/FeedforwardPanel.hpp"/>
+  </compounddef>
+</doxygen>

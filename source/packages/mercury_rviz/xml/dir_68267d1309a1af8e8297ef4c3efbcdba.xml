@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="Actuators_8cpp">Actuators.cpp</innerfile>
+    <innerfile refid="BaggingConfiguration_8cpp">BaggingConfiguration.cpp</innerfile>
+    <innerfile refid="BaggingPanel_8cpp">BaggingPanel.cpp</innerfile>
+    <innerfile refid="BagItem_8cpp">BagItem.cpp</innerfile>
+    <innerfile refid="bringup__recipe_8cpp">bringup_recipe.cpp</innerfile>
+    <innerfile refid="ControlPanel_8cpp">ControlPanel.cpp</innerfile>
+    <innerfile refid="DiagnosticOverlay_8cpp">DiagnosticOverlay.cpp</innerfile>
+    <innerfile refid="DiagnosticsPanel_8cpp">DiagnosticsPanel.cpp</innerfile>
+    <innerfile refid="ElectricalPanel_8cpp">ElectricalPanel.cpp</innerfile>
+    <innerfile refid="FeedforwardPanel_8cpp">FeedforwardPanel.cpp</innerfile>
+    <innerfile refid="MappingPanel_8cpp">MappingPanel.cpp</innerfile>
+    <innerfile refid="MissionPanel_8cpp">MissionPanel.cpp</innerfile>
+    <innerfile refid="overlay__utils_8cpp">overlay_utils.cpp</innerfile>
+    <innerfile refid="OverlayDisplay_8cpp">OverlayDisplay.cpp</innerfile>
+    <innerfile refid="ParamPanel_8cpp">ParamPanel.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

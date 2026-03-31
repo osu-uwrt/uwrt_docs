@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1ScopedPixelBuffer" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::ScopedPixelBuffer</compoundname>
+    <includes refid="overlay__utils_8hpp" local="no">overlay_utils.hpp</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" prot="protected" static="no" mutable="no">
+        <type>Ogre::HardwarePixelBufferSharedPtr</type>
+        <definition>Ogre::HardwarePixelBufferSharedPtr riptide_rviz::ScopedPixelBuffer::pixel_buffer_</definition>
+        <argsstring></argsstring>
+        <name>pixel_buffer_</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::pixel_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="68" column="44" bodyfile="include/mercury_rviz/overlay_utils.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ScopedPixelBuffer_1a35ff8fd54134610f5553c090b76c6c4d" compoundref="overlay__utils_8cpp" startline="51" endline="53">getPixelBuffer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" compoundref="overlay__utils_8cpp" startline="55" endline="60">getQImage</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ScopedPixelBuffer_1a20079badc6961857788a91fb5cf1d079" compoundref="overlay__utils_8cpp" startline="42" endline="45">ScopedPixelBuffer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2bb5ff3cc269cc56647416fdb0ed7429" compoundref="overlay__utils_8cpp" startline="47" endline="49">~ScopedPixelBuffer</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1ScopedPixelBuffer_1a20079badc6961857788a91fb5cf1d079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::ScopedPixelBuffer::ScopedPixelBuffer</definition>
+        <argsstring>(Ogre::HardwarePixelBufferSharedPtr pixel_buffer)</argsstring>
+        <name>ScopedPixelBuffer</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::ScopedPixelBuffer</qualifiedname>
+        <param>
+          <type>Ogre::HardwarePixelBufferSharedPtr</type>
+          <declname>pixel_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="59" column="9" bodyfile="src/overlay_utils.cpp" bodystart="42" bodyend="45"/>
+        <references refid="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" compoundref="overlay__utils_8hpp" startline="68">pixel_buffer_</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ScopedPixelBuffer_1a2bb5ff3cc269cc56647416fdb0ed7429" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>riptide_rviz::ScopedPixelBuffer::~ScopedPixelBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>~ScopedPixelBuffer</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::~ScopedPixelBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="60" column="17" bodyfile="src/overlay_utils.cpp" bodystart="47" bodyend="49"/>
+        <references refid="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" compoundref="overlay__utils_8hpp" startline="68">pixel_buffer_</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ScopedPixelBuffer_1a35ff8fd54134610f5553c090b76c6c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Ogre::HardwarePixelBufferSharedPtr</type>
+        <definition>Ogre::HardwarePixelBufferSharedPtr riptide_rviz::ScopedPixelBuffer::getPixelBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getPixelBuffer</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::getPixelBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="61" column="52" bodyfile="src/overlay_utils.cpp" bodystart="51" bodyend="53"/>
+        <references refid="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" compoundref="overlay__utils_8hpp" startline="68">pixel_buffer_</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QImage</type>
+        <definition>QImage riptide_rviz::ScopedPixelBuffer::getQImage</definition>
+        <argsstring>(unsigned int width, unsigned int height)</argsstring>
+        <name>getQImage</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::getQImage</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="62" column="24" bodyfile="src/overlay_utils.cpp" bodystart="55" bodyend="60"/>
+        <references refid="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" compoundref="overlay__utils_8hpp" startline="68">pixel_buffer_</references>
+        <referencedby refid="classriptide__rviz_1_1ScopedPixelBuffer_1a9b418682d13467dfb00b1af8bb0c12c8" compoundref="overlay__utils_8cpp" startline="72" endline="74">getQImage</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ScopedPixelBuffer_1ab064ff2cf6f35cc86a4c020d7a723e96" compoundref="overlay__utils_8cpp" startline="76" endline="78">getQImage</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ScopedPixelBuffer_1a12cb40242b5040fc3e4bcde78d37c5da" compoundref="overlay__utils_8cpp" startline="62" endline="70">getQImage</referencedby>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1a24754fff0586b23f33cba71a7a6cc719" compoundref="OverlayDisplay_8cpp" startline="121" endline="173">riptide_rviz::OverlayDisplay::update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ScopedPixelBuffer_1a9b418682d13467dfb00b1af8bb0c12c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QImage</type>
+        <definition>QImage riptide_rviz::ScopedPixelBuffer::getQImage</definition>
+        <argsstring>(OverlayObject &amp;overlay)</argsstring>
+        <name>getQImage</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::getQImage</qualifiedname>
+        <param>
+          <type><ref refid="classriptide__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref> &amp;</type>
+          <declname>overlay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="63" column="24" bodyfile="src/overlay_utils.cpp" bodystart="72" bodyend="74"/>
+        <references refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" compoundref="overlay__utils_8cpp" startline="55" endline="60">getQImage</references>
+        <references refid="classriptide__rviz_1_1OverlayObject_1a4cc55b896ffaf01cec44d9f8f878cb8c" compoundref="overlay__utils_8cpp" startline="223" endline="229">riptide_rviz::OverlayObject::getTextureHeight</references>
+        <references refid="classriptide__rviz_1_1OverlayObject_1aa0c3fc241c102a67e7c9b764fe653f60" compoundref="overlay__utils_8cpp" startline="215" endline="221">riptide_rviz::OverlayObject::getTextureWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ScopedPixelBuffer_1a12cb40242b5040fc3e4bcde78d37c5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QImage</type>
+        <definition>QImage riptide_rviz::ScopedPixelBuffer::getQImage</definition>
+        <argsstring>(unsigned int width, unsigned int height, QColor &amp;bg_color)</argsstring>
+        <name>getQImage</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::getQImage</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>QColor &amp;</type>
+          <declname>bg_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="64" column="24" bodyfile="src/overlay_utils.cpp" bodystart="62" bodyend="70"/>
+        <references refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" compoundref="overlay__utils_8cpp" startline="55" endline="60">getQImage</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ScopedPixelBuffer_1ab064ff2cf6f35cc86a4c020d7a723e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>QImage</type>
+        <definition>QImage riptide_rviz::ScopedPixelBuffer::getQImage</definition>
+        <argsstring>(OverlayObject &amp;overlay, QColor &amp;bg_color)</argsstring>
+        <name>getQImage</name>
+        <qualifiedname>riptide_rviz::ScopedPixelBuffer::getQImage</qualifiedname>
+        <param>
+          <type><ref refid="classriptide__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref> &amp;</type>
+          <declname>overlay</declname>
+        </param>
+        <param>
+          <type>QColor &amp;</type>
+          <declname>bg_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="65" column="24" bodyfile="src/overlay_utils.cpp" bodystart="76" bodyend="78"/>
+        <references refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" compoundref="overlay__utils_8cpp" startline="55" endline="60">getQImage</references>
+        <references refid="classriptide__rviz_1_1OverlayObject_1a4cc55b896ffaf01cec44d9f8f878cb8c" compoundref="overlay__utils_8cpp" startline="223" endline="229">riptide_rviz::OverlayObject::getTextureHeight</references>
+        <references refid="classriptide__rviz_1_1OverlayObject_1aa0c3fc241c102a67e7c9b764fe653f60" compoundref="overlay__utils_8cpp" startline="215" endline="221">riptide_rviz::OverlayObject::getTextureWidth</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::ScopedPixelBuffer</label>
+        <link refid="classriptide__rviz_1_1ScopedPixelBuffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/overlay_utils.hpp" line="57" column="5" bodyfile="include/mercury_rviz/overlay_utils.hpp" bodystart="57" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1a35ff8fd54134610f5553c090b76c6c4d" prot="public" virt="virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>getPixelBuffer</name></member>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" prot="public" virt="virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>getQImage</name></member>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1a9b418682d13467dfb00b1af8bb0c12c8" prot="public" virt="virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>getQImage</name></member>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1a12cb40242b5040fc3e4bcde78d37c5da" prot="public" virt="virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>getQImage</name></member>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1ab064ff2cf6f35cc86a4c020d7a723e96" prot="public" virt="virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>getQImage</name></member>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" prot="protected" virt="non-virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>pixel_buffer_</name></member>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1a20079badc6961857788a91fb5cf1d079" prot="public" virt="non-virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>ScopedPixelBuffer</name></member>
+      <member refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2bb5ff3cc269cc56647416fdb0ed7429" prot="public" virt="virtual"><scope>riptide_rviz::ScopedPixelBuffer</scope><name>~ScopedPixelBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

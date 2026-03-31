@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="BagItem_8hpp" kind="file" language="C++">
+    <compoundname>BagItem.hpp</compoundname>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">rclcpp/client.hpp</includes>
+    <includes local="yes">ui_BagItem.h</includes>
+    <includes local="yes">riptide_rviz/bringup_recipe.hpp</includes>
+    <includes local="no">launch_msgs/srv/start_bag.hpp</includes>
+    <includes local="no">launch_msgs/srv/stop_bag.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/BagItem.hpp</label>
+        <link refid="BagItem_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>launch_msgs/srv/start_bag.hpp</label>
+      </node>
+      <node id="7">
+        <label>launch_msgs/srv/stop_bag.hpp</label>
+      </node>
+      <node id="3">
+        <label>rclcpp/client.hpp</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="5">
+        <label>riptide_rviz/bringup_recipe.hpp</label>
+      </node>
+      <node id="4">
+        <label>ui_BagItem.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classriptide__rviz_1_1BagItem" prot="public">riptide_rviz::BagItem</innerclass>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/client.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_BagItem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;riptide_rviz/bringup_recipe.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;launch_msgs/srv/start_bag.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;launch_msgs/srv/stop_bag.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15" refid="classriptide__rviz_1_1BagItem" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" kindref="member">BagItem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QWidget</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" kindref="member">BagItem</ref>(std::string<sp/>hostName,<sp/>std::shared_ptr&lt;RecipeBag&gt;<sp/><ref refid="classriptide__rviz_1_1BagItem_1ae5deaa7b8efd24fd4c763cd834ac5cb9" kindref="member">bagData</ref>,<sp/>std::shared_ptr&lt;rclcpp::Node&gt;<sp/>parentNode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a41ae31bed03f201a4b215deb0b1aaa51" kindref="member">local</ref><sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1BagItem_1a15120cc33e812772546bb2a4f281a8bd" kindref="member">~BagItem</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1aa6defa496b64db0f243df4ee8ed71f4d" kindref="member">bagAlive</ref>(std::vector&lt;int&gt;<sp/>bids);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>name<sp/>of<sp/>the<sp/>bag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1aece44dcf1e6e8aac220e92b6f480889b" kindref="member">getName</ref>(std::string<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1aea260a1ef087f75ee537edf03e4157d1" kindref="member">getPid</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a41ae31bed03f201a4b215deb0b1aaa51" kindref="member">local</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" kindref="member">startBagging</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a6c237518680e45b16d5af5502fa2b66f" kindref="member">isStarting</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" kindref="member">stopBagging</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1af2f8f474a2088e927ddfcdd0433a0af2" kindref="member">isStopping</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1af7df6be71503e0c07c61ba266876012d" kindref="member">event</ref>(QEvent<sp/>*<ref refid="classriptide__rviz_1_1BagItem_1af7df6be71503e0c07c61ba266876012d" kindref="member">event</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1af384419f7375bd79534d21417a1de903" kindref="member">baggingConfigure</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" kindref="member">startupTimer</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" kindref="member">shutdownTimer</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" kindref="member">stateStopped</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a99933ee0109a98789340f6b84a0a6c36" kindref="member">stateChanging</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1af8572efc03b7499b16c89a6b319d7def" kindref="member">stateRunning</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1af37dd304e38d4092c108b61fbd8072f6" kindref="member">loadTopics</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;RecipeTopicData&gt;<sp/>&amp;topicList);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>UI<sp/>Panel<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ui_BagListElement<sp/>*<ref refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" kindref="member">uiPanel</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>list<sp/>of<sp/>bag<sp/>information<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classriptide__rviz_1_1BagItem_1acfb5d652ca0c28199422c0dcc622d6eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;launch_msgs::msg::TopicData&gt;<sp/><ref refid="classriptide__rviz_1_1BagItem_1acfb5d652ca0c28199422c0dcc622d6eb" kindref="member">topics</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classriptide__rviz_1_1BagItem_1ae5deaa7b8efd24fd4c763cd834ac5cb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;RecipeBag&gt;<sp/><ref refid="classriptide__rviz_1_1BagItem_1ae5deaa7b8efd24fd4c763cd834ac5cb9" kindref="member">bagData</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>service<sp/>clients</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;launch_msgs::srv::StartBag&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" kindref="member">bagStartClient</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classriptide__rviz_1_1BagItem_1a011d4ffb47f089d1818b59c972db329e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;launch_msgs::srv::StopBag&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1BagItem_1a011d4ffb47f089d1818b59c972db329e" kindref="member">bagStopClient</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>futures</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classriptide__rviz_1_1BagItem_1ae3e1cc7fc03c977bf1eff3b3be6e1daf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;std::shared_ptr&lt;launch_msgs::srv::StartBag_Response&gt;&gt;<sp/><ref refid="classriptide__rviz_1_1BagItem_1ae3e1cc7fc03c977bf1eff3b3be6e1daf" kindref="member">startFuture</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classriptide__rviz_1_1BagItem_1ac3121e98d19bec4e608596180b821d79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;std::shared_ptr&lt;launch_msgs::srv::StopBag_Response&gt;&gt;<sp/><ref refid="classriptide__rviz_1_1BagItem_1ac3121e98d19bec4e608596180b821d79" kindref="member">stopFuture</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classriptide__rviz_1_1BagItem_1aa7b1caec8cbf87dfb08be04494868fc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classriptide__rviz_1_1BagItem_1aa7b1caec8cbf87dfb08be04494868fc8" kindref="member">startReqId</ref><sp/>=<sp/>-1,<sp/><ref refid="classriptide__rviz_1_1BagItem_1aaf8af3f29eb59f77f64ee633cecad16b" kindref="member">stopReqId</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" kindref="member">timerTick</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bag<sp/>id</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" kindref="member">pid</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" kindref="member">isLocal</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>riptide_rviz</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/BagItem.hpp"/>
+  </compounddef>
+</doxygen>

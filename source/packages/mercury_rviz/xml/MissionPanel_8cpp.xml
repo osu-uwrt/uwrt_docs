@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="MissionPanel_8cpp" kind="file" language="C++">
+    <compoundname>MissionPanel.cpp</compoundname>
+    <includes local="yes">riptide_rviz/MissionPanel.hpp</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">rviz_common/display_context.hpp</includes>
+    <includes local="no">rviz_common/logging.hpp</includes>
+    <includes local="no">pluginlib/class_list_macros.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/MissionPanel.cpp</label>
+        <link refid="MissionPanel_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>algorithm</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>pluginlib/class_list_macros.hpp</label>
+      </node>
+      <node id="2">
+        <label>riptide_rviz/MissionPanel.hpp</label>
+      </node>
+      <node id="5">
+        <label>rviz_common/display_context.hpp</label>
+      </node>
+      <node id="6">
+        <label>rviz_common/logging.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="MissionPanel_8cpp_1a5cbcc80cdf0a5c6f121b7c13b6f343e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PLUGINLIB_EXPORT_CLASS</definition>
+        <argsstring>(riptide_rviz::MissionPanel, rviz_common::Panel)</argsstring>
+        <name>PLUGINLIB_EXPORT_CLASS</name>
+        <param>
+          <type><ref refid="classriptide__rviz_1_1MissionPanel" kindref="compound">riptide_rviz::MissionPanel</ref></type>
+        </param>
+        <param>
+          <type>rviz_common::Panel</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MissionPanel.cpp" line="343" column="1" declfile="src/MissionPanel.cpp" declline="343" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;riptide_rviz/MissionPanel.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/display_context.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/logging.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::placeholders;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="classriptide__rviz_1_1MissionPanel_1a0f2597106fb90f8636d7a885c5cc9a0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a0f2597106fb90f8636d7a885c5cc9a0e" kindref="member">MissionPanel::MissionPanel</ref>(QWidget<sp/>*parent)<sp/>:<sp/>rviz_common::Panel(parent)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setFocusPolicy(Qt::ClickFocus);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Ui_MissionPanel();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref><sp/>=<sp/>std::vector&lt;std::string&gt;();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classriptide__rviz_1_1MissionPanel_1a7146fca9fd6e361a20caa1d4b6edde2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a7146fca9fd6e361a20caa1d4b6edde2f" kindref="member">MissionPanel::onInitialize</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>item<sp/>model<sp/>and<sp/>attach<sp/>it<sp/>to<sp/>the<sp/>panel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a61b9addffdcc5610cdf2e519546006ba" kindref="member">model</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItemModel();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStackView-&gt;setModel(<ref refid="classriptide__rviz_1_1MissionPanel_1a61b9addffdcc5610cdf2e519546006ba" kindref="member">model</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Connect<sp/>UI<sp/>signals<sp/>for<sp/>controlling<sp/>the<sp/>riptide<sp/>vehicle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btSelect,<sp/>SIGNAL(currentIndexChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),<sp/>SLOT(<ref refid="classriptide__rviz_1_1MissionPanel_1aa20d044ed8753ef8003aba5b39da1b9e" kindref="member">handleSelectTree</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>startTask();<sp/>});</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStop,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>cancelTask();<sp/>});</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btRefresh,<sp/>&amp;QPushButton::clicked,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>refresh();<sp/>});</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classriptide__rviz_1_1MissionPanel_1a57e48e4fd51d46cd6725720f346fd873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a57e48e4fd51d46cd6725720f346fd873" kindref="member">MissionPanel::load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;config)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::Panel::load(config);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_INFO(</highlight><highlight class="stringliteral">&quot;MissionPanel:<sp/>Loaded<sp/>parent<sp/>panel<sp/>config&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>our<sp/>value<sp/>containers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>*<sp/>str<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QString();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>the<sp/>namesapce<sp/>param</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(config.mapGetString(</highlight><highlight class="stringliteral">&quot;robot_namespace&quot;</highlight><highlight class="normal">,<sp/>str)){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref><sp/>=<sp/>str-&gt;toStdString();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/talos&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_WARNING(</highlight><highlight class="stringliteral">&quot;MissionPanel:<sp/>Loading<sp/>default<sp/>value<sp/>for<sp/>&apos;namespace&apos;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>our<sp/>local<sp/>rosnode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>getDisplayContext()-&gt;getRosNodeAbstraction().lock()-&gt;get_raw_node();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1add79544becf1150fecf24385d52a17a1" kindref="member">ledTimer</ref><sp/>=<sp/>node-&gt;create_wall_timer(50ms,<sp/>std::bind(&amp;<ref refid="classriptide__rviz_1_1MissionPanel_1a687d709950dca8b8bf94e926a9f26ea7" kindref="member">MissionPanel::updateLedReadout</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ad03f53b94a433da6274bf9c1f4e9cc57" kindref="member">actionServer</ref><sp/>=<sp/>rclcpp_action::create_client&lt;ExecuteTree&gt;(node,<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/autonomy/run_tree&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a73541a8e0d43209885e1aa61b5a1d5d9" kindref="member">stackSub</ref><sp/>=<sp/>node-&gt;create_subscription&lt;riptide_msgs2::msg::TreeStack&gt;(</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/autonomy/tree_stack&quot;</highlight><highlight class="normal">,<sp/>rclcpp::SystemDefaultsQoS(),</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;<ref refid="classriptide__rviz_1_1MissionPanel_1acab54f38b998b20183d6c84409ceb643" kindref="member">MissionPanel::stackCb</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ae99ea4c8b3b69af4c1501e097edb6567" kindref="member">ledSub</ref><sp/>=<sp/>node-&gt;create_subscription&lt;riptide_msgs2::msg::LedCommand&gt;(</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/command/led&quot;</highlight><highlight class="normal">,<sp/>10,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;<ref refid="classriptide__rviz_1_1MissionPanel_1a960ae68346241235d69139e6f78e8922" kindref="member">MissionPanel::ledCb</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1));</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a9272d1be5100e4b809da84b12840683b" kindref="member">refreshClient</ref><sp/>=<sp/>node-&gt;create_client&lt;riptide_msgs2::srv::ListTrees&gt;(<ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/autonomy/list_trees&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>str;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>refresh<sp/>the<sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a203f4dcaf787fea90378238c2b60ecb0" kindref="member">refresh</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classriptide__rviz_1_1MissionPanel_1a26a9b382b24152da12c484e783ad54d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a26a9b382b24152da12c484e783ad54d8" kindref="member">MissionPanel::save</ref>(rviz_common::Config<sp/>config)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::Panel::save(config);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>write<sp/>our<sp/>config<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config.mapSetValue(</highlight><highlight class="stringliteral">&quot;robot_namespace&quot;</highlight><highlight class="normal">,<sp/>QString::fromStdString(<ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref>));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classriptide__rviz_1_1MissionPanel_1a825bf757b31eb0c0edbedc4411c873a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a825bf757b31eb0c0edbedc4411c873a6" kindref="member">MissionPanel::event</ref>(QEvent<sp/>*<ref refid="classriptide__rviz_1_1MissionPanel_1a825bf757b31eb0c0edbedc4411c873a6" kindref="member">event</ref>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classriptide__rviz_1_1MissionPanel_1aaf157af0dfabf950a42ae780d666f23b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aaf157af0dfabf950a42ae780d666f23b" kindref="member">MissionPanel::~MissionPanel</ref>()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>master<sp/>window<sp/>control<sp/>removal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a61b9addffdcc5610cdf2e519546006ba" kindref="member">model</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ad03f53b94a433da6274bf9c1f4e9cc57" kindref="member">actionServer</ref>.reset();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a9272d1be5100e4b809da84b12840683b" kindref="member">refreshClient</ref>.reset();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a73541a8e0d43209885e1aa61b5a1d5d9" kindref="member">stackSub</ref>.reset();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classriptide__rviz_1_1MissionPanel_1a203f4dcaf787fea90378238c2b60ecb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a203f4dcaf787fea90378238c2b60ecb0" kindref="member">MissionPanel::refresh</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reset<sp/>the<sp/>GUI<sp/>in<sp/>case<sp/>of<sp/>tree<sp/>crash</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;isEnabled()){</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStop-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>our<sp/>local<sp/>rosnode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>getDisplayContext()-&gt;getRosNodeAbstraction().lock()-&gt;get_raw_node();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_INFO(</highlight><highlight class="stringliteral">&quot;MissionPanel:<sp/>Preparing<sp/>to<sp/>send<sp/>refresh<sp/>request&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>riptide_msgs2::srv::ListTrees::Request::SharedPtr<sp/>startReq<sp/>=<sp/>std::make_shared&lt;riptide_msgs2::srv::ListTrees::Request&gt;();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>node-&gt;get_clock()-&gt;now();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="classriptide__rviz_1_1MissionPanel_1a9272d1be5100e4b809da84b12840683b" kindref="member">refreshClient</ref>-&gt;wait_for_service(100ms))</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node-&gt;get_clock()-&gt;now()<sp/>-<sp/>start<sp/>&gt;<sp/>1s<sp/>||<sp/>!rclcpp::ok()){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_INFO(</highlight><highlight class="stringliteral">&quot;MissionPanel:<sp/>Refresh<sp/>server<sp/>not<sp/>online&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>refreshFutureInfo<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a9272d1be5100e4b809da84b12840683b" kindref="member">refreshClient</ref>-&gt;async_send_request(startReq);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa6e86e1d1102484e01903d23389e47ac" kindref="member">refreshFuture</ref><sp/>=<sp/>refreshFutureInfo.share();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa7a4b74b89c9da317d14a94823961a64" kindref="member">refreshFutureid</ref><sp/>=<sp/>refreshFutureInfo.request_id;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>a<sp/>timer<sp/>to<sp/>get<sp/>the<sp/>results<sp/>so<sp/>we<sp/>dont<sp/>lock<sp/>the<sp/>thread<sp/>:)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clear<sp/>the<sp/>timer<sp/>ticks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a3353e34c87caf9822f0aad62121da12a" kindref="member">timerTick</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_INFO(</highlight><highlight class="stringliteral">&quot;MissionPanel:<sp/>Scheduled<sp/>refresh<sp/>timer&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>a<sp/>oneshot<sp/>timer<sp/>for<sp/>1s<sp/>into<sp/>the<sp/>future<sp/>and<sp/>check<sp/>status</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTimer::singleShot(250,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]()</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1af1bf9d99265c027aba43e638252d0ef2" kindref="member">waitForRefresh</ref>();<sp/>});</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classriptide__rviz_1_1MissionPanel_1af1bf9d99265c027aba43e638252d0ef2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1af1bf9d99265c027aba43e638252d0ef2" kindref="member">MissionPanel::waitForRefresh</ref>(){</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classriptide__rviz_1_1MissionPanel_1aa6e86e1d1102484e01903d23389e47ac" kindref="member">refreshFuture</ref>.valid())</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_ERROR(</highlight><highlight class="stringliteral">&quot;BagItem:<sp/>stop<sp/>future<sp/>invalidated<sp/>while<sp/>sending<sp/>request&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clear<sp/>the<sp/>lookup<sp/>lockout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa7a4b74b89c9da317d14a94823961a64" kindref="member">refreshFutureid</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>prevent<sp/>a<sp/>re-schedule</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>if<sp/>future<sp/>has<sp/>validated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>futureStatus<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa6e86e1d1102484e01903d23389e47ac" kindref="member">refreshFuture</ref>.wait_for(10ms);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(futureStatus<sp/>==<sp/>std::future_status::timeout<sp/>&amp;&amp;<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a3353e34c87caf9822f0aad62121da12a" kindref="member">timerTick</ref><sp/>&lt;<sp/>10)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTimer::singleShot(250,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]()</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1af1bf9d99265c027aba43e638252d0ef2" kindref="member">waitForRefresh</ref>();<sp/>});</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a3353e34c87caf9822f0aad62121da12a" kindref="member">timerTick</ref>++;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(futureStatus<sp/>!=<sp/>std::future_status::timeout)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>future<sp/>has<sp/>come<sp/>back<sp/>parse<sp/>the<sp/>PID<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>response<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa6e86e1d1102484e01903d23389e47ac" kindref="member">refreshFuture</ref>.get();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_INFO(</highlight><highlight class="stringliteral">&quot;MissionPanel:<sp/>refresh<sp/>request<sp/>validated&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btSelect-&gt;clear();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btSelect-&gt;addItem(</highlight><highlight class="stringliteral">&quot;None<sp/>Selected&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>keep<sp/>a<sp/>list<sp/>of<sp/>the<sp/>valid<sp/>trees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref>.clear();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref>.insert(<ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref>.end(),<sp/>response-&gt;trees.begin(),<sp/>response-&gt;trees.end());</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>tree<sp/>:<sp/>response-&gt;trees)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>push<sp/>these<sp/>into<sp/>the<sp/>combo<sp/>box</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btSelect-&gt;addItem(QString::fromStdString(tree));</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classriptide__rviz_1_1MissionPanel_1a3353e34c87caf9822f0aad62121da12a" kindref="member">timerTick</ref><sp/>==<sp/>10)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_ERROR(</highlight><highlight class="stringliteral">&quot;MissionPanel:<sp/>refresh<sp/>service<sp/>never<sp/>responded&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>remove<sp/>the<sp/>failed<sp/>request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a9272d1be5100e4b809da84b12840683b" kindref="member">refreshClient</ref>-&gt;remove_pending_request(<ref refid="classriptide__rviz_1_1MissionPanel_1aa7a4b74b89c9da317d14a94823961a64" kindref="member">refreshFutureid</ref>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classriptide__rviz_1_1MissionPanel_1aa20d044ed8753ef8003aba5b39da1b9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa20d044ed8753ef8003aba5b39da1b9e" kindref="member">MissionPanel::handleSelectTree</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>selection){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>treeFile<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btSelect-&gt;itemText(selection).toStdString();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>found<sp/>=<sp/>std::find(<ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref>.begin(),<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref>.end(),<sp/>treeFile)<sp/>!=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref>.end();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(found){</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>the<sp/>start<sp/>button</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classriptide__rviz_1_1MissionPanel_1aa74ee1eced126db8d73d789e6cfd1601" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa74ee1eced126db8d73d789e6cfd1601" kindref="member">MissionPanel::startTask</ref>()</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>disable<sp/>the<sp/>start<sp/>button</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>our<sp/>local<sp/>rosnode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>getDisplayContext()-&gt;getRosNodeAbstraction().lock()-&gt;get_raw_node();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>node-&gt;get_clock()-&gt;now();</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="classriptide__rviz_1_1MissionPanel_1ad03f53b94a433da6274bf9c1f4e9cc57" kindref="member">actionServer</ref>-&gt;wait_for_action_server(100ms))</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node-&gt;get_clock()-&gt;now()<sp/>-<sp/>start<sp/>&gt;<sp/>1s<sp/>||<sp/>!rclcpp::ok())</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>have<sp/>timed<sp/>out<sp/>waiting,<sp/>re-enable<sp/>the<sp/>button</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>goal<sp/>=<sp/>ExecuteTree::Goal();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.tree<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btSelect-&gt;currentText().toStdString();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>goal<sp/>callbacks<sp/>to<sp/>bind<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sendGoalOptions<sp/>=<sp/>rclcpp_action::Client&lt;ExecuteTree&gt;::SendGoalOptions();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sendGoalOptions.goal_response_callback<sp/>=</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;<ref refid="classriptide__rviz_1_1MissionPanel_1af96bde242802bfe99d8feb8c56677cd1" kindref="member">MissionPanel::taskStartCb</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sendGoalOptions.feedback_callback<sp/>=</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;<ref refid="classriptide__rviz_1_1MissionPanel_1a52ff16a03b0e228b7227e38b834c7414" kindref="member">MissionPanel::taskFeedbackCb</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1,<sp/>_2);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sendGoalOptions.result_callback<sp/>=</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;<ref refid="classriptide__rviz_1_1MissionPanel_1a19948786e2b9e311747afb46657a47d9" kindref="member">MissionPanel::taskCompleteCb</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>the<sp/>goal<sp/>with<sp/>the<sp/>callbacks<sp/>configured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ad03f53b94a433da6274bf9c1f4e9cc57" kindref="member">actionServer</ref>-&gt;async_send_goal(goal,<sp/>sendGoalOptions);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classriptide__rviz_1_1MissionPanel_1af96bde242802bfe99d8feb8c56677cd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1af96bde242802bfe99d8feb8c56677cd1" kindref="member">MissionPanel::taskStartCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GHExecuteTree::SharedPtr<sp/>&amp;goalHandle)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!goalHandle)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>server<sp/>did<sp/>not<sp/>accept</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>server<sp/>accepted,<sp/>enable<sp/>the<sp/>cancel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStop-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="classriptide__rviz_1_1MissionPanel_1a19948786e2b9e311747afb46657a47d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a19948786e2b9e311747afb46657a47d9" kindref="member">MissionPanel::taskCompleteCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GHExecuteTree::WrappedResult<sp/>&amp;result)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>can<sp/>re-enable<sp/>the<sp/>staret<sp/>button<sp/>and<sp/>disable<sp/>the<sp/>stop<sp/>button</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStart-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStop-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>completion<sp/>was<sp/>unintended<sp/>or<sp/>,<sp/>change<sp/>the<sp/>stylesheet<sp/>of<sp/>the<sp/>stack<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(result.code<sp/>==<sp/>rclcpp_action::ResultCode::ABORTED){</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>red<sp/>stylesheet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStackView-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;QTreeView{background:<sp/>rgb(200,<sp/>100,<sp/>100)}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>timer<sp/>to<sp/>clear<sp/>it<sp/>in<sp/>1<sp/>second</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTimer::singleShot(1000,<sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;btStackView-&gt;setStyleSheet(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);<sp/>});</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="classriptide__rviz_1_1MissionPanel_1a52ff16a03b0e228b7227e38b834c7414" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a52ff16a03b0e228b7227e38b834c7414" kindref="member">MissionPanel::taskFeedbackCb</ref>(GHExecuteTree::SharedPtr<sp/>goalHandle,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ExecuteTree::Feedback::ConstSharedPtr<sp/>feedback)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>anything<sp/>we<sp/>want<sp/>to<sp/>do<sp/>if<sp/>autonomy<sp/>gives<sp/>feedback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="classriptide__rviz_1_1MissionPanel_1acfb090ca92850e0e561bc8310cb4afe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1acfb090ca92850e0e561bc8310cb4afe4" kindref="member">MissionPanel::cancelAccept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>action_msgs::srv::CancelGoal::Response::SharedPtr<sp/>resp){</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>anything<sp/>we<sp/>want<sp/>to<sp/>do<sp/>when<sp/>the<sp/>cancels<sp/>are<sp/>accepted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="classriptide__rviz_1_1MissionPanel_1acab54f38b998b20183d6c84409ceb643" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1acab54f38b998b20183d6c84409ceb643" kindref="member">MissionPanel::stackCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::TreeStack<sp/>&amp;<sp/>msg<sp/>){</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clean<sp/>the<sp/>tree</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a61b9addffdcc5610cdf2e519546006ba" kindref="member">model</ref>-&gt;clear();</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>root<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem*<sp/>parentItem<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a61b9addffdcc5610cdf2e519546006ba" kindref="member">model</ref>-&gt;invisibleRootItem();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>the<sp/>new<sp/>tree</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>name<sp/>:<sp/>msg.stack){</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItem<sp/>*<sp/>item<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QStandardItem(QString::fromStdString(name));</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parentItem-&gt;appendRow(item);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="classriptide__rviz_1_1MissionPanel_1a960ae68346241235d69139e6f78e8922" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a960ae68346241235d69139e6f78e8922" kindref="member">MissionPanel::ledCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::LedCommand<sp/>&amp;<sp/>cmd)</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a413757533620dd7864a85a0c2804b179" kindref="member">lastLedCommand</ref><sp/>=<sp/>cmd;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="classriptide__rviz_1_1MissionPanel_1a34c1712d39789fbba9c2c91d91ea8603" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a34c1712d39789fbba9c2c91d91ea8603" kindref="member">MissionPanel::cancelTask</ref>()</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ad03f53b94a433da6274bf9c1f4e9cc57" kindref="member">actionServer</ref>-&gt;async_cancel_all_goals(std::bind(&amp;<ref refid="classriptide__rviz_1_1MissionPanel_1acfb090ca92850e0e561bc8310cb4afe4" kindref="member">MissionPanel::cancelAccept</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1));</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO:<sp/>UPDATE<sp/>LED<sp/>READOUT<sp/>FOR<sp/>BOTH<sp/>CAGES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="classriptide__rviz_1_1MissionPanel_1a687d709950dca8b8bf94e926a9f26ea7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a687d709950dca8b8bf94e926a9f26ea7" kindref="member">MissionPanel::updateLedReadout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>brightness<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>getDisplayContext()-&gt;getRosNodeAbstraction().lock()-&gt;get_raw_node();</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_time_seconds<sp/>=<sp/>node-&gt;get_clock()-&gt;now().seconds();</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(<ref refid="classriptide__rviz_1_1MissionPanel_1a413757533620dd7864a85a0c2804b179" kindref="member">lastLedCommand</ref>.mode)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::LedCommand::MODE_SOLID:</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>brightness<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::LedCommand::MODE_SLOW_FLASH:</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>brightness<sp/>=<sp/>(fmod(current_time_seconds,<sp/>2)<sp/>&lt;<sp/>1<sp/>?<sp/>0<sp/>:<sp/>1);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::LedCommand::MODE_FAST_FLASH:</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>brightness<sp/>=<sp/>(fmod(current_time_seconds,<sp/>0.5)<sp/>&lt;<sp/>0.25<sp/>?<sp/>0<sp/>:<sp/>1);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::LedCommand::MODE_BREATH:</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>brightness<sp/>=<sp/>(sin(fmod(current_time_seconds,<sp/>3)<sp/>*<sp/>2<sp/>*<sp/>M_PI<sp/>/<sp/>3)<sp/>+<sp/>1)<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>brightness<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bgRed<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a413757533620dd7864a85a0c2804b179" kindref="member">lastLedCommand</ref>.red<sp/>*<sp/>brightness,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bgGreen<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a413757533620dd7864a85a0c2804b179" kindref="member">lastLedCommand</ref>.green<sp/>*<sp/>brightness,</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bgBlue<sp/>=<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a413757533620dd7864a85a0c2804b179" kindref="member">lastLedCommand</ref>.blue<sp/>*<sp/>brightness,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>avg<sp/>=<sp/>(bgRed<sp/>+<sp/>bgGreen<sp/>+<sp/>bgBlue)<sp/>/<sp/>3,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fgMono<sp/>=<sp/>(avg<sp/>&gt;<sp/>128<sp/>?<sp/>0<sp/>:<sp/>255);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>new_stylesheet<sp/>=<sp/>QString(</highlight><highlight class="stringliteral">&quot;QLabel<sp/>{color:<sp/>rgb(%1,<sp/>%1,<sp/>%1);<sp/>background-color:<sp/>rgb(%2,<sp/>%3,<sp/>%4)}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.arg(fgMono).arg(bgRed).arg(bgGreen).arg(bgBlue);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>-&gt;status_label-&gt;setStyleSheet(new_stylesheet);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>riptide_rviz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pluginlib/class_list_macros.hpp&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>NOLINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343" refid="MissionPanel_8cpp_1a5cbcc80cdf0a5c6f121b7c13b6f343e5" refkind="member"><highlight class="normal"><ref refid="MissionPanel_8cpp_1a5cbcc80cdf0a5c6f121b7c13b6f343e5" kindref="member">PLUGINLIB_EXPORT_CLASS</ref>(<ref refid="classriptide__rviz_1_1MissionPanel" kindref="compound">riptide_rviz::MissionPanel</ref>,<sp/>rviz_common::Panel);</highlight></codeline>
+    </programlisting>
+    <location file="src/MissionPanel.cpp"/>
+  </compounddef>
+</doxygen>

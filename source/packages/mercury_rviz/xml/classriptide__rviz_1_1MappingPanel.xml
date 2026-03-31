@@ -1,0 +1,799 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1MappingPanel" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::MappingPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="MappingPanel_8hpp" local="no">MappingPanel.hpp</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classriptide__rviz_1_1MappingPanel_1a4a8c7b2ef5b4abbfde37e9f26127d885" prot="private" static="no">
+        <type>chameleon_tf_msgs::action::ModelFrame</type>
+        <definition>using riptide_rviz::MappingPanel::ModelFrame =  chameleon_tf_msgs::action::ModelFrame</definition>
+        <argsstring></argsstring>
+        <name>ModelFrame</name>
+        <qualifiedname>riptide_rviz::MappingPanel::ModelFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="25" column="9" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1MappingPanel_1a5958b5aad786799f94fc0cf99b377b19" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1MappingPanel_1a4a8c7b2ef5b4abbfde37e9f26127d885" kindref="member">ModelFrame</ref> &gt;::SendGoalOptions</type>
+        <definition>using riptide_rviz::MappingPanel::SendGoalOptions =  rclcpp_action::Client&lt;ModelFrame&gt;::SendGoalOptions</definition>
+        <argsstring></argsstring>
+        <name>SendGoalOptions</name>
+        <qualifiedname>riptide_rviz::MappingPanel::SendGoalOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="26" column="9" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1MappingPanel_1a6a1420d6b6575ff653f449d27c88b747" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1MappingPanel_1a4a8c7b2ef5b4abbfde37e9f26127d885" kindref="member">ModelFrame</ref> &gt;::GoalHandle</type>
+        <definition>using riptide_rviz::MappingPanel::CalibGoalHandle =  rclcpp_action::Client&lt;ModelFrame&gt;::GoalHandle</definition>
+        <argsstring></argsstring>
+        <name>CalibGoalHandle</name>
+        <qualifiedname>riptide_rviz::MappingPanel::CalibGoalHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="27" column="9" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1MappingPanel_1a36b477e73ac22ba6db34849cf19635aa" prot="private" static="no">
+        <type>riptide_msgs2::srv::MappingTarget</type>
+        <definition>using riptide_rviz::MappingPanel::MappingTarget =  riptide_msgs2::srv::MappingTarget</definition>
+        <argsstring></argsstring>
+        <name>MappingTarget</name>
+        <qualifiedname>riptide_rviz::MappingPanel::MappingTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="29" column="9" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1MappingPanel_1a2b302b9926b422a6b435be762b77b17e" prot="private" static="no">
+        <type>std_srvs::srv::Trigger</type>
+        <definition>using riptide_rviz::MappingPanel::Trigger =  std_srvs::srv::Trigger</definition>
+        <argsstring></argsstring>
+        <name>Trigger</name>
+        <qualifiedname>riptide_rviz::MappingPanel::Trigger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="33" column="9" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" prot="private" static="no" mutable="no">
+        <type>Ui_MappingPanel *</type>
+        <definition>Ui_MappingPanel* riptide_rviz::MappingPanel::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>riptide_rviz::MappingPanel::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="82" column="25" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1af7d0c096ed563366b7a536dc6701df09" compoundref="MappingPanel_8cpp" startline="267" endline="305">dfcRecordStart</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae4b22319f8f0666472d179628fd5d22a" compoundref="MappingPanel_8cpp" startline="307" endline="316">dfcRecordStop</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a5d4cf184cd42f49e280da1fb2160e125" compoundref="MappingPanel_8cpp" startline="353" endline="364">feedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1af4c5ceebe83e91e011c54b00436a1ecf" compoundref="MappingPanel_8cpp" startline="408" endline="422">mappingObjectCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a20914d4e0e391e92fb2100e51ab2dbe8" compoundref="MappingPanel_8cpp" startline="27" endline="37">MappingPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a46eda7c01bef6eb180e7df7d2a030269" compoundref="MappingPanel_8cpp" startline="401" endline="406">mappingStatusCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a05805fa9ae551c78a4be1d98cd624003" compoundref="MappingPanel_8cpp" startline="366" endline="399">resultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ac6fe0647a86abda348107488cfd112d5" compoundref="MappingPanel_8cpp" startline="127" endline="136">save</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a73c784ada6da5644b9fc1e5856e3ecc1" compoundref="MappingPanel_8cpp" startline="200" endline="215">setMappingTarget</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a6a565ebee7706d12a360b712fba4d22b" compoundref="MappingPanel_8cpp" startline="58" endline="68">updateDfcRecordingIndicator</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a1c5aff88be9c479d5ee7cf727834e5f2" compoundref="MappingPanel_8cpp" startline="45" endline="55">updateFfcRecordingIndicator</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abcb7b0e2ee1a0e55cf4d0817cd7b98b5" compoundref="MappingPanel_8cpp" startline="217" endline="254">zedSvoStart</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a38e650449f12ad270ddbee3b82183ab1" compoundref="MappingPanel_8cpp" startline="256" endline="265">zedSvoStop</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1afd01e96bf88a5920da9d13d57ae8ec8d" compoundref="MappingPanel_8cpp" startline="39" endline="42">~MappingPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1af5361c3e8a9ddc6649429f290fa53b5b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::MappingPanel::robotNs</definition>
+        <argsstring></argsstring>
+        <name>robotNs</name>
+        <qualifiedname>riptide_rviz::MappingPanel::robotNs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="83" column="21" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ac6fe0647a86abda348107488cfd112d5" compoundref="MappingPanel_8cpp" startline="127" endline="136">save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1adaa5dedcdb5207532321c099e1c07505" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::MappingPanel::calibrationInProgress</definition>
+        <argsstring></argsstring>
+        <name>calibrationInProgress</name>
+        <qualifiedname>riptide_rviz::MappingPanel::calibrationInProgress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="84" column="14" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a05805fa9ae551c78a4be1d98cd624003" compoundref="MappingPanel_8cpp" startline="366" endline="399">resultCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1a6d7735ff761149eccbb96d3356d8f01e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::MappingPanel::loaded</definition>
+        <argsstring></argsstring>
+        <name>loaded</name>
+        <qualifiedname>riptide_rviz::MappingPanel::loaded</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="85" column="13" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a20914d4e0e391e92fb2100e51ab2dbe8" compoundref="MappingPanel_8cpp" startline="27" endline="37">MappingPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1a9f0dba8a182dc09da083c028e3bf47b3" prot="private" static="no" mutable="no">
+        <type>rclcpp_action::Client&lt; chameleon_tf_msgs::action::ModelFrame &gt;::SharedPtr</type>
+        <definition>rclcpp_action::Client&lt;chameleon_tf_msgs::action::ModelFrame&gt;::SharedPtr riptide_rviz::MappingPanel::calibClient</definition>
+        <argsstring></argsstring>
+        <name>calibClient</name>
+        <qualifiedname>riptide_rviz::MappingPanel::calibClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="87" column="43" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1a28800d5dd98cbd3dab9ad68423b1169c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; riptide_msgs2::msg::MappingTargetInfo &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;riptide_msgs2::msg::MappingTargetInfo&gt;::SharedPtr riptide_rviz::MappingPanel::mappingTargetInfoSub</definition>
+        <argsstring></argsstring>
+        <name>mappingTargetInfoSub</name>
+        <qualifiedname>riptide_rviz::MappingPanel::mappingTargetInfoSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="88" column="42" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1a5c9370ddecb8f5953a2c6b4c371f2ed9" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; geometry_msgs::msg::PoseWithCovarianceStamped &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;geometry_msgs::msg::PoseWithCovarianceStamped&gt;::SharedPtr riptide_rviz::MappingPanel::mappingObjectSub</definition>
+        <argsstring></argsstring>
+        <name>mappingObjectSub</name>
+        <qualifiedname>riptide_rviz::MappingPanel::mappingObjectSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="89" column="42" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1a80668bf219d4a3d82591c61f6b4a78dd" prot="private" static="no" mutable="no">
+        <type><ref refid="classGuiSrvClient" kindref="compound">GuiSrvClient</ref>&lt; <ref refid="classriptide__rviz_1_1MappingPanel_1a36b477e73ac22ba6db34849cf19635aa" kindref="member">MappingTarget</ref> &gt;::SharedPtr</type>
+        <definition>GuiSrvClient&lt;MappingTarget&gt;::SharedPtr riptide_rviz::MappingPanel::mappingTargetClient</definition>
+        <argsstring></argsstring>
+        <name>mappingTargetClient</name>
+        <qualifiedname>riptide_rviz::MappingPanel::mappingTargetClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="90" column="34" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="90" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a73c784ada6da5644b9fc1e5856e3ecc1" compoundref="MappingPanel_8cpp" startline="200" endline="215">setMappingTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1MappingPanel_1aaededf1a44c8b9d9da8d774e019797d5" prot="private" static="no" mutable="no">
+        <type><ref refid="classGuiSrvClient" kindref="compound">GuiSrvClient</ref>&lt; <ref refid="classriptide__rviz_1_1MappingPanel_1a2b302b9926b422a6b435be762b77b17e" kindref="member">Trigger</ref> &gt;::SharedPtr</type>
+        <definition>GuiSrvClient&lt;Trigger&gt;::SharedPtr riptide_rviz::MappingPanel::captureImageClient</definition>
+        <argsstring></argsstring>
+        <name>captureImageClient</name>
+        <qualifiedname>riptide_rviz::MappingPanel::captureImageClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="91" column="34" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1af593e7783caf8a3d5fb9c96230b9ac79" compoundref="MappingPanel_8cpp" startline="318" endline="321">captureImage</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1a20914d4e0e391e92fb2100e51ab2dbe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::MappingPanel::MappingPanel</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MappingPanel</name>
+        <qualifiedname>riptide_rviz::MappingPanel::MappingPanel</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="37" column="9" bodyfile="src/MappingPanel.cpp" bodystart="27" bodyend="37"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a6d7735ff761149eccbb96d3356d8f01e" compoundref="MappingPanel_8hpp" startline="85">loaded</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1afd01e96bf88a5920da9d13d57ae8ec8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::MappingPanel::~MappingPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~MappingPanel</name>
+        <qualifiedname>riptide_rviz::MappingPanel::~MappingPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="38" column="9" bodyfile="src/MappingPanel.cpp" bodystart="39" bodyend="42"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <qualifiedname>riptide_rviz::MappingPanel::load</qualifiedname>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="40" column="14" bodyfile="src/MappingPanel.cpp" bodystart="70" bodyend="125"/>
+        <references refid="namespaceriptide__rviz_1a3be98aba57fb69dc153903eb748b83b2" compoundref="FeedforwardPanel_8hpp" startline="18">riptide_rviz::CALIB_ACTION_NAME</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a9f0dba8a182dc09da083c028e3bf47b3" compoundref="MappingPanel_8hpp" startline="87">calibClient</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1aaededf1a44c8b9d9da8d774e019797d5" compoundref="MappingPanel_8hpp" startline="91">captureImageClient</references>
+        <references refid="namespaceriptide__rviz_1a2eb101ba7f7e2e60cf1a1e2a8e5a9143" compoundref="MappingPanel_8cpp" startline="14" endline="25">riptide_rviz::getFromConfig</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a6d7735ff761149eccbb96d3356d8f01e" compoundref="MappingPanel_8hpp" startline="85">loaded</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af4c5ceebe83e91e011c54b00436a1ecf" compoundref="MappingPanel_8cpp" startline="408" endline="422">mappingObjectCb</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a5c9370ddecb8f5953a2c6b4c371f2ed9" compoundref="MappingPanel_8hpp" startline="89">mappingObjectSub</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a46eda7c01bef6eb180e7df7d2a030269" compoundref="MappingPanel_8cpp" startline="401" endline="406">mappingStatusCb</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a80668bf219d4a3d82591c61f6b4a78dd" compoundref="MappingPanel_8hpp" startline="90">mappingTargetClient</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a28800d5dd98cbd3dab9ad68423b1169c" compoundref="MappingPanel_8hpp" startline="88">mappingTargetInfoSub</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1aedd32d086574915092e876ed2b08601c" compoundref="MappingPanel_8cpp" startline="424" endline="429">mappingTargetResultCb</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af5361c3e8a9ddc6649429f290fa53b5b" compoundref="MappingPanel_8hpp" startline="83">robotNs</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1ad6ab4d91f703b041b247e1f3c4a35e18" compoundref="MappingPanel_8hpp" startline="60" endline="68">serviceResponseCb</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1ac6fe0647a86abda348107488cfd112d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <qualifiedname>riptide_rviz::MappingPanel::save</qualifiedname>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="41" column="14" bodyfile="src/MappingPanel.cpp" bodystart="127" bodyend="136"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af5361c3e8a9ddc6649429f290fa53b5b" compoundref="MappingPanel_8hpp" startline="83">robotNs</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <qualifiedname>riptide_rviz::MappingPanel::onInitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="42" column="14" bodyfile="src/MappingPanel.cpp" bodystart="138" bodyend="154"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1adaa5dedcdb5207532321c099e1c07505" compoundref="MappingPanel_8hpp" startline="84">calibrationInProgress</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af593e7783caf8a3d5fb9c96230b9ac79" compoundref="MappingPanel_8cpp" startline="318" endline="321">captureImage</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af7d0c096ed563366b7a536dc6701df09" compoundref="MappingPanel_8cpp" startline="267" endline="305">dfcRecordStart</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1ae4b22319f8f0666472d179628fd5d22a" compoundref="MappingPanel_8cpp" startline="307" endline="316">dfcRecordStop</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a73c784ada6da5644b9fc1e5856e3ecc1" compoundref="MappingPanel_8cpp" startline="200" endline="215">setMappingTarget</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1abcb7b0e2ee1a0e55cf4d0817cd7b98b5" compoundref="MappingPanel_8cpp" startline="217" endline="254">zedSvoStart</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a38e650449f12ad270ddbee3b82183ab1" compoundref="MappingPanel_8cpp" startline="256" endline="265">zedSvoStop</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::calibMapFrame</definition>
+        <argsstring>()</argsstring>
+        <name>calibMapFrame</name>
+        <qualifiedname>riptide_rviz::MappingPanel::calibMapFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="45" column="14" bodyfile="src/MappingPanel.cpp" bodystart="156" bodyend="198"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a9f0dba8a182dc09da083c028e3bf47b3" compoundref="MappingPanel_8hpp" startline="87">calibClient</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1adaa5dedcdb5207532321c099e1c07505" compoundref="MappingPanel_8hpp" startline="84">calibrationInProgress</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a5d4cf184cd42f49e280da1fb2160e125" compoundref="MappingPanel_8cpp" startline="353" endline="364">feedbackCb</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a511af60cd166d5cb4ccd94ca329e86c6" compoundref="MappingPanel_8cpp" startline="330" endline="351">goalResponseCb</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a6d7735ff761149eccbb96d3356d8f01e" compoundref="MappingPanel_8hpp" startline="85">loaded</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a05805fa9ae551c78a4be1d98cd624003" compoundref="MappingPanel_8cpp" startline="366" endline="399">resultCb</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1MappingPanel_1a73c784ada6da5644b9fc1e5856e3ecc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::setMappingTarget</definition>
+        <argsstring>()</argsstring>
+        <name>setMappingTarget</name>
+        <qualifiedname>riptide_rviz::MappingPanel::setMappingTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="46" column="14" bodyfile="src/MappingPanel.cpp" bodystart="200" bodyend="215"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a80668bf219d4a3d82591c61f6b4a78dd" compoundref="MappingPanel_8hpp" startline="90">mappingTargetClient</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1MappingPanel_1abcb7b0e2ee1a0e55cf4d0817cd7b98b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::zedSvoStart</definition>
+        <argsstring>()</argsstring>
+        <name>zedSvoStart</name>
+        <qualifiedname>riptide_rviz::MappingPanel::zedSvoStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="47" column="14" bodyfile="src/MappingPanel.cpp" bodystart="217" bodyend="254"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a1c5aff88be9c479d5ee7cf727834e5f2" compoundref="MappingPanel_8cpp" startline="45" endline="55">updateFfcRecordingIndicator</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1MappingPanel_1a38e650449f12ad270ddbee3b82183ab1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::zedSvoStop</definition>
+        <argsstring>()</argsstring>
+        <name>zedSvoStop</name>
+        <qualifiedname>riptide_rviz::MappingPanel::zedSvoStop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="48" column="14" bodyfile="src/MappingPanel.cpp" bodystart="256" bodyend="265"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a1c5aff88be9c479d5ee7cf727834e5f2" compoundref="MappingPanel_8cpp" startline="45" endline="55">updateFfcRecordingIndicator</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1MappingPanel_1af7d0c096ed563366b7a536dc6701df09" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::dfcRecordStart</definition>
+        <argsstring>()</argsstring>
+        <name>dfcRecordStart</name>
+        <qualifiedname>riptide_rviz::MappingPanel::dfcRecordStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="49" column="14" bodyfile="src/MappingPanel.cpp" bodystart="267" bodyend="305"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a6a565ebee7706d12a360b712fba4d22b" compoundref="MappingPanel_8cpp" startline="58" endline="68">updateDfcRecordingIndicator</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1MappingPanel_1ae4b22319f8f0666472d179628fd5d22a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::dfcRecordStop</definition>
+        <argsstring>()</argsstring>
+        <name>dfcRecordStop</name>
+        <qualifiedname>riptide_rviz::MappingPanel::dfcRecordStop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="50" column="14" bodyfile="src/MappingPanel.cpp" bodystart="307" bodyend="316"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a6a565ebee7706d12a360b712fba4d22b" compoundref="MappingPanel_8cpp" startline="58" endline="68">updateDfcRecordingIndicator</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1MappingPanel_1af593e7783caf8a3d5fb9c96230b9ac79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::captureImage</definition>
+        <argsstring>()</argsstring>
+        <name>captureImage</name>
+        <qualifiedname>riptide_rviz::MappingPanel::captureImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="51" column="14" bodyfile="src/MappingPanel.cpp" bodystart="318" bodyend="321"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1aaededf1a44c8b9d9da8d774e019797d5" compoundref="MappingPanel_8hpp" startline="91">captureImageClient</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" compoundref="MappingPanel_8cpp" startline="138" endline="154">onInitialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::setStatus</definition>
+        <argsstring>(const QString &amp;text, const QString &amp;color)</argsstring>
+        <name>setStatus</name>
+        <qualifiedname>riptide_rviz::MappingPanel::setStatus</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="54" column="14" bodyfile="src/MappingPanel.cpp" bodystart="323" bodyend="328"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1af7d0c096ed563366b7a536dc6701df09" compoundref="MappingPanel_8cpp" startline="267" endline="305">dfcRecordStart</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a5d4cf184cd42f49e280da1fb2160e125" compoundref="MappingPanel_8cpp" startline="353" endline="364">feedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a511af60cd166d5cb4ccd94ca329e86c6" compoundref="MappingPanel_8cpp" startline="330" endline="351">goalResponseCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aedd32d086574915092e876ed2b08601c" compoundref="MappingPanel_8cpp" startline="424" endline="429">mappingTargetResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a05805fa9ae551c78a4be1d98cd624003" compoundref="MappingPanel_8cpp" startline="366" endline="399">resultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ad6ab4d91f703b041b247e1f3c4a35e18" compoundref="MappingPanel_8hpp" startline="60" endline="68">serviceResponseCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abcb7b0e2ee1a0e55cf4d0817cd7b98b5" compoundref="MappingPanel_8cpp" startline="217" endline="254">zedSvoStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1a1c5aff88be9c479d5ee7cf727834e5f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::updateFfcRecordingIndicator</definition>
+        <argsstring>(bool recording)</argsstring>
+        <name>updateFfcRecordingIndicator</name>
+        <qualifiedname>riptide_rviz::MappingPanel::updateFfcRecordingIndicator</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>recording</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="56" column="14" bodyfile="src/MappingPanel.cpp" bodystart="45" bodyend="55"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1abcb7b0e2ee1a0e55cf4d0817cd7b98b5" compoundref="MappingPanel_8cpp" startline="217" endline="254">zedSvoStart</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1a38e650449f12ad270ddbee3b82183ab1" compoundref="MappingPanel_8cpp" startline="256" endline="265">zedSvoStop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1a6a565ebee7706d12a360b712fba4d22b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::updateDfcRecordingIndicator</definition>
+        <argsstring>(bool recording)</argsstring>
+        <name>updateDfcRecordingIndicator</name>
+        <qualifiedname>riptide_rviz::MappingPanel::updateDfcRecordingIndicator</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>recording</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="57" column="14" bodyfile="src/MappingPanel.cpp" bodystart="58" bodyend="68"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1af7d0c096ed563366b7a536dc6701df09" compoundref="MappingPanel_8cpp" startline="267" endline="305">dfcRecordStart</referencedby>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae4b22319f8f0666472d179628fd5d22a" compoundref="MappingPanel_8cpp" startline="307" endline="316">dfcRecordStop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1ad6ab4d91f703b041b247e1f3c4a35e18" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::serviceResponseCb</definition>
+        <argsstring>(const std::string &amp;srvName, typename rclcpp::Client&lt; T &gt;::SharedResponse response)</argsstring>
+        <name>serviceResponseCb</name>
+        <qualifiedname>riptide_rviz::MappingPanel::serviceResponseCb</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>srvName</declname>
+        </param>
+        <param>
+          <type>typename rclcpp::Client&lt; T &gt;::SharedResponse</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="60" column="14" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="60" bodyend="68"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1a511af60cd166d5cb4ccd94ca329e86c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::goalResponseCb</definition>
+        <argsstring>(const CalibGoalHandle::SharedPtr &amp;goal_handle)</argsstring>
+        <name>goalResponseCb</name>
+        <qualifiedname>riptide_rviz::MappingPanel::goalResponseCb</qualifiedname>
+        <param>
+          <type>const CalibGoalHandle::SharedPtr &amp;</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="71" column="14" bodyfile="src/MappingPanel.cpp" bodystart="330" bodyend="351"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1a5d4cf184cd42f49e280da1fb2160e125" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::feedbackCb</definition>
+        <argsstring>(CalibGoalHandle::SharedPtr, const std::shared_ptr&lt; const ModelFrame::Feedback &gt; feedback)</argsstring>
+        <name>feedbackCb</name>
+        <qualifiedname>riptide_rviz::MappingPanel::feedbackCb</qualifiedname>
+        <param>
+          <type>CalibGoalHandle::SharedPtr</type>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; const ModelFrame::Feedback &gt;</type>
+          <declname>feedback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="72" column="14" bodyfile="src/MappingPanel.cpp" bodystart="353" bodyend="364"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1a05805fa9ae551c78a4be1d98cd624003" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::resultCb</definition>
+        <argsstring>(const CalibGoalHandle::WrappedResult &amp;result)</argsstring>
+        <name>resultCb</name>
+        <qualifiedname>riptide_rviz::MappingPanel::resultCb</qualifiedname>
+        <param>
+          <type>const CalibGoalHandle::WrappedResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="75" column="14" bodyfile="src/MappingPanel.cpp" bodystart="366" bodyend="399"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1adaa5dedcdb5207532321c099e1c07505" compoundref="MappingPanel_8hpp" startline="84">calibrationInProgress</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" compoundref="MappingPanel_8cpp" startline="156" endline="198">calibMapFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1a46eda7c01bef6eb180e7df7d2a030269" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::mappingStatusCb</definition>
+        <argsstring>(const riptide_msgs2::msg::MappingTargetInfo::SharedPtr msg)</argsstring>
+        <name>mappingStatusCb</name>
+        <qualifiedname>riptide_rviz::MappingPanel::mappingStatusCb</qualifiedname>
+        <param>
+          <type>const riptide_msgs2::msg::MappingTargetInfo::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="78" column="14" bodyfile="src/MappingPanel.cpp" bodystart="401" bodyend="406"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1af4c5ceebe83e91e011c54b00436a1ecf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::mappingObjectCb</definition>
+        <argsstring>(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg)</argsstring>
+        <name>mappingObjectCb</name>
+        <qualifiedname>riptide_rviz::MappingPanel::mappingObjectCb</qualifiedname>
+        <param>
+          <type>const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="79" column="14" bodyfile="src/MappingPanel.cpp" bodystart="408" bodyend="422"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" compoundref="MappingPanel_8hpp" startline="82">ui</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1MappingPanel_1aedd32d086574915092e876ed2b08601c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::MappingPanel::mappingTargetResultCb</definition>
+        <argsstring>(const std::string &amp;srvName, rclcpp::Client&lt; MappingTarget &gt;::SharedResponse response)</argsstring>
+        <name>mappingTargetResultCb</name>
+        <qualifiedname>riptide_rviz::MappingPanel::mappingTargetResultCb</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>srvName</declname>
+        </param>
+        <param>
+          <type>rclcpp::Client&lt; <ref refid="classriptide__rviz_1_1MappingPanel_1a36b477e73ac22ba6db34849cf19635aa" kindref="member">MappingTarget</ref> &gt;::SharedResponse</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MappingPanel.hpp" line="80" column="14" bodyfile="src/MappingPanel.cpp" bodystart="424" bodyend="429"/>
+        <references refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" compoundref="MappingPanel_8cpp" startline="323" endline="328">setStatus</references>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">load</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>riptide_rviz::MappingPanel</label>
+        <link refid="classriptide__rviz_1_1MappingPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>GuiSrvClient&lt; MappingTarget &gt;</label>
+        <link refid="classGuiSrvClient"/>
+      </node>
+      <node id="4">
+        <label>GuiSrvClient&lt; Trigger &gt;</label>
+        <link refid="classGuiSrvClient"/>
+      </node>
+      <node id="1">
+        <label>riptide_rviz::MappingPanel</label>
+        <link refid="classriptide__rviz_1_1MappingPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-mappingTargetClient</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-captureImageClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/MappingPanel.hpp" line="23" column="5" bodyfile="include/mercury_rviz/MappingPanel.hpp" bodystart="24" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a9f0dba8a182dc09da083c028e3bf47b3" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>calibClient</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a6a1420d6b6575ff653f449d27c88b747" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>CalibGoalHandle</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1aadc8d984bb593437b21e9d7c45acce86" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>calibMapFrame</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1adaa5dedcdb5207532321c099e1c07505" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>calibrationInProgress</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1af593e7783caf8a3d5fb9c96230b9ac79" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>captureImage</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1aaededf1a44c8b9d9da8d774e019797d5" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>captureImageClient</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1af7d0c096ed563366b7a536dc6701df09" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>dfcRecordStart</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1ae4b22319f8f0666472d179628fd5d22a" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>dfcRecordStop</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a5d4cf184cd42f49e280da1fb2160e125" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>feedbackCb</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a511af60cd166d5cb4ccd94ca329e86c6" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>goalResponseCb</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" prot="public" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>load</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a6d7735ff761149eccbb96d3356d8f01e" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>loaded</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1af4c5ceebe83e91e011c54b00436a1ecf" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>mappingObjectCb</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a5c9370ddecb8f5953a2c6b4c371f2ed9" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>mappingObjectSub</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a20914d4e0e391e92fb2100e51ab2dbe8" prot="public" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>MappingPanel</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a46eda7c01bef6eb180e7df7d2a030269" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>mappingStatusCb</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a36b477e73ac22ba6db34849cf19635aa" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>MappingTarget</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a80668bf219d4a3d82591c61f6b4a78dd" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>mappingTargetClient</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a28800d5dd98cbd3dab9ad68423b1169c" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>mappingTargetInfoSub</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1aedd32d086574915092e876ed2b08601c" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>mappingTargetResultCb</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a4a8c7b2ef5b4abbfde37e9f26127d885" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>ModelFrame</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1abea0502f0682a244b36224784246d828" prot="public" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>onInitialize</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a05805fa9ae551c78a4be1d98cd624003" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>resultCb</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1af5361c3e8a9ddc6649429f290fa53b5b" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>robotNs</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1ac6fe0647a86abda348107488cfd112d5" prot="public" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>save</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a5958b5aad786799f94fc0cf99b377b19" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>SendGoalOptions</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1ad6ab4d91f703b041b247e1f3c4a35e18" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>serviceResponseCb</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a73c784ada6da5644b9fc1e5856e3ecc1" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>setMappingTarget</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1af05786acc14969e128fdd2323c999272" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>setStatus</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a2b302b9926b422a6b435be762b77b17e" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>Trigger</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a2556a9b672d4d3a273925580d78c40d5" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>ui</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a6a565ebee7706d12a360b712fba4d22b" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>updateDfcRecordingIndicator</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a1c5aff88be9c479d5ee7cf727834e5f2" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>updateFfcRecordingIndicator</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1abcb7b0e2ee1a0e55cf4d0817cd7b98b5" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>zedSvoStart</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1a38e650449f12ad270ddbee3b82183ab1" prot="private" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>zedSvoStop</name></member>
+      <member refid="classriptide__rviz_1_1MappingPanel_1afd01e96bf88a5920da9d13d57ae8ec8d" prot="public" virt="non-virtual"><scope>riptide_rviz::MappingPanel</scope><name>~MappingPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

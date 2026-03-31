@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="OverlayDisplay_8hpp" kind="file" language="C++">
+    <compoundname>OverlayDisplay.hpp</compoundname>
+    <includes local="no">OgreColourValue.h</includes>
+    <includes local="no">OgreMaterial.h</includes>
+    <includes local="no">rviz_common/properties/enum_property.hpp</includes>
+    <includes local="no">rviz_common/properties/int_property.hpp</includes>
+    <includes local="no">rviz_common/display.hpp</includes>
+    <includes local="no">std_msgs/msg/color_rgba.h</includes>
+    <includes local="yes">riptide_rviz/overlay_utils.hpp</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/OverlayDisplay.hpp</label>
+        <link refid="OverlayDisplay_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>OgreColourValue.h</label>
+      </node>
+      <node id="3">
+        <label>OgreMaterial.h</label>
+      </node>
+      <node id="8">
+        <label>riptide_rviz/overlay_utils.hpp</label>
+      </node>
+      <node id="6">
+        <label>rviz_common/display.hpp</label>
+      </node>
+      <node id="4">
+        <label>rviz_common/properties/enum_property.hpp</label>
+      </node>
+      <node id="5">
+        <label>rviz_common/properties/int_property.hpp</label>
+      </node>
+      <node id="7">
+        <label>std_msgs/msg/color_rgba.h</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structriptide__rviz_1_1PaintedTextConfig" prot="public">riptide_rviz::PaintedTextConfig</innerclass>
+    <innerclass refid="structriptide__rviz_1_1PaintedCircleConfig" prot="public">riptide_rviz::PaintedCircleConfig</innerclass>
+    <innerclass refid="structriptide__rviz_1_1PaintedArcConfig" prot="public">riptide_rviz::PaintedArcConfig</innerclass>
+    <innerclass refid="classriptide__rviz_1_1OverlayDisplay" prot="public">riptide_rviz::OverlayDisplay</innerclass>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>-*-<sp/>mode:<sp/>c++;<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*********************************************************************</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Software<sp/>License<sp/>Agreement<sp/>(BSD<sp/>License)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>(c)<sp/>2022,<sp/>Team<sp/>Spatzenhirn</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/>(c)<sp/>2014,<sp/>JSK<sp/>Lab</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/o2r<sp/>other<sp/>materials<sp/>provided</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>JSK<sp/>Lab<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/>COPYRIGHT<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>Q_MOC_RUN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;OgreColourValue.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;OgreMaterial.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;rviz_common/properties/enum_property.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;rviz_common/properties/int_property.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;rviz_common/display.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;std_msgs/msg/color_rgba.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;riptide_rviz/overlay_utils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="structriptide__rviz_1_1PaintedTextConfig" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="54" refid="structriptide__rviz_1_1PaintedTextConfig_1a4f36370744ac49db12838bc2e4618173" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1a3ab5ada5c63f0d3bb1800f2f4f7a5147" kindref="member">x_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1a7cad4071631fb276777243cc4b23ab42" kindref="member">y_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1a4f36370744ac49db12838bc2e4618173" kindref="member">height_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1acc789012a9dc1875662970a6abef758e" kindref="member">width_</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structriptide__rviz_1_1PaintedTextConfig_1a83832f17e7dd665a06e42589a5d0739c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1ab1fb3f43cd118edc0d1815559ff06ae6" kindref="member">text_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1a83832f17e7dd665a06e42589a5d0739c" kindref="member">font_name_</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structriptide__rviz_1_1PaintedTextConfig_1a258d073c3d5d461bc87ac00736624247" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1a258d073c3d5d461bc87ac00736624247" kindref="member">invert_shadow_</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structriptide__rviz_1_1PaintedTextConfig_1a5f48c27c3ee3d41b8a47a23607432487" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1a7f1f829b5a952727d5fa5846a25e3890" kindref="member">line_width_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1a5f48c27c3ee3d41b8a47a23607432487" kindref="member">font_size_</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structriptide__rviz_1_1PaintedTextConfig_1aeee0b78380421f6401b6fc69819d42f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig_1aeee0b78380421f6401b6fc69819d42f0" kindref="member">text_color_</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structriptide__rviz_1_1PaintedCircleConfig" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="62" refid="structriptide__rviz_1_1PaintedCircleConfig_1a4627abe2b6b3ddf3e70f53a61f821038" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1a5d78d41dbdf0f01ed5a9eef64daf000b" kindref="member">x_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1af2a9e4c2b12ca484f2ade54c45515c7d" kindref="member">y_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1a4627abe2b6b3ddf3e70f53a61f821038" kindref="member">height_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1a1ccf95689a73474278997e03c0def3d2" kindref="member">width_</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structriptide__rviz_1_1PaintedCircleConfig_1ac8467b60d5e4cd7eecd5603b789ed26f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1ac8467b60d5e4cd7eecd5603b789ed26f" kindref="member">inner_radius_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1a6a03ec413283fa27316ca13488e0e224" kindref="member">outer_radius_</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structriptide__rviz_1_1PaintedCircleConfig_1a9b3e44323ee6310f0ee3cada6882d049" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1a9b3e44323ee6310f0ee3cada6882d049" kindref="member">inner_color_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig_1a29b15631f5409d543d0137cb7b0eb794" kindref="member">outer_color_</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="structriptide__rviz_1_1PaintedArcConfig" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref><sp/>{</highlight></codeline>
+<codeline lineno="68" refid="structriptide__rviz_1_1PaintedArcConfig_1a96ca98327193943184078d66bfc08373" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig_1a96ca98327193943184078d66bfc08373" kindref="member">x_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig_1a8f4e42800b8c86a2febf81fd889d4680" kindref="member">y_</ref>;</highlight></codeline>
+<codeline lineno="69" refid="structriptide__rviz_1_1PaintedArcConfig_1a7d54d49d69a1406c6e148a22b363a7f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig_1a7d54d49d69a1406c6e148a22b363a7f8" kindref="member">radius_</ref>;</highlight></codeline>
+<codeline lineno="70" refid="structriptide__rviz_1_1PaintedArcConfig_1a6be69bf4a762d3c096c28613bc36ba6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig_1a64bc9e1be4fb527e9bf908b954d3080a" kindref="member">start_angle_</ref>,<sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig_1a6be69bf4a762d3c096c28613bc36ba6b" kindref="member">end_angle_</ref>;</highlight></codeline>
+<codeline lineno="71" refid="structriptide__rviz_1_1PaintedArcConfig_1ab2bcd7d7d1c8981aae47bf6c8496c1d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig_1ab2bcd7d7d1c8981aae47bf6c8496c1d3" kindref="member">line_width_</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structriptide__rviz_1_1PaintedArcConfig_1a9fee62a59f39757c16cf0bddf010804c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig_1a9fee62a59f39757c16cf0bddf010804c" kindref="member">line_color_</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classriptide__rviz_1_1OverlayDisplay" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1OverlayDisplay_1af529b58aadee394e9cec33e986b98e26" kindref="member">OverlayDisplay</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Display<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1af529b58aadee394e9cec33e986b98e26" kindref="member">OverlayDisplay</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a1928962ebd0d5a0f19ac0c14a51006a9" kindref="member">~OverlayDisplay</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a732837b5077e87b7100bb33b7d52e4f5" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1addf948ea0716a78cf677168ca44a90a7" kindref="member">onEnable</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a65221c0ba23ef36ae59869b7e22cc167" kindref="member">onDisable</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a24754fff0586b23f33cba71a7a6cc719" kindref="member">update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wall_dt,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ros_dt)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1ab1b5a83f4cdcfb3917ca6997c36f32be" kindref="member">reset</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>methods<sp/>to<sp/>add<sp/>text<sp/>and<sp/>shapes<sp/>to<sp/>the<sp/>renderer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1aecbe546f443e667ac754004b704c56e8" kindref="member">addText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref><sp/>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1aca48725eda4d6bc1caa0d365fff0807b" kindref="member">addCircle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref><sp/>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1aed871da258a54a610670118d31649eb2" kindref="member">addArc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>methods<sp/>to<sp/>update<sp/>text<sp/>and<sp/>shape<sp/>overlays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1af9a4dffd32763ec136e844cdacfee128" kindref="member">updateText</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref><sp/>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" kindref="member">updateCircle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref><sp/>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1acfa621ee1a30205cdcd5887629b32d61" kindref="member">updateArc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref>&amp;<sp/>config);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a22e728f74781365277d71c54bee266fa" kindref="member">clearElements</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>helper<sp/>functions<sp/>for<sp/>drawing<sp/>text<sp/>and<sp/>other<sp/>things<sp/>on<sp/>the<sp/>base<sp/>figure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1af2f9b3bc7ca3290f389d647aa16db6fc" kindref="member">paintText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref><sp/>&amp;<sp/>config,<sp/>QPainter<sp/>&amp;<sp/>painter);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a284b7e0532feef0813345fdd476a1769" kindref="member">paintCircle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref><sp/>&amp;<sp/>config,<sp/>QPainter<sp/>&amp;<sp/>painter);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" kindref="member">paintArc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref><sp/>&amp;<sp/>config,<sp/>QPainter<sp/>&amp;<sp/>painter);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classriptide__rviz_1_1OverlayDisplay_1a6ed40c4dc1811a46dde9d0d4b0ea8a10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1ac5ed893b3416917220d93a49726c1435" kindref="member">OverlayObject::SharedPtr</ref><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a6ed40c4dc1811a46dde9d0d4b0ea8a10" kindref="member">overlay_</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classriptide__rviz_1_1OverlayDisplay_1aea8df69c163017717536f57127de7762" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1aea8df69c163017717536f57127de7762" kindref="member">texture_width_</ref>;</highlight></codeline>
+<codeline lineno="108" refid="classriptide__rviz_1_1OverlayDisplay_1a3d5896f44054cfa74b25425b4421a60f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a3d5896f44054cfa74b25425b4421a60f" kindref="member">texture_height_</ref>;</highlight></codeline>
+<codeline lineno="109" refid="classriptide__rviz_1_1OverlayDisplay_1a7b6d9e51a30119d39f1f57bf3d179659" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a7b6d9e51a30119d39f1f57bf3d179659" kindref="member">horizontal_dist_</ref>;</highlight></codeline>
+<codeline lineno="110" refid="classriptide__rviz_1_1OverlayDisplay_1a9dc6a2cc1a854cf272fe0b7f6f9151c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a9dc6a2cc1a854cf272fe0b7f6f9151c6" kindref="member">vertical_dist_</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classriptide__rviz_1_1OverlayDisplay_1a0b781425edf4c1aee8b4fd8a1348f771" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232e" kindref="member">HorizontalAlignment</ref><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a0b781425edf4c1aee8b4fd8a1348f771" kindref="member">horizontal_alignment_</ref>;</highlight></codeline>
+<codeline lineno="113" refid="classriptide__rviz_1_1OverlayDisplay_1a6e958f426fe54da882a4cbe058505a7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966c" kindref="member">VerticalAlignment</ref><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a6e958f426fe54da882a4cbe058505a7f" kindref="member">vertical_alignment_</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="classriptide__rviz_1_1OverlayDisplay_1ae1b321ce055476fa1f24f857489a99fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QColor<sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1ae1b321ce055476fa1f24f857489a99fd" kindref="member">bg_color_</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classriptide__rviz_1_1OverlayDisplay_1a965f46638b0a64236643f0365cf71151" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a965f46638b0a64236643f0365cf71151" kindref="member">require_update_texture_</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>properties<sp/>are<sp/>raw<sp/>pointers<sp/>since<sp/>they<sp/>are<sp/>owned<sp/>by<sp/>Qt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classriptide__rviz_1_1OverlayDisplay_1ac2da97cf06476ff41c2bf39424fe66b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::properties::IntProperty<sp/>*<ref refid="classriptide__rviz_1_1OverlayDisplay_1ac2da97cf06476ff41c2bf39424fe66b6" kindref="member">hor_dist_property_</ref>;</highlight></codeline>
+<codeline lineno="120" refid="classriptide__rviz_1_1OverlayDisplay_1a4907047b687607796cb3414a1f1ec652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::properties::IntProperty<sp/>*<ref refid="classriptide__rviz_1_1OverlayDisplay_1a4907047b687607796cb3414a1f1ec652" kindref="member">ver_dist_property_</ref>;</highlight></codeline>
+<codeline lineno="121" refid="classriptide__rviz_1_1OverlayDisplay_1ae0ce503355fa14eb37ee829152ff56d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::properties::EnumProperty<sp/>*<ref refid="classriptide__rviz_1_1OverlayDisplay_1ae0ce503355fa14eb37ee829152ff56d4" kindref="member">hor_alignment_property_</ref>;</highlight></codeline>
+<codeline lineno="122" refid="classriptide__rviz_1_1OverlayDisplay_1a6bf26abf024f95770192be59ce011450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::properties::EnumProperty<sp/>*<ref refid="classriptide__rviz_1_1OverlayDisplay_1a6bf26abf024f95770192be59ce011450" kindref="member">ver_alignment_property_</ref>;</highlight></codeline>
+<codeline lineno="123" refid="classriptide__rviz_1_1OverlayDisplay_1a8f9aa6ae9bc5c43e3850a29ad87da7ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::properties::IntProperty<sp/>*<ref refid="classriptide__rviz_1_1OverlayDisplay_1a8f9aa6ae9bc5c43e3850a29ad87da7ae" kindref="member">width_property_</ref>;</highlight></codeline>
+<codeline lineno="124" refid="classriptide__rviz_1_1OverlayDisplay_1ae0267918db2b3a8fce9789e61d463677" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::properties::IntProperty<sp/>*<ref refid="classriptide__rviz_1_1OverlayDisplay_1ae0267918db2b3a8fce9789e61d463677" kindref="member">height_property_</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>vectors<sp/>for<sp/>holding<sp/>each<sp/>of<sp/>the<sp/>object<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classriptide__rviz_1_1OverlayDisplay_1ab3925ea3b1df4b99b72848ed2ca51f67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;PaintedTextConfig&gt;<sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1ab3925ea3b1df4b99b72848ed2ca51f67" kindref="member">text_vector_</ref>;</highlight></codeline>
+<codeline lineno="128" refid="classriptide__rviz_1_1OverlayDisplay_1a0baeb43bc48247fab72d1b1066dcaf24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;PaintedCircleConfig&gt;<sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a0baeb43bc48247fab72d1b1066dcaf24" kindref="member">circle_vector_</ref>;</highlight></codeline>
+<codeline lineno="129" refid="classriptide__rviz_1_1OverlayDisplay_1a99566ce2ff9a592bb659801f85830029" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;PaintedArcConfig&gt;<sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a99566ce2ff9a592bb659801f85830029" kindref="member">arc_vector_</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>Q_SLOTS:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a2fb969ae414a906617d1635307539e66" kindref="member">updateHorizontalDistance</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a0a7ed22bfd2fb73174f893dfa42bb7d1" kindref="member">updateVerticalDistance</ref>();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1ad0efd6f3d3a33cf40ddd57c76b063715" kindref="member">updateHorizontalAlignment</ref>();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a555a4e80b0a7ff8242b6458a08eb4081" kindref="member">updateVerticalAlignment</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1aff2c0254899f0588824b78c28acc2911" kindref="member">updateWidth</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayDisplay_1a7d0b057fae2fe4717d9ef9bc8c1cc0a9" kindref="member">updateHeight</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>riptide_rviz</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/OverlayDisplay.hpp"/>
+  </compounddef>
+</doxygen>

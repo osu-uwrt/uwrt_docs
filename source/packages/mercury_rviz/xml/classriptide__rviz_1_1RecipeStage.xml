@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1RecipeStage" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::RecipeStage</compoundname>
+    <includes refid="bringup__recipe_8hpp" local="no">bringup_recipe.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1RecipeStage_1aae998005bae9f577e616ffb0d88a0d4a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::RecipeStage::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>riptide_rviz::RecipeStage::id</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="118" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1aca37cfa705525626ee03ba12eddbebff" compoundref="bringup__recipe_8cpp" startline="312" endline="399">riptide_rviz::Recipe::loadXml</referencedby>
+        <referencedby refid="classriptide__rviz_1_1RecipeStage_1ae6213e7f283f376882924752de727666" compoundref="bringup__recipe_8cpp" startline="136" endline="162">operator==</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1a50d2d50f6f102961aec3635c674153d2" compoundref="bringup__recipe_8cpp" startline="401" endline="488">riptide_rviz::Recipe::parseStageTag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1RecipeStage_1a7a2f6877fdecb91da31ec3215f4128b4" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; riptide_rviz::RecipeStage::dependencies</definition>
+        <argsstring></argsstring>
+        <name>dependencies</name>
+        <qualifiedname>riptide_rviz::RecipeStage::dependencies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="119" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1aca37cfa705525626ee03ba12eddbebff" compoundref="bringup__recipe_8cpp" startline="312" endline="399">riptide_rviz::Recipe::loadXml</referencedby>
+        <referencedby refid="classriptide__rviz_1_1RecipeStage_1ae6213e7f283f376882924752de727666" compoundref="bringup__recipe_8cpp" startline="136" endline="162">operator==</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1a995f7f9110a6ce69fbc2308f09eccb86" compoundref="bringup__recipe_8cpp" startline="490" endline="507">riptide_rviz::Recipe::parseDependencyTag</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1afa3b1cc515b271a3ccfe56164248c8c0" compoundref="bringup__recipe_8cpp" startline="607" endline="622">riptide_rviz::Recipe::walkDependencyTree</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1RecipeStage_1ac33d47613c2defdf45e487301b83af5f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; riptide_rviz::RecipeStage::launchIndicies</definition>
+        <argsstring></argsstring>
+        <name>launchIndicies</name>
+        <qualifiedname>riptide_rviz::RecipeStage::launchIndicies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="120" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1RecipeStage_1ae6213e7f283f376882924752de727666" compoundref="bringup__recipe_8cpp" startline="136" endline="162">operator==</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1a50d2d50f6f102961aec3635c674153d2" compoundref="bringup__recipe_8cpp" startline="401" endline="488">riptide_rviz::Recipe::parseStageTag</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1RecipeStage_1ae6213e7f283f376882924752de727666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::RecipeStage::operator==</definition>
+        <argsstring>(const RecipeStage &amp;)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>riptide_rviz::RecipeStage::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classriptide__rviz_1_1RecipeStage" kindref="compound">RecipeStage</ref> &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="122" column="14" bodyfile="src/bringup_recipe.cpp" bodystart="136" bodyend="162"/>
+        <references refid="classriptide__rviz_1_1RecipeStage_1a7a2f6877fdecb91da31ec3215f4128b4" compoundref="bringup__recipe_8hpp" startline="119">dependencies</references>
+        <references refid="classriptide__rviz_1_1RecipeStage_1aae998005bae9f577e616ffb0d88a0d4a" compoundref="bringup__recipe_8hpp" startline="118">id</references>
+        <references refid="classriptide__rviz_1_1RecipeStage_1ac33d47613c2defdf45e487301b83af5f" compoundref="bringup__recipe_8hpp" startline="120">launchIndicies</references>
+        <referencedby refid="classriptide__rviz_1_1RecipeStage_1a2ed4fa6588e2c415c1a67c92a2034637" compoundref="bringup__recipe_8cpp" startline="164" endline="166">operator!=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1RecipeStage_1a2ed4fa6588e2c415c1a67c92a2034637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::RecipeStage::operator!=</definition>
+        <argsstring>(const RecipeStage &amp;)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>riptide_rviz::RecipeStage::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classriptide__rviz_1_1RecipeStage" kindref="compound">RecipeStage</ref> &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="123" column="14" bodyfile="src/bringup_recipe.cpp" bodystart="164" bodyend="166"/>
+        <references refid="classriptide__rviz_1_1RecipeStage_1ae6213e7f283f376882924752de727666" compoundref="bringup__recipe_8cpp" startline="136" endline="162">operator==</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::RecipeStage</label>
+        <link refid="classriptide__rviz_1_1RecipeStage"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/bringup_recipe.hpp" line="116" column="5" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="116" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1RecipeStage_1a7a2f6877fdecb91da31ec3215f4128b4" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeStage</scope><name>dependencies</name></member>
+      <member refid="classriptide__rviz_1_1RecipeStage_1aae998005bae9f577e616ffb0d88a0d4a" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeStage</scope><name>id</name></member>
+      <member refid="classriptide__rviz_1_1RecipeStage_1ac33d47613c2defdf45e487301b83af5f" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeStage</scope><name>launchIndicies</name></member>
+      <member refid="classriptide__rviz_1_1RecipeStage_1a2ed4fa6588e2c415c1a67c92a2034637" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeStage</scope><name>operator!=</name></member>
+      <member refid="classriptide__rviz_1_1RecipeStage_1ae6213e7f283f376882924752de727666" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeStage</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

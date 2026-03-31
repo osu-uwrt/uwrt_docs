@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structriptide__rviz_1_1RecipeXMLError" kind="struct" language="C++" prot="public">
+    <compoundname>riptide_rviz::RecipeXMLError</compoundname>
+    <includes refid="bringup__recipe_8hpp" local="no">bringup_recipe.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structriptide__rviz_1_1RecipeXMLError_1a8a9ee41f7ed972da099519de02d03ded" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504" kindref="member">RecipeXMLErrorCode</ref></type>
+        <definition>RecipeXMLErrorCode riptide_rviz::RecipeXMLError::errorCode</definition>
+        <argsstring></argsstring>
+        <name>errorCode</name>
+        <qualifiedname>riptide_rviz::RecipeXMLError::errorCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="65" column="28" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="namespaceriptide__rviz_1a56de28a3c9cfd5a5e56fea0fa28d7213" compoundref="bringup__recipe_8cpp" startline="168" endline="279">riptide_rviz::getRecipeXMLErrorMessage</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Bag_1af70042e799c7782b96f4a20c24a066f4" compoundref="bringup__recipe_8cpp" startline="678" endline="741">riptide_rviz::Bag::loadXml</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1aca37cfa705525626ee03ba12eddbebff" compoundref="bringup__recipe_8cpp" startline="312" endline="399">riptide_rviz::Recipe::loadXml</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Recipe_1a50d2d50f6f102961aec3635c674153d2" compoundref="bringup__recipe_8cpp" startline="401" endline="488">riptide_rviz::Recipe::parseStageTag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1RecipeXMLError_1abc22c0055594bf59c54b01853fc8197b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::RecipeXMLError::lineNumber</definition>
+        <argsstring></argsstring>
+        <name>lineNumber</name>
+        <qualifiedname>riptide_rviz::RecipeXMLError::lineNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="66" column="13" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="66" bodyend="-1"/>
+        <referencedby refid="namespaceriptide__rviz_1a56de28a3c9cfd5a5e56fea0fa28d7213" compoundref="bringup__recipe_8cpp" startline="168" endline="279">riptide_rviz::getRecipeXMLErrorMessage</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::RecipeXMLError</label>
+        <link refid="structriptide__rviz_1_1RecipeXMLError"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/bringup_recipe.hpp" line="64" column="5" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="64" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structriptide__rviz_1_1RecipeXMLError_1a8a9ee41f7ed972da099519de02d03ded" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeXMLError</scope><name>errorCode</name></member>
+      <member refid="structriptide__rviz_1_1RecipeXMLError_1abc22c0055594bf59c54b01853fc8197b" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeXMLError</scope><name>lineNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structriptide__rviz_1_1RecipeTopicData" kind="struct" language="C++" prot="public">
+    <compoundname>riptide_rviz::RecipeTopicData</compoundname>
+    <includes refid="bringup__recipe_8hpp" local="no">bringup_recipe.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structriptide__rviz_1_1RecipeTopicData_1a47bfa599eba2d0869521a9d7643b3078" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::RecipeTopicData::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>riptide_rviz::RecipeTopicData::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="77" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="77" bodyend="-1"/>
+        <referencedby refid="structriptide__rviz_1_1RecipeTopicData_1ac8a8d281bf988c97e09a33828f6e2636" compoundref="bringup__recipe_8cpp" startline="13" endline="17">operator==</referencedby>
+        <referencedby refid="structriptide__rviz_1_1RecipeTopicData_1aba4fd0568372880c3a3808c7d0ab7076" compoundref="bringup__recipe_8cpp" startline="23" endline="70">parseXml</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1RecipeTopicData_1af30af1fef56c7f92b6fdb5542e0a54fd" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::RecipeTopicData::type_name</definition>
+        <argsstring></argsstring>
+        <name>type_name</name>
+        <qualifiedname>riptide_rviz::RecipeTopicData::type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="78" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="78" bodyend="-1"/>
+        <referencedby refid="structriptide__rviz_1_1RecipeTopicData_1ac8a8d281bf988c97e09a33828f6e2636" compoundref="bringup__recipe_8cpp" startline="13" endline="17">operator==</referencedby>
+        <referencedby refid="structriptide__rviz_1_1RecipeTopicData_1aba4fd0568372880c3a3808c7d0ab7076" compoundref="bringup__recipe_8cpp" startline="23" endline="70">parseXml</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1RecipeTopicData_1adb702ff2126ec01fdb9f712392fe60d7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::RecipeTopicData::qos_type</definition>
+        <argsstring></argsstring>
+        <name>qos_type</name>
+        <qualifiedname>riptide_rviz::RecipeTopicData::qos_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="79" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="79" bodyend="-1"/>
+        <referencedby refid="structriptide__rviz_1_1RecipeTopicData_1ac8a8d281bf988c97e09a33828f6e2636" compoundref="bringup__recipe_8cpp" startline="13" endline="17">operator==</referencedby>
+        <referencedby refid="structriptide__rviz_1_1RecipeTopicData_1aba4fd0568372880c3a3808c7d0ab7076" compoundref="bringup__recipe_8cpp" startline="23" endline="70">parseXml</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structriptide__rviz_1_1RecipeTopicData_1aba4fd0568372880c3a3808c7d0ab7076" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structriptide__rviz_1_1RecipeXMLError" kindref="compound">RecipeXMLError</ref></type>
+        <definition>RecipeXMLError riptide_rviz::RecipeTopicData::parseXml</definition>
+        <argsstring>(const tinyxml2::XMLElement *topicXML, RecipeTopicData &amp;launch)</argsstring>
+        <name>parseXml</name>
+        <qualifiedname>riptide_rviz::RecipeTopicData::parseXml</qualifiedname>
+        <param>
+          <type>const tinyxml2::XMLElement *</type>
+          <declname>topicXML</declname>
+        </param>
+        <param>
+          <type><ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &amp;</type>
+          <declname>launch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="81" column="31" bodyfile="src/bringup_recipe.cpp" bodystart="23" bodyend="70"/>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504afc7ee18b3b6c6207accb48d1296482cd" compoundref="bringup__recipe_8hpp" startline="44">riptide_rviz::INVALID_QOS_TYPE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a62ace0f8c3665c56e5f1564a53a48134" compoundref="bringup__recipe_8hpp" startline="37">riptide_rviz::MISSING_NAME_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aafb1386be3abe42984665a5f1ff04858" compoundref="bringup__recipe_8hpp" startline="43">riptide_rviz::MISSING_QOS_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a43764bf552a769f15e2ca7d15174580b" compoundref="bringup__recipe_8hpp" startline="42">riptide_rviz::MISSING_TYPE_ATTRIBUTE</references>
+        <references refid="structriptide__rviz_1_1RecipeTopicData_1a47bfa599eba2d0869521a9d7643b3078" compoundref="bringup__recipe_8hpp" startline="77">name</references>
+        <references refid="structriptide__rviz_1_1RecipeTopicData_1adb702ff2126ec01fdb9f712392fe60d7" compoundref="bringup__recipe_8hpp" startline="79">qos_type</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad0749aaba8b833466dfcbb0428e4f89c" compoundref="bringup__recipe_8hpp" startline="14">riptide_rviz::SUCCESS</references>
+        <references refid="structriptide__rviz_1_1RecipeTopicData_1af30af1fef56c7f92b6fdb5542e0a54fd" compoundref="bringup__recipe_8hpp" startline="78">type_name</references>
+        <referencedby refid="classriptide__rviz_1_1Bag_1ae0847c9eea1b7c0b4dda726f0a6b1122" compoundref="bringup__recipe_8cpp" startline="743" endline="783">riptide_rviz::Bag::parseBagTag</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structriptide__rviz_1_1RecipeTopicData_1ac8a8d281bf988c97e09a33828f6e2636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::RecipeTopicData::operator==</definition>
+        <argsstring>(const RecipeTopicData &amp;)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>riptide_rviz::RecipeTopicData::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="83" column="14" bodyfile="src/bringup_recipe.cpp" bodystart="13" bodyend="17"/>
+        <references refid="structriptide__rviz_1_1RecipeTopicData_1a47bfa599eba2d0869521a9d7643b3078" compoundref="bringup__recipe_8hpp" startline="77">name</references>
+        <references refid="structriptide__rviz_1_1RecipeTopicData_1adb702ff2126ec01fdb9f712392fe60d7" compoundref="bringup__recipe_8hpp" startline="79">qos_type</references>
+        <references refid="structriptide__rviz_1_1RecipeTopicData_1af30af1fef56c7f92b6fdb5542e0a54fd" compoundref="bringup__recipe_8hpp" startline="78">type_name</references>
+        <referencedby refid="structriptide__rviz_1_1RecipeTopicData_1a94543ea446ede0195dc1b512b8a4c526" compoundref="bringup__recipe_8cpp" startline="19" endline="21">operator!=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structriptide__rviz_1_1RecipeTopicData_1a94543ea446ede0195dc1b512b8a4c526" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::RecipeTopicData::operator!=</definition>
+        <argsstring>(const RecipeTopicData &amp;)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>riptide_rviz::RecipeTopicData::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="84" column="14" bodyfile="src/bringup_recipe.cpp" bodystart="19" bodyend="21"/>
+        <references refid="structriptide__rviz_1_1RecipeTopicData_1ac8a8d281bf988c97e09a33828f6e2636" compoundref="bringup__recipe_8cpp" startline="13" endline="17">operator==</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::RecipeTopicData</label>
+        <link refid="structriptide__rviz_1_1RecipeTopicData"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/bringup_recipe.hpp" line="76" column="5" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="76" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structriptide__rviz_1_1RecipeTopicData_1a47bfa599eba2d0869521a9d7643b3078" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeTopicData</scope><name>name</name></member>
+      <member refid="structriptide__rviz_1_1RecipeTopicData_1a94543ea446ede0195dc1b512b8a4c526" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeTopicData</scope><name>operator!=</name></member>
+      <member refid="structriptide__rviz_1_1RecipeTopicData_1ac8a8d281bf988c97e09a33828f6e2636" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeTopicData</scope><name>operator==</name></member>
+      <member refid="structriptide__rviz_1_1RecipeTopicData_1aba4fd0568372880c3a3808c7d0ab7076" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeTopicData</scope><name>parseXml</name></member>
+      <member refid="structriptide__rviz_1_1RecipeTopicData_1adb702ff2126ec01fdb9f712392fe60d7" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeTopicData</scope><name>qos_type</name></member>
+      <member refid="structriptide__rviz_1_1RecipeTopicData_1af30af1fef56c7f92b6fdb5542e0a54fd" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeTopicData</scope><name>type_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

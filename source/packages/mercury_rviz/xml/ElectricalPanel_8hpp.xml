@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="ElectricalPanel_8hpp" kind="file" language="C++">
+    <compoundname>ElectricalPanel.hpp</compoundname>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">rclcpp_action/rclcpp_action.hpp</includes>
+    <includes local="no">rviz_common/panel.hpp</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">std_msgs/msg/u_int8.hpp</includes>
+    <includes local="no">riptide_msgs2/msg/electrical_command.hpp</includes>
+    <includes local="no">riptide_msgs2/msg/imu_config.hpp</includes>
+    <includes local="no">riptide_msgs2/action/mag_cal.hpp</includes>
+    <includes local="no">riptide_msgs2/action/tare_gyro.hpp</includes>
+    <includes local="no">riptide_msgs2/action/depressurize.hpp</includes>
+    <includes local="no">riptide_msgs2/srv/query_imu_serial.hpp</includes>
+    <includes local="no">riptide_msgs2/msg/u_int8_stamped.hpp</includes>
+    <includes local="yes">ui_ElectricalPanel.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/ElectricalPanel.hpp</label>
+        <link refid="ElectricalPanel_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QTimer</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="3">
+        <label>rclcpp_action/rclcpp_action.hpp</label>
+      </node>
+      <node id="11">
+        <label>riptide_msgs2/action/depressurize.hpp</label>
+      </node>
+      <node id="9">
+        <label>riptide_msgs2/action/mag_cal.hpp</label>
+      </node>
+      <node id="10">
+        <label>riptide_msgs2/action/tare_gyro.hpp</label>
+      </node>
+      <node id="7">
+        <label>riptide_msgs2/msg/electrical_command.hpp</label>
+      </node>
+      <node id="8">
+        <label>riptide_msgs2/msg/imu_config.hpp</label>
+      </node>
+      <node id="13">
+        <label>riptide_msgs2/msg/u_int8_stamped.hpp</label>
+      </node>
+      <node id="12">
+        <label>riptide_msgs2/srv/query_imu_serial.hpp</label>
+      </node>
+      <node id="4">
+        <label>rviz_common/panel.hpp</label>
+      </node>
+      <node id="6">
+        <label>std_msgs/msg/u_int8.hpp</label>
+      </node>
+      <node id="14">
+        <label>ui_ElectricalPanel.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classriptide__rviz_1_1ElectricalPanel" prot="public">riptide_rviz::ElectricalPanel</innerclass>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp_action/rclcpp_action.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/u_int8.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/electrical_command.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/imu_config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/action/mag_cal.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/action/tare_gyro.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/action/depressurize.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/srv/query_imu_serial.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/u_int8_stamped.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_ElectricalPanel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/></highlight></codeline>
+<codeline lineno="23" refid="namespaceriptide__rviz_1a0e617066bcbfd363db0eb468263652f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a0e617066bcbfd363db0eb468263652f1" kindref="member">MAG_CAL_ACTION_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/vectornav/mag_cal&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="24" refid="namespaceriptide__rviz_1abce270f6e99a170059ff600c91dc3794" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1abce270f6e99a170059ff600c91dc3794" kindref="member">TARE_GYRO_ACTION_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/gyro/tare&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25" refid="namespaceriptide__rviz_1a7f0faa3566a90c0cb19b4ef5b0c43c92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a7f0faa3566a90c0cb19b4ef5b0c43c92" kindref="member">DEPRESSURIZE_ACTION_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/depressurize&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="26" refid="namespaceriptide__rviz_1ab68f454850ebf42929ea794095f43150" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1ab68f454850ebf42929ea794095f43150" kindref="member">CONFIG_SERVICE_NAME</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/vectornav/config&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classriptide__rviz_1_1ElectricalPanel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1ae0f4395fe5377cd0c384516c02561246" kindref="member">ElectricalPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="classriptide__rviz_1_1ElectricalPanel_1a42706af4f271b50e182540abdc9e3b7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1a42706af4f271b50e182540abdc9e3b7a" kindref="member">MagCal</ref><sp/>=<sp/>riptide_msgs2::action::MagCal;</highlight></codeline>
+<codeline lineno="31" refid="classriptide__rviz_1_1ElectricalPanel_1a71fd7430fc113b3a386cb78f636f1b7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1a71fd7430fc113b3a386cb78f636f1b7e" kindref="member">MagSendGoalOptions</ref><sp/>=<sp/>rclcpp_action::Client&lt;MagCal&gt;::SendGoalOptions;</highlight></codeline>
+<codeline lineno="32" refid="classriptide__rviz_1_1ElectricalPanel_1ac63699e44f7244bec2767ee540dfd59c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1ac63699e44f7244bec2767ee540dfd59c" kindref="member">MagGoalHandle</ref><sp/>=<sp/>rclcpp_action::Client&lt;MagCal&gt;::GoalHandle;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classriptide__rviz_1_1ElectricalPanel_1a4d99d51043a2bdab0a276b5b94f876c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1a4d99d51043a2bdab0a276b5b94f876c8" kindref="member">TareGyro</ref><sp/>=<sp/>riptide_msgs2::action::TareGyro;</highlight></codeline>
+<codeline lineno="35" refid="classriptide__rviz_1_1ElectricalPanel_1aae3bd71412c2982099a367813139e6da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1aae3bd71412c2982099a367813139e6da" kindref="member">TareGyroSendGoalOptions</ref><sp/>=<sp/>rclcpp_action::Client&lt;TareGyro&gt;::SendGoalOptions;</highlight></codeline>
+<codeline lineno="36" refid="classriptide__rviz_1_1ElectricalPanel_1a72ae869fe19bfa0e3f3a2eb8535dff21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1a72ae869fe19bfa0e3f3a2eb8535dff21" kindref="member">TareGyroGoalHandle</ref><sp/>=<sp/>rclcpp_action::Client&lt;TareGyro&gt;::GoalHandle;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classriptide__rviz_1_1ElectricalPanel_1aabff016621f680d313f37c2680905974" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1aabff016621f680d313f37c2680905974" kindref="member">Depressurize</ref><sp/>=<sp/>riptide_msgs2::action::Depressurize;</highlight></codeline>
+<codeline lineno="39" refid="classriptide__rviz_1_1ElectricalPanel_1afd734d98feebde3f7de4a802857e320e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1afd734d98feebde3f7de4a802857e320e" kindref="member">DepressurizeSendGoalOptions</ref><sp/>=<sp/>rclcpp_action::Client&lt;Depressurize&gt;::SendGoalOptions;</highlight></codeline>
+<codeline lineno="40" refid="classriptide__rviz_1_1ElectricalPanel_1a69775b73e20b140c6a4483e0a313df3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1a69775b73e20b140c6a4483e0a313df3f" kindref="member">DepressurizeGoalHandle</ref><sp/>=<sp/>rclcpp_action::Client&lt;Depressurize&gt;::GoalHandle;</highlight></codeline>
+<codeline lineno="41" refid="classriptide__rviz_1_1ElectricalPanel_1a3a25f73cf4848353577ebe7f461f56d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ElectricalPanel_1a3a25f73cf4848353577ebe7f461f56d1" kindref="member">ImuConfig</ref><sp/>=<sp/>riptide_msgs2::srv::QueryImuSerial;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ae0f4395fe5377cd0c384516c02561246" kindref="member">ElectricalPanel</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a3f2d17f41f3c7503021ca6efbfd37f74" kindref="member">~ElectricalPanel</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a27c801330c3fbb9455bd298ecbdd435e" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Q_SLOTS:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" kindref="member">sendElectricalCommand</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" kindref="member">sendDepressurizationCommand</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" kindref="member">sendMagCal</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" kindref="member">sendTareGyro</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ab846c93acf054e2215ffb98ff84d3f52" kindref="member">sendIvcMsg</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a4f58270dd9e60d55a94f8e5e1a89032d" kindref="member">writeIMU</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ae2d2ff76c6f5be806114c16d3505ed87" kindref="member">readIMU</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a46cc4f3833bc0855fde8f64a8622f6a8" kindref="member">saveImuSettings</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" kindref="member">setStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>status,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>error);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ace53eb113cb7eafe703bf02f5e3addaf" kindref="member">appendIvcConsole</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>prefix,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a92fe42add9ff346fe2cb9643411ebbf6" kindref="member">magCalGoalResponseCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MagGoalHandle::SharedPtr<sp/>&amp;<sp/>goal_handle);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ae16857fa91a48f7e88e1c48d6874abd2" kindref="member">magCalFeedbackCb</ref>(</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MagGoalHandle::SharedPtr,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;const<sp/>MagCal::Feedback&gt;<sp/>feedback);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1af5d1c91389a0584566581c44993415a2" kindref="member">magCalResultCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MagGoalHandle::WrappedResult<sp/>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1af8523a16bbe585be5388ac6c02de24be" kindref="member">ivcTxCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::UInt8::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a08a5a264ac5a2cad75815e5df1c09a68" kindref="member">ivcRxCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::UInt8::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a392fbaf09adac9c6ca783c4e7d774d93" kindref="member">ivcTxSuccessCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::UInt8Stamped::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a03389f4c20be768c617fe62d77928079" kindref="member">tareGyroGoalResponseCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TareGyroGoalHandle::SharedPtr<sp/>&amp;<sp/>goal_handle);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a986dda3a62c5ef0646c96809194441cc" kindref="member">tareGyroResultCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TareGyroGoalHandle::WrappedResult<sp/>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a7e5242a8ed4d93d835e0a3ccbb5bb8c3" kindref="member">depressurizeGoalResponseCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DepressurizeGoalHandle::SharedPtr<sp/>&amp;<sp/>goal_handle);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1abfe3e2144280f7d8eb014c65b8a36592" kindref="member">depressurizeFeedbackCb</ref>(DepressurizeGoalHandle::SharedPtr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;const<sp/>Depressurize::Feedback&gt;<sp/>feedback);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a3bfaf6fa60b7b9366774b4fd04b01a87" kindref="member">depressurizeResultCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DepressurizeGoalHandle::WrappedResult<sp/>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="82" refid="classriptide__rviz_1_1ElectricalPanel_1aa9039bd90d7cd2a3e50f7d7d0bc409b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Qt::CheckState<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1aa9039bd90d7cd2a3e50f7d7d0bc409b1" kindref="member">processCheckState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="classriptide__rviz_1_1ElectricalPanel_1ae34aeee1b078c96425c9d0acf6d7d3f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ae34aeee1b078c96425c9d0acf6d7d3f6" kindref="member">resultCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MagGoalHandle::WrappedResult<sp/>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" kindref="member">sendIMUConfigRequest</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>request,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>extResponseTime<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" kindref="member">waitForConfig</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>extResponseTime<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>electrical<sp/>command<sp/>vars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" kindref="member">loaded</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93" refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ui_ElectricalPanel<sp/>*<ref refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="94" refid="classriptide__rviz_1_1ElectricalPanel_1a662aa2d8e8a334e9f64c7a6470b04fc0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a662aa2d8e8a334e9f64c7a6470b04fc0" kindref="member">robotNs</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mag<sp/>cal<sp/>vars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="98" refid="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" kindref="member">imuCalInProgress</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99" refid="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" kindref="member">gyroTareInProgress</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="100" refid="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" kindref="member">depressurizationInProgress</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="classriptide__rviz_1_1ElectricalPanel_1ac86452e49e01ec079af74cbefe1aeb1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ac86452e49e01ec079af74cbefe1aeb1d" kindref="member">maxVar</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="103" refid="classriptide__rviz_1_1ElectricalPanel_1aae301ecad733707f1a015fc663bf74c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1aae301ecad733707f1a015fc663bf74c3" kindref="member">netDepressurization</ref><sp/>=<sp/>100000;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Continuous<sp/>mag<sp/>cal<sp/>vars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classriptide__rviz_1_1ElectricalPanel_1a4e9dfca9592e615eb32a3db86bb42037" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a4e9dfca9592e615eb32a3db86bb42037" kindref="member">imuHsiEnable</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107" refid="classriptide__rviz_1_1ElectricalPanel_1a592a87ee6013211af054217401ea4121" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a592a87ee6013211af054217401ea4121" kindref="member">imuHsiOutput</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108" refid="classriptide__rviz_1_1ElectricalPanel_1af2938e88dddfc6da3eecb0bd88b60a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1af2938e88dddfc6da3eecb0bd88b60a3b" kindref="member">imuConvergenceRate</ref><sp/>=<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classriptide__rviz_1_1ElectricalPanel_1a1ab6a06211eddbe581eecdb6e1cba526" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;riptide_msgs2::msg::ElectricalCommand&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a1ab6a06211eddbe581eecdb6e1cba526" kindref="member">elecPub</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classriptide__rviz_1_1ElectricalPanel_1abc68489f43abdc8912a0d61e34db44b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::UInt8&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1abc68489f43abdc8912a0d61e34db44b5" kindref="member">ivcTxPub</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::UInt8&gt;::SharedPtr<sp/></highlight></codeline>
+<codeline lineno="114" refid="classriptide__rviz_1_1ElectricalPanel_1aa88b66c0e2319a53198d89571302d31d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1aa88b66c0e2319a53198d89571302d31d" kindref="member">ivcTxSub</ref>,</highlight></codeline>
+<codeline lineno="115" refid="classriptide__rviz_1_1ElectricalPanel_1a5e55f9c61e890a3bc0aa07a0dfdb94b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a5e55f9c61e890a3bc0aa07a0dfdb94b5" kindref="member">ivcRxSub</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classriptide__rviz_1_1ElectricalPanel_1a5328dfb37c9233999797a6bbfed4ff5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;riptide_msgs2::msg::UInt8Stamped&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a5328dfb37c9233999797a6bbfed4ff5e" kindref="member">ivcSuccessSub</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classriptide__rviz_1_1ElectricalPanel_1a6a2797b255d75c30199f5e9a5cbe8120" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp_action::Client&lt;MagCal&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a6a2797b255d75c30199f5e9a5cbe8120" kindref="member">imuCalClient</ref>;</highlight></codeline>
+<codeline lineno="120" refid="classriptide__rviz_1_1ElectricalPanel_1a0165d97bfa309c7c48bb3d4ba1f0ce79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp_action::Client&lt;TareGyro&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a0165d97bfa309c7c48bb3d4ba1f0ce79" kindref="member">tareGyroClient</ref>;</highlight></codeline>
+<codeline lineno="121" refid="classriptide__rviz_1_1ElectricalPanel_1a4cb542b2bc6ef5419c649ae335d0f193" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp_action::Client&lt;Depressurize&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a4cb542b2bc6ef5419c649ae335d0f193" kindref="member">depressurizeClient</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="classriptide__rviz_1_1ElectricalPanel_1a90bf85af58c8c6b330a5ac8fd59ce5d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;ImuConfig&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a90bf85af58c8c6b330a5ac8fd59ce5d3" kindref="member">imuConfigClient</ref>;</highlight></codeline>
+<codeline lineno="124" refid="classriptide__rviz_1_1ElectricalPanel_1a28dcb1cd0c6911bcf33f51d1f30b11d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;std::shared_ptr&lt;riptide_msgs2::srv::QueryImuSerial_Response&gt;&gt;<sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a28dcb1cd0c6911bcf33f51d1f30b11d3" kindref="member">imuConfigFuture</ref>;</highlight></codeline>
+<codeline lineno="125" refid="classriptide__rviz_1_1ElectricalPanel_1ae1e26e1e03b86e9d1413af3a402f38dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1ae1e26e1e03b86e9d1413af3a402f38dd" kindref="member">timerTick</ref><sp/>{};</highlight></codeline>
+<codeline lineno="126" refid="classriptide__rviz_1_1ElectricalPanel_1a9c038aec795cb570773b8ef989ae722e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ElectricalPanel_1a9c038aec795cb570773b8ef989ae722e" kindref="member">imuConfigFutureId</ref><sp/>{};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/ElectricalPanel.hpp"/>
+  </compounddef>
+</doxygen>

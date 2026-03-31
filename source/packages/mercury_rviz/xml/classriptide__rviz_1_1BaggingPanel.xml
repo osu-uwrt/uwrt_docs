@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1BaggingPanel" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::BaggingPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="BaggingPanel_8hpp" local="no">BaggingPanel.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" prot="private" static="no" mutable="no">
+        <type>Ui_BaggingPanel *</type>
+        <definition>Ui_BaggingPanel* riptide_rviz::BaggingPanel::uiPanel</definition>
+        <argsstring></argsstring>
+        <name>uiPanel</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::uiPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="52" column="25" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a7a456deb1024d2a23d8adbc09ad9d4e9" compoundref="BaggingPanel_8cpp" startline="267" endline="274">autonomyTriggerCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1adff6b8d8ae59fa1c6c156cb9361ce1d2" compoundref="BaggingPanel_8cpp" startline="22" endline="29">BaggingPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" compoundref="BaggingPanel_8cpp" startline="70" endline="109">clearScrollArea</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" compoundref="BaggingPanel_8cpp" startline="161" endline="186">fileListRefresh</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" compoundref="BaggingPanel_8cpp" startline="226" endline="265">handleBaggingPanelFile</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9e5b9b4826d5dff2c43e8c9b39b3b800" compoundref="BaggingPanel_8cpp" startline="121" endline="159">hostListRefresh</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" compoundref="BaggingPanel_8cpp" startline="31" endline="51">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a69a137119b7bd875c5ae23cc225a411f" compoundref="BaggingPanel_8cpp" startline="418" endline="443">setGlobalBagState</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a6ffaa5f1002aa718419a72e6c15be193" compoundref="BaggingPanel_8cpp" startline="111" endline="115">~BaggingPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a69d6f4865c49fcc390939f72b3f2f0df" prot="private" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* riptide_rviz::BaggingPanel::mainParent</definition>
+        <argsstring></argsstring>
+        <name>mainParent</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::mainParent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="55" column="17" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1adff6b8d8ae59fa1c6c156cb9361ce1d2" compoundref="BaggingPanel_8cpp" startline="22" endline="29">BaggingPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1adda5fba623946034be7281c580c07202" prot="private" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* riptide_rviz::BaggingPanel::scrollAreaLayout</definition>
+        <argsstring></argsstring>
+        <name>scrollAreaLayout</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::scrollAreaLayout</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="56" column="17" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" compoundref="BaggingPanel_8cpp" startline="70" endline="109">clearScrollArea</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* riptide_rviz::BaggingPanel::vbox</definition>
+        <argsstring></argsstring>
+        <name>vbox</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::vbox</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="57" column="21" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" compoundref="BaggingPanel_8cpp" startline="70" endline="109">clearScrollArea</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" compoundref="BaggingPanel_8cpp" startline="226" endline="265">handleBaggingPanelFile</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classriptide__rviz_1_1BagItem" kindref="compound">BagItem</ref> * &gt;</type>
+        <definition>std::vector&lt;BagItem *&gt; riptide_rviz::BaggingPanel::bagList</definition>
+        <argsstring></argsstring>
+        <name>bagList</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::bagList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="60" column="21" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" compoundref="BaggingPanel_8cpp" startline="70" endline="109">clearScrollArea</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" compoundref="BaggingPanel_8cpp" startline="226" endline="265">handleBaggingPanelFile</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a69a137119b7bd875c5ae23cc225a411f" compoundref="BaggingPanel_8cpp" startline="418" endline="443">setGlobalBagState</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a72bbd352cac0b07bbf642b7b1282d59e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; launch_msgs::msg::ListPids &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;launch_msgs::msg::ListPids&gt;::SharedPtr riptide_rviz::BaggingPanel::baggingStateSub</definition>
+        <argsstring></argsstring>
+        <name>baggingStateSub</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::baggingStateSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="62" column="42" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a09b6a5e03664ef33e5d0acf4364b5072" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr riptide_rviz::BaggingPanel::bagTriggerSub</definition>
+        <argsstring></argsstring>
+        <name>bagTriggerSub</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::bagTriggerSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="63" column="42" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a280f38858eb189e1a58ed37ad9651fb6" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; launch_msgs::srv::WhoIs &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;launch_msgs::srv::WhoIs&gt;::SharedPtr riptide_rviz::BaggingPanel::bagWhoIsClient</definition>
+        <argsstring></argsstring>
+        <name>bagWhoIsClient</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::bagWhoIsClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="64" column="36" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a1641b5a5e7b553073837f162276ae263" prot="private" static="no" mutable="no">
+        <type>std::shared_future&lt; std::shared_ptr&lt; launch_msgs::srv::WhoIs_Response &gt; &gt;</type>
+        <definition>std::shared_future&lt;std::shared_ptr&lt;launch_msgs::srv::WhoIs_Response&gt; &gt; riptide_rviz::BaggingPanel::whoisFuture</definition>
+        <argsstring></argsstring>
+        <name>whoisFuture</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::whoisFuture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="67" column="28" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a10f6cc28386a124d970dd85c52da3945" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t riptide_rviz::BaggingPanel::whoisReqId</definition>
+        <argsstring></argsstring>
+        <name>whoisReqId</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::whoisReqId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="68" column="17" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a1f47c90ea4c81dae340c223bb9e3a516" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int riptide_rviz::BaggingPanel::timerTick</definition>
+        <argsstring></argsstring>
+        <name>timerTick</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::timerTick</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="69" column="22" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a665a23f03ab46a46f7d519635ffb1e8d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; riptide_rviz::BaggingPanel::nonLocals</definition>
+        <argsstring></argsstring>
+        <name>nonLocals</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::nonLocals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="72" column="21" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1af259f5a0fc51f35c44af2a7625f08aaf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BaggingPanel::runningAll</definition>
+        <argsstring></argsstring>
+        <name>runningAll</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::runningAll</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="74" column="14" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" compoundref="BaggingPanel_8cpp" startline="161" endline="186">fileListRefresh</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1aed8055a401cee1beef0be23a08a53884" compoundref="BaggingPanel_8cpp" startline="445" endline="450">startBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingPanel_1a9bef8f9cd9cbc495a2c357239bc4be3c" prot="private" static="no" mutable="no">
+        <type>std_msgs::msg::Bool</type>
+        <definition>std_msgs::msg::Bool riptide_rviz::BaggingPanel::priorBagState</definition>
+        <argsstring></argsstring>
+        <name>priorBagState</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::priorBagState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="75" column="29" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a7a456deb1024d2a23d8adbc09ad9d4e9" compoundref="BaggingPanel_8cpp" startline="267" endline="274">autonomyTriggerCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" compoundref="BaggingPanel_8cpp" startline="161" endline="186">fileListRefresh</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1aed8055a401cee1beef0be23a08a53884" compoundref="BaggingPanel_8cpp" startline="445" endline="450">startBagging</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1adff6b8d8ae59fa1c6c156cb9361ce1d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::BaggingPanel::BaggingPanel</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>BaggingPanel</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::BaggingPanel</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="26" column="19" bodyfile="src/BaggingPanel.cpp" bodystart="22" bodyend="29"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a69d6f4865c49fcc390939f72b3f2f0df" compoundref="BaggingPanel_8hpp" startline="55">mainParent</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1a6ffaa5f1002aa718419a72e6c15be193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::BaggingPanel::~BaggingPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~BaggingPanel</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::~BaggingPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="27" column="9" bodyfile="src/BaggingPanel.cpp" bodystart="111" bodyend="115"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1a36a3ae3f1362e1d25812effa7708a2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::load</qualifiedname>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="29" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="53" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1a75e49e35d3c01dde79902f0b6f8a2995" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::save</qualifiedname>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="30" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::onInitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="32" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="31" bodyend="51"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" compoundref="BaggingPanel_8cpp" startline="70" endline="109">clearScrollArea</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" compoundref="BaggingPanel_8cpp" startline="161" endline="186">fileListRefresh</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" compoundref="BaggingPanel_8cpp" startline="226" endline="265">handleBaggingPanelFile</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a9e5b9b4826d5dff2c43e8c9b39b3b800" compoundref="BaggingPanel_8cpp" startline="121" endline="159">hostListRefresh</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::clearScrollArea</definition>
+        <argsstring>()</argsstring>
+        <name>clearScrollArea</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::clearScrollArea</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="33" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="70" bodyend="109"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" compoundref="BaggingPanel_8hpp" startline="60">bagList</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1adda5fba623946034be7281c580c07202" compoundref="BaggingPanel_8hpp" startline="56">scrollAreaLayout</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" compoundref="BaggingPanel_8hpp" startline="57">vbox</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" compoundref="BaggingPanel_8cpp" startline="226" endline="265">handleBaggingPanelFile</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" compoundref="BaggingPanel_8cpp" startline="31" endline="51">onInitialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classriptide__rviz_1_1BaggingPanel_1a77f0d39b879bdc8b6a9ad59f7b538221" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::baggingConfigure</definition>
+        <argsstring>()</argsstring>
+        <name>baggingConfigure</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::baggingConfigure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="37" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1BaggingPanel_1a9e5b9b4826d5dff2c43e8c9b39b3b800" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::hostListRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>hostListRefresh</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::hostListRefresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="38" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="121" bodyend="159"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" compoundref="BaggingPanel_8cpp" startline="31" endline="51">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::fileListRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>fileListRefresh</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::fileListRefresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="39" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="161" bodyend="186"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a9bef8f9cd9cbc495a2c357239bc4be3c" compoundref="BaggingPanel_8hpp" startline="75">priorBagState</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1af259f5a0fc51f35c44af2a7625f08aaf" compoundref="BaggingPanel_8hpp" startline="74">runningAll</references>
+        <references refid="BaggingPanel_8cpp_1a3b7cb1f80ebb5cb52fea27646b4aa3dc" compoundref="BaggingPanel_8cpp" startline="14">RVIZ_PKG</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" compoundref="BaggingPanel_8cpp" startline="31" endline="51">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::handleBaggingPanelHost</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>handleBaggingPanelHost</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::handleBaggingPanelHost</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="40" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="188" bodyend="224"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a7a456deb1024d2a23d8adbc09ad9d4e9" compoundref="BaggingPanel_8cpp" startline="267" endline="274">autonomyTriggerCallback</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a72bbd352cac0b07bbf642b7b1282d59e" compoundref="BaggingPanel_8hpp" startline="62">baggingStateSub</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a09b6a5e03664ef33e5d0acf4364b5072" compoundref="BaggingPanel_8hpp" startline="63">bagTriggerSub</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a280f38858eb189e1a58ed37ad9651fb6" compoundref="BaggingPanel_8hpp" startline="64">bagWhoIsClient</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" compoundref="BaggingPanel_8cpp" startline="161" endline="186">fileListRefresh</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" compoundref="BaggingPanel_8cpp" startline="31" endline="51">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::handleBaggingPanelFile</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>handleBaggingPanelFile</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::handleBaggingPanelFile</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="41" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="226" bodyend="265"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" compoundref="BaggingPanel_8hpp" startline="60">bagList</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" compoundref="BaggingPanel_8cpp" startline="70" endline="109">clearScrollArea</references>
+        <references refid="namespaceriptide__rviz_1a56de28a3c9cfd5a5e56fea0fa28d7213" compoundref="bringup__recipe_8cpp" startline="168" endline="279">riptide_rviz::getRecipeXMLErrorMessage</references>
+        <references refid="BaggingPanel_8cpp_1a3b7cb1f80ebb5cb52fea27646b4aa3dc" compoundref="BaggingPanel_8cpp" startline="14">RVIZ_PKG</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad0749aaba8b833466dfcbb0428e4f89c" compoundref="bringup__recipe_8hpp" startline="14">riptide_rviz::SUCCESS</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" compoundref="BaggingPanel_8hpp" startline="57">vbox</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" compoundref="BaggingPanel_8cpp" startline="31" endline="51">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1BaggingPanel_1aed8055a401cee1beef0be23a08a53884" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::startBagging</definition>
+        <argsstring>()</argsstring>
+        <name>startBagging</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::startBagging</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="42" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="445" bodyend="450"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a9bef8f9cd9cbc495a2c357239bc4be3c" compoundref="BaggingPanel_8hpp" startline="75">priorBagState</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1af259f5a0fc51f35c44af2a7625f08aaf" compoundref="BaggingPanel_8hpp" startline="74">runningAll</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a69a137119b7bd875c5ae23cc225a411f" compoundref="BaggingPanel_8cpp" startline="418" endline="443">setGlobalBagState</references>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1BaggingPanel_1a69a137119b7bd875c5ae23cc225a411f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::setGlobalBagState</definition>
+        <argsstring>(bool run)</argsstring>
+        <name>setGlobalBagState</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::setGlobalBagState</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>run</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="43" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="418" bodyend="443"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" compoundref="BaggingPanel_8hpp" startline="60">bagList</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a7a456deb1024d2a23d8adbc09ad9d4e9" compoundref="BaggingPanel_8cpp" startline="267" endline="274">autonomyTriggerCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1aed8055a401cee1beef0be23a08a53884" compoundref="BaggingPanel_8cpp" startline="445" endline="450">startBagging</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1a6b8e98f38ca5e5264bf2d5b0b6ecbbed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BaggingPanel::event</definition>
+        <argsstring>(QEvent *event)</argsstring>
+        <name>event</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::event</qualifiedname>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="46" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="65" bodyend="68"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a6b8e98f38ca5e5264bf2d5b0b6ecbbed" compoundref="BaggingPanel_8cpp" startline="65" endline="68">event</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a6b8e98f38ca5e5264bf2d5b0b6ecbbed" compoundref="BaggingPanel_8cpp" startline="65" endline="68">event</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::waitForWhois</definition>
+        <argsstring>()</argsstring>
+        <name>waitForWhois</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::waitForWhois</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="48" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="358" bodyend="416"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" compoundref="BaggingPanel_8hpp" startline="60">bagList</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a280f38858eb189e1a58ed37ad9651fb6" compoundref="BaggingPanel_8hpp" startline="64">bagWhoIsClient</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a665a23f03ab46a46f7d519635ffb1e8d" compoundref="BaggingPanel_8hpp" startline="72">nonLocals</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a1f47c90ea4c81dae340c223bb9e3a516" compoundref="BaggingPanel_8hpp" startline="69">timerTick</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" compoundref="BaggingPanel_8hpp" startline="57">vbox</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a1641b5a5e7b553073837f162276ae263" compoundref="BaggingPanel_8hpp" startline="67">whoisFuture</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a10f6cc28386a124d970dd85c52da3945" compoundref="BaggingPanel_8hpp" startline="68">whoisReqId</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" compoundref="BaggingPanel_8cpp" startline="276" endline="356">baggingStateCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::baggingStateCallback</definition>
+        <argsstring>(const launch_msgs::msg::ListPids &amp;msg)</argsstring>
+        <name>baggingStateCallback</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::baggingStateCallback</qualifiedname>
+        <param>
+          <type>const launch_msgs::msg::ListPids &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="77" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="276" bodyend="356"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" compoundref="BaggingPanel_8hpp" startline="60">bagList</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a280f38858eb189e1a58ed37ad9651fb6" compoundref="BaggingPanel_8hpp" startline="64">bagWhoIsClient</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a665a23f03ab46a46f7d519635ffb1e8d" compoundref="BaggingPanel_8hpp" startline="72">nonLocals</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a1f47c90ea4c81dae340c223bb9e3a516" compoundref="BaggingPanel_8hpp" startline="69">timerTick</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" compoundref="BaggingPanel_8hpp" startline="57">vbox</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" compoundref="BaggingPanel_8cpp" startline="358" endline="416">waitForWhois</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a1641b5a5e7b553073837f162276ae263" compoundref="BaggingPanel_8hpp" startline="67">whoisFuture</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a10f6cc28386a124d970dd85c52da3945" compoundref="BaggingPanel_8hpp" startline="68">whoisReqId</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingPanel_1a7a456deb1024d2a23d8adbc09ad9d4e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BaggingPanel::autonomyTriggerCallback</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>autonomyTriggerCallback</name>
+        <qualifiedname>riptide_rviz::BaggingPanel::autonomyTriggerCallback</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingPanel.hpp" line="78" column="14" bodyfile="src/BaggingPanel.cpp" bodystart="267" bodyend="274"/>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a9bef8f9cd9cbc495a2c357239bc4be3c" compoundref="BaggingPanel_8hpp" startline="75">priorBagState</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1a69a137119b7bd875c5ae23cc225a411f" compoundref="BaggingPanel_8cpp" startline="418" endline="443">setGlobalBagState</references>
+        <references refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" compoundref="BaggingPanel_8hpp" startline="52">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" compoundref="BaggingPanel_8cpp" startline="188" endline="224">handleBaggingPanelHost</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>riptide_rviz::BaggingPanel</label>
+        <link refid="classriptide__rviz_1_1BaggingPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::BaggingPanel</label>
+        <link refid="classriptide__rviz_1_1BaggingPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/BaggingPanel.hpp" line="24" column="5" bodyfile="include/mercury_rviz/BaggingPanel.hpp" bodystart="25" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a7a456deb1024d2a23d8adbc09ad9d4e9" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>autonomyTriggerCallback</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a77f0d39b879bdc8b6a9ad59f7b538221" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>baggingConfigure</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1adff6b8d8ae59fa1c6c156cb9361ce1d2" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>BaggingPanel</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>baggingStateCallback</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a72bbd352cac0b07bbf642b7b1282d59e" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>baggingStateSub</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>bagList</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a09b6a5e03664ef33e5d0acf4364b5072" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>bagTriggerSub</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a280f38858eb189e1a58ed37ad9651fb6" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>bagWhoIsClient</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>clearScrollArea</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a6b8e98f38ca5e5264bf2d5b0b6ecbbed" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>event</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>fileListRefresh</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>handleBaggingPanelFile</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>handleBaggingPanelHost</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a9e5b9b4826d5dff2c43e8c9b39b3b800" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>hostListRefresh</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a36a3ae3f1362e1d25812effa7708a2a3" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>load</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a69d6f4865c49fcc390939f72b3f2f0df" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>mainParent</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a665a23f03ab46a46f7d519635ffb1e8d" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>nonLocals</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>onInitialize</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a9bef8f9cd9cbc495a2c357239bc4be3c" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>priorBagState</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1af259f5a0fc51f35c44af2a7625f08aaf" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>runningAll</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a75e49e35d3c01dde79902f0b6f8a2995" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>save</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1adda5fba623946034be7281c580c07202" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>scrollAreaLayout</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a69a137119b7bd875c5ae23cc225a411f" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>setGlobalBagState</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1aed8055a401cee1beef0be23a08a53884" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>startBagging</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a1f47c90ea4c81dae340c223bb9e3a516" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>timerTick</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>uiPanel</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>vbox</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" prot="protected" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>waitForWhois</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a1641b5a5e7b553073837f162276ae263" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>whoisFuture</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a10f6cc28386a124d970dd85c52da3945" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>whoisReqId</name></member>
+      <member refid="classriptide__rviz_1_1BaggingPanel_1a6ffaa5f1002aa718419a72e6c15be193" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingPanel</scope><name>~BaggingPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

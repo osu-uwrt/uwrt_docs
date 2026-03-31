@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="Actuators_8hpp" kind="file" language="C++">
+    <compoundname>Actuators.hpp</compoundname>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">rviz_common/panel.hpp</includes>
+    <includes local="no">rviz_common/config.hpp</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">std_msgs/msg/bool.hpp</includes>
+    <includes local="no">std_msgs/msg/empty.hpp</includes>
+    <includes local="no">std_msgs/msg/string.hpp</includes>
+    <includes local="no">riptide_msgs2/msg/actuator_status.hpp</includes>
+    <includes local="yes">ui_Actuators.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/Actuators.hpp</label>
+        <link refid="Actuators_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QMessageBox</label>
+      </node>
+      <node id="5">
+        <label>QTimer</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="10">
+        <label>riptide_msgs2/msg/actuator_status.hpp</label>
+      </node>
+      <node id="4">
+        <label>rviz_common/config.hpp</label>
+      </node>
+      <node id="3">
+        <label>rviz_common/panel.hpp</label>
+      </node>
+      <node id="7">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="8">
+        <label>std_msgs/msg/empty.hpp</label>
+      </node>
+      <node id="9">
+        <label>std_msgs/msg/string.hpp</label>
+      </node>
+      <node id="11">
+        <label>ui_Actuators.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classriptide__rviz_1_1Actuators" prot="public">riptide_rviz::Actuators</innerclass>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <innernamespace refid="namespacestd_1_1chrono__literals">std::chrono_literals</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/bool.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/empty.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/string.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/actuator_status.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_Actuators.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespaceriptide__rviz" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref><sp/>=<sp/>std_msgs::msg::Empty;</highlight></codeline>
+<codeline lineno="18" refid="namespaceriptide__rviz_1a0f437e929abab656e4fb9279fec6c702" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz_1a0f437e929abab656e4fb9279fec6c702" kindref="member">Bool</ref><sp/>=<sp/>std_msgs::msg::Bool;</highlight></codeline>
+<codeline lineno="19" refid="namespaceriptide__rviz_1a5c741598944b12b97edce049d143fe2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz_1a5c741598944b12b97edce049d143fe2b" kindref="member">ActuatorStatus</ref><sp/>=<sp/>riptide_msgs2::msg::ActuatorStatus;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classriptide__rviz_1_1Actuators" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1Actuators_1a4ff170d30a9a052b60736a96063686b3" kindref="member">Actuators</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT<sp/>public<sp/>:<sp/><ref refid="classriptide__rviz_1_1Actuators_1a4ff170d30a9a052b60736a96063686b3" kindref="member">Actuators</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1ac7d849ae6da5c487826516bedadbfe01" kindref="member">~Actuators</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a519a75304a8b51ecdcfa89af5234a050" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1ae9788db2d4c42238cfe2dee464e9b91c" kindref="member">handleArm</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a7c50e5260caab45a2d6960a33aada7d8" kindref="member">handleDisarm</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1aae9f343b8497ee58f74376c1d636c779" kindref="member">handleOpenClaw</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a40cbec2dcd56fd2d13b912ead8c8894c" kindref="member">handleCloseClaw</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a4258b263078603c4006cc93d3723a66e" kindref="member">handleFireTorpedo</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a4015c35ccb1e28ebebccdb61e1a394ab" kindref="member">handleDropMarker</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a50109e3c102f53403e472573f1ffb0ce" kindref="member">handleReload</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1abfc98a929881a88fb59710a50070d931" kindref="member">handleClawGoHome</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a937a5103ac84204cd578ab71f58e9a27" kindref="member">handleClawSetHome</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1ab9bd37990838192ad6605ef6bcd6c262" kindref="member">handleTorpGoHome</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a30950267ff608feeefe7103da7ae60be" kindref="member">handleTorpSetHome</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" kindref="member">statusCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::ActuatorStatus::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" kindref="member">updateStatus</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1acdc2bf4fe14e2bc79e26c5aa5a7146e4" kindref="member">cmdFeedbackCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::String::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a7eb3cc61c5cb4e816e2b3de25c95cefd" kindref="member">cmdStatusCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Bool::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" kindref="member">pubEmptyTopic</ref>(rclcpp::Publisher&lt;Empty&gt;::SharedPtr<sp/>pub);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1aba01f21d2f0951a4d00cc240d0d47df5" kindref="member">pubBoolTopic</ref>(rclcpp::Publisher&lt;Bool&gt;::SharedPtr<sp/>pub,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>UI<sp/>Panel<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ui_Actuators<sp/>*<ref refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" kindref="member">uiPanel</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//process<sp/>vars</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classriptide__rviz_1_1Actuators_1a9162fda58db7f06c3b6b429a6fba3079" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1Actuators_1a9162fda58db7f06c3b6b429a6fba3079" kindref="member">robotNs</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//status<sp/>subscriber</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classriptide__rviz_1_1Actuators_1a2ec4ea88fb9f83384ae5d6de993d89f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;ActuatorStatus&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1Actuators_1a2ec4ea88fb9f83384ae5d6de993d89f2" kindref="member">statusSub</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Actuator<sp/>command<sp/>calls</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;Empty&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="63" refid="classriptide__rviz_1_1Actuators_1abdb32cd18e37bb6cdf43e867d0d92a14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1abdb32cd18e37bb6cdf43e867d0d92a14" kindref="member">dropperTopic</ref>,</highlight></codeline>
+<codeline lineno="64" refid="classriptide__rviz_1_1Actuators_1a1921dddac94245fe48e58d15a7d2deb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1a1921dddac94245fe48e58d15a7d2deb4" kindref="member">torpedoTopic</ref>,</highlight></codeline>
+<codeline lineno="65" refid="classriptide__rviz_1_1Actuators_1ac9998263ae06821fd097150cda0d2a9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1ac9998263ae06821fd097150cda0d2a9a" kindref="member">reloadTopic</ref>,</highlight></codeline>
+<codeline lineno="66" refid="classriptide__rviz_1_1Actuators_1adb1f543ce307f37f41bc96710ccf5aef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1adb1f543ce307f37f41bc96710ccf5aef" kindref="member">torpMarkerGoHomeTopic</ref>,</highlight></codeline>
+<codeline lineno="67" refid="classriptide__rviz_1_1Actuators_1a7a7ffc8e3351443ea50be0ec658a5c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1a7a7ffc8e3351443ea50be0ec658a5c33" kindref="member">torpMarkerSetHomeTopic</ref>,</highlight></codeline>
+<codeline lineno="68" refid="classriptide__rviz_1_1Actuators_1a948db56da5e3e6c2b1a9236bb394b886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1a948db56da5e3e6c2b1a9236bb394b886" kindref="member">clawSetClosedPosTopic</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;Bool&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="71" refid="classriptide__rviz_1_1Actuators_1a186d60d604b0664774ffcf9b8e6b1b76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1a186d60d604b0664774ffcf9b8e6b1b76" kindref="member">armTopic</ref>,</highlight></codeline>
+<codeline lineno="72" refid="classriptide__rviz_1_1Actuators_1abf22335e07401fbd459d450c6672352e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1Actuators_1abf22335e07401fbd459d450c6672352e" kindref="member">clawTopic</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Actuator<sp/>feedback<sp/>subscriptions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classriptide__rviz_1_1Actuators_1aa5979ceac4978bf86da38a71a7012ab3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::String&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1Actuators_1aa5979ceac4978bf86da38a71a7012ab3" kindref="member">cmdFeedback</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classriptide__rviz_1_1Actuators_1ad92c67578bdcd64351063fe18750194e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;Bool&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1Actuators_1ad92c67578bdcd64351063fe18750194e" kindref="member">cmdStatus</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classriptide__rviz_1_1Actuators_1a9c93c041f0f7805adf854cab78cc2522" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1Actuators_1a9c93c041f0f7805adf854cab78cc2522" kindref="member">latestCmdFeedback</ref>;</highlight></codeline>
+<codeline lineno="79" refid="classriptide__rviz_1_1Actuators_1a1d25b7e10d542098f98c5e1f363999b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1Actuators_1a1d25b7e10d542098f98c5e1f363999b1" kindref="member">latestCmdStatus</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>riptide_rviz</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/Actuators.hpp"/>
+  </compounddef>
+</doxygen>

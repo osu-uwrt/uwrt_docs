@@ -1,0 +1,1947 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1DiagnosticOverlay" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::DiagnosticOverlay</compoundname>
+    <basecompoundref refid="classriptide__rviz_1_1OverlayDisplay" prot="public" virt="non-virtual">riptide_rviz::OverlayDisplay</basecompoundref>
+    <includes refid="DiagnosticOverlay_8hpp" local="no">DiagnosticOverlay.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ab30134b168088536104bc84e1f4be21a" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr riptide_rviz::DiagnosticOverlay::checkTimer</definition>
+        <argsstring></argsstring>
+        <name>checkTimer</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::checkTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="54" column="38" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aee6b4a4433f48866a18eb66b0b3f6f2f" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastDiag</definition>
+        <argsstring></argsstring>
+        <name>lastDiag</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastDiag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="22" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ac348b5a55af671feddf7e8e378a8c48e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastKill</definition>
+        <argsstring></argsstring>
+        <name>lastKill</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastKill</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="31" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ac666bc0e1e09c3a2621707f3c9971b09" compoundref="DiagnosticOverlay_8cpp" startline="406" endline="420">killCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1af31a61711f17e7c5f702254c6e606a1d" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastZed</definition>
+        <argsstring></argsstring>
+        <name>lastZed</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastZed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="40" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a77587c7ab812bc4dae834357827988f6" compoundref="DiagnosticOverlay_8cpp" startline="289" endline="299">zedCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a164c52b72fb70c38a98823f16a779cdd" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastDfc</definition>
+        <argsstring></argsstring>
+        <name>lastDfc</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastDfc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="48" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a661774f5b28e01a012312ce8a3bbbe06" compoundref="DiagnosticOverlay_8cpp" startline="302" endline="308">dfcCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aae6c1a6355e1aa5e286c32db128d8069" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastLeak</definition>
+        <argsstring></argsstring>
+        <name>lastLeak</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastLeak</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="56" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ad7cdbb814519a27c730581254d98590e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastGyro</definition>
+        <argsstring></argsstring>
+        <name>lastGyro</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastGyro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="65" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" compoundref="DiagnosticOverlay_8cpp" startline="435" endline="463">gyroCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ac8baf27ccbfd03e52e4f63c5d8f8b4a5" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastPressure</definition>
+        <argsstring></argsstring>
+        <name>lastPressure</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="74" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" compoundref="DiagnosticOverlay_8cpp" startline="365" endline="404">pressureCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ae99a234b9caa2fb4ee5faf5ded741d02" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::lastCpuTemp</definition>
+        <argsstring></argsstring>
+        <name>lastCpuTemp</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::lastCpuTemp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="87" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1af44a7118db638044f9e4f8030242bb10" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::stbdlastBattery</definition>
+        <argsstring></argsstring>
+        <name>stbdlastBattery</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::stbdlastBattery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="99" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a530e2648f6206f85c9f2224d72e5bce3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time riptide_rviz::DiagnosticOverlay::portlastBattery</definition>
+        <argsstring></argsstring>
+        <name>portlastBattery</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::portlastBattery</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="115" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aff59566664d24bbc94cacf52b6eb3af0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::diagsTimedOut</definition>
+        <argsstring></argsstring>
+        <name>diagsTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::diagsTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="14" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a4f14ecdd2dd742796a70977e2fd6ea05" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::killTimedOut</definition>
+        <argsstring></argsstring>
+        <name>killTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::killTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="28" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ac666bc0e1e09c3a2621707f3c9971b09" compoundref="DiagnosticOverlay_8cpp" startline="406" endline="420">killCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a52b03b09d6df870d04af1d19a36bc625" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::zedTimedOut</definition>
+        <argsstring></argsstring>
+        <name>zedTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::zedTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="41" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a77587c7ab812bc4dae834357827988f6" compoundref="DiagnosticOverlay_8cpp" startline="289" endline="299">zedCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a47380bcbc57a5936a86bea627347017b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::dfcTimedOut</definition>
+        <argsstring></argsstring>
+        <name>dfcTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::dfcTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="53" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a661774f5b28e01a012312ce8a3bbbe06" compoundref="DiagnosticOverlay_8cpp" startline="302" endline="308">dfcCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aab24fe4ddc1231a8d3180bf96d67a5d6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::leakTimedOut</definition>
+        <argsstring></argsstring>
+        <name>leakTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::leakTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="65" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a43f66e4a2835c0f3dfce5641b025c896" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::gyroTimedOut</definition>
+        <argsstring></argsstring>
+        <name>gyroTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::gyroTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="78" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" compoundref="DiagnosticOverlay_8cpp" startline="435" endline="463">gyroCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a203498c1b34745a407b782547546d6d5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::pressureTimedOut</definition>
+        <argsstring></argsstring>
+        <name>pressureTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::pressureTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="91" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" compoundref="DiagnosticOverlay_8cpp" startline="365" endline="404">pressureCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a3fe6211e931a3c403e2d78b6640e9a19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::cpuTempTimedOut</definition>
+        <argsstring></argsstring>
+        <name>cpuTempTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::cpuTempTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="108" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a9dfa8d6e0f0e616b25a1ff3c5d6f6bfc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::stbdBatteryTimedOut</definition>
+        <argsstring></argsstring>
+        <name>stbdBatteryTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::stbdBatteryTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="124" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1afd3dba2247de884b28e4602ade761903" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::portBatteryTimedOut</definition>
+        <argsstring></argsstring>
+        <name>portBatteryTimedOut</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::portBatteryTimedOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="144" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a5fb9d31e33e8b6756f13baa70e3504f3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::startedLeaking</definition>
+        <argsstring></argsstring>
+        <name>startedLeaking</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::startedLeaking</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="60" column="14" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1afe871bceefd4ff154e557ba5646c2cf2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::DiagnosticOverlay::redFlash</definition>
+        <argsstring></argsstring>
+        <name>redFlash</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::redFlash</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="61" column="14" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" compoundref="DiagnosticOverlay_8cpp" startline="365" endline="404">pressureCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a6b30e1dbc1b9455723bcfe843dbc3523" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; diagnostic_msgs::msg::DiagnosticArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;diagnostic_msgs::msg::DiagnosticArray&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::diagSub</definition>
+        <argsstring></argsstring>
+        <name>diagSub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::diagSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="64" column="42" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a84cb46c1990631830967ea052e628117" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::killSub</definition>
+        <argsstring></argsstring>
+        <name>killSub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::killSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="65" column="42" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a08943b9966a40e8a4675149d5bd1f85f" compoundref="DiagnosticOverlay_8cpp" startline="198" endline="209">updateNS</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a6711315b5f751371491cb2f025d30bc3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; sensor_msgs::msg::Temperature &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;sensor_msgs::msg::Temperature&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::zedSub</definition>
+        <argsstring></argsstring>
+        <name>zedSub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::zedSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="66" column="42" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a495cba62590dab061cef82c545668685" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; sensor_msgs::msg::Temperature &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;sensor_msgs::msg::Temperature&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::dfcSub</definition>
+        <argsstring></argsstring>
+        <name>dfcSub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::dfcSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="67" column="42" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a9b3fe20073a2fd7079332dfc0f6cc27a" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::leakSub</definition>
+        <argsstring></argsstring>
+        <name>leakSub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::leakSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="68" column="42" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a4b00c7eff61b5f13c772518e6dc75024" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; riptide_msgs2::msg::GyroStatus &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;riptide_msgs2::msg::GyroStatus&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::gyroSub</definition>
+        <argsstring></argsstring>
+        <name>gyroSub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::gyroSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="69" column="42" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a9595ffca5b8665f1fe4d006268e5b008" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Float32 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Float32&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::pressureSub</definition>
+        <argsstring></argsstring>
+        <name>pressureSub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::pressureSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="70" column="42" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a8c92b709df48b32f3d7e64d52b1744af" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; riptide_msgs2::msg::BatteryStatus &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;riptide_msgs2::msg::BatteryStatus&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::batterySub</definition>
+        <argsstring></argsstring>
+        <name>batterySub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::batterySub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="71" column="43" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1afdc6287b1eeb82fc4e44e7de67a83090" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; riptide_msgs2::msg::ElectricalCommand &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;riptide_msgs2::msg::ElectricalCommand&gt;::SharedPtr riptide_rviz::DiagnosticOverlay::batteryKillPub</definition>
+        <argsstring></argsstring>
+        <name>batteryKillPub</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::batteryKillPub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="74" column="39" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a12d9695f48820a02a7284c5fbe2099eb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::pvtTextId</definition>
+        <argsstring></argsstring>
+        <name>pvtTextId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::pvtTextId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="77" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a7ddf16562ff5d90b5a9a122d03c58144" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::diagLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>diagLedConfigId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::diagLedConfigId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="78" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a3d7ef5121bc6289db2803a0eb8a5b9c8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::killLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>killLedConfigId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::killLedConfigId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="79" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ac666bc0e1e09c3a2621707f3c9971b09" compoundref="DiagnosticOverlay_8cpp" startline="406" endline="420">killCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aea1209135dac4cb4507f330c5c24ffae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::zedLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>zedLedConfigId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::zedLedConfigId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="80" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a77587c7ab812bc4dae834357827988f6" compoundref="DiagnosticOverlay_8cpp" startline="289" endline="299">zedCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a1aaa1a8b9b940e6458bec63ac2032916" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::dfcLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>dfcLedConfigId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::dfcLedConfigId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="81" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a661774f5b28e01a012312ce8a3bbbe06" compoundref="DiagnosticOverlay_8cpp" startline="302" endline="308">dfcCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aa12fcaeb26ff9f5a0b210bbc3a98850f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::leakLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>leakLedConfigId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::leakLedConfigId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="82" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a61e8d24a9bb090ebda0f4f54109dfd28" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::pressureLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>pressureLedConfigId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::pressureLedConfigId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="83" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" compoundref="DiagnosticOverlay_8cpp" startline="365" endline="404">pressureCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1afaf041ce0857d89d7721c4442ecd3d57" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::portBatterySocTextId</definition>
+        <argsstring></argsstring>
+        <name>portBatterySocTextId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::portBatterySocTextId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="84" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a7668c48644bdea0f855c0a690fb1d294" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::stbdBatterySocTextId</definition>
+        <argsstring></argsstring>
+        <name>stbdBatterySocTextId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::stbdBatterySocTextId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="85" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a9de84de3d750cb4143dc76d5a6123a8e" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList riptide_rviz::DiagnosticOverlay::fontFamilies</definition>
+        <argsstring></argsstring>
+        <name>fontFamilies</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::fontFamilies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="88" column="21" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" compoundref="DiagnosticOverlay_8cpp" startline="14" endline="30">DiagnosticOverlay</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a52a14adf979b1b03c770aef50d162aad" compoundref="DiagnosticOverlay_8cpp" startline="422" endline="433">updateFont</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aad6216e0e7387d2b4914473f6b347ad4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::DiagnosticOverlay::fontName</definition>
+        <argsstring></argsstring>
+        <name>fontName</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::fontName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="89" column="21" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="89" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a52a14adf979b1b03c770aef50d162aad" compoundref="DiagnosticOverlay_8cpp" startline="422" endline="433">updateFont</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a2231632b1ca52d1abd2dd50d0b982e8a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::DiagnosticOverlay::tempMin</definition>
+        <argsstring></argsstring>
+        <name>tempMin</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempMin</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="92" column="16" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aad842a74f333bbc0135c1bbdbb45d0e1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::DiagnosticOverlay::tempMax</definition>
+        <argsstring></argsstring>
+        <name>tempMax</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempMax</qualifiedname>
+        <initializer>{100.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="93" column="16" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1aee8b146cc8d2d0139aad2469ae5ead14" prot="private" static="no" mutable="no">
+        <type>rviz_common::properties::EnumProperty *</type>
+        <definition>rviz_common::properties::EnumProperty* riptide_rviz::DiagnosticOverlay::fontProperty</definition>
+        <argsstring></argsstring>
+        <name>fontProperty</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::fontProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="96" column="47" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" compoundref="DiagnosticOverlay_8cpp" startline="14" endline="30">DiagnosticOverlay</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a52a14adf979b1b03c770aef50d162aad" compoundref="DiagnosticOverlay_8cpp" startline="422" endline="433">updateFont</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a0fbbab548e531d57f35225e123c404e2" prot="private" static="no" mutable="no">
+        <type>rviz_common::properties::StringProperty *</type>
+        <definition>rviz_common::properties::StringProperty* riptide_rviz::DiagnosticOverlay::robotNsProperty</definition>
+        <argsstring></argsstring>
+        <name>robotNsProperty</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::robotNsProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="97" column="50" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" compoundref="DiagnosticOverlay_8cpp" startline="14" endline="30">DiagnosticOverlay</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a08943b9966a40e8a4675149d5bd1f85f" compoundref="DiagnosticOverlay_8cpp" startline="198" endline="209">updateNS</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8418dd087e515c90ae9d0018b5a325be" compoundref="DiagnosticOverlay_8cpp" startline="32" endline="35">~DiagnosticOverlay</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a03f1936f1a446a4cc04c17a9fcb08725" prot="private" static="no" mutable="no">
+        <type>rviz_common::properties::FloatProperty *</type>
+        <definition>rviz_common::properties::FloatProperty* riptide_rviz::DiagnosticOverlay::timeoutProperty</definition>
+        <argsstring></argsstring>
+        <name>timeoutProperty</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::timeoutProperty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="98" column="49" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" compoundref="DiagnosticOverlay_8cpp" startline="14" endline="30">DiagnosticOverlay</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8418dd087e515c90ae9d0018b5a325be" compoundref="DiagnosticOverlay_8cpp" startline="32" endline="35">~DiagnosticOverlay</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a647269ba1b68f93a2f46db6cb59307ed" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig riptide_rviz::DiagnosticOverlay::diagLedConfig</definition>
+        <argsstring></argsstring>
+        <name>diagLedConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::diagLedConfig</qualifiedname>
+        <initializer>= {
+            20, 50, 0, 0, 7, 9,
+            QColor(255, 0, 255, 255),
+            QColor(0, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="101" column="29" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="101" bodyend="105"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ad7e1271dac1833f0b914a10aea800245" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig riptide_rviz::DiagnosticOverlay::killLedConfig</definition>
+        <argsstring></argsstring>
+        <name>killLedConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::killLedConfig</qualifiedname>
+        <initializer>= {
+            60, 50, 0, 0, 7, 9,
+            QColor(255, 0, 255, 255),
+            QColor(0, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="106" column="29" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="106" bodyend="110"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ac666bc0e1e09c3a2621707f3c9971b09" compoundref="DiagnosticOverlay_8cpp" startline="406" endline="420">killCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ad56b34feeba7885ccbd2f38bdc6268b5" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig riptide_rviz::DiagnosticOverlay::zedLedConfig</definition>
+        <argsstring></argsstring>
+        <name>zedLedConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::zedLedConfig</qualifiedname>
+        <initializer>= {
+            100, 50, 0, 0, 7, 9,
+            QColor(255, 0, 255, 255),
+            QColor(0, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="111" column="29" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="111" bodyend="115"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a77587c7ab812bc4dae834357827988f6" compoundref="DiagnosticOverlay_8cpp" startline="289" endline="299">zedCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1adeb14830a3339d7cc7d4cb495f086e1b" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig riptide_rviz::DiagnosticOverlay::dfcLedConfig</definition>
+        <argsstring></argsstring>
+        <name>dfcLedConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::dfcLedConfig</qualifiedname>
+        <initializer>= {
+            140, 50, 0, 0, 7, 9,
+            QColor(255, 0, 255, 255),
+            QColor(0, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="116" column="29" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="116" bodyend="120"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a661774f5b28e01a012312ce8a3bbbe06" compoundref="DiagnosticOverlay_8cpp" startline="302" endline="308">dfcCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a8c0b22287212262d53d7194f512d545b" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig riptide_rviz::DiagnosticOverlay::leakLedConfig</definition>
+        <argsstring></argsstring>
+        <name>leakLedConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::leakLedConfig</qualifiedname>
+        <initializer>= {
+            20, 100, 0, 0, 7, 9,
+            QColor(255, 0, 255, 255),
+            QColor(0, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="121" column="29" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="121" bodyend="125"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a27b5c6f1d194f347d28f3eb9873e8a4b" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig riptide_rviz::DiagnosticOverlay::pressureLedConfig</definition>
+        <argsstring></argsstring>
+        <name>pressureLedConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::pressureLedConfig</qualifiedname>
+        <initializer>= {
+            180, 50, 0, 0, 7, 9,
+            QColor(255, 0, 255, 255),
+            QColor(0, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="126" column="29" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="126" bodyend="130"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" compoundref="DiagnosticOverlay_8cpp" startline="365" endline="404">pressureCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a8d82f411199667919e4a95b279720d01" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig riptide_rviz::DiagnosticOverlay::pvtConfig</definition>
+        <argsstring></argsstring>
+        <name>pvtConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::pvtConfig</qualifiedname>
+        <initializer>= {
+            130, 0, 0, 0, &quot;0.000000&quot;,
+            <ref refid="classriptide__rviz_1_1DiagnosticOverlay_1aad6216e0e7387d2b4914473f6b347ad4" kindref="member">fontName</ref>, false, 2, 12,
+            QColor(255, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="132" column="27" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="132" bodyend="136"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" compoundref="DiagnosticOverlay_8cpp" startline="365" endline="404">pressureCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ac033d098d11b13fbe64c038174620eb4" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig riptide_rviz::DiagnosticOverlay::stbdBatterySocConfig</definition>
+        <argsstring></argsstring>
+        <name>stbdBatterySocConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::stbdBatterySocConfig</qualifiedname>
+        <initializer>= {
+            70, 0, 0, 0, &quot;S:0%&quot;, 
+            fontName, false, 2, 12,
+            QColor(255, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="138" column="27" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="138" bodyend="142"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a09e2ec7b125ddab9ed5e40fb5646fc09" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig riptide_rviz::DiagnosticOverlay::portBatterySocConfig</definition>
+        <argsstring></argsstring>
+        <name>portBatterySocConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::portBatterySocConfig</qualifiedname>
+        <initializer>= {
+            12, 0, 0, 0, &quot;P:0%&quot;,
+            fontName, false, 2, 12,
+            QColor(255, 0, 0, 255)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="144" column="27" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="144" bodyend="148"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a2ed3756e4fc002ef6e7bf5980f457920" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig riptide_rviz::DiagnosticOverlay::tempGaugeArc</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeArc</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempGaugeArc</qualifiedname>
+        <initializer>{
+            60, 100,    
+            10,         
+            90,         
+            -270,       
+            2,          
+            QColor(40, 40, 40, 255) 
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="151" column="26" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="151" bodyend="158"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a0eb2e483d37a543f40b47cd33070eb5a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::tempGaugeArcId</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeArcId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempGaugeArcId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="159" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="159" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1acbdb0c0bf1c24689b39df4e948e678c2" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig riptide_rviz::DiagnosticOverlay::tempGaugeIndicator</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeIndicator</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempGaugeIndicator</qualifiedname>
+        <initializer>{
+            60, 100,    
+            10,         
+            90,         
+            90,         
+            3,          
+            QColor(0, 255, 0, 255) 
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="161" column="26" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="161" bodyend="168"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" compoundref="DiagnosticOverlay_8cpp" startline="435" endline="463">gyroCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a8b13b968b049d04f36470f1325ff4e69" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::tempGaugeIndicatorId</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeIndicatorId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempGaugeIndicatorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="169" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="169" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" compoundref="DiagnosticOverlay_8cpp" startline="435" endline="463">gyroCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ac6e6277b16b5ba59104a1df09bf84ffa" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig riptide_rviz::DiagnosticOverlay::tempTextConfig</definition>
+        <argsstring></argsstring>
+        <name>tempTextConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempTextConfig</qualifiedname>
+        <initializer>{
+            45, 115,    
+            0, 0,       
+            &quot;0.0°C&quot;,    
+            <ref refid="classriptide__rviz_1_1DiagnosticOverlay_1aad6216e0e7387d2b4914473f6b347ad4" kindref="member">fontName</ref>,
+            false,      
+            2,          
+            9,         
+            QColor(255, 255, 255, 255)  
+            }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="171" column="27" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="171" bodyend="180"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" compoundref="DiagnosticOverlay_8cpp" startline="435" endline="463">gyroCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ac0373c39b3b44b253db23691d0cc00c3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::tempTextId</definition>
+        <argsstring></argsstring>
+        <name>tempTextId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::tempTextId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="181" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="181" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" compoundref="DiagnosticOverlay_8cpp" startline="435" endline="463">gyroCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1abaddffecdfc7f47708ffec6a44a954c4" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig riptide_rviz::DiagnosticOverlay::cpuTempGaugeArc</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeArc</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::cpuTempGaugeArc</qualifiedname>
+        <initializer>{
+            100, 100,    
+            10,         
+            90,         
+            -270,       
+            2,          
+            QColor(40, 40, 40, 255) 
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="184" column="26" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="184" bodyend="191"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ad26e275fa03da45130a6e5d0379d85a8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::cpuTempGaugeArcId</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeArcId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::cpuTempGaugeArcId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="192" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="192" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a0924b6e0e5805d03ea07244efe470aa7" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig riptide_rviz::DiagnosticOverlay::cpuTempGaugeIndicator</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeIndicator</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::cpuTempGaugeIndicator</qualifiedname>
+        <initializer>{
+            100, 100,    
+            10,         
+            90,         
+            90,         
+            3,          
+            QColor(0, 255, 0, 255) 
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="194" column="26" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="194" bodyend="201"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a41e6a191a62b9e24661d8bbba07e6262" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::cpuTempGaugeIndicatorId</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeIndicatorId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::cpuTempGaugeIndicatorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="202" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="202" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1a6cc2fa396086f4c5f31496fb12d16831" prot="private" static="no" mutable="no">
+        <type><ref refid="structriptide__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig riptide_rviz::DiagnosticOverlay::cpuTempTextConfig</definition>
+        <argsstring></argsstring>
+        <name>cpuTempTextConfig</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::cpuTempTextConfig</qualifiedname>
+        <initializer>{
+            85, 115,    
+            0, 0,       
+            &quot;0.0°C&quot;,    
+            <ref refid="classriptide__rviz_1_1DiagnosticOverlay_1aad6216e0e7387d2b4914473f6b347ad4" kindref="member">fontName</ref>,
+            false,      
+            2,          
+            9,         
+            QColor(255, 255, 255, 255)  
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="204" column="27" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="204" bodyend="213"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1DiagnosticOverlay_1ab4efe6bedb251a5d1f4d505f74615b45" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::DiagnosticOverlay::cpuTempTextId</definition>
+        <argsstring></argsstring>
+        <name>cpuTempTextId</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::cpuTempTextId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="214" column="13" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="214" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::DiagnosticOverlay::DiagnosticOverlay</definition>
+        <argsstring>()</argsstring>
+        <name>DiagnosticOverlay</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::DiagnosticOverlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="24" column="9" bodyfile="src/DiagnosticOverlay.cpp" bodystart="14" bodyend="30"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a9de84de3d750cb4143dc76d5a6123a8e" compoundref="DiagnosticOverlay_8hpp" startline="88">fontFamilies</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aee8b146cc8d2d0139aad2469ae5ead14" compoundref="DiagnosticOverlay_8hpp" startline="96">fontProperty</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0fbbab548e531d57f35225e123c404e2" compoundref="DiagnosticOverlay_8hpp" startline="97">robotNsProperty</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a03f1936f1a446a4cc04c17a9fcb08725" compoundref="DiagnosticOverlay_8hpp" startline="98">timeoutProperty</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a52a14adf979b1b03c770aef50d162aad" compoundref="DiagnosticOverlay_8cpp" startline="422" endline="433">updateFont</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a08943b9966a40e8a4675149d5bd1f85f" compoundref="DiagnosticOverlay_8cpp" startline="198" endline="209">updateNS</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a8418dd087e515c90ae9d0018b5a325be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::DiagnosticOverlay::~DiagnosticOverlay</definition>
+        <argsstring>()</argsstring>
+        <name>~DiagnosticOverlay</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::~DiagnosticOverlay</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="26" column="9" bodyfile="src/DiagnosticOverlay.cpp" bodystart="32" bodyend="35"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0fbbab548e531d57f35225e123c404e2" compoundref="DiagnosticOverlay_8hpp" startline="97">robotNsProperty</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a03f1936f1a446a4cc04c17a9fcb08725" compoundref="DiagnosticOverlay_8hpp" startline="98">timeoutProperty</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::onInitialize</qualifiedname>
+        <reimplements refid="classriptide__rviz_1_1OverlayDisplay_1a732837b5077e87b7100bb33b7d52e4f5">onInitialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="30" column="22" bodyfile="src/DiagnosticOverlay.cpp" bodystart="37" bodyend="196"/>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1aed871da258a54a610670118d31649eb2" compoundref="OverlayDisplay_8cpp" startline="277" endline="281">riptide_rviz::OverlayDisplay::addArc</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1aca48725eda4d6bc1caa0d365fff0807b" compoundref="OverlayDisplay_8cpp" startline="271" endline="275">riptide_rviz::OverlayDisplay::addCircle</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1aecbe546f443e667ac754004b704c56e8" compoundref="OverlayDisplay_8cpp" startline="265" endline="269">riptide_rviz::OverlayDisplay::addText</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" compoundref="DiagnosticOverlay_8cpp" startline="465" endline="506">batteryCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afdc6287b1eeb82fc4e44e7de67a83090" compoundref="DiagnosticOverlay_8hpp" startline="74">batteryKillPub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8c92b709df48b32f3d7e64d52b1744af" compoundref="DiagnosticOverlay_8hpp" startline="71">batterySub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" compoundref="DiagnosticOverlay_8cpp" startline="521" endline="655">checkTimeout</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ab30134b168088536104bc84e1f4be21a" compoundref="DiagnosticOverlay_8hpp" startline="54">checkTimer</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1abaddffecdfc7f47708ffec6a44a954c4" compoundref="DiagnosticOverlay_8hpp" startline="184" endline="191">cpuTempGaugeArc</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad26e275fa03da45130a6e5d0379d85a8" compoundref="DiagnosticOverlay_8hpp" startline="192">cpuTempGaugeArcId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0924b6e0e5805d03ea07244efe470aa7" compoundref="DiagnosticOverlay_8hpp" startline="194" endline="201">cpuTempGaugeIndicator</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a41e6a191a62b9e24661d8bbba07e6262" compoundref="DiagnosticOverlay_8hpp" startline="202">cpuTempGaugeIndicatorId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a6cc2fa396086f4c5f31496fb12d16831" compoundref="DiagnosticOverlay_8hpp" startline="204" endline="213">cpuTempTextConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ab4efe6bedb251a5d1f4d505f74615b45" compoundref="DiagnosticOverlay_8hpp" startline="214">cpuTempTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a661774f5b28e01a012312ce8a3bbbe06" compoundref="DiagnosticOverlay_8cpp" startline="302" endline="308">dfcCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1adeb14830a3339d7cc7d4cb495f086e1b" compoundref="DiagnosticOverlay_8hpp" startline="116" endline="120">dfcLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a1aaa1a8b9b940e6458bec63ac2032916" compoundref="DiagnosticOverlay_8hpp" startline="81">dfcLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a495cba62590dab061cef82c545668685" compoundref="DiagnosticOverlay_8hpp" startline="67">dfcSub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a647269ba1b68f93a2f46db6cb59307ed" compoundref="DiagnosticOverlay_8hpp" startline="101" endline="105">diagLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a7ddf16562ff5d90b5a9a122d03c58144" compoundref="DiagnosticOverlay_8hpp" startline="78">diagLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" compoundref="DiagnosticOverlay_8cpp" startline="211" endline="286">diagnosticCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a6b30e1dbc1b9455723bcfe843dbc3523" compoundref="DiagnosticOverlay_8hpp" startline="64">diagSub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aad6216e0e7387d2b4914473f6b347ad4" compoundref="DiagnosticOverlay_8hpp" startline="89">fontName</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" compoundref="DiagnosticOverlay_8cpp" startline="435" endline="463">gyroCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a4b00c7eff61b5f13c772518e6dc75024" compoundref="DiagnosticOverlay_8hpp" startline="69">gyroSub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7e1271dac1833f0b914a10aea800245" compoundref="DiagnosticOverlay_8hpp" startline="106" endline="110">killLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a3d7ef5121bc6289db2803a0eb8a5b9c8" compoundref="DiagnosticOverlay_8hpp" startline="79">killLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ae99a234b9caa2fb4ee5faf5ded741d02" compoundref="DiagnosticOverlay_8hpp" startline="57">lastCpuTemp</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a164c52b72fb70c38a98823f16a779cdd" compoundref="DiagnosticOverlay_8hpp" startline="57">lastDfc</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aee6b4a4433f48866a18eb66b0b3f6f2f" compoundref="DiagnosticOverlay_8hpp" startline="57">lastDiag</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7cdbb814519a27c730581254d98590e" compoundref="DiagnosticOverlay_8hpp" startline="57">lastGyro</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac348b5a55af671feddf7e8e378a8c48e" compoundref="DiagnosticOverlay_8hpp" startline="57">lastKill</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aae6c1a6355e1aa5e286c32db128d8069" compoundref="DiagnosticOverlay_8hpp" startline="57">lastLeak</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac8baf27ccbfd03e52e4f63c5d8f8b4a5" compoundref="DiagnosticOverlay_8hpp" startline="57">lastPressure</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1af31a61711f17e7c5f702254c6e606a1d" compoundref="DiagnosticOverlay_8hpp" startline="57">lastZed</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" compoundref="DiagnosticOverlay_8cpp" startline="310" endline="363">leakCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8c0b22287212262d53d7194f512d545b" compoundref="DiagnosticOverlay_8hpp" startline="121" endline="125">leakLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aa12fcaeb26ff9f5a0b210bbc3a98850f" compoundref="DiagnosticOverlay_8hpp" startline="82">leakLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a9b3fe20073a2fd7079332dfc0f6cc27a" compoundref="DiagnosticOverlay_8hpp" startline="68">leakSub</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1a732837b5077e87b7100bb33b7d52e4f5" compoundref="OverlayDisplay_8cpp" startline="99" endline="119">riptide_rviz::OverlayDisplay::onInitialize</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a09e2ec7b125ddab9ed5e40fb5646fc09" compoundref="DiagnosticOverlay_8hpp" startline="144" endline="148">portBatterySocConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afaf041ce0857d89d7721c4442ecd3d57" compoundref="DiagnosticOverlay_8hpp" startline="84">portBatterySocTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a530e2648f6206f85c9f2224d72e5bce3" compoundref="DiagnosticOverlay_8hpp" startline="57">portlastBattery</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" compoundref="DiagnosticOverlay_8cpp" startline="365" endline="404">pressureCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a27b5c6f1d194f347d28f3eb9873e8a4b" compoundref="DiagnosticOverlay_8hpp" startline="126" endline="130">pressureLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a61e8d24a9bb090ebda0f4f54109dfd28" compoundref="DiagnosticOverlay_8hpp" startline="83">pressureLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a9595ffca5b8665f1fe4d006268e5b008" compoundref="DiagnosticOverlay_8hpp" startline="70">pressureSub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8d82f411199667919e4a95b279720d01" compoundref="DiagnosticOverlay_8hpp" startline="132" endline="136">pvtConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a12d9695f48820a02a7284c5fbe2099eb" compoundref="DiagnosticOverlay_8hpp" startline="77">pvtTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0fbbab548e531d57f35225e123c404e2" compoundref="DiagnosticOverlay_8hpp" startline="97">robotNsProperty</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac033d098d11b13fbe64c038174620eb4" compoundref="DiagnosticOverlay_8hpp" startline="138" endline="142">stbdBatterySocConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a7668c48644bdea0f855c0a690fb1d294" compoundref="DiagnosticOverlay_8hpp" startline="85">stbdBatterySocTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1af44a7118db638044f9e4f8030242bb10" compoundref="DiagnosticOverlay_8hpp" startline="57">stbdlastBattery</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a2ed3756e4fc002ef6e7bf5980f457920" compoundref="DiagnosticOverlay_8hpp" startline="151" endline="158">tempGaugeArc</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0eb2e483d37a543f40b47cd33070eb5a" compoundref="DiagnosticOverlay_8hpp" startline="159">tempGaugeArcId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1acbdb0c0bf1c24689b39df4e948e678c2" compoundref="DiagnosticOverlay_8hpp" startline="161" endline="168">tempGaugeIndicator</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8b13b968b049d04f36470f1325ff4e69" compoundref="DiagnosticOverlay_8hpp" startline="169">tempGaugeIndicatorId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac6e6277b16b5ba59104a1df09bf84ffa" compoundref="DiagnosticOverlay_8hpp" startline="171" endline="180">tempTextConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac0373c39b3b44b253db23691d0cc00c3" compoundref="DiagnosticOverlay_8hpp" startline="181">tempTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a77587c7ab812bc4dae834357827988f6" compoundref="DiagnosticOverlay_8cpp" startline="289" endline="299">zedCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad56b34feeba7885ccbd2f38bdc6268b5" compoundref="DiagnosticOverlay_8hpp" startline="111" endline="115">zedLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aea1209135dac4cb4507f330c5c24ffae" compoundref="DiagnosticOverlay_8hpp" startline="80">zedLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a6711315b5f751371491cb2f025d30bc3" compoundref="DiagnosticOverlay_8hpp" startline="66">zedSub</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a6d6bba79b126d8a83be4599d59330db0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::onEnable</definition>
+        <argsstring>() override</argsstring>
+        <name>onEnable</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::onEnable</qualifiedname>
+        <reimplements refid="classriptide__rviz_1_1OverlayDisplay_1addf948ea0716a78cf677168ca44a90a7">onEnable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="31" column="22" bodyfile="src/DiagnosticOverlay.cpp" bodystart="509" bodyend="511"/>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1addf948ea0716a78cf677168ca44a90a7" compoundref="OverlayDisplay_8cpp" startline="86" endline="90">riptide_rviz::OverlayDisplay::onEnable</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1aecda839dedbfc8592ca98172310b6e43" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::onDisable</definition>
+        <argsstring>() override</argsstring>
+        <name>onDisable</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::onDisable</qualifiedname>
+        <reimplements refid="classriptide__rviz_1_1OverlayDisplay_1a65221c0ba23ef36ae59869b7e22cc167">onDisable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="32" column="22" bodyfile="src/DiagnosticOverlay.cpp" bodystart="513" bodyend="515"/>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1a65221c0ba23ef36ae59869b7e22cc167" compoundref="OverlayDisplay_8cpp" startline="92" endline="96">riptide_rviz::OverlayDisplay::onDisable</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a093f3239d6d6bae653956cd1c13eae41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::update</definition>
+        <argsstring>(float wall_dt, float ros_dt) override</argsstring>
+        <name>update</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::update</qualifiedname>
+        <reimplements refid="classriptide__rviz_1_1OverlayDisplay_1a24754fff0586b23f33cba71a7a6cc719">update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>wall_dt</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ros_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="33" column="22" bodyfile="src/DiagnosticOverlay.cpp" bodystart="517" bodyend="519"/>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1a24754fff0586b23f33cba71a7a6cc719" compoundref="OverlayDisplay_8cpp" startline="121" endline="173">riptide_rviz::OverlayDisplay::update</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1abb54a10d3b9e936ba7360eb51ea4f0aa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::reset</qualifiedname>
+        <reimplements refid="classriptide__rviz_1_1OverlayDisplay_1ab1b5a83f4cdcfb3917ca6997c36f32be">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="34" column="22" bodyfile="src/DiagnosticOverlay.cpp" bodystart="657" bodyend="659"/>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1ab1b5a83f4cdcfb3917ca6997c36f32be" compoundref="OverlayDisplay_8cpp" startline="306" endline="310">riptide_rviz::OverlayDisplay::reset</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::diagnosticCallback</definition>
+        <argsstring>(const diagnostic_msgs::msg::DiagnosticArray &amp;msg)</argsstring>
+        <name>diagnosticCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::diagnosticCallback</qualifiedname>
+        <param>
+          <type>const diagnostic_msgs::msg::DiagnosticArray &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="36" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="211" bodyend="286"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0924b6e0e5805d03ea07244efe470aa7" compoundref="DiagnosticOverlay_8hpp" startline="194" endline="201">cpuTempGaugeIndicator</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a41e6a191a62b9e24661d8bbba07e6262" compoundref="DiagnosticOverlay_8hpp" startline="202">cpuTempGaugeIndicatorId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a6cc2fa396086f4c5f31496fb12d16831" compoundref="DiagnosticOverlay_8hpp" startline="204" endline="213">cpuTempTextConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ab4efe6bedb251a5d1f4d505f74615b45" compoundref="DiagnosticOverlay_8hpp" startline="214">cpuTempTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a3fe6211e931a3c403e2d78b6640e9a19" compoundref="DiagnosticOverlay_8hpp" startline="58">cpuTempTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a647269ba1b68f93a2f46db6cb59307ed" compoundref="DiagnosticOverlay_8hpp" startline="101" endline="105">diagLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a7ddf16562ff5d90b5a9a122d03c58144" compoundref="DiagnosticOverlay_8hpp" startline="78">diagLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aff59566664d24bbc94cacf52b6eb3af0" compoundref="DiagnosticOverlay_8hpp" startline="58">diagsTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ae99a234b9caa2fb4ee5faf5ded741d02" compoundref="DiagnosticOverlay_8hpp" startline="57">lastCpuTemp</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aee6b4a4433f48866a18eb66b0b3f6f2f" compoundref="DiagnosticOverlay_8hpp" startline="57">lastDiag</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1acfa621ee1a30205cdcd5887629b32d61" compoundref="OverlayDisplay_8cpp" startline="283" endline="286">riptide_rviz::OverlayDisplay::updateArc</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" compoundref="OverlayDisplay_8cpp" startline="294" endline="297">riptide_rviz::OverlayDisplay::updateCircle</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9a4dffd32763ec136e844cdacfee128" compoundref="OverlayDisplay_8cpp" startline="289" endline="292">riptide_rviz::OverlayDisplay::updateText</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1ac666bc0e1e09c3a2621707f3c9971b09" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::killCallback</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>killCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::killCallback</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="37" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="406" bodyend="420"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7e1271dac1833f0b914a10aea800245" compoundref="DiagnosticOverlay_8hpp" startline="106" endline="110">killLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a3d7ef5121bc6289db2803a0eb8a5b9c8" compoundref="DiagnosticOverlay_8hpp" startline="79">killLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a4f14ecdd2dd742796a70977e2fd6ea05" compoundref="DiagnosticOverlay_8hpp" startline="58">killTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac348b5a55af671feddf7e8e378a8c48e" compoundref="DiagnosticOverlay_8hpp" startline="57">lastKill</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" compoundref="OverlayDisplay_8cpp" startline="294" endline="297">riptide_rviz::OverlayDisplay::updateCircle</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1a08943b9966a40e8a4675149d5bd1f85f" compoundref="DiagnosticOverlay_8cpp" startline="198" endline="209">updateNS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a77587c7ab812bc4dae834357827988f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::zedCallback</definition>
+        <argsstring>(const sensor_msgs::msg::Temperature &amp;msg)</argsstring>
+        <name>zedCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::zedCallback</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::Temperature &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="38" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="289" bodyend="299"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1af31a61711f17e7c5f702254c6e606a1d" compoundref="DiagnosticOverlay_8hpp" startline="57">lastZed</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" compoundref="OverlayDisplay_8cpp" startline="294" endline="297">riptide_rviz::OverlayDisplay::updateCircle</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad56b34feeba7885ccbd2f38bdc6268b5" compoundref="DiagnosticOverlay_8hpp" startline="111" endline="115">zedLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aea1209135dac4cb4507f330c5c24ffae" compoundref="DiagnosticOverlay_8hpp" startline="80">zedLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a52b03b09d6df870d04af1d19a36bc625" compoundref="DiagnosticOverlay_8hpp" startline="58">zedTimedOut</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a661774f5b28e01a012312ce8a3bbbe06" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::dfcCallback</definition>
+        <argsstring>(const sensor_msgs::msg::Temperature &amp;msg)</argsstring>
+        <name>dfcCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::dfcCallback</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::Temperature &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="39" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="302" bodyend="308"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1adeb14830a3339d7cc7d4cb495f086e1b" compoundref="DiagnosticOverlay_8hpp" startline="116" endline="120">dfcLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a1aaa1a8b9b940e6458bec63ac2032916" compoundref="DiagnosticOverlay_8hpp" startline="81">dfcLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a47380bcbc57a5936a86bea627347017b" compoundref="DiagnosticOverlay_8hpp" startline="58">dfcTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a164c52b72fb70c38a98823f16a779cdd" compoundref="DiagnosticOverlay_8hpp" startline="57">lastDfc</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" compoundref="OverlayDisplay_8cpp" startline="294" endline="297">riptide_rviz::OverlayDisplay::updateCircle</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::leakCallback</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>leakCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::leakCallback</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="40" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="310" bodyend="363"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afdc6287b1eeb82fc4e44e7de67a83090" compoundref="DiagnosticOverlay_8hpp" startline="74">batteryKillPub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aae6c1a6355e1aa5e286c32db128d8069" compoundref="DiagnosticOverlay_8hpp" startline="57">lastLeak</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8c0b22287212262d53d7194f512d545b" compoundref="DiagnosticOverlay_8hpp" startline="121" endline="125">leakLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aa12fcaeb26ff9f5a0b210bbc3a98850f" compoundref="DiagnosticOverlay_8hpp" startline="82">leakLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aab24fe4ddc1231a8d3180bf96d67a5d6" compoundref="DiagnosticOverlay_8hpp" startline="58">leakTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afe871bceefd4ff154e557ba5646c2cf2" compoundref="DiagnosticOverlay_8hpp" startline="61">redFlash</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a5fb9d31e33e8b6756f13baa70e3504f3" compoundref="DiagnosticOverlay_8hpp" startline="60">startedLeaking</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" compoundref="OverlayDisplay_8cpp" startline="294" endline="297">riptide_rviz::OverlayDisplay::updateCircle</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::gyroCallback</definition>
+        <argsstring>(const riptide_msgs2::msg::GyroStatus &amp;msg)</argsstring>
+        <name>gyroCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::gyroCallback</qualifiedname>
+        <param>
+          <type>const riptide_msgs2::msg::GyroStatus &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="41" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="435" bodyend="463"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a43f66e4a2835c0f3dfce5641b025c896" compoundref="DiagnosticOverlay_8hpp" startline="58">gyroTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7cdbb814519a27c730581254d98590e" compoundref="DiagnosticOverlay_8hpp" startline="57">lastGyro</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1acbdb0c0bf1c24689b39df4e948e678c2" compoundref="DiagnosticOverlay_8hpp" startline="161" endline="168">tempGaugeIndicator</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8b13b968b049d04f36470f1325ff4e69" compoundref="DiagnosticOverlay_8hpp" startline="169">tempGaugeIndicatorId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac6e6277b16b5ba59104a1df09bf84ffa" compoundref="DiagnosticOverlay_8hpp" startline="171" endline="180">tempTextConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac0373c39b3b44b253db23691d0cc00c3" compoundref="DiagnosticOverlay_8hpp" startline="181">tempTextId</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1acfa621ee1a30205cdcd5887629b32d61" compoundref="OverlayDisplay_8cpp" startline="283" endline="286">riptide_rviz::OverlayDisplay::updateArc</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9a4dffd32763ec136e844cdacfee128" compoundref="OverlayDisplay_8cpp" startline="289" endline="292">riptide_rviz::OverlayDisplay::updateText</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::pressureCallback</definition>
+        <argsstring>(const std_msgs::msg::Float32 &amp;msg)</argsstring>
+        <name>pressureCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::pressureCallback</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::Float32 &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="42" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="365" bodyend="404"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac8baf27ccbfd03e52e4f63c5d8f8b4a5" compoundref="DiagnosticOverlay_8hpp" startline="57">lastPressure</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a27b5c6f1d194f347d28f3eb9873e8a4b" compoundref="DiagnosticOverlay_8hpp" startline="126" endline="130">pressureLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a61e8d24a9bb090ebda0f4f54109dfd28" compoundref="DiagnosticOverlay_8hpp" startline="83">pressureLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a203498c1b34745a407b782547546d6d5" compoundref="DiagnosticOverlay_8hpp" startline="58">pressureTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8d82f411199667919e4a95b279720d01" compoundref="DiagnosticOverlay_8hpp" startline="132" endline="136">pvtConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afe871bceefd4ff154e557ba5646c2cf2" compoundref="DiagnosticOverlay_8hpp" startline="61">redFlash</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" compoundref="OverlayDisplay_8cpp" startline="294" endline="297">riptide_rviz::OverlayDisplay::updateCircle</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::batteryCallback</definition>
+        <argsstring>(const riptide_msgs2::msg::BatteryStatus &amp;msg)</argsstring>
+        <name>batteryCallback</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::batteryCallback</qualifiedname>
+        <param>
+          <type>const riptide_msgs2::msg::BatteryStatus &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="43" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="465" bodyend="506"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a09e2ec7b125ddab9ed5e40fb5646fc09" compoundref="DiagnosticOverlay_8hpp" startline="144" endline="148">portBatterySocConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afaf041ce0857d89d7721c4442ecd3d57" compoundref="DiagnosticOverlay_8hpp" startline="84">portBatterySocTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afd3dba2247de884b28e4602ade761903" compoundref="DiagnosticOverlay_8hpp" startline="58">portBatteryTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a530e2648f6206f85c9f2224d72e5bce3" compoundref="DiagnosticOverlay_8hpp" startline="57">portlastBattery</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac033d098d11b13fbe64c038174620eb4" compoundref="DiagnosticOverlay_8hpp" startline="138" endline="142">stbdBatterySocConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a7668c48644bdea0f855c0a690fb1d294" compoundref="DiagnosticOverlay_8hpp" startline="85">stbdBatterySocTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a9dfa8d6e0f0e616b25a1ff3c5d6f6bfc" compoundref="DiagnosticOverlay_8hpp" startline="58">stbdBatteryTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1af44a7118db638044f9e4f8030242bb10" compoundref="DiagnosticOverlay_8hpp" startline="57">stbdlastBattery</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9a4dffd32763ec136e844cdacfee128" compoundref="OverlayDisplay_8cpp" startline="289" endline="292">riptide_rviz::OverlayDisplay::updateText</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::checkTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>checkTimeout</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::checkTimeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="45" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="521" bodyend="655"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0924b6e0e5805d03ea07244efe470aa7" compoundref="DiagnosticOverlay_8hpp" startline="194" endline="201">cpuTempGaugeIndicator</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a41e6a191a62b9e24661d8bbba07e6262" compoundref="DiagnosticOverlay_8hpp" startline="202">cpuTempGaugeIndicatorId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a6cc2fa396086f4c5f31496fb12d16831" compoundref="DiagnosticOverlay_8hpp" startline="204" endline="213">cpuTempTextConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ab4efe6bedb251a5d1f4d505f74615b45" compoundref="DiagnosticOverlay_8hpp" startline="214">cpuTempTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a3fe6211e931a3c403e2d78b6640e9a19" compoundref="DiagnosticOverlay_8hpp" startline="58">cpuTempTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1adeb14830a3339d7cc7d4cb495f086e1b" compoundref="DiagnosticOverlay_8hpp" startline="116" endline="120">dfcLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a1aaa1a8b9b940e6458bec63ac2032916" compoundref="DiagnosticOverlay_8hpp" startline="81">dfcLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a47380bcbc57a5936a86bea627347017b" compoundref="DiagnosticOverlay_8hpp" startline="58">dfcTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a647269ba1b68f93a2f46db6cb59307ed" compoundref="DiagnosticOverlay_8hpp" startline="101" endline="105">diagLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a7ddf16562ff5d90b5a9a122d03c58144" compoundref="DiagnosticOverlay_8hpp" startline="78">diagLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aff59566664d24bbc94cacf52b6eb3af0" compoundref="DiagnosticOverlay_8hpp" startline="58">diagsTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a43f66e4a2835c0f3dfce5641b025c896" compoundref="DiagnosticOverlay_8hpp" startline="58">gyroTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7e1271dac1833f0b914a10aea800245" compoundref="DiagnosticOverlay_8hpp" startline="106" endline="110">killLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a3d7ef5121bc6289db2803a0eb8a5b9c8" compoundref="DiagnosticOverlay_8hpp" startline="79">killLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a4f14ecdd2dd742796a70977e2fd6ea05" compoundref="DiagnosticOverlay_8hpp" startline="58">killTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ae99a234b9caa2fb4ee5faf5ded741d02" compoundref="DiagnosticOverlay_8hpp" startline="57">lastCpuTemp</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a164c52b72fb70c38a98823f16a779cdd" compoundref="DiagnosticOverlay_8hpp" startline="57">lastDfc</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aee6b4a4433f48866a18eb66b0b3f6f2f" compoundref="DiagnosticOverlay_8hpp" startline="57">lastDiag</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7cdbb814519a27c730581254d98590e" compoundref="DiagnosticOverlay_8hpp" startline="57">lastGyro</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac348b5a55af671feddf7e8e378a8c48e" compoundref="DiagnosticOverlay_8hpp" startline="57">lastKill</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aae6c1a6355e1aa5e286c32db128d8069" compoundref="DiagnosticOverlay_8hpp" startline="57">lastLeak</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac8baf27ccbfd03e52e4f63c5d8f8b4a5" compoundref="DiagnosticOverlay_8hpp" startline="57">lastPressure</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1af31a61711f17e7c5f702254c6e606a1d" compoundref="DiagnosticOverlay_8hpp" startline="57">lastZed</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8c0b22287212262d53d7194f512d545b" compoundref="DiagnosticOverlay_8hpp" startline="121" endline="125">leakLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aa12fcaeb26ff9f5a0b210bbc3a98850f" compoundref="DiagnosticOverlay_8hpp" startline="82">leakLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aab24fe4ddc1231a8d3180bf96d67a5d6" compoundref="DiagnosticOverlay_8hpp" startline="58">leakTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a09e2ec7b125ddab9ed5e40fb5646fc09" compoundref="DiagnosticOverlay_8hpp" startline="144" endline="148">portBatterySocConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afaf041ce0857d89d7721c4442ecd3d57" compoundref="DiagnosticOverlay_8hpp" startline="84">portBatterySocTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1afd3dba2247de884b28e4602ade761903" compoundref="DiagnosticOverlay_8hpp" startline="58">portBatteryTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a530e2648f6206f85c9f2224d72e5bce3" compoundref="DiagnosticOverlay_8hpp" startline="57">portlastBattery</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a27b5c6f1d194f347d28f3eb9873e8a4b" compoundref="DiagnosticOverlay_8hpp" startline="126" endline="130">pressureLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a61e8d24a9bb090ebda0f4f54109dfd28" compoundref="DiagnosticOverlay_8hpp" startline="83">pressureLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a203498c1b34745a407b782547546d6d5" compoundref="DiagnosticOverlay_8hpp" startline="58">pressureTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8d82f411199667919e4a95b279720d01" compoundref="DiagnosticOverlay_8hpp" startline="132" endline="136">pvtConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a12d9695f48820a02a7284c5fbe2099eb" compoundref="DiagnosticOverlay_8hpp" startline="77">pvtTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac033d098d11b13fbe64c038174620eb4" compoundref="DiagnosticOverlay_8hpp" startline="138" endline="142">stbdBatterySocConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a7668c48644bdea0f855c0a690fb1d294" compoundref="DiagnosticOverlay_8hpp" startline="85">stbdBatterySocTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a9dfa8d6e0f0e616b25a1ff3c5d6f6bfc" compoundref="DiagnosticOverlay_8hpp" startline="58">stbdBatteryTimedOut</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1af44a7118db638044f9e4f8030242bb10" compoundref="DiagnosticOverlay_8hpp" startline="57">stbdlastBattery</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1acbdb0c0bf1c24689b39df4e948e678c2" compoundref="DiagnosticOverlay_8hpp" startline="161" endline="168">tempGaugeIndicator</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a8b13b968b049d04f36470f1325ff4e69" compoundref="DiagnosticOverlay_8hpp" startline="169">tempGaugeIndicatorId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac6e6277b16b5ba59104a1df09bf84ffa" compoundref="DiagnosticOverlay_8hpp" startline="171" endline="180">tempTextConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac0373c39b3b44b253db23691d0cc00c3" compoundref="DiagnosticOverlay_8hpp" startline="181">tempTextId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a03f1936f1a446a4cc04c17a9fcb08725" compoundref="DiagnosticOverlay_8hpp" startline="98">timeoutProperty</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1acfa621ee1a30205cdcd5887629b32d61" compoundref="OverlayDisplay_8cpp" startline="283" endline="286">riptide_rviz::OverlayDisplay::updateArc</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" compoundref="OverlayDisplay_8cpp" startline="294" endline="297">riptide_rviz::OverlayDisplay::updateCircle</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1af9a4dffd32763ec136e844cdacfee128" compoundref="OverlayDisplay_8cpp" startline="289" endline="292">riptide_rviz::OverlayDisplay::updateText</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ad56b34feeba7885ccbd2f38bdc6268b5" compoundref="DiagnosticOverlay_8hpp" startline="111" endline="115">zedLedConfig</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aea1209135dac4cb4507f330c5c24ffae" compoundref="DiagnosticOverlay_8hpp" startline="80">zedLedConfigId</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a52b03b09d6df870d04af1d19a36bc625" compoundref="DiagnosticOverlay_8hpp" startline="58">zedTimedOut</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" compoundref="DiagnosticOverlay_8cpp" startline="37" endline="196">onInitialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classriptide__rviz_1_1DiagnosticOverlay_1a52a14adf979b1b03c770aef50d162aad" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::updateFont</definition>
+        <argsstring>()</argsstring>
+        <name>updateFont</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::updateFont</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="48" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="422" bodyend="433"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a9de84de3d750cb4143dc76d5a6123a8e" compoundref="DiagnosticOverlay_8hpp" startline="88">fontFamilies</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aad6216e0e7387d2b4914473f6b347ad4" compoundref="DiagnosticOverlay_8hpp" startline="89">fontName</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1aee8b146cc8d2d0139aad2469ae5ead14" compoundref="DiagnosticOverlay_8hpp" startline="96">fontProperty</references>
+        <references refid="classriptide__rviz_1_1OverlayDisplay_1a965f46638b0a64236643f0365cf71151" compoundref="OverlayDisplay_8hpp" startline="117">riptide_rviz::OverlayDisplay::require_update_texture_</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" compoundref="DiagnosticOverlay_8cpp" startline="14" endline="30">DiagnosticOverlay</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1DiagnosticOverlay_1a08943b9966a40e8a4675149d5bd1f85f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::DiagnosticOverlay::updateNS</definition>
+        <argsstring>()</argsstring>
+        <name>updateNS</name>
+        <qualifiedname>riptide_rviz::DiagnosticOverlay::updateNS</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="49" column="14" bodyfile="src/DiagnosticOverlay.cpp" bodystart="198" bodyend="209"/>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1ac666bc0e1e09c3a2621707f3c9971b09" compoundref="DiagnosticOverlay_8cpp" startline="406" endline="420">killCallback</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a84cb46c1990631830967ea052e628117" compoundref="DiagnosticOverlay_8hpp" startline="65">killSub</references>
+        <references refid="classriptide__rviz_1_1DiagnosticOverlay_1a0fbbab548e531d57f35225e123c404e2" compoundref="DiagnosticOverlay_8hpp" startline="97">robotNsProperty</references>
+        <referencedby refid="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" compoundref="DiagnosticOverlay_8cpp" startline="14" endline="30">DiagnosticOverlay</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>riptide_rviz::DiagnosticOverlay</label>
+        <link refid="classriptide__rviz_1_1DiagnosticOverlay"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>riptide_rviz::OverlayDisplay</label>
+        <link refid="classriptide__rviz_1_1OverlayDisplay"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rviz_common::Display</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::DiagnosticOverlay</label>
+        <link refid="classriptide__rviz_1_1DiagnosticOverlay"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-dfcLedConfig</edgelabel>
+          <edgelabel>-diagLedConfig</edgelabel>
+          <edgelabel>-killLedConfig</edgelabel>
+          <edgelabel>-leakLedConfig</edgelabel>
+          <edgelabel>-pressureLedConfig</edgelabel>
+          <edgelabel>-zedLedConfig</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-cpuTempTextConfig</edgelabel>
+          <edgelabel>-portBatterySocConfig</edgelabel>
+          <edgelabel>-pvtConfig</edgelabel>
+          <edgelabel>-stbdBatterySocConfig</edgelabel>
+          <edgelabel>-tempTextConfig</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-cpuTempGaugeArc</edgelabel>
+          <edgelabel>-cpuTempGaugeIndicator</edgelabel>
+          <edgelabel>-tempGaugeArc</edgelabel>
+          <edgelabel>-tempGaugeIndicator</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>riptide_rviz::OverlayDisplay</label>
+        <link refid="classriptide__rviz_1_1OverlayDisplay"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>riptide_rviz::PaintedArcConfig</label>
+        <link refid="structriptide__rviz_1_1PaintedArcConfig"/>
+      </node>
+      <node id="4">
+        <label>riptide_rviz::PaintedCircleConfig</label>
+        <link refid="structriptide__rviz_1_1PaintedCircleConfig"/>
+      </node>
+      <node id="5">
+        <label>riptide_rviz::PaintedTextConfig</label>
+        <link refid="structriptide__rviz_1_1PaintedTextConfig"/>
+      </node>
+      <node id="3">
+        <label>rviz_common::Display</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="21" column="5" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="21" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1aed871da258a54a610670118d31649eb2" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>addArc</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1aca48725eda4d6bc1caa0d365fff0807b" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>addCircle</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1aecbe546f443e667ac754004b704c56e8" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>addText</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a99566ce2ff9a592bb659801f85830029" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>arc_vector_</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a26e32db9fd0aa5d764fc86f7c57c2911" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>batteryCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1afdc6287b1eeb82fc4e44e7de67a83090" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>batteryKillPub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a8c92b709df48b32f3d7e64d52b1744af" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>batterySub</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1ae1b321ce055476fa1f24f857489a99fd" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>bg_color_</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a8e885a47229fcc097afb0aeb82926b2f" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>checkTimeout</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ab30134b168088536104bc84e1f4be21a" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>checkTimer</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a0baeb43bc48247fab72d1b1066dcaf24" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>circle_vector_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a22e728f74781365277d71c54bee266fa" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>clearElements</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1abaddffecdfc7f47708ffec6a44a954c4" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeArc</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ad26e275fa03da45130a6e5d0379d85a8" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeArcId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a0924b6e0e5805d03ea07244efe470aa7" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeIndicator</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a41e6a191a62b9e24661d8bbba07e6262" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeIndicatorId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a6cc2fa396086f4c5f31496fb12d16831" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>cpuTempTextConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ab4efe6bedb251a5d1f4d505f74615b45" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>cpuTempTextId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a3fe6211e931a3c403e2d78b6640e9a19" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>cpuTempTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a661774f5b28e01a012312ce8a3bbbe06" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>dfcCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1adeb14830a3339d7cc7d4cb495f086e1b" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>dfcLedConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a1aaa1a8b9b940e6458bec63ac2032916" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>dfcLedConfigId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a495cba62590dab061cef82c545668685" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>dfcSub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a47380bcbc57a5936a86bea627347017b" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>dfcTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a647269ba1b68f93a2f46db6cb59307ed" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>diagLedConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a7ddf16562ff5d90b5a9a122d03c58144" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>diagLedConfigId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a493e070d682b041f0a38a7c9f2a30f54" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>diagnosticCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aaf64b656607c6eca1642003adbb0421a" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>DiagnosticOverlay</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aff59566664d24bbc94cacf52b6eb3af0" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>diagsTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a6b30e1dbc1b9455723bcfe843dbc3523" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>diagSub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a9de84de3d750cb4143dc76d5a6123a8e" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>fontFamilies</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aad6216e0e7387d2b4914473f6b347ad4" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>fontName</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aee8b146cc8d2d0139aad2469ae5ead14" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>fontProperty</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a6f4f3ee2b1864412d9ffb6d31c420109" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>gyroCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a4b00c7eff61b5f13c772518e6dc75024" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>gyroSub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a43f66e4a2835c0f3dfce5641b025c896" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>gyroTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1ae0267918db2b3a8fce9789e61d463677" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>height_property_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1ae0ce503355fa14eb37ee829152ff56d4" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>hor_alignment_property_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1ac2da97cf06476ff41c2bf39424fe66b6" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>hor_dist_property_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a0b781425edf4c1aee8b4fd8a1348f771" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>horizontal_alignment_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a7b6d9e51a30119d39f1f57bf3d179659" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>horizontal_dist_</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ac666bc0e1e09c3a2621707f3c9971b09" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>killCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7e1271dac1833f0b914a10aea800245" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>killLedConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a3d7ef5121bc6289db2803a0eb8a5b9c8" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>killLedConfigId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a84cb46c1990631830967ea052e628117" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>killSub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a4f14ecdd2dd742796a70977e2fd6ea05" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>killTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ae99a234b9caa2fb4ee5faf5ded741d02" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastCpuTemp</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a164c52b72fb70c38a98823f16a779cdd" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastDfc</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aee6b4a4433f48866a18eb66b0b3f6f2f" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastDiag</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ad7cdbb814519a27c730581254d98590e" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastGyro</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ac348b5a55af671feddf7e8e378a8c48e" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastKill</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aae6c1a6355e1aa5e286c32db128d8069" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastLeak</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ac8baf27ccbfd03e52e4f63c5d8f8b4a5" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastPressure</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1af31a61711f17e7c5f702254c6e606a1d" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>lastZed</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ab7ac1ddf78f949fbee839c766b4e5fa9" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>leakCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a8c0b22287212262d53d7194f512d545b" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>leakLedConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aa12fcaeb26ff9f5a0b210bbc3a98850f" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>leakLedConfigId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a9b3fe20073a2fd7079332dfc0f6cc27a" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>leakSub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aab24fe4ddc1231a8d3180bf96d67a5d6" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>leakTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aecda839dedbfc8592ca98172310b6e43" prot="protected" virt="virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>onDisable</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a6d6bba79b126d8a83be4599d59330db0" prot="protected" virt="virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>onEnable</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aa66d41bb54ac94e2084afe016be63d83" prot="protected" virt="virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>onInitialize</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a6ed40c4dc1811a46dde9d0d4b0ea8a10" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>overlay_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1af529b58aadee394e9cec33e986b98e26" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>OverlayDisplay</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>paintArc</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a284b7e0532feef0813345fdd476a1769" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>paintCircle</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1af2f9b3bc7ca3290f389d647aa16db6fc" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>paintText</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a09e2ec7b125ddab9ed5e40fb5646fc09" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>portBatterySocConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1afaf041ce0857d89d7721c4442ecd3d57" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>portBatterySocTextId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1afd3dba2247de884b28e4602ade761903" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>portBatteryTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a530e2648f6206f85c9f2224d72e5bce3" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>portlastBattery</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aa2b6f7a2317d5c292279924446c4cd41" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>pressureCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a27b5c6f1d194f347d28f3eb9873e8a4b" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>pressureLedConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a61e8d24a9bb090ebda0f4f54109dfd28" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>pressureLedConfigId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a9595ffca5b8665f1fe4d006268e5b008" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>pressureSub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a203498c1b34745a407b782547546d6d5" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>pressureTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a8d82f411199667919e4a95b279720d01" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>pvtConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a12d9695f48820a02a7284c5fbe2099eb" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>pvtTextId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1afe871bceefd4ff154e557ba5646c2cf2" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>redFlash</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a965f46638b0a64236643f0365cf71151" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>require_update_texture_</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1abb54a10d3b9e936ba7360eb51ea4f0aa" prot="protected" virt="virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>reset</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a0fbbab548e531d57f35225e123c404e2" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>robotNsProperty</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a5fb9d31e33e8b6756f13baa70e3504f3" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>startedLeaking</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ac033d098d11b13fbe64c038174620eb4" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>stbdBatterySocConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a7668c48644bdea0f855c0a690fb1d294" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>stbdBatterySocTextId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a9dfa8d6e0f0e616b25a1ff3c5d6f6bfc" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>stbdBatteryTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1af44a7118db638044f9e4f8030242bb10" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>stbdlastBattery</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a2ed3756e4fc002ef6e7bf5980f457920" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempGaugeArc</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a0eb2e483d37a543f40b47cd33070eb5a" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempGaugeArcId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1acbdb0c0bf1c24689b39df4e948e678c2" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempGaugeIndicator</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a8b13b968b049d04f36470f1325ff4e69" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempGaugeIndicatorId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aad842a74f333bbc0135c1bbdbb45d0e1" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempMax</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a2231632b1ca52d1abd2dd50d0b982e8a" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempMin</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ac6e6277b16b5ba59104a1df09bf84ffa" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempTextConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ac0373c39b3b44b253db23691d0cc00c3" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>tempTextId</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1ab3925ea3b1df4b99b72848ed2ca51f67" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>text_vector_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a3d5896f44054cfa74b25425b4421a60f" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>texture_height_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1aea8df69c163017717536f57127de7762" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>texture_width_</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a03f1936f1a446a4cc04c17a9fcb08725" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>timeoutProperty</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a093f3239d6d6bae653956cd1c13eae41" prot="protected" virt="virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>update</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1acfa621ee1a30205cdcd5887629b32d61" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateArc</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1af9caaac5c1a60a026946cacaa3dcce38" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateCircle</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a52a14adf979b1b03c770aef50d162aad" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateFont</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a7d0b057fae2fe4717d9ef9bc8c1cc0a9" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateHeight</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1ad0efd6f3d3a33cf40ddd57c76b063715" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateHorizontalAlignment</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a2fb969ae414a906617d1635307539e66" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateHorizontalDistance</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a08943b9966a40e8a4675149d5bd1f85f" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateNS</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1af9a4dffd32763ec136e844cdacfee128" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateText</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a555a4e80b0a7ff8242b6458a08eb4081" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateVerticalAlignment</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a0a7ed22bfd2fb73174f893dfa42bb7d1" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateVerticalDistance</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1aff2c0254899f0588824b78c28acc2911" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>updateWidth</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a6bf26abf024f95770192be59ce011450" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>ver_alignment_property_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a4907047b687607796cb3414a1f1ec652" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>ver_dist_property_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a6e958f426fe54da882a4cbe058505a7f" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>vertical_alignment_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a9dc6a2cc1a854cf272fe0b7f6f9151c6" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>vertical_dist_</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a8f9aa6ae9bc5c43e3850a29ad87da7ae" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>width_property_</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a77587c7ab812bc4dae834357827988f6" prot="protected" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>zedCallback</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1ad56b34feeba7885ccbd2f38bdc6268b5" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>zedLedConfig</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1aea1209135dac4cb4507f330c5c24ffae" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>zedLedConfigId</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a6711315b5f751371491cb2f025d30bc3" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>zedSub</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a52b03b09d6df870d04af1d19a36bc625" prot="private" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>zedTimedOut</name></member>
+      <member refid="classriptide__rviz_1_1DiagnosticOverlay_1a8418dd087e515c90ae9d0018b5a325be" prot="public" virt="non-virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>~DiagnosticOverlay</name></member>
+      <member refid="classriptide__rviz_1_1OverlayDisplay_1a1928962ebd0d5a0f19ac0c14a51006a9" prot="public" virt="virtual"><scope>riptide_rviz::DiagnosticOverlay</scope><name>~OverlayDisplay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

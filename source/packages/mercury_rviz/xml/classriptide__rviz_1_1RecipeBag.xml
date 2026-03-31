@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1RecipeBag" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::RecipeBag</compoundname>
+    <includes refid="bringup__recipe_8hpp" local="no">bringup_recipe.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1RecipeBag_1a7312d953e890d3e7c948301f7e19a7e8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::RecipeBag::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>riptide_rviz::RecipeBag::name</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="106" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1RecipeBag_1ab52b26cf33d310df4fea1d6da53adb0b" compoundref="bringup__recipe_8cpp" startline="116" endline="130">operator==</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Bag_1ae0847c9eea1b7c0b4dda726f0a6b1122" compoundref="bringup__recipe_8cpp" startline="743" endline="783">riptide_rviz::Bag::parseBagTag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1RecipeBag_1a10798c69ab2d0d87f4e754107cd85721" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &gt;</type>
+        <definition>std::vector&lt;RecipeTopicData&gt; riptide_rviz::RecipeBag::topicList</definition>
+        <argsstring></argsstring>
+        <name>topicList</name>
+        <qualifiedname>riptide_rviz::RecipeBag::topicList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="107" column="21" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1RecipeBag_1ab52b26cf33d310df4fea1d6da53adb0b" compoundref="bringup__recipe_8cpp" startline="116" endline="130">operator==</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Bag_1ae0847c9eea1b7c0b4dda726f0a6b1122" compoundref="bringup__recipe_8cpp" startline="743" endline="783">riptide_rviz::Bag::parseBagTag</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1RecipeBag_1ab52b26cf33d310df4fea1d6da53adb0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::RecipeBag::operator==</definition>
+        <argsstring>(const RecipeBag &amp;)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>riptide_rviz::RecipeBag::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classriptide__rviz_1_1RecipeBag" kindref="compound">RecipeBag</ref> &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="109" column="14" bodyfile="src/bringup_recipe.cpp" bodystart="116" bodyend="130"/>
+        <references refid="classriptide__rviz_1_1RecipeBag_1a7312d953e890d3e7c948301f7e19a7e8" compoundref="bringup__recipe_8hpp" startline="106">name</references>
+        <references refid="classriptide__rviz_1_1RecipeBag_1a10798c69ab2d0d87f4e754107cd85721" compoundref="bringup__recipe_8hpp" startline="107">topicList</references>
+        <referencedby refid="classriptide__rviz_1_1RecipeBag_1a20249315fab65a78d632027cda21c046" compoundref="bringup__recipe_8cpp" startline="132" endline="134">operator!=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1RecipeBag_1a20249315fab65a78d632027cda21c046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::RecipeBag::operator!=</definition>
+        <argsstring>(const RecipeBag &amp;)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>riptide_rviz::RecipeBag::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classriptide__rviz_1_1RecipeBag" kindref="compound">RecipeBag</ref> &amp;</type>
+          <defname>lhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="110" column="14" bodyfile="src/bringup_recipe.cpp" bodystart="132" bodyend="134"/>
+        <references refid="classriptide__rviz_1_1RecipeBag_1ab52b26cf33d310df4fea1d6da53adb0b" compoundref="bringup__recipe_8cpp" startline="116" endline="130">operator==</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::RecipeBag</label>
+        <link refid="classriptide__rviz_1_1RecipeBag"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/bringup_recipe.hpp" line="104" column="5" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="104" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1RecipeBag_1a7312d953e890d3e7c948301f7e19a7e8" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeBag</scope><name>name</name></member>
+      <member refid="classriptide__rviz_1_1RecipeBag_1a20249315fab65a78d632027cda21c046" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeBag</scope><name>operator!=</name></member>
+      <member refid="classriptide__rviz_1_1RecipeBag_1ab52b26cf33d310df4fea1d6da53adb0b" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeBag</scope><name>operator==</name></member>
+      <member refid="classriptide__rviz_1_1RecipeBag_1a10798c69ab2d0d87f4e754107cd85721" prot="public" virt="non-virtual"><scope>riptide_rviz::RecipeBag</scope><name>topicList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structriptide__rviz_1_1PaintedArcConfig" kind="struct" language="C++" prot="public">
+    <compoundname>riptide_rviz::PaintedArcConfig</compoundname>
+    <includes refid="OverlayDisplay_8hpp" local="no">OverlayDisplay.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structriptide__rviz_1_1PaintedArcConfig_1a96ca98327193943184078d66bfc08373" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float riptide_rviz::PaintedArcConfig::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <qualifiedname>riptide_rviz::PaintedArcConfig::x_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="68" column="15" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" compoundref="OverlayDisplay_8cpp" startline="253" endline="262">riptide_rviz::OverlayDisplay::paintArc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1PaintedArcConfig_1a8f4e42800b8c86a2febf81fd889d4680" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float riptide_rviz::PaintedArcConfig::y_</definition>
+        <argsstring></argsstring>
+        <name>y_</name>
+        <qualifiedname>riptide_rviz::PaintedArcConfig::y_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="68" column="18" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" compoundref="OverlayDisplay_8cpp" startline="253" endline="262">riptide_rviz::OverlayDisplay::paintArc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1PaintedArcConfig_1a7d54d49d69a1406c6e148a22b363a7f8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float riptide_rviz::PaintedArcConfig::radius_</definition>
+        <argsstring></argsstring>
+        <name>radius_</name>
+        <qualifiedname>riptide_rviz::PaintedArcConfig::radius_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="69" column="15" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" compoundref="OverlayDisplay_8cpp" startline="253" endline="262">riptide_rviz::OverlayDisplay::paintArc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1PaintedArcConfig_1a64bc9e1be4fb527e9bf908b954d3080a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float riptide_rviz::PaintedArcConfig::start_angle_</definition>
+        <argsstring></argsstring>
+        <name>start_angle_</name>
+        <qualifiedname>riptide_rviz::PaintedArcConfig::start_angle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="70" column="15" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" compoundref="OverlayDisplay_8cpp" startline="253" endline="262">riptide_rviz::OverlayDisplay::paintArc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1PaintedArcConfig_1a6be69bf4a762d3c096c28613bc36ba6b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float riptide_rviz::PaintedArcConfig::end_angle_</definition>
+        <argsstring></argsstring>
+        <name>end_angle_</name>
+        <qualifiedname>riptide_rviz::PaintedArcConfig::end_angle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="70" column="28" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" compoundref="OverlayDisplay_8cpp" startline="253" endline="262">riptide_rviz::OverlayDisplay::paintArc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1PaintedArcConfig_1ab2bcd7d7d1c8981aae47bf6c8496c1d3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float riptide_rviz::PaintedArcConfig::line_width_</definition>
+        <argsstring></argsstring>
+        <name>line_width_</name>
+        <qualifiedname>riptide_rviz::PaintedArcConfig::line_width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="71" column="15" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" compoundref="OverlayDisplay_8cpp" startline="253" endline="262">riptide_rviz::OverlayDisplay::paintArc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1PaintedArcConfig_1a9fee62a59f39757c16cf0bddf010804c" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor riptide_rviz::PaintedArcConfig::line_color_</definition>
+        <argsstring></argsstring>
+        <name>line_color_</name>
+        <qualifiedname>riptide_rviz::PaintedArcConfig::line_color_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="72" column="16" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1OverlayDisplay_1aaf51a39e367e01b8f14294fcf7eb3b10" compoundref="OverlayDisplay_8cpp" startline="253" endline="262">riptide_rviz::OverlayDisplay::paintArc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::PaintedArcConfig</label>
+        <link refid="structriptide__rviz_1_1PaintedArcConfig"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/OverlayDisplay.hpp" line="67" column="5" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="67" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structriptide__rviz_1_1PaintedArcConfig_1a6be69bf4a762d3c096c28613bc36ba6b" prot="public" virt="non-virtual"><scope>riptide_rviz::PaintedArcConfig</scope><name>end_angle_</name></member>
+      <member refid="structriptide__rviz_1_1PaintedArcConfig_1a9fee62a59f39757c16cf0bddf010804c" prot="public" virt="non-virtual"><scope>riptide_rviz::PaintedArcConfig</scope><name>line_color_</name></member>
+      <member refid="structriptide__rviz_1_1PaintedArcConfig_1ab2bcd7d7d1c8981aae47bf6c8496c1d3" prot="public" virt="non-virtual"><scope>riptide_rviz::PaintedArcConfig</scope><name>line_width_</name></member>
+      <member refid="structriptide__rviz_1_1PaintedArcConfig_1a7d54d49d69a1406c6e148a22b363a7f8" prot="public" virt="non-virtual"><scope>riptide_rviz::PaintedArcConfig</scope><name>radius_</name></member>
+      <member refid="structriptide__rviz_1_1PaintedArcConfig_1a64bc9e1be4fb527e9bf908b954d3080a" prot="public" virt="non-virtual"><scope>riptide_rviz::PaintedArcConfig</scope><name>start_angle_</name></member>
+      <member refid="structriptide__rviz_1_1PaintedArcConfig_1a96ca98327193943184078d66bfc08373" prot="public" virt="non-virtual"><scope>riptide_rviz::PaintedArcConfig</scope><name>x_</name></member>
+      <member refid="structriptide__rviz_1_1PaintedArcConfig_1a8f4e42800b8c86a2febf81fd889d4680" prot="public" virt="non-virtual"><scope>riptide_rviz::PaintedArcConfig</scope><name>y_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

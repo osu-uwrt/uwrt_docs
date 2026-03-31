@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="BaggingPanel_8hpp" kind="file" language="C++">
+    <compoundname>BaggingPanel.hpp</compoundname>
+    <includes local="yes">riptide_rviz/BagItem.hpp</includes>
+    <includes local="yes">riptide_rviz/bringup_recipe.hpp</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">ament_index_cpp/get_package_share_directory.hpp</includes>
+    <includes local="no">ament_index_cpp/get_package_prefix.hpp</includes>
+    <includes local="no">rviz_common/panel.hpp</includes>
+    <includes local="no">rviz_common/config.hpp</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">vector</includes>
+    <includes local="yes">ui_BaggingPanel.h</includes>
+    <includes local="no">launch_msgs/msg/list_pids.hpp</includes>
+    <includes local="no">launch_msgs/srv/who_is.hpp</includes>
+    <includes local="no">std_msgs/msg/bool.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/BaggingPanel.hpp</label>
+        <link refid="BaggingPanel_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QTimer</label>
+      </node>
+      <node id="6">
+        <label>ament_index_cpp/get_package_prefix.hpp</label>
+      </node>
+      <node id="5">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="12">
+        <label>launch_msgs/msg/list_pids.hpp</label>
+      </node>
+      <node id="13">
+        <label>launch_msgs/srv/who_is.hpp</label>
+      </node>
+      <node id="4">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="2">
+        <label>riptide_rviz/BagItem.hpp</label>
+      </node>
+      <node id="3">
+        <label>riptide_rviz/bringup_recipe.hpp</label>
+      </node>
+      <node id="8">
+        <label>rviz_common/config.hpp</label>
+      </node>
+      <node id="7">
+        <label>rviz_common/panel.hpp</label>
+      </node>
+      <node id="14">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="11">
+        <label>ui_BaggingPanel.h</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classriptide__rviz_1_1BaggingPanel" prot="public">riptide_rviz::BaggingPanel</innerclass>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;riptide_rviz/BagItem.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;riptide_rviz/bringup_recipe.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_share_directory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_prefix.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_BaggingPanel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;launch_msgs/msg/list_pids.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;launch_msgs/srv/who_is.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/bool.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24" refid="classriptide__rviz_1_1BaggingPanel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1BaggingPanel_1adff6b8d8ae59fa1c6c156cb9361ce1d2" kindref="member">BaggingPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT<sp/>public<sp/>:<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1adff6b8d8ae59fa1c6c156cb9361ce1d2" kindref="member">BaggingPanel</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a6ffaa5f1002aa718419a72e6c15be193" kindref="member">~BaggingPanel</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a36a3ae3f1362e1d25812effa7708a2a3" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a75e49e35d3c01dde79902f0b6f8a2995" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a9a0f19a0990c34d42dba7fd1f1024394" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1ab0a1ea149d4a3d365c2f37a5a5565aa8" kindref="member">clearScrollArea</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>Q_SLOTS:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>QT<sp/>slots<sp/>(function<sp/>callbacks)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a77f0d39b879bdc8b6a9ad59f7b538221" kindref="member">baggingConfigure</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a9e5b9b4826d5dff2c43e8c9b39b3b800" kindref="member">hostListRefresh</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a0230bac20bf34b0f876444c04ac025c3" kindref="member">fileListRefresh</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a9b0daa04a4ccf4dc1a06607dc3df9e5e" kindref="member">handleBaggingPanelHost</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;text);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" kindref="member">handleBaggingPanelFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;text);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1aed8055a401cee1beef0be23a08a53884" kindref="member">startBagging</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a69a137119b7bd875c5ae23cc225a411f" kindref="member">setGlobalBagState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>run);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a6b8e98f38ca5e5264bf2d5b0b6ecbbed" kindref="member">event</ref>(QEvent<sp/>*<ref refid="classriptide__rviz_1_1BaggingPanel_1a6b8e98f38ca5e5264bf2d5b0b6ecbbed" kindref="member">event</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1ad3cbef2fe41e335ffb23e2e963817ec0" kindref="member">waitForWhois</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>UI<sp/>Panel<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ui_BaggingPanel<sp/>*<ref refid="classriptide__rviz_1_1BaggingPanel_1ab57d59c77ee00455f4876473cb018fac" kindref="member">uiPanel</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parent<sp/>info<sp/>for<sp/>child<sp/>widgets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classriptide__rviz_1_1BaggingPanel_1a69d6f4865c49fcc390939f72b3f2f0df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classriptide__rviz_1_1BaggingPanel_1a69d6f4865c49fcc390939f72b3f2f0df" kindref="member">mainParent</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classriptide__rviz_1_1BaggingPanel_1adda5fba623946034be7281c580c07202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QWidget<sp/>*<ref refid="classriptide__rviz_1_1BaggingPanel_1adda5fba623946034be7281c580c07202" kindref="member">scrollAreaLayout</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57" refid="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVBoxLayout<sp/>*<ref refid="classriptide__rviz_1_1BaggingPanel_1a24daf96ab78a4f78e117fd4ebe3c7cde" kindref="member">vbox</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>data<sp/>fo<sp/>storing<sp/>all<sp/>of<sp/>the<sp/>bag<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;BagItem<sp/>*&gt;<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a4a61f890ad092227df052f1895f9d041" kindref="member">bagList</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classriptide__rviz_1_1BaggingPanel_1a72bbd352cac0b07bbf642b7b1282d59e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;launch_msgs::msg::ListPids&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a72bbd352cac0b07bbf642b7b1282d59e" kindref="member">baggingStateSub</ref>;</highlight></codeline>
+<codeline lineno="63" refid="classriptide__rviz_1_1BaggingPanel_1a09b6a5e03664ef33e5d0acf4364b5072" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a09b6a5e03664ef33e5d0acf4364b5072" kindref="member">bagTriggerSub</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classriptide__rviz_1_1BaggingPanel_1a280f38858eb189e1a58ed37ad9651fb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;launch_msgs::srv::WhoIs&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a280f38858eb189e1a58ed37ad9651fb6" kindref="member">bagWhoIsClient</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>request<sp/>info<sp/>for<sp/>the<sp/>whois<sp/>client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classriptide__rviz_1_1BaggingPanel_1a1641b5a5e7b553073837f162276ae263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;std::shared_ptr&lt;launch_msgs::srv::WhoIs_Response&gt;&gt;<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a1641b5a5e7b553073837f162276ae263" kindref="member">whoisFuture</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classriptide__rviz_1_1BaggingPanel_1a10f6cc28386a124d970dd85c52da3945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a10f6cc28386a124d970dd85c52da3945" kindref="member">whoisReqId</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="69" refid="classriptide__rviz_1_1BaggingPanel_1a1f47c90ea4c81dae340c223bb9e3a516" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a1f47c90ea4c81dae340c223bb9e3a516" kindref="member">timerTick</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>vector<sp/>for<sp/>keeping<sp/>track<sp/>of<sp/>non-local<sp/>bags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classriptide__rviz_1_1BaggingPanel_1a665a23f03ab46a46f7d519635ffb1e8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a665a23f03ab46a46f7d519635ffb1e8d" kindref="member">nonLocals</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classriptide__rviz_1_1BaggingPanel_1af259f5a0fc51f35c44af2a7625f08aaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1af259f5a0fc51f35c44af2a7625f08aaf" kindref="member">runningAll</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75" refid="classriptide__rviz_1_1BaggingPanel_1a9bef8f9cd9cbc495a2c357239bc4be3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std_msgs::msg::Bool<sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a9bef8f9cd9cbc495a2c357239bc4be3c" kindref="member">priorBagState</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a0df1fae92b4b558e4a6f281929546021" kindref="member">baggingStateCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>launch_msgs::msg::ListPids<sp/>&amp;msg);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1BaggingPanel_1a7a456deb1024d2a23d8adbc09ad9d4e9" kindref="member">autonomyTriggerCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Bool<sp/>&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>riptide_rviz</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/BaggingPanel.hpp"/>
+  </compounddef>
+</doxygen>

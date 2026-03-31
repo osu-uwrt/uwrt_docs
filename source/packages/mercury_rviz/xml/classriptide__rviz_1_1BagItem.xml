@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1BagItem" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::BagItem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QWidget</basecompoundref>
+    <includes refid="BagItem_8hpp" local="no">BagItem.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" prot="private" static="no" mutable="no">
+        <type>Ui_BagListElement *</type>
+        <definition>Ui_BagListElement* riptide_rviz::BagItem::uiPanel</definition>
+        <argsstring></argsstring>
+        <name>uiPanel</name>
+        <qualifiedname>riptide_rviz::BagItem::uiPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="48" column="27" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1af384419f7375bd79534d21417a1de903" compoundref="BagItem_8cpp" startline="74" endline="98">baggingConfigure</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aece44dcf1e6e8aac220e92b6f480889b" compoundref="BagItem_8cpp" startline="257" endline="260">getName</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a99933ee0109a98789340f6b84a0a6c36" compoundref="BagItem_8cpp" startline="412" endline="418">stateChanging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1af8572efc03b7499b16c89a6b319d7def" compoundref="BagItem_8cpp" startline="419" endline="425">stateRunning</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" compoundref="BagItem_8cpp" startline="405" endline="411">stateStopped</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a15120cc33e812772546bb2a4f281a8bd" compoundref="BagItem_8cpp" startline="64" endline="67">~BagItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1acfb5d652ca0c28199422c0dcc622d6eb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; launch_msgs::msg::TopicData &gt;</type>
+        <definition>std::vector&lt;launch_msgs::msg::TopicData&gt; riptide_rviz::BagItem::topics</definition>
+        <argsstring></argsstring>
+        <name>topics</name>
+        <qualifiedname>riptide_rviz::BagItem::topics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="51" column="21" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1af37dd304e38d4092c108b61fbd8072f6" compoundref="BagItem_8cpp" startline="378" endline="403">loadTopics</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1ae5deaa7b8efd24fd4c763cd834ac5cb9" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classriptide__rviz_1_1RecipeBag" kindref="compound">RecipeBag</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;RecipeBag&gt; riptide_rviz::BagItem::bagData</definition>
+        <argsstring></argsstring>
+        <name>bagData</name>
+        <qualifiedname>riptide_rviz::BagItem::bagData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="52" column="25" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1af384419f7375bd79534d21417a1de903" compoundref="BagItem_8cpp" startline="74" endline="98">baggingConfigure</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; launch_msgs::srv::StartBag &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;launch_msgs::srv::StartBag&gt;::SharedPtr riptide_rviz::BagItem::bagStartClient</definition>
+        <argsstring></argsstring>
+        <name>bagStartClient</name>
+        <qualifiedname>riptide_rviz::BagItem::bagStartClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="55" column="36" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1a011d4ffb47f089d1818b59c972db329e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; launch_msgs::srv::StopBag &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;launch_msgs::srv::StopBag&gt;::SharedPtr riptide_rviz::BagItem::bagStopClient</definition>
+        <argsstring></argsstring>
+        <name>bagStopClient</name>
+        <qualifiedname>riptide_rviz::BagItem::bagStopClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="56" column="36" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1ae3e1cc7fc03c977bf1eff3b3be6e1daf" prot="private" static="no" mutable="no">
+        <type>std::shared_future&lt; std::shared_ptr&lt; launch_msgs::srv::StartBag_Response &gt; &gt;</type>
+        <definition>std::shared_future&lt;std::shared_ptr&lt;launch_msgs::srv::StartBag_Response&gt; &gt; riptide_rviz::BagItem::startFuture</definition>
+        <argsstring></argsstring>
+        <name>startFuture</name>
+        <qualifiedname>riptide_rviz::BagItem::startFuture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="59" column="28" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1ac3121e98d19bec4e608596180b821d79" prot="private" static="no" mutable="no">
+        <type>std::shared_future&lt; std::shared_ptr&lt; launch_msgs::srv::StopBag_Response &gt; &gt;</type>
+        <definition>std::shared_future&lt;std::shared_ptr&lt;launch_msgs::srv::StopBag_Response&gt; &gt; riptide_rviz::BagItem::stopFuture</definition>
+        <argsstring></argsstring>
+        <name>stopFuture</name>
+        <qualifiedname>riptide_rviz::BagItem::stopFuture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="60" column="28" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1aa7b1caec8cbf87dfb08be04494868fc8" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t riptide_rviz::BagItem::startReqId</definition>
+        <argsstring></argsstring>
+        <name>startReqId</name>
+        <qualifiedname>riptide_rviz::BagItem::startReqId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="61" column="17" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6c237518680e45b16d5af5502fa2b66f" compoundref="BagItem_8cpp" startline="252" endline="255">isStarting</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1aaf8af3f29eb59f77f64ee633cecad16b" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t riptide_rviz::BagItem::stopReqId</definition>
+        <argsstring></argsstring>
+        <name>stopReqId</name>
+        <qualifiedname>riptide_rviz::BagItem::stopReqId</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="61" column="29" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1af2f8f474a2088e927ddfcdd0433a0af2" compoundref="BagItem_8cpp" startline="306" endline="309">isStopping</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::BagItem::timerTick</definition>
+        <argsstring></argsstring>
+        <name>timerTick</name>
+        <qualifiedname>riptide_rviz::BagItem::timerTick</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="63" column="13" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::BagItem::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <qualifiedname>riptide_rviz::BagItem::pid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="66" column="13" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aa6defa496b64db0f243df4ee8ed71f4d" compoundref="BagItem_8cpp" startline="227" endline="240">bagAlive</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aea260a1ef087f75ee537edf03e4157d1" compoundref="BagItem_8cpp" startline="242" endline="245">getPid</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BagItem::isLocal</definition>
+        <argsstring></argsstring>
+        <name>isLocal</name>
+        <qualifiedname>riptide_rviz::BagItem::isLocal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="68" column="14" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a41ae31bed03f201a4b215deb0b1aaa51" compoundref="BagItem_8cpp" startline="247" endline="250">local</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" compoundref="BagItem_8cpp" startline="405" endline="411">stateStopped</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::BagItem::BagItem</definition>
+        <argsstring>(std::string hostName, std::shared_ptr&lt; RecipeBag &gt; bagData, std::shared_ptr&lt; rclcpp::Node &gt; parentNode, int local=-1)</argsstring>
+        <name>BagItem</name>
+        <qualifiedname>riptide_rviz::BagItem::BagItem</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>hostName</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classriptide__rviz_1_1RecipeBag" kindref="compound">RecipeBag</ref> &gt;</type>
+          <declname>bagData</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; rclcpp::Node &gt;</type>
+          <declname>parentNode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>local</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="18" column="9" bodyfile="src/BagItem.cpp" bodystart="18" bodyend="62"/>
+        <references refid="classriptide__rviz_1_1BagItem_1ae5deaa7b8efd24fd4c763cd834ac5cb9" compoundref="BagItem_8hpp" startline="52">bagData</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" compoundref="BagItem_8hpp" startline="55">bagStartClient</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a011d4ffb47f089d1818b59c972db329e" compoundref="BagItem_8hpp" startline="56">bagStopClient</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" compoundref="BagItem_8hpp" startline="68">isLocal</references>
+        <references refid="classriptide__rviz_1_1BagItem_1af37dd304e38d4092c108b61fbd8072f6" compoundref="BagItem_8cpp" startline="378" endline="403">loadTopics</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a41ae31bed03f201a4b215deb0b1aaa51" compoundref="BagItem_8cpp" startline="247" endline="250">local</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" compoundref="BagItem_8hpp" startline="66">pid</references>
+        <references refid="classriptide__rviz_1_1BagItem_1af8572efc03b7499b16c89a6b319d7def" compoundref="BagItem_8cpp" startline="419" endline="425">stateRunning</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" compoundref="BagItem_8cpp" startline="405" endline="411">stateStopped</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a15120cc33e812772546bb2a4f281a8bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::BagItem::~BagItem</definition>
+        <argsstring>()</argsstring>
+        <name>~BagItem</name>
+        <qualifiedname>riptide_rviz::BagItem::~BagItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="19" column="9" bodyfile="src/BagItem.cpp" bodystart="64" bodyend="67"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1aa6defa496b64db0f243df4ee8ed71f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BagItem::bagAlive</definition>
+        <argsstring>(std::vector&lt; int &gt; bids)</argsstring>
+        <name>bagAlive</name>
+        <qualifiedname>riptide_rviz::BagItem::bagAlive</qualifiedname>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>bids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="21" column="14" bodyfile="src/BagItem.cpp" bodystart="227" bodyend="240"/>
+        <references refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" compoundref="BagItem_8hpp" startline="66">pid</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" compoundref="BagItem_8cpp" startline="405" endline="411">stateStopped</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1aece44dcf1e6e8aac220e92b6f480889b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::getName</definition>
+        <argsstring>(std::string &amp;name)</argsstring>
+        <name>getName</name>
+        <qualifiedname>riptide_rviz::BagItem::getName</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="24" column="14" bodyfile="src/BagItem.cpp" bodystart="257" bodyend="260"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1aea260a1ef087f75ee537edf03e4157d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int riptide_rviz::BagItem::getPid</definition>
+        <argsstring>()</argsstring>
+        <name>getPid</name>
+        <qualifiedname>riptide_rviz::BagItem::getPid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="25" column="13" bodyfile="src/BagItem.cpp" bodystart="242" bodyend="245"/>
+        <references refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" compoundref="BagItem_8hpp" startline="66">pid</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a41ae31bed03f201a4b215deb0b1aaa51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BagItem::local</definition>
+        <argsstring>()</argsstring>
+        <name>local</name>
+        <qualifiedname>riptide_rviz::BagItem::local</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="26" column="14" bodyfile="src/BagItem.cpp" bodystart="247" bodyend="250"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" compoundref="BagItem_8hpp" startline="68">isLocal</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::startBagging</definition>
+        <argsstring>()</argsstring>
+        <name>startBagging</name>
+        <qualifiedname>riptide_rviz::BagItem::startBagging</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="28" column="14" bodyfile="src/BagItem.cpp" bodystart="100" bodyend="155"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" compoundref="BagItem_8hpp" startline="55">bagStartClient</references>
+        <references refid="classriptide__rviz_1_1BagItem_1aece44dcf1e6e8aac220e92b6f480889b" compoundref="BagItem_8cpp" startline="257" endline="260">getName</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" compoundref="BagItem_8hpp" startline="68">isLocal</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" compoundref="BagItem_8hpp" startline="66">pid</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ae3e1cc7fc03c977bf1eff3b3be6e1daf" compoundref="BagItem_8hpp" startline="59">startFuture</references>
+        <references refid="classriptide__rviz_1_1BagItem_1aa7b1caec8cbf87dfb08be04494868fc8" compoundref="BagItem_8hpp" startline="61">startReqId</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a99933ee0109a98789340f6b84a0a6c36" compoundref="BagItem_8cpp" startline="412" endline="418">stateChanging</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" compoundref="BagItem_8hpp" startline="63">timerTick</references>
+        <references refid="classriptide__rviz_1_1BagItem_1acfb5d652ca0c28199422c0dcc622d6eb" compoundref="BagItem_8hpp" startline="51">topics</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a6c237518680e45b16d5af5502fa2b66f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BagItem::isStarting</definition>
+        <argsstring>()</argsstring>
+        <name>isStarting</name>
+        <qualifiedname>riptide_rviz::BagItem::isStarting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="29" column="14" bodyfile="src/BagItem.cpp" bodystart="252" bodyend="255"/>
+        <references refid="classriptide__rviz_1_1BagItem_1aa7b1caec8cbf87dfb08be04494868fc8" compoundref="BagItem_8hpp" startline="61">startReqId</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::stopBagging</definition>
+        <argsstring>()</argsstring>
+        <name>stopBagging</name>
+        <qualifiedname>riptide_rviz::BagItem::stopBagging</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="30" column="14" bodyfile="src/BagItem.cpp" bodystart="262" bodyend="304"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" compoundref="BagItem_8hpp" startline="55">bagStartClient</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a011d4ffb47f089d1818b59c972db329e" compoundref="BagItem_8hpp" startline="56">bagStopClient</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" compoundref="BagItem_8hpp" startline="66">pid</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a99933ee0109a98789340f6b84a0a6c36" compoundref="BagItem_8cpp" startline="412" endline="418">stateChanging</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ac3121e98d19bec4e608596180b821d79" compoundref="BagItem_8hpp" startline="60">stopFuture</references>
+        <references refid="classriptide__rviz_1_1BagItem_1aaf8af3f29eb59f77f64ee633cecad16b" compoundref="BagItem_8hpp" startline="61">stopReqId</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" compoundref="BagItem_8hpp" startline="63">timerTick</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1af2f8f474a2088e927ddfcdd0433a0af2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BagItem::isStopping</definition>
+        <argsstring>()</argsstring>
+        <name>isStopping</name>
+        <qualifiedname>riptide_rviz::BagItem::isStopping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="31" column="14" bodyfile="src/BagItem.cpp" bodystart="306" bodyend="309"/>
+        <references refid="classriptide__rviz_1_1BagItem_1aaf8af3f29eb59f77f64ee633cecad16b" compoundref="BagItem_8hpp" startline="61">stopReqId</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1af7df6be71503e0c07c61ba266876012d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BagItem::event</definition>
+        <argsstring>(QEvent *event)</argsstring>
+        <name>event</name>
+        <qualifiedname>riptide_rviz::BagItem::event</qualifiedname>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="34" column="14" bodyfile="src/BagItem.cpp" bodystart="69" bodyend="72"/>
+        <references refid="classriptide__rviz_1_1BagItem_1af7df6be71503e0c07c61ba266876012d" compoundref="BagItem_8cpp" startline="69" endline="72">event</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1af7df6be71503e0c07c61ba266876012d" compoundref="BagItem_8cpp" startline="69" endline="72">event</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1af384419f7375bd79534d21417a1de903" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::baggingConfigure</definition>
+        <argsstring>()</argsstring>
+        <name>baggingConfigure</name>
+        <qualifiedname>riptide_rviz::BagItem::baggingConfigure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="35" column="14" bodyfile="src/BagItem.cpp" bodystart="74" bodyend="98"/>
+        <references refid="classriptide__rviz_1_1BagItem_1ae5deaa7b8efd24fd4c763cd834ac5cb9" compoundref="BagItem_8hpp" startline="52">bagData</references>
+        <references refid="classriptide__rviz_1_1BagItem_1af37dd304e38d4092c108b61fbd8072f6" compoundref="BagItem_8cpp" startline="378" endline="403">loadTopics</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::startupTimer</definition>
+        <argsstring>()</argsstring>
+        <name>startupTimer</name>
+        <qualifiedname>riptide_rviz::BagItem::startupTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="37" column="14" bodyfile="src/BagItem.cpp" bodystart="157" bodyend="225"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" compoundref="BagItem_8hpp" startline="55">bagStartClient</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" compoundref="BagItem_8hpp" startline="66">pid</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ae3e1cc7fc03c977bf1eff3b3be6e1daf" compoundref="BagItem_8hpp" startline="59">startFuture</references>
+        <references refid="classriptide__rviz_1_1BagItem_1aa7b1caec8cbf87dfb08be04494868fc8" compoundref="BagItem_8hpp" startline="61">startReqId</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</references>
+        <references refid="classriptide__rviz_1_1BagItem_1af8572efc03b7499b16c89a6b319d7def" compoundref="BagItem_8cpp" startline="419" endline="425">stateRunning</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" compoundref="BagItem_8cpp" startline="405" endline="411">stateStopped</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" compoundref="BagItem_8hpp" startline="63">timerTick</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::shutdownTimer</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownTimer</name>
+        <qualifiedname>riptide_rviz::BagItem::shutdownTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="38" column="14" bodyfile="src/BagItem.cpp" bodystart="311" bodyend="376"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a011d4ffb47f089d1818b59c972db329e" compoundref="BagItem_8hpp" startline="56">bagStopClient</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" compoundref="BagItem_8hpp" startline="66">pid</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" compoundref="BagItem_8cpp" startline="405" endline="411">stateStopped</references>
+        <references refid="classriptide__rviz_1_1BagItem_1ac3121e98d19bec4e608596180b821d79" compoundref="BagItem_8hpp" startline="60">stopFuture</references>
+        <references refid="classriptide__rviz_1_1BagItem_1aaf8af3f29eb59f77f64ee633cecad16b" compoundref="BagItem_8hpp" startline="61">stopReqId</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" compoundref="BagItem_8hpp" startline="63">timerTick</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::stateStopped</definition>
+        <argsstring>()</argsstring>
+        <name>stateStopped</name>
+        <qualifiedname>riptide_rviz::BagItem::stateStopped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="41" column="14" bodyfile="src/BagItem.cpp" bodystart="405" bodyend="411"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" compoundref="BagItem_8hpp" startline="68">isLocal</references>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aa6defa496b64db0f243df4ee8ed71f4d" compoundref="BagItem_8cpp" startline="227" endline="240">bagAlive</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" compoundref="BagItem_8cpp" startline="311" endline="376">shutdownTimer</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1a99933ee0109a98789340f6b84a0a6c36" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::stateChanging</definition>
+        <argsstring>()</argsstring>
+        <name>stateChanging</name>
+        <qualifiedname>riptide_rviz::BagItem::stateChanging</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="42" column="14" bodyfile="src/BagItem.cpp" bodystart="412" bodyend="418"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" compoundref="BagItem_8cpp" startline="100" endline="155">startBagging</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" compoundref="BagItem_8cpp" startline="262" endline="304">stopBagging</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1af8572efc03b7499b16c89a6b319d7def" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::stateRunning</definition>
+        <argsstring>()</argsstring>
+        <name>stateRunning</name>
+        <qualifiedname>riptide_rviz::BagItem::stateRunning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="43" column="14" bodyfile="src/BagItem.cpp" bodystart="419" bodyend="425"/>
+        <references refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" compoundref="BagItem_8hpp" startline="48">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" compoundref="BagItem_8cpp" startline="157" endline="225">startupTimer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BagItem_1af37dd304e38d4092c108b61fbd8072f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::BagItem::loadTopics</definition>
+        <argsstring>(const std::vector&lt; RecipeTopicData &gt; &amp;topicList)</argsstring>
+        <name>loadTopics</name>
+        <qualifiedname>riptide_rviz::BagItem::loadTopics</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &gt; &amp;</type>
+          <declname>topicList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BagItem.hpp" line="45" column="14" bodyfile="src/BagItem.cpp" bodystart="378" bodyend="403"/>
+        <references refid="classriptide__rviz_1_1BagItem_1acfb5d652ca0c28199422c0dcc622d6eb" compoundref="BagItem_8hpp" startline="51">topics</references>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1af384419f7375bd79534d21417a1de903" compoundref="BagItem_8cpp" startline="74" endline="98">baggingConfigure</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" compoundref="BagItem_8cpp" startline="18" endline="62">BagItem</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>riptide_rviz::BagItem</label>
+        <link refid="classriptide__rviz_1_1BagItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>riptide_rviz::BagItem</label>
+        <link refid="classriptide__rviz_1_1BagItem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/BagItem.hpp" line="15" column="5" bodyfile="include/mercury_rviz/BagItem.hpp" bodystart="16" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1BagItem_1aa6defa496b64db0f243df4ee8ed71f4d" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>bagAlive</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1ae5deaa7b8efd24fd4c763cd834ac5cb9" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>bagData</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1af384419f7375bd79534d21417a1de903" prot="protected" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>baggingConfigure</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1aae3341fb2c5091c7e6ddcf80d5ea0e1e" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>BagItem</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a322adbd4a208f4b797e2f127be30136e" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>bagStartClient</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a011d4ffb47f089d1818b59c972db329e" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>bagStopClient</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1af7df6be71503e0c07c61ba266876012d" prot="protected" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>event</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1aece44dcf1e6e8aac220e92b6f480889b" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>getName</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1aea260a1ef087f75ee537edf03e4157d1" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>getPid</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a30da6a299a755e613d486dd705b2929d" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>isLocal</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a6c237518680e45b16d5af5502fa2b66f" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>isStarting</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1af2f8f474a2088e927ddfcdd0433a0af2" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>isStopping</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1af37dd304e38d4092c108b61fbd8072f6" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>loadTopics</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a41ae31bed03f201a4b215deb0b1aaa51" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>local</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1ab61f07fc0501db7e7d60116c41e7d05d" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>pid</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a10c37c1df5be2c33cc4a4ba6b73da151" prot="protected" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>shutdownTimer</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a6b1c06e955fea505ba59f710f79c3fae" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>startBagging</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1ae3e1cc7fc03c977bf1eff3b3be6e1daf" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>startFuture</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1aa7b1caec8cbf87dfb08be04494868fc8" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>startReqId</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a20c42474345ec505e57b23ca5f31ab40" prot="protected" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>startupTimer</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a99933ee0109a98789340f6b84a0a6c36" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>stateChanging</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1af8572efc03b7499b16c89a6b319d7def" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>stateRunning</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a8c9d3fcea9d229aff40aef661738aef4" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>stateStopped</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a9978821525d55790d8a7162bbf14238f" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>stopBagging</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1ac3121e98d19bec4e608596180b821d79" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>stopFuture</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1aaf8af3f29eb59f77f64ee633cecad16b" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>stopReqId</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a1dc0062028d9096d84e228beaf11d3bb" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>timerTick</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1acfb5d652ca0c28199422c0dcc622d6eb" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>topics</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a928c0d38b78fef9e95896bf8de5ec215" prot="private" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>uiPanel</name></member>
+      <member refid="classriptide__rviz_1_1BagItem_1a15120cc33e812772546bb2a4f281a8bd" prot="public" virt="non-virtual"><scope>riptide_rviz::BagItem</scope><name>~BagItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

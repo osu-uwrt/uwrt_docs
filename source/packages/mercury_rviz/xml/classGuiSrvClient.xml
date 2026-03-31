@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classGuiSrvClient" kind="class" language="C++" prot="public">
+    <compoundname>GuiSrvClient</compoundname>
+    <includes refid="GuiSrvClient_8hpp" local="no">GuiSrvClient.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename SrvType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classGuiSrvClient_1ac91d3548ad9d5a96535fb2612498f48e" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classGuiSrvClient" kindref="compound">GuiSrvClient</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;GuiSrvClient&gt; GuiSrvClient&lt; SrvType &gt;::SharedPtr</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>GuiSrvClient::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="20" column="29" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" prot="public" static="no">
+        <type>std::function&lt; void(const std::string &amp;, typename rclcpp::Client&lt; SrvType &gt;::SharedResponse)&gt;</type>
+        <definition>typedef std::function&lt;void(const std::string&amp;, typename rclcpp::Client&lt;SrvType&gt;::SharedResponse)&gt; GuiSrvClient&lt; SrvType &gt;::ResponseFunc</definition>
+        <argsstring></argsstring>
+        <name>ResponseFunc</name>
+        <qualifiedname>GuiSrvClient::ResponseFunc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="21" column="28" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr GuiSrvClient&lt; SrvType &gt;::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <qualifiedname>GuiSrvClient::node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="101" column="29" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" compoundref="GuiSrvClient_8hpp" startline="33" endline="60">GuiSrvClient&lt; SrvType &gt;::callService</referencedby>
+        <referencedby refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" compoundref="GuiSrvClient_8hpp" startline="23" endline="31">GuiSrvClient&lt; SrvType &gt;::GuiSrvClient</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; SrvType &gt;<ref refid="classGuiSrvClient_1ac91d3548ad9d5a96535fb2612498f48e" kindref="member">::SharedPtr</ref></type>
+        <definition>rclcpp::Client&lt;SrvType&gt;::SharedPtr GuiSrvClient&lt; SrvType &gt;::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <qualifiedname>GuiSrvClient::client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="102" column="41" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" compoundref="GuiSrvClient_8hpp" startline="33" endline="60">GuiSrvClient&lt; SrvType &gt;::callService</referencedby>
+        <referencedby refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" compoundref="GuiSrvClient_8hpp" startline="23" endline="31">GuiSrvClient&lt; SrvType &gt;::GuiSrvClient</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" prot="private" static="no" mutable="no">
+        <type><ref refid="GuiSrvClient_8hpp_1a862c7cc2393cda5b48129eb32f914289" kindref="member">StatusUpdateFunc</ref></type>
+        <definition>StatusUpdateFunc GuiSrvClient&lt; SrvType &gt;::updateStatus</definition>
+        <argsstring></argsstring>
+        <name>updateStatus</name>
+        <qualifiedname>GuiSrvClient::updateStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="103" column="22" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" compoundref="GuiSrvClient_8hpp" startline="33" endline="60">GuiSrvClient&lt; SrvType &gt;::callService</referencedby>
+        <referencedby refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" compoundref="GuiSrvClient_8hpp" startline="23" endline="31">GuiSrvClient&lt; SrvType &gt;::GuiSrvClient</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" prot="private" static="no" mutable="no">
+        <type><ref refid="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" kindref="member">ResponseFunc</ref></type>
+        <definition>ResponseFunc GuiSrvClient&lt; SrvType &gt;::respond</definition>
+        <argsstring></argsstring>
+        <name>respond</name>
+        <qualifiedname>GuiSrvClient::respond</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="104" column="18" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" compoundref="GuiSrvClient_8hpp" startline="23" endline="31">GuiSrvClient&lt; SrvType &gt;::GuiSrvClient</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t GuiSrvClient&lt; SrvType &gt;::srvReqId</definition>
+        <argsstring></argsstring>
+        <name>srvReqId</name>
+        <qualifiedname>GuiSrvClient::srvReqId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="106" column="13" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" compoundref="GuiSrvClient_8hpp" startline="33" endline="60">GuiSrvClient&lt; SrvType &gt;::callService</referencedby>
+        <referencedby refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" compoundref="GuiSrvClient_8hpp" startline="23" endline="31">GuiSrvClient&lt; SrvType &gt;::GuiSrvClient</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time GuiSrvClient&lt; SrvType &gt;::sendTime</definition>
+        <argsstring></argsstring>
+        <name>sendTime</name>
+        <qualifiedname>GuiSrvClient::sendTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="107" column="18" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" compoundref="GuiSrvClient_8hpp" startline="33" endline="60">GuiSrvClient&lt; SrvType &gt;::callService</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" prot="private" static="no" mutable="no">
+        <type>std::shared_future&lt; typename SrvType::Response::SharedPtr &gt;</type>
+        <definition>std::shared_future&lt;typename SrvType::Response::SharedPtr&gt; GuiSrvClient&lt; SrvType &gt;::sharedFuture</definition>
+        <argsstring></argsstring>
+        <name>sharedFuture</name>
+        <qualifiedname>GuiSrvClient::sharedFuture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="108" column="24" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="108" bodyend="-1"/>
+        <referencedby refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" compoundref="GuiSrvClient_8hpp" startline="33" endline="60">GuiSrvClient&lt; SrvType &gt;::callService</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GuiSrvClient&lt; SrvType &gt;::GuiSrvClient</definition>
+        <argsstring>(rclcpp::Node::SharedPtr node, const std::string &amp;srv_name, StatusUpdateFunc status_update_callback, ResponseFunc response_callback)</argsstring>
+        <name>GuiSrvClient</name>
+        <qualifiedname>GuiSrvClient::GuiSrvClient</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>srv_name</declname>
+        </param>
+        <param>
+          <type><ref refid="GuiSrvClient_8hpp_1a862c7cc2393cda5b48129eb32f914289" kindref="member">StatusUpdateFunc</ref></type>
+          <declname>status_update_callback</declname>
+        </param>
+        <param>
+          <type><ref refid="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" kindref="member">ResponseFunc</ref></type>
+          <declname>response_callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="23" column="5" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="23" bodyend="31"/>
+        <references refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" compoundref="GuiSrvClient_8hpp" startline="102">GuiSrvClient&lt; SrvType &gt;::client</references>
+        <references refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" compoundref="GuiSrvClient_8hpp" startline="101">GuiSrvClient&lt; SrvType &gt;::node</references>
+        <references refid="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" compoundref="GuiSrvClient_8hpp" startline="104">GuiSrvClient&lt; SrvType &gt;::respond</references>
+        <references refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" compoundref="GuiSrvClient_8hpp" startline="106">GuiSrvClient&lt; SrvType &gt;::srvReqId</references>
+        <references refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" compoundref="GuiSrvClient_8hpp" startline="103">GuiSrvClient&lt; SrvType &gt;::updateStatus</references>
+      </memberdef>
+      <memberdef kind="function" id="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GuiSrvClient&lt; SrvType &gt;::callService</definition>
+        <argsstring>(typename SrvType::Request::SharedPtr request)</argsstring>
+        <name>callService</name>
+        <qualifiedname>GuiSrvClient::callService</qualifiedname>
+        <param>
+          <type>typename SrvType::Request::SharedPtr</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="33" column="10" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="33" bodyend="60"/>
+        <references refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" compoundref="GuiSrvClient_8hpp" startline="102">GuiSrvClient&lt; SrvType &gt;::client</references>
+        <references refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" compoundref="GuiSrvClient_8hpp" startline="101">GuiSrvClient&lt; SrvType &gt;::node</references>
+        <references refid="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" compoundref="GuiSrvClient_8hpp" startline="107">GuiSrvClient&lt; SrvType &gt;::sendTime</references>
+        <references refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" compoundref="GuiSrvClient_8hpp" startline="108">GuiSrvClient&lt; SrvType &gt;::sharedFuture</references>
+        <references refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" compoundref="GuiSrvClient_8hpp" startline="106">GuiSrvClient&lt; SrvType &gt;::srvReqId</references>
+        <references refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" compoundref="GuiSrvClient_8hpp" startline="103">GuiSrvClient&lt; SrvType &gt;::updateStatus</references>
+        <references refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GuiSrvClient&lt; SrvType &gt;::waitForService</definition>
+        <argsstring>()</argsstring>
+        <name>waitForService</name>
+        <qualifiedname>GuiSrvClient::waitForService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="64" column="10" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="64" bodyend="99"/>
+        <references refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" compoundref="GuiSrvClient_8hpp" startline="102">GuiSrvClient&lt; SrvType &gt;::client</references>
+        <references refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" compoundref="GuiSrvClient_8hpp" startline="101">GuiSrvClient&lt; SrvType &gt;::node</references>
+        <references refid="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" compoundref="GuiSrvClient_8hpp" startline="104">GuiSrvClient&lt; SrvType &gt;::respond</references>
+        <references refid="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" compoundref="GuiSrvClient_8hpp" startline="107">GuiSrvClient&lt; SrvType &gt;::sendTime</references>
+        <references refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" compoundref="GuiSrvClient_8hpp" startline="108">GuiSrvClient&lt; SrvType &gt;::sharedFuture</references>
+        <references refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" compoundref="GuiSrvClient_8hpp" startline="106">GuiSrvClient&lt; SrvType &gt;::srvReqId</references>
+        <references refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" compoundref="GuiSrvClient_8hpp" startline="103">GuiSrvClient&lt; SrvType &gt;::updateStatus</references>
+        <references refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</references>
+        <referencedby refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" compoundref="GuiSrvClient_8hpp" startline="33" endline="60">GuiSrvClient&lt; SrvType &gt;::callService</referencedby>
+        <referencedby refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" compoundref="GuiSrvClient_8hpp" startline="64" endline="99">GuiSrvClient&lt; SrvType &gt;::waitForService</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GuiSrvClient&lt; SrvType &gt;</label>
+        <link refid="classGuiSrvClient"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/GuiSrvClient.hpp" line="18" column="1" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="18" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" prot="public" virt="non-virtual"><scope>GuiSrvClient</scope><name>callService</name></member>
+      <member refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>client</name></member>
+      <member refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" prot="public" virt="non-virtual"><scope>GuiSrvClient</scope><name>GuiSrvClient</name></member>
+      <member refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>node</name></member>
+      <member refid="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>respond</name></member>
+      <member refid="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" prot="public" virt="non-virtual"><scope>GuiSrvClient</scope><name>ResponseFunc</name></member>
+      <member refid="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>sendTime</name></member>
+      <member refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>sharedFuture</name></member>
+      <member refid="classGuiSrvClient_1ac91d3548ad9d5a96535fb2612498f48e" prot="public" virt="non-virtual"><scope>GuiSrvClient</scope><name>SharedPtr</name></member>
+      <member refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>srvReqId</name></member>
+      <member refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>updateStatus</name></member>
+      <member refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" prot="private" virt="non-virtual"><scope>GuiSrvClient</scope><name>waitForService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="ControlPanel_8hpp" kind="file" language="C++">
+    <compoundname>ControlPanel.hpp</compoundname>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">rclcpp_action/rclcpp_action.hpp</includes>
+    <includes local="no">riptide_msgs2/msg/controller_command.hpp</includes>
+    <includes local="no">riptide_msgs2/msg/kill_switch_report.hpp</includes>
+    <includes local="no">geometry_msgs/msg/pose_stamped.hpp</includes>
+    <includes local="no">nav_msgs/msg/odometry.hpp</includes>
+    <includes local="no">std_msgs/msg/int8.hpp</includes>
+    <includes local="no">std_msgs/msg/float32.hpp</includes>
+    <includes local="no">std_msgs/msg/string.hpp</includes>
+    <includes local="no">std_msgs/msg/empty.hpp</includes>
+    <includes local="no">std_msgs/msg/bool.hpp</includes>
+    <includes local="no">std_srvs/srv/trigger.hpp</includes>
+    <includes local="no">std_srvs/srv/set_bool.hpp</includes>
+    <includes local="no">robot_localization/srv/set_pose.hpp</includes>
+    <includes local="no">diagnostic_msgs/msg/diagnostic_array.hpp</includes>
+    <includes local="no">interactive_markers/interactive_marker_server.hpp</includes>
+    <includes local="no">ament_index_cpp/get_package_share_directory.hpp</includes>
+    <includes local="no">ament_index_cpp/get_package_prefix.hpp</includes>
+    <includes local="no">rviz_common/panel.hpp</includes>
+    <includes local="no">rviz_common/config.hpp</includes>
+    <includes local="no">tf2_ros/buffer.h</includes>
+    <includes local="no">tf2_ros/transform_listener.h</includes>
+    <includes local="no">riptide_msgs2/action/calibrate_drag_new.hpp</includes>
+    <includes local="yes">ui_ControlPanel.h</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/ControlPanel.hpp</label>
+        <link refid="ControlPanel_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>QMessageBox</label>
+      </node>
+      <node id="28">
+        <label>QString</label>
+      </node>
+      <node id="26">
+        <label>QTimer</label>
+      </node>
+      <node id="19">
+        <label>ament_index_cpp/get_package_prefix.hpp</label>
+      </node>
+      <node id="18">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="16">
+        <label>diagnostic_msgs/msg/diagnostic_array.hpp</label>
+      </node>
+      <node id="6">
+        <label>geometry_msgs/msg/pose_stamped.hpp</label>
+      </node>
+      <node id="17">
+        <label>interactive_markers/interactive_marker_server.hpp</label>
+      </node>
+      <node id="7">
+        <label>nav_msgs/msg/odometry.hpp</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="3">
+        <label>rclcpp_action/rclcpp_action.hpp</label>
+      </node>
+      <node id="24">
+        <label>riptide_msgs2/action/calibrate_drag_new.hpp</label>
+      </node>
+      <node id="4">
+        <label>riptide_msgs2/msg/controller_command.hpp</label>
+      </node>
+      <node id="5">
+        <label>riptide_msgs2/msg/kill_switch_report.hpp</label>
+      </node>
+      <node id="15">
+        <label>robot_localization/srv/set_pose.hpp</label>
+      </node>
+      <node id="21">
+        <label>rviz_common/config.hpp</label>
+      </node>
+      <node id="20">
+        <label>rviz_common/panel.hpp</label>
+      </node>
+      <node id="12">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="11">
+        <label>std_msgs/msg/empty.hpp</label>
+      </node>
+      <node id="9">
+        <label>std_msgs/msg/float32.hpp</label>
+      </node>
+      <node id="8">
+        <label>std_msgs/msg/int8.hpp</label>
+      </node>
+      <node id="10">
+        <label>std_msgs/msg/string.hpp</label>
+      </node>
+      <node id="14">
+        <label>std_srvs/srv/set_bool.hpp</label>
+      </node>
+      <node id="13">
+        <label>std_srvs/srv/trigger.hpp</label>
+      </node>
+      <node id="22">
+        <label>tf2_ros/buffer.h</label>
+      </node>
+      <node id="23">
+        <label>tf2_ros/transform_listener.h</label>
+      </node>
+      <node id="25">
+        <label>ui_ControlPanel.h</label>
+      </node>
+      <node id="29">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structriptide__rviz_1_1BallastLogData" prot="public">riptide_rviz::BallastLogData</innerclass>
+    <innerclass refid="classriptide__rviz_1_1ControlPanel" prot="public">riptide_rviz::ControlPanel</innerclass>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ControlPanel_8hpp_1a5f59a2c3b4557adb8c958da21d59a2e9" prot="public" static="no">
+        <name>CONTROLLER_CMD</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="41" column="9" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ControlPanel_8hpp_1a374bc78dd2d553eecbb45a13f50845a8" prot="public" static="no">
+        <name>TARGET_POSITION</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="42" column="9" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ControlPanel_8hpp_1a34c9dc7f643c7b95c4220345caad8f9b" prot="public" static="no">
+        <name>CONTROLLER_OUTPUT_TYPE</name>
+        <initializer><ref refid="ControlPanel_8hpp_1a5f59a2c3b4557adb8c958da21d59a2e9" kindref="member">CONTROLLER_CMD</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="43" column="9" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp_action/rclcpp_action.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/controller_command.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/kill_switch_report.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;geometry_msgs/msg/pose_stamped.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nav_msgs/msg/odometry.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/int8.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/float32.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/string.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/empty.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/bool.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_srvs/srv/trigger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_srvs/srv/set_bool.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;robot_localization/srv/set_pose.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;diagnostic_msgs/msg/diagnostic_array.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;interactive_markers/interactive_marker_server.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_share_directory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_prefix.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tf2_ros/buffer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tf2_ros/transform_listener.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/action/calibrate_drag_new.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_ControlPanel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CONTROLLER<sp/>SELECTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="ControlPanel_8hpp_1a5f59a2c3b4557adb8c958da21d59a2e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTROLLER_CMD<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="ControlPanel_8hpp_1a374bc78dd2d553eecbb45a13f50845a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TARGET_POSITION<sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="ControlPanel_8hpp_1a34c9dc7f643c7b95c4220345caad8f9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTROLLER_OUTPUT_TYPE<sp/>CONTROLLER_CMD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47" refid="structriptide__rviz_1_1BallastLogData" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structriptide__rviz_1_1BallastLogData" kindref="compound">BallastLogData</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structriptide__rviz_1_1BallastLogData_1a5daee54fab7edc4957566ca6e8dc549c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData_1a5daee54fab7edc4957566ca6e8dc549c" kindref="member">depth</ref>,</highlight></codeline>
+<codeline lineno="51" refid="structriptide__rviz_1_1BallastLogData_1a07812877a2c62a62c506199cb693f4b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData_1a07812877a2c62a62c506199cb693f4b7" kindref="member">regPressure</ref>,</highlight></codeline>
+<codeline lineno="52" refid="structriptide__rviz_1_1BallastLogData_1a4fe1ac0a712bec09604ee7833df8d5ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData_1a4fe1ac0a712bec09604ee7833df8d5ee" kindref="member">regHousingPressure</ref>,</highlight></codeline>
+<codeline lineno="53" refid="structriptide__rviz_1_1BallastLogData_1a6562ce76c26c3ced56e4648ffc60ae60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData_1a6562ce76c26c3ced56e4648ffc60ae60" kindref="member">tankPressure</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="structriptide__rviz_1_1BallastLogData_1a755f4f0448fbe3fde101656707a074f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData_1a755f4f0448fbe3fde101656707a074f4" kindref="member">exaustState</ref>,</highlight></codeline>
+<codeline lineno="57" refid="structriptide__rviz_1_1BallastLogData_1af507cd7bed861f5559fa4a7a06bab6c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData_1af507cd7bed861f5559fa4a7a06bab6c7" kindref="member">pressureState</ref>,</highlight></codeline>
+<codeline lineno="58" refid="structriptide__rviz_1_1BallastLogData_1a1356a6706c182c7d853ad4cd2736ef1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData_1a1356a6706c182c7d853ad4cd2736ef1f" kindref="member">waterState</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classriptide__rviz_1_1ControlPanel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ControlPanel_1abb24715848b5805c58f3977eae233834" kindref="member">ControlPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63" refid="classriptide__rviz_1_1ControlPanel_1a363e63f828261319030c8f81315f17e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ControlPanel_1a363e63f828261319030c8f81315f17e1" kindref="member">Trigger</ref><sp/>=<sp/>std_srvs::srv::Trigger;</highlight></codeline>
+<codeline lineno="64" refid="classriptide__rviz_1_1ControlPanel_1ae9728c1597803dbd49ed384dbd810f55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ControlPanel_1ae9728c1597803dbd49ed384dbd810f55" kindref="member">SetBool</ref><sp/>=<sp/>std_srvs::srv::SetBool;</highlight></codeline>
+<codeline lineno="65" refid="classriptide__rviz_1_1ControlPanel_1ad662b6c57036c67a0ccfa4ff17207106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ControlPanel_1ad662b6c57036c67a0ccfa4ff17207106" kindref="member">SetPose</ref><sp/>=<sp/>robot_localization::srv::SetPose;</highlight></codeline>
+<codeline lineno="66" refid="classriptide__rviz_1_1ControlPanel_1aaedc8e6f1f91bb1b235410072549f7e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ControlPanel_1aaedc8e6f1f91bb1b235410072549f7e6" kindref="member">CalibrateDrag</ref><sp/>=<sp/>riptide_msgs2::action::CalibrateDragNew;</highlight></codeline>
+<codeline lineno="67" refid="classriptide__rviz_1_1ControlPanel_1afeed9cefcc806f6a266537bb2a188676" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ControlPanel_1afeed9cefcc806f6a266537bb2a188676" kindref="member">CalibrateDragGH</ref><sp/>=<sp/>rclcpp_action::ClientGoalHandle&lt;CalibrateDrag&gt;;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT<sp/>public<sp/>:<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1abb24715848b5805c58f3977eae233834" kindref="member">ControlPanel</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1afe6ad93d6eef1ab6c57851620ed6e9fe" kindref="member">~ControlPanel</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a79c4d057066a87b1a54ad2d10f5cb02f" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1aa842f1144fb267b52b2d41e00fe2a4c8" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a712ca5b2d2bea375eefa3c3c800e2922" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ROS<sp/>Subscriber<sp/>callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a0e3db97856619853775ae141ed836633" kindref="member">odomCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nav_msgs::msg::Odometry<sp/>&amp;msg);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a4991378e6e558c097e50d1cd12d5f014" kindref="member">diagCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>diagnostic_msgs::msg::DiagnosticArray<sp/>&amp;msg);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ab62facac3efc46a9f8339296c66b0dc5" kindref="member">selectedPose</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::PoseStamped<sp/>&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ROS<sp/>timer<sp/>callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a02ffb08b91222060f0f176a4dd4638e7" kindref="member">sendKillMsgTimer</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classriptide__rviz_1_1ControlPanel_1a6a155b5c365d6927ba539d11a486771b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6a155b5c365d6927ba539d11a486771b" kindref="member">control_modes</ref><sp/>{<ref refid="classriptide__rviz_1_1ControlPanel_1a6a155b5c365d6927ba539d11a486771ba0a4e982ef9f7c5bc6d3b83065616cb4e" kindref="member">DISABLED</ref>,<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6a155b5c365d6927ba539d11a486771ba77cb3bb225ff4c85d8ae831602ca4003" kindref="member">FEEDFORWARD</ref>,<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6a155b5c365d6927ba539d11a486771baf87a2dbc7cc2b59ab52b2ffd5cdcbf57" kindref="member">VELOCITY</ref>,<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6a155b5c365d6927ba539d11a486771ba32b3dac15ef9bc07591ebf10a02e582c" kindref="member">POSITION</ref>,<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6a155b5c365d6927ba539d11a486771bae3cf0f5d558f87d6543f2bd5a7e4cb0b" kindref="member">TELEOP</ref><sp/>=<sp/>255};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>Q_SLOTS:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>QT<sp/>slots<sp/>(function<sp/>callbacks)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slots<sp/>for<sp/>handling<sp/>mode<sp/>setting<sp/>of<sp/>the<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ac17050b4e68762a4bc3b27a76bc82c15" kindref="member">handleEnable</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a1b2f26c48a1064a64097124a4b639be3" kindref="member">handleDisable</ref>();<sp/></highlight><highlight class="comment">//<sp/>pressing<sp/>disable<sp/>asserts<sp/>kill<sp/>and<sp/>clears<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1acf20eac0c593d44a7b6dfd1d5282bf74" kindref="member">switchMode</ref>(uint8_t<sp/>mode,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a549a796667de9ba3ee9594af49ece229" kindref="member">handleAuxDown</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a970a8144db15d16fa258b6824e6cbb4e" kindref="member">handleAuxUp</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slots<sp/>for<sp/>controlling<sp/>the<sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a2bb5eb3d314c51662b6b9ff466189206" kindref="member">toggleDegrees</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1abd8d63ae9e4d1f00f6ee3390e21b2e53" kindref="member">refreshUI</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slots<sp/>for<sp/>sending<sp/>commands<sp/>to<sp/>the<sp/>vehicle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ae3895702905b353f3d4dad0ffc7c62f4" kindref="member">handleLocalDive</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1af894c508bb5c711e1932e409f43daed6" kindref="member">handleCurrent</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a61de0c06eec1fa783fd22e61d297ea46" kindref="member">handleCommand</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>updateInteractiveMarker);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//slots<sp/>for<sp/>parameter<sp/>relaod<sp/>buttons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a8689e52702b46c5d9a2c8babba1165bf" kindref="member">handleReloadController</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//slots<sp/>for<sp/>drag<sp/>cal<sp/>buttons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a5537c099e4c15a271be945005d5070da" kindref="member">handleStartDragCal</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a1ea7868df963381ae0ef2a987e950b6d" kindref="member">handleStopDragCal</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a83eef5e5c2fab6aae990d61ad326a512" kindref="member">handleTriggerDragCal</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//simualtor<sp/>apply</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ae855f9a712f739bb2bd230edb3ecd517" kindref="member">simulator_apply_clickec</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//buoyancy<sp/>buttons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a74eedbcb95ec35c63438d141a498ea18" kindref="member">handleBallastDive</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a50f60cd306b63ff32ee69aa88a7e1729" kindref="member">handleBallastSurface</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a376c1f1063fb073c2761d0cf3617c6b5" kindref="member">handleBallastHold</ref>();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1acb44689b85c67319aabc897d044c6c0e" kindref="member">handleBallastToggleExaust</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a7b6745293c50b459faa1d746c71fd6d8" kindref="member">handleBallastTogglePressure</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a863ca41d7efbf0c51c43f37b1c36e6a5" kindref="member">handleBallastToggleWater</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a97e47f91c2a449029e6c41daded73e07" kindref="member">startBallastLogData</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//publish<sp/>the<sp/>current<sp/>set<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1aa1a6564bb79d528447d8f6884d77ed18" kindref="member">pubCurrentSetpoint</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ad06cadc64fa431ffd748d00220d042ff" kindref="member">event</ref>(QEvent<sp/>*<ref refid="classriptide__rviz_1_1ControlPanel_1ad06cadc64fa431ffd748d00220d042ff" kindref="member">event</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a425af5c8edcfa3b0f282b2b23dec173b" kindref="member">transformBetweenFrames</ref>(geometry_msgs::msg::Pose<sp/>pose_in,<sp/>geometry_msgs::msg::Pose&amp;<sp/>pose_out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>from_frame,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>to_frame);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ad169997a4354c7e4a27db8c8bbd7e75a" kindref="member">getDesiredSetpointFromTextboxes</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>results[6]);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1aa76100ecccfdb6641e087bc6babc9777" kindref="member">syncSetptMarkerToTextboxes</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>applyChanges<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6f2fba3239080acacb4a373399ad7e5f" kindref="member">setptMarkerFeedback</ref>(interactive_markers::InteractiveMarkerServer::FeedbackConstSharedPtr<sp/>feedback);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6d308db71f65a8142b1fa9db8a96d645" kindref="member">updateCalStatus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>status);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a49535d50a0bd62c60f20ed3a02e13966" kindref="member">callTriggerService</ref>(rclcpp::Client&lt;Trigger&gt;::SharedPtr<sp/>client);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a1e0374490603ce625a17f816e73ed895" kindref="member">callSetBoolService</ref>(rclcpp::Client&lt;SetBool&gt;::SharedPtr<sp/>client,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a869805b5c679fee7540e592a2da4388c" kindref="member">callSetPoseService</ref>(rclcpp::Client&lt;SetPose&gt;::SharedPtr<sp/>client,<sp/>std::vector&lt;double&gt;<sp/>pose);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ab4a6b3ca02c68f2d28ff1a1193eef6ed" kindref="member">waitForTriggerResponse</ref>(rclcpp::Client&lt;Trigger&gt;::SharedPtr<sp/>client);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a1b40f006e6e4e1bab7031adc315dd794" kindref="member">waitForSetBoolResponse</ref>(rclcpp::Client&lt;SetBool&gt;::SharedPtr<sp/>client);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1aa5f0761ed90f1c1c3d51b79a235554ac" kindref="member">waitForSetPoseResponse</ref>(rclcpp::Client&lt;SetPose&gt;::SharedPtr<sp/>client);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a8b00a25bbe7f112166204b36e2850b8f" kindref="member">setDragCalRunning</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>running);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a681db5a280c6e40f69a034833224171a" kindref="member">dragGoalResponseCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CalibrateDragGH::SharedPtr<sp/>&amp;goal_handle);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a3959e0200990b43f5cfc40d5344d6284" kindref="member">dragResultCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CalibrateDragGH::WrappedResult<sp/>&amp;result);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1aa9c5460b61f74240d9a2f75546c81a9b" kindref="member">setSolenoidStatuses</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>statuses[3]);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a3b59719743ffa3deafce6f0f890e668d" kindref="member">getSolenoidStatuses</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>statuses[3]);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a1e8c9908139805278fa89ba68868ae48" kindref="member">publishSolenoidStatuses</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>statuses[3]);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1aadaa80a0425e3b0b1b0a18d3687d224f" kindref="member">isBallastStateIllegal</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>statuses[3]);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a71130387f844c79a9c721e11b129c634" kindref="member">exaustSolenoidCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Bool&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1af1abfdd3c7ce79ce14a366eda57f767c" kindref="member">pressureSolenoidCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Bool&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a02e69a198394f287832faa9927360e39" kindref="member">waterSolenoidCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Bool&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a925b9f1fc4e663412c612bbb10ad68f8" kindref="member">regPressureCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Float32&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1adb5697a7268c5a181423e8e80ecd690a" kindref="member">regHousingPressureCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Float32&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a609db007d28fe477e9c3166c247e7e7a" kindref="member">tankPressureCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Float32&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a7d27dc3752fc94674f193c81efafc856" kindref="member">updateBallastLog</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Time&amp;<sp/>now);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a7e2b6b0e52c1ccdb6bcadd4d601e553e" kindref="member">displayPopupWindow</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>warningMessage,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a176c3b3078577f1f6385e00725a1d287" kindref="member">checkForDuplicateTopics</ref>();</highlight></codeline>
+<codeline lineno="162" refid="classriptide__rviz_1_1ControlPanel_1a33ab55d0dfcf5e67690cb9f28d1200ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a33ab55d0dfcf5e67690cb9f28d1200ff" kindref="member">last_duplicate_state</ref>;</highlight></codeline>
+<codeline lineno="163" refid="classriptide__rviz_1_1ControlPanel_1a447abc74adf295b15a06180898278ea9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>bool&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a447abc74adf295b15a06180898278ea9" kindref="member">topic_duplicate_status</ref>;</highlight></codeline>
+<codeline lineno="164" refid="classriptide__rviz_1_1ControlPanel_1a0f06e25522f838edb4c150d3fcaebe74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a0f06e25522f838edb4c150d3fcaebe74" kindref="member">duplicate_topics_list</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>UI<sp/>Panel<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="classriptide__rviz_1_1ControlPanel_1a95662fd930ea928e5463b949f52b8352" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ui_ControlPanel<sp/>*<ref refid="classriptide__rviz_1_1ControlPanel_1a95662fd930ea928e5463b949f52b8352" kindref="member">uiPanel</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>robot<sp/>namespace<sp/>used<sp/>for<sp/>config<sp/>save<sp/>and<sp/>load</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classriptide__rviz_1_1ControlPanel_1a21fc6637898fb16027bb76da1a9e4667" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a21fc6637898fb16027bb76da1a9e4667" kindref="member">robot_ns</ref>;</highlight></codeline>
+<codeline lineno="171" refid="classriptide__rviz_1_1ControlPanel_1a2f8220431c723e3eefab73623abc026b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a2f8220431c723e3eefab73623abc026b" kindref="member">hostname</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>doubles<sp/>for<sp/>max<sp/>depth<sp/>and<sp/>duration<sp/>for<sp/>odom<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="classriptide__rviz_1_1ControlPanel_1a201dc865da60dd2c7ca3442685a9db89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a201dc865da60dd2c7ca3442685a9db89" kindref="member">max_depth_in_place</ref>,<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1aaa60ab36301058eccafa95c74ff5c526" kindref="member">tgt_in_place_depth</ref>;</highlight></codeline>
+<codeline lineno="175" refid="classriptide__rviz_1_1ControlPanel_1a87289a7132b95f50b97e6e740f40e23c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::duration&lt;double&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a87289a7132b95f50b97e6e740f40e23c" kindref="member">odom_timeout</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mode<sp/>for<sp/>sending<sp/>commands<sp/>to<sp/>the<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classriptide__rviz_1_1ControlPanel_1a4dcc42d1588cae517de8d98ef8e70829" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a4dcc42d1588cae517de8d98ef8e70829" kindref="member">ctrlMode</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>last<sp/>time<sp/>we<sp/>have<sp/>recieved<sp/>odom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classriptide__rviz_1_1ControlPanel_1a2268b4e10761da4e5ea6ab5c5dbb81e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>builtin_interfaces::msg::Time<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a2268b4e10761da4e5ea6ab5c5dbb81e9" kindref="member">odomTime</ref>;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>internal<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classriptide__rviz_1_1ControlPanel_1af31ec29475f0fa41dcda30a70f353db0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1af31ec29475f0fa41dcda30a70f353db0" kindref="member">vehicleEnabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185" refid="classriptide__rviz_1_1ControlPanel_1acae3a75819e691f6dc84e69f6dfdb947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1acae3a75819e691f6dc84e69f6dfdb947" kindref="member">degreeReadout</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//buoyancy<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classriptide__rviz_1_1ControlPanel_1a53c369800366051db7299e172ab3a90c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a53c369800366051db7299e172ab3a90c" kindref="member">activeBallastEnabled</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ballast<sp/>system<sp/>logging</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="classriptide__rviz_1_1ControlPanel_1a92479a5211b0649d625a6b91be3558cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a92479a5211b0649d625a6b91be3558cd" kindref="member">ballastLogRunning</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192" refid="classriptide__rviz_1_1ControlPanel_1a6d70e9850700abbfdb3d46eb9dd1b8c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6d70e9850700abbfdb3d46eb9dd1b8c3" kindref="member">ballastLogFileName</ref>;</highlight></codeline>
+<codeline lineno="193" refid="classriptide__rviz_1_1ControlPanel_1a5034a196112e36e4ddcd6758531276c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Time<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a5034a196112e36e4ddcd6758531276c7" kindref="member">lastBallastLogTime</ref>;</highlight></codeline>
+<codeline lineno="194" refid="classriptide__rviz_1_1ControlPanel_1ab70645c4ae20d32258b2867e94f8e27b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structriptide__rviz_1_1BallastLogData" kindref="compound">BallastLogData</ref><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ab70645c4ae20d32258b2867e94f8e27b" kindref="member">ballastLogData</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pixmap<sp/>for<sp/>ballast<sp/>diagram</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="classriptide__rviz_1_1ControlPanel_1ae76b1f6c05af32649538d75ff2529754" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;QPixmap&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ae76b1f6c05af32649538d75ff2529754" kindref="member">ballastDiagram</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>QT<sp/>ui<sp/>timer<sp/>for<sp/>handling<sp/>data<sp/>freshness</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="classriptide__rviz_1_1ControlPanel_1ab92fd3d75aebdb1894c5c5eb8aa89af0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTimer<sp/>*<ref refid="classriptide__rviz_1_1ControlPanel_1ab92fd3d75aebdb1894c5c5eb8aa89af0" kindref="member">uiTimer</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pid<sp/>for<sp/>teleop<sp/>fork-exec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="classriptide__rviz_1_1ControlPanel_1a9d549bace9cf98c5a9f7d0c7ecaa68c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pid_t<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a9d549bace9cf98c5a9f7d0c7ecaa68c7" kindref="member">teleopPID</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>publishers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>CONTROLLER_TYPE<sp/>==<sp/>CONTROLLER_CMD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classriptide__rviz_1_1ControlPanel_1a67d89de1a4e61bfcfe1261d6edc4ace7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;riptide_msgs2::msg::ControllerCommand&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a979a044209ee87c93c3e7323ac72f993" kindref="member">ctrlCmdLinPub</ref>,<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a67d89de1a4e61bfcfe1261d6edc4ace7" kindref="member">ctrlCmdAngPub</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#elif<sp/>CONTROLLER_TYPE<sp/>==<sp/>TARGET_POSITION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;geometry_msgs::msg::Pose&gt;::SharedPtr<sp/>pidSetptPub;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ROS<sp/>Publishers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="classriptide__rviz_1_1ControlPanel_1af4494f4a49441b4771508d96f89ff1ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1af4494f4a49441b4771508d96f89ff1ca" kindref="member">auxPub</ref>;</highlight></codeline>
+<codeline lineno="214" refid="classriptide__rviz_1_1ControlPanel_1a32f600f8b758f9b74d34646b9922e92b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;riptide_msgs2::msg::KillSwitchReport&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a32f600f8b758f9b74d34646b9922e92b" kindref="member">killStatePub</ref>;</highlight></codeline>
+<codeline lineno="215" refid="classriptide__rviz_1_1ControlPanel_1a47cfe028dd06d4e25867f1d725689278" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Empty&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a47cfe028dd06d4e25867f1d725689278" kindref="member">dragCalTriggerPub</ref>;</highlight></codeline>
+<codeline lineno="216" refid="classriptide__rviz_1_1ControlPanel_1ac83722832c82a6eb281e409fcbe98a87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::String&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ac83722832c82a6eb281e409fcbe98a87" kindref="member">clawObjectPub</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="218" refid="classriptide__rviz_1_1ControlPanel_1a5c931a3c8148ebf7f74f8d5ab69e50f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a5c931a3c8148ebf7f74f8d5ab69e50f6" kindref="member">exaustSolenoidPub</ref>,</highlight></codeline>
+<codeline lineno="219" refid="classriptide__rviz_1_1ControlPanel_1af030f16aa9be583e0e0b096944f64371" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1af030f16aa9be583e0e0b096944f64371" kindref="member">pressureSolenoidPub</ref>,</highlight></codeline>
+<codeline lineno="220" refid="classriptide__rviz_1_1ControlPanel_1a04e47d81b9f32a541f85d8b24b66e49c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a04e47d81b9f32a541f85d8b24b66e49c" kindref="member">waterSolenoidPub</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ROS<sp/>Timers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="classriptide__rviz_1_1ControlPanel_1ad715c3bc696e31fcd3aa06f19bc157d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ad715c3bc696e31fcd3aa06f19bc157d2" kindref="member">killPubTimer</ref>;</highlight></codeline>
+<codeline lineno="224" refid="classriptide__rviz_1_1ControlPanel_1a27f1a4bb2ae1ceda8795152ad1337929" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a27f1a4bb2ae1ceda8795152ad1337929" kindref="member">setPointPubTimer</ref>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Last<sp/>Commanded<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="classriptide__rviz_1_1ControlPanel_1abdf5149cc577dad0794466a56ac6c6eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>geometry_msgs::msg::Pose<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1abdf5149cc577dad0794466a56ac6c6eb" kindref="member">lastCommandedPose</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ROS<sp/>Subscribers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="classriptide__rviz_1_1ControlPanel_1a177de542cce9f8d1e223c71905f90d6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;nav_msgs::msg::Odometry&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a177de542cce9f8d1e223c71905f90d6b" kindref="member">odomSub</ref>;</highlight></codeline>
+<codeline lineno="231" refid="classriptide__rviz_1_1ControlPanel_1ab8b2bc38af88514be2722304701994e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;diagnostic_msgs::msg::DiagnosticArray&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ab8b2bc38af88514be2722304701994e1" kindref="member">diagSub</ref>;</highlight></codeline>
+<codeline lineno="232" refid="classriptide__rviz_1_1ControlPanel_1a9a8db562ed1882c8cb1469067675a18d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;geometry_msgs::msg::PoseStamped&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a9a8db562ed1882c8cb1469067675a18d" kindref="member">selectPoseSub</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="235" refid="classriptide__rviz_1_1ControlPanel_1a59300c56d7ae53cbd4be4c6c53512abd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a59300c56d7ae53cbd4be4c6c53512abd" kindref="member">exaustSolenoidSub</ref>,</highlight></codeline>
+<codeline lineno="236" refid="classriptide__rviz_1_1ControlPanel_1ae56095fec81756b6d8ddbdc4bc4197a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ae56095fec81756b6d8ddbdc4bc4197a0" kindref="member">pressureSolenoidSub</ref>,</highlight></codeline>
+<codeline lineno="237" refid="classriptide__rviz_1_1ControlPanel_1af8168e88ffd23a812fd0b865e1e41420" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1af8168e88ffd23a812fd0b865e1e41420" kindref="member">waterSolenoidSub</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Float32&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="240" refid="classriptide__rviz_1_1ControlPanel_1afe5a15a8f9e3fa3a0ca12a6310000caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1afe5a15a8f9e3fa3a0ca12a6310000caa" kindref="member">regPressureSub</ref>,</highlight></codeline>
+<codeline lineno="241" refid="classriptide__rviz_1_1ControlPanel_1a346f0555ec923a2759760e10751849f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a346f0555ec923a2759760e10751849f0" kindref="member">regHousingPressureSub</ref>,</highlight></codeline>
+<codeline lineno="242" refid="classriptide__rviz_1_1ControlPanel_1a98c09f186ed560d2e085e06092e33da3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a98c09f186ed560d2e085e06092e33da3" kindref="member">tankPressureSub</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//service<sp/>clients</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;Trigger&gt;::SharedPtr<sp/></highlight></codeline>
+<codeline lineno="246" refid="classriptide__rviz_1_1ControlPanel_1a2eb05749fc2cedaf2bd285c4d10ff807" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a2eb05749fc2cedaf2bd285c4d10ff807" kindref="member">reloadCompleteClient</ref>,</highlight></codeline>
+<codeline lineno="247" refid="classriptide__rviz_1_1ControlPanel_1a6cfa4102d5265750b514809cf6a81cd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a6cfa4102d5265750b514809cf6a81cd7" kindref="member">reloadLiltankClient</ref>;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="classriptide__rviz_1_1ControlPanel_1acbdcee49ca0fe3be3192b5a29d9a265d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;SetBool&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1acbdcee49ca0fe3be3192b5a29d9a265d" kindref="member">setTeleopClient</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="classriptide__rviz_1_1ControlPanel_1a28dcedddad87f8164a967ba1dc969caf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;SetPose&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a28dcedddad87f8164a967ba1dc969caf" kindref="member">setSimPoseClient</ref>;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253" refid="classriptide__rviz_1_1ControlPanel_1a94bc5c2f31fe3244471eff191e9ad868" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;Trigger::Response::SharedPtr&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a94bc5c2f31fe3244471eff191e9ad868" kindref="member">activeClientFuture</ref>;</highlight></codeline>
+<codeline lineno="254" refid="classriptide__rviz_1_1ControlPanel_1ad7aa360df152aa32faa68ae2a1413b93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;SetBool::Response::SharedPtr&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ad7aa360df152aa32faa68ae2a1413b93" kindref="member">activeSetBoolClientFuture</ref>;</highlight></codeline>
+<codeline lineno="255" refid="classriptide__rviz_1_1ControlPanel_1a9e14b6a902ed482562c551b0764e4e47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;SetPose::Response::SharedPtr&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a9e14b6a902ed482562c551b0764e4e47" kindref="member">activeSetPoseClientFuture</ref>;</highlight></codeline>
+<codeline lineno="256" refid="classriptide__rviz_1_1ControlPanel_1a4508ee4663cdf2de49458d4e0e6f7128" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a4508ee4663cdf2de49458d4e0e6f7128" kindref="member">srvReqId</ref>;</highlight></codeline>
+<codeline lineno="257" refid="classriptide__rviz_1_1ControlPanel_1a3a0cbc772e6c0536a5ac012c35d75c15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Time<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a3a0cbc772e6c0536a5ac012c35d75c15" kindref="member">clientSendTime</ref>;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>action<sp/>clients</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="classriptide__rviz_1_1ControlPanel_1a3b6c386a20f16a75d5e4730df17a6b99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp_action::Client&lt;CalibrateDrag&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a3b6c386a20f16a75d5e4730df17a6b99" kindref="member">calibrateDrag</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//interactive<sp/>marker<sp/>server</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="classriptide__rviz_1_1ControlPanel_1ab7d2c49085d9b28a381cd9e6dd6bf2fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;interactive_markers::InteractiveMarkerServer&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1ab7d2c49085d9b28a381cd9e6dd6bf2fc" kindref="member">setptServer</ref>;</highlight></codeline>
+<codeline lineno="264" refid="classriptide__rviz_1_1ControlPanel_1a5d16e15b8bf512cebc17b68542f285e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visualization_msgs::msg::InteractiveMarker<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a5d16e15b8bf512cebc17b68542f285e2" kindref="member">interactiveSetpointMarker</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//tf<sp/>buffer<sp/>and<sp/>listener</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="classriptide__rviz_1_1ControlPanel_1a53c32193259be04d456de3e888c6a516" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;tf2_ros::Buffer&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1a53c32193259be04d456de3e888c6a516" kindref="member">tf_buffer</ref>;</highlight></codeline>
+<codeline lineno="268" refid="classriptide__rviz_1_1ControlPanel_1acea9a0c31857afeb0e40f82a1bc217ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;tf2_ros::TransformListener&gt;<sp/><ref refid="classriptide__rviz_1_1ControlPanel_1acea9a0c31857afeb0e40f82a1bc217ab" kindref="member">tf_listener</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>riptide_rviz</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/ControlPanel.hpp"/>
+  </compounddef>
+</doxygen>

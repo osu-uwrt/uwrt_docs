@@ -1,0 +1,1318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1ElectricalPanel" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::ElectricalPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="ElectricalPanel_8hpp" local="no">ElectricalPanel.hpp</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1a42706af4f271b50e182540abdc9e3b7a" prot="private" static="no">
+        <type>riptide_msgs2::action::MagCal</type>
+        <definition>using riptide_rviz::ElectricalPanel::MagCal =  riptide_msgs2::action::MagCal</definition>
+        <argsstring></argsstring>
+        <name>MagCal</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::MagCal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="30" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1a71fd7430fc113b3a386cb78f636f1b7e" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1a42706af4f271b50e182540abdc9e3b7a" kindref="member">MagCal</ref> &gt;::SendGoalOptions</type>
+        <definition>using riptide_rviz::ElectricalPanel::MagSendGoalOptions =  rclcpp_action::Client&lt;MagCal&gt;::SendGoalOptions</definition>
+        <argsstring></argsstring>
+        <name>MagSendGoalOptions</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::MagSendGoalOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="31" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1ac63699e44f7244bec2767ee540dfd59c" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1a42706af4f271b50e182540abdc9e3b7a" kindref="member">MagCal</ref> &gt;::GoalHandle</type>
+        <definition>using riptide_rviz::ElectricalPanel::MagGoalHandle =  rclcpp_action::Client&lt;MagCal&gt;::GoalHandle</definition>
+        <argsstring></argsstring>
+        <name>MagGoalHandle</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::MagGoalHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="32" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1a4d99d51043a2bdab0a276b5b94f876c8" prot="private" static="no">
+        <type>riptide_msgs2::action::TareGyro</type>
+        <definition>using riptide_rviz::ElectricalPanel::TareGyro =  riptide_msgs2::action::TareGyro</definition>
+        <argsstring></argsstring>
+        <name>TareGyro</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::TareGyro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="34" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1aae3bd71412c2982099a367813139e6da" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1a4d99d51043a2bdab0a276b5b94f876c8" kindref="member">TareGyro</ref> &gt;::SendGoalOptions</type>
+        <definition>using riptide_rviz::ElectricalPanel::TareGyroSendGoalOptions =  rclcpp_action::Client&lt;TareGyro&gt;::SendGoalOptions</definition>
+        <argsstring></argsstring>
+        <name>TareGyroSendGoalOptions</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::TareGyroSendGoalOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="35" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1a72ae869fe19bfa0e3f3a2eb8535dff21" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1a4d99d51043a2bdab0a276b5b94f876c8" kindref="member">TareGyro</ref> &gt;::GoalHandle</type>
+        <definition>using riptide_rviz::ElectricalPanel::TareGyroGoalHandle =  rclcpp_action::Client&lt;TareGyro&gt;::GoalHandle</definition>
+        <argsstring></argsstring>
+        <name>TareGyroGoalHandle</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::TareGyroGoalHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="36" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1aabff016621f680d313f37c2680905974" prot="private" static="no">
+        <type>riptide_msgs2::action::Depressurize</type>
+        <definition>using riptide_rviz::ElectricalPanel::Depressurize =  riptide_msgs2::action::Depressurize</definition>
+        <argsstring></argsstring>
+        <name>Depressurize</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::Depressurize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="38" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1afd734d98feebde3f7de4a802857e320e" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1aabff016621f680d313f37c2680905974" kindref="member">Depressurize</ref> &gt;::SendGoalOptions</type>
+        <definition>using riptide_rviz::ElectricalPanel::DepressurizeSendGoalOptions =  rclcpp_action::Client&lt;Depressurize&gt;::SendGoalOptions</definition>
+        <argsstring></argsstring>
+        <name>DepressurizeSendGoalOptions</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::DepressurizeSendGoalOptions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="39" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1a69775b73e20b140c6a4483e0a313df3f" prot="private" static="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1aabff016621f680d313f37c2680905974" kindref="member">Depressurize</ref> &gt;::GoalHandle</type>
+        <definition>using riptide_rviz::ElectricalPanel::DepressurizeGoalHandle =  rclcpp_action::Client&lt;Depressurize&gt;::GoalHandle</definition>
+        <argsstring></argsstring>
+        <name>DepressurizeGoalHandle</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::DepressurizeGoalHandle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="40" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classriptide__rviz_1_1ElectricalPanel_1a3a25f73cf4848353577ebe7f461f56d1" prot="private" static="no">
+        <type>riptide_msgs2::srv::QueryImuSerial</type>
+        <definition>using riptide_rviz::ElectricalPanel::ImuConfig =  riptide_msgs2::srv::QueryImuSerial</definition>
+        <argsstring></argsstring>
+        <name>ImuConfig</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ImuConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="41" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ElectricalPanel::loaded</definition>
+        <argsstring></argsstring>
+        <name>loaded</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::loaded</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="92" column="14" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="92" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ae0f4395fe5377cd0c384516c02561246" compoundref="ElectricalPanel_8cpp" startline="11" endline="19">ElectricalPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" compoundref="ElectricalPanel_8cpp" startline="190" endline="202">sendElectricalCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" prot="private" static="no" mutable="no">
+        <type>Ui_ElectricalPanel *</type>
+        <definition>Ui_ElectricalPanel* riptide_rviz::ElectricalPanel::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="93" column="28" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="93" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ace53eb113cb7eafe703bf02f5e3addaf" compoundref="ElectricalPanel_8cpp" startline="333" endline="342">appendIvcConsole</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1abfe3e2144280f7d8eb014c65b8a36592" compoundref="ElectricalPanel_8cpp" startline="155" endline="165">depressurizeFeedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a3bfaf6fa60b7b9366774b4fd04b01a87" compoundref="ElectricalPanel_8cpp" startline="167" endline="188">depressurizeResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ae0f4395fe5377cd0c384516c02561246" compoundref="ElectricalPanel_8cpp" startline="11" endline="19">ElectricalPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ae16857fa91a48f7e88e1c48d6874abd2" compoundref="ElectricalPanel_8cpp" startline="367" endline="388">magCalFeedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1af5d1c91389a0584566581c44993415a2" compoundref="ElectricalPanel_8cpp" startline="391" endline="410">magCalResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ae2d2ff76c6f5be806114c16d3505ed87" compoundref="ElectricalPanel_8cpp" startline="532" endline="535">readIMU</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" compoundref="ElectricalPanel_8cpp" startline="190" endline="202">sendElectricalCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ab846c93acf054e2215ffb98ff84d3f52" compoundref="ElectricalPanel_8cpp" startline="287" endline="315">sendIvcMsg</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a986dda3a62c5ef0646c96809194441cc" compoundref="ElectricalPanel_8cpp" startline="454" endline="474">tareGyroResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a4f58270dd9e60d55a94f8e5e1a89032d" compoundref="ElectricalPanel_8cpp" startline="537" endline="540">writeIMU</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a3f2d17f41f3c7503021ca6efbfd37f74" compoundref="ElectricalPanel_8cpp" startline="22" endline="25">~ElectricalPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a662aa2d8e8a334e9f64c7a6470b04fc0" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString riptide_rviz::ElectricalPanel::robotNs</definition>
+        <argsstring></argsstring>
+        <name>robotNs</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::robotNs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="94" column="17" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="94" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a27c801330c3fbb9455bd298ecbdd435e" compoundref="ElectricalPanel_8cpp" startline="67" endline="71">save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ElectricalPanel::imuCalInProgress</definition>
+        <argsstring></argsstring>
+        <name>imuCalInProgress</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuCalInProgress</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="98" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1af5d1c91389a0584566581c44993415a2" compoundref="ElectricalPanel_8cpp" startline="391" endline="410">magCalResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ElectricalPanel::gyroTareInProgress</definition>
+        <argsstring></argsstring>
+        <name>gyroTareInProgress</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::gyroTareInProgress</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="99" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="99" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a03389f4c20be768c617fe62d77928079" compoundref="ElectricalPanel_8cpp" startline="431" endline="451">tareGyroGoalResponseCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a986dda3a62c5ef0646c96809194441cc" compoundref="ElectricalPanel_8cpp" startline="454" endline="474">tareGyroResultCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ElectricalPanel::depressurizationInProgress</definition>
+        <argsstring></argsstring>
+        <name>depressurizationInProgress</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::depressurizationInProgress</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="100" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a3bfaf6fa60b7b9366774b4fd04b01a87" compoundref="ElectricalPanel_8cpp" startline="167" endline="188">depressurizeResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1ac86452e49e01ec079af74cbefe1aeb1d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::ElectricalPanel::maxVar</definition>
+        <argsstring></argsstring>
+        <name>maxVar</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::maxVar</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="102" column="16" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ae16857fa91a48f7e88e1c48d6874abd2" compoundref="ElectricalPanel_8cpp" startline="367" endline="388">magCalFeedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1aae301ecad733707f1a015fc663bf74c3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::ElectricalPanel::netDepressurization</definition>
+        <argsstring></argsstring>
+        <name>netDepressurization</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::netDepressurization</qualifiedname>
+        <initializer>= 100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="103" column="16" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1abfe3e2144280f7d8eb014c65b8a36592" compoundref="ElectricalPanel_8cpp" startline="155" endline="165">depressurizeFeedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a4e9dfca9592e615eb32a3db86bb42037" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ElectricalPanel::imuHsiEnable</definition>
+        <argsstring></argsstring>
+        <name>imuHsiEnable</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuHsiEnable</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="106" column="14" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a592a87ee6013211af054217401ea4121" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ElectricalPanel::imuHsiOutput</definition>
+        <argsstring></argsstring>
+        <name>imuHsiOutput</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuHsiOutput</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="107" column="14" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1af2938e88dddfc6da3eecb0bd88b60a3b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::ElectricalPanel::imuConvergenceRate</definition>
+        <argsstring></argsstring>
+        <name>imuConvergenceRate</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuConvergenceRate</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="108" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a1ab6a06211eddbe581eecdb6e1cba526" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; riptide_msgs2::msg::ElectricalCommand &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;riptide_msgs2::msg::ElectricalCommand&gt;::SharedPtr riptide_rviz::ElectricalPanel::elecPub</definition>
+        <argsstring></argsstring>
+        <name>elecPub</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::elecPub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="110" column="39" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="110" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" compoundref="ElectricalPanel_8cpp" startline="190" endline="202">sendElectricalCommand</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1abc68489f43abdc8912a0d61e34db44b5" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::UInt8 &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::UInt8&gt;::SharedPtr riptide_rviz::ElectricalPanel::ivcTxPub</definition>
+        <argsstring></argsstring>
+        <name>ivcTxPub</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ivcTxPub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="112" column="39" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="112" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ab846c93acf054e2215ffb98ff84d3f52" compoundref="ElectricalPanel_8cpp" startline="287" endline="315">sendIvcMsg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1aa88b66c0e2319a53198d89571302d31d" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::UInt8 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::UInt8&gt;::SharedPtr riptide_rviz::ElectricalPanel::ivcTxSub</definition>
+        <argsstring></argsstring>
+        <name>ivcTxSub</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ivcTxSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="114" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a5e55f9c61e890a3bc0aa07a0dfdb94b5" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::UInt8 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::UInt8&gt;::SharedPtr riptide_rviz::ElectricalPanel::ivcRxSub</definition>
+        <argsstring></argsstring>
+        <name>ivcRxSub</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ivcRxSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="115" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a5328dfb37c9233999797a6bbfed4ff5e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; riptide_msgs2::msg::UInt8Stamped &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;riptide_msgs2::msg::UInt8Stamped&gt;::SharedPtr riptide_rviz::ElectricalPanel::ivcSuccessSub</definition>
+        <argsstring></argsstring>
+        <name>ivcSuccessSub</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ivcSuccessSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="117" column="42" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a6a2797b255d75c30199f5e9a5cbe8120" prot="private" static="no" mutable="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1a42706af4f271b50e182540abdc9e3b7a" kindref="member">MagCal</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp_action::Client&lt;MagCal&gt;::SharedPtr riptide_rviz::ElectricalPanel::imuCalClient</definition>
+        <argsstring></argsstring>
+        <name>imuCalClient</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuCalClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="119" column="43" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a0165d97bfa309c7c48bb3d4ba1f0ce79" prot="private" static="no" mutable="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1a4d99d51043a2bdab0a276b5b94f876c8" kindref="member">TareGyro</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp_action::Client&lt;TareGyro&gt;::SharedPtr riptide_rviz::ElectricalPanel::tareGyroClient</definition>
+        <argsstring></argsstring>
+        <name>tareGyroClient</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::tareGyroClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="120" column="43" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a4cb542b2bc6ef5419c649ae335d0f193" prot="private" static="no" mutable="no">
+        <type>rclcpp_action::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1aabff016621f680d313f37c2680905974" kindref="member">Depressurize</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp_action::Client&lt;Depressurize&gt;::SharedPtr riptide_rviz::ElectricalPanel::depressurizeClient</definition>
+        <argsstring></argsstring>
+        <name>depressurizeClient</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::depressurizeClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="121" column="43" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a90bf85af58c8c6b330a5ac8fd59ce5d3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; <ref refid="classriptide__rviz_1_1ElectricalPanel_1a3a25f73cf4848353577ebe7f461f56d1" kindref="member">ImuConfig</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;ImuConfig&gt;::SharedPtr riptide_rviz::ElectricalPanel::imuConfigClient</definition>
+        <argsstring></argsstring>
+        <name>imuConfigClient</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuConfigClient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="123" column="36" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a28dcb1cd0c6911bcf33f51d1f30b11d3" prot="private" static="no" mutable="no">
+        <type>std::shared_future&lt; std::shared_ptr&lt; riptide_msgs2::srv::QueryImuSerial_Response &gt; &gt;</type>
+        <definition>std::shared_future&lt;std::shared_ptr&lt;riptide_msgs2::srv::QueryImuSerial_Response&gt; &gt; riptide_rviz::ElectricalPanel::imuConfigFuture</definition>
+        <argsstring></argsstring>
+        <name>imuConfigFuture</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuConfigFuture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="124" column="28" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1ae1e26e1e03b86e9d1413af3a402f38dd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::ElectricalPanel::timerTick</definition>
+        <argsstring></argsstring>
+        <name>timerTick</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::timerTick</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="125" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="125" bodyend="125"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ElectricalPanel_1a9c038aec795cb570773b8ef989ae722e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int riptide_rviz::ElectricalPanel::imuConfigFutureId</definition>
+        <argsstring></argsstring>
+        <name>imuConfigFutureId</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::imuConfigFutureId</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="126" column="13" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="126" bodyend="126"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1ae0f4395fe5377cd0c384516c02561246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::ElectricalPanel::ElectricalPanel</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>ElectricalPanel</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ElectricalPanel</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="46" column="9" bodyfile="src/ElectricalPanel.cpp" bodystart="11" bodyend="19"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" compoundref="ElectricalPanel_8hpp" startline="92">loaded</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a3f2d17f41f3c7503021ca6efbfd37f74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::ElectricalPanel::~ElectricalPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~ElectricalPanel</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::~ElectricalPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="47" column="9" bodyfile="src/ElectricalPanel.cpp" bodystart="22" bodyend="25"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::load</qualifiedname>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="49" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="28" bodyend="64"/>
+        <references refid="namespaceriptide__rviz_1ab68f454850ebf42929ea794095f43150" compoundref="ElectricalPanel_8hpp" startline="26">riptide_rviz::CONFIG_SERVICE_NAME</references>
+        <references refid="namespaceriptide__rviz_1a7f0faa3566a90c0cb19b4ef5b0c43c92" compoundref="ElectricalPanel_8hpp" startline="25">riptide_rviz::DEPRESSURIZE_ACTION_NAME</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a4cb542b2bc6ef5419c649ae335d0f193" compoundref="ElectricalPanel_8hpp" startline="121">depressurizeClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a1ab6a06211eddbe581eecdb6e1cba526" compoundref="ElectricalPanel_8hpp" startline="110">elecPub</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a6a2797b255d75c30199f5e9a5cbe8120" compoundref="ElectricalPanel_8hpp" startline="119">imuCalClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a90bf85af58c8c6b330a5ac8fd59ce5d3" compoundref="ElectricalPanel_8hpp" startline="123">imuConfigClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a08a5a264ac5a2cad75815e5df1c09a68" compoundref="ElectricalPanel_8cpp" startline="419" endline="422">ivcRxCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a5e55f9c61e890a3bc0aa07a0dfdb94b5" compoundref="ElectricalPanel_8hpp" startline="115">ivcRxSub</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a5328dfb37c9233999797a6bbfed4ff5e" compoundref="ElectricalPanel_8hpp" startline="117">ivcSuccessSub</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1af8523a16bbe585be5388ac6c02de24be" compoundref="ElectricalPanel_8cpp" startline="413" endline="416">ivcTxCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1abc68489f43abdc8912a0d61e34db44b5" compoundref="ElectricalPanel_8hpp" startline="112">ivcTxPub</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1aa88b66c0e2319a53198d89571302d31d" compoundref="ElectricalPanel_8hpp" startline="114">ivcTxSub</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a392fbaf09adac9c6ca783c4e7d774d93" compoundref="ElectricalPanel_8cpp" startline="425" endline="428">ivcTxSuccessCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" compoundref="ElectricalPanel_8hpp" startline="92">loaded</references>
+        <references refid="namespaceriptide__rviz_1a0e617066bcbfd363db0eb468263652f1" compoundref="ElectricalPanel_8hpp" startline="23">riptide_rviz::MAG_CAL_ACTION_NAME</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a662aa2d8e8a334e9f64c7a6470b04fc0" compoundref="ElectricalPanel_8hpp" startline="94">robotNs</references>
+        <references refid="namespaceriptide__rviz_1abce270f6e99a170059ff600c91dc3794" compoundref="ElectricalPanel_8hpp" startline="24">riptide_rviz::TARE_GYRO_ACTION_NAME</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a0165d97bfa309c7c48bb3d4ba1f0ce79" compoundref="ElectricalPanel_8hpp" startline="120">tareGyroClient</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a27c801330c3fbb9455bd298ecbdd435e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::save</qualifiedname>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="50" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="67" bodyend="71"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a662aa2d8e8a334e9f64c7a6470b04fc0" compoundref="ElectricalPanel_8hpp" startline="94">robotNs</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::onInitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="51" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="74" bodyend="95"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ae2d2ff76c6f5be806114c16d3505ed87" compoundref="ElectricalPanel_8cpp" startline="532" endline="535">readIMU</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a46cc4f3833bc0855fde8f64a8622f6a8" compoundref="ElectricalPanel_8cpp" startline="542" endline="545">saveImuSettings</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" compoundref="ElectricalPanel_8cpp" startline="190" endline="202">sendElectricalCommand</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ab846c93acf054e2215ffb98ff84d3f52" compoundref="ElectricalPanel_8cpp" startline="287" endline="315">sendIvcMsg</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a4f58270dd9e60d55a94f8e5e1a89032d" compoundref="ElectricalPanel_8cpp" startline="537" endline="540">writeIMU</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::sendElectricalCommand</definition>
+        <argsstring>()</argsstring>
+        <name>sendElectricalCommand</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::sendElectricalCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="54" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="190" bodyend="202"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a1ab6a06211eddbe581eecdb6e1cba526" compoundref="ElectricalPanel_8hpp" startline="110">elecPub</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" compoundref="ElectricalPanel_8hpp" startline="92">loaded</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::sendDepressurizationCommand</definition>
+        <argsstring>()</argsstring>
+        <name>sendDepressurizationCommand</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::sendDepressurizationCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="55" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="98" bodyend="149"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" compoundref="ElectricalPanel_8hpp" startline="100">depressurizationInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a4cb542b2bc6ef5419c649ae335d0f193" compoundref="ElectricalPanel_8hpp" startline="121">depressurizeClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1abfe3e2144280f7d8eb014c65b8a36592" compoundref="ElectricalPanel_8cpp" startline="155" endline="165">depressurizeFeedbackCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a7e5242a8ed4d93d835e0a3ccbb5bb8c3" compoundref="ElectricalPanel_8cpp" startline="151" endline="153">depressurizeGoalResponseCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a3bfaf6fa60b7b9366774b4fd04b01a87" compoundref="ElectricalPanel_8cpp" startline="167" endline="188">depressurizeResultCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" compoundref="ElectricalPanel_8hpp" startline="98">imuCalInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" compoundref="ElectricalPanel_8hpp" startline="92">loaded</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1aae301ecad733707f1a015fc663bf74c3" compoundref="ElectricalPanel_8hpp" startline="103">netDepressurization</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::sendMagCal</definition>
+        <argsstring>()</argsstring>
+        <name>sendMagCal</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::sendMagCal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="56" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="205" bodyend="243"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" compoundref="ElectricalPanel_8hpp" startline="100">depressurizationInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" compoundref="ElectricalPanel_8hpp" startline="99">gyroTareInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a6a2797b255d75c30199f5e9a5cbe8120" compoundref="ElectricalPanel_8hpp" startline="119">imuCalClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" compoundref="ElectricalPanel_8hpp" startline="98">imuCalInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" compoundref="ElectricalPanel_8hpp" startline="92">loaded</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ae16857fa91a48f7e88e1c48d6874abd2" compoundref="ElectricalPanel_8cpp" startline="367" endline="388">magCalFeedbackCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a92fe42add9ff346fe2cb9643411ebbf6" compoundref="ElectricalPanel_8cpp" startline="345" endline="364">magCalGoalResponseCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1af5d1c91389a0584566581c44993415a2" compoundref="ElectricalPanel_8cpp" startline="391" endline="410">magCalResultCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ac86452e49e01ec079af74cbefe1aeb1d" compoundref="ElectricalPanel_8hpp" startline="102">maxVar</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::sendTareGyro</definition>
+        <argsstring>()</argsstring>
+        <name>sendTareGyro</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::sendTareGyro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="57" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="246" bodyend="284"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" compoundref="ElectricalPanel_8hpp" startline="100">depressurizationInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" compoundref="ElectricalPanel_8hpp" startline="99">gyroTareInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" compoundref="ElectricalPanel_8hpp" startline="98">imuCalInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" compoundref="ElectricalPanel_8hpp" startline="92">loaded</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a0165d97bfa309c7c48bb3d4ba1f0ce79" compoundref="ElectricalPanel_8hpp" startline="120">tareGyroClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a03389f4c20be768c617fe62d77928079" compoundref="ElectricalPanel_8cpp" startline="431" endline="451">tareGyroGoalResponseCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a986dda3a62c5ef0646c96809194441cc" compoundref="ElectricalPanel_8cpp" startline="454" endline="474">tareGyroResultCb</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1ab846c93acf054e2215ffb98ff84d3f52" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::sendIvcMsg</definition>
+        <argsstring>()</argsstring>
+        <name>sendIvcMsg</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::sendIvcMsg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="59" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="287" bodyend="315"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1abc68489f43abdc8912a0d61e34db44b5" compoundref="ElectricalPanel_8hpp" startline="112">ivcTxPub</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1a4f58270dd9e60d55a94f8e5e1a89032d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::writeIMU</definition>
+        <argsstring>()</argsstring>
+        <name>writeIMU</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::writeIMU</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="62" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="537" bodyend="540"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1ae2d2ff76c6f5be806114c16d3505ed87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::readIMU</definition>
+        <argsstring>()</argsstring>
+        <name>readIMU</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::readIMU</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="63" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="532" bodyend="535"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ElectricalPanel_1a46cc4f3833bc0855fde8f64a8622f6a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::saveImuSettings</definition>
+        <argsstring>()</argsstring>
+        <name>saveImuSettings</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::saveImuSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="64" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="542" bodyend="545"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::setStatus</definition>
+        <argsstring>(const QString &amp;status, bool error)</argsstring>
+        <name>setStatus</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::setStatus</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="67" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="318" bodyend="330"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1abfe3e2144280f7d8eb014c65b8a36592" compoundref="ElectricalPanel_8cpp" startline="155" endline="165">depressurizeFeedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a3bfaf6fa60b7b9366774b4fd04b01a87" compoundref="ElectricalPanel_8cpp" startline="167" endline="188">depressurizeResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ae0f4395fe5377cd0c384516c02561246" compoundref="ElectricalPanel_8cpp" startline="11" endline="19">ElectricalPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a92fe42add9ff346fe2cb9643411ebbf6" compoundref="ElectricalPanel_8cpp" startline="345" endline="364">magCalGoalResponseCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1af5d1c91389a0584566581c44993415a2" compoundref="ElectricalPanel_8cpp" startline="391" endline="410">magCalResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" compoundref="ElectricalPanel_8cpp" startline="74" endline="95">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" compoundref="ElectricalPanel_8cpp" startline="190" endline="202">sendElectricalCommand</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a03389f4c20be768c617fe62d77928079" compoundref="ElectricalPanel_8cpp" startline="431" endline="451">tareGyroGoalResponseCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a986dda3a62c5ef0646c96809194441cc" compoundref="ElectricalPanel_8cpp" startline="454" endline="474">tareGyroResultCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1ace53eb113cb7eafe703bf02f5e3addaf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::appendIvcConsole</definition>
+        <argsstring>(const QString &amp;prefix, const uint8_t &amp;msg)</argsstring>
+        <name>appendIvcConsole</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::appendIvcConsole</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type>const uint8_t &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="68" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="333" bodyend="342"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a08a5a264ac5a2cad75815e5df1c09a68" compoundref="ElectricalPanel_8cpp" startline="419" endline="422">ivcRxCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1af8523a16bbe585be5388ac6c02de24be" compoundref="ElectricalPanel_8cpp" startline="413" endline="416">ivcTxCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a392fbaf09adac9c6ca783c4e7d774d93" compoundref="ElectricalPanel_8cpp" startline="425" endline="428">ivcTxSuccessCb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a92fe42add9ff346fe2cb9643411ebbf6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::magCalGoalResponseCb</definition>
+        <argsstring>(const MagGoalHandle::SharedPtr &amp;goal_handle)</argsstring>
+        <name>magCalGoalResponseCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::magCalGoalResponseCb</qualifiedname>
+        <param>
+          <type>const MagGoalHandle::SharedPtr &amp;</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="69" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="345" bodyend="364"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1ae16857fa91a48f7e88e1c48d6874abd2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::magCalFeedbackCb</definition>
+        <argsstring>(MagGoalHandle::SharedPtr, const std::shared_ptr&lt; const MagCal::Feedback &gt; feedback)</argsstring>
+        <name>magCalFeedbackCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::magCalFeedbackCb</qualifiedname>
+        <param>
+          <type>MagGoalHandle::SharedPtr</type>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; const MagCal::Feedback &gt;</type>
+          <declname>feedback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="70" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="367" bodyend="388"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ac86452e49e01ec079af74cbefe1aeb1d" compoundref="ElectricalPanel_8hpp" startline="102">maxVar</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1af5d1c91389a0584566581c44993415a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::magCalResultCb</definition>
+        <argsstring>(const MagGoalHandle::WrappedResult &amp;result)</argsstring>
+        <name>magCalResultCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::magCalResultCb</qualifiedname>
+        <param>
+          <type>const MagGoalHandle::WrappedResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="73" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="391" bodyend="410"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" compoundref="ElectricalPanel_8hpp" startline="98">imuCalInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" compoundref="ElectricalPanel_8cpp" startline="205" endline="243">sendMagCal</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1af8523a16bbe585be5388ac6c02de24be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::ivcTxCb</definition>
+        <argsstring>(const std_msgs::msg::UInt8::SharedPtr msg)</argsstring>
+        <name>ivcTxCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ivcTxCb</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::UInt8::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="74" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="413" bodyend="416"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ace53eb113cb7eafe703bf02f5e3addaf" compoundref="ElectricalPanel_8cpp" startline="333" endline="342">appendIvcConsole</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a08a5a264ac5a2cad75815e5df1c09a68" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::ivcRxCb</definition>
+        <argsstring>(const std_msgs::msg::UInt8::SharedPtr msg)</argsstring>
+        <name>ivcRxCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ivcRxCb</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::UInt8::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="75" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="419" bodyend="422"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ace53eb113cb7eafe703bf02f5e3addaf" compoundref="ElectricalPanel_8cpp" startline="333" endline="342">appendIvcConsole</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a392fbaf09adac9c6ca783c4e7d774d93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::ivcTxSuccessCb</definition>
+        <argsstring>(const riptide_msgs2::msg::UInt8Stamped::SharedPtr msg)</argsstring>
+        <name>ivcTxSuccessCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::ivcTxSuccessCb</qualifiedname>
+        <param>
+          <type>const riptide_msgs2::msg::UInt8Stamped::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="76" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="425" bodyend="428"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ace53eb113cb7eafe703bf02f5e3addaf" compoundref="ElectricalPanel_8cpp" startline="333" endline="342">appendIvcConsole</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a03389f4c20be768c617fe62d77928079" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::tareGyroGoalResponseCb</definition>
+        <argsstring>(const TareGyroGoalHandle::SharedPtr &amp;goal_handle)</argsstring>
+        <name>tareGyroGoalResponseCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::tareGyroGoalResponseCb</qualifiedname>
+        <param>
+          <type>const TareGyroGoalHandle::SharedPtr &amp;</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="77" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="431" bodyend="451"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" compoundref="ElectricalPanel_8hpp" startline="99">gyroTareInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a986dda3a62c5ef0646c96809194441cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::tareGyroResultCb</definition>
+        <argsstring>(const TareGyroGoalHandle::WrappedResult &amp;result)</argsstring>
+        <name>tareGyroResultCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::tareGyroResultCb</qualifiedname>
+        <param>
+          <type>const TareGyroGoalHandle::WrappedResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="78" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="454" bodyend="474"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" compoundref="ElectricalPanel_8hpp" startline="99">gyroTareInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" compoundref="ElectricalPanel_8cpp" startline="246" endline="284">sendTareGyro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a7e5242a8ed4d93d835e0a3ccbb5bb8c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::depressurizeGoalResponseCb</definition>
+        <argsstring>(const DepressurizeGoalHandle::SharedPtr &amp;goal_handle)</argsstring>
+        <name>depressurizeGoalResponseCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::depressurizeGoalResponseCb</qualifiedname>
+        <param>
+          <type>const DepressurizeGoalHandle::SharedPtr &amp;</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="79" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="151" bodyend="153"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1abfe3e2144280f7d8eb014c65b8a36592" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::depressurizeFeedbackCb</definition>
+        <argsstring>(DepressurizeGoalHandle::SharedPtr, const std::shared_ptr&lt; const Depressurize::Feedback &gt; feedback)</argsstring>
+        <name>depressurizeFeedbackCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::depressurizeFeedbackCb</qualifiedname>
+        <param>
+          <type>DepressurizeGoalHandle::SharedPtr</type>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; const Depressurize::Feedback &gt;</type>
+          <declname>feedback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="80" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="155" bodyend="165"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1aae301ecad733707f1a015fc663bf74c3" compoundref="ElectricalPanel_8hpp" startline="103">netDepressurization</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a3bfaf6fa60b7b9366774b4fd04b01a87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::depressurizeResultCb</definition>
+        <argsstring>(const DepressurizeGoalHandle::WrappedResult &amp;result)</argsstring>
+        <name>depressurizeResultCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::depressurizeResultCb</qualifiedname>
+        <param>
+          <type>const DepressurizeGoalHandle::WrappedResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="81" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="167" bodyend="188"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" compoundref="ElectricalPanel_8hpp" startline="100">depressurizationInProgress</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" compoundref="ElectricalPanel_8cpp" startline="98" endline="149">sendDepressurizationCommand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1aa9039bd90d7cd2a3e50f7d7d0bc409b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Qt::CheckState</type>
+        <definition>Qt::CheckState riptide_rviz::ElectricalPanel::processCheckState</definition>
+        <argsstring>(bool state)</argsstring>
+        <name>processCheckState</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::processCheckState</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="82" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1ae34aeee1b078c96425c9d0acf6d7d3f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::resultCb</definition>
+        <argsstring>(const MagGoalHandle::WrappedResult &amp;result)</argsstring>
+        <name>resultCb</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::resultCb</qualifiedname>
+        <param>
+          <type>const MagGoalHandle::WrappedResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="86" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::sendIMUConfigRequest</definition>
+        <argsstring>(const std::string &amp;request, bool extResponseTime=false)</argsstring>
+        <name>sendIMUConfigRequest</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::sendIMUConfigRequest</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>extResponseTime</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="88" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="476" bodyend="497"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a90bf85af58c8c6b330a5ac8fd59ce5d3" compoundref="ElectricalPanel_8hpp" startline="123">imuConfigClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a28dcb1cd0c6911bcf33f51d1f30b11d3" compoundref="ElectricalPanel_8hpp" startline="124">imuConfigFuture</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a9c038aec795cb570773b8ef989ae722e" compoundref="ElectricalPanel_8hpp" startline="126" endline="126">imuConfigFutureId</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ae1e26e1e03b86e9d1413af3a402f38dd" compoundref="ElectricalPanel_8hpp" startline="125" endline="125">timerTick</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1ae2d2ff76c6f5be806114c16d3505ed87" compoundref="ElectricalPanel_8cpp" startline="532" endline="535">readIMU</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a46cc4f3833bc0855fde8f64a8622f6a8" compoundref="ElectricalPanel_8cpp" startline="542" endline="545">saveImuSettings</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a4f58270dd9e60d55a94f8e5e1a89032d" compoundref="ElectricalPanel_8cpp" startline="537" endline="540">writeIMU</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ElectricalPanel::waitForConfig</definition>
+        <argsstring>(bool extResponseTime=false)</argsstring>
+        <name>waitForConfig</name>
+        <qualifiedname>riptide_rviz::ElectricalPanel::waitForConfig</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>extResponseTime</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="89" column="14" bodyfile="src/ElectricalPanel.cpp" bodystart="499" bodyend="530"/>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a90bf85af58c8c6b330a5ac8fd59ce5d3" compoundref="ElectricalPanel_8hpp" startline="123">imuConfigClient</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a28dcb1cd0c6911bcf33f51d1f30b11d3" compoundref="ElectricalPanel_8hpp" startline="124">imuConfigFuture</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a9c038aec795cb570773b8ef989ae722e" compoundref="ElectricalPanel_8hpp" startline="126" endline="126">imuConfigFutureId</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" compoundref="ElectricalPanel_8cpp" startline="318" endline="330">setStatus</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ae1e26e1e03b86e9d1413af3a402f38dd" compoundref="ElectricalPanel_8hpp" startline="125" endline="125">timerTick</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" compoundref="ElectricalPanel_8hpp" startline="93">ui</references>
+        <references refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</references>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" compoundref="ElectricalPanel_8cpp" startline="476" endline="497">sendIMUConfigRequest</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" compoundref="ElectricalPanel_8cpp" startline="499" endline="530">waitForConfig</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>riptide_rviz::ElectricalPanel</label>
+        <link refid="classriptide__rviz_1_1ElectricalPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::ElectricalPanel</label>
+        <link refid="classriptide__rviz_1_1ElectricalPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/ElectricalPanel.hpp" line="28" column="5" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="29" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ace53eb113cb7eafe703bf02f5e3addaf" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>appendIvcConsole</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ab679ff3b1789f359246fdf067ae55d38" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>depressurizationInProgress</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1aabff016621f680d313f37c2680905974" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>Depressurize</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a4cb542b2bc6ef5419c649ae335d0f193" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>depressurizeClient</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1abfe3e2144280f7d8eb014c65b8a36592" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>depressurizeFeedbackCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a69775b73e20b140c6a4483e0a313df3f" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>DepressurizeGoalHandle</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a7e5242a8ed4d93d835e0a3ccbb5bb8c3" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>depressurizeGoalResponseCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a3bfaf6fa60b7b9366774b4fd04b01a87" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>depressurizeResultCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1afd734d98feebde3f7de4a802857e320e" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>DepressurizeSendGoalOptions</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a1ab6a06211eddbe581eecdb6e1cba526" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>elecPub</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ae0f4395fe5377cd0c384516c02561246" prot="public" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ElectricalPanel</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a733029e9fa4f5dc74f7293d4cdf31dd7" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>gyroTareInProgress</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a6a2797b255d75c30199f5e9a5cbe8120" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuCalClient</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1adc869f7cc2876ca937de58cf48acdab3" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuCalInProgress</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a3a25f73cf4848353577ebe7f461f56d1" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ImuConfig</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a90bf85af58c8c6b330a5ac8fd59ce5d3" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuConfigClient</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a28dcb1cd0c6911bcf33f51d1f30b11d3" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuConfigFuture</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a9c038aec795cb570773b8ef989ae722e" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuConfigFutureId</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1af2938e88dddfc6da3eecb0bd88b60a3b" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuConvergenceRate</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a4e9dfca9592e615eb32a3db86bb42037" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuHsiEnable</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a592a87ee6013211af054217401ea4121" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>imuHsiOutput</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a08a5a264ac5a2cad75815e5df1c09a68" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ivcRxCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a5e55f9c61e890a3bc0aa07a0dfdb94b5" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ivcRxSub</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a5328dfb37c9233999797a6bbfed4ff5e" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ivcSuccessSub</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1af8523a16bbe585be5388ac6c02de24be" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ivcTxCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1abc68489f43abdc8912a0d61e34db44b5" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ivcTxPub</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1aa88b66c0e2319a53198d89571302d31d" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ivcTxSub</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a392fbaf09adac9c6ca783c4e7d774d93" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ivcTxSuccessCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" prot="public" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>load</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ad2296c75f04ee4f2902802ece6f5099a" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>loaded</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a42706af4f271b50e182540abdc9e3b7a" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>MagCal</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ae16857fa91a48f7e88e1c48d6874abd2" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>magCalFeedbackCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a92fe42add9ff346fe2cb9643411ebbf6" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>magCalGoalResponseCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1af5d1c91389a0584566581c44993415a2" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>magCalResultCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ac63699e44f7244bec2767ee540dfd59c" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>MagGoalHandle</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a71fd7430fc113b3a386cb78f636f1b7e" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>MagSendGoalOptions</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ac86452e49e01ec079af74cbefe1aeb1d" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>maxVar</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1aae301ecad733707f1a015fc663bf74c3" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>netDepressurization</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a1947608527728477483a0ff7702816aa" prot="public" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>onInitialize</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1aa9039bd90d7cd2a3e50f7d7d0bc409b1" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>processCheckState</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ae2d2ff76c6f5be806114c16d3505ed87" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>readIMU</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ae34aeee1b078c96425c9d0acf6d7d3f6" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>resultCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a662aa2d8e8a334e9f64c7a6470b04fc0" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>robotNs</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a27c801330c3fbb9455bd298ecbdd435e" prot="public" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>save</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a46cc4f3833bc0855fde8f64a8622f6a8" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>saveImuSettings</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ac87af6d10aa365a380ce4178166675d4" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>sendDepressurizationCommand</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a69df8cdf6149034d3ae04ca14a225e5c" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>sendElectricalCommand</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a74f07aa5ff33814fbf71f03143202a62" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>sendIMUConfigRequest</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ab846c93acf054e2215ffb98ff84d3f52" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>sendIvcMsg</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a179a543804f9988fc3a3779eefff16a1" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>sendMagCal</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ad2efca6dfa241b20d11818977d6387cc" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>sendTareGyro</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1acc8ecabf76c218f884e79681a0df03a2" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>setStatus</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a4d99d51043a2bdab0a276b5b94f876c8" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>TareGyro</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a0165d97bfa309c7c48bb3d4ba1f0ce79" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>tareGyroClient</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a72ae869fe19bfa0e3f3a2eb8535dff21" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>TareGyroGoalHandle</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a03389f4c20be768c617fe62d77928079" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>tareGyroGoalResponseCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a986dda3a62c5ef0646c96809194441cc" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>tareGyroResultCb</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1aae3bd71412c2982099a367813139e6da" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>TareGyroSendGoalOptions</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ae1e26e1e03b86e9d1413af3a402f38dd" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>timerTick</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1ad9c0c538d40e0846ce818e8a4c2dbbd3" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>ui</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a6bf1cec3fef8f60f6e19ce1105e71965" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>waitForConfig</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a4f58270dd9e60d55a94f8e5e1a89032d" prot="private" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>writeIMU</name></member>
+      <member refid="classriptide__rviz_1_1ElectricalPanel_1a3f2d17f41f3c7503021ca6efbfd37f74" prot="public" virt="non-virtual"><scope>riptide_rviz::ElectricalPanel</scope><name>~ElectricalPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

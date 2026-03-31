@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="structriptide__rviz_1_1BallastLogData" kind="struct" language="C++" prot="public">
+    <compoundname>riptide_rviz::BallastLogData</compoundname>
+    <includes refid="ControlPanel_8hpp" local="no">ControlPanel.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structriptide__rviz_1_1BallastLogData_1a5daee54fab7edc4957566ca6e8dc549c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::BallastLogData::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <qualifiedname>riptide_rviz::BallastLogData::depth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="50" column="13" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1BallastLogData_1a07812877a2c62a62c506199cb693f4b7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::BallastLogData::regPressure</definition>
+        <argsstring></argsstring>
+        <name>regPressure</name>
+        <qualifiedname>riptide_rviz::BallastLogData::regPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="51" column="13" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1BallastLogData_1a4fe1ac0a712bec09604ee7833df8d5ee" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::BallastLogData::regHousingPressure</definition>
+        <argsstring></argsstring>
+        <name>regHousingPressure</name>
+        <qualifiedname>riptide_rviz::BallastLogData::regHousingPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="52" column="13" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1BallastLogData_1a6562ce76c26c3ced56e4648ffc60ae60" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double riptide_rviz::BallastLogData::tankPressure</definition>
+        <argsstring></argsstring>
+        <name>tankPressure</name>
+        <qualifiedname>riptide_rviz::BallastLogData::tankPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="53" column="13" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1BallastLogData_1a755f4f0448fbe3fde101656707a074f4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BallastLogData::exaustState</definition>
+        <argsstring></argsstring>
+        <name>exaustState</name>
+        <qualifiedname>riptide_rviz::BallastLogData::exaustState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="56" column="13" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1BallastLogData_1af507cd7bed861f5559fa4a7a06bab6c7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BallastLogData::pressureState</definition>
+        <argsstring></argsstring>
+        <name>pressureState</name>
+        <qualifiedname>riptide_rviz::BallastLogData::pressureState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="57" column="13" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structriptide__rviz_1_1BallastLogData_1a1356a6706c182c7d853ad4cd2736ef1f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BallastLogData::waterState</definition>
+        <argsstring></argsstring>
+        <name>waterState</name>
+        <qualifiedname>riptide_rviz::BallastLogData::waterState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ControlPanel.hpp" line="58" column="13" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::BallastLogData</label>
+        <link refid="structriptide__rviz_1_1BallastLogData"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/ControlPanel.hpp" line="47" column="5" bodyfile="include/mercury_rviz/ControlPanel.hpp" bodystart="48" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structriptide__rviz_1_1BallastLogData_1a5daee54fab7edc4957566ca6e8dc549c" prot="public" virt="non-virtual"><scope>riptide_rviz::BallastLogData</scope><name>depth</name></member>
+      <member refid="structriptide__rviz_1_1BallastLogData_1a755f4f0448fbe3fde101656707a074f4" prot="public" virt="non-virtual"><scope>riptide_rviz::BallastLogData</scope><name>exaustState</name></member>
+      <member refid="structriptide__rviz_1_1BallastLogData_1af507cd7bed861f5559fa4a7a06bab6c7" prot="public" virt="non-virtual"><scope>riptide_rviz::BallastLogData</scope><name>pressureState</name></member>
+      <member refid="structriptide__rviz_1_1BallastLogData_1a4fe1ac0a712bec09604ee7833df8d5ee" prot="public" virt="non-virtual"><scope>riptide_rviz::BallastLogData</scope><name>regHousingPressure</name></member>
+      <member refid="structriptide__rviz_1_1BallastLogData_1a07812877a2c62a62c506199cb693f4b7" prot="public" virt="non-virtual"><scope>riptide_rviz::BallastLogData</scope><name>regPressure</name></member>
+      <member refid="structriptide__rviz_1_1BallastLogData_1a6562ce76c26c3ced56e4648ffc60ae60" prot="public" virt="non-virtual"><scope>riptide_rviz::BallastLogData</scope><name>tankPressure</name></member>
+      <member refid="structriptide__rviz_1_1BallastLogData_1a1356a6706c182c7d853ad4cd2736ef1f" prot="public" virt="non-virtual"><scope>riptide_rviz::BallastLogData</scope><name>waterState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

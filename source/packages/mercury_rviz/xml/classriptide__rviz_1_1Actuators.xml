@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1Actuators" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::Actuators</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="Actuators_8hpp" local="no">Actuators.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" prot="private" static="no" mutable="no">
+        <type>Ui_Actuators *</type>
+        <definition>Ui_Actuators* riptide_rviz::Actuators::uiPanel</definition>
+        <argsstring></argsstring>
+        <name>uiPanel</name>
+        <qualifiedname>riptide_rviz::Actuators::uiPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="53" column="22" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4ff170d30a9a052b60736a96063686b3" compoundref="Actuators_8cpp" startline="48" endline="54">Actuators</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" compoundref="Actuators_8cpp" startline="195" endline="240">statusCallback</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" compoundref="Actuators_8cpp" startline="243" endline="254">updateStatus</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1ac7d849ae6da5c487826516bedadbfe01" compoundref="Actuators_8cpp" startline="57" endline="61">~Actuators</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a9162fda58db7f06c3b6b429a6fba3079" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::Actuators::robotNs</definition>
+        <argsstring></argsstring>
+        <name>robotNs</name>
+        <qualifiedname>riptide_rviz::Actuators::robotNs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="56" column="21" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a519a75304a8b51ecdcfa89af5234a050" compoundref="Actuators_8cpp" startline="118" endline="124">save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a2ec4ea88fb9f83384ae5d6de993d89f2" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; <ref refid="namespaceriptide__rviz_1a5c741598944b12b97edce049d143fe2b" kindref="member">ActuatorStatus</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;ActuatorStatus&gt;::SharedPtr riptide_rviz::Actuators::statusSub</definition>
+        <argsstring></argsstring>
+        <name>statusSub</name>
+        <qualifiedname>riptide_rviz::Actuators::statusSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="59" column="42" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1abdb32cd18e37bb6cdf43e867d0d92a14" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Empty&gt;::SharedPtr riptide_rviz::Actuators::dropperTopic</definition>
+        <argsstring></argsstring>
+        <name>dropperTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::dropperTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="63" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4015c35ccb1e28ebebccdb61e1a394ab" compoundref="Actuators_8cpp" startline="157" endline="160">handleDropMarker</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a1921dddac94245fe48e58d15a7d2deb4" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Empty&gt;::SharedPtr riptide_rviz::Actuators::torpedoTopic</definition>
+        <argsstring></argsstring>
+        <name>torpedoTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::torpedoTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="64" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4258b263078603c4006cc93d3723a66e" compoundref="Actuators_8cpp" startline="151" endline="154">handleFireTorpedo</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1ac9998263ae06821fd097150cda0d2a9a" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Empty&gt;::SharedPtr riptide_rviz::Actuators::reloadTopic</definition>
+        <argsstring></argsstring>
+        <name>reloadTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::reloadTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="65" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a50109e3c102f53403e472573f1ffb0ce" compoundref="Actuators_8cpp" startline="163" endline="166">handleReload</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1adb1f543ce307f37f41bc96710ccf5aef" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Empty&gt;::SharedPtr riptide_rviz::Actuators::torpMarkerGoHomeTopic</definition>
+        <argsstring></argsstring>
+        <name>torpMarkerGoHomeTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::torpMarkerGoHomeTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="66" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1ab9bd37990838192ad6605ef6bcd6c262" compoundref="Actuators_8cpp" startline="183" endline="186">handleTorpGoHome</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a7a7ffc8e3351443ea50be0ec658a5c33" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Empty&gt;::SharedPtr riptide_rviz::Actuators::torpMarkerSetHomeTopic</definition>
+        <argsstring></argsstring>
+        <name>torpMarkerSetHomeTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::torpMarkerSetHomeTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="67" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a30950267ff608feeefe7103da7ae60be" compoundref="Actuators_8cpp" startline="189" endline="192">handleTorpSetHome</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a948db56da5e3e6c2b1a9236bb394b886" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Empty&gt;::SharedPtr riptide_rviz::Actuators::clawSetClosedPosTopic</definition>
+        <argsstring></argsstring>
+        <name>clawSetClosedPosTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::clawSetClosedPosTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="68" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a937a5103ac84204cd578ab71f58e9a27" compoundref="Actuators_8cpp" startline="176" endline="180">handleClawSetHome</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a186d60d604b0664774ffcf9b8e6b1b76" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a0f437e929abab656e4fb9279fec6c702" kindref="member">Bool</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Bool&gt;::SharedPtr riptide_rviz::Actuators::armTopic</definition>
+        <argsstring></argsstring>
+        <name>armTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::armTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="71" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1ae9788db2d4c42238cfe2dee464e9b91c" compoundref="Actuators_8cpp" startline="127" endline="130">handleArm</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a7c50e5260caab45a2d6960a33aada7d8" compoundref="Actuators_8cpp" startline="133" endline="136">handleDisarm</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1abf22335e07401fbd459d450c6672352e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a0f437e929abab656e4fb9279fec6c702" kindref="member">Bool</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;Bool&gt;::SharedPtr riptide_rviz::Actuators::clawTopic</definition>
+        <argsstring></argsstring>
+        <name>clawTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::clawTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="72" column="13" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a40cbec2dcd56fd2d13b912ead8c8894c" compoundref="Actuators_8cpp" startline="145" endline="148">handleCloseClaw</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1aae9f343b8497ee58f74376c1d636c779" compoundref="Actuators_8cpp" startline="139" endline="142">handleOpenClaw</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1aa5979ceac4978bf86da38a71a7012ab3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::String &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::String&gt;::SharedPtr riptide_rviz::Actuators::cmdFeedback</definition>
+        <argsstring></argsstring>
+        <name>cmdFeedback</name>
+        <qualifiedname>riptide_rviz::Actuators::cmdFeedback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="75" column="42" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1ad92c67578bdcd64351063fe18750194e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; <ref refid="namespaceriptide__rviz_1a0f437e929abab656e4fb9279fec6c702" kindref="member">Bool</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;Bool&gt;::SharedPtr riptide_rviz::Actuators::cmdStatus</definition>
+        <argsstring></argsstring>
+        <name>cmdStatus</name>
+        <qualifiedname>riptide_rviz::Actuators::cmdStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="76" column="42" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a9c93c041f0f7805adf854cab78cc2522" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::Actuators::latestCmdFeedback</definition>
+        <argsstring></argsstring>
+        <name>latestCmdFeedback</name>
+        <qualifiedname>riptide_rviz::Actuators::latestCmdFeedback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="78" column="21" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1acdc2bf4fe14e2bc79e26c5aa5a7146e4" compoundref="Actuators_8cpp" startline="256" endline="260">cmdFeedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" compoundref="Actuators_8cpp" startline="243" endline="254">updateStatus</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1Actuators_1a1d25b7e10d542098f98c5e1f363999b1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::Actuators::latestCmdStatus</definition>
+        <argsstring></argsstring>
+        <name>latestCmdStatus</name>
+        <qualifiedname>riptide_rviz::Actuators::latestCmdStatus</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="79" column="14" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a7eb3cc61c5cb4e816e2b3de25c95cefd" compoundref="Actuators_8cpp" startline="262" endline="266">cmdStatusCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" compoundref="Actuators_8cpp" startline="243" endline="254">updateStatus</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1a4ff170d30a9a052b60736a96063686b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::Actuators::Actuators</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>Actuators</name>
+        <qualifiedname>riptide_rviz::Actuators::Actuators</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="23" column="19" bodyfile="src/Actuators.cpp" bodystart="48" bodyend="54"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" compoundref="Actuators_8hpp" startline="53">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1ac7d849ae6da5c487826516bedadbfe01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::Actuators::~Actuators</definition>
+        <argsstring>()</argsstring>
+        <name>~Actuators</name>
+        <qualifiedname>riptide_rviz::Actuators::~Actuators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="24" column="9" bodyfile="src/Actuators.cpp" bodystart="57" bodyend="61"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" compoundref="Actuators_8hpp" startline="53">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <qualifiedname>riptide_rviz::Actuators::load</qualifiedname>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="26" column="14" bodyfile="src/Actuators.cpp" bodystart="81" bodyend="115"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a186d60d604b0664774ffcf9b8e6b1b76" compoundref="Actuators_8hpp" startline="71">armTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a948db56da5e3e6c2b1a9236bb394b886" compoundref="Actuators_8hpp" startline="68">clawSetClosedPosTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1abf22335e07401fbd459d450c6672352e" compoundref="Actuators_8hpp" startline="72">clawTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1abdb32cd18e37bb6cdf43e867d0d92a14" compoundref="Actuators_8hpp" startline="63">dropperTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1ac9998263ae06821fd097150cda0d2a9a" compoundref="Actuators_8hpp" startline="65">reloadTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a9162fda58db7f06c3b6b429a6fba3079" compoundref="Actuators_8hpp" startline="56">robotNs</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" compoundref="Actuators_8cpp" startline="195" endline="240">statusCallback</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a2ec4ea88fb9f83384ae5d6de993d89f2" compoundref="Actuators_8hpp" startline="59">statusSub</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a1921dddac94245fe48e58d15a7d2deb4" compoundref="Actuators_8hpp" startline="64">torpedoTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1adb1f543ce307f37f41bc96710ccf5aef" compoundref="Actuators_8hpp" startline="66">torpMarkerGoHomeTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a7a7ffc8e3351443ea50be0ec658a5c33" compoundref="Actuators_8hpp" startline="67">torpMarkerSetHomeTopic</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1a519a75304a8b51ecdcfa89af5234a050" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <qualifiedname>riptide_rviz::Actuators::save</qualifiedname>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="27" column="14" bodyfile="src/Actuators.cpp" bodystart="118" bodyend="124"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a9162fda58db7f06c3b6b429a6fba3079" compoundref="Actuators_8hpp" startline="56">robotNs</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <qualifiedname>riptide_rviz::Actuators::onInitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="29" column="14" bodyfile="src/Actuators.cpp" bodystart="64" bodyend="78"/>
+        <references refid="classriptide__rviz_1_1Actuators_1ae9788db2d4c42238cfe2dee464e9b91c" compoundref="Actuators_8cpp" startline="127" endline="130">handleArm</references>
+        <references refid="classriptide__rviz_1_1Actuators_1abfc98a929881a88fb59710a50070d931" compoundref="Actuators_8cpp" startline="169" endline="173">handleClawGoHome</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a937a5103ac84204cd578ab71f58e9a27" compoundref="Actuators_8cpp" startline="176" endline="180">handleClawSetHome</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a40cbec2dcd56fd2d13b912ead8c8894c" compoundref="Actuators_8cpp" startline="145" endline="148">handleCloseClaw</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a7c50e5260caab45a2d6960a33aada7d8" compoundref="Actuators_8cpp" startline="133" endline="136">handleDisarm</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a4015c35ccb1e28ebebccdb61e1a394ab" compoundref="Actuators_8cpp" startline="157" endline="160">handleDropMarker</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a4258b263078603c4006cc93d3723a66e" compoundref="Actuators_8cpp" startline="151" endline="154">handleFireTorpedo</references>
+        <references refid="classriptide__rviz_1_1Actuators_1aae9f343b8497ee58f74376c1d636c779" compoundref="Actuators_8cpp" startline="139" endline="142">handleOpenClaw</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a50109e3c102f53403e472573f1ffb0ce" compoundref="Actuators_8cpp" startline="163" endline="166">handleReload</references>
+        <references refid="classriptide__rviz_1_1Actuators_1ab9bd37990838192ad6605ef6bcd6c262" compoundref="Actuators_8cpp" startline="183" endline="186">handleTorpGoHome</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a30950267ff608feeefe7103da7ae60be" compoundref="Actuators_8cpp" startline="189" endline="192">handleTorpSetHome</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" compoundref="Actuators_8hpp" startline="53">uiPanel</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1ae9788db2d4c42238cfe2dee464e9b91c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleArm</definition>
+        <argsstring>()</argsstring>
+        <name>handleArm</name>
+        <qualifiedname>riptide_rviz::Actuators::handleArm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="32" column="14" bodyfile="src/Actuators.cpp" bodystart="127" bodyend="130"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a186d60d604b0664774ffcf9b8e6b1b76" compoundref="Actuators_8hpp" startline="71">armTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1aba01f21d2f0951a4d00cc240d0d47df5" compoundref="Actuators_8cpp" startline="276" endline="281">pubBoolTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1a7c50e5260caab45a2d6960a33aada7d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleDisarm</definition>
+        <argsstring>()</argsstring>
+        <name>handleDisarm</name>
+        <qualifiedname>riptide_rviz::Actuators::handleDisarm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="33" column="14" bodyfile="src/Actuators.cpp" bodystart="133" bodyend="136"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a186d60d604b0664774ffcf9b8e6b1b76" compoundref="Actuators_8hpp" startline="71">armTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1aba01f21d2f0951a4d00cc240d0d47df5" compoundref="Actuators_8cpp" startline="276" endline="281">pubBoolTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1aae9f343b8497ee58f74376c1d636c779" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleOpenClaw</definition>
+        <argsstring>()</argsstring>
+        <name>handleOpenClaw</name>
+        <qualifiedname>riptide_rviz::Actuators::handleOpenClaw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="34" column="14" bodyfile="src/Actuators.cpp" bodystart="139" bodyend="142"/>
+        <references refid="classriptide__rviz_1_1Actuators_1abf22335e07401fbd459d450c6672352e" compoundref="Actuators_8hpp" startline="72">clawTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1aba01f21d2f0951a4d00cc240d0d47df5" compoundref="Actuators_8cpp" startline="276" endline="281">pubBoolTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1a40cbec2dcd56fd2d13b912ead8c8894c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleCloseClaw</definition>
+        <argsstring>()</argsstring>
+        <name>handleCloseClaw</name>
+        <qualifiedname>riptide_rviz::Actuators::handleCloseClaw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="35" column="14" bodyfile="src/Actuators.cpp" bodystart="145" bodyend="148"/>
+        <references refid="classriptide__rviz_1_1Actuators_1abf22335e07401fbd459d450c6672352e" compoundref="Actuators_8hpp" startline="72">clawTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1aba01f21d2f0951a4d00cc240d0d47df5" compoundref="Actuators_8cpp" startline="276" endline="281">pubBoolTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1abfc98a929881a88fb59710a50070d931" compoundref="Actuators_8cpp" startline="169" endline="173">handleClawGoHome</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1a4258b263078603c4006cc93d3723a66e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleFireTorpedo</definition>
+        <argsstring>()</argsstring>
+        <name>handleFireTorpedo</name>
+        <qualifiedname>riptide_rviz::Actuators::handleFireTorpedo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="36" column="14" bodyfile="src/Actuators.cpp" bodystart="151" bodyend="154"/>
+        <references refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" compoundref="Actuators_8cpp" startline="269" endline="273">pubEmptyTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a1921dddac94245fe48e58d15a7d2deb4" compoundref="Actuators_8hpp" startline="64">torpedoTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1a4015c35ccb1e28ebebccdb61e1a394ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleDropMarker</definition>
+        <argsstring>()</argsstring>
+        <name>handleDropMarker</name>
+        <qualifiedname>riptide_rviz::Actuators::handleDropMarker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="37" column="14" bodyfile="src/Actuators.cpp" bodystart="157" bodyend="160"/>
+        <references refid="classriptide__rviz_1_1Actuators_1abdb32cd18e37bb6cdf43e867d0d92a14" compoundref="Actuators_8hpp" startline="63">dropperTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" compoundref="Actuators_8cpp" startline="269" endline="273">pubEmptyTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1a50109e3c102f53403e472573f1ffb0ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleReload</definition>
+        <argsstring>()</argsstring>
+        <name>handleReload</name>
+        <qualifiedname>riptide_rviz::Actuators::handleReload</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="38" column="14" bodyfile="src/Actuators.cpp" bodystart="163" bodyend="166"/>
+        <references refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" compoundref="Actuators_8cpp" startline="269" endline="273">pubEmptyTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1ac9998263ae06821fd097150cda0d2a9a" compoundref="Actuators_8hpp" startline="65">reloadTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1abfc98a929881a88fb59710a50070d931" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleClawGoHome</definition>
+        <argsstring>()</argsstring>
+        <name>handleClawGoHome</name>
+        <qualifiedname>riptide_rviz::Actuators::handleClawGoHome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="39" column="14" bodyfile="src/Actuators.cpp" bodystart="169" bodyend="173"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a40cbec2dcd56fd2d13b912ead8c8894c" compoundref="Actuators_8cpp" startline="145" endline="148">handleCloseClaw</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1a937a5103ac84204cd578ab71f58e9a27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleClawSetHome</definition>
+        <argsstring>()</argsstring>
+        <name>handleClawSetHome</name>
+        <qualifiedname>riptide_rviz::Actuators::handleClawSetHome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="40" column="14" bodyfile="src/Actuators.cpp" bodystart="176" bodyend="180"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a948db56da5e3e6c2b1a9236bb394b886" compoundref="Actuators_8hpp" startline="68">clawSetClosedPosTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" compoundref="Actuators_8cpp" startline="269" endline="273">pubEmptyTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1ab9bd37990838192ad6605ef6bcd6c262" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleTorpGoHome</definition>
+        <argsstring>()</argsstring>
+        <name>handleTorpGoHome</name>
+        <qualifiedname>riptide_rviz::Actuators::handleTorpGoHome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="41" column="14" bodyfile="src/Actuators.cpp" bodystart="183" bodyend="186"/>
+        <references refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" compoundref="Actuators_8cpp" startline="269" endline="273">pubEmptyTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1adb1f543ce307f37f41bc96710ccf5aef" compoundref="Actuators_8hpp" startline="66">torpMarkerGoHomeTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1Actuators_1a30950267ff608feeefe7103da7ae60be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::handleTorpSetHome</definition>
+        <argsstring>()</argsstring>
+        <name>handleTorpSetHome</name>
+        <qualifiedname>riptide_rviz::Actuators::handleTorpSetHome</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="42" column="14" bodyfile="src/Actuators.cpp" bodystart="189" bodyend="192"/>
+        <references refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" compoundref="Actuators_8cpp" startline="269" endline="273">pubEmptyTopic</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a7a7ffc8e3351443ea50be0ec658a5c33" compoundref="Actuators_8hpp" startline="67">torpMarkerSetHomeTopic</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" compoundref="Actuators_8cpp" startline="64" endline="78">onInitialize</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::statusCallback</definition>
+        <argsstring>(const riptide_msgs2::msg::ActuatorStatus::SharedPtr msg)</argsstring>
+        <name>statusCallback</name>
+        <qualifiedname>riptide_rviz::Actuators::statusCallback</qualifiedname>
+        <param>
+          <type>const riptide_msgs2::msg::ActuatorStatus::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="45" column="14" bodyfile="src/Actuators.cpp" bodystart="195" bodyend="240"/>
+        <references refid="namespaceriptide__rviz_1a811e35e843ae6e0d65a34f0e6b15581e" compoundref="Actuators_8cpp" startline="13" endline="22">riptide_rviz::CLAW_STATUSES</references>
+        <references refid="namespaceriptide__rviz_1a284365296c40a7a984ad218a147eb041" compoundref="Actuators_8cpp" startline="34" endline="41">riptide_rviz::DROPPER_STATUSES</references>
+        <references refid="namespaceriptide__rviz_1ad5b7c48ad353377a961d0493b6f7551e" compoundref="Actuators_8cpp" startline="44">riptide_rviz::STATUS_ERROR_STYLESHEET</references>
+        <references refid="namespaceriptide__rviz_1a6678db0aaf33428e65eee4cccd8077df" compoundref="Actuators_8cpp" startline="45">riptide_rviz::STATUS_GOOD_STYLESHEET</references>
+        <references refid="namespaceriptide__rviz_1a46ec3d28469decde3755e3e3a38391b0" compoundref="Actuators_8cpp" startline="24" endline="32">riptide_rviz::TORPEDO_STATUSES</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" compoundref="Actuators_8hpp" startline="53">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" compoundref="Actuators_8cpp" startline="81" endline="115">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::updateStatus</definition>
+        <argsstring>()</argsstring>
+        <name>updateStatus</name>
+        <qualifiedname>riptide_rviz::Actuators::updateStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="46" column="14" bodyfile="src/Actuators.cpp" bodystart="243" bodyend="254"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a9c93c041f0f7805adf854cab78cc2522" compoundref="Actuators_8hpp" startline="78">latestCmdFeedback</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a1d25b7e10d542098f98c5e1f363999b1" compoundref="Actuators_8hpp" startline="79">latestCmdStatus</references>
+        <references refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" compoundref="Actuators_8hpp" startline="53">uiPanel</references>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1acdc2bf4fe14e2bc79e26c5aa5a7146e4" compoundref="Actuators_8cpp" startline="256" endline="260">cmdFeedbackCb</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a7eb3cc61c5cb4e816e2b3de25c95cefd" compoundref="Actuators_8cpp" startline="262" endline="266">cmdStatusCb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1acdc2bf4fe14e2bc79e26c5aa5a7146e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::cmdFeedbackCb</definition>
+        <argsstring>(const std_msgs::msg::String::SharedPtr msg)</argsstring>
+        <name>cmdFeedbackCb</name>
+        <qualifiedname>riptide_rviz::Actuators::cmdFeedbackCb</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::String::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="47" column="14" bodyfile="src/Actuators.cpp" bodystart="256" bodyend="260"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a9c93c041f0f7805adf854cab78cc2522" compoundref="Actuators_8hpp" startline="78">latestCmdFeedback</references>
+        <references refid="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" compoundref="Actuators_8cpp" startline="243" endline="254">updateStatus</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1a7eb3cc61c5cb4e816e2b3de25c95cefd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::cmdStatusCb</definition>
+        <argsstring>(const Bool::SharedPtr msg)</argsstring>
+        <name>cmdStatusCb</name>
+        <qualifiedname>riptide_rviz::Actuators::cmdStatusCb</qualifiedname>
+        <param>
+          <type>const Bool::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="48" column="14" bodyfile="src/Actuators.cpp" bodystart="262" bodyend="266"/>
+        <references refid="classriptide__rviz_1_1Actuators_1a1d25b7e10d542098f98c5e1f363999b1" compoundref="Actuators_8hpp" startline="79">latestCmdStatus</references>
+        <references refid="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" compoundref="Actuators_8cpp" startline="243" endline="254">updateStatus</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::pubEmptyTopic</definition>
+        <argsstring>(rclcpp::Publisher&lt; Empty &gt;::SharedPtr pub)</argsstring>
+        <name>pubEmptyTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::pubEmptyTopic</qualifiedname>
+        <param>
+          <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" kindref="member">Empty</ref> &gt;::SharedPtr</type>
+          <declname>pub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="49" column="14" bodyfile="src/Actuators.cpp" bodystart="269" bodyend="273"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a937a5103ac84204cd578ab71f58e9a27" compoundref="Actuators_8cpp" startline="176" endline="180">handleClawSetHome</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4015c35ccb1e28ebebccdb61e1a394ab" compoundref="Actuators_8cpp" startline="157" endline="160">handleDropMarker</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a4258b263078603c4006cc93d3723a66e" compoundref="Actuators_8cpp" startline="151" endline="154">handleFireTorpedo</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a50109e3c102f53403e472573f1ffb0ce" compoundref="Actuators_8cpp" startline="163" endline="166">handleReload</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1ab9bd37990838192ad6605ef6bcd6c262" compoundref="Actuators_8cpp" startline="183" endline="186">handleTorpGoHome</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a30950267ff608feeefe7103da7ae60be" compoundref="Actuators_8cpp" startline="189" endline="192">handleTorpSetHome</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1Actuators_1aba01f21d2f0951a4d00cc240d0d47df5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::Actuators::pubBoolTopic</definition>
+        <argsstring>(rclcpp::Publisher&lt; Bool &gt;::SharedPtr pub, bool value)</argsstring>
+        <name>pubBoolTopic</name>
+        <qualifiedname>riptide_rviz::Actuators::pubBoolTopic</qualifiedname>
+        <param>
+          <type>rclcpp::Publisher&lt; <ref refid="namespaceriptide__rviz_1a0f437e929abab656e4fb9279fec6c702" kindref="member">Bool</ref> &gt;::SharedPtr</type>
+          <declname>pub</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="50" column="14" bodyfile="src/Actuators.cpp" bodystart="276" bodyend="281"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1ae9788db2d4c42238cfe2dee464e9b91c" compoundref="Actuators_8cpp" startline="127" endline="130">handleArm</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a40cbec2dcd56fd2d13b912ead8c8894c" compoundref="Actuators_8cpp" startline="145" endline="148">handleCloseClaw</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a7c50e5260caab45a2d6960a33aada7d8" compoundref="Actuators_8cpp" startline="133" endline="136">handleDisarm</referencedby>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1aae9f343b8497ee58f74376c1d636c779" compoundref="Actuators_8cpp" startline="139" endline="142">handleOpenClaw</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>riptide_rviz::Actuators</label>
+        <link refid="classriptide__rviz_1_1Actuators"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::Actuators</label>
+        <link refid="classriptide__rviz_1_1Actuators"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/Actuators.hpp" line="21" column="5" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="22" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1Actuators_1a4ff170d30a9a052b60736a96063686b3" prot="public" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>Actuators</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a186d60d604b0664774ffcf9b8e6b1b76" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>armTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a948db56da5e3e6c2b1a9236bb394b886" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>clawSetClosedPosTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1abf22335e07401fbd459d450c6672352e" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>clawTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1aa5979ceac4978bf86da38a71a7012ab3" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>cmdFeedback</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1acdc2bf4fe14e2bc79e26c5aa5a7146e4" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>cmdFeedbackCb</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1ad92c67578bdcd64351063fe18750194e" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>cmdStatus</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a7eb3cc61c5cb4e816e2b3de25c95cefd" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>cmdStatusCb</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1abdb32cd18e37bb6cdf43e867d0d92a14" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>dropperTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1ae9788db2d4c42238cfe2dee464e9b91c" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleArm</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1abfc98a929881a88fb59710a50070d931" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleClawGoHome</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a937a5103ac84204cd578ab71f58e9a27" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleClawSetHome</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a40cbec2dcd56fd2d13b912ead8c8894c" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleCloseClaw</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a7c50e5260caab45a2d6960a33aada7d8" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleDisarm</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a4015c35ccb1e28ebebccdb61e1a394ab" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleDropMarker</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a4258b263078603c4006cc93d3723a66e" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleFireTorpedo</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1aae9f343b8497ee58f74376c1d636c779" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleOpenClaw</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a50109e3c102f53403e472573f1ffb0ce" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleReload</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1ab9bd37990838192ad6605ef6bcd6c262" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleTorpGoHome</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a30950267ff608feeefe7103da7ae60be" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>handleTorpSetHome</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a9c93c041f0f7805adf854cab78cc2522" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>latestCmdFeedback</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a1d25b7e10d542098f98c5e1f363999b1" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>latestCmdStatus</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a4e8180d47582deddb94a9eff9b9eed55" prot="public" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>load</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a10a426bb52070642e63049d0da4b9820" prot="public" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>onInitialize</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1aba01f21d2f0951a4d00cc240d0d47df5" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>pubBoolTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1af9e294e72ba408efb98bd7297156b9ca" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>pubEmptyTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1ac9998263ae06821fd097150cda0d2a9a" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>reloadTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a9162fda58db7f06c3b6b429a6fba3079" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>robotNs</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a519a75304a8b51ecdcfa89af5234a050" prot="public" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>save</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>statusCallback</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a2ec4ea88fb9f83384ae5d6de993d89f2" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>statusSub</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a1921dddac94245fe48e58d15a7d2deb4" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>torpedoTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1adb1f543ce307f37f41bc96710ccf5aef" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>torpMarkerGoHomeTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a7a7ffc8e3351443ea50be0ec658a5c33" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>torpMarkerSetHomeTopic</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1a69a1b275f33d49aad76ab3bf6340b036" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>uiPanel</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1af5a19d940f3e5036084b1b337b7293f3" prot="private" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>updateStatus</name></member>
+      <member refid="classriptide__rviz_1_1Actuators_1ac7d849ae6da5c487826516bedadbfe01" prot="public" virt="non-virtual"><scope>riptide_rviz::Actuators</scope><name>~Actuators</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1ParamPanel" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::ParamPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="ParamPanel_8hpp" local="no">ParamPanel.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a812c111147b5fe3703658db2f7ab8fa4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ParamPanel::loaded</definition>
+        <argsstring></argsstring>
+        <name>loaded</name>
+        <qualifiedname>riptide_rviz::ParamPanel::loaded</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="42" column="18" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a9978cfc3da607112f87cb1ccbf3c8b30" compoundref="ParamPanel_8cpp" startline="121" endline="136">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a96a85038bbd99d9670cb00a2b08f98e2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ParamPanel::connected</definition>
+        <argsstring></argsstring>
+        <name>connected</name>
+        <qualifiedname>riptide_rviz::ParamPanel::connected</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="42" column="26" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a5ca57aa8e1ebcba77e7f7d3c0f23d1e5" compoundref="ParamPanel_8cpp" startline="176" endline="201">getParams</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a81d7c7a722a017ac632d5fd86e718fed" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Node &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Node&gt; riptide_rviz::ParamPanel::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <qualifiedname>riptide_rviz::ParamPanel::node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="43" column="29" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a11eca7ee885184e2516ab84cceb4a4f0" compoundref="ParamPanel_8cpp" startline="160" endline="174">getNodes</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a9978cfc3da607112f87cb1ccbf3c8b30" compoundref="ParamPanel_8cpp" startline="121" endline="136">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1ac572f278f6b2bdeb8fee58a9d148a869" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::SyncParametersClient &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::SyncParametersClient&gt; riptide_rviz::ParamPanel::param_client</definition>
+        <argsstring></argsstring>
+        <name>param_client</name>
+        <qualifiedname>riptide_rviz::ParamPanel::param_client</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="44" column="29" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" compoundref="ParamPanel_8cpp" startline="559" endline="794">apply</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a5ca57aa8e1ebcba77e7f7d3c0f23d1e5" compoundref="ParamPanel_8cpp" startline="176" endline="201">getParams</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" prot="private" static="no" mutable="no">
+        <type>QComboBox *</type>
+        <definition>QComboBox* riptide_rviz::ParamPanel::nodes</definition>
+        <argsstring></argsstring>
+        <name>nodes</name>
+        <qualifiedname>riptide_rviz::ParamPanel::nodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="45" column="23" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a11eca7ee885184e2516ab84cceb4a4f0" compoundref="ParamPanel_8cpp" startline="160" endline="174">getNodes</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" compoundref="ParamPanel_8cpp" startline="31" endline="112">ParamPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" compoundref="ParamPanel_8cpp" startline="533" endline="537">refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1af33a6d53ee83e3a427bc268440979488" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* riptide_rviz::ParamPanel::searchBox</definition>
+        <argsstring></argsstring>
+        <name>searchBox</name>
+        <qualifiedname>riptide_rviz::ParamPanel::searchBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="46" column="23" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" compoundref="ParamPanel_8cpp" startline="31" endline="112">ParamPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1aa772e3a1f58a3ef7916174420c57ffb2" prot="private" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* riptide_rviz::ParamPanel::searchContainer</definition>
+        <argsstring></argsstring>
+        <name>searchContainer</name>
+        <qualifiedname>riptide_rviz::ParamPanel::searchContainer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="47" column="21" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" compoundref="ParamPanel_8cpp" startline="249" endline="460">createParams</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" compoundref="ParamPanel_8cpp" startline="31" endline="112">ParamPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" prot="private" static="no" mutable="no">
+        <type>QVBoxLayout *</type>
+        <definition>QVBoxLayout* riptide_rviz::ParamPanel::paramLayout</definition>
+        <argsstring></argsstring>
+        <name>paramLayout</name>
+        <qualifiedname>riptide_rviz::ParamPanel::paramLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="48" column="25" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" compoundref="ParamPanel_8cpp" startline="559" endline="794">apply</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" compoundref="ParamPanel_8cpp" startline="249" endline="460">createParams</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a3a706a0b7b7c2a4454e37ef8dc519e61" compoundref="ParamPanel_8cpp" startline="473" endline="505">filterParameters</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" compoundref="ParamPanel_8cpp" startline="31" endline="112">ParamPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a592fb67905b78df3e1396e1aae6a3f93" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* riptide_rviz::ParamPanel::applyButton</definition>
+        <argsstring></argsstring>
+        <name>applyButton</name>
+        <qualifiedname>riptide_rviz::ParamPanel::applyButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="49" column="25" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" compoundref="ParamPanel_8cpp" startline="31" endline="112">ParamPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a3c7a47fdb672845a07b436e5342f2b22" prot="private" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* riptide_rviz::ParamPanel::refreshButton</definition>
+        <argsstring></argsstring>
+        <name>refreshButton</name>
+        <qualifiedname>riptide_rviz::ParamPanel::refreshButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="50" column="25" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" compoundref="ParamPanel_8cpp" startline="31" endline="112">ParamPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1ac6c15f0b7cf1f968b56f884ef31a20d5" prot="private" static="no" mutable="no">
+        <type>QStatusBar *</type>
+        <definition>QStatusBar* riptide_rviz::ParamPanel::statusBar</definition>
+        <argsstring></argsstring>
+        <name>statusBar</name>
+        <qualifiedname>riptide_rviz::ParamPanel::statusBar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="51" column="24" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" compoundref="ParamPanel_8cpp" startline="31" endline="112">ParamPanel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" compoundref="ParamPanel_8cpp" startline="146" endline="149">showStatusMessage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a531c57f0a6235197f0a5db357802945b" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString riptide_rviz::ParamPanel::robotNs</definition>
+        <argsstring></argsstring>
+        <name>robotNs</name>
+        <qualifiedname>riptide_rviz::ParamPanel::robotNs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="52" column="21" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a9978cfc3da607112f87cb1ccbf3c8b30" compoundref="ParamPanel_8cpp" startline="121" endline="136">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a261d98729fc1711d70a402f8ebed7343" compoundref="ParamPanel_8cpp" startline="139" endline="143">save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" prot="private" static="no" mutable="no">
+        <type>QMap&lt; QString, QVariant &gt;</type>
+        <definition>QMap&lt;QString, QVariant&gt; riptide_rviz::ParamPanel::originalValues</definition>
+        <argsstring></argsstring>
+        <name>originalValues</name>
+        <qualifiedname>riptide_rviz::ParamPanel::originalValues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="53" column="18" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" compoundref="ParamPanel_8cpp" startline="559" endline="794">apply</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" compoundref="ParamPanel_8cpp" startline="249" endline="460">createParams</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1acfc20413b8201d5bb7e4b2d45c8b303f" compoundref="ParamPanel_8cpp" startline="228" endline="238">highlightChanges</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1ab705bb053485ef548fb620e4bda8fcab" compoundref="ParamPanel_8cpp" startline="204" endline="208">storeOriginalValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classriptide__rviz_1_1ParamPanel_1a09a1ef0bbab5ac127e21a91b49f0dd46" prot="private" static="no" mutable="no">
+        <type>QMap&lt; QString, QWidget * &gt;</type>
+        <definition>QMap&lt;QString, QWidget*&gt; riptide_rviz::ParamPanel::arrayContainers</definition>
+        <argsstring></argsstring>
+        <name>arrayContainers</name>
+        <qualifiedname>riptide_rviz::ParamPanel::arrayContainers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="54" column="18" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::ParamPanel::ParamPanel</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>ParamPanel</name>
+        <qualifiedname>riptide_rviz::ParamPanel::ParamPanel</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="20" column="13" bodyfile="src/ParamPanel.cpp" bodystart="31" bodyend="112"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a592fb67905b78df3e1396e1aae6a3f93" compoundref="ParamPanel_8hpp" startline="49">applyButton</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" compoundref="ParamPanel_8hpp" startline="45">nodes</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" compoundref="ParamPanel_8hpp" startline="48">paramLayout</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a3c7a47fdb672845a07b436e5342f2b22" compoundref="ParamPanel_8hpp" startline="50">refreshButton</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1af33a6d53ee83e3a427bc268440979488" compoundref="ParamPanel_8hpp" startline="46">searchBox</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1aa772e3a1f58a3ef7916174420c57ffb2" compoundref="ParamPanel_8hpp" startline="47">searchContainer</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ac6c15f0b7cf1f968b56f884ef31a20d5" compoundref="ParamPanel_8hpp" startline="51">statusBar</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a6c9a63791333d6e58ca2c7610be4dd03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::ParamPanel::~ParamPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~ParamPanel</name>
+        <qualifiedname>riptide_rviz::ParamPanel::~ParamPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="21" column="13" bodyfile="src/ParamPanel.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a9978cfc3da607112f87cb1ccbf3c8b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <qualifiedname>riptide_rviz::ParamPanel::load</qualifiedname>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="22" column="18" bodyfile="src/ParamPanel.cpp" bodystart="121" bodyend="136"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a11eca7ee885184e2516ab84cceb4a4f0" compoundref="ParamPanel_8cpp" startline="160" endline="174">getNodes</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a812c111147b5fe3703658db2f7ab8fa4" compoundref="ParamPanel_8hpp" startline="42">loaded</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a81d7c7a722a017ac632d5fd86e718fed" compoundref="ParamPanel_8hpp" startline="43">node</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a531c57f0a6235197f0a5db357802945b" compoundref="ParamPanel_8hpp" startline="52">robotNs</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a261d98729fc1711d70a402f8ebed7343" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <qualifiedname>riptide_rviz::ParamPanel::save</qualifiedname>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="23" column="18" bodyfile="src/ParamPanel.cpp" bodystart="139" bodyend="143"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a531c57f0a6235197f0a5db357802945b" compoundref="ParamPanel_8hpp" startline="52">robotNs</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <qualifiedname>riptide_rviz::ParamPanel::onInitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="24" column="18" bodyfile="src/ParamPanel.cpp" bodystart="152" bodyend="158"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" compoundref="ParamPanel_8cpp" startline="559" endline="794">apply</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a592fb67905b78df3e1396e1aae6a3f93" compoundref="ParamPanel_8hpp" startline="49">applyButton</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a3a706a0b7b7c2a4454e37ef8dc519e61" compoundref="ParamPanel_8cpp" startline="473" endline="505">filterParameters</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" compoundref="ParamPanel_8hpp" startline="45">nodes</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" compoundref="ParamPanel_8cpp" startline="533" endline="537">refresh</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a3c7a47fdb672845a07b436e5342f2b22" compoundref="ParamPanel_8hpp" startline="50">refreshButton</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1af33a6d53ee83e3a427bc268440979488" compoundref="ParamPanel_8hpp" startline="46">searchBox</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::apply</definition>
+        <argsstring>()</argsstring>
+        <name>apply</name>
+        <qualifiedname>riptide_rviz::ParamPanel::apply</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="27" column="18" bodyfile="src/ParamPanel.cpp" bodystart="559" bodyend="794"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a8cd90cb9ea3c6de8bdb3c6ca764860b2" compoundref="ParamPanel_8cpp" startline="211" endline="225">getCurrentValue</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" compoundref="ParamPanel_8hpp" startline="53">originalValues</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ac572f278f6b2bdeb8fee58a9d148a869" compoundref="ParamPanel_8hpp" startline="44">param_client</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" compoundref="ParamPanel_8hpp" startline="48">paramLayout</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" compoundref="ParamPanel_8cpp" startline="146" endline="149">showStatusMessage</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::setNode</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>setNode</name>
+        <qualifiedname>riptide_rviz::ParamPanel::setNode</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="28" column="18" bodyfile="src/ParamPanel.cpp" bodystart="508" bodyend="531"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a96a85038bbd99d9670cb00a2b08f98e2" compoundref="ParamPanel_8hpp" startline="42">connected</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" compoundref="ParamPanel_8cpp" startline="249" endline="460">createParams</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a18db0c032135c58e67a167ad77926f8c" compoundref="ParamPanel_8cpp" startline="541" endline="557">eraseLayout</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a5ca57aa8e1ebcba77e7f7d3c0f23d1e5" compoundref="ParamPanel_8cpp" startline="176" endline="201">getParams</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a81d7c7a722a017ac632d5fd86e718fed" compoundref="ParamPanel_8hpp" startline="43">node</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ac572f278f6b2bdeb8fee58a9d148a869" compoundref="ParamPanel_8hpp" startline="44">param_client</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" compoundref="ParamPanel_8hpp" startline="48">paramLayout</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1af33a6d53ee83e3a427bc268440979488" compoundref="ParamPanel_8hpp" startline="46">searchBox</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1aa772e3a1f58a3ef7916174420c57ffb2" compoundref="ParamPanel_8hpp" startline="47">searchContainer</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" compoundref="ParamPanel_8cpp" startline="146" endline="149">showStatusMessage</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" compoundref="ParamPanel_8cpp" startline="533" endline="537">refresh</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <qualifiedname>riptide_rviz::ParamPanel::refresh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="29" column="18" bodyfile="src/ParamPanel.cpp" bodystart="533" bodyend="537"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a11eca7ee885184e2516ab84cceb4a4f0" compoundref="ParamPanel_8cpp" startline="160" endline="174">getNodes</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" compoundref="ParamPanel_8hpp" startline="45">nodes</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" compoundref="ParamPanel_8cpp" startline="146" endline="149">showStatusMessage</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ParamPanel_1a3a706a0b7b7c2a4454e37ef8dc519e61" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::filterParameters</definition>
+        <argsstring>(const QString &amp;text)</argsstring>
+        <name>filterParameters</name>
+        <qualifiedname>riptide_rviz::ParamPanel::filterParameters</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="30" column="18" bodyfile="src/ParamPanel.cpp" bodystart="473" bodyend="505"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" compoundref="ParamPanel_8hpp" startline="48">paramLayout</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" compoundref="ParamPanel_8cpp" startline="152" endline="158">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ParamPanel_1aea605fbc50e08180a046c0d1c607d012" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::parameterValueChanged</definition>
+        <argsstring>()</argsstring>
+        <name>parameterValueChanged</name>
+        <qualifiedname>riptide_rviz::ParamPanel::parameterValueChanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="31" column="18" bodyfile="src/ParamPanel.cpp" bodystart="241" bodyend="247"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1acfc20413b8201d5bb7e4b2d45c8b303f" compoundref="ParamPanel_8cpp" startline="228" endline="238">highlightChanges</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" compoundref="ParamPanel_8cpp" startline="249" endline="460">createParams</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::showStatusMessage</definition>
+        <argsstring>(const QString &amp;message, int timeout=3000)</argsstring>
+        <name>showStatusMessage</name>
+        <qualifiedname>riptide_rviz::ParamPanel::showStatusMessage</qualifiedname>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timeout</declname>
+          <defval>3000</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="32" column="18" bodyfile="src/ParamPanel.cpp" bodystart="146" bodyend="149"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ac6c15f0b7cf1f968b56f884ef31a20d5" compoundref="ParamPanel_8hpp" startline="51">statusBar</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" compoundref="ParamPanel_8cpp" startline="559" endline="794">apply</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a5ca57aa8e1ebcba77e7f7d3c0f23d1e5" compoundref="ParamPanel_8cpp" startline="176" endline="201">getParams</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" compoundref="ParamPanel_8cpp" startline="533" endline="537">refresh</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a11eca7ee885184e2516ab84cceb4a4f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::getNodes</definition>
+        <argsstring>()</argsstring>
+        <name>getNodes</name>
+        <qualifiedname>riptide_rviz::ParamPanel::getNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="35" column="18" bodyfile="src/ParamPanel.cpp" bodystart="160" bodyend="174"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a81d7c7a722a017ac632d5fd86e718fed" compoundref="ParamPanel_8hpp" startline="43">node</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" compoundref="ParamPanel_8hpp" startline="45">nodes</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a9978cfc3da607112f87cb1ccbf3c8b30" compoundref="ParamPanel_8cpp" startline="121" endline="136">load</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" compoundref="ParamPanel_8cpp" startline="533" endline="537">refresh</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a5ca57aa8e1ebcba77e7f7d3c0f23d1e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; rclcpp::Parameter &gt;</type>
+        <definition>std::vector&lt; rclcpp::Parameter &gt; riptide_rviz::ParamPanel::getParams</definition>
+        <argsstring>()</argsstring>
+        <name>getParams</name>
+        <qualifiedname>riptide_rviz::ParamPanel::getParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="36" column="25" bodyfile="src/ParamPanel.cpp" bodystart="176" bodyend="201"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a96a85038bbd99d9670cb00a2b08f98e2" compoundref="ParamPanel_8hpp" startline="42">connected</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ac572f278f6b2bdeb8fee58a9d148a869" compoundref="ParamPanel_8hpp" startline="44">param_client</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" compoundref="ParamPanel_8cpp" startline="146" endline="149">showStatusMessage</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::createParams</definition>
+        <argsstring>(std::vector&lt; rclcpp::Parameter &gt; params)</argsstring>
+        <name>createParams</name>
+        <qualifiedname>riptide_rviz::ParamPanel::createParams</qualifiedname>
+        <param>
+          <type>std::vector&lt; rclcpp::Parameter &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="37" column="18" bodyfile="src/ParamPanel.cpp" bodystart="249" bodyend="460"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" compoundref="ParamPanel_8hpp" startline="53">originalValues</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1aea605fbc50e08180a046c0d1c607d012" compoundref="ParamPanel_8cpp" startline="241" endline="247">parameterValueChanged</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" compoundref="ParamPanel_8hpp" startline="48">paramLayout</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1aa772e3a1f58a3ef7916174420c57ffb2" compoundref="ParamPanel_8hpp" startline="47">searchContainer</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1ab705bb053485ef548fb620e4bda8fcab" compoundref="ParamPanel_8cpp" startline="204" endline="208">storeOriginalValue</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a18db0c032135c58e67a167ad77926f8c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::eraseLayout</definition>
+        <argsstring>(QLayout *layout)</argsstring>
+        <name>eraseLayout</name>
+        <qualifiedname>riptide_rviz::ParamPanel::eraseLayout</qualifiedname>
+        <param>
+          <type>QLayout *</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="38" column="18" bodyfile="src/ParamPanel.cpp" bodystart="541" bodyend="557"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a18db0c032135c58e67a167ad77926f8c" compoundref="ParamPanel_8cpp" startline="541" endline="557">eraseLayout</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a18db0c032135c58e67a167ad77926f8c" compoundref="ParamPanel_8cpp" startline="541" endline="557">eraseLayout</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" compoundref="ParamPanel_8cpp" startline="508" endline="531">setNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1ab705bb053485ef548fb620e4bda8fcab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::storeOriginalValue</definition>
+        <argsstring>(QWidget *widget, const QString &amp;name)</argsstring>
+        <name>storeOriginalValue</name>
+        <qualifiedname>riptide_rviz::ParamPanel::storeOriginalValue</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="39" column="18" bodyfile="src/ParamPanel.cpp" bodystart="204" bodyend="208"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a8cd90cb9ea3c6de8bdb3c6ca764860b2" compoundref="ParamPanel_8cpp" startline="211" endline="225">getCurrentValue</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" compoundref="ParamPanel_8hpp" startline="53">originalValues</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" compoundref="ParamPanel_8cpp" startline="249" endline="460">createParams</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1acfc20413b8201d5bb7e4b2d45c8b303f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void riptide_rviz::ParamPanel::highlightChanges</definition>
+        <argsstring>(QWidget *widget, const QString &amp;name)</argsstring>
+        <name>highlightChanges</name>
+        <qualifiedname>riptide_rviz::ParamPanel::highlightChanges</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="40" column="18" bodyfile="src/ParamPanel.cpp" bodystart="228" bodyend="238"/>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a8cd90cb9ea3c6de8bdb3c6ca764860b2" compoundref="ParamPanel_8cpp" startline="211" endline="225">getCurrentValue</references>
+        <references refid="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" compoundref="ParamPanel_8hpp" startline="53">originalValues</references>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1aea605fbc50e08180a046c0d1c607d012" compoundref="ParamPanel_8cpp" startline="241" endline="247">parameterValueChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1a8cd90cb9ea3c6de8bdb3c6ca764860b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant riptide_rviz::ParamPanel::getCurrentValue</definition>
+        <argsstring>(QWidget *widget)</argsstring>
+        <name>getCurrentValue</name>
+        <qualifiedname>riptide_rviz::ParamPanel::getCurrentValue</qualifiedname>
+        <param>
+          <type>QWidget *</type>
+          <declname>widget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="41" column="22" bodyfile="src/ParamPanel.cpp" bodystart="211" bodyend="225"/>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" compoundref="ParamPanel_8cpp" startline="559" endline="794">apply</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1acfc20413b8201d5bb7e4b2d45c8b303f" compoundref="ParamPanel_8cpp" startline="228" endline="238">highlightChanges</referencedby>
+        <referencedby refid="classriptide__rviz_1_1ParamPanel_1ab705bb053485ef548fb620e4bda8fcab" compoundref="ParamPanel_8cpp" startline="204" endline="208">storeOriginalValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1ParamPanel_1ab27e5a732a2261aea03dea364a8f574c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::ParamPanel::eventFilter</definition>
+        <argsstring>(QObject *obj, QEvent *event) override</argsstring>
+        <name>eventFilter</name>
+        <qualifiedname>riptide_rviz::ParamPanel::eventFilter</qualifiedname>
+        <param>
+          <type>QObject *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ParamPanel.hpp" line="55" column="18" bodyfile="src/ParamPanel.cpp" bodystart="463" bodyend="470"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>riptide_rviz::ParamPanel</label>
+        <link refid="classriptide__rviz_1_1ParamPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>riptide_rviz::ParamPanel</label>
+        <link refid="classriptide__rviz_1_1ParamPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/ParamPanel.hpp" line="16" column="5" bodyfile="include/mercury_rviz/ParamPanel.hpp" bodystart="17" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>apply</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a592fb67905b78df3e1396e1aae6a3f93" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>applyButton</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a09a1ef0bbab5ac127e21a91b49f0dd46" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>arrayContainers</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a96a85038bbd99d9670cb00a2b08f98e2" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>connected</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>createParams</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a18db0c032135c58e67a167ad77926f8c" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>eraseLayout</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1ab27e5a732a2261aea03dea364a8f574c" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>eventFilter</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a3a706a0b7b7c2a4454e37ef8dc519e61" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>filterParameters</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a8cd90cb9ea3c6de8bdb3c6ca764860b2" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>getCurrentValue</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a11eca7ee885184e2516ab84cceb4a4f0" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>getNodes</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a5ca57aa8e1ebcba77e7f7d3c0f23d1e5" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>getParams</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1acfc20413b8201d5bb7e4b2d45c8b303f" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>highlightChanges</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a9978cfc3da607112f87cb1ccbf3c8b30" prot="public" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>load</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a812c111147b5fe3703658db2f7ab8fa4" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>loaded</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a81d7c7a722a017ac632d5fd86e718fed" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>node</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>nodes</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" prot="public" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>onInitialize</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>originalValues</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1ac572f278f6b2bdeb8fee58a9d148a869" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>param_client</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1aea605fbc50e08180a046c0d1c607d012" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>parameterValueChanged</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>paramLayout</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" prot="public" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>ParamPanel</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>refresh</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a3c7a47fdb672845a07b436e5342f2b22" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>refreshButton</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a531c57f0a6235197f0a5db357802945b" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>robotNs</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a261d98729fc1711d70a402f8ebed7343" prot="public" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>save</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1af33a6d53ee83e3a427bc268440979488" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>searchBox</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1aa772e3a1f58a3ef7916174420c57ffb2" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>searchContainer</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>setNode</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>showStatusMessage</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1ac6c15f0b7cf1f968b56f884ef31a20d5" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>statusBar</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1ab705bb053485ef548fb620e4bda8fcab" prot="private" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>storeOriginalValue</name></member>
+      <member refid="classriptide__rviz_1_1ParamPanel_1a6c9a63791333d6e58ca2c7610be4dd03" prot="public" virt="non-virtual"><scope>riptide_rviz::ParamPanel</scope><name>~ParamPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="GuiSrvClient_8hpp" kind="file" language="C++">
+    <compoundname>GuiSrvClient.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">future</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_rviz/GuiSrvClient.hpp</label>
+        <link refid="GuiSrvClient_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QTimer</label>
+      </node>
+      <node id="3">
+        <label>functional</label>
+      </node>
+      <node id="4">
+        <label>future</label>
+      </node>
+      <node id="6">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classGuiSrvClient" prot="public">GuiSrvClient</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="GuiSrvClient_8hpp_1a862c7cc2393cda5b48129eb32f914289" prot="public" static="no">
+        <type>std::function&lt; void(const QString &amp;, const QString &amp;)&gt;</type>
+        <definition>typedef std::function&lt;void(const QString&amp;, const QString&amp;)&gt; StatusUpdateFunc</definition>
+        <argsstring></argsstring>
+        <name>StatusUpdateFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/GuiSrvClient.hpp" line="15" column="23" bodyfile="include/mercury_rviz/GuiSrvClient.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;future&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>riptide_rviz<sp/>srv<sp/>client<sp/>utility.<sp/>Handles<sp/>calls<sp/>to<sp/>services<sp/>without<sp/>blocking<sp/>the<sp/>ui<sp/>with<sp/>feedback<sp/>to<sp/>the<sp/>user.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="GuiSrvClient_8hpp_1a862c7cc2393cda5b48129eb32f914289" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;)&gt;<sp/><ref refid="GuiSrvClient_8hpp_1a862c7cc2393cda5b48129eb32f914289" kindref="member">StatusUpdateFunc</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrvType&gt;</highlight></codeline>
+<codeline lineno="18" refid="classGuiSrvClient" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" kindref="member">GuiSrvClient</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classGuiSrvClient_1ac91d3548ad9d5a96535fb2612498f48e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;GuiSrvClient&gt;<sp/><ref refid="classGuiSrvClient_1ac91d3548ad9d5a96535fb2612498f48e" kindref="member">SharedPtr</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>rclcpp::Client&lt;SrvType&gt;::SharedResponse)&gt;<sp/><ref refid="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" kindref="member">ResponseFunc</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1ac2cdb4af23d6a9fe95913d14868bdbac" kindref="member">GuiSrvClient</ref>(rclcpp::Node::SharedPtr<sp/><ref refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" kindref="member">node</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>srv_name,<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="GuiSrvClient_8hpp_1a862c7cc2393cda5b48129eb32f914289" kindref="member">StatusUpdateFunc</ref><sp/>status_update_callback,<sp/><ref refid="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" kindref="member">ResponseFunc</ref><sp/>response_callback)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" kindref="member">node</ref>(<ref refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" kindref="member">node</ref>),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>(status_update_callback),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" kindref="member">respond</ref>(response_callback),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref>(-1)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" kindref="member">client</ref><sp/>=<sp/><ref refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" kindref="member">node</ref>-&gt;create_client&lt;SrvType&gt;(srv_name);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGuiSrvClient_1a07d96bab466922ed49b4bea472310bb8" kindref="member">callService</ref>(</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>SrvType::Request::SharedPtr<sp/>request)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref><sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>(</highlight><highlight class="stringliteral">&quot;A<sp/>service<sp/>call<sp/>is<sp/>already<sp/>in<sp/>progress!&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FF0000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>srvName<sp/>=<sp/><ref refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" kindref="member">client</ref>-&gt;get_service_name();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>(QString(</highlight><highlight class="stringliteral">&quot;Waiting<sp/>for<sp/>service<sp/>%1&quot;</highlight><highlight class="normal">).arg(QString::fromStdString(srvName)),<sp/></highlight><highlight class="stringliteral">&quot;000000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" kindref="member">client</ref>-&gt;wait_for_service(std::chrono::seconds(1)))</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>(</highlight><highlight class="stringliteral">&quot;Service<sp/>unavailable!&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FF0000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref><sp/>=<sp/>-1;<sp/></highlight><highlight class="comment">//we<sp/>allowed<sp/>to<sp/>call<sp/>services<sp/>again</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>(QString(</highlight><highlight class="stringliteral">&quot;Making<sp/>call<sp/>to<sp/>service<sp/>%1&quot;</highlight><highlight class="normal">).arg(QString::fromStdString(srvName)),<sp/></highlight><highlight class="stringliteral">&quot;000000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>future<sp/>=<sp/><ref refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" kindref="member">client</ref>-&gt;async_send_request(request);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref><sp/>=<sp/>future.request_id;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" kindref="member">sharedFuture</ref><sp/>=<sp/>future.share();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>is<sp/>how<sp/>we<sp/>wait<sp/>for<sp/>a<sp/>service<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTimer::singleShot(250,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]<sp/>()<sp/>{<sp/>this-&gt;<ref refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" kindref="member">waitForService</ref>();<sp/>});</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" kindref="member">sendTime</ref><sp/>=<sp/><ref refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" kindref="member">node</ref>-&gt;get_clock()-&gt;now();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" kindref="member">waitForService</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" kindref="member">sharedFuture</ref>.valid())</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>(</highlight><highlight class="stringliteral">&quot;Service<sp/>result<sp/>has<sp/>become<sp/>invalid!&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FF0000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>futureStatus<sp/>=<sp/><ref refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" kindref="member">sharedFuture</ref>.wait_for(std::chrono::milliseconds(5));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(futureStatus<sp/>!=<sp/>std::future_status::timeout)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//success</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>srvName<sp/>=<sp/><ref refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" kindref="member">client</ref>-&gt;get_service_name();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>rclcpp::Client&lt;SrvType&gt;::SharedResponse<sp/>response<sp/>=<sp/><ref refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" kindref="member">sharedFuture</ref>.get();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" kindref="member">respond</ref>(srvName,<sp/>response);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//not<sp/>ready<sp/>yet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Time<sp/>currentTime<sp/>=<sp/><ref refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" kindref="member">node</ref>-&gt;get_clock()-&gt;now();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(currentTime<sp/>-<sp/><ref refid="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" kindref="member">sendTime</ref><sp/>&gt;<sp/>std::chrono::seconds(5))</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>(</highlight><highlight class="stringliteral">&quot;Service<sp/>timed<sp/>out.&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FF0000&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" kindref="member">client</ref>-&gt;remove_pending_request(<ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//schedule<sp/>next<sp/>check</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTimer::singleShot(250,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">this</highlight><highlight class="normal">]<sp/>()<sp/>{<sp/>this-&gt;<ref refid="classGuiSrvClient_1a765c20091be8716ef4977ef0d3c00a00" kindref="member">waitForService</ref>();<sp/>});</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Node::SharedPtr<sp/><ref refid="classGuiSrvClient_1a54502754eee7c227397c8e26ac8d4d09" kindref="member">node</ref>;</highlight></codeline>
+<codeline lineno="102" refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>rclcpp::Client&lt;SrvType&gt;::SharedPtr<sp/><ref refid="classGuiSrvClient_1a1f303195d0765b60b23facf8c38cbffb" kindref="member">client</ref>;</highlight></codeline>
+<codeline lineno="103" refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="GuiSrvClient_8hpp_1a862c7cc2393cda5b48129eb32f914289" kindref="member">StatusUpdateFunc</ref><sp/><ref refid="classGuiSrvClient_1a2f2f60536c19494f007b837ffc80b6bb" kindref="member">updateStatus</ref>;</highlight></codeline>
+<codeline lineno="104" refid="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGuiSrvClient_1a7d87848aa3d21f749089d80bb0ef5d5a" kindref="member">ResponseFunc</ref><sp/><ref refid="classGuiSrvClient_1acce3b6bf1c69caadf0b1c94dbb1a2341" kindref="member">respond</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classGuiSrvClient_1a6250570740fcccf8fbc713b6080cb8a6" kindref="member">srvReqId</ref>;</highlight></codeline>
+<codeline lineno="107" refid="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Time<sp/><ref refid="classGuiSrvClient_1a70df452ec3c77a7f9030402e0eea0c0b" kindref="member">sendTime</ref>;</highlight></codeline>
+<codeline lineno="108" refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_future&lt;typename<sp/>SrvType::Response::SharedPtr&gt;<sp/><ref refid="classGuiSrvClient_1aaa56a56333bf8646060dd9385f3f71d8" kindref="member">sharedFuture</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_rviz/GuiSrvClient.hpp"/>
+  </compounddef>
+</doxygen>

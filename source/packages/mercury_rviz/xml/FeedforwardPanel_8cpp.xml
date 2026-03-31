@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="FeedforwardPanel_8cpp" kind="file" language="C++">
+    <compoundname>FeedforwardPanel.cpp</compoundname>
+    <includes local="yes">riptide_rviz/FeedforwardPanel.hpp</includes>
+    <includes local="no">rviz_common/logging.hpp</includes>
+    <includes local="no">rviz_common/display_context.hpp</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">QDoubleSpinBox</includes>
+    <includes local="no">pluginlib/class_list_macros.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/FeedforwardPanel.cpp</label>
+        <link refid="FeedforwardPanel_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QDoubleSpinBox</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="7">
+        <label>pluginlib/class_list_macros.hpp</label>
+      </node>
+      <node id="2">
+        <label>riptide_rviz/FeedforwardPanel.hpp</label>
+      </node>
+      <node id="4">
+        <label>rviz_common/display_context.hpp</label>
+      </node>
+      <node id="3">
+        <label>rviz_common/logging.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="FeedforwardPanel_8cpp_1adbb0850010e9e789048878bf5eea419d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PLUGINLIB_EXPORT_CLASS</definition>
+        <argsstring>(riptide_rviz::FeedforwardPanel, rviz_common::Panel)</argsstring>
+        <name>PLUGINLIB_EXPORT_CLASS</name>
+        <param>
+          <type><ref refid="classriptide__rviz_1_1FeedforwardPanel" kindref="compound">riptide_rviz::FeedforwardPanel</ref></type>
+        </param>
+        <param>
+          <type>rviz_common::Panel</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FeedforwardPanel.cpp" line="150" column="1" declfile="src/FeedforwardPanel.cpp" declline="150" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;riptide_rviz/FeedforwardPanel.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/logging.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/display_context.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDoubleSpinBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::placeholders;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="classriptide__rviz_1_1FeedforwardPanel_1ae31c33e57c094257812b45188cf3f6fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ae31c33e57c094257812b45188cf3f6fc" kindref="member">FeedforwardPanel::FeedforwardPanel</ref>(QWidget<sp/>*parent)<sp/>:<sp/>rviz_common::Panel(parent)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setFocusPolicy(Qt::ClickFocus);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Ui_FeedforwardPanel();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classriptide__rviz_1_1FeedforwardPanel_1af9ccee8d4f0d70d084445f15803cdc95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af9ccee8d4f0d70d084445f15803cdc95" kindref="member">FeedforwardPanel::~FeedforwardPanel</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classriptide__rviz_1_1FeedforwardPanel_1a1f217d76e0941044519a2b967814f1bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a1f217d76e0941044519a2b967814f1bd" kindref="member">FeedforwardPanel::load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>)<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>.mapGetString(</highlight><highlight class="stringliteral">&quot;robot_namespace&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" kindref="member">robotNs</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" kindref="member">robotNs</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" kindref="member">robotNs</ref><sp/>=<sp/>QString::fromStdString(</highlight><highlight class="stringliteral">&quot;/talos&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_WARNING(</highlight><highlight class="stringliteral">&quot;FeedforwardPanel:<sp/>Using<sp/>/talos<sp/>as<sp/>the<sp/>default<sp/>value<sp/>for<sp/>robot_namespace&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>ROS<sp/>peripherals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//we<sp/>want<sp/>a<sp/>publisher<sp/>to<sp/>publish<sp/>to<sp/>controller/ff_body_force<sp/>to<sp/>command<sp/>the<sp/>feedforward<sp/>of<sp/>the<sp/>solver</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//we<sp/>also<sp/>want<sp/>a<sp/>timer<sp/>to<sp/>periodcally<sp/>publish<sp/>that<sp/>message<sp/>using<sp/>the<sp/>publisher</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>=<sp/>getDisplayContext()-&gt;getRosNodeAbstraction().lock()-&gt;get_raw_node();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>fullTopicName<sp/>=<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" kindref="member">robotNs</ref>.toStdString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/controller/FF_body_force&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ace1009e450da616409d5a01c7d8423f1" kindref="member">ffForcePub</ref><sp/>=<sp/>node-&gt;create_publisher&lt;geometry_msgs::msg::Twist&gt;(fullTopicName,<sp/>10);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1afcd335327f4048d919c4d2b0ffea3c3e" kindref="member">pubTimer</ref><sp/>=<sp/>node-&gt;create_wall_timer(20ms,<sp/>std::bind(&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1ab4c995f981f9b0b19fa8657289e7312d" kindref="member">FeedforwardPanel::timerCb</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1afcd335327f4048d919c4d2b0ffea3c3e" kindref="member">pubTimer</ref>-&gt;cancel();<sp/></highlight><highlight class="comment">//dont<sp/>start<sp/>publishing<sp/>right<sp/>away</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RVIZ_COMMON_LOG_INFO(</highlight><highlight class="stringliteral">&quot;FeedForward<sp/>Panel<sp/>loaded.<sp/>Robot<sp/>NS:<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" kindref="member">robotNs</ref>.toStdString()<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ab24db0be386afe3c38bbbbb228c2c2d9" kindref="member">loaded</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classriptide__rviz_1_1FeedforwardPanel_1a35338b5fe139dc6bbbd8a78702a44d9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a35338b5fe139dc6bbbd8a78702a44d9f" kindref="member">FeedforwardPanel::save</ref>(rviz_common::Config<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="53"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rviz_common::Panel::save(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>.mapSetValue(</highlight><highlight class="stringliteral">&quot;robot_namespace&quot;</highlight><highlight class="normal">,<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e01100cbcace7c9faf54f76e47bf965" kindref="member">robotNs</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//called<sp/>when<sp/>panel<sp/>is<sp/>initialized.<sp/>perform<sp/>any<sp/>needed<sp/>UI<sp/>connections<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classriptide__rviz_1_1FeedforwardPanel_1a231410a784689dccf1c1a59e8839cc26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a231410a784689dccf1c1a59e8839cc26" kindref="member">FeedforwardPanel::onInitialize</ref>()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;XdoubleSpinBox,<sp/>qOverload&lt;double&gt;(&amp;QDoubleSpinBox::valueChanged),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a4c40fd3da7a720ec4bfd0b6c0c51c4d3" kindref="member">FeedforwardPanel::XFunction</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;YdoubleSpinBox,<sp/>qOverload&lt;double&gt;(&amp;QDoubleSpinBox::valueChanged),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a6533032bfa487448ac87a866ae6eb0ad" kindref="member">FeedforwardPanel::YFunction</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;ZdoubleSpinBox,<sp/>qOverload&lt;double&gt;(&amp;QDoubleSpinBox::valueChanged),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a69fbd4c6ca931eab7d773cb697ee533b" kindref="member">FeedforwardPanel::ZFunction</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;RdoubleSpinBox,<sp/>qOverload&lt;double&gt;(&amp;QDoubleSpinBox::valueChanged),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1aedbf5975a7b4df4e7638767dc43ad839" kindref="member">FeedforwardPanel::RFunction</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;PdoubleSpinBox,<sp/>qOverload&lt;double&gt;(&amp;QDoubleSpinBox::valueChanged),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a05068ca3e3be5056e22cc4584130352e" kindref="member">FeedforwardPanel::PFunction</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;YAWdoubleSpinBox,<sp/>qOverload&lt;double&gt;(&amp;QDoubleSpinBox::valueChanged),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e0089141706044413d78c553b1ef8df" kindref="member">FeedforwardPanel::YAWFunction</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;publishButton,<sp/>&amp;QPushButton::clicked,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classriptide__rviz_1_1FeedforwardPanel_1afb9723af453cebe41be566543ec674ee" kindref="member">FeedforwardPanel::togglePublish</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//called<sp/>when<sp/>the<sp/>doubleSpinBoxes<sp/>are<sp/>interacted<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classriptide__rviz_1_1FeedforwardPanel_1a4c40fd3da7a720ec4bfd0b6c0c51c4d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a4c40fd3da7a720ec4bfd0b6c0c51c4d3" kindref="member">FeedforwardPanel::XFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;Xlabel-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>N&quot;</highlight><highlight class="normal">).arg(value));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>.linear.x<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classriptide__rviz_1_1FeedforwardPanel_1a6533032bfa487448ac87a866ae6eb0ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a6533032bfa487448ac87a866ae6eb0ad" kindref="member">FeedforwardPanel::YFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;Ylabel-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>N&quot;</highlight><highlight class="normal">).arg(value));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>.linear.y<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classriptide__rviz_1_1FeedforwardPanel_1a69fbd4c6ca931eab7d773cb697ee533b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a69fbd4c6ca931eab7d773cb697ee533b" kindref="member">FeedforwardPanel::ZFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;Zlabel-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>N&quot;</highlight><highlight class="normal">).arg(value));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>.linear.z<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Volume<sp/>calculations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>density<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>g<sp/>=<sp/>9.8;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Finds<sp/>mass<sp/>from<sp/>talos.yaml<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass<sp/>=<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aa5a3724742f444b79c19123a9d5d5a87" kindref="member">config</ref>[</highlight><highlight class="stringliteral">&quot;mass&quot;</highlight><highlight class="normal">].as&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;();<sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Takes<sp/>z-value<sp/>from<sp/>the<sp/>doublespin<sp/>box<sp/>in<sp/>rviz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Zforce<sp/>=<sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;ZdoubleSpinBox-&gt;value();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>net<sp/>Force<sp/>=<sp/>0<sp/>=<sp/>buoyancyForce<sp/>=<sp/>mg<sp/>+<sp/>Zforce<sp/>-&gt;<sp/>density*g*volume<sp/>=<sp/>mg<sp/>+<sp/>Zforce.<sp/>So<sp/>solving<sp/>for<sp/>volume...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volume<sp/>=<sp/>(mass*g<sp/>+<sp/>(Zforce))/(density*g);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;VolumeOutput-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>L&quot;</highlight><highlight class="normal">).arg(volume));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Buoyant<sp/>force<sp/>calculations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>buoyancyForce<sp/>=<sp/>mass*g<sp/>+<sp/>Zforce;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Can<sp/>also<sp/>use:<sp/>buoyancyForce<sp/>=<sp/>density<sp/>*<sp/>g<sp/>*<sp/>V;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;BuoyancyOutput-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>N&quot;</highlight><highlight class="normal">).arg(buoyancyForce));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classriptide__rviz_1_1FeedforwardPanel_1aedbf5975a7b4df4e7638767dc43ad839" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1aedbf5975a7b4df4e7638767dc43ad839" kindref="member">FeedforwardPanel::RFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;Rlabel-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>N&quot;</highlight><highlight class="normal">).arg(value));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>.angular.x<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classriptide__rviz_1_1FeedforwardPanel_1a05068ca3e3be5056e22cc4584130352e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a05068ca3e3be5056e22cc4584130352e" kindref="member">FeedforwardPanel::PFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;Plabel-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>N&quot;</highlight><highlight class="normal">).arg(value));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>.angular.y<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classriptide__rviz_1_1FeedforwardPanel_1a3e0089141706044413d78c553b1ef8df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a3e0089141706044413d78c553b1ef8df" kindref="member">FeedforwardPanel::YAWFunction</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;YAWlabel-&gt;setText(tr(</highlight><highlight class="stringliteral">&quot;%1<sp/>N&quot;</highlight><highlight class="normal">).arg(value));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>.angular.z<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classriptide__rviz_1_1FeedforwardPanel_1afb9723af453cebe41be566543ec674ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1afb9723af453cebe41be566543ec674ee" kindref="member">FeedforwardPanel::togglePublish</ref>()</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1a60ad8184e3e2ad348392fa5cb94ae572" kindref="member">publishing</ref><sp/>=<sp/>!<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a60ad8184e3e2ad348392fa5cb94ae572" kindref="member">publishing</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a60ad8184e3e2ad348392fa5cb94ae572" kindref="member">publishing</ref>)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;publishButton-&gt;setText(</highlight><highlight class="stringliteral">&quot;Stop<sp/>Publishing&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1afcd335327f4048d919c4d2b0ffea3c3e" kindref="member">pubTimer</ref>-&gt;reset();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1af0a8b9d81f9fd335e99bfb2477f8ad52" kindref="member">ui</ref>-&gt;publishButton-&gt;setText(</highlight><highlight class="stringliteral">&quot;Start<sp/>Publishing&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1afcd335327f4048d919c4d2b0ffea3c3e" kindref="member">pubTimer</ref>-&gt;cancel();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="classriptide__rviz_1_1FeedforwardPanel_1ab4c995f981f9b0b19fa8657289e7312d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ab4c995f981f9b0b19fa8657289e7312d" kindref="member">FeedforwardPanel::timerCb</ref>()</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1FeedforwardPanel_1ace1009e450da616409d5a01c7d8423f1" kindref="member">ffForcePub</ref>-&gt;publish(<ref refid="classriptide__rviz_1_1FeedforwardPanel_1a857fc03c9f50bc05db74010e1c77af5a" kindref="member">msgToPublish</ref>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pluginlib/class_list_macros.hpp&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>NOLINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="FeedforwardPanel_8cpp_1adbb0850010e9e789048878bf5eea419d" refkind="member"><highlight class="normal"><ref refid="FeedforwardPanel_8cpp_1adbb0850010e9e789048878bf5eea419d" kindref="member">PLUGINLIB_EXPORT_CLASS</ref>(<ref refid="classriptide__rviz_1_1FeedforwardPanel" kindref="compound">riptide_rviz::FeedforwardPanel</ref>,<sp/>rviz_common::Panel);</highlight></codeline>
+    </programlisting>
+    <location file="src/FeedforwardPanel.cpp"/>
+  </compounddef>
+</doxygen>

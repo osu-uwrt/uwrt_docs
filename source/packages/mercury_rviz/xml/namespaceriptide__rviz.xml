@@ -1,0 +1,771 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="namespaceriptide__rviz" kind="namespace" language="C++">
+    <compoundname>riptide_rviz</compoundname>
+    <innerclass refid="classriptide__rviz_1_1Actuators" prot="public">riptide_rviz::Actuators</innerclass>
+    <innerclass refid="classriptide__rviz_1_1Bag" prot="public">riptide_rviz::Bag</innerclass>
+    <innerclass refid="classriptide__rviz_1_1BaggingPanel" prot="public">riptide_rviz::BaggingPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1BaggingTopicModel" prot="public">riptide_rviz::BaggingTopicModel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1BagItem" prot="public">riptide_rviz::BagItem</innerclass>
+    <innerclass refid="structriptide__rviz_1_1BallastLogData" prot="public">riptide_rviz::BallastLogData</innerclass>
+    <innerclass refid="classriptide__rviz_1_1ControlPanel" prot="public">riptide_rviz::ControlPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1DiagnosticOverlay" prot="public">riptide_rviz::DiagnosticOverlay</innerclass>
+    <innerclass refid="classriptide__rviz_1_1DiagnosticsPanel" prot="public">riptide_rviz::DiagnosticsPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1ElectricalPanel" prot="public">riptide_rviz::ElectricalPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1FeedforwardPanel" prot="public">riptide_rviz::FeedforwardPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1MappingPanel" prot="public">riptide_rviz::MappingPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1MissionPanel" prot="public">riptide_rviz::MissionPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1OverlayDisplay" prot="public">riptide_rviz::OverlayDisplay</innerclass>
+    <innerclass refid="classriptide__rviz_1_1OverlayObject" prot="public">riptide_rviz::OverlayObject</innerclass>
+    <innerclass refid="structriptide__rviz_1_1PaintedArcConfig" prot="public">riptide_rviz::PaintedArcConfig</innerclass>
+    <innerclass refid="structriptide__rviz_1_1PaintedCircleConfig" prot="public">riptide_rviz::PaintedCircleConfig</innerclass>
+    <innerclass refid="structriptide__rviz_1_1PaintedTextConfig" prot="public">riptide_rviz::PaintedTextConfig</innerclass>
+    <innerclass refid="classriptide__rviz_1_1ParamPanel" prot="public">riptide_rviz::ParamPanel</innerclass>
+    <innerclass refid="classriptide__rviz_1_1Recipe" prot="public">riptide_rviz::Recipe</innerclass>
+    <innerclass refid="classriptide__rviz_1_1RecipeBag" prot="public">riptide_rviz::RecipeBag</innerclass>
+    <innerclass refid="classriptide__rviz_1_1RecipeLaunch" prot="public">riptide_rviz::RecipeLaunch</innerclass>
+    <innerclass refid="classriptide__rviz_1_1RecipeStage" prot="public">riptide_rviz::RecipeStage</innerclass>
+    <innerclass refid="structriptide__rviz_1_1RecipeTopicData" prot="public">riptide_rviz::RecipeTopicData</innerclass>
+    <innerclass refid="structriptide__rviz_1_1RecipeXMLError" prot="public">riptide_rviz::RecipeXMLError</innerclass>
+    <innerclass refid="classriptide__rviz_1_1ScopedPixelBuffer" prot="public">riptide_rviz::ScopedPixelBuffer</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>RecipeXMLErrorCode</name>
+        <qualifiedname>riptide_rviz::RecipeXMLErrorCode</qualifiedname>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad0749aaba8b833466dfcbb0428e4f89c" prot="public">
+          <name>SUCCESS</name>
+          <initializer>= tinyxml2::XML_SUCCESS</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504acf42296ea9b7833c3224c87f207820c4" prot="public">
+          <name>XML_NO_ATTRIBUTE</name>
+          <initializer>= tinyxml2::XML_NO_ATTRIBUTE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a8da22971e3dab4b82688e94d5f3644bc" prot="public">
+          <name>XML_WRONG_ATTRIBUTE_TYPE</name>
+          <initializer>= tinyxml2::XML_WRONG_ATTRIBUTE_TYPE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a668048bf966d4a8ad087554229f27394" prot="public">
+          <name>XML_ERROR_FILE_NOT_FOUND</name>
+          <initializer>= tinyxml2::XML_ERROR_FILE_NOT_FOUND</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a6d05f8e9f1436658b696a5b737b11816" prot="public">
+          <name>XML_ERROR_FILE_COULD_NOT_BE_OPENED</name>
+          <initializer>= tinyxml2::XML_ERROR_FILE_COULD_NOT_BE_OPENED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a11a334844f493d890739b31ecb571bc7" prot="public">
+          <name>XML_ERROR_FILE_READ_ERROR</name>
+          <initializer>= tinyxml2::XML_ERROR_FILE_READ_ERROR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a384f8985337db9e19e7905f19d4d6324" prot="public">
+          <name>XML_ERROR_PARSING_ELEMENT</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING_ELEMENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a96dd6673ef8759ea50d14fbd712fe7dd" prot="public">
+          <name>XML_ERROR_PARSING_ATTRIBUTE</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING_ATTRIBUTE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a2471052b7a581d3ddf0856280f6a0e06" prot="public">
+          <name>XML_ERROR_PARSING_TEXT</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING_TEXT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a1c4d70f2b86c10398fb2cc21926009d2" prot="public">
+          <name>XML_ERROR_PARSING_CDATA</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING_CDATA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a476047f53676e972c2f6736c865de272" prot="public">
+          <name>XML_ERROR_PARSING_COMMENT</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING_COMMENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ac1f7607d435f85c734bffc4e43988ed1" prot="public">
+          <name>XML_ERROR_PARSING_DECLARATION</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING_DECLARATION</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad4551700bedfba3736ecf90bcf93f61d" prot="public">
+          <name>XML_ERROR_PARSING_UNKNOWN</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING_UNKNOWN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a3ee954d1e7ccf4b72dac3cc9f65709bc" prot="public">
+          <name>XML_ERROR_EMPTY_DOCUMENT</name>
+          <initializer>= tinyxml2::XML_ERROR_EMPTY_DOCUMENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aef81c38b9defc967459770b7ded1a92d" prot="public">
+          <name>XML_ERROR_MISMATCHED_ELEMENT</name>
+          <initializer>= tinyxml2::XML_ERROR_MISMATCHED_ELEMENT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ac27cb778475907cc11ca8a1394b0bbd7" prot="public">
+          <name>XML_ERROR_PARSING</name>
+          <initializer>= tinyxml2::XML_ERROR_PARSING</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ae073b42756cce1b72831325333b8cece" prot="public">
+          <name>XML_CAN_NOT_CONVERT_TEXT</name>
+          <initializer>= tinyxml2::XML_CAN_NOT_CONVERT_TEXT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a93d094b6b460807e1cd7aaa1f3bd8194" prot="public">
+          <name>XML_NO_TEXT_NODE</name>
+          <initializer>= tinyxml2::XML_NO_TEXT_NODE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a78cfdb40026be88c17ae085ebceda35e" prot="public">
+          <name>XML_ELEMENT_DEPTH_EXCEEDED</name>
+          <initializer>= tinyxml2::XML_ELEMENT_DEPTH_EXCEEDED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aa3d44f45845b7695fa4d19d6471aa849" prot="public">
+          <name>XML_ERROR_COUNT</name>
+          <initializer>= tinyxml2::XML_ERROR_COUNT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a5364c107e8121567c975d89c9989bde1" prot="public">
+          <name>UNKNOWN_TAG_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a62ace0f8c3665c56e5f1564a53a48134" prot="public">
+          <name>MISSING_NAME_ATTRIBUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a1caadfd35833c75dcc414e815095944a" prot="public">
+          <name>MISSING_VALUE_ATTRIBUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ab9f1607e97d6b1c8d65199e66cf03b3d" prot="public">
+          <name>DUPLICATE_NAMES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a43764bf552a769f15e2ca7d15174580b" prot="public">
+          <name>MISSING_TYPE_ATTRIBUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aafb1386be3abe42984665a5f1ff04858" prot="public">
+          <name>MISSING_QOS_ATTRIBUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504afc7ee18b3b6c6207accb48d1296482cd" prot="public">
+          <name>INVALID_QOS_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a75088dd93e213b8f36a9174dbc4d61e2" prot="public">
+          <name>DUPLICATE_TOPIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad83d46bf084235fc6cc0a575a2fa163f" prot="public">
+          <name>EMPTY_RECIPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a37f401e0574ede18351fa5ffb4e9c6d9" prot="public">
+          <name>NO_LAUNCHES_TAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aabd490b36c3868c94afe72f3dce5c20e" prot="public">
+          <name>NON_STAGE_TAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a6de6e782de9d90f29cc77e3f38ddbfdc" prot="public">
+          <name>STAGE_WITH_NO_LAUNCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a8e76eb9481be7188d737ef0498093bb4" prot="public">
+          <name>MISSING_ID_ATTRIBUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504af711a3c35b49c8c188ada62d7056380c" prot="public">
+          <name>MISSING_PACKAGE_ATTRIBUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504afdfd60f79b186ac678af6af8940abe00" prot="public">
+          <name>DUPLICATE_STAGE_IDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a43c52d1a0937101afb2ea639d878705f" prot="public">
+          <name>NON_EXISTANT_DEPENDENCY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504abc4002f5cd6e403d571253d5668715e2" prot="public">
+          <name>DEPENDENCY_CYCLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a3f3777906bd89da2414d2d22d4a17b63" prot="public">
+          <name>NO_BAGS_TAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ac5418c32e7c337d0ce14564c2f18c5b9" prot="public">
+          <name>EMPTY_BAGS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a72f97d75d4c45e168c07c27e6912d248" prot="public">
+          <name>NON_BAG_TAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/bringup_recipe.hpp" line="13" column="5" bodyfile="include/mercury_rviz/bringup_recipe.hpp" bodystart="13" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966c" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>VerticalAlignment</name>
+        <qualifiedname>riptide_rviz::VerticalAlignment</qualifiedname>
+        <enumvalue id="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966cac397289ee45877be0cd49811fe245b4e" prot="public">
+          <name>CENTER</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966ca6705777b712ee811e76fb07162081d63" prot="public">
+          <name>TOP</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966ca1fabf63de5c96c78e2a40805bcdeb73b" prot="public">
+          <name>BOTTOM</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="79" column="5" bodyfile="include/mercury_rviz/overlay_utils.hpp" bodystart="79" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232e" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>HorizontalAlignment</name>
+        <qualifiedname>riptide_rviz::HorizontalAlignment</qualifiedname>
+        <enumvalue id="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232ea684d325a7303f52e64011467ff5c5758" prot="public">
+          <name>LEFT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232ea21507b40c80068eda19865706fdc2403" prot="public">
+          <name>RIGHT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232eac397289ee45877be0cd49811fe245b4e" prot="public">
+          <name>CENTER</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="85" column="5" bodyfile="include/mercury_rviz/overlay_utils.hpp" bodystart="85" bodyend="89"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceriptide__rviz_1a893bd4e323daf9b16c0dde59724e293d" prot="public" static="no">
+        <type>std_msgs::msg::Empty</type>
+        <definition>using riptide_rviz::Empty =  std_msgs::msg::Empty</definition>
+        <argsstring></argsstring>
+        <name>Empty</name>
+        <qualifiedname>riptide_rviz::Empty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="17" column="5" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceriptide__rviz_1a0f437e929abab656e4fb9279fec6c702" prot="public" static="no">
+        <type>std_msgs::msg::Bool</type>
+        <definition>using riptide_rviz::Bool =  std_msgs::msg::Bool</definition>
+        <argsstring></argsstring>
+        <name>Bool</name>
+        <qualifiedname>riptide_rviz::Bool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="18" column="5" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceriptide__rviz_1a5c741598944b12b97edce049d143fe2b" prot="public" static="no">
+        <type>riptide_msgs2::msg::ActuatorStatus</type>
+        <definition>using riptide_rviz::ActuatorStatus =  riptide_msgs2::msg::ActuatorStatus</definition>
+        <argsstring></argsstring>
+        <name>ActuatorStatus</name>
+        <qualifiedname>riptide_rviz::ActuatorStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/Actuators.hpp" line="19" column="5" bodyfile="include/mercury_rviz/Actuators.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceriptide__rviz_1af1742ebb2a897f4829c108e353155a97" prot="public" static="no">
+        <type>riptide_msgs2::action::ExecuteTree</type>
+        <definition>using riptide_rviz::ExecuteTree =  riptide_msgs2::action::ExecuteTree</definition>
+        <argsstring></argsstring>
+        <name>ExecuteTree</name>
+        <qualifiedname>riptide_rviz::ExecuteTree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="21" column="5" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceriptide__rviz_1aa5b2892d0b79fc3ea8f574ba280bb8ef" prot="public" static="no">
+        <type>rclcpp_action::ClientGoalHandle&lt; <ref refid="namespaceriptide__rviz_1af1742ebb2a897f4829c108e353155a97" kindref="member">ExecuteTree</ref> &gt;</type>
+        <definition>using riptide_rviz::GHExecuteTree =  rclcpp_action::ClientGoalHandle&lt;ExecuteTree&gt;</definition>
+        <argsstring></argsstring>
+        <name>GHExecuteTree</name>
+        <qualifiedname>riptide_rviz::GHExecuteTree</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="22" column="5" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceriptide__rviz_1a0e617066bcbfd363db0eb468263652f1" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string riptide_rviz::MAG_CAL_ACTION_NAME</definition>
+        <argsstring></argsstring>
+        <name>MAG_CAL_ACTION_NAME</name>
+        <qualifiedname>riptide_rviz::MAG_CAL_ACTION_NAME</qualifiedname>
+        <initializer>= &quot;/vectornav/mag_cal&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="23" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">riptide_rviz::ElectricalPanel::load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1abce270f6e99a170059ff600c91dc3794" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string riptide_rviz::TARE_GYRO_ACTION_NAME</definition>
+        <argsstring></argsstring>
+        <name>TARE_GYRO_ACTION_NAME</name>
+        <qualifiedname>riptide_rviz::TARE_GYRO_ACTION_NAME</qualifiedname>
+        <initializer>= &quot;/gyro/tare&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="24" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">riptide_rviz::ElectricalPanel::load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1a7f0faa3566a90c0cb19b4ef5b0c43c92" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string riptide_rviz::DEPRESSURIZE_ACTION_NAME</definition>
+        <argsstring></argsstring>
+        <name>DEPRESSURIZE_ACTION_NAME</name>
+        <qualifiedname>riptide_rviz::DEPRESSURIZE_ACTION_NAME</qualifiedname>
+        <initializer>= &quot;/depressurize&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="25" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">riptide_rviz::ElectricalPanel::load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1ab68f454850ebf42929ea794095f43150" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string riptide_rviz::CONFIG_SERVICE_NAME</definition>
+        <argsstring></argsstring>
+        <name>CONFIG_SERVICE_NAME</name>
+        <qualifiedname>riptide_rviz::CONFIG_SERVICE_NAME</qualifiedname>
+        <initializer>= &quot;/vectornav/config&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="26" column="9" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1ElectricalPanel_1a9d3c9ab7b2ed8f3b0e5d3d5f650567e8" compoundref="ElectricalPanel_8cpp" startline="28" endline="64">riptide_rviz::ElectricalPanel::load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1a3be98aba57fb69dc153903eb748b83b2" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string riptide_rviz::CALIB_ACTION_NAME</definition>
+        <argsstring></argsstring>
+        <name>CALIB_ACTION_NAME</name>
+        <qualifiedname>riptide_rviz::CALIB_ACTION_NAME</qualifiedname>
+        <initializer>= &quot;vectornav/mag_cal&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="18" column="30" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">riptide_rviz::MappingPanel::load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1a811e35e843ae6e0d65a34f0e6b15581e" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* riptide_rviz::CLAW_STATUSES[]</definition>
+        <argsstring>[]</argsstring>
+        <name>CLAW_STATUSES</name>
+        <qualifiedname>riptide_rviz::CLAW_STATUSES</qualifiedname>
+        <initializer>= {
+        &quot;Error&quot;,
+        &quot;Disarmed&quot;,
+        &quot;Unknown&quot;,
+        &quot;Opened&quot;,
+        &quot;Closed&quot;,
+        &quot;Opening&quot;,
+        &quot;Closing&quot;,
+        &quot;Invalid&quot;
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Actuators.cpp" line="13" column="23" bodyfile="src/Actuators.cpp" bodystart="13" bodyend="22"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" compoundref="Actuators_8cpp" startline="195" endline="240">riptide_rviz::Actuators::statusCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1a46ec3d28469decde3755e3e3a38391b0" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* riptide_rviz::TORPEDO_STATUSES[]</definition>
+        <argsstring>[]</argsstring>
+        <name>TORPEDO_STATUSES</name>
+        <qualifiedname>riptide_rviz::TORPEDO_STATUSES</qualifiedname>
+        <initializer>= {
+        &quot;Error&quot;,
+        &quot;Disarmed&quot;,
+        &quot;Charging&quot;,
+        &quot;Charged&quot;,
+        &quot;Firing&quot;,
+        &quot;Fired&quot;,
+        &quot;Invalid&quot;
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Actuators.cpp" line="24" column="23" bodyfile="src/Actuators.cpp" bodystart="24" bodyend="32"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" compoundref="Actuators_8cpp" startline="195" endline="240">riptide_rviz::Actuators::statusCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1a284365296c40a7a984ad218a147eb041" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* riptide_rviz::DROPPER_STATUSES[]</definition>
+        <argsstring>[]</argsstring>
+        <name>DROPPER_STATUSES</name>
+        <qualifiedname>riptide_rviz::DROPPER_STATUSES</qualifiedname>
+        <initializer>= {
+        &quot;Error&quot;,
+        &quot;Disarmed&quot;,
+        &quot;Ready&quot;,
+        &quot;Dropping&quot;,
+        &quot;Dropped&quot;,
+        &quot;Invalid&quot;
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Actuators.cpp" line="34" column="23" bodyfile="src/Actuators.cpp" bodystart="34" bodyend="41"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" compoundref="Actuators_8cpp" startline="195" endline="240">riptide_rviz::Actuators::statusCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1ad5b7c48ad353377a961d0493b6f7551e" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* riptide_rviz::STATUS_ERROR_STYLESHEET</definition>
+        <argsstring></argsstring>
+        <name>STATUS_ERROR_STYLESHEET</name>
+        <qualifiedname>riptide_rviz::STATUS_ERROR_STYLESHEET</qualifiedname>
+        <initializer>= &quot;QLabel {color: red;} QLabel:!enabled{color:gray;}&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Actuators.cpp" line="44" column="9" bodyfile="src/Actuators.cpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" compoundref="Actuators_8cpp" startline="195" endline="240">riptide_rviz::Actuators::statusCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceriptide__rviz_1a6678db0aaf33428e65eee4cccd8077df" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char * riptide_rviz::STATUS_GOOD_STYLESHEET</definition>
+        <argsstring></argsstring>
+        <name>STATUS_GOOD_STYLESHEET</name>
+        <qualifiedname>riptide_rviz::STATUS_GOOD_STYLESHEET</qualifiedname>
+        <initializer>= &quot;QLabel {color: green;} QLabel:!enabled{color:gray;}&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Actuators.cpp" line="45" column="9" bodyfile="src/Actuators.cpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1Actuators_1a6b954f38a1890ec56ca4345d33f3dfd7" compoundref="Actuators_8cpp" startline="195" endline="240">riptide_rviz::Actuators::statusCallback</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceriptide__rviz_1a56de28a3c9cfd5a5e56fea0fa28d7213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::getRecipeXMLErrorMessage</definition>
+        <argsstring>(RecipeXMLError)</argsstring>
+        <name>getRecipeXMLErrorMessage</name>
+        <qualifiedname>riptide_rviz::getRecipeXMLErrorMessage</qualifiedname>
+        <param>
+          <type><ref refid="structriptide__rviz_1_1RecipeXMLError" kindref="compound">RecipeXMLError</ref></type>
+          <defname>err</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bringup_recipe.cpp" line="168" column="17" bodyfile="src/bringup_recipe.cpp" bodystart="168" bodyend="279" declfile="include/mercury_rviz/bringup_recipe.hpp" declline="74" declcolumn="17"/>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504abc4002f5cd6e403d571253d5668715e2" compoundref="bringup__recipe_8hpp" startline="56">DEPENDENCY_CYCLE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ab9f1607e97d6b1c8d65199e66cf03b3d" compoundref="bringup__recipe_8hpp" startline="39">DUPLICATE_NAMES</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504afdfd60f79b186ac678af6af8940abe00" compoundref="bringup__recipe_8hpp" startline="54">DUPLICATE_STAGE_IDS</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a75088dd93e213b8f36a9174dbc4d61e2" compoundref="bringup__recipe_8hpp" startline="45">DUPLICATE_TOPIC</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ac5418c32e7c337d0ce14564c2f18c5b9" compoundref="bringup__recipe_8hpp" startline="60">EMPTY_BAGS</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad83d46bf084235fc6cc0a575a2fa163f" compoundref="bringup__recipe_8hpp" startline="48">EMPTY_RECIPE</references>
+        <references refid="structriptide__rviz_1_1RecipeXMLError_1a8a9ee41f7ed972da099519de02d03ded" compoundref="bringup__recipe_8hpp" startline="65">riptide_rviz::RecipeXMLError::errorCode</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504afc7ee18b3b6c6207accb48d1296482cd" compoundref="bringup__recipe_8hpp" startline="44">INVALID_QOS_TYPE</references>
+        <references refid="structriptide__rviz_1_1RecipeXMLError_1abc22c0055594bf59c54b01853fc8197b" compoundref="bringup__recipe_8hpp" startline="66">riptide_rviz::RecipeXMLError::lineNumber</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a8e76eb9481be7188d737ef0498093bb4" compoundref="bringup__recipe_8hpp" startline="52">MISSING_ID_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a62ace0f8c3665c56e5f1564a53a48134" compoundref="bringup__recipe_8hpp" startline="37">MISSING_NAME_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504af711a3c35b49c8c188ada62d7056380c" compoundref="bringup__recipe_8hpp" startline="53">MISSING_PACKAGE_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aafb1386be3abe42984665a5f1ff04858" compoundref="bringup__recipe_8hpp" startline="43">MISSING_QOS_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a43764bf552a769f15e2ca7d15174580b" compoundref="bringup__recipe_8hpp" startline="42">MISSING_TYPE_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a1caadfd35833c75dcc414e815095944a" compoundref="bringup__recipe_8hpp" startline="38">MISSING_VALUE_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a3f3777906bd89da2414d2d22d4a17b63" compoundref="bringup__recipe_8hpp" startline="59">NO_BAGS_TAG</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a37f401e0574ede18351fa5ffb4e9c6d9" compoundref="bringup__recipe_8hpp" startline="49">NO_LAUNCHES_TAG</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a72f97d75d4c45e168c07c27e6912d248" compoundref="bringup__recipe_8hpp" startline="61">NON_BAG_TAG</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a43c52d1a0937101afb2ea639d878705f" compoundref="bringup__recipe_8hpp" startline="55">NON_EXISTANT_DEPENDENCY</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aabd490b36c3868c94afe72f3dce5c20e" compoundref="bringup__recipe_8hpp" startline="50">NON_STAGE_TAG</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a6de6e782de9d90f29cc77e3f38ddbfdc" compoundref="bringup__recipe_8hpp" startline="51">STAGE_WITH_NO_LAUNCH</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad0749aaba8b833466dfcbb0428e4f89c" compoundref="bringup__recipe_8hpp" startline="14">SUCCESS</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a5364c107e8121567c975d89c9989bde1" compoundref="bringup__recipe_8hpp" startline="36">UNKNOWN_TAG_TYPE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ae073b42756cce1b72831325333b8cece" compoundref="bringup__recipe_8hpp" startline="30">XML_CAN_NOT_CONVERT_TEXT</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a78cfdb40026be88c17ae085ebceda35e" compoundref="bringup__recipe_8hpp" startline="32">XML_ELEMENT_DEPTH_EXCEEDED</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aa3d44f45845b7695fa4d19d6471aa849" compoundref="bringup__recipe_8hpp" startline="33">XML_ERROR_COUNT</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a3ee954d1e7ccf4b72dac3cc9f65709bc" compoundref="bringup__recipe_8hpp" startline="27">XML_ERROR_EMPTY_DOCUMENT</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a6d05f8e9f1436658b696a5b737b11816" compoundref="bringup__recipe_8hpp" startline="18">XML_ERROR_FILE_COULD_NOT_BE_OPENED</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a668048bf966d4a8ad087554229f27394" compoundref="bringup__recipe_8hpp" startline="17">XML_ERROR_FILE_NOT_FOUND</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a11a334844f493d890739b31ecb571bc7" compoundref="bringup__recipe_8hpp" startline="19">XML_ERROR_FILE_READ_ERROR</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504aef81c38b9defc967459770b7ded1a92d" compoundref="bringup__recipe_8hpp" startline="28">XML_ERROR_MISMATCHED_ELEMENT</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ac27cb778475907cc11ca8a1394b0bbd7" compoundref="bringup__recipe_8hpp" startline="29">XML_ERROR_PARSING</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a96dd6673ef8759ea50d14fbd712fe7dd" compoundref="bringup__recipe_8hpp" startline="21">XML_ERROR_PARSING_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a1c4d70f2b86c10398fb2cc21926009d2" compoundref="bringup__recipe_8hpp" startline="23">XML_ERROR_PARSING_CDATA</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a476047f53676e972c2f6736c865de272" compoundref="bringup__recipe_8hpp" startline="24">XML_ERROR_PARSING_COMMENT</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ac1f7607d435f85c734bffc4e43988ed1" compoundref="bringup__recipe_8hpp" startline="25">XML_ERROR_PARSING_DECLARATION</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a384f8985337db9e19e7905f19d4d6324" compoundref="bringup__recipe_8hpp" startline="20">XML_ERROR_PARSING_ELEMENT</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a2471052b7a581d3ddf0856280f6a0e06" compoundref="bringup__recipe_8hpp" startline="22">XML_ERROR_PARSING_TEXT</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504ad4551700bedfba3736ecf90bcf93f61d" compoundref="bringup__recipe_8hpp" startline="26">XML_ERROR_PARSING_UNKNOWN</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504acf42296ea9b7833c3224c87f207820c4" compoundref="bringup__recipe_8hpp" startline="15">XML_NO_ATTRIBUTE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a93d094b6b460807e1cd7aaa1f3bd8194" compoundref="bringup__recipe_8hpp" startline="31">XML_NO_TEXT_NODE</references>
+        <references refid="namespaceriptide__rviz_1a3fa5e4a3a2d706fd14108b779608a504a8da22971e3dab4b82688e94d5f3644bc" compoundref="bringup__recipe_8hpp" startline="16">XML_WRONG_ATTRIBUTE_TYPE</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingPanel_1ab54b73bd4c153037e4c054c180344f8f" compoundref="BaggingPanel_8cpp" startline="226" endline="265">riptide_rviz::BaggingPanel::handleBaggingPanelFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceriptide__rviz_1a2eb101ba7f7e2e60cf1a1e2a8e5a9143" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string riptide_rviz::getFromConfig</definition>
+        <argsstring>(const rviz_common::Config &amp;config, const QString &amp;key, const QString &amp;defaultValue)</argsstring>
+        <name>getFromConfig</name>
+        <qualifiedname>riptide_rviz::getFromConfig</qualifiedname>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MappingPanel.cpp" line="14" column="17" bodyfile="src/MappingPanel.cpp" bodystart="14" bodyend="25"/>
+        <referencedby refid="classriptide__rviz_1_1MappingPanel_1ae5f6d93b088bd8bce62ca2b58468ea11" compoundref="MappingPanel_8cpp" startline="70" endline="125">riptide_rviz::MappingPanel::load</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_rviz/Actuators.hpp" line="15" column="1"/>
+  </compounddef>
+</doxygen>

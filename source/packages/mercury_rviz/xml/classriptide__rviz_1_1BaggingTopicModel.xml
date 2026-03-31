@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="classriptide__rviz_1_1BaggingTopicModel" kind="class" language="C++" prot="public">
+    <compoundname>riptide_rviz::BaggingTopicModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QAbstractTableModel</basecompoundref>
+    <includes refid="BaggingConfiguration_8hpp" local="no">BaggingConfiguration.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classriptide__rviz_1_1BaggingTopicModel_1a038a77dd1aa46075b9083193dc9674ac" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &gt;</type>
+        <definition>std::vector&lt;RecipeTopicData&gt; riptide_rviz::BaggingTopicModel::topics</definition>
+        <argsstring></argsstring>
+        <name>topics</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::topics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="45" column="17" bodyfile="include/mercury_rviz/BaggingConfiguration.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classriptide__rviz_1_1BaggingTopicModel_1a6e78b1aff0b82f8a0884ae3a158d739a" compoundref="BaggingConfiguration_8cpp" startline="13" endline="17">BaggingTopicModel</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingTopicModel_1a948076afc9cb00c54e418b0e26909759" compoundref="BaggingConfiguration_8cpp" startline="23" endline="43">data</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingTopicModel_1a6539aec994baff7297042c95cc1124fe" compoundref="BaggingConfiguration_8cpp" startline="86" endline="88">getTopicConfig</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingTopicModel_1a4b76962fa4c0249257aba6cfd46b1925" compoundref="BaggingConfiguration_8cpp" startline="45" endline="47">rowCount</referencedby>
+        <referencedby refid="classriptide__rviz_1_1BaggingTopicModel_1adc5e497817e0e9bc9730eced32487ca7" compoundref="BaggingConfiguration_8cpp" startline="49" endline="75">setData</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1a6e78b1aff0b82f8a0884ae3a158d739a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::BaggingTopicModel::BaggingTopicModel</definition>
+        <argsstring>(const std::vector&lt; RecipeTopicData &gt; &amp;topics, QObject *parent=nullptr)</argsstring>
+        <name>BaggingTopicModel</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::BaggingTopicModel</qualifiedname>
+        <param>
+          <type>const std::vector&lt; <ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &gt; &amp;</type>
+          <declname>topics</declname>
+        </param>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="25" column="5" bodyfile="src/BaggingConfiguration.cpp" bodystart="13" bodyend="17"/>
+        <references refid="classriptide__rviz_1_1BaggingTopicModel_1a038a77dd1aa46075b9083193dc9674ac" compoundref="BaggingConfiguration_8hpp" startline="45">topics</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1ae9ec65d3026ade0d32f462e4b388f0dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>riptide_rviz::BaggingTopicModel::~BaggingTopicModel</definition>
+        <argsstring>()</argsstring>
+        <name>~BaggingTopicModel</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::~BaggingTopicModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="26" column="5" bodyfile="src/BaggingConfiguration.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1a948076afc9cb00c54e418b0e26909759" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant riptide_rviz::BaggingTopicModel::data</definition>
+        <argsstring>(const QModelIndex &amp;index, int role) const override</argsstring>
+        <name>data</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::data</qualifiedname>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="28" column="14" bodyfile="src/BaggingConfiguration.cpp" bodystart="23" bodyend="43"/>
+        <references refid="classriptide__rviz_1_1BaggingTopicModel_1a038a77dd1aa46075b9083193dc9674ac" compoundref="BaggingConfiguration_8hpp" startline="45">topics</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1a70e6a8ffcb4dd6a95193bc1baf4d1f38" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant riptide_rviz::BaggingTopicModel::headerData</definition>
+        <argsstring>(__attribute__((unused)) int section, __attribute__((unused)) Qt::Orientation orientation, __attribute__((unused)) int role=Qt::DisplayRole) const</argsstring>
+        <name>headerData</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::headerData</qualifiedname>
+        <param>
+          <type>__attribute__((unused)) int</type>
+          <declname>section</declname>
+        </param>
+        <param>
+          <type>__attribute__((unused)) Qt::Orientation</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>__attribute__((unused)) int</type>
+          <declname>role</declname>
+          <defval>Qt::DisplayRole</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="29" column="14" bodyfile="include/mercury_rviz/BaggingConfiguration.hpp" bodystart="29" bodyend="30"/>
+        <references refid="BaggingConfiguration_8hpp_1a2e3484535ee610c8e19e9859563abe48" compoundref="BaggingConfiguration_8hpp" startline="18">__unused</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1adc5e497817e0e9bc9730eced32487ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool riptide_rviz::BaggingTopicModel::setData</definition>
+        <argsstring>(const QModelIndex &amp;index, const QVariant &amp;value, int role)</argsstring>
+        <name>setData</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::setData</qualifiedname>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const QVariant &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="31" column="10" bodyfile="src/BaggingConfiguration.cpp" bodystart="49" bodyend="75"/>
+        <references refid="classriptide__rviz_1_1BaggingTopicModel_1a038a77dd1aa46075b9083193dc9674ac" compoundref="BaggingConfiguration_8hpp" startline="45">topics</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1a4b76962fa4c0249257aba6cfd46b1925" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int riptide_rviz::BaggingTopicModel::rowCount</definition>
+        <argsstring>(__attribute__((unused)) const QModelIndex &amp;parent=QModelIndex()) const override</argsstring>
+        <name>rowCount</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::rowCount</qualifiedname>
+        <param>
+          <type>__attribute__((unused)) const QModelIndex &amp;</type>
+          <declname>parent</declname>
+          <defval>QModelIndex()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="34" column="9" bodyfile="src/BaggingConfiguration.cpp" bodystart="45" bodyend="47"/>
+        <references refid="classriptide__rviz_1_1BaggingTopicModel_1a038a77dd1aa46075b9083193dc9674ac" compoundref="BaggingConfiguration_8hpp" startline="45">topics</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1a60398fabd5e1047c6d6522e746f4aecc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int riptide_rviz::BaggingTopicModel::columnCount</definition>
+        <argsstring>(__attribute__((unused)) const QModelIndex &amp;parent=QModelIndex()) const override</argsstring>
+        <name>columnCount</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::columnCount</qualifiedname>
+        <param>
+          <type>__attribute__((unused)) const QModelIndex &amp;</type>
+          <declname>parent</declname>
+          <defval>QModelIndex()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="35" column="9" bodyfile="include/mercury_rviz/BaggingConfiguration.hpp" bodystart="35" bodyend="35"/>
+        <references refid="BaggingConfiguration_8hpp_1a2e3484535ee610c8e19e9859563abe48" compoundref="BaggingConfiguration_8hpp" startline="18">__unused</references>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1a8d6595983c1b725f3b64c130275a567d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Qt::ItemFlags</type>
+        <definition>Qt::ItemFlags riptide_rviz::BaggingTopicModel::flags</definition>
+        <argsstring>(const QModelIndex &amp;index) const override</argsstring>
+        <name>flags</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::flags</qualifiedname>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="40" column="19" bodyfile="src/BaggingConfiguration.cpp" bodystart="77" bodyend="84"/>
+        <references refid="classriptide__rviz_1_1BaggingTopicModel_1a8d6595983c1b725f3b64c130275a567d" compoundref="BaggingConfiguration_8cpp" startline="77" endline="84">flags</references>
+        <referencedby refid="classriptide__rviz_1_1BaggingTopicModel_1a8d6595983c1b725f3b64c130275a567d" compoundref="BaggingConfiguration_8cpp" startline="77" endline="84">flags</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classriptide__rviz_1_1BaggingTopicModel_1a6539aec994baff7297042c95cc1124fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="structriptide__rviz_1_1RecipeTopicData" kindref="compound">RecipeTopicData</ref> &gt;</type>
+        <definition>const std::vector&lt; RecipeTopicData &gt; riptide_rviz::BaggingTopicModel::getTopicConfig</definition>
+        <argsstring>()</argsstring>
+        <name>getTopicConfig</name>
+        <qualifiedname>riptide_rviz::BaggingTopicModel::getTopicConfig</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="42" column="23" bodyfile="src/BaggingConfiguration.cpp" bodystart="86" bodyend="88"/>
+        <references refid="classriptide__rviz_1_1BaggingTopicModel_1a038a77dd1aa46075b9083193dc9674ac" compoundref="BaggingConfiguration_8hpp" startline="45">topics</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QAbstractTableModel</label>
+      </node>
+      <node id="1">
+        <label>riptide_rviz::BaggingTopicModel</label>
+        <link refid="classriptide__rviz_1_1BaggingTopicModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QAbstractTableModel</label>
+      </node>
+      <node id="1">
+        <label>riptide_rviz::BaggingTopicModel</label>
+        <link refid="classriptide__rviz_1_1BaggingTopicModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/BaggingConfiguration.hpp" line="20" column="1" bodyfile="include/mercury_rviz/BaggingConfiguration.hpp" bodystart="21" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a6e78b1aff0b82f8a0884ae3a158d739a" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>BaggingTopicModel</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a60398fabd5e1047c6d6522e746f4aecc" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>columnCount</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a948076afc9cb00c54e418b0e26909759" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>data</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a8d6595983c1b725f3b64c130275a567d" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>flags</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a6539aec994baff7297042c95cc1124fe" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>getTopicConfig</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a70e6a8ffcb4dd6a95193bc1baf4d1f38" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>headerData</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a4b76962fa4c0249257aba6cfd46b1925" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>rowCount</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1adc5e497817e0e9bc9730eced32487ca7" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>setData</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1a038a77dd1aa46075b9083193dc9674ac" prot="private" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>topics</name></member>
+      <member refid="classriptide__rviz_1_1BaggingTopicModel_1ae9ec65d3026ade0d32f462e4b388f0dc" prot="public" virt="non-virtual"><scope>riptide_rviz::BaggingTopicModel</scope><name>~BaggingTopicModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

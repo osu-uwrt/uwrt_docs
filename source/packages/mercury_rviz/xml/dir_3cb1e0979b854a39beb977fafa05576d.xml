@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+  <compounddef id="dir_3cb1e0979b854a39beb977fafa05576d" kind="dir">
+    <compoundname>include/mercury_rviz</compoundname>
+    <innerfile refid="Actuators_8hpp">Actuators.hpp</innerfile>
+    <innerfile refid="BaggingConfiguration_8hpp">BaggingConfiguration.hpp</innerfile>
+    <innerfile refid="BaggingPanel_8hpp">BaggingPanel.hpp</innerfile>
+    <innerfile refid="BagItem_8hpp">BagItem.hpp</innerfile>
+    <innerfile refid="bringup__recipe_8hpp">bringup_recipe.hpp</innerfile>
+    <innerfile refid="ControlPanel_8hpp">ControlPanel.hpp</innerfile>
+    <innerfile refid="DiagnosticOverlay_8hpp">DiagnosticOverlay.hpp</innerfile>
+    <innerfile refid="DiagnosticsPanel_8hpp">DiagnosticsPanel.hpp</innerfile>
+    <innerfile refid="ElectricalPanel_8hpp">ElectricalPanel.hpp</innerfile>
+    <innerfile refid="FeedforwardPanel_8hpp">FeedforwardPanel.hpp</innerfile>
+    <innerfile refid="GuiSrvClient_8hpp">GuiSrvClient.hpp</innerfile>
+    <innerfile refid="MappingPanel_8hpp">MappingPanel.hpp</innerfile>
+    <innerfile refid="MissionPanel_8hpp">MissionPanel.hpp</innerfile>
+    <innerfile refid="overlay__utils_8hpp">overlay_utils.hpp</innerfile>
+    <innerfile refid="OverlayDisplay_8hpp">OverlayDisplay.hpp</innerfile>
+    <innerfile refid="ParamPanel_8hpp">ParamPanel.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_rviz/"/>
+  </compounddef>
+</doxygen>
