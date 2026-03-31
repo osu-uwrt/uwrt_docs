@@ -8,7 +8,8 @@ Riptide Documentation
 
 .. toctree::
     :maxdepth: 2
-    :hidden:
     :glob:
 
-    packages/index.rst
+   
+    guide/index
+    packages/index
