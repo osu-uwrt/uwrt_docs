@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structthrusterForcesStamped" kind="struct" language="C++" prot="public">
+    <compoundname>thrusterForcesStamped</compoundname>
+    <includes refid="RobotClass_8h" local="no">RobotClass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structthrusterForcesStamped_1a2555b24c7346d8bde7b6a619f17cf49c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double thrusterForcesStamped::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="30" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structthrusterForcesStamped_1a18013d95cd0df8bcac5e057b71ba2aa4" prot="public" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+        <definition>vXd thrusterForcesStamped::thrusterForces</definition>
+        <argsstring></argsstring>
+        <name>thrusterForces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="31" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classPhysicsSimNode_1abe717b4d6deca669452ff41dc50513d4" compoundref="physics__simulator_8cpp" startline="862" endline="870">PhysicsSimNode::forceCallback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structthrusterForcesStamped_1a9d7a6ecfbf60ef8348e1fd49ec9bbb45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>thrusterForcesStamped::thrusterForcesStamped</definition>
+        <argsstring>(vXd thrusterForces_, double time_)</argsstring>
+        <name>thrusterForcesStamped</name>
+        <param>
+          <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+          <declname>thrusterForces_</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>time_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="32" column="5" bodyfile="src/robot_class.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>thrusterForcesStamped</label>
+        <link refid="structthrusterForcesStamped"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_simulator/RobotClass.h" line="29" column="1" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="29" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structthrusterForcesStamped_1a18013d95cd0df8bcac5e057b71ba2aa4" prot="public" virt="non-virtual"><scope>thrusterForcesStamped</scope><name>thrusterForces</name></member>
+      <member refid="structthrusterForcesStamped_1a9d7a6ecfbf60ef8348e1fd49ec9bbb45" prot="public" virt="non-virtual"><scope>thrusterForcesStamped</scope><name>thrusterForcesStamped</name></member>
+      <member refid="structthrusterForcesStamped_1a2555b24c7346d8bde7b6a619f17cf49c" prot="public" virt="non-virtual"><scope>thrusterForcesStamped</scope><name>time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

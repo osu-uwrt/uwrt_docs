@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_4ed08d293efea4af9b6f41ba25a9d37d" kind="dir">
+    <compoundname>mercury_mapping</compoundname>
+    <innerfile refid="location_8py">location.py</innerfile>
+    <innerfile refid="mapping_8py">mapping.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_mapping/"/>
+  </compounddef>
+</doxygen>

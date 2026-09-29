@@ -1,0 +1,894 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__rviz_1_1OverlayDisplay" kind="class" language="C++" prot="public">
+    <compoundname>mercury_rviz::OverlayDisplay</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Display</basecompoundref>
+    <derivedcompoundref refid="classmercury__rviz_1_1DiagnosticOverlay" prot="public" virt="non-virtual">mercury_rviz::DiagnosticOverlay</derivedcompoundref>
+    <includes refid="OverlayDisplay_8hpp" local="no">OverlayDisplay.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classmercury__rviz_1_1OverlayObject_1a27bc0986981154a7d619bb1b5e11c0b1" kindref="member">OverlayObject::SharedPtr</ref></type>
+        <definition>OverlayObject::SharedPtr mercury_rviz::OverlayDisplay::overlay_</definition>
+        <argsstring></argsstring>
+        <name>overlay_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="106" column="30" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a54a0be4624d24587f3256d768e585ae5" compoundref="OverlayDisplay_8cpp" startline="95" endline="99">onDisable</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1aad22a5738665413153d16bd6901bcff4" compoundref="OverlayDisplay_8cpp" startline="89" endline="93">onEnable</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1af5a1f685600c8bea5e095a56713b2df0" compoundref="OverlayDisplay_8cpp" startline="313" endline="317">reset</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a28d8b2f6bee9a979e064ea9834d6c53c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::OverlayDisplay::texture_width_</definition>
+        <argsstring></argsstring>
+        <name>texture_width_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="108" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="108" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" compoundref="OverlayDisplay_8cpp" startline="340" endline="343">updateWidth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a35b1a42f19c3d47d5aabe3eb7b17f40d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::OverlayDisplay::texture_height_</definition>
+        <argsstring></argsstring>
+        <name>texture_height_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="109" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" compoundref="OverlayDisplay_8cpp" startline="345" endline="348">updateHeight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a6b5bf2063185a88a64df99dc2f7963b9" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::OverlayDisplay::horizontal_dist_</definition>
+        <argsstring></argsstring>
+        <name>horizontal_dist_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="110" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="110" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" compoundref="OverlayDisplay_8cpp" startline="324" endline="327">updateHorizontalDistance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1ab4655a6a5f8f00221da680ae085e898d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::OverlayDisplay::vertical_dist_</definition>
+        <argsstring></argsstring>
+        <name>vertical_dist_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="111" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="111" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" compoundref="OverlayDisplay_8cpp" startline="319" endline="322">updateVerticalDistance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a93c2bdaef64c5bf49d2713f12c97b4b6" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38" kindref="member">HorizontalAlignment</ref></type>
+        <definition>HorizontalAlignment mercury_rviz::OverlayDisplay::horizontal_alignment_</definition>
+        <argsstring></argsstring>
+        <name>horizontal_alignment_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="113" column="25" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="113" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" compoundref="OverlayDisplay_8cpp" startline="334" endline="338">updateHorizontalAlignment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a6915f02d22a83e669820935cfb944c68" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526ee" kindref="member">VerticalAlignment</ref></type>
+        <definition>VerticalAlignment mercury_rviz::OverlayDisplay::vertical_alignment_</definition>
+        <argsstring></argsstring>
+        <name>vertical_alignment_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="114" column="23" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="114" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" compoundref="OverlayDisplay_8cpp" startline="329" endline="332">updateVerticalAlignment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1ae66e7a008990a2e75397fae71b21bf2e" prot="protected" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor mercury_rviz::OverlayDisplay::bg_color_</definition>
+        <argsstring></argsstring>
+        <name>bg_color_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="116" column="12" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::OverlayDisplay::require_update_texture_</definition>
+        <argsstring></argsstring>
+        <name>require_update_texture_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="118" column="10" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1ac754cb05f0c673e61ddcbaf30b0cf0a0" compoundref="OverlayDisplay_8cpp" startline="284" endline="288">addArc</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1af4f406ea25dd51d737135a84d876d118" compoundref="OverlayDisplay_8cpp" startline="278" endline="282">addCircle</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a69de904b4a18f5c55c181962ac252141" compoundref="OverlayDisplay_8cpp" startline="272" endline="276">addText</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a8f0a458d008cd9713a97992cf15f5c80" compoundref="OverlayDisplay_8cpp" startline="306" endline="311">clearElements</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0c70c376b0545ea71060d78ed86d6dbc" compoundref="OverlayDisplay_8cpp" startline="290" endline="293">updateArc</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a9ec171be2d77d1db970eb09c35cd01ae" compoundref="OverlayDisplay_8cpp" startline="301" endline="304">updateCircle</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" compoundref="OverlayDisplay_8cpp" startline="345" endline="348">updateHeight</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" compoundref="OverlayDisplay_8cpp" startline="334" endline="338">updateHorizontalAlignment</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" compoundref="OverlayDisplay_8cpp" startline="324" endline="327">updateHorizontalDistance</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a2111aca80a32f107ec4abe8cddec612e" compoundref="OverlayDisplay_8cpp" startline="296" endline="299">updateText</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" compoundref="OverlayDisplay_8cpp" startline="329" endline="332">updateVerticalAlignment</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" compoundref="OverlayDisplay_8cpp" startline="319" endline="322">updateVerticalDistance</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" compoundref="OverlayDisplay_8cpp" startline="340" endline="343">updateWidth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a9f3a82664e3ad8f1694502843a575672" prot="protected" static="no" mutable="no">
+        <type>rviz_common::properties::IntProperty *</type>
+        <definition>rviz_common::properties::IntProperty* mercury_rviz::OverlayDisplay::hor_dist_property_</definition>
+        <argsstring></argsstring>
+        <name>hor_dist_property_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="120" column="43" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" compoundref="OverlayDisplay_8cpp" startline="324" endline="327">updateHorizontalDistance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1ab35c74f095a4673d7d6a36c27fd505c6" prot="protected" static="no" mutable="no">
+        <type>rviz_common::properties::IntProperty *</type>
+        <definition>rviz_common::properties::IntProperty* mercury_rviz::OverlayDisplay::ver_dist_property_</definition>
+        <argsstring></argsstring>
+        <name>ver_dist_property_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="121" column="43" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" compoundref="OverlayDisplay_8cpp" startline="319" endline="322">updateVerticalDistance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a1b2fffc9609ad487569f922b0cb256f5" prot="protected" static="no" mutable="no">
+        <type>rviz_common::properties::EnumProperty *</type>
+        <definition>rviz_common::properties::EnumProperty* mercury_rviz::OverlayDisplay::hor_alignment_property_</definition>
+        <argsstring></argsstring>
+        <name>hor_alignment_property_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="122" column="44" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" compoundref="OverlayDisplay_8cpp" startline="334" endline="338">updateHorizontalAlignment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a9fe4b57f93cd5924c1551f846ed77957" prot="protected" static="no" mutable="no">
+        <type>rviz_common::properties::EnumProperty *</type>
+        <definition>rviz_common::properties::EnumProperty* mercury_rviz::OverlayDisplay::ver_alignment_property_</definition>
+        <argsstring></argsstring>
+        <name>ver_alignment_property_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="123" column="44" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" compoundref="OverlayDisplay_8cpp" startline="329" endline="332">updateVerticalAlignment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a69671fa516d8de4cbfac5a3b8def593e" prot="protected" static="no" mutable="no">
+        <type>rviz_common::properties::IntProperty *</type>
+        <definition>rviz_common::properties::IntProperty* mercury_rviz::OverlayDisplay::width_property_</definition>
+        <argsstring></argsstring>
+        <name>width_property_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="124" column="43" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" compoundref="OverlayDisplay_8cpp" startline="340" endline="343">updateWidth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a31a38b955269f850a9457c9e4d29c901" prot="protected" static="no" mutable="no">
+        <type>rviz_common::properties::IntProperty *</type>
+        <definition>rviz_common::properties::IntProperty* mercury_rviz::OverlayDisplay::height_property_</definition>
+        <argsstring></argsstring>
+        <name>height_property_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="125" column="43" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" compoundref="OverlayDisplay_8cpp" startline="345" endline="348">updateHeight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1a42c733fad2b91d5ffecd325a3c43e19c" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref> &gt;</type>
+        <definition>std::vector&lt;PaintedTextConfig&gt; mercury_rviz::OverlayDisplay::text_vector_</definition>
+        <argsstring></argsstring>
+        <name>text_vector_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="128" column="17" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a69de904b4a18f5c55c181962ac252141" compoundref="OverlayDisplay_8cpp" startline="272" endline="276">addText</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a8f0a458d008cd9713a97992cf15f5c80" compoundref="OverlayDisplay_8cpp" startline="306" endline="311">clearElements</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a2111aca80a32f107ec4abe8cddec612e" compoundref="OverlayDisplay_8cpp" startline="296" endline="299">updateText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1ada9c0bf967ff6d28a9872ca5b6cde4ca" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref> &gt;</type>
+        <definition>std::vector&lt;PaintedCircleConfig&gt; mercury_rviz::OverlayDisplay::circle_vector_</definition>
+        <argsstring></argsstring>
+        <name>circle_vector_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="129" column="17" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="129" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1af4f406ea25dd51d737135a84d876d118" compoundref="OverlayDisplay_8cpp" startline="278" endline="282">addCircle</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a8f0a458d008cd9713a97992cf15f5c80" compoundref="OverlayDisplay_8cpp" startline="306" endline="311">clearElements</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a9ec171be2d77d1db970eb09c35cd01ae" compoundref="OverlayDisplay_8cpp" startline="301" endline="304">updateCircle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1OverlayDisplay_1ad12520705c0b8bb8b391799b8a90f826" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref> &gt;</type>
+        <definition>std::vector&lt;PaintedArcConfig&gt; mercury_rviz::OverlayDisplay::arc_vector_</definition>
+        <argsstring></argsstring>
+        <name>arc_vector_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="130" column="17" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="130" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1ac754cb05f0c673e61ddcbaf30b0cf0a0" compoundref="OverlayDisplay_8cpp" startline="284" endline="288">addArc</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a8f0a458d008cd9713a97992cf15f5c80" compoundref="OverlayDisplay_8cpp" startline="306" endline="311">clearElements</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0c70c376b0545ea71060d78ed86d6dbc" compoundref="OverlayDisplay_8cpp" startline="290" endline="293">updateArc</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::OverlayDisplay::OverlayDisplay</definition>
+        <argsstring>()</argsstring>
+        <name>OverlayDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="79" column="5" bodyfile="src/OverlayDisplay.cpp" bodystart="55" bodyend="85"/>
+        <references refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eea1fabf63de5c96c78e2a40805bcdeb73b">mercury_rviz::BOTTOM</references>
+        <references refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38ac397289ee45877be0cd49811fe245b4e">mercury_rviz::CENTER</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a31a38b955269f850a9457c9e4d29c901" compoundref="OverlayDisplay_8hpp" startline="125">height_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a1b2fffc9609ad487569f922b0cb256f5" compoundref="OverlayDisplay_8hpp" startline="122">hor_alignment_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a9f3a82664e3ad8f1694502843a575672" compoundref="OverlayDisplay_8hpp" startline="120">hor_dist_property_</references>
+        <references refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38a684d325a7303f52e64011467ff5c5758">mercury_rviz::LEFT</references>
+        <references refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38a21507b40c80068eda19865706fdc2403">mercury_rviz::RIGHT</references>
+        <references refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eea6705777b712ee811e76fb07162081d63">mercury_rviz::TOP</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" compoundref="OverlayDisplay_8cpp" startline="345" endline="348">updateHeight</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" compoundref="OverlayDisplay_8cpp" startline="334" endline="338">updateHorizontalAlignment</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" compoundref="OverlayDisplay_8cpp" startline="324" endline="327">updateHorizontalDistance</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" compoundref="OverlayDisplay_8cpp" startline="329" endline="332">updateVerticalAlignment</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" compoundref="OverlayDisplay_8cpp" startline="319" endline="322">updateVerticalDistance</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" compoundref="OverlayDisplay_8cpp" startline="340" endline="343">updateWidth</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a9fe4b57f93cd5924c1551f846ed77957" compoundref="OverlayDisplay_8hpp" startline="123">ver_alignment_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab35c74f095a4673d7d6a36c27fd505c6" compoundref="OverlayDisplay_8hpp" startline="121">ver_dist_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a69671fa516d8de4cbfac5a3b8def593e" compoundref="OverlayDisplay_8hpp" startline="124">width_property_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a9fb5b3b2e5bb50330bf983e51c26f4d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>mercury_rviz::OverlayDisplay::~OverlayDisplay</definition>
+        <argsstring>()</argsstring>
+        <name>~OverlayDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="80" column="13" bodyfile="src/OverlayDisplay.cpp" bodystart="87" bodyend="87"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a54a0be4624d24587f3256d768e585ae5" compoundref="OverlayDisplay_8cpp" startline="95" endline="99">onDisable</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <reimplementedby refid="classmercury__rviz_1_1DiagnosticOverlay_1ae9660070a60aa516ab24fe36a811b5fd">onInitialize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="82" column="18" bodyfile="src/OverlayDisplay.cpp" bodystart="102" bodyend="122"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1aad22a5738665413153d16bd6901bcff4" compoundref="OverlayDisplay_8cpp" startline="89" endline="93">onEnable</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" compoundref="OverlayDisplay_8hpp" startline="106">overlay_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" compoundref="OverlayDisplay_8cpp" startline="345" endline="348">updateHeight</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" compoundref="OverlayDisplay_8cpp" startline="334" endline="338">updateHorizontalAlignment</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" compoundref="OverlayDisplay_8cpp" startline="324" endline="327">updateHorizontalDistance</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" compoundref="OverlayDisplay_8cpp" startline="329" endline="332">updateVerticalAlignment</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" compoundref="OverlayDisplay_8cpp" startline="319" endline="322">updateVerticalDistance</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" compoundref="OverlayDisplay_8cpp" startline="340" endline="343">updateWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1aad22a5738665413153d16bd6901bcff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::onEnable</definition>
+        <argsstring>() override</argsstring>
+        <name>onEnable</name>
+        <reimplementedby refid="classmercury__rviz_1_1DiagnosticOverlay_1a4fc327a3f5ad2f70f46fb5bb66af19b9">onEnable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="83" column="18" bodyfile="src/OverlayDisplay.cpp" bodystart="89" bodyend="93"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" compoundref="OverlayDisplay_8hpp" startline="106">overlay_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a54a0be4624d24587f3256d768e585ae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::onDisable</definition>
+        <argsstring>() override</argsstring>
+        <name>onDisable</name>
+        <reimplementedby refid="classmercury__rviz_1_1DiagnosticOverlay_1a7eaf3158988951ca2598bb8cc8d1ebde">onDisable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="84" column="18" bodyfile="src/OverlayDisplay.cpp" bodystart="95" bodyend="99"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" compoundref="OverlayDisplay_8hpp" startline="106">overlay_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a9fb5b3b2e5bb50330bf983e51c26f4d6" compoundref="OverlayDisplay_8cpp" startline="87" endline="87">~OverlayDisplay</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::update</definition>
+        <argsstring>(float wall_dt, float ros_dt) override</argsstring>
+        <name>update</name>
+        <reimplementedby refid="classmercury__rviz_1_1DiagnosticOverlay_1a6fcc6212b71f9bcb4723550471411db7">update</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>wall_dt</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ros_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="85" column="18" bodyfile="src/OverlayDisplay.cpp" bodystart="124" bodyend="177"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad12520705c0b8bb8b391799b8a90f826" compoundref="OverlayDisplay_8hpp" startline="130">arc_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ae66e7a008990a2e75397fae71b21bf2e" compoundref="OverlayDisplay_8hpp" startline="116">bg_color_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ada9c0bf967ff6d28a9872ca5b6cde4ca" compoundref="OverlayDisplay_8hpp" startline="129">circle_vector_</references>
+        <references refid="classmercury__rviz_1_1ScopedPixelBuffer_1a22e1d882ae63513920ce627b1aa9fb12" compoundref="overlay__utils_8cpp" startline="52" endline="57">mercury_rviz::ScopedPixelBuffer::getQImage</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a93c2bdaef64c5bf49d2713f12c97b4b6" compoundref="OverlayDisplay_8hpp" startline="113">horizontal_alignment_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a6b5bf2063185a88a64df99dc2f7963b9" compoundref="OverlayDisplay_8hpp" startline="110">horizontal_dist_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" compoundref="OverlayDisplay_8hpp" startline="106">overlay_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a3c35c759cbd1a1005c9a549d892b2646" compoundref="OverlayDisplay_8cpp" startline="260" endline="269">paintArc</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" compoundref="OverlayDisplay_8cpp" startline="244" endline="258">paintCircle</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">paintText</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a42c733fad2b91d5ffecd325a3c43e19c" compoundref="OverlayDisplay_8hpp" startline="128">text_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a35b1a42f19c3d47d5aabe3eb7b17f40d" compoundref="OverlayDisplay_8hpp" startline="109">texture_height_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a28d8b2f6bee9a979e064ea9834d6c53c" compoundref="OverlayDisplay_8hpp" startline="108">texture_width_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a6915f02d22a83e669820935cfb944c68" compoundref="OverlayDisplay_8hpp" startline="114">vertical_alignment_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab4655a6a5f8f00221da680ae085e898d" compoundref="OverlayDisplay_8hpp" startline="111">vertical_dist_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1af5a1f685600c8bea5e095a56713b2df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classmercury__rviz_1_1DiagnosticOverlay_1afdc0dc3e04c8d5ca138bcf01622eadcc">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="86" column="18" bodyfile="src/OverlayDisplay.cpp" bodystart="313" bodyend="317"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" compoundref="OverlayDisplay_8hpp" startline="106">overlay_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a69de904b4a18f5c55c181962ac252141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mercury_rviz::OverlayDisplay::addText</definition>
+        <argsstring>(const PaintedTextConfig &amp;config)</argsstring>
+        <name>addText</name>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="89" column="9" bodyfile="src/OverlayDisplay.cpp" bodystart="272" bodyend="276"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a42c733fad2b91d5ffecd325a3c43e19c" compoundref="OverlayDisplay_8hpp" startline="128">text_vector_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1af4f406ea25dd51d737135a84d876d118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mercury_rviz::OverlayDisplay::addCircle</definition>
+        <argsstring>(const PaintedCircleConfig &amp;config)</argsstring>
+        <name>addCircle</name>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="90" column="9" bodyfile="src/OverlayDisplay.cpp" bodystart="278" bodyend="282"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ada9c0bf967ff6d28a9872ca5b6cde4ca" compoundref="OverlayDisplay_8hpp" startline="129">circle_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1ac754cb05f0c673e61ddcbaf30b0cf0a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mercury_rviz::OverlayDisplay::addArc</definition>
+        <argsstring>(const PaintedArcConfig &amp;config)</argsstring>
+        <name>addArc</name>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="91" column="9" bodyfile="src/OverlayDisplay.cpp" bodystart="284" bodyend="288"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad12520705c0b8bb8b391799b8a90f826" compoundref="OverlayDisplay_8hpp" startline="130">arc_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a2111aca80a32f107ec4abe8cddec612e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateText</definition>
+        <argsstring>(int index, const PaintedTextConfig &amp;config)</argsstring>
+        <name>updateText</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="94" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="296" bodyend="299"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a42c733fad2b91d5ffecd325a3c43e19c" compoundref="OverlayDisplay_8hpp" startline="128">text_vector_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a9ec171be2d77d1db970eb09c35cd01ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateCircle</definition>
+        <argsstring>(int index, const PaintedCircleConfig &amp;config)</argsstring>
+        <name>updateCircle</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="95" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="301" bodyend="304"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ada9c0bf967ff6d28a9872ca5b6cde4ca" compoundref="OverlayDisplay_8hpp" startline="129">circle_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a0c70c376b0545ea71060d78ed86d6dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateArc</definition>
+        <argsstring>(int id, const PaintedArcConfig &amp;config)</argsstring>
+        <name>updateArc</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="96" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="290" bodyend="293"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad12520705c0b8bb8b391799b8a90f826" compoundref="OverlayDisplay_8hpp" startline="130">arc_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a8f0a458d008cd9713a97992cf15f5c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::clearElements</definition>
+        <argsstring>()</argsstring>
+        <name>clearElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="98" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="306" bodyend="311"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad12520705c0b8bb8b391799b8a90f826" compoundref="OverlayDisplay_8hpp" startline="130">arc_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ada9c0bf967ff6d28a9872ca5b6cde4ca" compoundref="OverlayDisplay_8hpp" startline="129">circle_vector_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a42c733fad2b91d5ffecd325a3c43e19c" compoundref="OverlayDisplay_8hpp" startline="128">text_vector_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::paintText</definition>
+        <argsstring>(const PaintedTextConfig &amp;config, QPainter &amp;painter)</argsstring>
+        <name>paintText</name>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>QPainter &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper method for rendering text onto a QImage with a QPainter <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a painted text config containing the location to paint the font and size to use, the text to put in and the overall width and height of the panel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>painter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the painter to use while building the text overlay. Passed by refrence to keep the changes pointed at the correct image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="102" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="186" bodyend="242"/>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1a2851a8eed6f2b82f67b1076b835eaa22" compoundref="OverlayDisplay_8hpp" startline="56">mercury_rviz::PaintedTextConfig::font_name_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1a3499eecb3b4f185661cff13ff95cab7a" compoundref="OverlayDisplay_8hpp" startline="58">mercury_rviz::PaintedTextConfig::font_size_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1adc5187baa937046f11e37e944768368f" compoundref="OverlayDisplay_8hpp" startline="55">mercury_rviz::PaintedTextConfig::height_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1a91543dec0f30b7f046beb98c78b3337f" compoundref="OverlayDisplay_8hpp" startline="57">mercury_rviz::PaintedTextConfig::invert_shadow_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1a48a3e9b472f0d87ee87003b7e269fdb8" compoundref="OverlayDisplay_8hpp" startline="58">mercury_rviz::PaintedTextConfig::line_width_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1ac870433e5b39f5f43040a74066fa631d" compoundref="OverlayDisplay_8hpp" startline="56">mercury_rviz::PaintedTextConfig::text_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1aab24406e3a71d9955ed78067c56140d7" compoundref="OverlayDisplay_8hpp" startline="59">mercury_rviz::PaintedTextConfig::text_color_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1ab10d28711ee4b0e3ad321492ee104714" compoundref="OverlayDisplay_8hpp" startline="55">mercury_rviz::PaintedTextConfig::width_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1ad00b6f38926598d36aac4f3765f126a9" compoundref="OverlayDisplay_8hpp" startline="55">mercury_rviz::PaintedTextConfig::x_</references>
+        <references refid="structmercury__rviz_1_1PaintedTextConfig_1a29facc1a5e2e457ffe14a3d49f9a397f" compoundref="OverlayDisplay_8hpp" startline="55">mercury_rviz::PaintedTextConfig::y_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::paintCircle</definition>
+        <argsstring>(const PaintedCircleConfig &amp;config, QPainter &amp;painter)</argsstring>
+        <name>paintCircle</name>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>QPainter &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="103" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="244" bodyend="258"/>
+        <references refid="structmercury__rviz_1_1PaintedCircleConfig_1a33143b14384db256a08f81b5d6768c9b" compoundref="OverlayDisplay_8hpp" startline="65">mercury_rviz::PaintedCircleConfig::inner_color_</references>
+        <references refid="structmercury__rviz_1_1PaintedCircleConfig_1acd77397c8953e9c06f3d7920428dc53e" compoundref="OverlayDisplay_8hpp" startline="64">mercury_rviz::PaintedCircleConfig::inner_radius_</references>
+        <references refid="structmercury__rviz_1_1PaintedCircleConfig_1a7c254416e844cef559bdf3c735c4c313" compoundref="OverlayDisplay_8hpp" startline="65">mercury_rviz::PaintedCircleConfig::outer_color_</references>
+        <references refid="structmercury__rviz_1_1PaintedCircleConfig_1acc34ee45b0c4532526bb486caa4992c4" compoundref="OverlayDisplay_8hpp" startline="64">mercury_rviz::PaintedCircleConfig::outer_radius_</references>
+        <references refid="structmercury__rviz_1_1PaintedCircleConfig_1a016b5fcf802bce3540df7e441735e8b8" compoundref="OverlayDisplay_8hpp" startline="63">mercury_rviz::PaintedCircleConfig::x_</references>
+        <references refid="structmercury__rviz_1_1PaintedCircleConfig_1acc76d76edac839e2205d31e642cbf98b" compoundref="OverlayDisplay_8hpp" startline="63">mercury_rviz::PaintedCircleConfig::y_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1OverlayDisplay_1a3c35c759cbd1a1005c9a549d892b2646" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::paintArc</definition>
+        <argsstring>(const PaintedArcConfig &amp;config, QPainter &amp;painter)</argsstring>
+        <name>paintArc</name>
+        <param>
+          <type>const <ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>QPainter &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="104" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="260" bodyend="269"/>
+        <references refid="structmercury__rviz_1_1PaintedArcConfig_1a5d8bb8c13ce139d632825c7ce9365dd0" compoundref="OverlayDisplay_8hpp" startline="71">mercury_rviz::PaintedArcConfig::end_angle_</references>
+        <references refid="structmercury__rviz_1_1PaintedArcConfig_1ac86bf08cf2bb75d2fb396a3f6df16e0c" compoundref="OverlayDisplay_8hpp" startline="73">mercury_rviz::PaintedArcConfig::line_color_</references>
+        <references refid="structmercury__rviz_1_1PaintedArcConfig_1a216277e9d57611e026c3504c01646455" compoundref="OverlayDisplay_8hpp" startline="72">mercury_rviz::PaintedArcConfig::line_width_</references>
+        <references refid="structmercury__rviz_1_1PaintedArcConfig_1a20cb06dd71a9797ccfcef02e45edc4ec" compoundref="OverlayDisplay_8hpp" startline="70">mercury_rviz::PaintedArcConfig::radius_</references>
+        <references refid="structmercury__rviz_1_1PaintedArcConfig_1ad448647b2011b88d06573c60401a7d31" compoundref="OverlayDisplay_8hpp" startline="71">mercury_rviz::PaintedArcConfig::start_angle_</references>
+        <references refid="structmercury__rviz_1_1PaintedArcConfig_1ac87c544b8e9d272a6ad3c17b9fffb435" compoundref="OverlayDisplay_8hpp" startline="69">mercury_rviz::PaintedArcConfig::x_</references>
+        <references refid="structmercury__rviz_1_1PaintedArcConfig_1a1ca6301a0d12eefd10446adf46d5f151" compoundref="OverlayDisplay_8hpp" startline="69">mercury_rviz::PaintedArcConfig::y_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" compoundref="OverlayDisplay_8cpp" startline="124" endline="177">update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateHorizontalDistance</definition>
+        <argsstring>()</argsstring>
+        <name>updateHorizontalDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="133" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="324" bodyend="327"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a9f3a82664e3ad8f1694502843a575672" compoundref="OverlayDisplay_8hpp" startline="120">hor_dist_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a6b5bf2063185a88a64df99dc2f7963b9" compoundref="OverlayDisplay_8hpp" startline="110">horizontal_dist_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateVerticalDistance</definition>
+        <argsstring>()</argsstring>
+        <name>updateVerticalDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="134" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="319" bodyend="322"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab35c74f095a4673d7d6a36c27fd505c6" compoundref="OverlayDisplay_8hpp" startline="121">ver_dist_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ab4655a6a5f8f00221da680ae085e898d" compoundref="OverlayDisplay_8hpp" startline="111">vertical_dist_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateHorizontalAlignment</definition>
+        <argsstring>()</argsstring>
+        <name>updateHorizontalAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="135" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="334" bodyend="338"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a1b2fffc9609ad487569f922b0cb256f5" compoundref="OverlayDisplay_8hpp" startline="122">hor_alignment_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a93c2bdaef64c5bf49d2713f12c97b4b6" compoundref="OverlayDisplay_8hpp" startline="113">horizontal_alignment_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateVerticalAlignment</definition>
+        <argsstring>()</argsstring>
+        <name>updateVerticalAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="136" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="329" bodyend="332"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a9fe4b57f93cd5924c1551f846ed77957" compoundref="OverlayDisplay_8hpp" startline="123">ver_alignment_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a6915f02d22a83e669820935cfb944c68" compoundref="OverlayDisplay_8hpp" startline="114">vertical_alignment_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateWidth</definition>
+        <argsstring>()</argsstring>
+        <name>updateWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="137" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="340" bodyend="343"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a28d8b2f6bee9a979e064ea9834d6c53c" compoundref="OverlayDisplay_8hpp" startline="108">texture_width_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a69671fa516d8de4cbfac5a3b8def593e" compoundref="OverlayDisplay_8hpp" startline="124">width_property_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::OverlayDisplay::updateHeight</definition>
+        <argsstring>()</argsstring>
+        <name>updateHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="138" column="10" bodyfile="src/OverlayDisplay.cpp" bodystart="345" bodyend="348"/>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a31a38b955269f850a9457c9e4d29c901" compoundref="OverlayDisplay_8hpp" startline="125">height_property_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" compoundref="OverlayDisplay_8hpp" startline="118">require_update_texture_</references>
+        <references refid="classmercury__rviz_1_1OverlayDisplay_1a35b1a42f19c3d47d5aabe3eb7b17f40d" compoundref="OverlayDisplay_8hpp" startline="109">texture_height_</references>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" compoundref="OverlayDisplay_8cpp" startline="102" endline="122">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" compoundref="OverlayDisplay_8cpp" startline="55" endline="85">OverlayDisplay</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_rviz::OverlayDisplay</label>
+        <link refid="classmercury__rviz_1_1OverlayDisplay"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mercury_rviz::DiagnosticOverlay</label>
+        <link refid="classmercury__rviz_1_1DiagnosticOverlay"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Display</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_rviz::OverlayDisplay</label>
+        <link refid="classmercury__rviz_1_1OverlayDisplay"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rviz_common::Display</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/OverlayDisplay.hpp" line="76" column="1" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="76" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ac754cb05f0c673e61ddcbaf30b0cf0a0" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>addArc</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1af4f406ea25dd51d737135a84d876d118" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>addCircle</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a69de904b4a18f5c55c181962ac252141" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>addText</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ad12520705c0b8bb8b391799b8a90f826" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>arc_vector_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ae66e7a008990a2e75397fae71b21bf2e" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>bg_color_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ada9c0bf967ff6d28a9872ca5b6cde4ca" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>circle_vector_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a8f0a458d008cd9713a97992cf15f5c80" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>clearElements</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a31a38b955269f850a9457c9e4d29c901" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>height_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a1b2fffc9609ad487569f922b0cb256f5" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>hor_alignment_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9f3a82664e3ad8f1694502843a575672" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>hor_dist_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a93c2bdaef64c5bf49d2713f12c97b4b6" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>horizontal_alignment_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a6b5bf2063185a88a64df99dc2f7963b9" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>horizontal_dist_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a54a0be4624d24587f3256d768e585ae5" prot="public" virt="virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>onDisable</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1aad22a5738665413153d16bd6901bcff4" prot="public" virt="virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>onEnable</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403" prot="public" virt="virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>onInitialize</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>overlay_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>OverlayDisplay</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a3c35c759cbd1a1005c9a549d892b2646" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>paintArc</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>paintCircle</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>paintText</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>require_update_texture_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1af5a1f685600c8bea5e095a56713b2df0" prot="public" virt="virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>reset</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a42c733fad2b91d5ffecd325a3c43e19c" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>text_vector_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a35b1a42f19c3d47d5aabe3eb7b17f40d" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>texture_height_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a28d8b2f6bee9a979e064ea9834d6c53c" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>texture_width_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69" prot="public" virt="virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>update</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a0c70c376b0545ea71060d78ed86d6dbc" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateArc</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9ec171be2d77d1db970eb09c35cd01ae" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateCircle</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateHeight</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateHorizontalAlignment</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateHorizontalDistance</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a2111aca80a32f107ec4abe8cddec612e" prot="public" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateText</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateVerticalAlignment</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateVerticalDistance</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>updateWidth</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9fe4b57f93cd5924c1551f846ed77957" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>ver_alignment_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ab35c74f095a4673d7d6a36c27fd505c6" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>ver_dist_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a6915f02d22a83e669820935cfb944c68" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>vertical_alignment_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ab4655a6a5f8f00221da680ae085e898d" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>vertical_dist_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a69671fa516d8de4cbfac5a3b8def593e" prot="protected" virt="non-virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>width_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9fb5b3b2e5bb50330bf983e51c26f4d6" prot="public" virt="virtual"><scope>mercury_rviz::OverlayDisplay</scope><name>~OverlayDisplay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

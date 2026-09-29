@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1ExampleAction" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::ExampleAction</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="example__action_8hpp" local="no">example_action.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1ExampleAction_1a16c740ab00ad37aece9228416a6f9441" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::ExampleAction::ExampleAction</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>ExampleAction</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/example_action.hpp" line="20" column="5" bodyfile="include/mercury_autonomy/bt_actions/example_action.hpp" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1ExampleAction_1affaebf9485eedb3bd54d18c719d2e5de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::ExampleAction::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+<para>Called once when the node transitions from IDLE to RUNNING. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/example_action.hpp" line="32" column="20" bodyfile="src/bt_actions/example_action.cpp" bodystart="15" bodyend="28"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1ExampleAction_1a55403d5ea6b5666e7f8e9b8146e488d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::ExampleAction::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+<para>Called on every subsequent tick while the node is RUNNING. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/example_action.hpp" line="35" column="20" bodyfile="src/bt_actions/example_action.cpp" bodystart="30" bodyend="34"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1ExampleAction_1a168ea2796e5b04b3db2b089f7aca9e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::ExampleAction::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+<para>Called when the node is halted (e.g., tree cancelled). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/example_action.hpp" line="38" column="10" bodyfile="src/bt_actions/example_action.cpp" bodystart="36" bodyend="39"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1ExampleAction_1a4a49c22c5b65cf781a89630cb53a06a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::ExampleAction::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+<para>Declare the ports (inputs / outputs) exposed by this node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/example_action.hpp" line="24" column="26" bodyfile="include/mercury_autonomy/bt_actions/example_action.hpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1ExampleAction_1a8b84c5cce7ab1b830ed4943d4002f9f2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::ExampleAction::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Create ROS subscriptions/publishers needed by this action. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/example_action.hpp" line="42" column="10" bodyfile="src/bt_actions/example_action.cpp" bodystart="8" bodyend="13"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_autonomy::ExampleAction</label>
+        <link refid="classmercury__autonomy_1_1ExampleAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::ExampleAction</label>
+        <link refid="classmercury__autonomy_1_1ExampleAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/example_action.hpp" line="18" column="1" bodyfile="include/mercury_autonomy/bt_actions/example_action.hpp" bodystart="18" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1ExampleAction_1a16c740ab00ad37aece9228416a6f9441" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>ExampleAction</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1ExampleAction_1a168ea2796e5b04b3db2b089f7aca9e09" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1ExampleAction_1a55403d5ea6b5666e7f8e9b8146e488d4" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1ExampleAction_1affaebf9485eedb3bd54d18c719d2e5de" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1ExampleAction_1a4a49c22c5b65cf781a89630cb53a06a0" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1ExampleAction_1a8b84c5cce7ab1b830ed4943d4002f9f2" prot="protected" virt="virtual"><scope>mercury_autonomy::ExampleAction</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::ExampleAction</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::ExampleAction</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::ExampleAction</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

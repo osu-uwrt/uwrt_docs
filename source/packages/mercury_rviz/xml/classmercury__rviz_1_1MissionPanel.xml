@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__rviz_1_1MissionPanel" kind="class" language="C++" prot="public">
+    <compoundname>mercury_rviz::MissionPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="MissionPanel_8hpp" local="no">MissionPanel.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" prot="private" static="no" mutable="no">
+        <type>Ui_MissionPanel *</type>
+        <definition>Ui_MissionPanel* mercury_rviz::MissionPanel::uiPanel</definition>
+        <argsstring></argsstring>
+        <name>uiPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="58" column="22" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a5fb9004e1b68a7d85f772db9b727a729" compoundref="MissionPanel_8cpp" startline="172" endline="182">handleSelectTree</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1ad9cf9cb59973c456e0065d4369212a03" compoundref="MissionPanel_8cpp" startline="13" endline="20">MissionPanel</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3cce53c6f8a5275b4b2d8dd216de89c4" compoundref="MissionPanel_8cpp" startline="22" endline="32">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" compoundref="MissionPanel_8cpp" startline="95" endline="128">refresh</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" compoundref="MissionPanel_8cpp" startline="184" endline="210">startTask</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1af0717b841bcb703ded7e8029f76bcf82" compoundref="MissionPanel_8cpp" startline="222" endline="235">taskCompleteCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aa2ebadfcbac8ef84710e6d0adde0329d" compoundref="MissionPanel_8cpp" startline="212" endline="220">taskStartCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aeb464a14ed0fac68c811a3afd2f455df" compoundref="MissionPanel_8cpp" startline="267" endline="300">updateLedReadout</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" compoundref="MissionPanel_8cpp" startline="130" endline="170">waitForRefresh</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" compoundref="MissionPanel_8cpp" startline="84" endline="93">~MissionPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a632a3290386dfa9d12a69ab6df062014" prot="private" static="no" mutable="no">
+        <type>QStandardItemModel *</type>
+        <definition>QStandardItemModel* mercury_rviz::MissionPanel::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="61" column="25" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3cce53c6f8a5275b4b2d8dd216de89c4" compoundref="MissionPanel_8cpp" startline="22" endline="32">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1ae5604bbd04557058e84687e17c04a812" compoundref="MissionPanel_8cpp" startline="246" endline="258">stackCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" compoundref="MissionPanel_8cpp" startline="84" endline="93">~MissionPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a67f36231cf6d5e39146c6277343f28ee" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; mercury_rviz::MissionPanel::treeList</definition>
+        <argsstring></argsstring>
+        <name>treeList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="64" column="17" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a5fb9004e1b68a7d85f772db9b727a729" compoundref="MissionPanel_8cpp" startline="172" endline="182">handleSelectTree</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1ad9cf9cb59973c456e0065d4369212a03" compoundref="MissionPanel_8cpp" startline="13" endline="20">MissionPanel</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" compoundref="MissionPanel_8cpp" startline="130" endline="170">waitForRefresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1ae575a33a5d4fd05fb11d1dcac854fbb0" prot="private" static="no" mutable="no">
+        <type>mercury_msgs::msg::LedCommand</type>
+        <definition>mercury_msgs::msg::LedCommand mercury_rviz::MissionPanel::lastLedCommand</definition>
+        <argsstring></argsstring>
+        <name>lastLedCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="67" column="35" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1ad0c09cd328462193637f9a8f52620160" compoundref="MissionPanel_8cpp" startline="260" endline="260">ledCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aeb464a14ed0fac68c811a3afd2f455df" compoundref="MissionPanel_8cpp" startline="267" endline="300">updateLedReadout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1ab9ca957785371352ab2cf6be006e0c2e" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr mercury_rviz::MissionPanel::ledTimer</definition>
+        <argsstring></argsstring>
+        <name>ledTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="68" column="34" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1aa6cd30be3e029ab970ce5bb13b553fc1" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; mercury_msgs::msg::TreeStack &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;mercury_msgs::msg::TreeStack&gt;::SharedPtr mercury_rviz::MissionPanel::stackSub</definition>
+        <argsstring></argsstring>
+        <name>stackSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="70" column="38" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" compoundref="MissionPanel_8cpp" startline="84" endline="93">~MissionPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a5da9007a9690578a7460ac38295d9cbd" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; mercury_msgs::msg::LedCommand &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;mercury_msgs::msg::LedCommand&gt;::SharedPtr mercury_rviz::MissionPanel::ledSub</definition>
+        <argsstring></argsstring>
+        <name>ledSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="71" column="38" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; mercury_msgs::srv::ListTrees &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;mercury_msgs::srv::ListTrees&gt;::SharedPtr mercury_rviz::MissionPanel::refreshClient</definition>
+        <argsstring></argsstring>
+        <name>refreshClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="74" column="32" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" compoundref="MissionPanel_8cpp" startline="95" endline="128">refresh</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" compoundref="MissionPanel_8cpp" startline="130" endline="170">waitForRefresh</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" compoundref="MissionPanel_8cpp" startline="84" endline="93">~MissionPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a4c517b4b19961f85028764f0a5de9ef8" prot="private" static="no" mutable="no">
+        <type>std::shared_future&lt; std::shared_ptr&lt; mercury_msgs::srv::ListTrees_Response &gt; &gt;</type>
+        <definition>std::shared_future&lt;std::shared_ptr&lt;mercury_msgs::srv::ListTrees_Response&gt; &gt; mercury_rviz::MissionPanel::refreshFuture</definition>
+        <argsstring></argsstring>
+        <name>refreshFuture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="75" column="24" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" compoundref="MissionPanel_8cpp" startline="95" endline="128">refresh</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" compoundref="MissionPanel_8cpp" startline="130" endline="170">waitForRefresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a6b157a5dcdfde5932d29a9e25718ca40" prot="private" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t mercury_rviz::MissionPanel::refreshFutureid</definition>
+        <argsstring></argsstring>
+        <name>refreshFutureid</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="76" column="13" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" compoundref="MissionPanel_8cpp" startline="95" endline="128">refresh</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" compoundref="MissionPanel_8cpp" startline="130" endline="170">waitForRefresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a648509e469dd086c257dc4bf0a5efe1c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::MissionPanel::timerTick</definition>
+        <argsstring></argsstring>
+        <name>timerTick</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="78" column="9" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" compoundref="MissionPanel_8cpp" startline="95" endline="128">refresh</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" compoundref="MissionPanel_8cpp" startline="130" endline="170">waitForRefresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" prot="private" static="no" mutable="no">
+        <type>rclcpp_action::Client&lt; <ref refid="namespacemercury__rviz_1a28d78b99a3929a78f47b0aa4a144c306" kindref="member">ExecuteTree</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp_action::Client&lt;ExecuteTree&gt;::SharedPtr mercury_rviz::MissionPanel::actionServer</definition>
+        <argsstring></argsstring>
+        <name>actionServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="80" column="39" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1ae3a19e5b2ca531b93608d9572b136ef7" compoundref="MissionPanel_8cpp" startline="262" endline="264">cancelTask</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" compoundref="MissionPanel_8cpp" startline="184" endline="210">startTask</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" compoundref="MissionPanel_8cpp" startline="84" endline="93">~MissionPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1MissionPanel_1a883fa54a2164679a969b47bcbcae2a57" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_rviz::MissionPanel::robot_ns</definition>
+        <argsstring></argsstring>
+        <name>robot_ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="82" column="17" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1adfa44b694856dcbe7010cbbce9afd038" compoundref="MissionPanel_8cpp" startline="75" endline="80">save</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1ad9cf9cb59973c456e0065d4369212a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::MissionPanel::MissionPanel</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MissionPanel</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="22" column="11" bodyfile="src/MissionPanel.cpp" bodystart="13" bodyend="20"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a67f36231cf6d5e39146c6277343f28ee" compoundref="MissionPanel_8hpp" startline="64">treeList</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::MissionPanel::~MissionPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~MissionPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="23" column="5" bodyfile="src/MissionPanel.cpp" bodystart="84" bodyend="93"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" compoundref="MissionPanel_8hpp" startline="80">actionServer</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a632a3290386dfa9d12a69ab6df062014" compoundref="MissionPanel_8hpp" startline="61">model</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" compoundref="MissionPanel_8hpp" startline="74">refreshClient</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1aa6cd30be3e029ab970ce5bb13b553fc1" compoundref="MissionPanel_8hpp" startline="70">stackSub</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="25" column="10" bodyfile="src/MissionPanel.cpp" bodystart="34" bodyend="73"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" compoundref="MissionPanel_8hpp" startline="80">actionServer</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ad0c09cd328462193637f9a8f52620160" compoundref="MissionPanel_8cpp" startline="260" endline="260">ledCb</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a5da9007a9690578a7460ac38295d9cbd" compoundref="MissionPanel_8hpp" startline="71">ledSub</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab9ca957785371352ab2cf6be006e0c2e" compoundref="MissionPanel_8hpp" startline="68">ledTimer</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" compoundref="MissionPanel_8cpp" startline="95" endline="128">refresh</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" compoundref="MissionPanel_8hpp" startline="74">refreshClient</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a883fa54a2164679a969b47bcbcae2a57" compoundref="MissionPanel_8hpp" startline="82">robot_ns</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ae5604bbd04557058e84687e17c04a812" compoundref="MissionPanel_8cpp" startline="246" endline="258">stackCb</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1aa6cd30be3e029ab970ce5bb13b553fc1" compoundref="MissionPanel_8hpp" startline="70">stackSub</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1aeb464a14ed0fac68c811a3afd2f455df" compoundref="MissionPanel_8cpp" startline="267" endline="300">updateLedReadout</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1adfa44b694856dcbe7010cbbce9afd038" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="26" column="10" bodyfile="src/MissionPanel.cpp" bodystart="75" bodyend="80"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a883fa54a2164679a969b47bcbcae2a57" compoundref="MissionPanel_8hpp" startline="82">robot_ns</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1a3cce53c6f8a5275b4b2d8dd216de89c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="27" column="10" bodyfile="src/MissionPanel.cpp" bodystart="22" bodyend="32"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a5fb9004e1b68a7d85f772db9b727a729" compoundref="MissionPanel_8cpp" startline="172" endline="182">handleSelectTree</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a632a3290386dfa9d12a69ab6df062014" compoundref="MissionPanel_8hpp" startline="61">model</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="30" column="10" bodyfile="src/MissionPanel.cpp" bodystart="95" bodyend="128"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" compoundref="MissionPanel_8hpp" startline="74">refreshClient</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a4c517b4b19961f85028764f0a5de9ef8" compoundref="MissionPanel_8hpp" startline="75">refreshFuture</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a6b157a5dcdfde5932d29a9e25718ca40" compoundref="MissionPanel_8hpp" startline="76">refreshFutureid</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a648509e469dd086c257dc4bf0a5efe1c" compoundref="MissionPanel_8hpp" startline="78">timerTick</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" compoundref="MissionPanel_8cpp" startline="130" endline="170">waitForRefresh</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1MissionPanel_1a5fb9004e1b68a7d85f772db9b727a729" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::handleSelectTree</definition>
+        <argsstring>(int)</argsstring>
+        <name>handleSelectTree</name>
+        <param>
+          <type>int</type>
+          <defname>selection</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="31" column="10" bodyfile="src/MissionPanel.cpp" bodystart="172" bodyend="182"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a67f36231cf6d5e39146c6277343f28ee" compoundref="MissionPanel_8hpp" startline="64">treeList</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a3cce53c6f8a5275b4b2d8dd216de89c4" compoundref="MissionPanel_8cpp" startline="22" endline="32">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::startTask</definition>
+        <argsstring>()</argsstring>
+        <name>startTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="33" column="10" bodyfile="src/MissionPanel.cpp" bodystart="184" bodyend="210"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" compoundref="MissionPanel_8hpp" startline="80">actionServer</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1af0717b841bcb703ded7e8029f76bcf82" compoundref="MissionPanel_8cpp" startline="222" endline="235">taskCompleteCb</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a9e50130d7aca339bc064cb94a3dc2e81" compoundref="MissionPanel_8cpp" startline="237" endline="240">taskFeedbackCb</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1aa2ebadfcbac8ef84710e6d0adde0329d" compoundref="MissionPanel_8cpp" startline="212" endline="220">taskStartCb</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1MissionPanel_1ae3a19e5b2ca531b93608d9572b136ef7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::cancelTask</definition>
+        <argsstring>()</argsstring>
+        <name>cancelTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="34" column="10" bodyfile="src/MissionPanel.cpp" bodystart="262" bodyend="264"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" compoundref="MissionPanel_8hpp" startline="80">actionServer</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab1f42372c31947dc513fac1f0462dc40" compoundref="MissionPanel_8cpp" startline="242" endline="244">cancelAccept</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1a28464a9a1dd3031ff36c5045ea23b698" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mercury_rviz::MissionPanel::event</definition>
+        <argsstring>(QEvent *event)</argsstring>
+        <name>event</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="37" column="10" bodyfile="src/MissionPanel.cpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1aa2ebadfcbac8ef84710e6d0adde0329d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::taskStartCb</definition>
+        <argsstring>(const GHExecuteTree::SharedPtr &amp;goalHandle)</argsstring>
+        <name>taskStartCb</name>
+        <param>
+          <type>const GHExecuteTree::SharedPtr &amp;</type>
+          <declname>goalHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="40" column="10" bodyfile="src/MissionPanel.cpp" bodystart="212" bodyend="220"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" compoundref="MissionPanel_8cpp" startline="184" endline="210">startTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1ab1f42372c31947dc513fac1f0462dc40" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::cancelAccept</definition>
+        <argsstring>(const action_msgs::srv::CancelGoal::Response::SharedPtr)</argsstring>
+        <name>cancelAccept</name>
+        <param>
+          <type>const action_msgs::srv::CancelGoal::Response::SharedPtr</type>
+          <defname>resp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="41" column="10" bodyfile="src/MissionPanel.cpp" bodystart="242" bodyend="244"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1ae3a19e5b2ca531b93608d9572b136ef7" compoundref="MissionPanel_8cpp" startline="262" endline="264">cancelTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1af0717b841bcb703ded7e8029f76bcf82" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::taskCompleteCb</definition>
+        <argsstring>(const GHExecuteTree::WrappedResult &amp;result)</argsstring>
+        <name>taskCompleteCb</name>
+        <param>
+          <type>const GHExecuteTree::WrappedResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="42" column="10" bodyfile="src/MissionPanel.cpp" bodystart="222" bodyend="235"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" compoundref="MissionPanel_8cpp" startline="184" endline="210">startTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1a9e50130d7aca339bc064cb94a3dc2e81" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::taskFeedbackCb</definition>
+        <argsstring>(GHExecuteTree::SharedPtr goalHandle, ExecuteTree::Feedback::ConstSharedPtr feedback)</argsstring>
+        <name>taskFeedbackCb</name>
+        <param>
+          <type>GHExecuteTree::SharedPtr</type>
+          <declname>goalHandle</declname>
+        </param>
+        <param>
+          <type>ExecuteTree::Feedback::ConstSharedPtr</type>
+          <declname>feedback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="43" column="10" bodyfile="src/MissionPanel.cpp" bodystart="237" bodyend="240"/>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" compoundref="MissionPanel_8cpp" startline="184" endline="210">startTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1ae5604bbd04557058e84687e17c04a812" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::stackCb</definition>
+        <argsstring>(const mercury_msgs::msg::TreeStack &amp;stack)</argsstring>
+        <name>stackCb</name>
+        <param>
+          <type>const mercury_msgs::msg::TreeStack &amp;</type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="47" column="10" bodyfile="src/MissionPanel.cpp" bodystart="246" bodyend="258"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a632a3290386dfa9d12a69ab6df062014" compoundref="MissionPanel_8hpp" startline="61">model</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1ad0c09cd328462193637f9a8f52620160" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::ledCb</definition>
+        <argsstring>(const mercury_msgs::msg::LedCommand &amp;cmd)</argsstring>
+        <name>ledCb</name>
+        <param>
+          <type>const mercury_msgs::msg::LedCommand &amp;</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="50" column="10" bodyfile="src/MissionPanel.cpp" bodystart="260" bodyend="260"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ae575a33a5d4fd05fb11d1dcac854fbb0" compoundref="MissionPanel_8hpp" startline="67">lastLedCommand</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::waitForRefresh</definition>
+        <argsstring>(void)</argsstring>
+        <name>waitForRefresh</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="53" column="10" bodyfile="src/MissionPanel.cpp" bodystart="130" bodyend="170"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" compoundref="MissionPanel_8hpp" startline="74">refreshClient</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a4c517b4b19961f85028764f0a5de9ef8" compoundref="MissionPanel_8hpp" startline="75">refreshFuture</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a6b157a5dcdfde5932d29a9e25718ca40" compoundref="MissionPanel_8hpp" startline="76">refreshFutureid</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a648509e469dd086c257dc4bf0a5efe1c" compoundref="MissionPanel_8hpp" startline="78">timerTick</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1a67f36231cf6d5e39146c6277343f28ee" compoundref="MissionPanel_8hpp" startline="64">treeList</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" compoundref="MissionPanel_8cpp" startline="95" endline="128">refresh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1MissionPanel_1aeb464a14ed0fac68c811a3afd2f455df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::MissionPanel::updateLedReadout</definition>
+        <argsstring>(void)</argsstring>
+        <name>updateLedReadout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="56" column="10" bodyfile="src/MissionPanel.cpp" bodystart="267" bodyend="300"/>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ae575a33a5d4fd05fb11d1dcac854fbb0" compoundref="MissionPanel_8hpp" startline="67">lastLedCommand</references>
+        <references refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" compoundref="MissionPanel_8hpp" startline="58">uiPanel</references>
+        <referencedby refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" compoundref="MissionPanel_8cpp" startline="34" endline="73">load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::MissionPanel</label>
+        <link refid="classmercury__rviz_1_1MissionPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::MissionPanel</label>
+        <link refid="classmercury__rviz_1_1MissionPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/MissionPanel.hpp" line="21" column="1" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="21" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>actionServer</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ab1f42372c31947dc513fac1f0462dc40" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>cancelAccept</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ae3a19e5b2ca531b93608d9572b136ef7" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>cancelTask</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a28464a9a1dd3031ff36c5045ea23b698" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>event</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a5fb9004e1b68a7d85f772db9b727a729" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>handleSelectTree</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ae575a33a5d4fd05fb11d1dcac854fbb0" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>lastLedCommand</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ad0c09cd328462193637f9a8f52620160" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>ledCb</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a5da9007a9690578a7460ac38295d9cbd" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>ledSub</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ab9ca957785371352ab2cf6be006e0c2e" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>ledTimer</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" prot="public" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>load</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ad9cf9cb59973c456e0065d4369212a03" prot="public" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>MissionPanel</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a632a3290386dfa9d12a69ab6df062014" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>model</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a3cce53c6f8a5275b4b2d8dd216de89c4" prot="public" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>onInitialize</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>refresh</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>refreshClient</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a4c517b4b19961f85028764f0a5de9ef8" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>refreshFuture</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a6b157a5dcdfde5932d29a9e25718ca40" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>refreshFutureid</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a883fa54a2164679a969b47bcbcae2a57" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>robot_ns</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1adfa44b694856dcbe7010cbbce9afd038" prot="public" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>save</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ae5604bbd04557058e84687e17c04a812" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>stackCb</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1aa6cd30be3e029ab970ce5bb13b553fc1" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>stackSub</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>startTask</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1af0717b841bcb703ded7e8029f76bcf82" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>taskCompleteCb</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a9e50130d7aca339bc064cb94a3dc2e81" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>taskFeedbackCb</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1aa2ebadfcbac8ef84710e6d0adde0329d" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>taskStartCb</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a648509e469dd086c257dc4bf0a5efe1c" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>timerTick</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a67f36231cf6d5e39146c6277343f28ee" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>treeList</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>uiPanel</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1aeb464a14ed0fac68c811a3afd2f455df" prot="private" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>updateLedReadout</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" prot="protected" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>waitForRefresh</name></member>
+      <member refid="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" prot="public" virt="non-virtual"><scope>mercury_rviz::MissionPanel</scope><name>~MissionPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

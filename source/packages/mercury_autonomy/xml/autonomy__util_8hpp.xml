@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="autonomy__util_8hpp" kind="file" language="C++">
+    <compoundname>autonomy_util.hpp</compoundname>
+    <includes refid="autonomy__base_8hpp" local="yes">mercury_autonomy/autonomy_base.hpp</includes>
+    <includes refid="mercury__bt__node_8hpp" local="yes">mercury_autonomy/mercury_bt_node.hpp</includes>
+    <includedby refid="autonomy__lib_8hpp" local="yes">include/mercury_autonomy/autonomy_lib.hpp</includedby>
+    <includedby refid="autonomy__util_8cpp" local="yes">src/autonomy_util.cpp</includedby>
+    <incdepgraph>
+      <node id="26">
+        <label>std_srvs/srv/set_bool.hpp</label>
+      </node>
+      <node id="1">
+        <label>include/mercury_autonomy/autonomy_util.hpp</label>
+        <link refid="autonomy__util_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="20">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy/autonomy_base.hpp</label>
+        <link refid="autonomy__base_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>nav_msgs/msg/odometry.hpp</label>
+      </node>
+      <node id="18">
+        <label>geometry_msgs/msg/pose.hpp</label>
+      </node>
+      <node id="19">
+        <label>geometry_msgs/msg/transform_stamped.hpp</label>
+      </node>
+      <node id="12">
+        <label>rclcpp_action/rclcpp_action.hpp</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="13">
+        <label>ament_index_cpp/get_package_prefix.hpp</label>
+      </node>
+      <node id="21">
+        <label>geometry_msgs/msg/vector3.hpp</label>
+      </node>
+      <node id="24">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="14">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="27">
+        <label>std_srvs/srv/trigger.hpp</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>behaviortree_cpp/loggers/groot2_publisher.h</label>
+      </node>
+      <node id="8">
+        <label>behaviortree_cpp/behavior_tree.h</label>
+      </node>
+      <node id="17">
+        <label>tf2_geometry_msgs/tf2_geometry_msgs.hpp</label>
+      </node>
+      <node id="9">
+        <label>behaviortree_cpp/bt_factory.h</label>
+      </node>
+      <node id="16">
+        <label>tf2_ros/transform_listener.h</label>
+      </node>
+      <node id="3">
+        <label>chrono</label>
+      </node>
+      <node id="15">
+        <label>tf2_ros/buffer.h</label>
+      </node>
+      <node id="25">
+        <label>std_msgs/msg/string.hpp</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="28">
+        <label>mercury_autonomy/mercury_bt_node.hpp</label>
+        <link refid="mercury__bt__node_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>sensor_msgs/msg/imu.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="65">
+        <label>src/bt_decorators/retry_until_successful_or_timeout.cpp</label>
+        <link refid="retry__until__successful__or__timeout_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/mercury_autonomy/autonomy_util.hpp</label>
+        <link refid="autonomy__util_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>src/tree_executor.cpp</label>
+        <link refid="tree__executor_8cpp"/>
+      </node>
+      <node id="50">
+        <label>include/mercury_autonomy/bt_conditions/approx_equal_to.hpp</label>
+        <link refid="approx__equal__to_8hpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>src/bt_actions/get_mapping_state.cpp</label>
+        <link refid="get__mapping__state_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/bt_actions/set_feedforward_mode.cpp</label>
+        <link refid="set__feedforward__mode_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/mercury_autonomy/bt_actions/apply_feedforward_force.hpp</label>
+        <link refid="apply__feedforward__force_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/bt_actions/call_set_bool_service.cpp</label>
+        <link refid="call__set__bool__service_8cpp"/>
+      </node>
+      <node id="60">
+        <label>src/bt_conditions/is_true.cpp</label>
+        <link refid="is__true_8cpp"/>
+      </node>
+      <node id="19">
+        <label>src/bt_actions/get_float_topic.cpp</label>
+        <link refid="get__float__topic_8cpp"/>
+      </node>
+      <node id="16">
+        <label>include/mercury_autonomy/bt_actions/get_covariance.hpp</label>
+        <link refid="get__covariance_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp</label>
+        <link refid="set__feedforward__mode_8hpp"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>src/bt_actions/get_twist_topic.cpp</label>
+        <link refid="get__twist__topic_8cpp"/>
+      </node>
+      <node id="20">
+        <label>include/mercury_autonomy/bt_actions/get_imu_orientation.hpp</label>
+        <link refid="get__imu__orientation_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>src/bt_conditions/example_condition.cpp</label>
+        <link refid="example__condition_8cpp"/>
+      </node>
+      <node id="41">
+        <label>src/bt_actions/set_mapping_target.cpp</label>
+        <link refid="set__mapping__target_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/bt_actions/publish_bool.cpp</label>
+        <link refid="publish__bool_8cpp"/>
+      </node>
+      <node id="26">
+        <label>include/mercury_autonomy/bt_actions/get_twist_topic.hpp</label>
+        <link refid="get__twist__topic_8hpp"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/bt_actions/get_imu_orientation.cpp</label>
+        <link refid="get__imu__orientation_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/bt_actions/apply_feedforward_force.cpp</label>
+        <link refid="apply__feedforward__force_8cpp"/>
+      </node>
+      <node id="63">
+        <label>src/register_decorators.cpp</label>
+        <link refid="register__decorators_8cpp"/>
+      </node>
+      <node id="24">
+        <label>include/mercury_autonomy/bt_actions/get_odometry.hpp</label>
+        <link refid="get__odometry_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>include/mercury_autonomy/bt_actions/set_mapping_target.hpp</label>
+        <link refid="set__mapping__target_8hpp"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>include/mercury_autonomy/bt_actions/wait_for_detection.hpp</label>
+        <link refid="wait__for__detection_8hpp"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/bt_actions/example_action.cpp</label>
+        <link refid="example__action_8cpp"/>
+      </node>
+      <node id="67">
+        <label>src/autonomy_util.cpp</label>
+        <link refid="autonomy__util_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/bt_actions/compute_frame_alignment.cpp</label>
+        <link refid="compute__frame__alignment_8cpp"/>
+      </node>
+      <node id="28">
+        <label>include/mercury_autonomy/bt_actions/publish_bool.hpp</label>
+        <link refid="publish__bool_8hpp"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>include/mercury_autonomy/bt_actions/publish_twist.hpp</label>
+        <link refid="publish__twist_8hpp"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>include/mercury_autonomy/bt_actions/publish_int8.hpp</label>
+        <link refid="publish__int8_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/bt_actions/publish_int8.cpp</label>
+        <link refid="publish__int8_8cpp"/>
+      </node>
+      <node id="62">
+        <label>src/bt_decorators/example_decorator.cpp</label>
+        <link refid="example__decorator_8cpp"/>
+      </node>
+      <node id="34">
+        <label>include/mercury_autonomy/bt_actions/publish_to_controller.hpp</label>
+        <link refid="publish__to__controller_8hpp"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/bt_actions/call_trigger_service.cpp</label>
+        <link refid="call__trigger__service_8cpp"/>
+      </node>
+      <node id="2">
+        <label>include/mercury_autonomy/autonomy_lib.hpp</label>
+        <link refid="autonomy__lib_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>include/mercury_autonomy/bt_actions/example_action.hpp</label>
+        <link refid="example__action_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>include/mercury_autonomy/bt_actions/get_bool_topic.hpp</label>
+        <link refid="get__bool__topic_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>src/register_conditions.cpp</label>
+        <link refid="register__conditions_8cpp"/>
+      </node>
+      <node id="18">
+        <label>include/mercury_autonomy/bt_actions/get_float_topic.hpp</label>
+        <link refid="get__float__topic_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>include/mercury_autonomy/bt_conditions/is_true.hpp</label>
+        <link refid="is__true_8hpp"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/bt_actions/publish_to_controller.cpp</label>
+        <link refid="publish__to__controller_8cpp"/>
+      </node>
+      <node id="61">
+        <label>include/mercury_autonomy/bt_decorators/example_decorator.hpp</label>
+        <link refid="example__decorator_8hpp"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/bt_actions/get_bool_topic.cpp</label>
+        <link refid="get__bool__topic_8cpp"/>
+      </node>
+      <node id="22">
+        <label>include/mercury_autonomy/bt_actions/get_mapping_state.hpp</label>
+        <link refid="get__mapping__state_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>include/mercury_autonomy/bt_conditions/compare_nums.hpp</label>
+        <link refid="compare__nums_8hpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/bt_actions/publish_twist.cpp</label>
+        <link refid="publish__twist_8cpp"/>
+      </node>
+      <node id="51">
+        <label>src/bt_conditions/approx_equal_to.cpp</label>
+        <link refid="approx__equal__to_8cpp"/>
+      </node>
+      <node id="57">
+        <label>include/mercury_autonomy/bt_conditions/example_condition.hpp</label>
+        <link refid="example__condition_8hpp"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>src/bt_actions/wait_for_kill_switch.cpp</label>
+        <link refid="wait__for__kill__switch_8cpp"/>
+      </node>
+      <node id="44">
+        <label>include/mercury_autonomy/bt_actions/transform_pose.hpp</label>
+        <link refid="transform__pose_8hpp"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp</label>
+        <link refid="compute__frame__alignment_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>src/bt_actions/set_status.cpp</label>
+        <link refid="set__status_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/register_actions.cpp</label>
+        <link refid="register__actions_8cpp"/>
+      </node>
+      <node id="8">
+        <label>include/mercury_autonomy/bt_actions/call_trigger_service.hpp</label>
+        <link refid="call__trigger__service_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>src/bt_conditions/approx_equal_to_angle.cpp</label>
+        <link refid="approx__equal__to__angle_8cpp"/>
+      </node>
+      <node id="48">
+        <label>include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp</label>
+        <link refid="wait__for__kill__switch_8hpp"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp</label>
+        <link refid="publish__ekf__pose_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>include/mercury_autonomy/bt_conditions/approx_equal_to_angle.hpp</label>
+        <link refid="approx__equal__to__angle_8hpp"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>src/bt_actions/transform_pose.cpp</label>
+        <link refid="transform__pose_8cpp"/>
+      </node>
+      <node id="56">
+        <label>src/bt_conditions/compare_nums.cpp</label>
+        <link refid="compare__nums_8cpp"/>
+      </node>
+      <node id="42">
+        <label>include/mercury_autonomy/bt_actions/set_status.hpp</label>
+        <link refid="set__status_8hpp"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>include/mercury_autonomy/bt_decorators/retry_until_successful_or_timeout.hpp</label>
+        <link refid="retry__until__successful__or__timeout_8hpp"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/bt_actions/get_odometry.cpp</label>
+        <link refid="get__odometry_8cpp"/>
+      </node>
+      <node id="17">
+        <label>src/bt_actions/get_covariance.cpp</label>
+        <link refid="get__covariance_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/bt_actions/publish_ekf_pose.cpp</label>
+        <link refid="publish__ekf__pose_8cpp"/>
+      </node>
+      <node id="6">
+        <label>include/mercury_autonomy/bt_actions/call_set_bool_service.hpp</label>
+        <link refid="call__set__bool__service_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>src/bt_actions/wait_for_detection.cpp</label>
+        <link refid="wait__for__detection_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacemercury__autonomy">mercury_autonomy</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Utility<sp/>functions<sp/>for<sp/>the<sp/>mercury_autonomy<sp/>package.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Provides<sp/>plugin<sp/>registration,<sp/>ROS-BT<sp/>tree<sp/>initialization,<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>common<sp/>geometric<sp/>helpers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="autonomy__base_8hpp" kindref="compound">mercury_autonomy/autonomy_base.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mercury__bt__node_8hpp" kindref="compound">mercury_autonomy/mercury_bt_node.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacemercury__autonomy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemercury__autonomy" kindref="compound">mercury_autonomy</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Plugin<sp/>management</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacemercury__autonomy_1a4e5778de35f05d81f019ac30132e2361" kindref="member">registerPlugins</ref>(</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;BT::BehaviorTreeFactory&gt;<sp/>factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>package_name);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacemercury__autonomy_1aaa458e83abff3a971eee37893794773a" kindref="member">initRosForTree</ref>(BT::Tree<sp/>&amp;<sp/>tree,<sp/>rclcpp::Node::SharedPtr<sp/>ros_node);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Environment<sp/>helpers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">std::string<sp/><ref refid="namespacemercury__autonomy_1a0514f512fe6806d1c55f28dff9a772eb" kindref="member">getEnvVar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>name);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Geometry<sp/>helpers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">geometry_msgs::msg::Pose<sp/><ref refid="namespacemercury__autonomy_1aba4492f4c6d8654aef48935afcd1967f" kindref="member">doTransform</ref>(</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Pose<sp/>&amp;<sp/>pose,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::TransformStamped<sp/>&amp;<sp/>transform);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">geometry_msgs::msg::Vector3<sp/><ref refid="namespacemercury__autonomy_1ab533b7063c3bd94aab6546b3e8657260" kindref="member">toRPY</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Quaternion<sp/>&amp;<sp/>quat);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">geometry_msgs::msg::Quaternion<sp/><ref refid="namespacemercury__autonomy_1af20362dbd9637713653dc7064b5403f5" kindref="member">toQuat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Vector3<sp/>&amp;<sp/>rpy);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespacemercury__autonomy_1a9ff870c0c78f8059a629444f1253a117" kindref="member">distance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Point<sp/>&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Point<sp/>&amp;<sp/>b);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mercury_autonomy</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_autonomy/autonomy_util.hpp"/>
+  </compounddef>
+</doxygen>

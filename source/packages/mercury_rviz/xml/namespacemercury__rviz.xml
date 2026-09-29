@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacemercury__rviz" kind="namespace" language="C++">
+    <compoundname>mercury_rviz</compoundname>
+    <innerclass refid="classmercury__rviz_1_1ControlPanel" prot="public">mercury_rviz::ControlPanel</innerclass>
+    <innerclass refid="classmercury__rviz_1_1DiagnosticOverlay" prot="public">mercury_rviz::DiagnosticOverlay</innerclass>
+    <innerclass refid="classmercury__rviz_1_1DiagnosticsPanel" prot="public">mercury_rviz::DiagnosticsPanel</innerclass>
+    <innerclass refid="classmercury__rviz_1_1ElectricalPanel" prot="public">mercury_rviz::ElectricalPanel</innerclass>
+    <innerclass refid="classmercury__rviz_1_1FeedforwardPanel" prot="public">mercury_rviz::FeedforwardPanel</innerclass>
+    <innerclass refid="classmercury__rviz_1_1MappingPanel" prot="public">mercury_rviz::MappingPanel</innerclass>
+    <innerclass refid="classmercury__rviz_1_1MissionPanel" prot="public">mercury_rviz::MissionPanel</innerclass>
+    <innerclass refid="classmercury__rviz_1_1ScopedPixelBuffer" prot="public">mercury_rviz::ScopedPixelBuffer</innerclass>
+    <innerclass refid="classmercury__rviz_1_1OverlayObject" prot="public">mercury_rviz::OverlayObject</innerclass>
+    <innerclass refid="structmercury__rviz_1_1PaintedTextConfig" prot="public">mercury_rviz::PaintedTextConfig</innerclass>
+    <innerclass refid="structmercury__rviz_1_1PaintedCircleConfig" prot="public">mercury_rviz::PaintedCircleConfig</innerclass>
+    <innerclass refid="structmercury__rviz_1_1PaintedArcConfig" prot="public">mercury_rviz::PaintedArcConfig</innerclass>
+    <innerclass refid="classmercury__rviz_1_1OverlayDisplay" prot="public">mercury_rviz::OverlayDisplay</innerclass>
+    <innerclass refid="classmercury__rviz_1_1ParamPanel" prot="public">mercury_rviz::ParamPanel</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526ee" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>VerticalAlignment</name>
+        <enumvalue id="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eeac397289ee45877be0cd49811fe245b4e" prot="public">
+          <name>CENTER</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eea6705777b712ee811e76fb07162081d63" prot="public">
+          <name>TOP</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eea1fabf63de5c96c78e2a40805bcdeb73b" prot="public">
+          <name>BOTTOM</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="73" column="1" bodyfile="include/mercury_rviz/overlay_utils.hpp" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>HorizontalAlignment</name>
+        <enumvalue id="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38a684d325a7303f52e64011467ff5c5758" prot="public">
+          <name>LEFT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38a21507b40c80068eda19865706fdc2403" prot="public">
+          <name>RIGHT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38ac397289ee45877be0cd49811fe245b4e" prot="public">
+          <name>CENTER</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/overlay_utils.hpp" line="79" column="1" bodyfile="include/mercury_rviz/overlay_utils.hpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacemercury__rviz_1a28d78b99a3929a78f47b0aa4a144c306" prot="public" static="no">
+        <type>mercury_msgs::action::ExecuteTree</type>
+        <definition>using mercury_rviz::ExecuteTree = typedef mercury_msgs::action::ExecuteTree</definition>
+        <argsstring></argsstring>
+        <name>ExecuteTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="18" column="1" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacemercury__rviz_1acfea64254908de8a3a71d7afd6e991d5" prot="public" static="no">
+        <type>rclcpp_action::ClientGoalHandle&lt; <ref refid="namespacemercury__rviz_1a28d78b99a3929a78f47b0aa4a144c306" kindref="member">ExecuteTree</ref> &gt;</type>
+        <definition>using mercury_rviz::GHExecuteTree = typedef rclcpp_action::ClientGoalHandle&lt;ExecuteTree&gt;</definition>
+        <argsstring></argsstring>
+        <name>GHExecuteTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/MissionPanel.hpp" line="19" column="1" bodyfile="include/mercury_rviz/MissionPanel.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemercury__rviz_1a239eb35041f36e0fac6ec5b6a2e1468a" prot="public" static="yes" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string mercury_rviz::MAG_CAL_ACTION_NAME</definition>
+        <argsstring></argsstring>
+        <name>MAG_CAL_ACTION_NAME</name>
+        <initializer>= &quot;/vectornav/mag_cal&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/ElectricalPanel.hpp" line="16" column="26" bodyfile="include/mercury_rviz/ElectricalPanel.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1ElectricalPanel_1aedcfb6bc63771fa38a0233455e95979c" compoundref="ElectricalPanel_8cpp" startline="24" endline="53">mercury_rviz::ElectricalPanel::load</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemercury__rviz_1ae40f34ecdb01affdab5b29531a290bbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mercury_rviz::getFromConfig</definition>
+        <argsstring>(const rviz_common::Config &amp;config, const QString &amp;key, const QString &amp;defaultValue)</argsstring>
+        <name>getFromConfig</name>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/MappingPanel.cpp" line="15" column="13" bodyfile="src/MappingPanel.cpp" bodystart="15" bodyend="27"/>
+        <referencedby refid="classmercury__rviz_1_1MappingPanel_1af5f43105ff3af8a9f3f895e9be43bc45" compoundref="MappingPanel_8cpp" startline="53" endline="96">mercury_rviz::MappingPanel::load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_rviz/ControlPanel.hpp" line="40" column="1"/>
+  </compounddef>
+</doxygen>

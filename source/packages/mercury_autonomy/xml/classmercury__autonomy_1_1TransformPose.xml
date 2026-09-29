@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1TransformPose" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::TransformPose</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="transform__pose_8hpp" local="no">transform_pose.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TransformPose_1a16b284730e1467cc8a069557577a578a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::TransformPose::from_frame_</definition>
+        <argsstring></argsstring>
+        <name>from_frame_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="54" column="17" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" compoundref="transform__pose_8cpp" startline="11" endline="43">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TransformPose_1ab71c42ab5715c6eb5e722671ae37e058" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::TransformPose::to_frame_</definition>
+        <argsstring></argsstring>
+        <name>to_frame_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="55" column="17" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" compoundref="transform__pose_8cpp" startline="11" endline="43">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TransformPose_1a86c19ea0c35296c3dda7f84ff2bf9f48" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::Pose</type>
+        <definition>geometry_msgs::msg::Pose mercury_autonomy::TransformPose::original_</definition>
+        <argsstring></argsstring>
+        <name>original_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="56" column="30" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" compoundref="transform__pose_8cpp" startline="11" endline="43">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TransformPose_1a60ff87da4f3a51162230b16865906c0e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::TransformPose::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="57" column="18" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" compoundref="transform__pose_8cpp" startline="11" endline="43">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TransformPose_1ad78c4b3042c2de5de0d778b8468cce91" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::TransformPose::timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>timeout_sec_</name>
+        <initializer>= 3.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="58" column="12" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" compoundref="transform__pose_8cpp" startline="11" endline="43">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1TransformPose_1a11c8bb1d6d765528bec4dcda6a4de5b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::TransformPose::TransformPose</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>TransformPose</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="23" column="5" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="23" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::TransformPose::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="46" column="20" bodyfile="src/bt_actions/transform_pose.cpp" bodystart="11" bodyend="43"/>
+        <references refid="classmercury__autonomy_1_1TransformPose_1a16b284730e1467cc8a069557577a578a" compoundref="transform__pose_8hpp" startline="54">from_frame_</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1a86c19ea0c35296c3dda7f84ff2bf9f48" compoundref="transform__pose_8hpp" startline="56">original_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1a60ff87da4f3a51162230b16865906c0e" compoundref="transform__pose_8hpp" startline="57">start_time_</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1ad78c4b3042c2de5de0d778b8468cce91" compoundref="transform__pose_8hpp" startline="58">timeout_sec_</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1ab71c42ab5715c6eb5e722671ae37e058" compoundref="transform__pose_8hpp" startline="55">to_frame_</references>
+        <references refid="namespacemercury__autonomy_1af20362dbd9637713653dc7064b5403f5" compoundref="autonomy__util_8cpp" startline="77" endline="82">mercury_autonomy::toQuat</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::TransformPose::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="47" column="20" bodyfile="src/bt_actions/transform_pose.cpp" bodystart="45" bodyend="79"/>
+        <references refid="namespacemercury__autonomy_1aba4492f4c6d8654aef48935afcd1967f" compoundref="autonomy__util_8cpp" startline="61" endline="66">mercury_autonomy::doTransform</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1a16b284730e1467cc8a069557577a578a" compoundref="transform__pose_8hpp" startline="54">from_frame_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" compoundref="mercury__bt__node_8cpp" startline="30" endline="44">mercury_autonomy::MercuryBtNode::lookupTransform</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1a86c19ea0c35296c3dda7f84ff2bf9f48" compoundref="transform__pose_8hpp" startline="56">original_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1a60ff87da4f3a51162230b16865906c0e" compoundref="transform__pose_8hpp" startline="57">start_time_</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1ad78c4b3042c2de5de0d778b8468cce91" compoundref="transform__pose_8hpp" startline="58">timeout_sec_</references>
+        <references refid="classmercury__autonomy_1_1TransformPose_1ab71c42ab5715c6eb5e722671ae37e058" compoundref="transform__pose_8hpp" startline="55">to_frame_</references>
+        <references refid="namespacemercury__autonomy_1ab533b7063c3bd94aab6546b3e8657260" compoundref="autonomy__util_8cpp" startline="68" endline="75">mercury_autonomy::toRPY</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TransformPose_1a3a148e8b0ac09a4dc6dc1d783b85696a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::TransformPose::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="48" column="10" bodyfile="src/bt_actions/transform_pose.cpp" bodystart="81" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1TransformPose_1a4cbd26f8ce2dc232c66179ce89300a61" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::TransformPose::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="26" column="26" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="26" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1TransformPose_1aa2475addc195f7b31ae38125e143afcc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::TransformPose::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="51" column="10" bodyfile="src/bt_actions/transform_pose.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::TransformPose</label>
+        <link refid="classmercury__autonomy_1_1TransformPose"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::TransformPose</label>
+        <link refid="classmercury__autonomy_1_1TransformPose"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/transform_pose.hpp" line="21" column="1" bodyfile="include/mercury_autonomy/bt_actions/transform_pose.hpp" bodystart="21" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a16b284730e1467cc8a069557577a578a" prot="private" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>from_frame_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a3a148e8b0ac09a4dc6dc1d783b85696a" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a86c19ea0c35296c3dda7f84ff2bf9f48" prot="private" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>original_</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a4cbd26f8ce2dc232c66179ce89300a61" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1aa2475addc195f7b31ae38125e143afcc" prot="protected" virt="virtual"><scope>mercury_autonomy::TransformPose</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a60ff87da4f3a51162230b16865906c0e" prot="private" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1ad78c4b3042c2de5de0d778b8468cce91" prot="private" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>timeout_sec_</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1ab71c42ab5715c6eb5e722671ae37e058" prot="private" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>to_frame_</name></member>
+      <member refid="classmercury__autonomy_1_1TransformPose_1a11c8bb1d6d765528bec4dcda6a4de5b0" prot="public" virt="non-virtual"><scope>mercury_autonomy::TransformPose</scope><name>TransformPose</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::TransformPose</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::TransformPose</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

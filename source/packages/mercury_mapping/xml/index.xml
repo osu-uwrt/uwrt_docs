@@ -1,0 +1,68 @@
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classlocation_1_1Location" kind="class"><name>location::Location</name>
+    <member refid="classlocation_1_1Location_1af9a18a8b4f0b925aacc72c01f98c050b" kind="variable"><name>initial_pose_xyz</name></member>
+    <member refid="classlocation_1_1Location_1a32b8da6067cfeb870e9700bf6ea8ac2b" kind="variable"><name>initial_pose_rpy</name></member>
+    <member refid="classlocation_1_1Location_1a2d6f759539b3143d16e3f5a1fbfbc373" kind="variable"><name>buffer_size</name></member>
+    <member refid="classlocation_1_1Location_1a0e5230ff8e4691d1cbd40ec364a08c14" kind="variable"><name>quantile</name></member>
+    <member refid="classlocation_1_1Location_1a13b19385aae5d49407c5af5a6d126eed" kind="variable"><name>position</name></member>
+    <member refid="classlocation_1_1Location_1ab1c2186154dcc17c731f71ee70fcece7" kind="variable"><name>orientation</name></member>
+    <member refid="classlocation_1_1Location_1a0919f3f09ab1da235b4836bdc47c7abd" kind="variable"><name>buffer_warm</name></member>
+    <member refid="classlocation_1_1Location_1a986c83694798f149efc2a67bf50891ee" kind="variable"><name>position_location</name></member>
+    <member refid="classlocation_1_1Location_1a83fe20b69165db8156d2ce055512b726" kind="variable"><name>orientation_location</name></member>
+    <member refid="classlocation_1_1Location_1a0218575c63caef7653b4fba203040a90" kind="function"><name>__init__</name></member>
+    <member refid="classlocation_1_1Location_1a2d815e1b05b88314512a0a7c8b926ef9" kind="function"><name>reset</name></member>
+    <member refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" kind="function"><name>add_pose</name></member>
+    <member refid="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" kind="function"><name>get_pose</name></member>
+    <member refid="classlocation_1_1Location_1accdf07a1d5282431edfbe34f9c1dc0c1" kind="function"><name>cool_buffer</name></member>
+  </compound>
+  <compound refid="classmapping_1_1MappingNode" kind="class"><name>mapping::MappingNode</name>
+    <member refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" kind="variable"><name>objects</name></member>
+    <member refid="classmapping_1_1MappingNode_1a3c39931c81161984226c587dd9df170a" kind="variable"><name>downwards_objects</name></member>
+    <member refid="classmapping_1_1MappingNode_1a57ef822601ae8904749dd1cf3edd5064" kind="variable"><name>tf_buffer</name></member>
+    <member refid="classmapping_1_1MappingNode_1ad2ad52064a1e243e0cd275a53e96157a" kind="variable"><name>tf_listener</name></member>
+    <member refid="classmapping_1_1MappingNode_1a4d2c431f9e1b7096f79c02c5ff27566f" kind="variable"><name>tf_brod</name></member>
+    <member refid="classmapping_1_1MappingNode_1a42ba4ab73668ad0bfd04bf42288dd4b9" kind="variable"><name>target_object</name></member>
+    <member refid="classmapping_1_1MappingNode_1af121cae18c5a797f02af4f4d4cf1edf2" kind="variable"><name>lock_map</name></member>
+    <member refid="classmapping_1_1MappingNode_1ad7fdc775193ab18914e42b43c309791c" kind="variable"><name>offset</name></member>
+    <member refid="classmapping_1_1MappingNode_1aace0b37c40e400d75e2b610ecaacf04c" kind="variable"><name>status_pub</name></member>
+    <member refid="classmapping_1_1MappingNode_1aecc5c77f48f02715a49983b36838ce37" kind="variable"><name>led_pulse_pub</name></member>
+    <member refid="classmapping_1_1MappingNode_1a1e423045d6d58abe360c9a7c16938501" kind="variable"><name>last_pub_time</name></member>
+    <member refid="classmapping_1_1MappingNode_1ab7597f2a8057f7efc301565906eca0ab" kind="variable"><name>publish_timer</name></member>
+    <member refid="classmapping_1_1MappingNode_1ae46f85796911ab4b3dc46b7a23f4ebab" kind="variable"><name>outstanding_detections</name></member>
+    <member refid="classmapping_1_1MappingNode_1aaef2f29bdb67919d06797a6f7dcdf606" kind="function"><name>__init__</name></member>
+    <member refid="classmapping_1_1MappingNode_1ab056a5be2a4bd999db8157c7c933ab1e" kind="function"><name>create_location</name></member>
+    <member refid="classmapping_1_1MappingNode_1a7455e2d48c6dc8ad2902c1857f45c708" kind="function"><name>add_publisher</name></member>
+    <member refid="classmapping_1_1MappingNode_1ad5637f596de02e95ff30bc404078f823" kind="function"><name>param_callback</name></member>
+    <member refid="classmapping_1_1MappingNode_1acdbe98da819ce9081731777ec21b4736" kind="function"><name>target_callback</name></member>
+    <member refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" kind="function"><name>vision_callback</name></member>
+    <member refid="classmapping_1_1MappingNode_1a0c020a197b4724ed277647d9d9a1e2d1" kind="function"><name>update_outstanding_detections</name></member>
+    <member refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" kind="function"><name>try_update_pose</name></member>
+    <member refid="classmapping_1_1MappingNode_1a16780664c08cb266769b1696b44b759a" kind="function"><name>closest_object</name></member>
+    <member refid="classmapping_1_1MappingNode_1ae5c280be36a1982f7e229fb7edca2ff5" kind="function"><name>update_oustanding_items</name></member>
+    <member refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" kind="function"><name>publish_pose</name></member>
+  </compound>
+  <compound refid="classmapping_1_1OutstandingDetectionInfo" kind="class"><name>mapping::OutstandingDetectionInfo</name>
+    <member refid="classmapping_1_1OutstandingDetectionInfo_1ae6322a5140ea70ae323781e883346c92" kind="variable"><name>det_result</name></member>
+    <member refid="classmapping_1_1OutstandingDetectionInfo_1ad8cccc3b41f3e45f3914c333d209a922" kind="variable"><name>det_header</name></member>
+    <member refid="classmapping_1_1OutstandingDetectionInfo_1a58f6954709ece7c667703637b793be0a" kind="variable"><name>closest_object</name></member>
+    <member refid="classmapping_1_1OutstandingDetectionInfo_1aede2e75e04677dd8cb270f0440a2ebbe" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classmapping_1_1TransformListenerWithHook" kind="class"><name>mapping::TransformListenerWithHook</name>
+    <member refid="classmapping_1_1TransformListenerWithHook_1a9300e36e2267e3c8457ee884966c4a42" kind="variable"><name>hook</name></member>
+    <member refid="classmapping_1_1TransformListenerWithHook_1a0bd0420c0e772e31c266a6cf9b2129a7" kind="function"><name>__init__</name></member>
+    <member refid="classmapping_1_1TransformListenerWithHook_1a1884a38fe0207b05468196eb730a51dd" kind="function"><name>callback</name></member>
+  </compound>
+  <compound refid="namespacelocation" kind="namespace"><name>location</name>
+    <member refid="namespacelocation_1a458865b076a0273ae53af0a64aa9a744" kind="function"><name>remove_outliers</name></member>
+  </compound>
+  <compound refid="namespacemapping" kind="namespace"><name>mapping</name>
+    <member refid="namespacemapping_1ab4ef7f40c89f4b3812cc6e1efca69864" kind="variable"><name>STALE_TIME</name></member>
+    <member refid="namespacemapping_1ae5a7f537e234a9fc79e92c361d536e41" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="location_8py" kind="file"><name>location.py</name>
+  </compound>
+  <compound refid="mapping_8py" kind="file"><name>mapping.py</name>
+  </compound>
+  <compound refid="dir_4ed08d293efea4af9b6f41ba25a9d37d" kind="dir"><name>mercury_mapping</name>
+  </compound>
+</doxygenindex>

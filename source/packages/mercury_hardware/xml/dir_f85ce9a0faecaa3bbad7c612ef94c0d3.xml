@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_f85ce9a0faecaa3bbad7c612ef94c0d3" kind="dir">
+    <compoundname>mercury_hardware</compoundname>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="depth__converter_8py">depth_converter.py</innerfile>
+    <innerfile refid="tag__odom_8py">tag_odom.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_hardware/"/>
+  </compounddef>
+</doxygen>

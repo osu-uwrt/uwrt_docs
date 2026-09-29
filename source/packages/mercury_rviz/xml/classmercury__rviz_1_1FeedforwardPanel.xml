@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__rviz_1_1FeedforwardPanel" kind="class" language="C++" prot="public">
+    <compoundname>mercury_rviz::FeedforwardPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="FeedforwardPanel_8hpp" local="no">FeedforwardPanel.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1a36e632db1287d017c82653a0c0020fe8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::FeedforwardPanel::loaded</definition>
+        <argsstring></argsstring>
+        <name>loaded</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="36" column="10" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a207e24ab7c5f9d138418b620d8d688fe" compoundref="FeedforwardPanel_8cpp" startline="23" endline="43">load</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1aae146b84e07227a9369d63fed4a3d931" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::FeedforwardPanel::publishing</definition>
+        <argsstring></argsstring>
+        <name>publishing</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="36" column="18" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a12ac3f5a5047160644502ab7ac322d43" compoundref="FeedforwardPanel_8cpp" startline="104" endline="113">togglePublish</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1a6378d2808abe116f5725868fdc1058b7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::FeedforwardPanel::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="38" column="9" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" prot="private" static="no" mutable="no">
+        <type>Ui_FeedforwardPanel *</type>
+        <definition>Ui_FeedforwardPanel* mercury_rviz::FeedforwardPanel::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="39" column="26" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a9ca8d1c40b9001e494e1e0cd0db4bc95" compoundref="FeedforwardPanel_8cpp" startline="14" endline="19">FeedforwardPanel</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a5152fc92055a833a441e31e50287cad9" compoundref="FeedforwardPanel_8cpp" startline="94" endline="97">PFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a89a876644f38652d5ee999a472657238" compoundref="FeedforwardPanel_8cpp" startline="89" endline="92">RFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a12ac3f5a5047160644502ab7ac322d43" compoundref="FeedforwardPanel_8cpp" startline="104" endline="113">togglePublish</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1acee552cfe028b048a0bd54a11153321a" compoundref="FeedforwardPanel_8cpp" startline="74" endline="77">XFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab062c862481d46f8bccefbffefc25255" compoundref="FeedforwardPanel_8cpp" startline="99" endline="102">YAWFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a0bebd282c36708fd2f0806e2a67785e8" compoundref="FeedforwardPanel_8cpp" startline="79" endline="82">YFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1aa8b5261d5c104e5ad4d50f5e1f8a4328" compoundref="FeedforwardPanel_8cpp" startline="84" endline="87">ZFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a656ad8d8e2c61d2f725971660e31a0f0" compoundref="FeedforwardPanel_8cpp" startline="21" endline="21">~FeedforwardPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1afb44d614ec3120a29cd5c3f65d312271" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString mercury_rviz::FeedforwardPanel::robotNs</definition>
+        <argsstring></argsstring>
+        <name>robotNs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="40" column="13" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a207e24ab7c5f9d138418b620d8d688fe" compoundref="FeedforwardPanel_8cpp" startline="23" endline="43">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1adad54f4b4cb2bc92f91906972d5a5326" compoundref="FeedforwardPanel_8cpp" startline="45" endline="48">save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1a8dfe8fcee7bd59176b511e8b70514ed3" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr mercury_rviz::FeedforwardPanel::pubTimer</definition>
+        <argsstring></argsstring>
+        <name>pubTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="42" column="34" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a207e24ab7c5f9d138418b620d8d688fe" compoundref="FeedforwardPanel_8cpp" startline="23" endline="43">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a12ac3f5a5047160644502ab7ac322d43" compoundref="FeedforwardPanel_8cpp" startline="104" endline="113">togglePublish</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1a22ca7b79786a8cf2233c1c78748215b1" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::Twist &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::Twist&gt;::SharedPtr mercury_rviz::FeedforwardPanel::ffForcePub</definition>
+        <argsstring></argsstring>
+        <name>ffForcePub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="43" column="35" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a207e24ab7c5f9d138418b620d8d688fe" compoundref="FeedforwardPanel_8cpp" startline="23" endline="43">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1acafffa376cb7d3ba06b99b8a29891f13" compoundref="FeedforwardPanel_8cpp" startline="115" endline="115">timerCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::Twist</type>
+        <definition>geometry_msgs::msg::Twist mercury_rviz::FeedforwardPanel::msgToPublish</definition>
+        <argsstring></argsstring>
+        <name>msgToPublish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="44" column="31" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a5152fc92055a833a441e31e50287cad9" compoundref="FeedforwardPanel_8cpp" startline="94" endline="97">PFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a89a876644f38652d5ee999a472657238" compoundref="FeedforwardPanel_8cpp" startline="89" endline="92">RFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1acafffa376cb7d3ba06b99b8a29891f13" compoundref="FeedforwardPanel_8cpp" startline="115" endline="115">timerCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1acee552cfe028b048a0bd54a11153321a" compoundref="FeedforwardPanel_8cpp" startline="74" endline="77">XFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab062c862481d46f8bccefbffefc25255" compoundref="FeedforwardPanel_8cpp" startline="99" endline="102">YAWFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a0bebd282c36708fd2f0806e2a67785e8" compoundref="FeedforwardPanel_8cpp" startline="79" endline="82">YFunction</referencedby>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1aa8b5261d5c104e5ad4d50f5e1f8a4328" compoundref="FeedforwardPanel_8cpp" startline="84" endline="87">ZFunction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1FeedforwardPanel_1a9ca8d1c40b9001e494e1e0cd0db4bc95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::FeedforwardPanel::FeedforwardPanel</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>FeedforwardPanel</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="17" column="5" bodyfile="src/FeedforwardPanel.cpp" bodystart="14" bodyend="19"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1FeedforwardPanel_1a656ad8d8e2c61d2f725971660e31a0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::FeedforwardPanel::~FeedforwardPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~FeedforwardPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="18" column="5" bodyfile="src/FeedforwardPanel.cpp" bodystart="21" bodyend="21"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1FeedforwardPanel_1a207e24ab7c5f9d138418b620d8d688fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="20" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="23" bodyend="43"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a22ca7b79786a8cf2233c1c78748215b1" compoundref="FeedforwardPanel_8hpp" startline="43">ffForcePub</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a36e632db1287d017c82653a0c0020fe8" compoundref="FeedforwardPanel_8hpp" startline="36">loaded</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a8dfe8fcee7bd59176b511e8b70514ed3" compoundref="FeedforwardPanel_8hpp" startline="42">pubTimer</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1afb44d614ec3120a29cd5c3f65d312271" compoundref="FeedforwardPanel_8hpp" startline="40">robotNs</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1acafffa376cb7d3ba06b99b8a29891f13" compoundref="FeedforwardPanel_8cpp" startline="115" endline="115">timerCb</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1FeedforwardPanel_1adad54f4b4cb2bc92f91906972d5a5326" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="21" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="45" bodyend="48"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1afb44d614ec3120a29cd5c3f65d312271" compoundref="FeedforwardPanel_8hpp" startline="40">robotNs</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="22" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="51" bodyend="71"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a5152fc92055a833a441e31e50287cad9" compoundref="FeedforwardPanel_8cpp" startline="94" endline="97">PFunction</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a89a876644f38652d5ee999a472657238" compoundref="FeedforwardPanel_8cpp" startline="89" endline="92">RFunction</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a12ac3f5a5047160644502ab7ac322d43" compoundref="FeedforwardPanel_8cpp" startline="104" endline="113">togglePublish</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1acee552cfe028b048a0bd54a11153321a" compoundref="FeedforwardPanel_8cpp" startline="74" endline="77">XFunction</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab062c862481d46f8bccefbffefc25255" compoundref="FeedforwardPanel_8cpp" startline="99" endline="102">YAWFunction</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a0bebd282c36708fd2f0806e2a67785e8" compoundref="FeedforwardPanel_8cpp" startline="79" endline="82">YFunction</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1aa8b5261d5c104e5ad4d50f5e1f8a4328" compoundref="FeedforwardPanel_8cpp" startline="84" endline="87">ZFunction</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classmercury__rviz_1_1FeedforwardPanel_1acee552cfe028b048a0bd54a11153321a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::XFunction</definition>
+        <argsstring>(double value)</argsstring>
+        <name>XFunction</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="25" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="74" bodyend="77"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" compoundref="FeedforwardPanel_8hpp" startline="44">msgToPublish</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1FeedforwardPanel_1a0bebd282c36708fd2f0806e2a67785e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::YFunction</definition>
+        <argsstring>(double value)</argsstring>
+        <name>YFunction</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="26" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="79" bodyend="82"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" compoundref="FeedforwardPanel_8hpp" startline="44">msgToPublish</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1FeedforwardPanel_1aa8b5261d5c104e5ad4d50f5e1f8a4328" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::ZFunction</definition>
+        <argsstring>(double value)</argsstring>
+        <name>ZFunction</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="27" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="84" bodyend="87"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" compoundref="FeedforwardPanel_8hpp" startline="44">msgToPublish</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1FeedforwardPanel_1a89a876644f38652d5ee999a472657238" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::RFunction</definition>
+        <argsstring>(double value)</argsstring>
+        <name>RFunction</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="28" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="89" bodyend="92"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" compoundref="FeedforwardPanel_8hpp" startline="44">msgToPublish</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1FeedforwardPanel_1a5152fc92055a833a441e31e50287cad9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::PFunction</definition>
+        <argsstring>(double value)</argsstring>
+        <name>PFunction</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="29" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="94" bodyend="97"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" compoundref="FeedforwardPanel_8hpp" startline="44">msgToPublish</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1FeedforwardPanel_1ab062c862481d46f8bccefbffefc25255" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::YAWFunction</definition>
+        <argsstring>(double value)</argsstring>
+        <name>YAWFunction</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="30" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="99" bodyend="102"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" compoundref="FeedforwardPanel_8hpp" startline="44">msgToPublish</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1FeedforwardPanel_1a12ac3f5a5047160644502ab7ac322d43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::togglePublish</definition>
+        <argsstring>()</argsstring>
+        <name>togglePublish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="31" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="104" bodyend="113"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1aae146b84e07227a9369d63fed4a3d931" compoundref="FeedforwardPanel_8hpp" startline="36">publishing</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a8dfe8fcee7bd59176b511e8b70514ed3" compoundref="FeedforwardPanel_8hpp" startline="42">pubTimer</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" compoundref="FeedforwardPanel_8hpp" startline="39">ui</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" compoundref="FeedforwardPanel_8cpp" startline="51" endline="71">onInitialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1FeedforwardPanel_1acafffa376cb7d3ba06b99b8a29891f13" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::FeedforwardPanel::timerCb</definition>
+        <argsstring>()</argsstring>
+        <name>timerCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="34" column="10" bodyfile="src/FeedforwardPanel.cpp" bodystart="115" bodyend="115"/>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a22ca7b79786a8cf2233c1c78748215b1" compoundref="FeedforwardPanel_8hpp" startline="43">ffForcePub</references>
+        <references refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" compoundref="FeedforwardPanel_8hpp" startline="44">msgToPublish</references>
+        <referencedby refid="classmercury__rviz_1_1FeedforwardPanel_1a207e24ab7c5f9d138418b620d8d688fe" compoundref="FeedforwardPanel_8cpp" startline="23" endline="43">load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::FeedforwardPanel</label>
+        <link refid="classmercury__rviz_1_1FeedforwardPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::FeedforwardPanel</label>
+        <link refid="classmercury__rviz_1_1FeedforwardPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/FeedforwardPanel.hpp" line="14" column="1" bodyfile="include/mercury_rviz/FeedforwardPanel.hpp" bodystart="14" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a6378d2808abe116f5725868fdc1058b7" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>counter</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a9ca8d1c40b9001e494e1e0cd0db4bc95" prot="public" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>FeedforwardPanel</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a22ca7b79786a8cf2233c1c78748215b1" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>ffForcePub</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a207e24ab7c5f9d138418b620d8d688fe" prot="public" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>load</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a36e632db1287d017c82653a0c0020fe8" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>loaded</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a97dbfecea7817113f25bd7793bae1b66" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>msgToPublish</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1ab292a91b813d26ad9cad50d86b7adb93" prot="public" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>onInitialize</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a5152fc92055a833a441e31e50287cad9" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>PFunction</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1aae146b84e07227a9369d63fed4a3d931" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>publishing</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a8dfe8fcee7bd59176b511e8b70514ed3" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>pubTimer</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a89a876644f38652d5ee999a472657238" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>RFunction</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1afb44d614ec3120a29cd5c3f65d312271" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>robotNs</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1adad54f4b4cb2bc92f91906972d5a5326" prot="public" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>save</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1acafffa376cb7d3ba06b99b8a29891f13" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>timerCb</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a12ac3f5a5047160644502ab7ac322d43" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>togglePublish</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1ab34f853b5c3685b8974c6e811e5a2c12" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>ui</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1acee552cfe028b048a0bd54a11153321a" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>XFunction</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1ab062c862481d46f8bccefbffefc25255" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>YAWFunction</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a0bebd282c36708fd2f0806e2a67785e8" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>YFunction</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1aa8b5261d5c104e5ad4d50f5e1f8a4328" prot="private" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>ZFunction</name></member>
+      <member refid="classmercury__rviz_1_1FeedforwardPanel_1a656ad8d8e2c61d2f725971660e31a0f0" prot="public" virt="non-virtual"><scope>mercury_rviz::FeedforwardPanel</scope><name>~FeedforwardPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacethruster__wrench__publisher" kind="namespace" language="Python">
+    <compoundname>thruster_wrench_publisher</compoundname>
+    <innerclass refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher" prot="public">thruster_wrench_publisher::ThrusterWrenchPublisher</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacethruster__wrench__publisher_1a0ac821dffb4a283bb32d9e08f92fbd71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_wrench_publisher.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_wrench_publisher.py" line="69" column="1" bodyfile="mercury_controller/thruster_wrench_publisher.py" bodystart="69" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_controller/thruster_wrench_publisher.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

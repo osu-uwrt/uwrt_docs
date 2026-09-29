@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="overseer__util_8hpp" kind="file" language="C++">
+    <compoundname>overseer_util.hpp</compoundname>
+    <includes local="no">yaml-cpp/yaml.h</includes>
+    <includes local="no">eigen3/Eigen/Dense</includes>
+    <includedby refid="controller__overseer_8hpp" local="yes">include/mercury_controller/controller_overseer.hpp</includedby>
+    <includedby refid="overseer__util_8cpp" local="no">src/overseer_util.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mercury_controller/overseer_util.hpp</label>
+        <link refid="overseer__util_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="2">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/mercury_controller/overseer_util.hpp</label>
+        <link refid="overseer__util_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/overseer_util.cpp</label>
+        <link refid="overseer__util_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/simulink_model.cpp</label>
+        <link refid="simulink__model_8cpp"/>
+      </node>
+      <node id="2">
+        <label>include/mercury_controller/controller_overseer.hpp</label>
+        <link refid="controller__overseer_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/controller_overseer.cpp</label>
+        <link refid="controller__overseer_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="overseer__util_8hpp_1aaf6b0d0c004f0595c8ed00771151ab36" prot="public" static="no">
+        <type>Eigen::Vector3d</type>
+        <definition>using v3d =  Eigen::Vector3d</definition>
+        <argsstring></argsstring>
+        <name>v3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/overseer_util.hpp" line="7" column="1" bodyfile="include/mercury_controller/overseer_util.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="overseer__util_8hpp_1ae1cc94403d67e0ece547c840bc2a60b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T getYamlNodeAs</definition>
+        <argsstring>(const YAML::Node &amp;n, const std::vector&lt; std::string &gt; &amp;keywords)</argsstring>
+        <name>getYamlNodeAs</name>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref> &gt; &amp;</type>
+          <declname>keywords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/overseer_util.hpp" line="13" column="3" bodyfile="include/mercury_controller/overseer_util.hpp" bodystart="13" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="overseer__util_8hpp_1ad6ab8f1b7402063f1cd8281f51792cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d std2v3d</definition>
+        <argsstring>(std::vector&lt; double &gt; stdVect)</argsstring>
+        <name>std2v3d</name>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>stdVect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/overseer_util.hpp" line="39" column="17" bodyfile="src/overseer_util.cpp" bodystart="7" bodyend="9" declfile="include/mercury_controller/overseer_util.hpp" declline="39" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;yaml-cpp/yaml.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;eigen3/Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="overseer__util_8hpp_1aaf6b0d0c004f0595c8ed00771151ab36" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="overseer__util_8hpp_1aaf6b0d0c004f0595c8ed00771151ab36" kindref="member">v3d</ref><sp/>=<sp/>Eigen::Vector3d;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>Helper<sp/>function<sp/>to<sp/>make<sp/>a<sp/>yaml<sp/>node<sp/>into<sp/>a<sp/>vector,<sp/>used<sp/>for<sp/>thrusters</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="13" refid="overseer__util_8hpp_1ae1cc94403d67e0ece547c840bc2a60b0" refkind="member"><highlight class="normal">T<sp/><ref refid="overseer__util_8hpp_1ae1cc94403d67e0ece547c840bc2a60b0" kindref="member">getYamlNodeAs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>YAML::Node<sp/>&amp;<sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;<sp/>keywords)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(keywords.empty())<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;getYamlNodeAs()<sp/>requires<sp/>at<sp/>least<sp/>one<sp/>keyword.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>YAML::Node<sp/>node<sp/>=<sp/>YAML::Clone(n);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref><sp/>s<sp/>:<sp/>keywords)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node<sp/>=<sp/>node[s];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node.as&lt;T&gt;();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(YAML::Exception<sp/>&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref><sp/>msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>parse<sp/>value<sp/>at<sp/>tag<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>keywords[0];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>keywords.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>keywords[i];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>(e.what());</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(msg);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>Helper<sp/>function<sp/>to<sp/>quickly<sp/>go<sp/>to<sp/>Eigen<sp/>3d<sp/>vector<sp/>object</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">Eigen::Vector3d<sp/><ref refid="overseer__util_8hpp_1ad6ab8f1b7402063f1cd8281f51792cbc" kindref="member">std2v3d</ref>(std::vector&lt;double&gt;<sp/>stdVect);</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_controller/overseer_util.hpp"/>
+  </compounddef>
+</doxygen>

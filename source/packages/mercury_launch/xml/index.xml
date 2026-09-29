@@ -1,0 +1,136 @@
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classmercury__launch_1_1launcher_1_1LaunchData" kind="class"><name>mercury_launch::launcher::LaunchData</name>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ab35074ce4f8b8dd713e6d7de80b323cd" kind="variable"><name>output_websockets</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a37c7e6d4241011a77869fa91dded3012" kind="variable"><name>id</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" kind="variable"><name>state</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a2da9fbb09c69f6347ba416c9bda84e0f" kind="variable"><name>is_zombie</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a77c3ac26b428d5684e66312532f98f64" kind="variable"><name>logger</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1adec91bac96e5dea2236d13c42e1ad0ee" kind="variable"><name>launch_procinfo</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ac86b3843cb69cb4e876244c6dca94877" kind="variable"><name>monitor_procinfo</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a01743398716d6929f0e94459a6461ff5" kind="variable"><name>_monitor_subproc</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8bc5dd3f425900b92a17ce7ca09f47a7" kind="variable"><name>_launch_subproc</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a55b538f76284fc0038eab7eeef7896d1" kind="variable"><name>_broadcast_refresh_event</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a433acd35868daa18ec8ca7c7bc1e0f7a" kind="variable"><name>_stop_launch_event</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8e4f778c5eea42a4082d6102664ee4c5" kind="variable"><name>_launch_task_inst</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a31ebc408507de694869307221470b63e" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a6cdec7135fe7aed044ea93e87b2ee222" kind="function"><name>update_process_map</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ac5e4de6d24880ee13cdbd3b47231c365" kind="function"><name>can_launch</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a78bad27c82fdc837745cff6492a809eb" kind="function"><name>can_terminate</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a29674076a80ec64e7ee07de113ea67bb" kind="function"><name>is_alive</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ad0dbd51e3b1d1cc0733270b3af315e90" kind="function"><name>is_dead_zombie</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" kind="function"><name>perform_launch</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a7250da16b4328bea20d56729b9dfb3bf" kind="function"><name>term_launch</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a133f1096c812c10f2bb40c2f8fec5184" kind="function"><name>_clear_monitored_topics</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1adc347c7bffa9f5033fa7bccb281058e2" kind="function"><name>_monitor_monitor_task</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" kind="function"><name>_launch_monitor_task</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" kind="function"><name>_launch_task</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a26f5fa946db8b36d81e07a482960dc75" kind="function"><name>_gen_monitor_cmd_args</name></member>
+  </compound>
+  <compound refid="classmercury__launch_1_1launcher_1_1LaunchServer" kind="class"><name>mercury_launch::launcher::LaunchServer</name>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1aaa9ec811f915dc56ee3e5e3db26d98c6" kind="variable"><name>current_file</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a14e9dba7a3d2056b73842bbfcd30e2c3" kind="variable"><name>systemd_mode</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1ae8875b5d0a8dc80f741fb7cc96ebe18f" kind="variable"><name>start_discovery_server</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a4818aad0419b0840bc9c6280c72cf1b0" kind="variable"><name>connections</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1abdd512e0d37611dad9848feb9b4f864b" kind="variable"><name>default_log_connections</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a724e35d0827d9c57e2a87df63d074a54" kind="variable"><name>logger</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a687fe1b1ac5e27124bb439b7361ee754" kind="variable"><name>launch_files</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1ac8f9ee59fd0978873965deaf2632e0d0" kind="variable"><name>discovery_server_pid</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a0ec4b4928535de0c946c96210c8d4390" kind="variable"><name>discovery_status</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1accd9bb0a5f847c7dd2516dccf6da494f" kind="variable"><name>discovery_status_color</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a3652564a8d62d5c2791522415fcec725" kind="variable"><name>sdnotify</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1aecd9d5fcebfa5c094e4abce8476d8652" kind="variable"><name>cgroup</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a988042622d76195e3e65077c278fb418" kind="variable"><name>last_process_map</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1af9a4392ab6e251f6c98e7961d790755d" kind="variable"><name>stop</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a3fa5d2bad15356a874396ba91b5e7e40" kind="variable"><name>broadcast_refresh_event</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a6b2182d8c6322c46a7ae1e954bbd8f1e" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a6f7ffa297444cf2cd7e0b00025f1ac19" kind="function"><name>server_status</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1aa445725c39cdd2610218c68e288a1848" kind="function"><name>load_file</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a9b88d03d5f12fb9e6b5476e38c9ab237" kind="function"><name>run_discovery_server</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1aca7d62615b3217a7d57a0070d5bf7eec" kind="function"><name>report_systemd_status</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a14a87d1380c7ff1c90380e6286aa19d9" kind="function"><name>handle_ws_connect_msg</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1ae8a130f43986c0c34ce53dbe4a059875" kind="function"><name>handle_ws_msg</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1acf19273ea3103ca389cd7bc9492ec2c9" kind="function"><name>status_broadcast_task</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1abe6923880fb22ad3b4310c3a6456128e" kind="function"><name>get_logging_enrollment</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a68c5645f8427fe00f1ca3885a6b48d2e" kind="function"><name>get_first_connect_resp</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1ac2cf662b2276fd6dae011eaaaf60c3f4" kind="function"><name>process_request</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a3f15abc3dc5d46234a740c6758ded4c1" kind="function"><name>ws_conn_handler</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a03ab771c467dc824433e9ad641478a80" kind="function"><name>do_main</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1abc2bd712ac9958a48abe51bf50de9d67" kind="function"><name>cleanup_launches</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a532e6926dc3100a95e06845703060055" kind="function"><name>_cleanup_dead_zombies</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a5b0688c80648f21ac9d21d46115bf8cf" kind="function"><name>_generate_err</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1ac916dcee34a4804d7e05532cb30ecc0f" kind="function"><name>_keyboard_int_handler</name></member>
+  </compound>
+  <compound refid="classmercury__launch_1_1launcher_1_1LaunchState" kind="class"><name>mercury_launch::launcher::LaunchState</name>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1a42006bdc1cf95807935b9c56827d3f1a" kind="variable"><name>STOPPED</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1ac08f19b04b16d513ccd78baf5d145158" kind="variable"><name>STARTING</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1aabc47e7d752665ef645a7351e64b9d8e" kind="variable"><name>RUNNING</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1ad0795d07507955d513a814054a8cb9b7" kind="variable"><name>STOPPING</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1aef6114eaca5ad35a400b68c178e09b4d" kind="variable"><name>STOPPING_ERROR</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1ae686a28fb3baf3a762d54e8a3ddc60ab" kind="variable"><name>ERROR</name></member>
+  </compound>
+  <compound refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic" kind="class"><name>mercury_launch::launcher::LaunchData::LaunchTopic</name>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a8aea690f5a0fe89489e9b591e36dbd5f" kind="variable"><name>topic_re</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1aaeb2e6b016cf7677d1ecb3d7a7f249c0" kind="variable"><name>type_re</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1ab11fcd2cabd3f88193d7c138913cdaae" kind="variable"><name>is_sensor_data</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a6e190e27b1d4e3b4cee9e5f76e01effc" kind="variable"><name>seen</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a3a09c93885782cc3a09ec8ceab67e90e" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classmercury__launch_1_1launcher_1_1LinuxProcess" kind="class"><name>mercury_launch::launcher::LinuxProcess</name>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a12561f8638cc7f5cb8c42614d67e130f" kind="variable"><name>pid</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a99f8ff77bb4517103722186f6294bb02" kind="variable"><name>comm</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" kind="variable"><name>state</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a4bcb49266dba9c4c821150c87f5f3eb6" kind="variable"><name>ppid</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a2fb09a69ce4fb9e357b6455d114ef65f" kind="variable"><name>_args</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1ac23e7257670a7663e5ad5dada724ea06" kind="variable"><name>_process_str</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1af24da8b115af5c1cc40ed9567a64c032" kind="function"><name>lookup_state</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1ab86f7ab142be69e3bf40ce43094e1cac" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a878bf911d118a5343a15cee718c813a0" kind="function"><name>get_args</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1ff733aec17be21be1d7ec1ceefe36c2" kind="function"><name>get_process_str</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a0838b4ade998092cf49bc837cd51988a" kind="function"><name>get_ros_name</name></member>
+  </compound>
+  <compound refid="classmercury__launch_1_1launcher_1_1SDNotify" kind="class"><name>mercury_launch::launcher::SDNotify</name>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a70b75f26a8fbca6b22ad81f6be514cde" kind="variable"><name>_sock</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1ab8c4e54634c846cd2ea55e3f88f2506b" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a4620a95090a5736f4c7b67070934b238" kind="function"><name>report_ready</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a7689f88dea5979dff95ebfec356ca932" kind="function"><name>report_stopping</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a71ffe9c3f5f45d2ed50d7a23e1f6b7be" kind="function"><name>report_status</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a7f9cd264ef2fb2e3fe28f77366be51c3" kind="function"><name>trigger_watchdog</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" kind="function"><name>_notify</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a523a5b3c4a8bf9082091dd71cd55319b" kind="function"><name>_take_ownership</name></member>
+  </compound>
+  <compound refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler" kind="class"><name>mercury_launch::launcher::LaunchServer::WebsocketHandler</name>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1a1a7f74bd98a5a2d5ebd5b1fb3300496e" kind="variable"><name>_connections_weak</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1ac7c38d9b3d74b76803bca9e92b6eedec" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1ada9cf05f76983f6d5028f7813741e8e7" kind="function"><name>emit</name></member>
+  </compound>
+  <compound refid="namespacemercury__launch" kind="namespace"><name>mercury_launch</name>
+  </compound>
+  <compound refid="namespacemercury__launch_1_1launcher" kind="namespace"><name>mercury_launch::launcher</name>
+    <member refid="namespacemercury__launch_1_1launcher_1a1160a3acbd836081072cc80237a148e0" kind="variable"><name>SUPER_SECRET_LAUNCH_FLAG</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a92c3d70c1160c60d7cc8a58723c1a84e" kind="variable"><name>SUPER_SECRET_MONITOR_FLAG</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1ac2de887fb37b78da4aaf2be4e8f22e8d" kind="variable"><name>log_format</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a411b776888e39419496a1b4a55e8d871" kind="variable"><name>log_level</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a1d8b62ed9fc15663177c170dd8411805" kind="variable"><name>serverPort</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a50dc6d01def1a290e47e680d3dd681d1" kind="variable"><name>self_hosted_discovery_server_cmd</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1aab90b082d218252f27235b988c5b1817" kind="variable"><name>self_hosted_discovery_server_addr</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a8ff7d05310429e0b2ec3040fe7a11aad" kind="variable"><name>HTML_SERVER_ROOT</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a2d9cd3f361c84c72b961d69cb97502f4" kind="variable"><name>monitor_env</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a6d20f15bfd626c405ba1da5de421f6b1" kind="variable"><name>parent</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a5dfb7a5ef0549bcfb55be8f8e81fe888" kind="variable"><name>index</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1ae7bd085aa7811c78b4ec77ec4ac9d396" kind="variable"><name>has_called</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a17137c3b33e458dbf9c0312e8fbe5c8d" kind="variable"><name>monitor_subs</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a73c8c5dcee402e9dcff9a30cf982cbef" kind="variable"><name>remaining_topics</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a32ec24ba9a8c892149cae02f3208bbf0" kind="function"><name>get_service_cgroup</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a329155ed195d98833122c72bc4cadc33" kind="function"><name>get_cgroup_processes</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a907fe6a665b9a33f451828b6d3c6dd58" kind="function"><name>json_encode_default</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a5bb8f3cece9642b4855139386ddd6bb9" kind="function"><name>event_wait</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a80c3760db7651cb239706a93d327c679" kind="function"><name>do_child_monitor</name></member>
+    <member refid="namespacemercury__launch_1_1launcher_1a1e67032caa0fa6a2d19830c53bbe701b" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="launcher_8py" kind="file"><name>launcher.py</name>
+  </compound>
+  <compound refid="dir_81a61552d9d30f5c3c82d027db49ef70" kind="dir"><name>mercury_launch</name>
+  </compound>
+</doxygenindex>

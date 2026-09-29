@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacemercury__camera_1_1picture__taker" kind="namespace" language="Python">
+    <compoundname>mercury_camera::picture_taker</compoundname>
+    <innerclass refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode" prot="public">mercury_camera::picture_taker::ImageCaptureNode</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemercury__camera_1_1picture__taker_1a50dfd2cd9d11100920bd82ad51a0128e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="273" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="273" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_camera/picture_taker.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

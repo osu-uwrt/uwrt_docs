@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacelocation" kind="namespace" language="Python">
+    <compoundname>location</compoundname>
+    <innerclass refid="classlocation_1_1Location" prot="public">location::Location</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelocation_1a458865b076a0273ae53af0a64aa9a744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>numpy.ndarray</type>
+        <definition> numpy.ndarray location.remove_outliers</definition>
+        <argsstring>(numpy.ndarray arr, &apos;tuple[float, float]&apos; quantile)</argsstring>
+        <name>remove_outliers</name>
+        <param>
+          <type>numpy.ndarray</type>
+          <declname>arr</declname>
+        </param>
+        <param>
+          <type>&apos;tuple&apos;</type>
+          <declname>quantile</declname>
+          <array>[float, float]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="154" column="1" bodyfile="mercury_mapping/location.py" bodystart="154" bodyend="159"/>
+        <referencedby refid="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" compoundref="location_8py" startline="90" endline="148">location.Location.get_pose</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_mapping/location.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

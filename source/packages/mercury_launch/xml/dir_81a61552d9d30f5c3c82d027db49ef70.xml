@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_81a61552d9d30f5c3c82d027db49ef70" kind="dir">
+    <compoundname>mercury_launch</compoundname>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="launcher_8py">launcher.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_launch/"/>
+  </compounddef>
+</doxygen>

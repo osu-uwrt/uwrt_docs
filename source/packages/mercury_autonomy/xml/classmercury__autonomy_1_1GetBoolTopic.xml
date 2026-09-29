@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1GetBoolTopic" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::GetBoolTopic</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="get__bool__topic_8hpp" local="no">get_bool_topic.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetBoolTopic_1a04197e946c83846d832e580fda1d2f0f" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr mercury_autonomy::GetBoolTopic::sub_</definition>
+        <argsstring></argsstring>
+        <name>sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="35" column="38" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1ae586200ed073a9b1440d9664832827c7" compoundref="get__bool__topic_8cpp" startline="50" endline="53">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" compoundref="get__bool__topic_8cpp" startline="33" endline="48">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" compoundref="get__bool__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetBoolTopic_1a71beacd266028928617c810de3a09370" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::GetBoolTopic::data_received_</definition>
+        <argsstring></argsstring>
+        <name>data_received_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="36" column="10" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1ae586200ed073a9b1440d9664832827c7" compoundref="get__bool__topic_8cpp" startline="50" endline="53">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" compoundref="get__bool__topic_8cpp" startline="33" endline="48">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" compoundref="get__bool__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetBoolTopic_1a15cdb02a0c45f82413e91ec9fcdcc8bd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::GetBoolTopic::received_value_</definition>
+        <argsstring></argsstring>
+        <name>received_value_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="37" column="10" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" compoundref="get__bool__topic_8cpp" startline="33" endline="48">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" compoundref="get__bool__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetBoolTopic_1a5442073497cd8224d286fa8ab397f5c6" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::GetBoolTopic::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="38" column="18" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" compoundref="get__bool__topic_8cpp" startline="33" endline="48">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" compoundref="get__bool__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetBoolTopic_1a1337e44b2f381646d09c7c02e2eaf372" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::GetBoolTopic::timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>timeout_sec_</name>
+        <initializer>= 3.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="39" column="12" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" compoundref="get__bool__topic_8cpp" startline="33" endline="48">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" compoundref="get__bool__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetBoolTopic_1a98f15ad1073137cfc1b8b1593093f7af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::GetBoolTopic::GetBoolTopic</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>GetBoolTopic</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="16" column="5" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="16" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetBoolTopic::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="27" column="20" bodyfile="src/bt_actions/get_bool_topic.cpp" bodystart="11" bodyend="31"/>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a71beacd266028928617c810de3a09370" compoundref="get__bool__topic_8hpp" startline="36">data_received_</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a15cdb02a0c45f82413e91ec9fcdcc8bd" compoundref="get__bool__topic_8hpp" startline="37">received_value_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a5442073497cd8224d286fa8ab397f5c6" compoundref="get__bool__topic_8hpp" startline="38">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a04197e946c83846d832e580fda1d2f0f" compoundref="get__bool__topic_8hpp" startline="35">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a1337e44b2f381646d09c7c02e2eaf372" compoundref="get__bool__topic_8hpp" startline="39">timeout_sec_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetBoolTopic::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="28" column="20" bodyfile="src/bt_actions/get_bool_topic.cpp" bodystart="33" bodyend="48"/>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a71beacd266028928617c810de3a09370" compoundref="get__bool__topic_8hpp" startline="36">data_received_</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a15cdb02a0c45f82413e91ec9fcdcc8bd" compoundref="get__bool__topic_8hpp" startline="37">received_value_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a5442073497cd8224d286fa8ab397f5c6" compoundref="get__bool__topic_8hpp" startline="38">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a04197e946c83846d832e580fda1d2f0f" compoundref="get__bool__topic_8hpp" startline="35">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a1337e44b2f381646d09c7c02e2eaf372" compoundref="get__bool__topic_8hpp" startline="39">timeout_sec_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetBoolTopic_1ae586200ed073a9b1440d9664832827c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetBoolTopic::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="29" column="10" bodyfile="src/bt_actions/get_bool_topic.cpp" bodystart="50" bodyend="53"/>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a71beacd266028928617c810de3a09370" compoundref="get__bool__topic_8hpp" startline="36">data_received_</references>
+        <references refid="classmercury__autonomy_1_1GetBoolTopic_1a04197e946c83846d832e580fda1d2f0f" compoundref="get__bool__topic_8hpp" startline="35">sub_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetBoolTopic_1a6e457d76fe374ca89bb5680f6ba7982d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::GetBoolTopic::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="19" column="26" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetBoolTopic_1a385e0dd5daa235af8e38351d4a26d27c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetBoolTopic::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="32" column="10" bodyfile="src/bt_actions/get_bool_topic.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::GetBoolTopic</label>
+        <link refid="classmercury__autonomy_1_1GetBoolTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::GetBoolTopic</label>
+        <link refid="classmercury__autonomy_1_1GetBoolTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" line="14" column="1" bodyfile="include/mercury_autonomy/bt_actions/get_bool_topic.hpp" bodystart="14" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a71beacd266028928617c810de3a09370" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>data_received_</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a98f15ad1073137cfc1b8b1593093f7af" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>GetBoolTopic</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1ae586200ed073a9b1440d9664832827c7" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a6e457d76fe374ca89bb5680f6ba7982d" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a15cdb02a0c45f82413e91ec9fcdcc8bd" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>received_value_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a385e0dd5daa235af8e38351d4a26d27c" prot="protected" virt="virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a5442073497cd8224d286fa8ab397f5c6" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a04197e946c83846d832e580fda1d2f0f" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>sub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1GetBoolTopic_1a1337e44b2f381646d09c7c02e2eaf372" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>timeout_sec_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::GetBoolTopic</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

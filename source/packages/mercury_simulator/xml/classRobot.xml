@@ -1,0 +1,1923 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classRobot" kind="class" language="C++" prot="public">
+    <compoundname>Robot</compoundname>
+    <includes refid="RobotClass_8h" local="no">RobotClass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classRobot_1a34f036339ac56ba756f835e5001ed6bc" prot="public" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::claw_object_forces</definition>
+        <argsstring></argsstring>
+        <name>claw_object_forces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="140" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRobot_1ae11f12fef20c4252161c6b774a436f1d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Robot::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="146" column="17" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a1db2161e4fc6b0ebbc28259faa113894" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::Transform</type>
+        <definition>geometry_msgs::msg::Transform Robot::lCameraTransform</definition>
+        <argsstring></argsstring>
+        <name>lCameraTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="148" column="35" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ab85a8b763403cb8e5b04c7d8ee95c522" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::hasLCameraTransform</definition>
+        <argsstring></argsstring>
+        <name>hasLCameraTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="149" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1aeca89c396384f30e7116a3d9512262bc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::hasIMUTransform</definition>
+        <argsstring></argsstring>
+        <name>hasIMUTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="150" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a9d807501939c149d5a51bcd61a4ed206" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::hasDVLTransform</definition>
+        <argsstring></argsstring>
+        <name>hasDVLTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="151" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a6b67452beba72a9492f10aaf4abe7d23" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::hasAcousticsTransform</definition>
+        <argsstring></argsstring>
+        <name>hasAcousticsTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="152" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ae4e5b7c809091c72dcb631eb2fe2932b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::hasClawTransform</definition>
+        <argsstring></argsstring>
+        <name>hasClawTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="153" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a60569f1e56bcb17bfa96c8563078faaa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::hasMapFrame</definition>
+        <argsstring></argsstring>
+        <name>hasMapFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="154" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a14b29861f8f8175f422a04347f4ac9d7" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+        <definition>vXd Robot::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="156" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a3a690762e62257d5ee7b46c385739c5a" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr Robot::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="157" column="29" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a70d873c37d0675c83c065a7d8a2de9f2" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; tf2_ros::Buffer &gt;</type>
+        <definition>std::unique_ptr&lt;tf2_ros::Buffer&gt; Robot::tf_buffer</definition>
+        <argsstring></argsstring>
+        <name>tf_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="158" column="21" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a99ce9d90b7b030668175f80df8ccdbb5" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; tf2_ros::TransformListener &gt;</type>
+        <definition>std::shared_ptr&lt;tf2_ros::TransformListener&gt; Robot::tf_listener</definition>
+        <argsstring></argsstring>
+        <name>tf_listener</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="159" column="21" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a53b472edcdabbbfde7d336bd567b09f6" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::r_cob</definition>
+        <argsstring></argsstring>
+        <name>r_cob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="161" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ab902107b86b112152c923fc5446cb714" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::r_cod</definition>
+        <argsstring></argsstring>
+        <name>r_cod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="162" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1af2cd8e8eddd16255ae15d629da4a92cb" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::environment_force</definition>
+        <argsstring></argsstring>
+        <name>environment_force</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="163" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a63836e32d4c6785f565e8680b648e393" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::depth_enabled</definition>
+        <argsstring></argsstring>
+        <name>depth_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="166" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a744d391ff41392fb89955afe881969a8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Robot::depth_rate</definition>
+        <argsstring></argsstring>
+        <name>depth_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="167" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a7d91bea031830eb40cf740839744bef2" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::r_depth</definition>
+        <argsstring></argsstring>
+        <name>r_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="168" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1af5dab04506e5991513b855143ae60eff" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::depth_sigma</definition>
+        <argsstring></argsstring>
+        <name>depth_sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="169" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a634e0cb178987ef2b5f3bff9ea5769b0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::dvl_enabled</definition>
+        <argsstring></argsstring>
+        <name>dvl_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="172" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a155ef082ebc6e716e07c4ec0eae33e23" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Robot::dvl_rate</definition>
+        <argsstring></argsstring>
+        <name>dvl_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="173" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ab3f68956e42fc90bce7996207751c7a4" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::r_dvl</definition>
+        <argsstring></argsstring>
+        <name>r_dvl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="174" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a5bf4badeb1ed01975c79f78533f3550f" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+        <definition>quat Robot::q_dvl</definition>
+        <argsstring></argsstring>
+        <name>q_dvl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="175" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a6c36ee52152d8ede5947726697256f9e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::dvl_sigma</definition>
+        <argsstring></argsstring>
+        <name>dvl_sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="176" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1aaa8df11a8b41d317f94bb64257e2e1a6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::imu_enabled</definition>
+        <argsstring></argsstring>
+        <name>imu_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="179" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a0688f891704aadef99f2634c414a7349" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Robot::imu_rate</definition>
+        <argsstring></argsstring>
+        <name>imu_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="180" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a15269437145a9aac9c0a20c0bd98592b" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::r_imu</definition>
+        <argsstring></argsstring>
+        <name>r_imu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="181" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a361b365b026b403cb6e41ae04337b132" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+        <definition>quat Robot::q_imu</definition>
+        <argsstring></argsstring>
+        <name>q_imu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="182" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a93d191f818542324b3a10359137bc651" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::imu_sigmaAccel</definition>
+        <argsstring></argsstring>
+        <name>imu_sigmaAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="183" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a8c22431d116767a8aaf7035b6ff796bc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::imu_sigmaOmega</definition>
+        <argsstring></argsstring>
+        <name>imu_sigmaOmega</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="184" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1abab236ddc290ec6480f7afa3cdba5926" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::imu_sigmaAngle</definition>
+        <argsstring></argsstring>
+        <name>imu_sigmaAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="185" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1af320953d6247cfd018c09929445d0af8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::imu_yawDrift</definition>
+        <argsstring></argsstring>
+        <name>imu_yawDrift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="186" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a943a090f5ab8f34f1e53bf293d6dfd4f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::ballast_enabled</definition>
+        <argsstring></argsstring>
+        <name>ballast_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="189" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a58cbb9c698caf0c22c7f28d216031e50" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::ballast_mass</definition>
+        <argsstring></argsstring>
+        <name>ballast_mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="190" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a660f3561bff6b32c870d4129ad99777d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::ballast_max_mass</definition>
+        <argsstring></argsstring>
+        <name>ballast_max_mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="191" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a8d08e36d0d9e41961fa7169d24d57747" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::ballast_in_flow_rate</definition>
+        <argsstring></argsstring>
+        <name>ballast_in_flow_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="193" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a5848110884e29637b96ca3b48fbf0b88" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::ballast_out_flow_rate</definition>
+        <argsstring></argsstring>
+        <name>ballast_out_flow_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="195" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1adbcbd4f8989599b0e829e712ec041eae" prot="private" static="no" mutable="no">
+        <type><ref refid="structActiveBallastStates" kindref="compound">ActiveBallastStates</ref></type>
+        <definition>ActiveBallastStates Robot::ballast_states</definition>
+        <argsstring></argsstring>
+        <name>ballast_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="197" column="25" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ab67a281a215cd30e61febfb50d93dcc3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time Robot::ballast_stamp</definition>
+        <argsstring></argsstring>
+        <name>ballast_stamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="198" column="18" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1aa2070149ad90f37997ed229bc4418c3f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structthrusterForcesStamped" kindref="compound">thrusterForcesStamped</ref> &gt;</type>
+        <definition>std::vector&lt;thrusterForcesStamped&gt; Robot::thrusterForceQue</definition>
+        <argsstring></argsstring>
+        <name>thrusterForceQue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="200" column="17" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a18b8c7cdc8f67d7374e571464cb75665" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="201" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a9c174ca811f34de72aecaeddb920f4f6" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::forces</definition>
+        <argsstring></argsstring>
+        <name>forces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="203" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1aad3d3bdfb8f03d3f82457ea7146a6fef" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::torques</definition>
+        <argsstring></argsstring>
+        <name>torques</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="204" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a45c303eb10c2384cc05edaf831ea9062" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::weightVector</definition>
+        <argsstring></argsstring>
+        <name>weightVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="205" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a8bbf794ee832d5b018ae5beceeedcbee" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::bouyancyVector</definition>
+        <argsstring></argsstring>
+        <name>bouyancyVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="206" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a252ecc786303b576842982035a76faef" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::linAccel</definition>
+        <argsstring></argsstring>
+        <name>linAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="207" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ac8979e029a37ae5183907ef3b2a2c6b0" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::angAccel</definition>
+        <argsstring></argsstring>
+        <name>angAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="208" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ace222843d24bb2ac3ee1b6e07050b1f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Robot::thrusterCount</definition>
+        <argsstring></argsstring>
+        <name>thrusterCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="210" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a8265ac23dd8e0ea46ed06c4f73b01560" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Robot::maxThrust</definition>
+        <argsstring></argsstring>
+        <name>maxThrust</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="211" column="12" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ad778f2d96970cc0f32fb1d38b7fad419" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Robot::dragCoef</definition>
+        <argsstring></argsstring>
+        <name>dragCoef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="212" column="17" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a8fcfade1c92c99643c4864cbe529ba8c" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1aebfa12b5a94afd60212025aea8e8e836" kindref="member">m3d</ref></type>
+        <definition>m3d Robot::invBodyInertia</definition>
+        <argsstring></argsstring>
+        <name>invBodyInertia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="213" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a028d42b960ccd1478b688286ccd69a46" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1a060ff75b25756b9e4f860d907c7728f2" kindref="member">mXd</ref></type>
+        <definition>mXd Robot::thrusterMatrix</definition>
+        <argsstring></argsstring>
+        <name>thrusterMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="214" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a1ca05a925c6c0a885214d2903bc093d9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Robot::acousticsEnabled</definition>
+        <argsstring></argsstring>
+        <name>acousticsEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="216" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a47a3566ddf1e36df51814e216d61642d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Robot::speedOfSound</definition>
+        <argsstring></argsstring>
+        <name>speedOfSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="217" column="11" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1ada9ee6c472a5ed1779b74034dbb64703" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::fakePingerPosition</definition>
+        <argsstring></argsstring>
+        <name>fakePingerPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="218" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1abf71739c3c84685cdcc4d50eb831204e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Robot::loaded_object</definition>
+        <argsstring></argsstring>
+        <name>loaded_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="220" column="17" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a4dcb4955091c3dcbc0944f50ec134fca" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="structClaw__Object" kindref="compound">Claw_Object</ref> &gt;</type>
+        <definition>std::map&lt;std::string, Claw_Object&gt; Robot::claw_objects</definition>
+        <argsstring></argsstring>
+        <name>claw_objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="221" column="14" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a48f8b0addeda5809edaa1c0ba0b99098" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::origin_to_claw_translation</definition>
+        <argsstring></argsstring>
+        <name>origin_to_claw_translation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="222" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRobot_1a3eefb8af5b5850b9a95cc585618589bb" prot="private" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::claw_object_torques</definition>
+        <argsstring></argsstring>
+        <name>claw_object_torques</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="223" column="9" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::Robot</definition>
+        <argsstring>()</argsstring>
+        <name>Robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="66" column="5" bodyfile="src/robot_class.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aeaa9560d67494142deb3ea62869d668e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Robot::Robot</definition>
+        <argsstring>(std::string name_)</argsstring>
+        <name>Robot</name>
+        <param>
+          <type>std::string</type>
+          <declname>name_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="67" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1afb7ecc77eac528f97d2f42c045704291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+        <definition>vXd Robot::getState</definition>
+        <argsstring>()</argsstring>
+        <name>getState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="72" column="9" bodyfile="src/robot_class.cpp" bodystart="611" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1afce7fb19b5c27df5908d17cfcb63eb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getMass</definition>
+        <argsstring>()</argsstring>
+        <name>getMass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="73" column="12" bodyfile="src/robot_class.cpp" bodystart="606" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a34dd73d4c8e64d77aa02b4879275ef79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::getBallastEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getBallastEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="74" column="10" bodyfile="src/robot_class.cpp" bodystart="607" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a83c1c156a023e77e938e5db66df9fb58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getBallastMass</definition>
+        <argsstring>()</argsstring>
+        <name>getBallastMass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="75" column="12" bodyfile="src/robot_class.cpp" bodystart="608" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a6e4bdc6c8db0189e7edf47d2f765b299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structActiveBallastStates" kindref="compound">ActiveBallastStates</ref></type>
+        <definition>ActiveBallastStates Robot::getBallastState</definition>
+        <argsstring>()</argsstring>
+        <name>getBallastState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="76" column="25" bodyfile="src/robot_class.cpp" bodystart="609" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1adb925c0c2955aa65c396e730448c98cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getTotalMass</definition>
+        <argsstring>()</argsstring>
+        <name>getTotalMass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="77" column="12" bodyfile="src/robot_class.cpp" bodystart="610" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1acfb7666e8aad2442f62e9ed6c5e19cb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::mapAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>mapAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="78" column="10" bodyfile="src/robot_class.cpp" bodystart="548" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a44279c6986849132ce26180c97bd22d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1aebfa12b5a94afd60212025aea8e8e836" kindref="member">m3d</ref></type>
+        <definition>m3d Robot::getInvInertia</definition>
+        <argsstring>()</argsstring>
+        <name>getInvInertia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="79" column="9" bodyfile="src/robot_class.cpp" bodystart="614" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1ab5e16154000772584f39cb6713022936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string Robot::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="80" column="17" bodyfile="src/robot_class.cpp" bodystart="618" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1abdf549cc4875b2e6210b3ace4757a599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Robot::getThrusterCount</definition>
+        <argsstring>()</argsstring>
+        <name>getThrusterCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="81" column="9" bodyfile="src/robot_class.cpp" bodystart="638" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1ae859ac48fd361a2dd503c4601a8b636f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1a060ff75b25756b9e4f860d907c7728f2" kindref="member">mXd</ref></type>
+        <definition>mXd Robot::getThrusterMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getThrusterMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="82" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a8d6b88ee1bacbfc8e01faacc46b4cf34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getThrusterForces</definition>
+        <argsstring>()</argsstring>
+        <name>getThrusterForces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="83" column="9" bodyfile="src/robot_class.cpp" bodystart="616" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a07cdd08bd0a67b63adbbcaa4c85ac517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getLatestLinAccel</definition>
+        <argsstring>()</argsstring>
+        <name>getLatestLinAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="84" column="9" bodyfile="src/robot_class.cpp" bodystart="613" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1ab5c5fb40ba9b3d86553d26a1fbc12851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getLatestAngAccel</definition>
+        <argsstring>()</argsstring>
+        <name>getLatestAngAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="85" column="9" bodyfile="src/robot_class.cpp" bodystart="612" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a01cde0384a850ae88d58403f4d12540f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getThrusterTorques</definition>
+        <argsstring>()</argsstring>
+        <name>getThrusterTorques</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="86" column="9" bodyfile="src/robot_class.cpp" bodystart="617" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a5a3da2d337594073c7e106d9be338fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getClawObjectForces</definition>
+        <argsstring>()</argsstring>
+        <name>getClawObjectForces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="87" column="9" bodyfile="src/robot_class.cpp" bodystart="640" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a324ae0be9b5daaf2b84aae3c36b17367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getClawObjectTorques</definition>
+        <argsstring>()</argsstring>
+        <name>getClawObjectTorques</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="88" column="9" bodyfile="src/robot_class.cpp" bodystart="641" bodyend="641"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a48aa3805b9bad7f3fc52e0ea3cb33d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getEnvironmentForces</definition>
+        <argsstring>()</argsstring>
+        <name>getEnvironmentForces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="89" column="9" bodyfile="src/robot_class.cpp" bodystart="643" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aa813dfc8e954874a79d314f8200731d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::acousticsTransformAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>acousticsTransformAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="90" column="10" bodyfile="src/robot_class.cpp" bodystart="575" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a477e82e0034a42f524ee5a257a8add0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::clawTransformAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>clawTransformAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="91" column="10" bodyfile="src/robot_class.cpp" bodystart="592" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a6111ed121532d6d3a845a24577ac2829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getNetBouyantForce</definition>
+        <argsstring>(const double &amp;depth)</argsstring>
+        <name>getNetBouyantForce</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="92" column="9" bodyfile="src/robot_class.cpp" bodystart="620" bodyend="622"/>
+        <references refid="settings_8h_1a6801baa546c6112d19eb095111d24720" compoundref="settings_8h" startline="16">GRAVITY</references>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aa8464f4f7810a60c1225ec0f3fe16662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_msgs::msg::Transform</type>
+        <definition>geometry_msgs::msg::Transform Robot::getLCameraTransform</definition>
+        <argsstring>()</argsstring>
+        <name>getLCameraTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="93" column="35" bodyfile="src/robot_class.cpp" bodystart="538" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aa6bb0588c450bfbadae85a4411c70903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::getAcousticsEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getAcousticsEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="96" column="10" bodyfile="src/robot_class.cpp" bodystart="642" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aeafa4fce7f1955d67206f8545d7151d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getAcousticsPingTime</definition>
+        <argsstring>()</argsstring>
+        <name>getAcousticsPingTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="97" column="12" bodyfile="src/robot_class.cpp" bodystart="645" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a7e99c395cde340b21362b99de899f75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::getDepthEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getDepthEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="100" column="10" bodyfile="src/robot_class.cpp" bodystart="626" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a11ab922c55bcbb09e59ce60a65ed1d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getDepthRate</definition>
+        <argsstring>()</argsstring>
+        <name>getDepthRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="101" column="12" bodyfile="src/robot_class.cpp" bodystart="627" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a38c4da2361552ca9e45d8e2484c244b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getDepthOffset</definition>
+        <argsstring>()</argsstring>
+        <name>getDepthOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="102" column="9" bodyfile="src/robot_class.cpp" bodystart="624" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1abe61e6cd927a887e5128466cb37ed710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getDepthSigma</definition>
+        <argsstring>()</argsstring>
+        <name>getDepthSigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="103" column="12" bodyfile="src/robot_class.cpp" bodystart="625" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a335e5adc734c6c695b5b102393d31f13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::getDVLEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getDVLEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="106" column="10" bodyfile="src/robot_class.cpp" bodystart="635" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a624f70a057c648230494fcc83da70e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getDVLRate</definition>
+        <argsstring>()</argsstring>
+        <name>getDVLRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="107" column="12" bodyfile="src/robot_class.cpp" bodystart="636" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aaac3db60fd0a0bc8aa426a2f4d458cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getDVLOffset</definition>
+        <argsstring>()</argsstring>
+        <name>getDVLOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="108" column="9" bodyfile="src/robot_class.cpp" bodystart="633" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a1fb4f5806eb613a3d5b1a795b9f4604b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+        <definition>quat Robot::getDVLQuat</definition>
+        <argsstring>()</argsstring>
+        <name>getDVLQuat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="109" column="10" bodyfile="src/robot_class.cpp" bodystart="637" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a0f3c2ac24f2b0360bea03647f458f3f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getDVLSigma</definition>
+        <argsstring>()</argsstring>
+        <name>getDVLSigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="110" column="12" bodyfile="src/robot_class.cpp" bodystart="634" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a0cf3d3fac5914a3a24946d34b4859cf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::dvlTransformAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>dvlTransformAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="111" column="10" bodyfile="src/robot_class.cpp" bodystart="557" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1ab1fe86b20af2d1be0ace1a3cffeeab9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::getIMUEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>getIMUEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="114" column="10" bodyfile="src/robot_class.cpp" bodystart="630" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a39243046998625c37021984ed0615ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getIMURate</definition>
+        <argsstring>()</argsstring>
+        <name>getIMURate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="115" column="12" bodyfile="src/robot_class.cpp" bodystart="631" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a6ae28f20b62cb77c32ec52584c357e39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getIMUOffset</definition>
+        <argsstring>()</argsstring>
+        <name>getIMUOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="116" column="9" bodyfile="src/robot_class.cpp" bodystart="628" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a829a32156cd0f6862045bb370ce037ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+        <definition>quat Robot::getIMUQuat</definition>
+        <argsstring>()</argsstring>
+        <name>getIMUQuat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="117" column="10" bodyfile="src/robot_class.cpp" bodystart="632" bodyend="632"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aa43968c61916b0c1e8722d0395d82fc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::getIMUSigma</definition>
+        <argsstring>()</argsstring>
+        <name>getIMUSigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="118" column="9" bodyfile="src/robot_class.cpp" bodystart="629" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a396f793cbe4145b937fb366a8a89f188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getIMUDrift</definition>
+        <argsstring>()</argsstring>
+        <name>getIMUDrift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="119" column="12" bodyfile="src/robot_class.cpp" bodystart="615" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1aa1b6c215499a8d6aa0a2ca08f7463e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::imuTransformAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>imuTransformAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="120" column="10" bodyfile="src/robot_class.cpp" bodystart="566" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a5992dfa606cb6da7a45554c8ad0eaf85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::setState</definition>
+        <argsstring>(vXd state_)</argsstring>
+        <name>setState</name>
+        <param>
+          <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+          <declname>state_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="125" column="10" bodyfile="src/robot_class.cpp" bodystart="386" bodyend="407"/>
+        <references refid="settings_8h_1a73754cb16750c80abfa3b344106ccb1d" compoundref="settings_8h" startline="15">THRUSTER_DELAY</references>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a21d2aad7aa92d4f0bccac8f29ed75853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::setAccel</definition>
+        <argsstring>(const vXd &amp;stateDot)</argsstring>
+        <name>setAccel</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref> &amp;</type>
+          <declname>stateDot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="126" column="10" bodyfile="src/robot_class.cpp" bodystart="410" bodyend="426"/>
+        <references refid="settings_8h_1a6801baa546c6112d19eb095111d24720" compoundref="settings_8h" startline="16">GRAVITY</references>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a1c30083c14c5c00e96bac1162c48b819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Robot::loadParams</definition>
+        <argsstring>(rclcpp::Node::SharedPtr node)</argsstring>
+        <name>loadParams</name>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>node</declname>
+          <defname>Node</defname>
+        </param>
+        <briefdescription>
+<para>Loads vechicle information from robot&apos;s config file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ROS2 physics simulator node </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether the results were loaded successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="127" column="10" bodyfile="src/robot_class.cpp" bodystart="44" bodyend="88"/>
+        <references refid="classRobot_1aaf79eaf6dbcef81ffc7657480f0c8a19" compoundref="robot__class_8cpp" startline="93" endline="306">storeConfigData</references>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1ac734c010aeff9eb6c08e013603a6ce1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::addToThrusterQue</definition>
+        <argsstring>(thrusterForcesStamped commandedThrust)</argsstring>
+        <name>addToThrusterQue</name>
+        <param>
+          <type><ref refid="structthrusterForcesStamped" kindref="compound">thrusterForcesStamped</ref></type>
+          <declname>commandedThrust</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="128" column="10" bodyfile="src/robot_class.cpp" bodystart="476" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a5f4b55b473e29fb78a8dc5538dec0d26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::setLoadedClawObject</definition>
+        <argsstring>(std_msgs::msg::String object_name_msg)</argsstring>
+        <name>setLoadedClawObject</name>
+        <param>
+          <type>std_msgs::msg::String</type>
+          <declname>object_name_msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="129" column="10" bodyfile="src/robot_class.cpp" bodystart="429" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a77eb23b4bc37a03524a32a021aa800f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::updateActiveBallast</definition>
+        <argsstring>(const ActiveBallastStates &amp;states)</argsstring>
+        <name>updateActiveBallast</name>
+        <param>
+          <type>const <ref refid="structActiveBallastStates" kindref="compound">ActiveBallastStates</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="130" column="10" bodyfile="src/robot_class.cpp" bodystart="481" bodyend="520"/>
+        <references refid="structActiveBallastStates_1a3736e22906a4c5d41b9714dbcc8ce6e4" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::exhaustState</references>
+        <references refid="structActiveBallastStates_1a2e7ff8e4d29cc75057d82c4eee14cc44" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::pressureState</references>
+        <references refid="settings_8h_1aab36f64e58b704e6ca92ac74329d0120" compoundref="settings_8h" startline="17">WATER_DENSITY</references>
+        <references refid="structActiveBallastStates_1ac9054bc77df085e108344580a6e07616" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::waterState</references>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a4b43c6b0aeaf1b82a4100884aad511ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::setActiveBallastState</definition>
+        <argsstring>(const ActiveBallastStates &amp;states)</argsstring>
+        <name>setActiveBallastState</name>
+        <param>
+          <type>const <ref refid="structActiveBallastStates" kindref="compound">ActiveBallastStates</ref> &amp;</type>
+          <declname>states</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="131" column="10" bodyfile="src/robot_class.cpp" bodystart="522" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1ae3345db4094f9a00e75875ee28aa02eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::calcBouyantTorque</definition>
+        <argsstring>(const quat &amp;q, const double &amp;depth)</argsstring>
+        <name>calcBouyantTorque</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quaternion representing robot&apos;s orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth of the robot </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Calculated bouyant torque vector due to offset COM and COB in world frame </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="136" column="9" bodyfile="src/robot_class.cpp" bodystart="358" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a6253414aead1fad9c8d1b4464fd5cbff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::calcDragForces</definition>
+        <argsstring>(const v3d &amp;linVel, const double &amp;depth)</argsstring>
+        <name>calcDragForces</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>linVel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linear velocity of the robot in the body frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth of the robot </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Calculated drag force vector in the body frame </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="137" column="9" bodyfile="src/robot_class.cpp" bodystart="317" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a40d935158bfa2f1c9f2b6ec051891172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::calcDragTorques</definition>
+        <argsstring>(const v3d &amp;linVel, const v3d &amp;angVel, const double &amp;depth)</argsstring>
+        <name>calcDragTorques</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>linVel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>angVel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linear velocity of the robot in the body frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angular velocity of the robot in the body frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Depth of the robot </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Calculated drag torque vector in the body frame </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="138" column="9" bodyfile="src/robot_class.cpp" bodystart="336" bodyend="351"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classRobot_1aaf79eaf6dbcef81ffc7657480f0c8a19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::storeConfigData</definition>
+        <argsstring>(const YAML::Node &amp;vehicle_config, const YAML::Node &amp;controller_config, const YAML::Node &amp;simulator_config, const YAML::Node &amp;thruster_config)</argsstring>
+        <name>storeConfigData</name>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>vehicle_config</declname>
+        </param>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>controller_config</declname>
+        </param>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>simulator_config</declname>
+        </param>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>thruster_config</declname>
+        </param>
+        <briefdescription>
+<para>Unpacks YAML contents and stores them into class variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="229" column="10" bodyfile="src/robot_class.cpp" bodystart="93" bodyend="306"/>
+        <references refid="settings_8h_1ab7baf92d518987471038e8cc3261aa0c" compoundref="settings_8h" startline="9">ACOUSTIC_DATA</references>
+        <references refid="RobotClass_8h_1ae1cc94403d67e0ece547c840bc2a60b0" compoundref="RobotClass_8h" startline="40" endline="62">getYamlNodeAs</references>
+        <references refid="settings_8h_1a6801baa546c6112d19eb095111d24720" compoundref="settings_8h" startline="16">GRAVITY</references>
+        <references refid="settings_8h_1aab36f64e58b704e6ca92ac74329d0120" compoundref="settings_8h" startline="17">WATER_DENSITY</references>
+        <referencedby refid="classRobot_1a1c30083c14c5c00e96bac1162c48b819" compoundref="robot__class_8cpp" startline="44" endline="88">loadParams</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1ae034df4736de460a0125adf09c31bae7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d Robot::std2v3d</definition>
+        <argsstring>(std::vector&lt; double &gt; stdVect)</argsstring>
+        <name>std2v3d</name>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>stdVect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="232" column="9" bodyfile="src/robot_class.cpp" bodystart="710" bodyend="710"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a24af520d1407c39fb9378667da901bb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Robot::setForcesTorques</definition>
+        <argsstring>(vXd thrusterForces)</argsstring>
+        <name>setForcesTorques</name>
+        <param>
+          <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+          <declname>thrusterForces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="233" column="10" bodyfile="src/robot_class.cpp" bodystart="525" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a2c841a612e981b1d3270552f14177cfa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Robot::getScaleFactor</definition>
+        <argsstring>(const double &amp;depth)</argsstring>
+        <name>getScaleFactor</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>Used to scale down bouyancy effects as the robot comes out of the water. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="234" column="12" bodyfile="src/robot_class.cpp" bodystart="367" bodyend="379"/>
+        <references refid="settings_8h_1aba45635c3df17979b6c0ca5638a3ff8f" compoundref="settings_8h" startline="18">VEHICLE_HEIGHT</references>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a55ab7ba9ce9a6709941bd6afbb25aef6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+        <definition>quat Robot::rpy2quat</definition>
+        <argsstring>(double roll, double pitch, double yaw)</argsstring>
+        <name>rpy2quat</name>
+        <param>
+          <type>double</type>
+          <declname>roll</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>pitch</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yaw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="235" column="10" bodyfile="src/robot_class.cpp" bodystart="704" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="classRobot_1a860e16ee13d935ff5399320f84668f59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_msgs::msg::Transform</type>
+        <definition>geometry_msgs::msg::Transform Robot::safeTransform</definition>
+        <argsstring>(std::string toFrame, std::string fromFrame, bool &amp;transformFlag)</argsstring>
+        <name>safeTransform</name>
+        <param>
+          <type>std::string</type>
+          <declname>toFrame</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fromFrame</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>transformFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="236" column="35" bodyfile="src/robot_class.cpp" bodystart="686" bodyend="702"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>Robot</label>
+        <link refid="classRobot"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-loaded_object</edgelabel>
+          <edgelabel>-name</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-ballast_states</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ActiveBallastStates</label>
+        <link refid="structActiveBallastStates"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_simulator/RobotClass.h" line="64" column="1" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="64" bodyend="238"/>
+    <listofallmembers>
+      <member refid="classRobot_1a1ca05a925c6c0a885214d2903bc093d9" prot="private" virt="non-virtual"><scope>Robot</scope><name>acousticsEnabled</name></member>
+      <member refid="classRobot_1aa813dfc8e954874a79d314f8200731d2" prot="public" virt="non-virtual"><scope>Robot</scope><name>acousticsTransformAvailable</name></member>
+      <member refid="classRobot_1ac734c010aeff9eb6c08e013603a6ce1d" prot="public" virt="non-virtual"><scope>Robot</scope><name>addToThrusterQue</name></member>
+      <member refid="classRobot_1ac8979e029a37ae5183907ef3b2a2c6b0" prot="private" virt="non-virtual"><scope>Robot</scope><name>angAccel</name></member>
+      <member refid="classRobot_1a943a090f5ab8f34f1e53bf293d6dfd4f" prot="private" virt="non-virtual"><scope>Robot</scope><name>ballast_enabled</name></member>
+      <member refid="classRobot_1a8d08e36d0d9e41961fa7169d24d57747" prot="private" virt="non-virtual"><scope>Robot</scope><name>ballast_in_flow_rate</name></member>
+      <member refid="classRobot_1a58cbb9c698caf0c22c7f28d216031e50" prot="private" virt="non-virtual"><scope>Robot</scope><name>ballast_mass</name></member>
+      <member refid="classRobot_1a660f3561bff6b32c870d4129ad99777d" prot="private" virt="non-virtual"><scope>Robot</scope><name>ballast_max_mass</name></member>
+      <member refid="classRobot_1a5848110884e29637b96ca3b48fbf0b88" prot="private" virt="non-virtual"><scope>Robot</scope><name>ballast_out_flow_rate</name></member>
+      <member refid="classRobot_1ab67a281a215cd30e61febfb50d93dcc3" prot="private" virt="non-virtual"><scope>Robot</scope><name>ballast_stamp</name></member>
+      <member refid="classRobot_1adbcbd4f8989599b0e829e712ec041eae" prot="private" virt="non-virtual"><scope>Robot</scope><name>ballast_states</name></member>
+      <member refid="classRobot_1a8bbf794ee832d5b018ae5beceeedcbee" prot="private" virt="non-virtual"><scope>Robot</scope><name>bouyancyVector</name></member>
+      <member refid="classRobot_1ae3345db4094f9a00e75875ee28aa02eb" prot="public" virt="non-virtual"><scope>Robot</scope><name>calcBouyantTorque</name></member>
+      <member refid="classRobot_1a6253414aead1fad9c8d1b4464fd5cbff" prot="public" virt="non-virtual"><scope>Robot</scope><name>calcDragForces</name></member>
+      <member refid="classRobot_1a40d935158bfa2f1c9f2b6ec051891172" prot="public" virt="non-virtual"><scope>Robot</scope><name>calcDragTorques</name></member>
+      <member refid="classRobot_1a34f036339ac56ba756f835e5001ed6bc" prot="public" virt="non-virtual"><scope>Robot</scope><name>claw_object_forces</name></member>
+      <member refid="classRobot_1a3eefb8af5b5850b9a95cc585618589bb" prot="private" virt="non-virtual"><scope>Robot</scope><name>claw_object_torques</name></member>
+      <member refid="classRobot_1a4dcb4955091c3dcbc0944f50ec134fca" prot="private" virt="non-virtual"><scope>Robot</scope><name>claw_objects</name></member>
+      <member refid="classRobot_1a477e82e0034a42f524ee5a257a8add0d" prot="public" virt="non-virtual"><scope>Robot</scope><name>clawTransformAvailable</name></member>
+      <member refid="classRobot_1a63836e32d4c6785f565e8680b648e393" prot="private" virt="non-virtual"><scope>Robot</scope><name>depth_enabled</name></member>
+      <member refid="classRobot_1a744d391ff41392fb89955afe881969a8" prot="private" virt="non-virtual"><scope>Robot</scope><name>depth_rate</name></member>
+      <member refid="classRobot_1af5dab04506e5991513b855143ae60eff" prot="private" virt="non-virtual"><scope>Robot</scope><name>depth_sigma</name></member>
+      <member refid="classRobot_1ad778f2d96970cc0f32fb1d38b7fad419" prot="private" virt="non-virtual"><scope>Robot</scope><name>dragCoef</name></member>
+      <member refid="classRobot_1a634e0cb178987ef2b5f3bff9ea5769b0" prot="private" virt="non-virtual"><scope>Robot</scope><name>dvl_enabled</name></member>
+      <member refid="classRobot_1a155ef082ebc6e716e07c4ec0eae33e23" prot="private" virt="non-virtual"><scope>Robot</scope><name>dvl_rate</name></member>
+      <member refid="classRobot_1a6c36ee52152d8ede5947726697256f9e" prot="private" virt="non-virtual"><scope>Robot</scope><name>dvl_sigma</name></member>
+      <member refid="classRobot_1a0cf3d3fac5914a3a24946d34b4859cf6" prot="public" virt="non-virtual"><scope>Robot</scope><name>dvlTransformAvailable</name></member>
+      <member refid="classRobot_1af2cd8e8eddd16255ae15d629da4a92cb" prot="private" virt="non-virtual"><scope>Robot</scope><name>environment_force</name></member>
+      <member refid="classRobot_1ada9ee6c472a5ed1779b74034dbb64703" prot="private" virt="non-virtual"><scope>Robot</scope><name>fakePingerPosition</name></member>
+      <member refid="classRobot_1a9c174ca811f34de72aecaeddb920f4f6" prot="private" virt="non-virtual"><scope>Robot</scope><name>forces</name></member>
+      <member refid="classRobot_1aa6bb0588c450bfbadae85a4411c70903" prot="public" virt="non-virtual"><scope>Robot</scope><name>getAcousticsEnabled</name></member>
+      <member refid="classRobot_1aeafa4fce7f1955d67206f8545d7151d1" prot="public" virt="non-virtual"><scope>Robot</scope><name>getAcousticsPingTime</name></member>
+      <member refid="classRobot_1a34dd73d4c8e64d77aa02b4879275ef79" prot="public" virt="non-virtual"><scope>Robot</scope><name>getBallastEnabled</name></member>
+      <member refid="classRobot_1a83c1c156a023e77e938e5db66df9fb58" prot="public" virt="non-virtual"><scope>Robot</scope><name>getBallastMass</name></member>
+      <member refid="classRobot_1a6e4bdc6c8db0189e7edf47d2f765b299" prot="public" virt="non-virtual"><scope>Robot</scope><name>getBallastState</name></member>
+      <member refid="classRobot_1a5a3da2d337594073c7e106d9be338fd5" prot="public" virt="non-virtual"><scope>Robot</scope><name>getClawObjectForces</name></member>
+      <member refid="classRobot_1a324ae0be9b5daaf2b84aae3c36b17367" prot="public" virt="non-virtual"><scope>Robot</scope><name>getClawObjectTorques</name></member>
+      <member refid="classRobot_1a7e99c395cde340b21362b99de899f75c" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDepthEnabled</name></member>
+      <member refid="classRobot_1a38c4da2361552ca9e45d8e2484c244b5" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDepthOffset</name></member>
+      <member refid="classRobot_1a11ab922c55bcbb09e59ce60a65ed1d8d" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDepthRate</name></member>
+      <member refid="classRobot_1abe61e6cd927a887e5128466cb37ed710" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDepthSigma</name></member>
+      <member refid="classRobot_1a335e5adc734c6c695b5b102393d31f13" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDVLEnabled</name></member>
+      <member refid="classRobot_1aaac3db60fd0a0bc8aa426a2f4d458cf4" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDVLOffset</name></member>
+      <member refid="classRobot_1a1fb4f5806eb613a3d5b1a795b9f4604b" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDVLQuat</name></member>
+      <member refid="classRobot_1a624f70a057c648230494fcc83da70e17" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDVLRate</name></member>
+      <member refid="classRobot_1a0f3c2ac24f2b0360bea03647f458f3f1" prot="public" virt="non-virtual"><scope>Robot</scope><name>getDVLSigma</name></member>
+      <member refid="classRobot_1a48aa3805b9bad7f3fc52e0ea3cb33d49" prot="public" virt="non-virtual"><scope>Robot</scope><name>getEnvironmentForces</name></member>
+      <member refid="classRobot_1a396f793cbe4145b937fb366a8a89f188" prot="public" virt="non-virtual"><scope>Robot</scope><name>getIMUDrift</name></member>
+      <member refid="classRobot_1ab1fe86b20af2d1be0ace1a3cffeeab9c" prot="public" virt="non-virtual"><scope>Robot</scope><name>getIMUEnabled</name></member>
+      <member refid="classRobot_1a6ae28f20b62cb77c32ec52584c357e39" prot="public" virt="non-virtual"><scope>Robot</scope><name>getIMUOffset</name></member>
+      <member refid="classRobot_1a829a32156cd0f6862045bb370ce037ef" prot="public" virt="non-virtual"><scope>Robot</scope><name>getIMUQuat</name></member>
+      <member refid="classRobot_1a39243046998625c37021984ed0615ef0" prot="public" virt="non-virtual"><scope>Robot</scope><name>getIMURate</name></member>
+      <member refid="classRobot_1aa43968c61916b0c1e8722d0395d82fc6" prot="public" virt="non-virtual"><scope>Robot</scope><name>getIMUSigma</name></member>
+      <member refid="classRobot_1a44279c6986849132ce26180c97bd22d0" prot="public" virt="non-virtual"><scope>Robot</scope><name>getInvInertia</name></member>
+      <member refid="classRobot_1ab5c5fb40ba9b3d86553d26a1fbc12851" prot="public" virt="non-virtual"><scope>Robot</scope><name>getLatestAngAccel</name></member>
+      <member refid="classRobot_1a07cdd08bd0a67b63adbbcaa4c85ac517" prot="public" virt="non-virtual"><scope>Robot</scope><name>getLatestLinAccel</name></member>
+      <member refid="classRobot_1aa8464f4f7810a60c1225ec0f3fe16662" prot="public" virt="non-virtual"><scope>Robot</scope><name>getLCameraTransform</name></member>
+      <member refid="classRobot_1afce7fb19b5c27df5908d17cfcb63eb0c" prot="public" virt="non-virtual"><scope>Robot</scope><name>getMass</name></member>
+      <member refid="classRobot_1ab5e16154000772584f39cb6713022936" prot="public" virt="non-virtual"><scope>Robot</scope><name>getName</name></member>
+      <member refid="classRobot_1a6111ed121532d6d3a845a24577ac2829" prot="public" virt="non-virtual"><scope>Robot</scope><name>getNetBouyantForce</name></member>
+      <member refid="classRobot_1a2c841a612e981b1d3270552f14177cfa" prot="private" virt="non-virtual"><scope>Robot</scope><name>getScaleFactor</name></member>
+      <member refid="classRobot_1afb7ecc77eac528f97d2f42c045704291" prot="public" virt="non-virtual"><scope>Robot</scope><name>getState</name></member>
+      <member refid="classRobot_1abdf549cc4875b2e6210b3ace4757a599" prot="public" virt="non-virtual"><scope>Robot</scope><name>getThrusterCount</name></member>
+      <member refid="classRobot_1a8d6b88ee1bacbfc8e01faacc46b4cf34" prot="public" virt="non-virtual"><scope>Robot</scope><name>getThrusterForces</name></member>
+      <member refid="classRobot_1ae859ac48fd361a2dd503c4601a8b636f" prot="public" virt="non-virtual"><scope>Robot</scope><name>getThrusterMatrix</name></member>
+      <member refid="classRobot_1a01cde0384a850ae88d58403f4d12540f" prot="public" virt="non-virtual"><scope>Robot</scope><name>getThrusterTorques</name></member>
+      <member refid="classRobot_1adb925c0c2955aa65c396e730448c98cf" prot="public" virt="non-virtual"><scope>Robot</scope><name>getTotalMass</name></member>
+      <member refid="classRobot_1a6b67452beba72a9492f10aaf4abe7d23" prot="private" virt="non-virtual"><scope>Robot</scope><name>hasAcousticsTransform</name></member>
+      <member refid="classRobot_1ae4e5b7c809091c72dcb631eb2fe2932b" prot="private" virt="non-virtual"><scope>Robot</scope><name>hasClawTransform</name></member>
+      <member refid="classRobot_1a9d807501939c149d5a51bcd61a4ed206" prot="private" virt="non-virtual"><scope>Robot</scope><name>hasDVLTransform</name></member>
+      <member refid="classRobot_1aeca89c396384f30e7116a3d9512262bc" prot="private" virt="non-virtual"><scope>Robot</scope><name>hasIMUTransform</name></member>
+      <member refid="classRobot_1ab85a8b763403cb8e5b04c7d8ee95c522" prot="private" virt="non-virtual"><scope>Robot</scope><name>hasLCameraTransform</name></member>
+      <member refid="classRobot_1a60569f1e56bcb17bfa96c8563078faaa" prot="private" virt="non-virtual"><scope>Robot</scope><name>hasMapFrame</name></member>
+      <member refid="classRobot_1aaa8df11a8b41d317f94bb64257e2e1a6" prot="private" virt="non-virtual"><scope>Robot</scope><name>imu_enabled</name></member>
+      <member refid="classRobot_1a0688f891704aadef99f2634c414a7349" prot="private" virt="non-virtual"><scope>Robot</scope><name>imu_rate</name></member>
+      <member refid="classRobot_1a93d191f818542324b3a10359137bc651" prot="private" virt="non-virtual"><scope>Robot</scope><name>imu_sigmaAccel</name></member>
+      <member refid="classRobot_1abab236ddc290ec6480f7afa3cdba5926" prot="private" virt="non-virtual"><scope>Robot</scope><name>imu_sigmaAngle</name></member>
+      <member refid="classRobot_1a8c22431d116767a8aaf7035b6ff796bc" prot="private" virt="non-virtual"><scope>Robot</scope><name>imu_sigmaOmega</name></member>
+      <member refid="classRobot_1af320953d6247cfd018c09929445d0af8" prot="private" virt="non-virtual"><scope>Robot</scope><name>imu_yawDrift</name></member>
+      <member refid="classRobot_1aa1b6c215499a8d6aa0a2ca08f7463e0b" prot="public" virt="non-virtual"><scope>Robot</scope><name>imuTransformAvailable</name></member>
+      <member refid="classRobot_1a8fcfade1c92c99643c4864cbe529ba8c" prot="private" virt="non-virtual"><scope>Robot</scope><name>invBodyInertia</name></member>
+      <member refid="classRobot_1a1db2161e4fc6b0ebbc28259faa113894" prot="private" virt="non-virtual"><scope>Robot</scope><name>lCameraTransform</name></member>
+      <member refid="classRobot_1a252ecc786303b576842982035a76faef" prot="private" virt="non-virtual"><scope>Robot</scope><name>linAccel</name></member>
+      <member refid="classRobot_1abf71739c3c84685cdcc4d50eb831204e" prot="private" virt="non-virtual"><scope>Robot</scope><name>loaded_object</name></member>
+      <member refid="classRobot_1a1c30083c14c5c00e96bac1162c48b819" prot="public" virt="non-virtual"><scope>Robot</scope><name>loadParams</name></member>
+      <member refid="classRobot_1acfb7666e8aad2442f62e9ed6c5e19cb3" prot="public" virt="non-virtual"><scope>Robot</scope><name>mapAvailable</name></member>
+      <member refid="classRobot_1a18b8c7cdc8f67d7374e571464cb75665" prot="private" virt="non-virtual"><scope>Robot</scope><name>mass</name></member>
+      <member refid="classRobot_1a8265ac23dd8e0ea46ed06c4f73b01560" prot="private" virt="non-virtual"><scope>Robot</scope><name>maxThrust</name></member>
+      <member refid="classRobot_1ae11f12fef20c4252161c6b774a436f1d" prot="private" virt="non-virtual"><scope>Robot</scope><name>name</name></member>
+      <member refid="classRobot_1a3a690762e62257d5ee7b46c385739c5a" prot="private" virt="non-virtual"><scope>Robot</scope><name>node</name></member>
+      <member refid="classRobot_1a48f8b0addeda5809edaa1c0ba0b99098" prot="private" virt="non-virtual"><scope>Robot</scope><name>origin_to_claw_translation</name></member>
+      <member refid="classRobot_1a5bf4badeb1ed01975c79f78533f3550f" prot="private" virt="non-virtual"><scope>Robot</scope><name>q_dvl</name></member>
+      <member refid="classRobot_1a361b365b026b403cb6e41ae04337b132" prot="private" virt="non-virtual"><scope>Robot</scope><name>q_imu</name></member>
+      <member refid="classRobot_1a53b472edcdabbbfde7d336bd567b09f6" prot="private" virt="non-virtual"><scope>Robot</scope><name>r_cob</name></member>
+      <member refid="classRobot_1ab902107b86b112152c923fc5446cb714" prot="private" virt="non-virtual"><scope>Robot</scope><name>r_cod</name></member>
+      <member refid="classRobot_1a7d91bea031830eb40cf740839744bef2" prot="private" virt="non-virtual"><scope>Robot</scope><name>r_depth</name></member>
+      <member refid="classRobot_1ab3f68956e42fc90bce7996207751c7a4" prot="private" virt="non-virtual"><scope>Robot</scope><name>r_dvl</name></member>
+      <member refid="classRobot_1a15269437145a9aac9c0a20c0bd98592b" prot="private" virt="non-virtual"><scope>Robot</scope><name>r_imu</name></member>
+      <member refid="classRobot_1a4fc7c70ae20623f05e06f2ecb388b6c4" prot="public" virt="non-virtual"><scope>Robot</scope><name>Robot</name></member>
+      <member refid="classRobot_1aeaa9560d67494142deb3ea62869d668e" prot="public" virt="non-virtual"><scope>Robot</scope><name>Robot</name></member>
+      <member refid="classRobot_1a55ab7ba9ce9a6709941bd6afbb25aef6" prot="private" virt="non-virtual"><scope>Robot</scope><name>rpy2quat</name></member>
+      <member refid="classRobot_1a860e16ee13d935ff5399320f84668f59" prot="private" virt="non-virtual"><scope>Robot</scope><name>safeTransform</name></member>
+      <member refid="classRobot_1a21d2aad7aa92d4f0bccac8f29ed75853" prot="public" virt="non-virtual"><scope>Robot</scope><name>setAccel</name></member>
+      <member refid="classRobot_1a4b43c6b0aeaf1b82a4100884aad511ed" prot="public" virt="non-virtual"><scope>Robot</scope><name>setActiveBallastState</name></member>
+      <member refid="classRobot_1a24af520d1407c39fb9378667da901bb4" prot="private" virt="non-virtual"><scope>Robot</scope><name>setForcesTorques</name></member>
+      <member refid="classRobot_1a5f4b55b473e29fb78a8dc5538dec0d26" prot="public" virt="non-virtual"><scope>Robot</scope><name>setLoadedClawObject</name></member>
+      <member refid="classRobot_1a5992dfa606cb6da7a45554c8ad0eaf85" prot="public" virt="non-virtual"><scope>Robot</scope><name>setState</name></member>
+      <member refid="classRobot_1a47a3566ddf1e36df51814e216d61642d" prot="private" virt="non-virtual"><scope>Robot</scope><name>speedOfSound</name></member>
+      <member refid="classRobot_1a14b29861f8f8175f422a04347f4ac9d7" prot="private" virt="non-virtual"><scope>Robot</scope><name>state</name></member>
+      <member refid="classRobot_1ae034df4736de460a0125adf09c31bae7" prot="private" virt="non-virtual"><scope>Robot</scope><name>std2v3d</name></member>
+      <member refid="classRobot_1aaf79eaf6dbcef81ffc7657480f0c8a19" prot="private" virt="non-virtual"><scope>Robot</scope><name>storeConfigData</name></member>
+      <member refid="classRobot_1a70d873c37d0675c83c065a7d8a2de9f2" prot="private" virt="non-virtual"><scope>Robot</scope><name>tf_buffer</name></member>
+      <member refid="classRobot_1a99ce9d90b7b030668175f80df8ccdbb5" prot="private" virt="non-virtual"><scope>Robot</scope><name>tf_listener</name></member>
+      <member refid="classRobot_1ace222843d24bb2ac3ee1b6e07050b1f6" prot="private" virt="non-virtual"><scope>Robot</scope><name>thrusterCount</name></member>
+      <member refid="classRobot_1aa2070149ad90f37997ed229bc4418c3f" prot="private" virt="non-virtual"><scope>Robot</scope><name>thrusterForceQue</name></member>
+      <member refid="classRobot_1a028d42b960ccd1478b688286ccd69a46" prot="private" virt="non-virtual"><scope>Robot</scope><name>thrusterMatrix</name></member>
+      <member refid="classRobot_1aad3d3bdfb8f03d3f82457ea7146a6fef" prot="private" virt="non-virtual"><scope>Robot</scope><name>torques</name></member>
+      <member refid="classRobot_1a77eb23b4bc37a03524a32a021aa800f2" prot="public" virt="non-virtual"><scope>Robot</scope><name>updateActiveBallast</name></member>
+      <member refid="classRobot_1a45c303eb10c2384cc05edaf831ea9062" prot="private" virt="non-virtual"><scope>Robot</scope><name>weightVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

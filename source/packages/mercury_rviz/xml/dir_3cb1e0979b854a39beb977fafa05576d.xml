@@ -1,12 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="dir_3cb1e0979b854a39beb977fafa05576d" kind="dir">
     <compoundname>include/mercury_rviz</compoundname>
-    <innerfile refid="Actuators_8hpp">Actuators.hpp</innerfile>
-    <innerfile refid="BaggingConfiguration_8hpp">BaggingConfiguration.hpp</innerfile>
-    <innerfile refid="BaggingPanel_8hpp">BaggingPanel.hpp</innerfile>
-    <innerfile refid="BagItem_8hpp">BagItem.hpp</innerfile>
-    <innerfile refid="bringup__recipe_8hpp">bringup_recipe.hpp</innerfile>
     <innerfile refid="ControlPanel_8hpp">ControlPanel.hpp</innerfile>
     <innerfile refid="DiagnosticOverlay_8hpp">DiagnosticOverlay.hpp</innerfile>
     <innerfile refid="DiagnosticsPanel_8hpp">DiagnosticsPanel.hpp</innerfile>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_5c604715515ef6b6b89210c5bf5e316d" kind="dir">
+    <compoundname>include/mercury_autonomy</compoundname>
+    <innerdir refid="dir_8577ed8e2da5633cc4e45487f58c15f5">include/mercury_autonomy/bt_actions</innerdir>
+    <innerdir refid="dir_08723c9bd0e05a8563c17771fe389ef7">include/mercury_autonomy/bt_conditions</innerdir>
+    <innerdir refid="dir_4289907cc49c824377cfdf18319c347d">include/mercury_autonomy/bt_decorators</innerdir>
+    <innerfile refid="autonomy__base_8hpp">autonomy_base.hpp</innerfile>
+    <innerfile refid="autonomy__lib_8hpp">autonomy_lib.hpp</innerfile>
+    <innerfile refid="autonomy__util_8hpp">autonomy_util.hpp</innerfile>
+    <innerfile refid="mercury__bt__node_8hpp">mercury_bt_node.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_autonomy/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structmercury__rviz_1_1PaintedCircleConfig" kind="struct" language="C++" prot="public">
+    <compoundname>mercury_rviz::PaintedCircleConfig</compoundname>
+    <includes refid="OverlayDisplay_8hpp" local="no">OverlayDisplay.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1a016b5fcf802bce3540df7e441735e8b8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedCircleConfig::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="63" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" compoundref="OverlayDisplay_8cpp" startline="244" endline="258">mercury_rviz::OverlayDisplay::paintCircle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1acc76d76edac839e2205d31e642cbf98b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedCircleConfig::y_</definition>
+        <argsstring></argsstring>
+        <name>y_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="63" column="12" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" compoundref="OverlayDisplay_8cpp" startline="244" endline="258">mercury_rviz::OverlayDisplay::paintCircle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1ab221817a4fb398656116475035aba024" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedCircleConfig::height_</definition>
+        <argsstring></argsstring>
+        <name>height_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="63" column="15" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1a347c1b3cd720bd17b90fcd1d806c88fc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedCircleConfig::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="63" column="23" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1acd77397c8953e9c06f3d7920428dc53e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedCircleConfig::inner_radius_</definition>
+        <argsstring></argsstring>
+        <name>inner_radius_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="64" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" compoundref="OverlayDisplay_8cpp" startline="244" endline="258">mercury_rviz::OverlayDisplay::paintCircle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1acc34ee45b0c4532526bb486caa4992c4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedCircleConfig::outer_radius_</definition>
+        <argsstring></argsstring>
+        <name>outer_radius_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="64" column="23" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" compoundref="OverlayDisplay_8cpp" startline="244" endline="258">mercury_rviz::OverlayDisplay::paintCircle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1a33143b14384db256a08f81b5d6768c9b" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor mercury_rviz::PaintedCircleConfig::inner_color_</definition>
+        <argsstring></argsstring>
+        <name>inner_color_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="65" column="12" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" compoundref="OverlayDisplay_8cpp" startline="244" endline="258">mercury_rviz::OverlayDisplay::paintCircle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedCircleConfig_1a7c254416e844cef559bdf3c735c4c313" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor mercury_rviz::PaintedCircleConfig::outer_color_</definition>
+        <argsstring></argsstring>
+        <name>outer_color_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="65" column="25" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" compoundref="OverlayDisplay_8cpp" startline="244" endline="258">mercury_rviz::OverlayDisplay::paintCircle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_rviz::PaintedCircleConfig</label>
+        <link refid="structmercury__rviz_1_1PaintedCircleConfig"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/OverlayDisplay.hpp" line="62" column="1" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="62" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1ab221817a4fb398656116475035aba024" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>height_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1a33143b14384db256a08f81b5d6768c9b" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>inner_color_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1acd77397c8953e9c06f3d7920428dc53e" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>inner_radius_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1a7c254416e844cef559bdf3c735c4c313" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>outer_color_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1acc34ee45b0c4532526bb486caa4992c4" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>outer_radius_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1a347c1b3cd720bd17b90fcd1d806c88fc" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>width_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1a016b5fcf802bce3540df7e441735e8b8" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>x_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedCircleConfig_1acc76d76edac839e2205d31e642cbf98b" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedCircleConfig</scope><name>y_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

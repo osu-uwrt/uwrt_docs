@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacecontroller__overseer" kind="namespace" language="Python">
+    <compoundname>controller_overseer</compoundname>
+    <innerclass refid="classcontroller__overseer_1_1MonitoredServiceClient" prot="public">controller_overseer::MonitoredServiceClient</innerclass>
+    <innerclass refid="classcontroller__overseer_1_1SimulinkModelNode" prot="public">controller_overseer::SimulinkModelNode</innerclass>
+    <innerclass refid="classcontroller__overseer_1_1ControllerOverseer" prot="public">controller_overseer::ControllerOverseer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a8e5ab9be9e37c9b328c3610107ef5eeb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float controller_overseer.ERROR_PATIENCE</definition>
+        <argsstring></argsstring>
+        <name>ERROR_PATIENCE</name>
+        <initializer>=  1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="28" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1aefdccfc3343747e9891d7adfbf0bafd9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int controller_overseer.ESC_POWER_STOP_TOLERANCE</definition>
+        <argsstring></argsstring>
+        <name>ESC_POWER_STOP_TOLERANCE</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="31" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1ad8a3860435e1df4007f45d3ae61ffaba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int controller_overseer.ESC_POWER_TIMEOUT</definition>
+        <argsstring></argsstring>
+        <name>ESC_POWER_TIMEOUT</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="32" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a10a10f114817c47f4db914591454374c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int controller_overseer.PARAMETER_SCALE</definition>
+        <argsstring></argsstring>
+        <name>PARAMETER_SCALE</name>
+        <initializer>=  1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="34" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1ac47c993db489c79936cba72ca0276378" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string controller_overseer.THRUSTER_SOLVER_WEIGHT_MATRIX_TOPIC</definition>
+        <argsstring></argsstring>
+        <name>THRUSTER_SOLVER_WEIGHT_MATRIX_TOPIC</name>
+        <initializer>=  &quot;controller/solver_weights&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="36" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a98926aee61a4c3f52e06bbcf28461df6" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list controller_overseer.SPECIAL_PARAMETERS</definition>
+        <argsstring></argsstring>
+        <name>SPECIAL_PARAMETERS</name>
+        <initializer>=  [&quot;talos_wrenchmat&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="39" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a0590cede14549f35f69730c3b2e2fc94" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string controller_overseer.ACTIVE_PARAMETERS_MASK</definition>
+        <argsstring></argsstring>
+        <name>ACTIVE_PARAMETERS_MASK</name>
+        <initializer>=  &quot;controller__active_force_mask&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="41" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a77c968695474c4862173fe1341bf7da5" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string controller_overseer.FF_PUBLISH_PARAM</definition>
+        <argsstring></argsstring>
+        <name>FF_PUBLISH_PARAM</name>
+        <initializer>=  &quot;disable_native_ff&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="43" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1ac91a1e5679bd547014bee29d3ac632a7" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string controller_overseer.FF_TOPIC_NAME</definition>
+        <argsstring></argsstring>
+        <name>FF_TOPIC_NAME</name>
+        <initializer>=  &quot;controller/FF_body_force&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="44" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1ad9058d220142cf4f9b469bc4512d7df9" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string controller_overseer.AUTOTUNE_REINIT_TOPIC_NAME</definition>
+        <argsstring></argsstring>
+        <name>AUTOTUNE_REINIT_TOPIC_NAME</name>
+        <initializer>=  &quot;controller/re_init_accumulators&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="45" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a2a1386d7c64d27ffc284bbbe5cc01129" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int controller_overseer.WEIGHTS_FORCE_UPDATE_PERIOD</definition>
+        <argsstring></argsstring>
+        <name>WEIGHTS_FORCE_UPDATE_PERIOD</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="46" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a98ae468fe522064738a8cc741338e00a" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string controller_overseer.ORIN_AUTOTUNE_DIR</definition>
+        <argsstring></argsstring>
+        <name>ORIN_AUTOTUNE_DIR</name>
+        <initializer>=  &quot;/bin&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="48" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1a1eb08a68fbf1e37d06f17811e3033c68" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int controller_overseer.AUTOFF_INIT_TOLERANCE</definition>
+        <argsstring></argsstring>
+        <name>AUTOFF_INIT_TOLERANCE</name>
+        <initializer>=  .01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="50" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1af8f07d713c7c68311754a50ce86f9f70" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float controller_overseer.G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <initializer>=  9.8067</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="52" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecontroller__overseer_1aa84e2d19197f190be6a5609d623a7032" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int controller_overseer.RELOAD_TIME</definition>
+        <argsstring></argsstring>
+        <name>RELOAD_TIME</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="54" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecontroller__overseer_1a720fd2e727b938c4ae654217aae9937f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def controller_overseer.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="993" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="993" bodyend="1002"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_controller/controller_overseer.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

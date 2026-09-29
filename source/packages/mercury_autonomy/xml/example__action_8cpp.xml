@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="example__action_8cpp" kind="file" language="C++">
+    <compoundname>example_action.cpp</compoundname>
+    <includes refid="example__action_8hpp" local="yes">mercury_autonomy/bt_actions/example_action.hpp</includes>
+    <incdepgraph>
+      <node id="28">
+        <label>std_srvs/srv/set_bool.hpp</label>
+      </node>
+      <node id="30">
+        <label>mercury_autonomy/autonomy_util.hpp</label>
+        <link refid="autonomy__util_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="22">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy/autonomy_base.hpp</label>
+        <link refid="autonomy__base_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>nav_msgs/msg/odometry.hpp</label>
+      </node>
+      <node id="20">
+        <label>geometry_msgs/msg/pose.hpp</label>
+      </node>
+      <node id="21">
+        <label>geometry_msgs/msg/transform_stamped.hpp</label>
+      </node>
+      <node id="14">
+        <label>rclcpp_action/rclcpp_action.hpp</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/bt_actions/example_action.cpp</label>
+        <link refid="example__action_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="15">
+        <label>ament_index_cpp/get_package_prefix.hpp</label>
+      </node>
+      <node id="3">
+        <label>mercury_autonomy/autonomy_lib.hpp</label>
+        <link refid="autonomy__lib_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>geometry_msgs/msg/vector3.hpp</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy/bt_actions/example_action.hpp</label>
+        <link refid="example__action_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="16">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="29">
+        <label>std_srvs/srv/trigger.hpp</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="12">
+        <label>behaviortree_cpp/loggers/groot2_publisher.h</label>
+      </node>
+      <node id="10">
+        <label>behaviortree_cpp/behavior_tree.h</label>
+      </node>
+      <node id="19">
+        <label>tf2_geometry_msgs/tf2_geometry_msgs.hpp</label>
+      </node>
+      <node id="11">
+        <label>behaviortree_cpp/bt_factory.h</label>
+      </node>
+      <node id="18">
+        <label>tf2_ros/transform_listener.h</label>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="17">
+        <label>tf2_ros/buffer.h</label>
+      </node>
+      <node id="27">
+        <label>std_msgs/msg/string.hpp</label>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="31">
+        <label>mercury_autonomy/mercury_bt_node.hpp</label>
+        <link refid="mercury__bt__node_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>sensor_msgs/msg/imu.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacemercury__autonomy">mercury_autonomy</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Example<sp/>BT<sp/>action<sp/>node<sp/>implementation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>See<sp/>the<sp/>header<sp/>for<sp/>documentation<sp/>on<sp/>how<sp/>to<sp/>create<sp/>new<sp/>action<sp/>nodes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="example__action_8hpp" kindref="compound">mercury_autonomy/bt_actions/example_action.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemercury__autonomy" kindref="compound">mercury_autonomy</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classmercury__autonomy_1_1ExampleAction_1a8b84c5cce7ab1b830ed4943d4002f9f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__autonomy_1_1ExampleAction_1a8b84c5cce7ab1b830ed4943d4002f9f2" kindref="member">ExampleAction::rosInit</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>any<sp/>ROS<sp/>publishers,<sp/>subscribers,<sp/>or<sp/>service<sp/>clients<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Example:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>my_pub_<sp/>=<sp/>rosNode()-&gt;create_publisher&lt;std_msgs::msg::String&gt;(&quot;topic&quot;,<sp/>10);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_DEBUG(<ref refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" kindref="member">rosNode</ref>()-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;ExampleAction::rosInit()&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classmercury__autonomy_1_1ExampleAction_1affaebf9485eedb3bd54d18c719d2e5de" refkind="member"><highlight class="normal">BT::NodeStatus<sp/><ref refid="classmercury__autonomy_1_1ExampleAction_1affaebf9485eedb3bd54d18c719d2e5de" kindref="member">ExampleAction::onStart</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>input<sp/>ports</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>target<sp/>=<sp/>getInput&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;target&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!target)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RCLCPP_ERROR(<ref refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" kindref="member">rosNode</ref>()-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;ExampleAction:<sp/>missing<sp/>required<sp/>input<sp/>[target]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BT::NodeStatus::FAILURE;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_INFO(</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" kindref="member">rosNode</ref>()-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;ExampleAction<sp/>started<sp/>with<sp/>target:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>target.value().c_str());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Begin<sp/>the<sp/>action<sp/>(e.g.,<sp/>send<sp/>a<sp/>goal<sp/>to<sp/>a<sp/>ROS<sp/>action<sp/>server).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BT::NodeStatus::RUNNING;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classmercury__autonomy_1_1ExampleAction_1a55403d5ea6b5666e7f8e9b8146e488d4" refkind="member"><highlight class="normal">BT::NodeStatus<sp/><ref refid="classmercury__autonomy_1_1ExampleAction_1a55403d5ea6b5666e7f8e9b8146e488d4" kindref="member">ExampleAction::onRunning</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Check<sp/>progress.<sp/>Return<sp/>RUNNING<sp/>to<sp/>keep<sp/>ticking,<sp/>SUCCESS<sp/>or<sp/>FAILURE<sp/>to<sp/>finish.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_DEBUG(<ref refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" kindref="member">rosNode</ref>()-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;ExampleAction<sp/>running...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BT::NodeStatus::SUCCESS;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classmercury__autonomy_1_1ExampleAction_1a168ea2796e5b04b3db2b089f7aca9e09" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__autonomy_1_1ExampleAction_1a168ea2796e5b04b3db2b089f7aca9e09" kindref="member">ExampleAction::onHalted</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Clean<sp/>up<sp/>resources<sp/>(e.g.,<sp/>cancel<sp/>a<sp/>pending<sp/>ROS<sp/>action<sp/>goal).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>RCLCPP_INFO(<ref refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" kindref="member">rosNode</ref>()-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;ExampleAction<sp/>halted.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mercury_autonomy</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/bt_actions/example_action.cpp"/>
+  </compounddef>
+</doxygen>

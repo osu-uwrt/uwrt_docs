@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classcontroller__overseer_1_1MonitoredServiceClient" kind="class" language="Python" prot="public">
+    <compoundname>controller_overseer::MonitoredServiceClient</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1ad4ea207c7d12b0a8009fb45c4cf5b04e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="61" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1afc32e9b41e1e13fc3e4eb10691de1c53" compoundref="controller__overseer_8py" startline="102" endline="114">controller_overseer.MonitoredServiceClient._srv_callback</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1abb748d873dbc94258a3bb075715cc8c2" compoundref="controller__overseer_8py" startline="70" endline="78">controller_overseer.MonitoredServiceClient.schedule_call</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1a79ed498454c43c63adcf5b41ea32e8b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="62" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1a0ee2e4e3f2237ce4e9abdf194b2990a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="63" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1aac5c12f754d5ebd0c38dfb5e0e60188e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::waiting_for_client</definition>
+        <argsstring></argsstring>
+        <name>waiting_for_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="65" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1afc32e9b41e1e13fc3e4eb10691de1c53" compoundref="controller__overseer_8py" startline="102" endline="114">controller_overseer.MonitoredServiceClient._srv_callback</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1a4e432a887c0ab99b0b675f72d2ef2d7d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::active_client</definition>
+        <argsstring></argsstring>
+        <name>active_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="67" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1afc32e9b41e1e13fc3e4eb10691de1c53" compoundref="controller__overseer_8py" startline="102" endline="114">controller_overseer.MonitoredServiceClient._srv_callback</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1a461d4920d0e3f8ea73891b68413b7f6e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::waiting_requests</definition>
+        <argsstring></argsstring>
+        <name>waiting_requests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="68" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1abb748d873dbc94258a3bb075715cc8c2" compoundref="controller__overseer_8py" startline="70" endline="78">controller_overseer.MonitoredServiceClient.schedule_call</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1a417c176d37496c7eb802f16ab9387384" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::active_future</definition>
+        <argsstring></argsstring>
+        <name>active_future</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="98" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcontroller__overseer_1_1MonitoredServiceClient_1aae0e223b3cd87c00777bfd6d1b443a86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>controller_overseer.MonitoredServiceClient::srv_start_time</definition>
+        <argsstring></argsstring>
+        <name>srv_start_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="100" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcontroller__overseer_1_1MonitoredServiceClient_1a0548047c263fa829e144b118464819dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def controller_overseer.MonitoredServiceClient.__init__</definition>
+        <argsstring>(self, Node node, type srv_type, str srv_name)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Node</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>type</type>
+          <declname>srv_type</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>srv_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="60" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classcontroller__overseer_1_1MonitoredServiceClient_1abb748d873dbc94258a3bb075715cc8c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def controller_overseer.MonitoredServiceClient.schedule_call</definition>
+        <argsstring>(self, request, callback)</argsstring>
+        <name>schedule_call</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <param>
+          <type>callback</type>
+          <defname>callback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="70" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="70" bodyend="78"/>
+        <references refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" compoundref="monitored__service__client_8hpp" startline="17">MonitoredServiceClient&lt; ServiceT &gt;::node</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1ad4ea207c7d12b0a8009fb45c4cf5b04e" compoundref="controller__overseer_8py" startline="61">controller_overseer.MonitoredServiceClient.node</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1a461d4920d0e3f8ea73891b68413b7f6e" compoundref="controller__overseer_8py" startline="68">controller_overseer.MonitoredServiceClient.waiting_requests</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def controller_overseer.MonitoredServiceClient._timer_callback</definition>
+        <argsstring>(self)</argsstring>
+        <name>_timer_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="79" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="79" bodyend="101"/>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1a4e432a887c0ab99b0b675f72d2ef2d7d" compoundref="controller__overseer_8py" startline="67">controller_overseer.MonitoredServiceClient.active_client</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1a417c176d37496c7eb802f16ab9387384" compoundref="controller__overseer_8py" startline="98">controller_overseer.MonitoredServiceClient.active_future</references>
+        <references refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" compoundref="monitored__service__client_8hpp" startline="18">MonitoredServiceClient&lt; ServiceT &gt;::client</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1a79ed498454c43c63adcf5b41ea32e8b7" compoundref="controller__overseer_8py" startline="62">controller_overseer.MonitoredServiceClient.client</references>
+        <references refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" compoundref="monitored__service__client_8hpp" startline="17">MonitoredServiceClient&lt; ServiceT &gt;::node</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1ad4ea207c7d12b0a8009fb45c4cf5b04e" compoundref="controller__overseer_8py" startline="61">controller_overseer.MonitoredServiceClient.node</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1aae0e223b3cd87c00777bfd6d1b443a86" compoundref="controller__overseer_8py" startline="100">controller_overseer.MonitoredServiceClient.srv_start_time</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1aac5c12f754d5ebd0c38dfb5e0e60188e" compoundref="controller__overseer_8py" startline="65">controller_overseer.MonitoredServiceClient.waiting_for_client</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1a461d4920d0e3f8ea73891b68413b7f6e" compoundref="controller__overseer_8py" startline="68">controller_overseer.MonitoredServiceClient.waiting_requests</references>
+      </memberdef>
+      <memberdef kind="function" id="classcontroller__overseer_1_1MonitoredServiceClient_1afc32e9b41e1e13fc3e4eb10691de1c53" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def controller_overseer.MonitoredServiceClient._srv_callback</definition>
+        <argsstring>(self, rclpy.Future future)</argsstring>
+        <name>_srv_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rclpy.Future</type>
+          <declname>future</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/controller_overseer.py" line="102" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="102" bodyend="114"/>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1a4e432a887c0ab99b0b675f72d2ef2d7d" compoundref="controller__overseer_8py" startline="67">controller_overseer.MonitoredServiceClient.active_client</references>
+        <references refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" compoundref="monitored__service__client_8hpp" startline="17">MonitoredServiceClient&lt; ServiceT &gt;::node</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1ad4ea207c7d12b0a8009fb45c4cf5b04e" compoundref="controller__overseer_8py" startline="61">controller_overseer.MonitoredServiceClient.node</references>
+        <references refid="classcontroller__overseer_1_1MonitoredServiceClient_1aac5c12f754d5ebd0c38dfb5e0e60188e" compoundref="controller__overseer_8py" startline="65">controller_overseer.MonitoredServiceClient.waiting_for_client</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>controller_overseer.MonitoredServiceClient</label>
+        <link refid="classcontroller__overseer_1_1MonitoredServiceClient"/>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_controller/controller_overseer.py" line="59" column="1" bodyfile="mercury_controller/controller_overseer.py" bodystart="59" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1a0548047c263fa829e144b118464819dc" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>__init__</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1afc32e9b41e1e13fc3e4eb10691de1c53" prot="private" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>_srv_callback</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" prot="private" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>_timer_callback</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1a4e432a887c0ab99b0b675f72d2ef2d7d" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>active_client</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1a417c176d37496c7eb802f16ab9387384" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>active_future</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1a79ed498454c43c63adcf5b41ea32e8b7" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>client</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1ad4ea207c7d12b0a8009fb45c4cf5b04e" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>node</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1abb748d873dbc94258a3bb075715cc8c2" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>schedule_call</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1aae0e223b3cd87c00777bfd6d1b443a86" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>srv_start_time</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1a0ee2e4e3f2237ce4e9abdf194b2990a8" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>timer</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1aac5c12f754d5ebd0c38dfb5e0e60188e" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>waiting_for_client</name></member>
+      <member refid="classcontroller__overseer_1_1MonitoredServiceClient_1a461d4920d0e3f8ea73891b68413b7f6e" prot="public" virt="non-virtual"><scope>controller_overseer::MonitoredServiceClient</scope><name>waiting_requests</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

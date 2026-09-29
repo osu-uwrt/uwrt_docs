@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacemercury__hardware_1_1tag__odom" kind="namespace" language="Python">
+    <compoundname>mercury_hardware::tag_odom</compoundname>
+    <innerclass refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher" prot="public">mercury_hardware::tag_odom::TagOdomPublisher</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemercury__hardware_1_1tag__odom_1acfdf976f081cab15ebd689c3612e4996" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_hardware::tag_odom.RATE_HZ</definition>
+        <argsstring></argsstring>
+        <name>RATE_HZ</name>
+        <initializer>=  30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="10" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__hardware_1_1tag__odom_1a54d11b04082b833eaab27702376cf8fe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mercury_hardware::tag_odom.VARIANCE</definition>
+        <argsstring></argsstring>
+        <name>VARIANCE</name>
+        <initializer>=  1.66e-03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="11" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__hardware_1_1tag__odom_1a018d0aaae615bdaf9a0ee829053261ac" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string mercury_hardware::tag_odom.TOPIC_NAME</definition>
+        <argsstring></argsstring>
+        <name>TOPIC_NAME</name>
+        <initializer>=  &quot;tag_odom/pose&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="12" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemercury__hardware_1_1tag__odom_1a78a46f6df58e60b23c10df5db92454b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_hardware.tag_odom.v3ToPoint</definition>
+        <argsstring>(Vector3 v3)</argsstring>
+        <name>v3ToPoint</name>
+        <param>
+          <type>Vector3</type>
+          <declname>v3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="15" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="15" bodyend="22"/>
+        <referencedby refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a38871485fd849544923f624ba3694019" compoundref="tag__odom_8py" startline="47" endline="72">mercury_hardware.tag_odom.TagOdomPublisher.timerCb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__hardware_1_1tag__odom_1a610b710f90e9b5ee2f21b2248a6040f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_hardware.tag_odom.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="73" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="73" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_hardware/tag_odom.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

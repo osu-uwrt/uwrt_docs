@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classcalibrate__drag_1_1CalibrateDragNewActionServer" kind="class" language="Python" prot="public">
+    <compoundname>calibrate_drag::CalibrateDragNewActionServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1aa0dc95c0e3ecae7d903baaa17a906e27" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::_result</definition>
+        <argsstring></argsstring>
+        <name>_result</name>
+        <initializer>=  CalibrateDragNew.Result()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="33" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" compoundref="calibrate__drag_8py" startline="126" endline="161">calibrate_drag.CalibrateDragNewActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a308c1293b70e6bc4d3a55dbe14f1b666" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::_goal</definition>
+        <argsstring></argsstring>
+        <name>_goal</name>
+        <initializer>=  CalibrateDragNew.Goal()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="34" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" compoundref="calibrate__drag_8py" startline="126" endline="161">calibrate_drag.CalibrateDragNewActionServer.execute_cb</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a22c8f86e0e89bbb17227b4ca97da8109" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::force_pub</definition>
+        <argsstring></argsstring>
+        <name>force_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="42" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a01739e972024c3a6100fbd60bd540f2f" compoundref="calibrate__drag_8py" startline="111" endline="118">calibrate_drag.CalibrateDragNewActionServer.publish_force</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a7ae17afdf98fc31620729183e61807b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::trigger_sub</definition>
+        <argsstring></argsstring>
+        <name>trigger_sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="46" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a2d9d2ce7dc9fee8e5570f8dab8a7bbe5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::odometry_sub</definition>
+        <argsstring></argsstring>
+        <name>odometry_sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="49" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1abb614b1c9259d0295f1d66c7bfc181c1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::odometry_queue</definition>
+        <argsstring></argsstring>
+        <name>odometry_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="51" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad80de77907eef7dbea092a359d7fe2c1" compoundref="calibrate__drag_8py" startline="93" endline="98">calibrate_drag.CalibrateDragNewActionServer.odometry_cb</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a4a75c42aab5404e5788f81d56054a0e4" compoundref="calibrate__drag_8py" startline="99" endline="106">calibrate_drag.CalibrateDragNewActionServer.wait_for_odometry_msg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="53" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a0e6cf543f5a3f7b1c3b15ec6317e2959" compoundref="calibrate__drag_8py" startline="86" endline="90">calibrate_drag.CalibrateDragNewActionServer.cancel_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" compoundref="calibrate__drag_8py" startline="163" endline="185">calibrate_drag.CalibrateDragNewActionServer.collect_data</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" compoundref="calibrate__drag_8py" startline="126" endline="161">calibrate_drag.CalibrateDragNewActionServer.execute_cb</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac279db84ab96d8c461667b29eb76e4f5" compoundref="calibrate__drag_8py" startline="78" endline="85">calibrate_drag.CalibrateDragNewActionServer.goal_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a46f957c31f09fcb1f816128e6c8e28ec" compoundref="calibrate__thruster_8py" startline="311" endline="318">calibrate_thruster.CalibrateThrusterAction.goal_callback</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a2f17d9a6289d50b1f07417bbd18a637f" compoundref="thruster__test__dshot_8py" startline="67" endline="74">thruster_test_dshot.ThrusterTestActionServer.goal_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" compoundref="calibrate__drag_8py" startline="187" endline="230">calibrate_drag.CalibrateDragNewActionServer.run_until_stable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a94cbd2b3ce2fd898df7f2a8b1a1f1e9d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::paused</definition>
+        <argsstring></argsstring>
+        <name>paused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="54" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" compoundref="calibrate__drag_8py" startline="163" endline="185">calibrate_drag.CalibrateDragNewActionServer.collect_data</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac54f1cd1751ea7044fddb6c692b3d779" compoundref="calibrate__drag_8py" startline="107" endline="109">calibrate_drag.CalibrateDragNewActionServer.trigger_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a725a1f6ec4ae1ae28eb6572b8b265139" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::csvPath</definition>
+        <argsstring></argsstring>
+        <name>csvPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="56" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" compoundref="calibrate__drag_8py" startline="126" endline="161">calibrate_drag.CalibrateDragNewActionServer.execute_cb</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad42c7af576e5f142d9fc9c169cab0ff8" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_drag.CalibrateDragNewActionServer::_action_server</definition>
+        <argsstring></argsstring>
+        <name>_action_server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="65" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a1ca38436b272ab3afe47176e3a1f6d8c" compoundref="calibrate__drag_8py" startline="74" endline="77">calibrate_drag.CalibrateDragNewActionServer.destroy</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a501aaba996f219c4aa102b7d8fa4f220" compoundref="calibrate__thruster_8py" startline="322" endline="326">calibrate_thruster.CalibrateThrusterAction.destroy</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0d55cd2d5af7a43c7146f76c43134d5d" compoundref="thruster__test__dshot_8py" startline="63" endline="66">thruster_test_dshot.ThrusterTestActionServer.destroy</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a9a19f632db1e1535fafb8bedbefab333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="36" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="36" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a1ca38436b272ab3afe47176e3a1f6d8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.destroy</definition>
+        <argsstring>(self)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="74" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="74" bodyend="77"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad42c7af576e5f142d9fc9c169cab0ff8" compoundref="calibrate__drag_8py" startline="65">calibrate_drag.CalibrateDragNewActionServer._action_server</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a7c040496bda0368a09208426db0a14ae" compoundref="calibrate__thruster_8py" startline="76">calibrate_thruster.CalibrateThrusterAction._action_server</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aff3995cfeb94a0d5cbc6653639a3a130" compoundref="thruster__test__dshot_8py" startline="51">thruster_test_dshot.ThrusterTestActionServer._action_server</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac279db84ab96d8c461667b29eb76e4f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.goal_callback</definition>
+        <argsstring>(self, goal_request)</argsstring>
+        <name>goal_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal_request</type>
+          <defname>goal_request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Accept or reject a client request to begin an action.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="78" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="78" bodyend="85"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a0e6cf543f5a3f7b1c3b15ec6317e2959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.cancel_callback</definition>
+        <argsstring>(self, goal)</argsstring>
+        <name>cancel_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal</type>
+          <defname>goal</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="86" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="86" bodyend="90"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad80de77907eef7dbea092a359d7fe2c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.odometry_cb</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>odometry_cb</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="93" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="93" bodyend="98"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1abb614b1c9259d0295f1d66c7bfc181c1" compoundref="calibrate__drag_8py" startline="51">calibrate_drag.CalibrateDragNewActionServer.odometry_queue</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a4a75c42aab5404e5788f81d56054a0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.wait_for_odometry_msg</definition>
+        <argsstring>(self)</argsstring>
+        <name>wait_for_odometry_msg</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="99" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="99" bodyend="106"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1abb614b1c9259d0295f1d66c7bfc181c1" compoundref="calibrate__drag_8py" startline="51">calibrate_drag.CalibrateDragNewActionServer.odometry_queue</references>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" compoundref="calibrate__drag_8py" startline="187" endline="230">calibrate_drag.CalibrateDragNewActionServer.run_until_stable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac54f1cd1751ea7044fddb6c692b3d779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.trigger_cb</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>trigger_cb</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="107" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="107" bodyend="109"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a94cbd2b3ce2fd898df7f2a8b1a1f1e9d" compoundref="calibrate__drag_8py" startline="54">calibrate_drag.CalibrateDragNewActionServer.paused</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a01739e972024c3a6100fbd60bd540f2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.publish_force</definition>
+        <argsstring>(self, value, axis)</argsstring>
+        <name>publish_force</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <param>
+          <type>axis</type>
+          <defname>axis</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="111" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="111" bodyend="118"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a22c8f86e0e89bbb17227b4ca97da8109" compoundref="calibrate__drag_8py" startline="42">calibrate_drag.CalibrateDragNewActionServer.force_pub</references>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" compoundref="calibrate__drag_8py" startline="163" endline="185">calibrate_drag.CalibrateDragNewActionServer.collect_data</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" compoundref="calibrate__drag_8py" startline="187" endline="230">calibrate_drag.CalibrateDragNewActionServer.run_until_stable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.execute_cb</definition>
+        <argsstring>(self, ServerGoalHandle goal_handle)</argsstring>
+        <name>execute_cb</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ServerGoalHandle</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="126" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="126" bodyend="161"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a308c1293b70e6bc4d3a55dbe14f1b666" compoundref="calibrate__drag_8py" startline="34">calibrate_drag.CalibrateDragNewActionServer._goal</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1aa0dc95c0e3ecae7d903baaa17a906e27" compoundref="calibrate__drag_8py" startline="33">calibrate_drag.CalibrateDragNewActionServer._result</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" compoundref="calibrate__drag_8py" startline="163" endline="185">calibrate_drag.CalibrateDragNewActionServer.collect_data</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a725a1f6ec4ae1ae28eb6572b8b265139" compoundref="calibrate__drag_8py" startline="56">calibrate_drag.CalibrateDragNewActionServer.csvPath</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.collect_data</definition>
+        <argsstring>(self, axis)</argsstring>
+        <name>collect_data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>axis</type>
+          <defname>axis</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="163" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="163" bodyend="185"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a94cbd2b3ce2fd898df7f2a8b1a1f1e9d" compoundref="calibrate__drag_8py" startline="54">calibrate_drag.CalibrateDragNewActionServer.paused</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a01739e972024c3a6100fbd60bd540f2f" compoundref="calibrate__drag_8py" startline="111" endline="118">calibrate_drag.CalibrateDragNewActionServer.publish_force</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" compoundref="calibrate__drag_8py" startline="187" endline="230">calibrate_drag.CalibrateDragNewActionServer.run_until_stable</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" compoundref="calibrate__drag_8py" startline="126" endline="161">calibrate_drag.CalibrateDragNewActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.CalibrateDragNewActionServer.run_until_stable</definition>
+        <argsstring>(self, force, axis)</argsstring>
+        <name>run_until_stable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>force</type>
+          <defname>force</defname>
+        </param>
+        <param>
+          <type>axis</type>
+          <defname>axis</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="187" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="187" bodyend="230"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a01739e972024c3a6100fbd60bd540f2f" compoundref="calibrate__drag_8py" startline="111" endline="118">calibrate_drag.CalibrateDragNewActionServer.publish_force</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a4a75c42aab5404e5788f81d56054a0e4" compoundref="calibrate__drag_8py" startline="99" endline="106">calibrate_drag.CalibrateDragNewActionServer.wait_for_odometry_msg</references>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" compoundref="calibrate__drag_8py" startline="163" endline="185">calibrate_drag.CalibrateDragNewActionServer.collect_data</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>calibrate_drag.CalibrateDragNewActionServer</label>
+        <link refid="classcalibrate__drag_1_1CalibrateDragNewActionServer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>calibrate_drag.CalibrateDragNewActionServer</label>
+        <link refid="classcalibrate__drag_1_1CalibrateDragNewActionServer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_controller/calibrate_drag.py" line="31" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="31" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a9a19f632db1e1535fafb8bedbefab333" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>__init__</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad42c7af576e5f142d9fc9c169cab0ff8" prot="private" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>_action_server</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a308c1293b70e6bc4d3a55dbe14f1b666" prot="private" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>_goal</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1aa0dc95c0e3ecae7d903baaa17a906e27" prot="private" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>_result</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a0e6cf543f5a3f7b1c3b15ec6317e2959" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>cancel_callback</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>collect_data</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a725a1f6ec4ae1ae28eb6572b8b265139" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>csvPath</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a1ca38436b272ab3afe47176e3a1f6d8c" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>destroy</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>execute_cb</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a22c8f86e0e89bbb17227b4ca97da8109" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>force_pub</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac279db84ab96d8c461667b29eb76e4f5" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>goal_callback</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad80de77907eef7dbea092a359d7fe2c1" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>odometry_cb</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1abb614b1c9259d0295f1d66c7bfc181c1" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>odometry_queue</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a2d9d2ce7dc9fee8e5570f8dab8a7bbe5" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>odometry_sub</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a94cbd2b3ce2fd898df7f2a8b1a1f1e9d" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>paused</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a01739e972024c3a6100fbd60bd540f2f" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>publish_force</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>run_until_stable</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>running</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac54f1cd1751ea7044fddb6c692b3d779" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>trigger_cb</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a7ae17afdf98fc31620729183e61807b5" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>trigger_sub</name></member>
+      <member refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a4a75c42aab5404e5788f81d56054a0e4" prot="public" virt="non-virtual"><scope>calibrate_drag::CalibrateDragNewActionServer</scope><name>wait_for_odometry_msg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

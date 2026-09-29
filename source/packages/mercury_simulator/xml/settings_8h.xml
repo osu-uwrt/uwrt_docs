@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="settings_8h" kind="file" language="C++">
+    <compoundname>settings.h</compoundname>
+    <includedby refid="collisionBox_8h" local="yes">include/mercury_simulator/collisionBox.h</includedby>
+    <includedby refid="RobotClass_8h" local="yes">include/mercury_simulator/RobotClass.h</includedby>
+    <includedby refid="physics__simulator_8cpp" local="yes">src/physics_simulator.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/mercury_simulator/settings.h</label>
+        <link refid="settings_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/physics_simulator.cpp</label>
+        <link refid="physics__simulator_8cpp"/>
+      </node>
+      <node id="2">
+        <label>include/mercury_simulator/collisionBox.h</label>
+        <link refid="collisionBox_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/robot_class.cpp</label>
+        <link refid="robot__class_8cpp"/>
+      </node>
+      <node id="5">
+        <label>include/mercury_simulator/RobotClass.h</label>
+        <link refid="RobotClass_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/collisionBox_class.cpp</label>
+        <link refid="collisionBox__class_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="settings_8h_1a4d6ad6c7540a2e8f3146b2333660b1b2" prot="public" static="no">
+        <name>SYNC_ODOM</name>
+        <initializer>true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If SYNC_ODOM is set to true, fake sensor data is ignored </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="7" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1a8638b44b7243fad97f4309660577d1a7" prot="public" static="no">
+        <name>SENSOR_NOISE_ENABLED</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="8" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1ab7baf92d518987471038e8cc3261aa0c" prot="public" static="no">
+        <name>ACOUSTIC_DATA</name>
+        <initializer>true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="9" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1aaa0e5072566ed3142c69115b5588f758" prot="public" static="no">
+        <name>COLLISION_TOGGLE</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="10" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1ac5ca7cec85fe7656a5d9de19f3464755" prot="public" static="no">
+        <name>STATE_PUB_TIME</name>
+        <initializer>0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="11" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1abff027815f9b6edbe177f8ea4834388d" prot="public" static="no">
+        <name>COEF_OF_RESTITUTION</name>
+        <initializer>    0.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="12" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1a73754cb16750c80abfa3b344106ccb1d" prot="public" static="no">
+        <name>THRUSTER_DELAY</name>
+        <initializer>0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="15" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1a6801baa546c6112d19eb095111d24720" prot="public" static="no">
+        <name>GRAVITY</name>
+        <initializer>9.80665</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="16" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1aab36f64e58b704e6ca92ac74329d0120" prot="public" static="no">
+        <name>WATER_DENSITY</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="17" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="settings_8h_1aba45635c3df17979b6c0ca5638a3ff8f" prot="public" static="no">
+        <name>VEHICLE_HEIGHT</name>
+        <initializer>0.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/settings.h" line="18" column="9" bodyfile="include/mercury_simulator/settings.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//===============================//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>SETTINGS/CONSTANTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//===============================//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="settings_8h_1a4d6ad6c7540a2e8f3146b2333660b1b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYNC_ODOM<sp/>true<sp/></highlight><highlight class="comment">//<sp/>Makes<sp/>it<sp/>so<sp/>Odometry<sp/>position<sp/>perfically<sp/>matches<sp/>physics<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="settings_8h_1a8638b44b7243fad97f4309660577d1a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_NOISE_ENABLED<sp/>false<sp/></highlight><highlight class="comment">//<sp/>Noise<sp/>is<sp/>added<sp/>to<sp/>sensor<sp/>data<sp/>when<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="settings_8h_1ab7baf92d518987471038e8cc3261aa0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACOUSTIC_DATA<sp/>true<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Toggle<sp/>whether<sp/>acoustic<sp/>sensor<sp/>data<sp/>will<sp/>be<sp/>faked</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="settings_8h_1aaa0e5072566ed3142c69115b5588f758" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLLISION_TOGGLE<sp/>false<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Toggle<sp/>whether<sp/>collisions<sp/>are<sp/>enabled<sp/>or<sp/>disabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="settings_8h_1ac5ca7cec85fe7656a5d9de19f3464755" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATE_PUB_TIME<sp/>0.01<sp/></highlight><highlight class="comment">//<sp/>Time,<sp/>in<sp/>seconds,<sp/>between<sp/>simulator<sp/>publishing<sp/>state<sp/>(for<sp/>RViz)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="settings_8h_1abff027815f9b6edbe177f8ea4834388d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEF_OF_RESTITUTION<sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>0.3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ratio<sp/>of<sp/>velocity<sp/>after<sp/>vs<sp/>before<sp/>collision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://en.wikipedia.org/wiki/Coefficient_of_restitution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="settings_8h_1a73754cb16750c80abfa3b344106ccb1d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THRUSTER_DELAY<sp/>0.1<sp/></highlight><highlight class="comment">//<sp/>s<sp/><sp/><sp/>time<sp/>from<sp/>when<sp/>thruster<sp/>is<sp/>commanded<sp/>to<sp/>when<sp/>force<sp/>is<sp/>applied</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="settings_8h_1a6801baa546c6112d19eb095111d24720" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GRAVITY<sp/>9.80665<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>m/s^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="settings_8h_1aab36f64e58b704e6ca92ac74329d0120" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WATER_DENSITY<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="settings_8h_1aba45635c3df17979b6c0ca5638a3ff8f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VEHICLE_HEIGHT<sp/>0.3<sp/></highlight><highlight class="comment">//<sp/>m<sp/><sp/><sp/>Used<sp/>for<sp/>bouyancy<sp/>calcs<sp/>when<sp/>partially<sp/>submerged</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_simulator/settings.h"/>
+  </compounddef>
+</doxygen>

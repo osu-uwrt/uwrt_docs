@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1SetFeedforwardMode" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::SetFeedforwardMode</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="set__feedforward__mode_8hpp" local="no">set_feedforward_mode.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmercury__autonomy_1_1SetFeedforwardMode_1ac2fbace8a0c3dbbf2295a6266dead1cc" prot="private" static="no">
+        <type>std_srvs::srv::SetBool</type>
+        <definition>using mercury_autonomy::SetFeedforwardMode::SetBool =  std_srvs::srv::SetBool</definition>
+        <argsstring></argsstring>
+        <name>SetBool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="31" column="5" bodyfile="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1SetFeedforwardMode_1a702f5923ceb4206e4b27b8c97a356cb1" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; mercury_msgs::msg::ControllerCommand &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;mercury_msgs::msg::ControllerCommand&gt;::SharedPtr mercury_autonomy::SetFeedforwardMode::linear_pub_</definition>
+        <argsstring></argsstring>
+        <name>linear_pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="33" column="35" bodyfile="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1acd645ce81a9a7aea657ab498fea95408" compoundref="set__feedforward__mode_8cpp" startline="18" endline="53">onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1a7f1c0a49c0d05bd1a0e926f451e8a76c" compoundref="set__feedforward__mode_8cpp" startline="10" endline="16">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1SetFeedforwardMode_1aaea779529f2d493a9a9c424f767eeb8d" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; mercury_msgs::msg::ControllerCommand &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;mercury_msgs::msg::ControllerCommand&gt;::SharedPtr mercury_autonomy::SetFeedforwardMode::angular_pub_</definition>
+        <argsstring></argsstring>
+        <name>angular_pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="34" column="35" bodyfile="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1acd645ce81a9a7aea657ab498fea95408" compoundref="set__feedforward__mode_8cpp" startline="18" endline="53">onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1a7f1c0a49c0d05bd1a0e926f451e8a76c" compoundref="set__feedforward__mode_8cpp" startline="10" endline="16">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1SetFeedforwardMode_1a059762e98ad810c3cb9ce4e807e87781" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; <ref refid="classmercury__autonomy_1_1SetFeedforwardMode_1ac2fbace8a0c3dbbf2295a6266dead1cc" kindref="member">SetBool</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;SetBool&gt;::SharedPtr mercury_autonomy::SetFeedforwardMode::set_teleop_client_</definition>
+        <argsstring></argsstring>
+        <name>set_teleop_client_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="35" column="32" bodyfile="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1acd645ce81a9a7aea657ab498fea95408" compoundref="set__feedforward__mode_8cpp" startline="18" endline="53">onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1a7f1c0a49c0d05bd1a0e926f451e8a76c" compoundref="set__feedforward__mode_8cpp" startline="10" endline="16">rosInit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1SetFeedforwardMode_1a28cdf0dc4d5f8df1485b859108a5b8f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::SetFeedforwardMode::SetFeedforwardMode</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>SetFeedforwardMode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="18" column="5" bodyfile="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" bodystart="18" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1SetFeedforwardMode_1acd645ce81a9a7aea657ab498fea95408" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::SetFeedforwardMode::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="23" column="20" bodyfile="src/bt_actions/set_feedforward_mode.cpp" bodystart="18" bodyend="53"/>
+        <references refid="classmercury__autonomy_1_1SetFeedforwardMode_1aaea779529f2d493a9a9c424f767eeb8d" compoundref="set__feedforward__mode_8hpp" startline="34">angular_pub_</references>
+        <references refid="classmercury__autonomy_1_1SetFeedforwardMode_1a702f5923ceb4206e4b27b8c97a356cb1" compoundref="set__feedforward__mode_8hpp" startline="33">linear_pub_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1SetFeedforwardMode_1a059762e98ad810c3cb9ce4e807e87781" compoundref="set__feedforward__mode_8hpp" startline="35">set_teleop_client_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1SetFeedforwardMode_1ab8451de0d998ccdb17040e484e95e484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::SetFeedforwardMode::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="24" column="20" bodyfile="src/bt_actions/set_feedforward_mode.cpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1SetFeedforwardMode_1af9109c157169cae612c7f07490c49564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::SetFeedforwardMode::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="25" column="10" bodyfile="src/bt_actions/set_feedforward_mode.cpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1SetFeedforwardMode_1ad8c20ed6be1ddb5df2761ca12d1f7c9b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::SetFeedforwardMode::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="21" column="26" bodyfile="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1SetFeedforwardMode_1a7f1c0a49c0d05bd1a0e926f451e8a76c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::SetFeedforwardMode::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="28" column="10" bodyfile="src/bt_actions/set_feedforward_mode.cpp" bodystart="10" bodyend="16"/>
+        <references refid="classmercury__autonomy_1_1SetFeedforwardMode_1aaea779529f2d493a9a9c424f767eeb8d" compoundref="set__feedforward__mode_8hpp" startline="34">angular_pub_</references>
+        <references refid="classmercury__autonomy_1_1SetFeedforwardMode_1a702f5923ceb4206e4b27b8c97a356cb1" compoundref="set__feedforward__mode_8hpp" startline="33">linear_pub_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1SetFeedforwardMode_1a059762e98ad810c3cb9ce4e807e87781" compoundref="set__feedforward__mode_8hpp" startline="35">set_teleop_client_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::SetFeedforwardMode</label>
+        <link refid="classmercury__autonomy_1_1SetFeedforwardMode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::SetFeedforwardMode</label>
+        <link refid="classmercury__autonomy_1_1SetFeedforwardMode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" line="16" column="1" bodyfile="include/mercury_autonomy/bt_actions/set_feedforward_mode.hpp" bodystart="16" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1aaea779529f2d493a9a9c424f767eeb8d" prot="private" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>angular_pub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1a702f5923ceb4206e4b27b8c97a356cb1" prot="private" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>linear_pub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1af9109c157169cae612c7f07490c49564" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1ab8451de0d998ccdb17040e484e95e484" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1acd645ce81a9a7aea657ab498fea95408" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1ad8c20ed6be1ddb5df2761ca12d1f7c9b" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1a7f1c0a49c0d05bd1a0e926f451e8a76c" prot="protected" virt="virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1a059762e98ad810c3cb9ce4e807e87781" prot="private" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>set_teleop_client_</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1ac2fbace8a0c3dbbf2295a6266dead1cc" prot="private" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>SetBool</name></member>
+      <member refid="classmercury__autonomy_1_1SetFeedforwardMode_1a28cdf0dc4d5f8df1485b859108a5b8f0" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>SetFeedforwardMode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::SetFeedforwardMode</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

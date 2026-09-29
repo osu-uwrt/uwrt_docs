@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__launch_1_1launcher_1_1LinuxProcess" kind="class" language="Python" prot="public">
+    <compoundname>mercury_launch::launcher::LinuxProcess</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a12561f8638cc7f5cb8c42614d67e130f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LinuxProcess::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="115" column="1" bodyfile="mercury_launch/launcher.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a99f8ff77bb4517103722186f6294bb02" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LinuxProcess::comm</definition>
+        <argsstring></argsstring>
+        <name>comm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="122" column="1" bodyfile="mercury_launch/launcher.py" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LinuxProcess::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="123" column="1" bodyfile="mercury_launch/launcher.py" bodystart="123" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" compoundref="launcher_8py" startline="392" endline="426">mercury_launch.launcher.LaunchData._launch_monitor_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ac5e4de6d24880ee13cdbd3b47231c365" compoundref="launcher_8py" startline="600" endline="602">mercury_launch.launcher.LaunchData.can_launch</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a78bad27c82fdc837745cff6492a809eb" compoundref="launcher_8py" startline="604" endline="606">mercury_launch.launcher.LaunchData.can_terminate</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" compoundref="launcher_8py" startline="626" endline="638">mercury_launch.launcher.LaunchData.perform_launch</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a4bcb49266dba9c4c821150c87f5f3eb6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LinuxProcess::ppid</definition>
+        <argsstring></argsstring>
+        <name>ppid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="124" column="1" bodyfile="mercury_launch/launcher.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a2fb09a69ce4fb9e357b6455d114ef65f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LinuxProcess::_args</definition>
+        <argsstring></argsstring>
+        <name>_args</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="120" column="1" bodyfile="mercury_launch/launcher.py" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a878bf911d118a5343a15cee718c813a0" compoundref="launcher_8py" startline="174" endline="184">mercury_launch.launcher.LinuxProcess.get_args</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1ac23e7257670a7663e5ad5dada724ea06" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LinuxProcess::_process_str</definition>
+        <argsstring></argsstring>
+        <name>_process_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="121" column="1" bodyfile="mercury_launch/launcher.py" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1ff733aec17be21be1d7ec1ceefe36c2" compoundref="launcher_8py" startline="185" endline="202">mercury_launch.launcher.LinuxProcess.get_process_str</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1af24da8b115af5c1cc40ed9567a64c032" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LinuxProcess.lookup_state</definition>
+        <argsstring>(str state)</argsstring>
+        <name>lookup_state</name>
+        <param>
+          <type>str</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="91" column="1" bodyfile="mercury_launch/launcher.py" bodystart="91" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1ab86f7ab142be69e3bf40ce43094e1cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LinuxProcess.__init__</definition>
+        <argsstring>(self, pid, stat_str)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a12561f8638cc7f5cb8c42614d67e130f" kindref="member">pid</ref></type>
+          <defname>pid</defname>
+        </param>
+        <param>
+          <type>stat_str</type>
+          <defname>stat_str</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="112" column="1" bodyfile="mercury_launch/launcher.py" bodystart="112" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a878bf911d118a5343a15cee718c813a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LinuxProcess.get_args</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_args</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="174" column="1" bodyfile="mercury_launch/launcher.py" bodystart="174" bodyend="184"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a2fb09a69ce4fb9e357b6455d114ef65f" compoundref="launcher_8py" startline="120">mercury_launch.launcher.LinuxProcess._args</references>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1ff733aec17be21be1d7ec1ceefe36c2" compoundref="launcher_8py" startline="185" endline="202">mercury_launch.launcher.LinuxProcess.get_process_str</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a0838b4ade998092cf49bc837cd51988a" compoundref="launcher_8py" startline="203" endline="216">mercury_launch.launcher.LinuxProcess.get_ros_name</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1ff733aec17be21be1d7ec1ceefe36c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LinuxProcess.get_process_str</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_process_str</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="185" column="1" bodyfile="mercury_launch/launcher.py" bodystart="185" bodyend="202"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1ac23e7257670a7663e5ad5dada724ea06" compoundref="launcher_8py" startline="121">mercury_launch.launcher.LinuxProcess._process_str</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a878bf911d118a5343a15cee718c813a0" compoundref="launcher_8py" startline="174" endline="184">mercury_launch.launcher.LinuxProcess.get_args</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LinuxProcess_1a0838b4ade998092cf49bc837cd51988a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LinuxProcess.get_ros_name</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_ros_name</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="203" column="1" bodyfile="mercury_launch/launcher.py" bodystart="203" bodyend="216"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a878bf911d118a5343a15cee718c813a0" compoundref="launcher_8py" startline="174" endline="184">mercury_launch.launcher.LinuxProcess.get_args</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_launch.launcher.LinuxProcess</label>
+        <link refid="classmercury__launch_1_1launcher_1_1LinuxProcess"/>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_launch/launcher.py" line="89" column="1" bodyfile="mercury_launch/launcher.py" bodystart="89" bodyend="217"/>
+    <listofallmembers>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1ab86f7ab142be69e3bf40ce43094e1cac" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>__init__</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a2fb09a69ce4fb9e357b6455d114ef65f" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>_args</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1ac23e7257670a7663e5ad5dada724ea06" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>_process_str</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a99f8ff77bb4517103722186f6294bb02" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>comm</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a878bf911d118a5343a15cee718c813a0" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>get_args</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1ff733aec17be21be1d7ec1ceefe36c2" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>get_process_str</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a0838b4ade998092cf49bc837cd51988a" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>get_ros_name</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1af24da8b115af5c1cc40ed9567a64c032" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>lookup_state</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a12561f8638cc7f5cb8c42614d67e130f" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>pid</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a4bcb49266dba9c4c821150c87f5f3eb6" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>ppid</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LinuxProcess</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

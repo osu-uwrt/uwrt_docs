@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="monitored__service__client_8hpp" kind="file" language="C++">
+    <compoundname>monitored_service_client.hpp</compoundname>
+    <includes local="no">chrono</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">utility</includes>
+    <includedby refid="simulink__model_8hpp" local="yes">include/mercury_controller/simulink_model.hpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="1">
+        <label>include/mercury_controller/monitored_service_client.hpp</label>
+        <link refid="monitored__service__client_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>optional</label>
+      </node>
+      <node id="9">
+        <label>utility</label>
+      </node>
+      <node id="3">
+        <label>deque</label>
+      </node>
+      <node id="2">
+        <label>chrono</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/mercury_controller/simulink_model.hpp</label>
+        <link refid="simulink__model_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/mercury_controller/monitored_service_client.hpp</label>
+        <link refid="monitored__service__client_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/simulink_model.cpp</label>
+        <link refid="simulink__model_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/mercury_controller/controller_overseer.hpp</label>
+        <link refid="controller__overseer_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/controller_overseer.cpp</label>
+        <link refid="controller__overseer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMonitoredServiceClient" prot="public">MonitoredServiceClient</innerclass>
+    <innerclass refid="structMonitoredServiceClient_1_1servicePair" prot="private">MonitoredServiceClient::servicePair</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ServiceT&gt;</highlight></codeline>
+<codeline lineno="13" refid="classMonitoredServiceClient" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMonitoredServiceClient" kindref="compound">MonitoredServiceClient</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>node<sp/>that<sp/>is<sp/>using<sp/>this<sp/>and<sp/>the<sp/>Client<sp/>that<sp/>will<sp/>be<sp/>used<sp/>to<sp/>call<sp/>the<sp/>service<sp/>when<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>is<sp/>a<sp/>raw<sp/>pointer<sp/>bc<sp/>only<sp/>the<sp/>Node<sp/>functions<sp/>are<sp/>needed<sp/>so<sp/>no<sp/>need<sp/>to<sp/>include<sp/>the<sp/>full</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ControllerOverseer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Node<sp/>*<sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>rclcpp::Client&lt;ServiceT&gt;::SharedPtr<sp/><ref refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" kindref="member">client</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timer<sp/>and<sp/>log<sp/>of<sp/>when<sp/>a<sp/>service<sp/>timer<sp/>started</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classMonitoredServiceClient_1a10489ed3001a234e373a6acac43c6996" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classMonitoredServiceClient_1a10489ed3001a234e373a6acac43c6996" kindref="member">timer</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classMonitoredServiceClient_1a8dd0ca4262f7dc02ffbb688799c4fc6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Time<sp/><ref refid="classMonitoredServiceClient_1a8dd0ca4262f7dc02ffbb688799c4fc6e" kindref="member">startTime</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" kindref="member">Request</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ServiceT::Request::SharedPtr;</highlight></codeline>
+<codeline lineno="25" refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ServiceT::Response::SharedPtr;</highlight></codeline>
+<codeline lineno="26" refid="classMonitoredServiceClient_1ae2429d3f56781c61c8e72ab02be82700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1ae2429d3f56781c61c8e72ab02be82700" kindref="member">Future</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>rclcpp::Client&lt;ServiceT&gt;::SharedFutureWithRequest;</highlight></codeline>
+<codeline lineno="27" refid="classMonitoredServiceClient_1a0bba8d5ae36388a9c0e97572c8c836cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1a0bba8d5ae36388a9c0e97572c8c836cb" kindref="member">FutureAndId</ref><sp/>=<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>rclcpp::Client&lt;ServiceT&gt;::SharedFutureWithRequestAndRequestId;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pair<sp/>of<sp/>request<sp/>and<sp/>function<sp/>callback</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structMonitoredServiceClient_1_1servicePair" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structMonitoredServiceClient_1_1servicePair" kindref="compound">servicePair</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="structMonitoredServiceClient_1_1servicePair_1a571f8cda94448aa03f48f122f99fc545" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" kindref="member">Request</ref><sp/><ref refid="structMonitoredServiceClient_1_1servicePair_1a571f8cda94448aa03f48f122f99fc545" kindref="member">request</ref>;</highlight></codeline>
+<codeline lineno="31" refid="structMonitoredServiceClient_1_1servicePair_1a95c5ae2dfa8940452681b31fd5a7d629" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;void(<ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref>)&gt;<sp/><ref refid="structMonitoredServiceClient_1_1servicePair_1a95c5ae2dfa8940452681b31fd5a7d629" kindref="member">callback</ref>;</highlight></codeline>
+<codeline lineno="32" refid="structMonitoredServiceClient_1_1servicePair_1aaae38710157c3aaf7c0056a3d3f9b5a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMonitoredServiceClient_1_1servicePair_1aaae38710157c3aaf7c0056a3d3f9b5a1" kindref="member">servicePair</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33" refid="structMonitoredServiceClient_1_1servicePair_1a628d93697b38245549ce6a426a57a5c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMonitoredServiceClient_1_1servicePair_1a628d93697b38245549ce6a426a57a5c1" kindref="member">servicePair</ref>(<ref refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" kindref="member">Request</ref><sp/>req,<sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref>)&gt;<sp/>cb)<sp/>:<sp/><ref refid="structMonitoredServiceClient_1_1servicePair_1a571f8cda94448aa03f48f122f99fc545" kindref="member">request</ref>(req),<sp/><ref refid="structMonitoredServiceClient_1_1servicePair_1a95c5ae2dfa8940452681b31fd5a7d629" kindref="member">callback</ref>(cb)<sp/>{};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>queue<sp/>of<sp/>service<sp/>calls</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::deque&lt;servicePair&gt;<sp/><ref refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" kindref="member">waitingRequests</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pair<sp/>of<sp/>the<sp/>client<sp/>currently<sp/>working</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structMonitoredServiceClient_1_1servicePair" kindref="compound">servicePair</ref><sp/><ref refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" kindref="member">activeClient</ref>;<sp/></highlight><highlight class="comment">//<sp/>only<sp/>allowed<sp/>to<sp/>be<sp/>used<sp/>when<sp/>waitingForClient<sp/>is<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>future<sp/>that<sp/>stores<sp/>the<sp/>upcoming<sp/>response<sp/>from<sp/>an<sp/>active<sp/>service</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classMonitoredServiceClient_1ade14c2944bf45995505f4020a4119240" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;FutureAndId&gt;<sp/><ref refid="classMonitoredServiceClient_1ade14c2944bf45995505f4020a4119240" kindref="member">activeFuture</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Responsible<sp/>for<sp/>adding<sp/>a<sp/>service<sp/>to<sp/>the<sp/>queue.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>returns<sp/>if<sp/>the<sp/>service<sp/>was<sp/>successfully<sp/>added.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classMonitoredServiceClient_1a2bde116e0c2fd8464f54b8ccf6680266" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1a2bde116e0c2fd8464f54b8ccf6680266" kindref="member">scheduleCall</ref>(<ref refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" kindref="member">Request</ref><sp/>request,<sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref>)&gt;<sp/>callback)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" kindref="member">waitingRequests</ref>.size()<sp/>&lt;<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structMonitoredServiceClient_1_1servicePair" kindref="compound">servicePair</ref><sp/>pair(request,<sp/>callback);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" kindref="member">waitingRequests</ref>.push_front(pair);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RCLCPP_ERROR(</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;Reached<sp/>limit<sp/>of<sp/>calls<sp/>for<sp/>service<sp/>%s&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" kindref="member">client</ref>-&gt;get_service_name());</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Timer<sp/>callback<sp/>function.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Should<sp/>check<sp/>if<sp/>there<sp/>is<sp/>a<sp/>current<sp/>client<sp/>and<sp/>if<sp/>that<sp/>client<sp/>has<sp/>timed<sp/>out.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" kindref="member">timerCallback</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>-&gt;get_clock()-&gt;now()<sp/>-<sp/><ref refid="classMonitoredServiceClient_1a8dd0ca4262f7dc02ffbb688799c4fc6e" kindref="member">startTime</ref>).seconds()<sp/>&gt;=<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RCLCPP_ERROR(</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;Call<sp/>to<sp/>service<sp/>%s<sp/>timed<sp/>out&quot;</highlight><highlight class="normal">,<sp/><ref refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" kindref="member">client</ref>-&gt;get_service_name());</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" kindref="member">client</ref>-&gt;remove_pending_request(*<ref refid="classMonitoredServiceClient_1ade14c2944bf45995505f4020a4119240" kindref="member">activeFuture</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" kindref="member">waitingRequests</ref>.size()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" kindref="member">activeClient</ref><sp/>=<sp/><ref refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" kindref="member">waitingRequests</ref>.back();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" kindref="member">waitingRequests</ref>.pop_back();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>RCLCPP_INFO(node-&gt;get_logger(),<sp/>&quot;Making<sp/>call<sp/>to<sp/>%s&quot;,<sp/>client-&gt;get_service_name());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" kindref="member">client</ref>-&gt;wait_for_service();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1ade14c2944bf45995505f4020a4119240" kindref="member">activeFuture</ref><sp/>=<sp/><ref refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" kindref="member">client</ref>-&gt;async_send_request(</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" kindref="member">activeClient</ref>.<ref refid="structMonitoredServiceClient_1_1servicePair_1a571f8cda94448aa03f48f122f99fc545" kindref="member">request</ref>,<sp/>std::bind(</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="classMonitoredServiceClient" kindref="compound">MonitoredServiceClient&lt;ServiceT&gt;::serviceCallback</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::placeholders::_1));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a8dd0ca4262f7dc02ffbb688799c4fc6e" kindref="member">startTime</ref><sp/>=<sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>-&gt;get_clock()-&gt;now();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Service<sp/>callback<sp/>function.</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Should<sp/>take<sp/>the<sp/>callback<sp/>from<sp/>the<sp/>queue<sp/>and<sp/>call<sp/>it.</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" kindref="member">serviceCallback</ref>(<ref refid="classMonitoredServiceClient_1ae2429d3f56781c61c8e72ab02be82700" kindref="member">Future</ref><sp/>future)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref><sp/>res<sp/>=<sp/>future.get().second;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" kindref="member">activeClient</ref>.<ref refid="structMonitoredServiceClient_1_1servicePair_1a95c5ae2dfa8940452681b31fd5a7d629" kindref="member">callback</ref>(res);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RCLCPP_ERROR(</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>-&gt;get_logger(),</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MonitoredServiceClient<sp/>received<sp/>a<sp/>callback<sp/>but<sp/>doesn&apos;t<sp/>know<sp/>where<sp/>it<sp/>came<sp/>from&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>true<sp/>if<sp/>client<sp/>has<sp/>not<sp/>waiting<sp/>requests<sp/>or<sp/>active<sp/>request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classMonitoredServiceClient_1a59e49061c9b4c4cddd6889cb86350ca7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMonitoredServiceClient_1a59e49061c9b4c4cddd6889cb86350ca7" kindref="member">isIdle</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref><sp/>&amp;&amp;<sp/><ref refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" kindref="member">waitingRequests</ref>.empty();<sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructor<sp/>go<sp/>brrrr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classMonitoredServiceClient_1acc7cccf9387e4477089b2f6cf2a1eb03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1acc7cccf9387e4477089b2f6cf2a1eb03" kindref="member">MonitoredServiceClient</ref>(rclcpp::Node<sp/>*<sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>,<sp/><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref><sp/>serviceName)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>(<ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>),<sp/><ref refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" kindref="member">waitingForClient</ref>(false)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" kindref="member">client</ref><sp/>=<sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>-&gt;create_client&lt;ServiceT&gt;(serviceName);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMonitoredServiceClient_1a10489ed3001a234e373a6acac43c6996" kindref="member">timer</ref><sp/>=<sp/><ref refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" kindref="member">node</ref>-&gt;create_wall_timer(</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::chrono::milliseconds(500),</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::bind(&amp;<ref refid="classMonitoredServiceClient" kindref="compound">MonitoredServiceClient&lt;ServiceT&gt;::timerCallback</ref>,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_controller/monitored_service_client.hpp"/>
+  </compounddef>
+</doxygen>

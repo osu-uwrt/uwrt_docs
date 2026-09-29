@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1WaitForDetection" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::WaitForDetection</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="wait__for__detection_8hpp" local="no">wait_for_detection.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForDetection_1ab48d1fc249ae9c92827beab72e9868d0" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; vision_msgs::msg::Detection3DArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;vision_msgs::msg::Detection3DArray&gt;::SharedPtr mercury_autonomy::WaitForDetection::sub_</definition>
+        <argsstring></argsstring>
+        <name>sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="37" column="38" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a7bb43434764937fd2eddcb469a72872e" compoundref="wait__for__detection_8cpp" startline="11" endline="15">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForDetection_1a4d703532eaa9aee0234e676ac9f627c9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::WaitForDetection::found_object_</definition>
+        <argsstring></argsstring>
+        <name>found_object_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="38" column="10" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a5697e2b172f42305ad871e58e1421845" compoundref="wait__for__detection_8cpp" startline="39" endline="47">detectionCallback</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a5fc5a2516064e803b5b534f6c598071a" compoundref="wait__for__detection_8cpp" startline="25" endline="35">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1af7f1d5ea21dc370487e63bd8d55cccc7" compoundref="wait__for__detection_8cpp" startline="17" endline="23">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForDetection_1afa97c82198e1ebe79215dc614cb2bd24" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::WaitForDetection::target_object_id_</definition>
+        <argsstring></argsstring>
+        <name>target_object_id_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="39" column="17" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a5697e2b172f42305ad871e58e1421845" compoundref="wait__for__detection_8cpp" startline="39" endline="47">detectionCallback</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1af7f1d5ea21dc370487e63bd8d55cccc7" compoundref="wait__for__detection_8cpp" startline="17" endline="23">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForDetection_1ad8e31f4a01f5b336bad53edf6044f659" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::WaitForDetection::timeout_secs_</definition>
+        <argsstring></argsstring>
+        <name>timeout_secs_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="40" column="12" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a5fc5a2516064e803b5b534f6c598071a" compoundref="wait__for__detection_8cpp" startline="25" endline="35">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1af7f1d5ea21dc370487e63bd8d55cccc7" compoundref="wait__for__detection_8cpp" startline="17" endline="23">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForDetection_1addbd25c1cf59f9380ee3e8872f00ebac" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::WaitForDetection::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="41" column="18" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a5fc5a2516064e803b5b534f6c598071a" compoundref="wait__for__detection_8cpp" startline="25" endline="35">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1af7f1d5ea21dc370487e63bd8d55cccc7" compoundref="wait__for__detection_8cpp" startline="17" endline="23">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForDetection_1afa8b11a43dba269663957b851c623a7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::WaitForDetection::WaitForDetection</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>WaitForDetection</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="17" column="5" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForDetection_1af7f1d5ea21dc370487e63bd8d55cccc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::WaitForDetection::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="27" column="20" bodyfile="src/bt_actions/wait_for_detection.cpp" bodystart="17" bodyend="23"/>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1a4d703532eaa9aee0234e676ac9f627c9" compoundref="wait__for__detection_8hpp" startline="38">found_object_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1addbd25c1cf59f9380ee3e8872f00ebac" compoundref="wait__for__detection_8hpp" startline="41">start_time_</references>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1afa97c82198e1ebe79215dc614cb2bd24" compoundref="wait__for__detection_8hpp" startline="39">target_object_id_</references>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1ad8e31f4a01f5b336bad53edf6044f659" compoundref="wait__for__detection_8hpp" startline="40">timeout_secs_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForDetection_1a5fc5a2516064e803b5b534f6c598071a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::WaitForDetection::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="28" column="20" bodyfile="src/bt_actions/wait_for_detection.cpp" bodystart="25" bodyend="35"/>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1a4d703532eaa9aee0234e676ac9f627c9" compoundref="wait__for__detection_8hpp" startline="38">found_object_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1addbd25c1cf59f9380ee3e8872f00ebac" compoundref="wait__for__detection_8hpp" startline="41">start_time_</references>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1ad8e31f4a01f5b336bad53edf6044f659" compoundref="wait__for__detection_8hpp" startline="40">timeout_secs_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForDetection_1a8cb65bd3632b615ab9271e36600204da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::WaitForDetection::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="29" column="10" bodyfile="src/bt_actions/wait_for_detection.cpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForDetection_1ab5067c38dc20895458f8bf3a739770b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::WaitForDetection::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="20" column="26" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForDetection_1a7bb43434764937fd2eddcb469a72872e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::WaitForDetection::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="32" column="10" bodyfile="src/bt_actions/wait_for_detection.cpp" bodystart="11" bodyend="15"/>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1a5697e2b172f42305ad871e58e1421845" compoundref="wait__for__detection_8cpp" startline="39" endline="47">detectionCallback</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1ab48d1fc249ae9c92827beab72e9868d0" compoundref="wait__for__detection_8hpp" startline="37">sub_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForDetection_1a5697e2b172f42305ad871e58e1421845" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::WaitForDetection::detectionCallback</definition>
+        <argsstring>(const vision_msgs::msg::Detection3DArray::SharedPtr msg)</argsstring>
+        <name>detectionCallback</name>
+        <param>
+          <type>const vision_msgs::msg::Detection3DArray::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="35" column="10" bodyfile="src/bt_actions/wait_for_detection.cpp" bodystart="39" bodyend="47"/>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1a4d703532eaa9aee0234e676ac9f627c9" compoundref="wait__for__detection_8hpp" startline="38">found_object_</references>
+        <references refid="classmercury__autonomy_1_1WaitForDetection_1afa97c82198e1ebe79215dc614cb2bd24" compoundref="wait__for__detection_8hpp" startline="39">target_object_id_</references>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a7bb43434764937fd2eddcb469a72872e" compoundref="wait__for__detection_8cpp" startline="11" endline="15">rosInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_autonomy::WaitForDetection</label>
+        <link refid="classmercury__autonomy_1_1WaitForDetection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::WaitForDetection</label>
+        <link refid="classmercury__autonomy_1_1WaitForDetection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" line="15" column="1" bodyfile="include/mercury_autonomy/bt_actions/wait_for_detection.hpp" bodystart="15" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1a5697e2b172f42305ad871e58e1421845" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>detectionCallback</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1a4d703532eaa9aee0234e676ac9f627c9" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>found_object_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1a8cb65bd3632b615ab9271e36600204da" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1a5fc5a2516064e803b5b534f6c598071a" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1af7f1d5ea21dc370487e63bd8d55cccc7" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1ab5067c38dc20895458f8bf3a739770b4" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1a7bb43434764937fd2eddcb469a72872e" prot="protected" virt="virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1addbd25c1cf59f9380ee3e8872f00ebac" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1ab48d1fc249ae9c92827beab72e9868d0" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>sub_</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1afa97c82198e1ebe79215dc614cb2bd24" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>target_object_id_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1ad8e31f4a01f5b336bad53edf6044f659" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>timeout_secs_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForDetection_1afa8b11a43dba269663957b851c623a7d" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>WaitForDetection</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::WaitForDetection</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

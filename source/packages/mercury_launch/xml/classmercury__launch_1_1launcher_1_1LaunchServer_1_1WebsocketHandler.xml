@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler" kind="class" language="Python" prot="public">
+    <compoundname>mercury_launch::launcher::LaunchServer::WebsocketHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">logging.Handler</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1a1a7f74bd98a5a2d5ebd5b1fb3300496e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchServer.WebsocketHandler::_connections_weak</definition>
+        <argsstring></argsstring>
+        <name>_connections_weak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="694" column="1" bodyfile="mercury_launch/launcher.py" bodystart="694" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1ada9cf05f76983f6d5028f7813741e8e7" compoundref="launcher_8py" startline="697" endline="712">mercury_launch.launcher.LaunchServer.WebsocketHandler.emit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1ac7c38d9b3d74b76803bca9e92b6eedec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None mercury_launch.launcher.LaunchServer.WebsocketHandler.__init__</definition>
+        <argsstring>(self, set connections)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>set</type>
+          <declname>connections</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="693" column="1" bodyfile="mercury_launch/launcher.py" bodystart="693" bodyend="696"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1ada9cf05f76983f6d5028f7813741e8e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None mercury_launch.launcher.LaunchServer.WebsocketHandler.emit</definition>
+        <argsstring>(self, record)</argsstring>
+        <name>emit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>record</type>
+          <defname>record</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="697" column="1" bodyfile="mercury_launch/launcher.py" bodystart="697" bodyend="712"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1a1a7f74bd98a5a2d5ebd5b1fb3300496e" compoundref="launcher_8py" startline="694">mercury_launch.launcher.LaunchServer.WebsocketHandler._connections_weak</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_launch.launcher.LaunchServer.WebsocketHandler</label>
+        <link refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>logging::Handler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_launch.launcher.LaunchServer.WebsocketHandler</label>
+        <link refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>logging::Handler</label>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_launch/launcher.py" line="692" column="1" bodyfile="mercury_launch/launcher.py" bodystart="692" bodyend="711"/>
+    <listofallmembers>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1ac7c38d9b3d74b76803bca9e92b6eedec" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchServer::WebsocketHandler</scope><name>__init__</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1a1a7f74bd98a5a2d5ebd5b1fb3300496e" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchServer::WebsocketHandler</scope><name>_connections_weak</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchServer_1_1WebsocketHandler_1ada9cf05f76983f6d5028f7813741e8e7" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchServer::WebsocketHandler</scope><name>emit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

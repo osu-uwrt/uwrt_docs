@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__rviz_1_1DiagnosticsPanel" kind="class" language="C++" prot="public">
+    <compoundname>mercury_rviz::DiagnosticsPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rviz_common::Panel</basecompoundref>
+    <includes refid="DiagnosticsPanel_8hpp" local="no">DiagnosticsPanel.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticsPanel_1adf4d6daf38b260cb3a528e7e5223a41a" prot="private" static="no" mutable="no">
+        <type>Ui::DiagnosticsPanel *</type>
+        <definition>Ui::DiagnosticsPanel* mercury_rviz::DiagnosticsPanel::uiPanel</definition>
+        <argsstring></argsstring>
+        <name>uiPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="36" column="27" bodyfile="include/mercury_rviz/DiagnosticsPanel.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" compoundref="DiagnosticsPanel_8cpp" startline="189" endline="431">diagCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ad62ff077394aa68172d648bd3dc80ed4" compoundref="DiagnosticsPanel_8cpp" startline="21" endline="40">DiagnosticsPanel</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1aa81155d729ae5e528764c4f35104bccb" compoundref="DiagnosticsPanel_8cpp" startline="100" endline="124">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1a86e6023a83d3f87e395ad29ff08f913e" compoundref="DiagnosticsPanel_8cpp" startline="166" endline="170">~DiagnosticsPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticsPanel_1a2f336af6d4794651eb3b927d89f33259" prot="private" static="no" mutable="no">
+        <type>QStandardItemModel *</type>
+        <definition>QStandardItemModel* mercury_rviz::DiagnosticsPanel::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="37" column="25" bodyfile="include/mercury_rviz/DiagnosticsPanel.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" compoundref="DiagnosticsPanel_8cpp" startline="189" endline="431">diagCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ad62ff077394aa68172d648bd3dc80ed4" compoundref="DiagnosticsPanel_8cpp" startline="21" endline="40">DiagnosticsPanel</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1aa81155d729ae5e528764c4f35104bccb" compoundref="DiagnosticsPanel_8cpp" startline="100" endline="124">onInitialize</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1abe72f7afd8115bcbab2e249ab0050dd6" compoundref="DiagnosticsPanel_8cpp" startline="172" endline="182">refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticsPanel_1a955e0ed951f183bc36a8bfb34e635961" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_rviz::DiagnosticsPanel::robot_ns</definition>
+        <argsstring></argsstring>
+        <name>robot_ns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="38" column="17" bodyfile="include/mercury_rviz/DiagnosticsPanel.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ab7d95fbf200769b5feb1526262824003" compoundref="DiagnosticsPanel_8cpp" startline="126" endline="155">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1a8a354fc4a790f778eb232a5890c7c0bf" compoundref="DiagnosticsPanel_8cpp" startline="157" endline="162">save</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticsPanel_1a0753981c7ed593b35c33ebaadd771dfa" prot="private" static="no" mutable="no">
+        <type>QMap&lt; int, QIcon &gt;</type>
+        <definition>QMap&lt;int, QIcon&gt; mercury_rviz::DiagnosticsPanel::statusIcons</definition>
+        <argsstring></argsstring>
+        <name>statusIcons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="41" column="10" bodyfile="include/mercury_rviz/DiagnosticsPanel.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1a5b50a18bff00918c2ba7cae001b286e3" compoundref="DiagnosticsPanel_8cpp" startline="42" endline="98">createStatusIcons</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" compoundref="DiagnosticsPanel_8cpp" startline="189" endline="431">diagCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticsPanel_1a2e500a4f4f8a61250cb1717090a0e8f4" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; diagnostic_msgs::msg::DiagnosticArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;diagnostic_msgs::msg::DiagnosticArray&gt;::SharedPtr mercury_rviz::DiagnosticsPanel::diagSub</definition>
+        <argsstring></argsstring>
+        <name>diagSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="49" column="38" bodyfile="include/mercury_rviz/DiagnosticsPanel.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ab7d95fbf200769b5feb1526262824003" compoundref="DiagnosticsPanel_8cpp" startline="126" endline="155">load</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1a86e6023a83d3f87e395ad29ff08f913e" compoundref="DiagnosticsPanel_8cpp" startline="166" endline="170">~DiagnosticsPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticsPanel_1a9c3da6602d74a139c1e500e815555d75" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticsPanel::timerTick</definition>
+        <argsstring></argsstring>
+        <name>timerTick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="52" column="9" bodyfile="include/mercury_rviz/DiagnosticsPanel.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" compoundref="DiagnosticsPanel_8cpp" startline="189" endline="431">diagCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ad62ff077394aa68172d648bd3dc80ed4" compoundref="DiagnosticsPanel_8cpp" startline="21" endline="40">DiagnosticsPanel</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1abe72f7afd8115bcbab2e249ab0050dd6" compoundref="DiagnosticsPanel_8cpp" startline="172" endline="182">refresh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1ad62ff077394aa68172d648bd3dc80ed4" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::DiagnosticsPanel::DiagnosticsPanel</definition>
+        <argsstring>(QWidget *parent=nullptr)</argsstring>
+        <name>DiagnosticsPanel</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="23" column="14" bodyfile="src/DiagnosticsPanel.cpp" bodystart="21" bodyend="40"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a5b50a18bff00918c2ba7cae001b286e3" compoundref="DiagnosticsPanel_8cpp" startline="42" endline="98">createStatusIcons</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a2f336af6d4794651eb3b927d89f33259" compoundref="DiagnosticsPanel_8hpp" startline="37">model</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a9c3da6602d74a139c1e500e815555d75" compoundref="DiagnosticsPanel_8hpp" startline="52">timerTick</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1adf4d6daf38b260cb3a528e7e5223a41a" compoundref="DiagnosticsPanel_8hpp" startline="36">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1a86e6023a83d3f87e395ad29ff08f913e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::DiagnosticsPanel::~DiagnosticsPanel</definition>
+        <argsstring>() override</argsstring>
+        <name>~DiagnosticsPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="24" column="5" bodyfile="src/DiagnosticsPanel.cpp" bodystart="166" bodyend="170"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a2e500a4f4f8a61250cb1717090a0e8f4" compoundref="DiagnosticsPanel_8hpp" startline="49">diagSub</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1adf4d6daf38b260cb3a528e7e5223a41a" compoundref="DiagnosticsPanel_8hpp" startline="36">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1aa81155d729ae5e528764c4f35104bccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="26" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="100" bodyend="124"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a2f336af6d4794651eb3b927d89f33259" compoundref="DiagnosticsPanel_8hpp" startline="37">model</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1adf4d6daf38b260cb3a528e7e5223a41a" compoundref="DiagnosticsPanel_8hpp" startline="36">uiPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1ab7d95fbf200769b5feb1526262824003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::load</definition>
+        <argsstring>(const rviz_common::Config &amp;config) override</argsstring>
+        <name>load</name>
+        <param>
+          <type>const rviz_common::Config &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="27" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="126" bodyend="155"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" compoundref="DiagnosticsPanel_8cpp" startline="189" endline="431">diagCb</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a2e500a4f4f8a61250cb1717090a0e8f4" compoundref="DiagnosticsPanel_8hpp" startline="49">diagSub</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1abe72f7afd8115bcbab2e249ab0050dd6" compoundref="DiagnosticsPanel_8cpp" startline="172" endline="182">refresh</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a955e0ed951f183bc36a8bfb34e635961" compoundref="DiagnosticsPanel_8hpp" startline="38">robot_ns</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1a8a354fc4a790f778eb232a5890c7c0bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::save</definition>
+        <argsstring>(rviz_common::Config config) const override</argsstring>
+        <name>save</name>
+        <param>
+          <type>rviz_common::Config</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="28" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="157" bodyend="162"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a955e0ed951f183bc36a8bfb34e635961" compoundref="DiagnosticsPanel_8hpp" startline="38">robot_ns</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1a25b1ccc8b5b27adc5ca775e9e6ffa7e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticsPanel::event</definition>
+        <argsstring>(QEvent *event) override</argsstring>
+        <name>event</name>
+        <param>
+          <type>QEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="29" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="164" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="classmercury__rviz_1_1DiagnosticsPanel_1abe72f7afd8115bcbab2e249ab0050dd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::refresh</definition>
+        <argsstring>()</argsstring>
+        <name>refresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="32" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="172" bodyend="182"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a2f336af6d4794651eb3b927d89f33259" compoundref="DiagnosticsPanel_8hpp" startline="37">model</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a9c3da6602d74a139c1e500e815555d75" compoundref="DiagnosticsPanel_8hpp" startline="52">timerTick</references>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" compoundref="DiagnosticsPanel_8cpp" startline="189" endline="431">diagCb</referencedby>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ab7d95fbf200769b5feb1526262824003" compoundref="DiagnosticsPanel_8cpp" startline="126" endline="155">load</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1DiagnosticsPanel_1a957a17e044505d32cb9a2b6494129bac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::waitForRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>waitForRefresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="33" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="184" bodyend="187"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1a5b50a18bff00918c2ba7cae001b286e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::createStatusIcons</definition>
+        <argsstring>()</argsstring>
+        <name>createStatusIcons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="42" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="42" bodyend="98"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a0753981c7ed593b35c33ebaadd771dfa" compoundref="DiagnosticsPanel_8hpp" startline="41">statusIcons</references>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ad62ff077394aa68172d648bd3dc80ed4" compoundref="DiagnosticsPanel_8cpp" startline="21" endline="40">DiagnosticsPanel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1a779b5389f3b34a6c27c735d37bb09301" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::findMatchingItems</definition>
+        <argsstring>(QStandardItem *item, const QString &amp;path, QList&lt; QStandardItem * &gt; &amp;results)</argsstring>
+        <name>findMatchingItems</name>
+        <param>
+          <type>QStandardItem *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>QList&lt; QStandardItem * &gt; &amp;</type>
+          <declname>results</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="45" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="433" bodyend="453"/>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" compoundref="DiagnosticsPanel_8cpp" startline="189" endline="431">diagCb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticsPanel::diagCb</definition>
+        <argsstring>(const diagnostic_msgs::msg::DiagnosticArray &amp;msg)</argsstring>
+        <name>diagCb</name>
+        <param>
+          <type>const diagnostic_msgs::msg::DiagnosticArray &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="55" column="10" bodyfile="src/DiagnosticsPanel.cpp" bodystart="189" bodyend="431"/>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a779b5389f3b34a6c27c735d37bb09301" compoundref="DiagnosticsPanel_8cpp" startline="433" endline="453">findMatchingItems</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a2f336af6d4794651eb3b927d89f33259" compoundref="DiagnosticsPanel_8hpp" startline="37">model</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1abe72f7afd8115bcbab2e249ab0050dd6" compoundref="DiagnosticsPanel_8cpp" startline="172" endline="182">refresh</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a0753981c7ed593b35c33ebaadd771dfa" compoundref="DiagnosticsPanel_8hpp" startline="41">statusIcons</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1a9c3da6602d74a139c1e500e815555d75" compoundref="DiagnosticsPanel_8hpp" startline="52">timerTick</references>
+        <references refid="classmercury__rviz_1_1DiagnosticsPanel_1adf4d6daf38b260cb3a528e7e5223a41a" compoundref="DiagnosticsPanel_8hpp" startline="36">uiPanel</references>
+        <referencedby refid="classmercury__rviz_1_1DiagnosticsPanel_1ab7d95fbf200769b5feb1526262824003" compoundref="DiagnosticsPanel_8cpp" startline="126" endline="155">load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::DiagnosticsPanel</label>
+        <link refid="classmercury__rviz_1_1DiagnosticsPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>rviz_common::Panel</label>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::DiagnosticsPanel</label>
+        <link refid="classmercury__rviz_1_1DiagnosticsPanel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/DiagnosticsPanel.hpp" line="19" column="1" bodyfile="include/mercury_rviz/DiagnosticsPanel.hpp" bodystart="19" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a5b50a18bff00918c2ba7cae001b286e3" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>createStatusIcons</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1ae29aa11b54502117e63bdd61cac2ee3b" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>diagCb</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1ad62ff077394aa68172d648bd3dc80ed4" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>DiagnosticsPanel</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a2e500a4f4f8a61250cb1717090a0e8f4" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>diagSub</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a25b1ccc8b5b27adc5ca775e9e6ffa7e0" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>event</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a779b5389f3b34a6c27c735d37bb09301" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>findMatchingItems</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1ab7d95fbf200769b5feb1526262824003" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>load</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a2f336af6d4794651eb3b927d89f33259" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>model</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1aa81155d729ae5e528764c4f35104bccb" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>onInitialize</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1abe72f7afd8115bcbab2e249ab0050dd6" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>refresh</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a955e0ed951f183bc36a8bfb34e635961" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>robot_ns</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a8a354fc4a790f778eb232a5890c7c0bf" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>save</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a0753981c7ed593b35c33ebaadd771dfa" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>statusIcons</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a9c3da6602d74a139c1e500e815555d75" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>timerTick</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1adf4d6daf38b260cb3a528e7e5223a41a" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>uiPanel</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a957a17e044505d32cb9a2b6494129bac" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>waitForRefresh</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticsPanel_1a86e6023a83d3f87e395ad29ff08f913e" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticsPanel</scope><name>~DiagnosticsPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

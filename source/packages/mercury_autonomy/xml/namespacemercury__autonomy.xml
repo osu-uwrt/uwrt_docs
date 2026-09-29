@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacemercury__autonomy" kind="namespace" language="C++">
+    <compoundname>mercury_autonomy</compoundname>
+    <innerclass refid="classmercury__autonomy_1_1ApplyFeedforwardForce" prot="public">mercury_autonomy::ApplyFeedforwardForce</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1CallSetBoolService" prot="public">mercury_autonomy::CallSetBoolService</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1CallTriggerService" prot="public">mercury_autonomy::CallTriggerService</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1ComputeFrameAlignment" prot="public">mercury_autonomy::ComputeFrameAlignment</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1ExampleAction" prot="public">mercury_autonomy::ExampleAction</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1GetBoolTopic" prot="public">mercury_autonomy::GetBoolTopic</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1GetCovariance" prot="public">mercury_autonomy::GetCovariance</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1GetFloatTopic" prot="public">mercury_autonomy::GetFloatTopic</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1GetImuOrientation" prot="public">mercury_autonomy::GetImuOrientation</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1GetMappingState" prot="public">mercury_autonomy::GetMappingState</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1GetOdometry" prot="public">mercury_autonomy::GetOdometry</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1GetTwistTopic" prot="public">mercury_autonomy::GetTwistTopic</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1PublishBool" prot="public">mercury_autonomy::PublishBool</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1PublishEKFPose" prot="public">mercury_autonomy::PublishEKFPose</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1PublishInt8" prot="public">mercury_autonomy::PublishInt8</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1PublishToController" prot="public">mercury_autonomy::PublishToController</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1PublishTwist" prot="public">mercury_autonomy::PublishTwist</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1SetFeedforwardMode" prot="public">mercury_autonomy::SetFeedforwardMode</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1SetMappingTarget" prot="public">mercury_autonomy::SetMappingTarget</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1SetStatus" prot="public">mercury_autonomy::SetStatus</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1TransformPose" prot="public">mercury_autonomy::TransformPose</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1WaitForDetection" prot="public">mercury_autonomy::WaitForDetection</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1WaitForKillSwitch" prot="public">mercury_autonomy::WaitForKillSwitch</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1ApproxEqualTo" prot="public">mercury_autonomy::ApproxEqualTo</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1ApproxEqualToAngle" prot="public">mercury_autonomy::ApproxEqualToAngle</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1CompareNums" prot="public">mercury_autonomy::CompareNums</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1ExampleCondition" prot="public">mercury_autonomy::ExampleCondition</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1IsTrue" prot="public">mercury_autonomy::IsTrue</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1ExampleDecorator" prot="public">mercury_autonomy::ExampleDecorator</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1RetryUntilSuccessfulOrTimeout" prot="public">mercury_autonomy::RetryUntilSuccessfulOrTimeout</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1MercuryBtNode" prot="public">mercury_autonomy::MercuryBtNode</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1MercuryActionNode" prot="public">mercury_autonomy::MercuryActionNode</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1MercuryConditionNode" prot="public">mercury_autonomy::MercuryConditionNode</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1MercuryDecoratorNode" prot="public">mercury_autonomy::MercuryDecoratorNode</innerclass>
+    <innerclass refid="classmercury__autonomy_1_1TreeExecutor" prot="public">mercury_autonomy::TreeExecutor</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacemercury__autonomy_1a683646e16758b03a5de4d13bd91d6a9d" prot="public" static="no">
+        <type>mercury_msgs::action::ExecuteTree</type>
+        <definition>using mercury_autonomy::ExecuteTree = typedef mercury_msgs::action::ExecuteTree</definition>
+        <argsstring></argsstring>
+        <name>ExecuteTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="37" column="1" bodyfile="src/tree_executor.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacemercury__autonomy_1a4e549f839072d79a00db0757058385b4" prot="public" static="no">
+        <type>rclcpp_action::ServerGoalHandle&lt; <ref refid="namespacemercury__autonomy_1a683646e16758b03a5de4d13bd91d6a9d" kindref="member">ExecuteTree</ref> &gt;</type>
+        <definition>using mercury_autonomy::GoalHandle = typedef rclcpp_action::ServerGoalHandle&lt;ExecuteTree&gt;</definition>
+        <argsstring></argsstring>
+        <name>GoalHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="38" column="1" bodyfile="src/tree_executor.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemercury__autonomy_1a3bef4cd8e1d031724a56b18e7ea0c31a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t mercury_autonomy::RESULT_SUCCESS</definition>
+        <argsstring></argsstring>
+        <name>RESULT_SUCCESS</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="32" column="19" bodyfile="src/tree_executor.cpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TreeExecutor_1abd0a638da89c2c8e94930ce07ed8d8df" compoundref="tree__executor_8cpp" startline="160" endline="236">mercury_autonomy::TreeExecutor::executeTree</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__autonomy_1a6011a2aac9f5eb9ebc927a31bb58d3a2" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t mercury_autonomy::RESULT_FAILURE</definition>
+        <argsstring></argsstring>
+        <name>RESULT_FAILURE</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="33" column="19" bodyfile="src/tree_executor.cpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TreeExecutor_1abd0a638da89c2c8e94930ce07ed8d8df" compoundref="tree__executor_8cpp" startline="160" endline="236">mercury_autonomy::TreeExecutor::executeTree</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__autonomy_1a9b2e8ca632d44096837628fa687550e1" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t mercury_autonomy::RESULT_CANCELED</definition>
+        <argsstring></argsstring>
+        <name>RESULT_CANCELED</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="34" column="19" bodyfile="src/tree_executor.cpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TreeExecutor_1abd0a638da89c2c8e94930ce07ed8d8df" compoundref="tree__executor_8cpp" startline="160" endline="236">mercury_autonomy::TreeExecutor::executeTree</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__autonomy_1a33524b7863381053054cc31fc07ff66f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int32_t</type>
+        <definition>constexpr int32_t mercury_autonomy::RESULT_ERROR</definition>
+        <argsstring></argsstring>
+        <name>RESULT_ERROR</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="35" column="19" bodyfile="src/tree_executor.cpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1TreeExecutor_1a8406636c2b0a668ac2a6e32d6f4aaec8" compoundref="tree__executor_8cpp" startline="239" endline="250">mercury_autonomy::TreeExecutor::finishWithError</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemercury__autonomy_1a4e5778de35f05d81f019ac30132e2361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::registerPlugins</definition>
+        <argsstring>(std::shared_ptr&lt; BT::BehaviorTreeFactory &gt; factory, const std::string &amp;package_name)</argsstring>
+        <name>registerPlugins</name>
+        <param>
+          <type>std::shared_ptr&lt; BT::BehaviorTreeFactory &gt;</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>package_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register all <ref refid="namespacemercury__autonomy" kindref="compound">mercury_autonomy</ref> BT plugin libraries with the factory. Loads libmercury_bt_actions, libmercury_bt_conditions, and libmercury_bt_decorators from the ament index install path. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/autonomy_util.cpp" line="13" column="6" bodyfile="src/autonomy_util.cpp" bodystart="13" bodyend="19" declfile="include/mercury_autonomy/autonomy_util.hpp" declline="20" declcolumn="6"/>
+        <referencedby refid="classmercury__autonomy_1_1TreeExecutor_1a34de59bf1aa729ae394f58906166bd7d" compoundref="tree__executor_8cpp" startline="43" endline="99">mercury_autonomy::TreeExecutor::TreeExecutor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__autonomy_1aaa458e83abff3a971eee37893794773a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::initRosForTree</definition>
+        <argsstring>(BT::Tree &amp;tree, rclcpp::Node::SharedPtr ros_node)</argsstring>
+        <name>initRosForTree</name>
+        <param>
+          <type>BT::Tree &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>ros_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Give every <ref refid="classmercury__autonomy_1_1MercuryBtNode" kindref="compound">MercuryBtNode</ref> in the tree a ROS node handle. Must be called before ticking a tree that contains custom nodes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/autonomy_util.cpp" line="21" column="6" bodyfile="src/autonomy_util.cpp" bodystart="21" bodyend="47" declfile="include/mercury_autonomy/autonomy_util.hpp" declline="25" declcolumn="6"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" compoundref="mercury__bt__node_8cpp" startline="11" endline="18">mercury_autonomy::MercuryBtNode::staticInit</references>
+        <referencedby refid="classmercury__autonomy_1_1TreeExecutor_1abd0a638da89c2c8e94930ce07ed8d8df" compoundref="tree__executor_8cpp" startline="160" endline="236">mercury_autonomy::TreeExecutor::executeTree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__autonomy_1a0514f512fe6806d1c55f28dff9a772eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::getEnvVar</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>getEnvVar</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve an environment variable or throw if unset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/autonomy_util.cpp" line="51" column="13" bodyfile="src/autonomy_util.cpp" bodystart="51" bodyend="57" declfile="include/mercury_autonomy/autonomy_util.hpp" declline="32" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__autonomy_1aba4492f4c6d8654aef48935afcd1967f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_msgs::msg::Pose</type>
+        <definition>geometry_msgs::msg::Pose mercury_autonomy::doTransform</definition>
+        <argsstring>(const geometry_msgs::msg::Pose &amp;pose, const geometry_msgs::msg::TransformStamped &amp;transform)</argsstring>
+        <name>doTransform</name>
+        <param>
+          <type>const geometry_msgs::msg::Pose &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::msg::TransformStamped &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+<para>Transform a pose by the given transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/autonomy_util.cpp" line="61" column="26" bodyfile="src/autonomy_util.cpp" bodystart="61" bodyend="66" declfile="include/mercury_autonomy/autonomy_util.hpp" declline="39" declcolumn="26"/>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">mercury_autonomy::TransformPose::onRunning</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__autonomy_1ab533b7063c3bd94aab6546b3e8657260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_msgs::msg::Vector3</type>
+        <definition>geometry_msgs::msg::Vector3 mercury_autonomy::toRPY</definition>
+        <argsstring>(const geometry_msgs::msg::Quaternion &amp;quat)</argsstring>
+        <name>toRPY</name>
+        <param>
+          <type>const geometry_msgs::msg::Quaternion &amp;</type>
+          <declname>quat</declname>
+        </param>
+        <briefdescription>
+<para>Quaternion to roll-pitch-yaw (radians). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/autonomy_util.cpp" line="68" column="29" bodyfile="src/autonomy_util.cpp" bodystart="68" bodyend="75" declfile="include/mercury_autonomy/autonomy_util.hpp" declline="43" declcolumn="29"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">mercury_autonomy::ComputeFrameAlignment::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" compoundref="get__odometry_8cpp" startline="32" endline="55">mercury_autonomy::GetOdometry::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">mercury_autonomy::TransformPose::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetImuOrientation_1af2c377e1d8ebee7d5ce86297ed21649b" compoundref="get__imu__orientation_8cpp" startline="11" endline="31">mercury_autonomy::GetImuOrientation::onStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__autonomy_1af20362dbd9637713653dc7064b5403f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_msgs::msg::Quaternion</type>
+        <definition>geometry_msgs::msg::Quaternion mercury_autonomy::toQuat</definition>
+        <argsstring>(const geometry_msgs::msg::Vector3 &amp;rpy)</argsstring>
+        <name>toQuat</name>
+        <param>
+          <type>const geometry_msgs::msg::Vector3 &amp;</type>
+          <declname>rpy</declname>
+        </param>
+        <briefdescription>
+<para>Roll-pitch-yaw (radians) to quaternion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/autonomy_util.cpp" line="77" column="32" bodyfile="src/autonomy_util.cpp" bodystart="77" bodyend="82" declfile="include/mercury_autonomy/autonomy_util.hpp" declline="46" declcolumn="32"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a935b5af4577ed12c75cd32fa5bf2db3c" compoundref="publish__ekf__pose_8cpp" startline="31" endline="88">mercury_autonomy::PublishEKFPose::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">mercury_autonomy::ComputeFrameAlignment::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishToController_1a0fccd8af8decdfc980a9cd37ba92b528" compoundref="publish__to__controller_8cpp" startline="19" endline="48">mercury_autonomy::PublishToController::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" compoundref="transform__pose_8cpp" startline="11" endline="43">mercury_autonomy::TransformPose::onStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__autonomy_1a9ff870c0c78f8059a629444f1253a117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double mercury_autonomy::distance</definition>
+        <argsstring>(const geometry_msgs::msg::Point &amp;a, const geometry_msgs::msg::Point &amp;b)</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const geometry_msgs::msg::Point &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::msg::Point &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Euclidean distance between two points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/autonomy_util.cpp" line="84" column="8" bodyfile="src/autonomy_util.cpp" bodystart="84" bodyend="86" declfile="include/mercury_autonomy/autonomy_util.hpp" declline="49" declcolumn="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_autonomy/autonomy_util.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

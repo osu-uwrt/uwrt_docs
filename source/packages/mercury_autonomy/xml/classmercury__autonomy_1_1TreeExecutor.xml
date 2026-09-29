@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1TreeExecutor" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::TreeExecutor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1ac84fa470d5117f5518265345b780fbd6" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; BT::BehaviorTreeFactory &gt;</type>
+        <definition>std::shared_ptr&lt;BT::BehaviorTreeFactory&gt; mercury_autonomy::TreeExecutor::factory_</definition>
+        <argsstring></argsstring>
+        <name>factory_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="312" column="21" bodyfile="src/tree_executor.cpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1ab170b053e84e767113e919e6275e2377" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; mercury_autonomy::TreeExecutor::tree_dirs_</definition>
+        <argsstring></argsstring>
+        <name>tree_dirs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="313" column="17" bodyfile="src/tree_executor.cpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1ad7b66326b5a55cbb6e1692fb102ec952" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; mercury_autonomy::TreeExecutor::extra_tree_dirs_</definition>
+        <argsstring></argsstring>
+        <name>extra_tree_dirs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="314" column="17" bodyfile="src/tree_executor.cpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1a4aea4bac1fd7ecd9cf3027eecbe2ff44" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; mercury_autonomy::TreeExecutor::extra_plugins_</definition>
+        <argsstring></argsstring>
+        <name>extra_plugins_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="315" column="17" bodyfile="src/tree_executor.cpp" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1aab07429e883d1f6842d0f3169c8237e6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::TreeExecutor::tick_rate_hz_</definition>
+        <argsstring></argsstring>
+        <name>tick_rate_hz_</name>
+        <initializer>= 30.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="316" column="12" bodyfile="src/tree_executor.cpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1a9ca090f54bc339abd115676fab7b6e10" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; mercury_autonomy::TreeExecutor::tree_running_</definition>
+        <argsstring></argsstring>
+        <name>tree_running_</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="318" column="17" bodyfile="src/tree_executor.cpp" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1a57d5049de2365d8c44a547d74490e61d" prot="private" static="no" mutable="no">
+        <type>std::atomic&lt; bool &gt;</type>
+        <definition>std::atomic&lt;bool&gt; mercury_autonomy::TreeExecutor::cancel_requested_</definition>
+        <argsstring></argsstring>
+        <name>cancel_requested_</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="319" column="17" bodyfile="src/tree_executor.cpp" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1a83b6ec60088125d1bac86bf3cfcd3de1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::TreeExecutor::resolved_tree_path_</definition>
+        <argsstring></argsstring>
+        <name>resolved_tree_path_</name>
+        <briefdescription>
+<para>Set by handleGoal, read by executeTree. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="320" column="17" bodyfile="src/tree_executor.cpp" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1a1e582c99bd1f51be07be3a8712165397" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread mercury_autonomy::TreeExecutor::exec_thread_</definition>
+        <argsstring></argsstring>
+        <name>exec_thread_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="321" column="17" bodyfile="src/tree_executor.cpp" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1ac3897cd96e7746131a7844502d600d99" prot="private" static="no" mutable="no">
+        <type>rclcpp_action::Server&lt; <ref refid="namespacemercury__autonomy_1a683646e16758b03a5de4d13bd91d6a9d" kindref="member">ExecuteTree</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp_action::Server&lt;ExecuteTree&gt;::SharedPtr mercury_autonomy::TreeExecutor::action_server_</definition>
+        <argsstring></argsstring>
+        <name>action_server_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="323" column="39" bodyfile="src/tree_executor.cpp" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1a26c7769599fcdc23ca65964da69c29cd" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; mercury_msgs::srv::ListTrees &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;mercury_msgs::srv::ListTrees&gt;::SharedPtr mercury_autonomy::TreeExecutor::list_trees_srv_</definition>
+        <argsstring></argsstring>
+        <name>list_trees_srv_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="324" column="33" bodyfile="src/tree_executor.cpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1TreeExecutor_1a59a7dd64c1bf4558cc58c27a916257d3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::String &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::String&gt;::SharedPtr mercury_autonomy::TreeExecutor::status_pub_</definition>
+        <argsstring></argsstring>
+        <name>status_pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="325" column="35" bodyfile="src/tree_executor.cpp" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a34de59bf1aa729ae394f58906166bd7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::TreeExecutor::TreeExecutor</definition>
+        <argsstring>()</argsstring>
+        <name>TreeExecutor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="43" column="5" bodyfile="src/tree_executor.cpp" bodystart="43" bodyend="99"/>
+        <references refid="tree__executor_8cpp_1aa8afcdeb5fc117ce28eb908bb408038d" compoundref="tree__executor_8cpp" startline="23">AUTONOMY_PKG_NAME</references>
+        <references refid="namespacemercury__autonomy_1a4e5778de35f05d81f019ac30132e2361" compoundref="autonomy__util_8cpp" startline="13" endline="19">mercury_autonomy::registerPlugins</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a725c729de827f355e57486f7b898b10a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::TreeExecutor::~TreeExecutor</definition>
+        <argsstring>() override</argsstring>
+        <name>~TreeExecutor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="101" column="5" bodyfile="src/tree_executor.cpp" bodystart="101" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1ab370c20c42aea84446362566f79d5910" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>rclcpp_action::GoalResponse</type>
+        <definition>rclcpp_action::GoalResponse mercury_autonomy::TreeExecutor::handleGoal</definition>
+        <argsstring>(const rclcpp_action::GoalUUID &amp;, std::shared_ptr&lt; const ExecuteTree::Goal &gt; goal)</argsstring>
+        <name>handleGoal</name>
+        <param>
+          <type>const rclcpp_action::GoalUUID &amp;</type>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; const ExecuteTree::Goal &gt;</type>
+          <declname>goal</declname>
+        </param>
+        <briefdescription>
+<para>Decide whether to accept or reject a new goal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="115" column="33" bodyfile="src/tree_executor.cpp" bodystart="115" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a36b714e6401dd8b027a5d2acae790b19" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>rclcpp_action::CancelResponse</type>
+        <definition>rclcpp_action::CancelResponse mercury_autonomy::TreeExecutor::handleCancel</definition>
+        <argsstring>(const std::shared_ptr&lt; GoalHandle &gt;)</argsstring>
+        <name>handleCancel</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="namespacemercury__autonomy_1a4e549f839072d79a00db0757058385b4" kindref="member">GoalHandle</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Handle a cancellation request for a running goal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="139" column="35" bodyfile="src/tree_executor.cpp" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a1fbfdbf332a812ac682adf3e69ba4a7e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::TreeExecutor::handleAccepted</definition>
+        <argsstring>(const std::shared_ptr&lt; GoalHandle &gt; goal_handle)</argsstring>
+        <name>handleAccepted</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="namespacemercury__autonomy_1a4e549f839072d79a00db0757058385b4" kindref="member">GoalHandle</ref> &gt;</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+<para>Called when a goal is accepted <ndash/> launch tree execution on a background thread. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="146" column="10" bodyfile="src/tree_executor.cpp" bodystart="146" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1abd0a638da89c2c8e94930ce07ed8d8df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::TreeExecutor::executeTree</definition>
+        <argsstring>(const std::shared_ptr&lt; GoalHandle &gt; goal_handle)</argsstring>
+        <name>executeTree</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="namespacemercury__autonomy_1a4e549f839072d79a00db0757058385b4" kindref="member">GoalHandle</ref> &gt;</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+<para>Execute the BT from the resolved tree path. Publishes feedback and sets the result. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="160" column="10" bodyfile="src/tree_executor.cpp" bodystart="160" bodyend="236"/>
+        <references refid="namespacemercury__autonomy_1aaa458e83abff3a971eee37893794773a" compoundref="autonomy__util_8cpp" startline="21" endline="47">mercury_autonomy::initRosForTree</references>
+        <references refid="namespacemercury__autonomy_1a9b2e8ca632d44096837628fa687550e1" compoundref="tree__executor_8cpp" startline="34">mercury_autonomy::RESULT_CANCELED</references>
+        <references refid="namespacemercury__autonomy_1a6011a2aac9f5eb9ebc927a31bb58d3a2" compoundref="tree__executor_8cpp" startline="33">mercury_autonomy::RESULT_FAILURE</references>
+        <references refid="namespacemercury__autonomy_1a3bef4cd8e1d031724a56b18e7ea0c31a" compoundref="tree__executor_8cpp" startline="32">mercury_autonomy::RESULT_SUCCESS</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a8406636c2b0a668ac2a6e32d6f4aaec8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::TreeExecutor::finishWithError</definition>
+        <argsstring>(const std::shared_ptr&lt; GoalHandle &gt; &amp;goal_handle, const std::string &amp;error_msg)</argsstring>
+        <name>finishWithError</name>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="namespacemercury__autonomy_1a4e549f839072d79a00db0757058385b4" kindref="member">GoalHandle</ref> &gt; &amp;</type>
+          <declname>goal_handle</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>error_msg</declname>
+        </param>
+        <briefdescription>
+<para>Helper: abort goal with ERROR status after an exception. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="239" column="10" bodyfile="src/tree_executor.cpp" bodystart="239" bodyend="250"/>
+        <references refid="namespacemercury__autonomy_1a33524b7863381053054cc31fc07ff66f" compoundref="tree__executor_8cpp" startline="35">mercury_autonomy::RESULT_ERROR</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a7fff797c41dc30ae4d5a9f25c65601f2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::TreeExecutor::handleListTrees</definition>
+        <argsstring>(const mercury_msgs::srv::ListTrees::Request::SharedPtr, mercury_msgs::srv::ListTrees::Response::SharedPtr response)</argsstring>
+        <name>handleListTrees</name>
+        <param>
+          <type>const mercury_msgs::srv::ListTrees::Request::SharedPtr</type>
+        </param>
+        <param>
+          <type>mercury_msgs::srv::ListTrees::Response::SharedPtr</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+<para>Enumerate all .xml tree files across configured directories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="257" column="10" bodyfile="src/tree_executor.cpp" bodystart="257" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a6dd9c0a2be27403e29e4f3d5ee3bf3b8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::TreeExecutor::publishStatus</definition>
+        <argsstring>(const std::string &amp;status)</argsstring>
+        <name>publishStatus</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="279" column="10" bodyfile="src/tree_executor.cpp" bodystart="279" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1ade42d3e1995cdd8a68330150ebcabb15" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::TreeExecutor::resolveTreePath</definition>
+        <argsstring>(const std::string &amp;input) const</argsstring>
+        <name>resolveTreePath</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resolve a tree path: absolute paths are used directly, relative names are searched in the configured tree directories. Returns empty string if not found. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="287" column="17" bodyfile="src/tree_executor.cpp" bodystart="287" bodyend="301"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1TreeExecutor_1a27515183c7192a2ef93a3aa3ba7f1ca0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double mercury_autonomy::TreeExecutor::elapsedSeconds</definition>
+        <argsstring>(const std::chrono::steady_clock::time_point &amp;start)</argsstring>
+        <name>elapsedSeconds</name>
+        <param>
+          <type>const std::chrono::steady_clock::time_point &amp;</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+<para>Compute seconds elapsed since a reference time point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tree_executor.cpp" line="304" column="19" bodyfile="src/tree_executor.cpp" bodystart="304" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The tree executor node <ndash/> ROS2 action server for BehaviorTree execution. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::TreeExecutor</label>
+        <link refid="classmercury__autonomy_1_1TreeExecutor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::TreeExecutor</label>
+        <link refid="classmercury__autonomy_1_1TreeExecutor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/tree_executor.cpp" line="41" column="1" bodyfile="src/tree_executor.cpp" bodystart="41" bodyend="326"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1ac3897cd96e7746131a7844502d600d99" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>action_server_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a57d5049de2365d8c44a547d74490e61d" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>cancel_requested_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a27515183c7192a2ef93a3aa3ba7f1ca0" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>elapsedSeconds</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a1e582c99bd1f51be07be3a8712165397" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>exec_thread_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1abd0a638da89c2c8e94930ce07ed8d8df" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>executeTree</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a4aea4bac1fd7ecd9cf3027eecbe2ff44" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>extra_plugins_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1ad7b66326b5a55cbb6e1692fb102ec952" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>extra_tree_dirs_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1ac84fa470d5117f5518265345b780fbd6" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>factory_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a8406636c2b0a668ac2a6e32d6f4aaec8" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>finishWithError</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a1fbfdbf332a812ac682adf3e69ba4a7e" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>handleAccepted</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a36b714e6401dd8b027a5d2acae790b19" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>handleCancel</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1ab370c20c42aea84446362566f79d5910" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>handleGoal</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a7fff797c41dc30ae4d5a9f25c65601f2" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>handleListTrees</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a26c7769599fcdc23ca65964da69c29cd" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>list_trees_srv_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a6dd9c0a2be27403e29e4f3d5ee3bf3b8" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>publishStatus</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a83b6ec60088125d1bac86bf3cfcd3de1" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>resolved_tree_path_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1ade42d3e1995cdd8a68330150ebcabb15" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>resolveTreePath</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a59a7dd64c1bf4558cc58c27a916257d3" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>status_pub_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1aab07429e883d1f6842d0f3169c8237e6" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>tick_rate_hz_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1ab170b053e84e767113e919e6275e2377" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>tree_dirs_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a9ca090f54bc339abd115676fab7b6e10" prot="private" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>tree_running_</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a34de59bf1aa729ae394f58906166bd7d" prot="public" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>TreeExecutor</name></member>
+      <member refid="classmercury__autonomy_1_1TreeExecutor_1a725c729de827f355e57486f7b898b10a" prot="public" virt="non-virtual"><scope>mercury_autonomy::TreeExecutor</scope><name>~TreeExecutor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

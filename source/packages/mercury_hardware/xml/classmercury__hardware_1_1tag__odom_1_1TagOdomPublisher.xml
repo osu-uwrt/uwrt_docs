@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher" kind="class" language="Python" prot="public">
+    <compoundname>mercury_hardware::tag_odom::TagOdomPublisher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1ab6c60c962604c89b1da162deb376ac2c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.tag_odom.TagOdomPublisher::robotName</definition>
+        <argsstring></argsstring>
+        <name>robotName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="29" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1af36b8a4d7675b412a808277b27610ee1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.tag_odom.TagOdomPublisher::pub</definition>
+        <argsstring></argsstring>
+        <name>pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="37" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" compoundref="depth__converter_8py" startline="26" endline="57">mercury_hardware.depth_converter.depthConverter.depthCb</referencedby>
+        <referencedby refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a38871485fd849544923f624ba3694019" compoundref="tag__odom_8py" startline="47" endline="72">mercury_hardware.tag_odom.TagOdomPublisher.timerCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1ae086355e3f1709212542826a3b824507" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.tag_odom.TagOdomPublisher::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="41" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a38871485fd849544923f624ba3694019" compoundref="tag__odom_8py" startline="47" endline="72">mercury_hardware.tag_odom.TagOdomPublisher.timerCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a75978aa1bf498bf3a8f918bbb6c7f23c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.tag_odom.TagOdomPublisher::listener</definition>
+        <argsstring></argsstring>
+        <name>listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="42" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a10b4c9df313c28146d7cc5f9a0e9a52a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_hardware.tag_odom.TagOdomPublisher.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="24" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="24" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a38871485fd849544923f624ba3694019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_hardware.tag_odom.TagOdomPublisher.timerCb</definition>
+        <argsstring>(self)</argsstring>
+        <name>timerCb</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/tag_odom.py" line="47" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="47" bodyend="72"/>
+        <references refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1ae086355e3f1709212542826a3b824507" compoundref="tag__odom_8py" startline="41">mercury_hardware.tag_odom.TagOdomPublisher.buffer</references>
+        <references refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a933848464d94201305ffd2a29a92ae59" compoundref="depth__converter_8py" startline="19">mercury_hardware.depth_converter.depthConverter.pub</references>
+        <references refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1af36b8a4d7675b412a808277b27610ee1" compoundref="tag__odom_8py" startline="37">mercury_hardware.tag_odom.TagOdomPublisher.pub</references>
+        <references refid="namespacemercury__hardware_1_1tag__odom_1a78a46f6df58e60b23c10df5db92454b4" compoundref="tag__odom_8py" startline="15" endline="22">mercury_hardware.tag_odom.v3ToPoint</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>mercury_hardware.tag_odom.TagOdomPublisher</label>
+        <link refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>mercury_hardware.tag_odom.TagOdomPublisher</label>
+        <link refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_hardware/tag_odom.py" line="23" column="1" bodyfile="mercury_hardware/tag_odom.py" bodystart="23" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a10b4c9df313c28146d7cc5f9a0e9a52a" prot="public" virt="non-virtual"><scope>mercury_hardware::tag_odom::TagOdomPublisher</scope><name>__init__</name></member>
+      <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1ae086355e3f1709212542826a3b824507" prot="public" virt="non-virtual"><scope>mercury_hardware::tag_odom::TagOdomPublisher</scope><name>buffer</name></member>
+      <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a75978aa1bf498bf3a8f918bbb6c7f23c" prot="public" virt="non-virtual"><scope>mercury_hardware::tag_odom::TagOdomPublisher</scope><name>listener</name></member>
+      <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1af36b8a4d7675b412a808277b27610ee1" prot="public" virt="non-virtual"><scope>mercury_hardware::tag_odom::TagOdomPublisher</scope><name>pub</name></member>
+      <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1ab6c60c962604c89b1da162deb376ac2c" prot="public" virt="non-virtual"><scope>mercury_hardware::tag_odom::TagOdomPublisher</scope><name>robotName</name></member>
+      <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a38871485fd849544923f624ba3694019" prot="public" virt="non-virtual"><scope>mercury_hardware::tag_odom::TagOdomPublisher</scope><name>timerCb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

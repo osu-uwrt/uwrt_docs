@@ -1,0 +1,1538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classPhysicsSimNode" kind="class" language="C++" prot="public">
+    <compoundname>PhysicsSimNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPhysicsSimNode_1a9a97bbbc2eb42bbab01b5f49c664cdda" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PhysicsSimNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1137" column="12" bodyfile="src/physics_simulator.cpp" bodystart="1137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1afef6275ce828b00805e7fadbf1ad8f04" prot="private" static="no" mutable="no">
+        <type><ref refid="classRobot" kindref="compound">Robot</ref></type>
+        <definition>Robot PhysicsSimNode::robot</definition>
+        <argsstring></argsstring>
+        <name>robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1138" column="11" bodyfile="src/physics_simulator.cpp" bodystart="1138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a1c652b007f87e403ae8eb3f18adfc9a5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1139" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1ad82ba07c16c0c1b6a7fe8ffd365fb91a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::sync_odom</definition>
+        <argsstring></argsstring>
+        <name>sync_odom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1140" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a28dc424b782ee68895c7205738897b10" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcollisionBox" kindref="compound">collisionBox</ref> &gt;</type>
+        <definition>std::vector&lt;collisionBox&gt; PhysicsSimNode::obstacleBoxes</definition>
+        <argsstring></argsstring>
+        <name>obstacleBoxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1142" column="17" bodyfile="src/physics_simulator.cpp" bodystart="1142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a43123feda6daa65b1dedc43c69048260" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcollisionBox" kindref="compound">collisionBox</ref> &gt;</type>
+        <definition>std::vector&lt;collisionBox&gt; PhysicsSimNode::robotBoxes</definition>
+        <argsstring></argsstring>
+        <name>robotBoxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1143" column="17" bodyfile="src/physics_simulator.cpp" bodystart="1143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a098df6beb66685e86e7883baceeba4fe" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; tf2_ros::TransformBroadcaster &gt;</type>
+        <definition>std::unique_ptr&lt;tf2_ros::TransformBroadcaster&gt; PhysicsSimNode::tf_broadcaster</definition>
+        <argsstring></argsstring>
+        <name>tf_broadcaster</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1144" column="21" bodyfile="src/physics_simulator.cpp" bodystart="1144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a1509e434340f9d8f8d9932cb2c1af463" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time PhysicsSimNode::startTime</definition>
+        <argsstring></argsstring>
+        <name>startTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1146" column="18" bodyfile="src/physics_simulator.cpp" bodystart="1146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1aba6b641a0f0e68b842862972f4cbbd04" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::dvlTimer</definition>
+        <argsstring></argsstring>
+        <name>dvlTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1148" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a1f09b0bf55bb18632e648fd152261198" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::imuTimer</definition>
+        <argsstring></argsstring>
+        <name>imuTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1149" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1ac7048368749c2d4857b6be89e79ce372" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::depthTimer</definition>
+        <argsstring></argsstring>
+        <name>depthTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1150" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1aee34707e55c200dcdb6bf5e530f8362d" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::acousticsTimer</definition>
+        <argsstring></argsstring>
+        <name>acousticsTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1151" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a2c056a6b29781cd909955133867e170b" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::statePubTimer</definition>
+        <argsstring></argsstring>
+        <name>statePubTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1152" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a332af28910c8e49d1c8be692c83dc1fd" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::killSwitchTimer</definition>
+        <argsstring></argsstring>
+        <name>killSwitchTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1153" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1acc59d6cd10517c3e1f0c0f150e241070" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::ballastUpdateTimer</definition>
+        <argsstring></argsstring>
+        <name>ballastUpdateTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1154" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a12788b70999d936d1af77768e0c20cdf" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::solenoidPubTimer</definition>
+        <argsstring></argsstring>
+        <name>solenoidPubTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1155" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a82eb4666f07499bb9aa10b3efc6bcf11" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::thrusterTelemetryTimer</definition>
+        <argsstring></argsstring>
+        <name>thrusterTelemetryTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1156" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a88bc9395b124548b67d25ffa22be904f" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr PhysicsSimNode::paramRefreshTimer</definition>
+        <argsstring></argsstring>
+        <name>paramRefreshTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1157" column="34" bodyfile="src/physics_simulator.cpp" bodystart="1157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a3cfaffd6d2085ef45f6f3026e1700671" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Imu &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Imu&gt;::SharedPtr PhysicsSimNode::imuPub</definition>
+        <argsstring></argsstring>
+        <name>imuPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1159" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a11759a26907a5eb406ddf989e349c11c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::Pose &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::Pose&gt;::SharedPtr PhysicsSimNode::statePub</definition>
+        <argsstring></argsstring>
+        <name>statePub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1160" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a88b8aaa4b69aed9206165858b75e9c02" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr PhysicsSimNode::firmwareKillPub</definition>
+        <argsstring></argsstring>
+        <name>firmwareKillPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1161" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a7d448e3fe5df27903f6e1eb52642615d" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::String &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::String&gt;::SharedPtr PhysicsSimNode::clawObjectSub</definition>
+        <argsstring></argsstring>
+        <name>clawObjectSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1162" column="38" bodyfile="src/physics_simulator.cpp" bodystart="1162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a4a34fa18dcbcf6891388ebd2df4aa6e8" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; robot_localization::srv::SetPose &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;robot_localization::srv::SetPose&gt;::SharedPtr PhysicsSimNode::poseClient</definition>
+        <argsstring></argsstring>
+        <name>poseClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1163" column="32" bodyfile="src/physics_simulator.cpp" bodystart="1163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a13327a8ed0d849e7e2dae714cb53c02b" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; robot_localization::srv::SetPose &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;robot_localization::srv::SetPose&gt;::SharedPtr PhysicsSimNode::poseService</definition>
+        <argsstring></argsstring>
+        <name>poseService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1164" column="33" bodyfile="src/physics_simulator.cpp" bodystart="1164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a1f43dbd47715999dbe7e5d500f5574c7" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Float32MultiArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Float32MultiArray&gt;::SharedPtr PhysicsSimNode::thrusterSub</definition>
+        <argsstring></argsstring>
+        <name>thrusterSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1165" column="38" bodyfile="src/physics_simulator.cpp" bodystart="1165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a5053c015d1e5c101900d8a77b1d856fa" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; visualization_msgs::msg::MarkerArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;visualization_msgs::msg::MarkerArray&gt;::SharedPtr PhysicsSimNode::collisionBoxPub</definition>
+        <argsstring></argsstring>
+        <name>collisionBoxPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1166" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a268080fc27f9682b906cd24580069d4b" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::TwistWithCovarianceStamped &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::TwistWithCovarianceStamped&gt;::SharedPtr PhysicsSimNode::dvlPub</definition>
+        <argsstring></argsstring>
+        <name>dvlPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1167" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a66f3a24f9060db9cfd5574790146a021" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::PoseWithCovarianceStamped &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::PoseWithCovarianceStamped&gt;::SharedPtr PhysicsSimNode::depthPub</definition>
+        <argsstring></argsstring>
+        <name>depthPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1168" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1ac548a4d355777b75a5bc529a399af54f" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::Vector3Stamped &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::Vector3Stamped&gt;::SharedPtr PhysicsSimNode::acousticsPub</definition>
+        <argsstring></argsstring>
+        <name>acousticsPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1169" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1aec83280acf8adb8a1a0b744a4f8b69f8" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; mercury_msgs::msg::DshotPartialTelemetry &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;mercury_msgs::msg::DshotPartialTelemetry&gt;::SharedPtr PhysicsSimNode::thrusterTelemetryPub</definition>
+        <argsstring></argsstring>
+        <name>thrusterTelemetryPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1170" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a0be61f36e344bc9189fc837299b9ff00" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr PhysicsSimNode::exhaustSolenoidPub</definition>
+        <argsstring></argsstring>
+        <name>exhaustSolenoidPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1171" column="35" bodyfile="src/physics_simulator.cpp" bodystart="1171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a397f56754603d12c6c1ed1ebbbc0a921" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr PhysicsSimNode::pressureSolenoidPub</definition>
+        <argsstring></argsstring>
+        <name>pressureSolenoidPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1171" column="54" bodyfile="src/physics_simulator.cpp" bodystart="1171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a0ff89023a9bdb3e18c3ab06f98cca847" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr PhysicsSimNode::waterSolenoidPub</definition>
+        <argsstring></argsstring>
+        <name>waterSolenoidPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1172" column="9" bodyfile="src/physics_simulator.cpp" bodystart="1172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a4d046e000dae060625d724a31a9b6302" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; mercury_msgs::msg::KillSwitchReport &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;mercury_msgs::msg::KillSwitchReport&gt;::SharedPtr PhysicsSimNode::softwareKillSub</definition>
+        <argsstring></argsstring>
+        <name>softwareKillSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1174" column="38" bodyfile="src/physics_simulator.cpp" bodystart="1174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1a88516962dcd05d0a441dacf785d6317a" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr PhysicsSimNode::exhaustSolenoidSub</definition>
+        <argsstring></argsstring>
+        <name>exhaustSolenoidSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1175" column="38" bodyfile="src/physics_simulator.cpp" bodystart="1175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1ac31d19d6b68b9f59c2a061dba50160ac" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr PhysicsSimNode::pressureSolenoidSub</definition>
+        <argsstring></argsstring>
+        <name>pressureSolenoidSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1175" column="57" bodyfile="src/physics_simulator.cpp" bodystart="1175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPhysicsSimNode_1abe26e3bd541266c977ee5ca8d935e66f" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr PhysicsSimNode::waterSolenoidSub</definition>
+        <argsstring></argsstring>
+        <name>waterSolenoidSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1176" column="9" bodyfile="src/physics_simulator.cpp" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhysicsSimNode::PhysicsSimNode</definition>
+        <argsstring>()</argsstring>
+        <name>PhysicsSimNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="81" column="5" bodyfile="src/physics_simulator.cpp" bodystart="81" bodyend="139"/>
+        <references refid="classPhysicsSimNode_1af356c3090d3e63cdf746527c0bc55256" compoundref="physics__simulator_8cpp" startline="895" endline="899">exhaustSubCb</references>
+        <references refid="classPhysicsSimNode_1abe717b4d6deca669452ff41dc50513d4" compoundref="physics__simulator_8cpp" startline="862" endline="870">forceCallback</references>
+        <references refid="classPhysicsSimNode_1a74d90a598c317b91cd08fb065198c12c" compoundref="physics__simulator_8cpp" startline="879" endline="891">killSwitchCallback</references>
+        <references refid="classPhysicsSimNode_1ada97a9eda940bdb68c0bf40560cd35e9" compoundref="physics__simulator_8cpp" startline="901" endline="905">pressureSubCb</references>
+        <references refid="classPhysicsSimNode_1ac88c6b497e03cdc8b0060ac5cc2fab37" compoundref="physics__simulator_8cpp" startline="913" endline="924">publishSolenoidStates</references>
+        <references refid="classPhysicsSimNode_1a1cb2fd118e86b2af505018b0d9e5ace7" compoundref="physics__simulator_8cpp" startline="966" endline="1033">publishState</references>
+        <references refid="classPhysicsSimNode_1a13f6900706869a53841bc05ec0ea4b51" compoundref="physics__simulator_8cpp" startline="838" endline="859">pubThrusterTelemetry</references>
+        <references refid="classPhysicsSimNode_1a261954e88533da227a4b5eed1a009b5b" compoundref="physics__simulator_8cpp" startline="1036" endline="1039">refreshSimulationParameters</references>
+        <references refid="classPhysicsSimNode_1aef8cb2c213bd696d451cbb99d12eeb0c" compoundref="physics__simulator_8cpp" startline="872" endline="875">setLoadedClawObjectCallback</references>
+        <references refid="classPhysicsSimNode_1a7b2f49c6040dcec90850d186691980b2" compoundref="physics__simulator_8cpp" startline="927" endline="958">setSim</references>
+        <references refid="settings_8h_1ac5ca7cec85fe7656a5d9de19f3464755" compoundref="settings_8h" startline="11">STATE_PUB_TIME</references>
+        <references refid="classPhysicsSimNode_1a26718f7c1e9fc9cf0bcd374c3c0e1cd3" compoundref="physics__simulator_8cpp" startline="907" endline="911">waterSubCb</references>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a1ad9dfdde7dc1fdfdfa831da4736121f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Loads parameters from the robot&apos;s yaml file into the <ref refid="classRobot" kindref="compound">Robot</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>wether the parameters were loaded successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="145" column="10" bodyfile="src/physics_simulator.cpp" bodystart="145" bodyend="183"/>
+        <references refid="settings_8h_1aaa0e5072566ed3142c69115b5588f758" compoundref="settings_8h" startline="10">COLLISION_TOGGLE</references>
+        <references refid="classPhysicsSimNode_1a89c8fa18133c5a7df9f5c406994d6fc1" compoundref="physics__simulator_8cpp" startline="822" endline="831">publishFakeAcousticsData</references>
+        <references refid="classPhysicsSimNode_1a51e9f2d08dd4ccae41d2dacc959ea1f3" compoundref="physics__simulator_8cpp" startline="673" endline="695">publishFakeDepthData</references>
+        <references refid="classPhysicsSimNode_1a436d354234f18a3d3b7f1343de18084c" compoundref="physics__simulator_8cpp" startline="698" endline="739">publishFakeDVLData</references>
+        <references refid="classPhysicsSimNode_1a2efb69a866cd5e23514b195bcf2e69e3" compoundref="physics__simulator_8cpp" startline="742" endline="820">publishFakeIMUData</references>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1ad517711b4b71eeafce7be92929094eb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::rungeKutta4</definition>
+        <argsstring>()</argsstring>
+        <name>rungeKutta4</name>
+        <briefdescription>
+<para>Solves system of ODEs representing robot physics using fourth order Runge-Kutta numerical method. This function is runs in an infinite loop to run the simulator, which also spins the ROS node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Physics equations have been set up as a system of first order equations so that: dx/dt = f(x)</para>
+<para>Where x is the robot&apos;s state as a column vector: x = [x y z q_w q_x q_y q_z P_x P_y P_z L_x L_y L_z]^T &lt;- parameter 0 1 2 3 4 5 6 7 8 9 10 11 12 &lt;- index with P meaning linear momentum, and L meaning angular momentum, and q meaning quaternion Everything in the state vector is in world frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="203" column="10" bodyfile="src/physics_simulator.cpp" bodystart="203" bodyend="238"/>
+        <references refid="settings_8h_1aaa0e5072566ed3142c69115b5588f758" compoundref="settings_8h" startline="10">COLLISION_TOGGLE</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPhysicsSimNode_1a01727189af2f65205bfdb0c8332ec61e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+        <definition>vXd PhysicsSimNode::calcStateDot</definition>
+        <argsstring>(const vXd &amp;state)</argsstring>
+        <name>calcStateDot</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classRobot" kindref="compound">Robot</ref>&apos;s state vector where derivative is to be evaluated at </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rate of change of the robot&apos;s state vector </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="245" column="9" bodyfile="src/physics_simulator.cpp" bodystart="245" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1ab057e14c8a48b62d24ef29b0a72e71e0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d PhysicsSimNode::calcForces</definition>
+        <argsstring>(const quat &amp;q, const v3d &amp;linVel, const double &amp;depth)</argsstring>
+        <name>calcForces</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>linVel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quaternion representing the robot&apos;s orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>linVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linear velocity of the robot in the world frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Net force acting on the robot&apos;s COM in the world frame </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="284" column="9" bodyfile="src/physics_simulator.cpp" bodystart="284" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1aae7959dd36c017f4ed59cd72350a296c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d PhysicsSimNode::calcTorques</definition>
+        <argsstring>(const quat &amp;q, const v3d &amp;linVel, const v3d &amp;angVel, const double &amp;depth)</argsstring>
+        <name>calcTorques</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref> &amp;</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>linVel</declname>
+        </param>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>angVel</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quaternion representing the robot&apos;s orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angular velocity of the robot in the world frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The net torque acting on the robot in the world frame </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="303" column="9" bodyfile="src/physics_simulator.cpp" bodystart="303" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a70537f24c0e29efa0d29376c276b5ddd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::Vector4d</type>
+        <definition>Eigen::Vector4d PhysicsSimNode::calcQuaternionDot</definition>
+        <argsstring>(quat q, const v3d &amp;angVel)</argsstring>
+        <name>calcQuaternionDot</name>
+        <param>
+          <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>angVel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Quaternion representing the robot&apos;s orientation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angVel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angular velocity of the robot in the world frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rate of change of the quaternion elements as a vector [w&apos;, x&apos;, y&apos;, z&apos;] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="319" column="21" bodyfile="src/physics_simulator.cpp" bodystart="319" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a9f95f97957d32ae0ad6b5f81d399e8d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+        <definition>vXd PhysicsSimNode::handleCollisions</definition>
+        <argsstring>(vXd state)</argsstring>
+        <name>handleCollisions</name>
+        <param>
+          <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Loops through all collision elements and adds impulses based on collision information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classRobot" kindref="compound">Robot</ref>&apos;s state vector where collisions are evaluated at </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Modified state vector with added collision impulses </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="339" column="9" bodyfile="src/physics_simulator.cpp" bodystart="339" bodyend="381"/>
+        <references refid="settings_8h_1abff027815f9b6edbe177f8ea4834388d" compoundref="settings_8h" startline="12">COEF_OF_RESTITUTION</references>
+        <references refid="structcollisionResult_1a39fbed4c731ea28e2f1d36e0e676d2cd" compoundref="collisionBox_8h" startline="57">collisionResult::collided</references>
+        <references refid="structcollisionResult_1ae60606e71f9fb13944847203b804b76e" compoundref="collisionBox_8h" startline="59">collisionResult::collisionPoint</references>
+        <references refid="structcollisionResult_1a618d958aa5082aeec0a5a8fc208d7ea1" compoundref="collisionBox_8h" startline="56">collisionResult::depth</references>
+        <references refid="structcollisionResult_1a436412ea808cb34c8bc4468038913ef8" compoundref="collisionBox_8h" startline="58">collisionResult::unitDirection</references>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1affcc31a3c56fb9d309244fb7b9e944af" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structcollisionResult" kindref="compound">collisionResult</ref></type>
+        <definition>collisionResult PhysicsSimNode::computeCollision</definition>
+        <argsstring>(collisionBox &amp;box1, collisionBox &amp;box2)</argsstring>
+        <name>computeCollision</name>
+        <param>
+          <type><ref refid="classcollisionBox" kindref="compound">collisionBox</ref> &amp;</type>
+          <declname>box1</declname>
+        </param>
+        <param>
+          <type><ref refid="classcollisionBox" kindref="compound">collisionBox</ref> &amp;</type>
+          <declname>box2</declname>
+        </param>
+        <briefdescription>
+<para>Determines collision information for two collision boxes using the Seperating Axis Theorem (SAT) in 3D. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>box1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Collision box of the robot (must make sure to update position beforehand) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>box2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Collision box of the obstacle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Struct containing wether there was a collision, collision point, depth, and collision normal </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="391" column="21" bodyfile="src/physics_simulator.cpp" bodystart="391" bodyend="485"/>
+        <references refid="structcollisionResult_1a39fbed4c731ea28e2f1d36e0e676d2cd" compoundref="collisionBox_8h" startline="57">collisionResult::collided</references>
+        <references refid="structcollisionResult_1ae60606e71f9fb13944847203b804b76e" compoundref="collisionBox_8h" startline="59">collisionResult::collisionPoint</references>
+        <references refid="structcollisionResult_1a618d958aa5082aeec0a5a8fc208d7ea1" compoundref="collisionBox_8h" startline="56">collisionResult::depth</references>
+        <references refid="classcollisionBox_1aa9e71845bd9009ed44c6a25c1bc30bcf" compoundref="collisionBox__class_8cpp" startline="33" endline="33">collisionBox::getAxis</references>
+        <references refid="classcollisionBox_1ae4bfcce5d557b544ad97969e26008d93" compoundref="collisionBox__class_8cpp" startline="32" endline="32">collisionBox::getCenter</references>
+        <references refid="classcollisionBox_1a7eea4febc2bc6926feba87453991be4a" compoundref="collisionBox__class_8cpp" startline="56" endline="62">collisionBox::isInBox</references>
+        <references refid="classcollisionBox_1ad0f782b7078fa2a13b780dd29521759a" compoundref="collisionBox__class_8cpp" startline="36" endline="38">collisionBox::maxProjection</references>
+        <references refid="classcollisionBox_1afe5111420fbc377f6917f156a4a3011c" compoundref="collisionBox__class_8cpp" startline="43" endline="48">collisionBox::maxVertex</references>
+        <references refid="classcollisionBox_1a65a8f2dc5a62a854b0505d6e8843c3be" compoundref="collisionBox__class_8cpp" startline="39" endline="41">collisionBox::minProjection</references>
+        <references refid="classcollisionBox_1a32db73fc2fe9e591718f7078d4e70738" compoundref="collisionBox__class_8cpp" startline="49" endline="54">collisionBox::minVertex</references>
+        <references refid="classcollisionBox_1a00e2dc02f4aac6958fa7583bd984966c" compoundref="collisionBox__class_8cpp" startline="64" endline="74">collisionBox::moveInBox</references>
+        <references refid="classcollisionBox_1a2caba1de4c223d44a39e0ddd122530ec" compoundref="collisionBox__class_8cpp" startline="35" endline="35">collisionBox::rotationMatrix</references>
+        <references refid="structcollisionResult_1a436412ea808cb34c8bc4468038913ef8" compoundref="collisionBox_8h" startline="58">collisionResult::unitDirection</references>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1ac9474791f43472cbbbdd864c30810811" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::loadCollisionFiles</definition>
+        <argsstring>()</argsstring>
+        <name>loadCollisionFiles</name>
+        <briefdescription>
+<para>Goes through collsion .urdf files in &quot;scene_info.yaml&quot; and adds their collisionBoxes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Whether the files could be read succesfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="491" column="10" bodyfile="src/physics_simulator.cpp" bodystart="491" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1ab298daaa90fa7c11b874a562bd9ae3e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcollisionBox" kindref="compound">collisionBox</ref> &gt;</type>
+        <definition>std::vector&lt;collisionBox&gt; PhysicsSimNode::unpackURDF</definition>
+        <argsstring>(urdf::ModelInterfaceSharedPtr model, v3d basePosition, quat baseOrientation)</argsstring>
+        <name>unpackURDF</name>
+        <param>
+          <type>urdf::ModelInterfaceSharedPtr</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+          <declname>basePosition</declname>
+        </param>
+        <param>
+          <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+          <declname>baseOrientation</declname>
+        </param>
+        <briefdescription>
+<para>Unpacks collision information from URDF model and stores it&apos;s content into a <ref refid="classcollisionBox" kindref="compound">collisionBox</ref> object. Note this only works for boxes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URDF model </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>basePosition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Location of orgin of obstacle in world frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseOrientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Orientation of obstacle represented by quaternion. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector containing collision boxes for each object of URDF </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="573" column="17" bodyfile="src/physics_simulator.cpp" bodystart="573" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a372fcb28d0ab16f101ebee0a8412fe77" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::publishCollisionMarkers</definition>
+        <argsstring>()</argsstring>
+        <name>publishCollisionMarkers</name>
+        <briefdescription>
+<para>Publishes a marker array containing each collision box for robot and obstacle. This allows RViz to visualize the collision elements for information and debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="621" column="10" bodyfile="src/physics_simulator.cpp" bodystart="621" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a51e9f2d08dd4ccae41d2dacc959ea1f3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::publishFakeDepthData</definition>
+        <argsstring>()</argsstring>
+        <name>publishFakeDepthData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="673" column="10" bodyfile="src/physics_simulator.cpp" bodystart="673" bodyend="695"/>
+        <references refid="settings_8h_1a8638b44b7243fad97f4309660577d1a7" compoundref="settings_8h" startline="8">SENSOR_NOISE_ENABLED</references>
+        <referencedby refid="classPhysicsSimNode_1a1ad9dfdde7dc1fdfdfa831da4736121f" compoundref="physics__simulator_8cpp" startline="145" endline="183">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a436d354234f18a3d3b7f1343de18084c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::publishFakeDVLData</definition>
+        <argsstring>()</argsstring>
+        <name>publishFakeDVLData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="698" column="10" bodyfile="src/physics_simulator.cpp" bodystart="698" bodyend="739"/>
+        <references refid="settings_8h_1a8638b44b7243fad97f4309660577d1a7" compoundref="settings_8h" startline="8">SENSOR_NOISE_ENABLED</references>
+        <referencedby refid="classPhysicsSimNode_1a1ad9dfdde7dc1fdfdfa831da4736121f" compoundref="physics__simulator_8cpp" startline="145" endline="183">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a2efb69a866cd5e23514b195bcf2e69e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::publishFakeIMUData</definition>
+        <argsstring>()</argsstring>
+        <name>publishFakeIMUData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="742" column="10" bodyfile="src/physics_simulator.cpp" bodystart="742" bodyend="820"/>
+        <references refid="settings_8h_1a8638b44b7243fad97f4309660577d1a7" compoundref="settings_8h" startline="8">SENSOR_NOISE_ENABLED</references>
+        <referencedby refid="classPhysicsSimNode_1a1ad9dfdde7dc1fdfdfa831da4736121f" compoundref="physics__simulator_8cpp" startline="145" endline="183">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a89c8fa18133c5a7df9f5c406994d6fc1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::publishFakeAcousticsData</definition>
+        <argsstring>()</argsstring>
+        <name>publishFakeAcousticsData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="822" column="10" bodyfile="src/physics_simulator.cpp" bodystart="822" bodyend="831"/>
+        <references refid="settings_8h_1ab7baf92d518987471038e8cc3261aa0c" compoundref="settings_8h" startline="9">ACOUSTIC_DATA</references>
+        <referencedby refid="classPhysicsSimNode_1a1ad9dfdde7dc1fdfdfa831da4736121f" compoundref="physics__simulator_8cpp" startline="145" endline="183">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a13f6900706869a53841bc05ec0ea4b51" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::pubThrusterTelemetry</definition>
+        <argsstring>()</argsstring>
+        <name>pubThrusterTelemetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="838" column="10" bodyfile="src/physics_simulator.cpp" bodystart="838" bodyend="859"/>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1abe717b4d6deca669452ff41dc50513d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::forceCallback</definition>
+        <argsstring>(const std_msgs::msg::Float32MultiArray &amp;thrusterForces)</argsstring>
+        <name>forceCallback</name>
+        <param>
+          <type>const std_msgs::msg::Float32MultiArray &amp;</type>
+          <declname>thrusterForces</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="862" column="10" bodyfile="src/physics_simulator.cpp" bodystart="862" bodyend="870"/>
+        <references refid="structthrusterForcesStamped_1a18013d95cd0df8bcac5e057b71ba2aa4" compoundref="RobotClass_8h" startline="31">thrusterForcesStamped::thrusterForces</references>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1aef8cb2c213bd696d451cbb99d12eeb0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::setLoadedClawObjectCallback</definition>
+        <argsstring>(const std_msgs::msg::String &amp;msg)</argsstring>
+        <name>setLoadedClawObjectCallback</name>
+        <param>
+          <type>const std_msgs::msg::String &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="872" column="10" bodyfile="src/physics_simulator.cpp" bodystart="872" bodyend="875"/>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a74d90a598c317b91cd08fb065198c12c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::killSwitchCallback</definition>
+        <argsstring>(const mercury_msgs::msg::KillSwitchReport &amp;softwareKillMsg)</argsstring>
+        <name>killSwitchCallback</name>
+        <param>
+          <type>const mercury_msgs::msg::KillSwitchReport &amp;</type>
+          <declname>softwareKillMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="879" column="10" bodyfile="src/physics_simulator.cpp" bodystart="879" bodyend="891"/>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1acd584a585ab0d62311067cdb32cbbe00" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::updateActiveBallast</definition>
+        <argsstring>()</argsstring>
+        <name>updateActiveBallast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="893" column="10" bodyfile="src/physics_simulator.cpp" bodystart="893" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1af356c3090d3e63cdf746527c0bc55256" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::exhaustSubCb</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>exhaustSubCb</name>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="895" column="10" bodyfile="src/physics_simulator.cpp" bodystart="895" bodyend="899"/>
+        <references refid="structActiveBallastStates_1a3736e22906a4c5d41b9714dbcc8ce6e4" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::exhaustState</references>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1ada97a9eda940bdb68c0bf40560cd35e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::pressureSubCb</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>pressureSubCb</name>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="901" column="10" bodyfile="src/physics_simulator.cpp" bodystart="901" bodyend="905"/>
+        <references refid="structActiveBallastStates_1a2e7ff8e4d29cc75057d82c4eee14cc44" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::pressureState</references>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a26718f7c1e9fc9cf0bcd374c3c0e1cd3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::waterSubCb</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>waterSubCb</name>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="907" column="10" bodyfile="src/physics_simulator.cpp" bodystart="907" bodyend="911"/>
+        <references refid="structActiveBallastStates_1ac9054bc77df085e108344580a6e07616" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::waterState</references>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1ac88c6b497e03cdc8b0060ac5cc2fab37" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::publishSolenoidStates</definition>
+        <argsstring>()</argsstring>
+        <name>publishSolenoidStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="913" column="10" bodyfile="src/physics_simulator.cpp" bodystart="913" bodyend="924"/>
+        <references refid="structActiveBallastStates_1a3736e22906a4c5d41b9714dbcc8ce6e4" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::exhaustState</references>
+        <references refid="structActiveBallastStates_1a2e7ff8e4d29cc75057d82c4eee14cc44" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::pressureState</references>
+        <references refid="structActiveBallastStates_1ac9054bc77df085e108344580a6e07616" compoundref="RobotClass_8h" startline="36">ActiveBallastStates::waterState</references>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a7b2f49c6040dcec90850d186691980b2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::setSim</definition>
+        <argsstring>(const std::shared_ptr&lt; robot_localization::srv::SetPose::Request &gt; poseRequest)</argsstring>
+        <name>setSim</name>
+        <param>
+          <type>const std::shared_ptr&lt; robot_localization::srv::SetPose::Request &gt;</type>
+          <declname>poseRequest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="927" column="10" bodyfile="src/physics_simulator.cpp" bodystart="927" bodyend="958"/>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a1cb2fd118e86b2af505018b0d9e5ace7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::publishState</definition>
+        <argsstring>()</argsstring>
+        <name>publishState</name>
+        <briefdescription>
+<para>Called on a timer, publishes the following simulator information: 1) <ref refid="classRobot" kindref="compound">Robot</ref>&apos;s pose for RViz 2) Collision boxes marker array for RViz 3) TF frames for simulated robot and cameras for Zed SDK image faking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="966" column="10" bodyfile="src/physics_simulator.cpp" bodystart="966" bodyend="1033"/>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a261954e88533da227a4b5eed1a009b5b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PhysicsSimNode::refreshSimulationParameters</definition>
+        <argsstring>()</argsstring>
+        <name>refreshSimulationParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1036" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1036" bodyend="1039"/>
+        <referencedby refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" compoundref="physics__simulator_8cpp" startline="81" endline="139">PhysicsSimNode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a14d4237d5a34400c43db65beb7295435" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref></type>
+        <definition>quat PhysicsSimNode::state2quat</definition>
+        <argsstring>(const vXd &amp;state)</argsstring>
+        <name>state2quat</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref> &amp;</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1046" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1046" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a6fcb173927a75e640bf27e5bca8562d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d PhysicsSimNode::randomNorm</definition>
+        <argsstring>(const v3d &amp;vector, const double &amp;stdv)</argsstring>
+        <name>randomNorm</name>
+        <param>
+          <type>const <ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref> &amp;</type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>stdv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1053" column="9" bodyfile="src/physics_simulator.cpp" bodystart="1053" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a8d6a3651e205c71e4a55a81baaa14577" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double PhysicsSimNode::randomNorm</definition>
+        <argsstring>(const double &amp;mean, const double &amp;stdv)</argsstring>
+        <name>randomNorm</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mean</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>stdv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1061" column="12" bodyfile="src/physics_simulator.cpp" bodystart="1061" bodyend="1065"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1af4f611fbdda9a7ff2d6950f2dc66a4bf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref></type>
+        <definition>vXd PhysicsSimNode::convert2eigen</definition>
+        <argsstring>(std::vector&lt; float &gt; stdVector)</argsstring>
+        <name>convert2eigen</name>
+        <param>
+          <type>std::vector&lt; float &gt;</type>
+          <declname>stdVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1067" column="9" bodyfile="src/physics_simulator.cpp" bodystart="1067" bodyend="1071"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a79a27543915509c467b60cf25fc460f3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double PhysicsSimNode::toDouble</definition>
+        <argsstring>(YAML::Node node)</argsstring>
+        <name>toDouble</name>
+        <param>
+          <type>YAML::Node</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1075" column="12" bodyfile="src/physics_simulator.cpp" bodystart="1075" bodyend="1081"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a5c662ce1c264d8c25255963976726aa8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double PhysicsSimNode::deg2rad</definition>
+        <argsstring>(double degrees)</argsstring>
+        <name>deg2rad</name>
+        <param>
+          <type>double</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1083" column="12" bodyfile="src/physics_simulator.cpp" bodystart="1083" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a25b6d6fe35874c4746a9766e5eae4359" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const std::array&lt; double, 9UL &gt; &amp;arr)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const std::array&lt; double, 9UL &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1085" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1085" bodyend="1093"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a6ce44edbdf30f2af542609cea86b2bc3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const std::array&lt; double, 36UL &gt; &amp;arr)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const std::array&lt; double, 36UL &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1095" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1095" bodyend="1103"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a4f61933cb973af16456b716f061bb9ca" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const geometry_msgs::msg::Vector3 &amp;v3Msg)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const geometry_msgs::msg::Vector3 &amp;</type>
+          <declname>v3Msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1105" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1105" bodyend="1107"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a4650d2dcbedc6e1d91fd29af968c40ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const geometry_msgs::msg::Point &amp;pMsg)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const geometry_msgs::msg::Point &amp;</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1109" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1109" bodyend="1111"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1acebccd26b9b11e2d58e3b4990dcc40c9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const geometry_msgs::msg::Quaternion &amp;quatMsg)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const geometry_msgs::msg::Quaternion &amp;</type>
+          <declname>quatMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1113" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1113" bodyend="1115"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1aea5a8cec12064499273d4f22fe7d5f02" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const geometry_msgs::msg::PoseWithCovarianceStamped &amp;poseMsg)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const geometry_msgs::msg::PoseWithCovarianceStamped &amp;</type>
+          <declname>poseMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1117" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1117" bodyend="1120"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a5c0ed0a1cceb3f5320cd0d5f92b2e535" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const sensor_msgs::msg::Imu &amp;imuMsg)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const sensor_msgs::msg::Imu &amp;</type>
+          <declname>imuMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1122" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1122" bodyend="1127"/>
+      </memberdef>
+      <memberdef kind="function" id="classPhysicsSimNode_1a095469becb467ac71db3713425194fce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PhysicsSimNode::hasNans</definition>
+        <argsstring>(const geometry_msgs::msg::TwistWithCovarianceStamped &amp;twistMsg)</argsstring>
+        <name>hasNans</name>
+        <param>
+          <type>const geometry_msgs::msg::TwistWithCovarianceStamped &amp;</type>
+          <declname>twistMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/physics_simulator.cpp" line="1129" column="10" bodyfile="src/physics_simulator.cpp" bodystart="1129" bodyend="1132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>PhysicsSimNode</label>
+        <link refid="classPhysicsSimNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>Robot</label>
+        <link refid="classRobot"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-loaded_object</edgelabel>
+          <edgelabel>-name</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-ballast_states</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>PhysicsSimNode</label>
+        <link refid="classPhysicsSimNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-robot</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-name</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ActiveBallastStates</label>
+        <link refid="structActiveBallastStates"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/physics_simulator.cpp" line="76" column="1" bodyfile="src/physics_simulator.cpp" bodystart="76" bodyend="1177"/>
+    <listofallmembers>
+      <member refid="classPhysicsSimNode_1ac548a4d355777b75a5bc529a399af54f" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>acousticsPub</name></member>
+      <member refid="classPhysicsSimNode_1aee34707e55c200dcdb6bf5e530f8362d" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>acousticsTimer</name></member>
+      <member refid="classPhysicsSimNode_1acc59d6cd10517c3e1f0c0f150e241070" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>ballastUpdateTimer</name></member>
+      <member refid="classPhysicsSimNode_1ab057e14c8a48b62d24ef29b0a72e71e0" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>calcForces</name></member>
+      <member refid="classPhysicsSimNode_1a70537f24c0e29efa0d29376c276b5ddd" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>calcQuaternionDot</name></member>
+      <member refid="classPhysicsSimNode_1a01727189af2f65205bfdb0c8332ec61e" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>calcStateDot</name></member>
+      <member refid="classPhysicsSimNode_1aae7959dd36c017f4ed59cd72350a296c" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>calcTorques</name></member>
+      <member refid="classPhysicsSimNode_1a7d448e3fe5df27903f6e1eb52642615d" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>clawObjectSub</name></member>
+      <member refid="classPhysicsSimNode_1a5053c015d1e5c101900d8a77b1d856fa" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>collisionBoxPub</name></member>
+      <member refid="classPhysicsSimNode_1affcc31a3c56fb9d309244fb7b9e944af" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>computeCollision</name></member>
+      <member refid="classPhysicsSimNode_1af4f611fbdda9a7ff2d6950f2dc66a4bf" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>convert2eigen</name></member>
+      <member refid="classPhysicsSimNode_1a5c662ce1c264d8c25255963976726aa8" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>deg2rad</name></member>
+      <member refid="classPhysicsSimNode_1a66f3a24f9060db9cfd5574790146a021" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>depthPub</name></member>
+      <member refid="classPhysicsSimNode_1ac7048368749c2d4857b6be89e79ce372" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>depthTimer</name></member>
+      <member refid="classPhysicsSimNode_1a268080fc27f9682b906cd24580069d4b" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>dvlPub</name></member>
+      <member refid="classPhysicsSimNode_1aba6b641a0f0e68b842862972f4cbbd04" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>dvlTimer</name></member>
+      <member refid="classPhysicsSimNode_1a1c652b007f87e403ae8eb3f18adfc9a5" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>enabled</name></member>
+      <member refid="classPhysicsSimNode_1a0be61f36e344bc9189fc837299b9ff00" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>exhaustSolenoidPub</name></member>
+      <member refid="classPhysicsSimNode_1a88516962dcd05d0a441dacf785d6317a" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>exhaustSolenoidSub</name></member>
+      <member refid="classPhysicsSimNode_1af356c3090d3e63cdf746527c0bc55256" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>exhaustSubCb</name></member>
+      <member refid="classPhysicsSimNode_1a88b8aaa4b69aed9206165858b75e9c02" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>firmwareKillPub</name></member>
+      <member refid="classPhysicsSimNode_1abe717b4d6deca669452ff41dc50513d4" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>forceCallback</name></member>
+      <member refid="classPhysicsSimNode_1a9f95f97957d32ae0ad6b5f81d399e8d7" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>handleCollisions</name></member>
+      <member refid="classPhysicsSimNode_1a25b6d6fe35874c4746a9766e5eae4359" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1a6ce44edbdf30f2af542609cea86b2bc3" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1a4f61933cb973af16456b716f061bb9ca" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1a4650d2dcbedc6e1d91fd29af968c40ad" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1acebccd26b9b11e2d58e3b4990dcc40c9" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1aea5a8cec12064499273d4f22fe7d5f02" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1a5c0ed0a1cceb3f5320cd0d5f92b2e535" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1a095469becb467ac71db3713425194fce" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>hasNans</name></member>
+      <member refid="classPhysicsSimNode_1a3cfaffd6d2085ef45f6f3026e1700671" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>imuPub</name></member>
+      <member refid="classPhysicsSimNode_1a1f09b0bf55bb18632e648fd152261198" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>imuTimer</name></member>
+      <member refid="classPhysicsSimNode_1a1ad9dfdde7dc1fdfdfa831da4736121f" prot="public" virt="non-virtual"><scope>PhysicsSimNode</scope><name>init</name></member>
+      <member refid="classPhysicsSimNode_1a74d90a598c317b91cd08fb065198c12c" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>killSwitchCallback</name></member>
+      <member refid="classPhysicsSimNode_1a332af28910c8e49d1c8be692c83dc1fd" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>killSwitchTimer</name></member>
+      <member refid="classPhysicsSimNode_1ac9474791f43472cbbbdd864c30810811" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>loadCollisionFiles</name></member>
+      <member refid="classPhysicsSimNode_1a9a97bbbc2eb42bbab01b5f49c664cdda" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>name</name></member>
+      <member refid="classPhysicsSimNode_1a28dc424b782ee68895c7205738897b10" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>obstacleBoxes</name></member>
+      <member refid="classPhysicsSimNode_1a88bc9395b124548b67d25ffa22be904f" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>paramRefreshTimer</name></member>
+      <member refid="classPhysicsSimNode_1a43f21d81d320cba2c2d7dbed5d932e12" prot="public" virt="non-virtual"><scope>PhysicsSimNode</scope><name>PhysicsSimNode</name></member>
+      <member refid="classPhysicsSimNode_1a4a34fa18dcbcf6891388ebd2df4aa6e8" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>poseClient</name></member>
+      <member refid="classPhysicsSimNode_1a13327a8ed0d849e7e2dae714cb53c02b" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>poseService</name></member>
+      <member refid="classPhysicsSimNode_1a397f56754603d12c6c1ed1ebbbc0a921" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>pressureSolenoidPub</name></member>
+      <member refid="classPhysicsSimNode_1ac31d19d6b68b9f59c2a061dba50160ac" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>pressureSolenoidSub</name></member>
+      <member refid="classPhysicsSimNode_1ada97a9eda940bdb68c0bf40560cd35e9" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>pressureSubCb</name></member>
+      <member refid="classPhysicsSimNode_1a372fcb28d0ab16f101ebee0a8412fe77" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>publishCollisionMarkers</name></member>
+      <member refid="classPhysicsSimNode_1a89c8fa18133c5a7df9f5c406994d6fc1" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>publishFakeAcousticsData</name></member>
+      <member refid="classPhysicsSimNode_1a51e9f2d08dd4ccae41d2dacc959ea1f3" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>publishFakeDepthData</name></member>
+      <member refid="classPhysicsSimNode_1a436d354234f18a3d3b7f1343de18084c" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>publishFakeDVLData</name></member>
+      <member refid="classPhysicsSimNode_1a2efb69a866cd5e23514b195bcf2e69e3" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>publishFakeIMUData</name></member>
+      <member refid="classPhysicsSimNode_1ac88c6b497e03cdc8b0060ac5cc2fab37" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>publishSolenoidStates</name></member>
+      <member refid="classPhysicsSimNode_1a1cb2fd118e86b2af505018b0d9e5ace7" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>publishState</name></member>
+      <member refid="classPhysicsSimNode_1a13f6900706869a53841bc05ec0ea4b51" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>pubThrusterTelemetry</name></member>
+      <member refid="classPhysicsSimNode_1a6fcb173927a75e640bf27e5bca8562d2" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>randomNorm</name></member>
+      <member refid="classPhysicsSimNode_1a8d6a3651e205c71e4a55a81baaa14577" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>randomNorm</name></member>
+      <member refid="classPhysicsSimNode_1a261954e88533da227a4b5eed1a009b5b" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>refreshSimulationParameters</name></member>
+      <member refid="classPhysicsSimNode_1afef6275ce828b00805e7fadbf1ad8f04" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>robot</name></member>
+      <member refid="classPhysicsSimNode_1a43123feda6daa65b1dedc43c69048260" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>robotBoxes</name></member>
+      <member refid="classPhysicsSimNode_1ad517711b4b71eeafce7be92929094eb2" prot="public" virt="non-virtual"><scope>PhysicsSimNode</scope><name>rungeKutta4</name></member>
+      <member refid="classPhysicsSimNode_1aef8cb2c213bd696d451cbb99d12eeb0c" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>setLoadedClawObjectCallback</name></member>
+      <member refid="classPhysicsSimNode_1a7b2f49c6040dcec90850d186691980b2" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>setSim</name></member>
+      <member refid="classPhysicsSimNode_1a4d046e000dae060625d724a31a9b6302" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>softwareKillSub</name></member>
+      <member refid="classPhysicsSimNode_1a12788b70999d936d1af77768e0c20cdf" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>solenoidPubTimer</name></member>
+      <member refid="classPhysicsSimNode_1a1509e434340f9d8f8d9932cb2c1af463" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>startTime</name></member>
+      <member refid="classPhysicsSimNode_1a14d4237d5a34400c43db65beb7295435" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>state2quat</name></member>
+      <member refid="classPhysicsSimNode_1a11759a26907a5eb406ddf989e349c11c" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>statePub</name></member>
+      <member refid="classPhysicsSimNode_1a2c056a6b29781cd909955133867e170b" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>statePubTimer</name></member>
+      <member refid="classPhysicsSimNode_1ad82ba07c16c0c1b6a7fe8ffd365fb91a" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>sync_odom</name></member>
+      <member refid="classPhysicsSimNode_1a098df6beb66685e86e7883baceeba4fe" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>tf_broadcaster</name></member>
+      <member refid="classPhysicsSimNode_1a1f43dbd47715999dbe7e5d500f5574c7" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>thrusterSub</name></member>
+      <member refid="classPhysicsSimNode_1aec83280acf8adb8a1a0b744a4f8b69f8" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>thrusterTelemetryPub</name></member>
+      <member refid="classPhysicsSimNode_1a82eb4666f07499bb9aa10b3efc6bcf11" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>thrusterTelemetryTimer</name></member>
+      <member refid="classPhysicsSimNode_1a79a27543915509c467b60cf25fc460f3" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>toDouble</name></member>
+      <member refid="classPhysicsSimNode_1ab298daaa90fa7c11b874a562bd9ae3e9" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>unpackURDF</name></member>
+      <member refid="classPhysicsSimNode_1acd584a585ab0d62311067cdb32cbbe00" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>updateActiveBallast</name></member>
+      <member refid="classPhysicsSimNode_1a0ff89023a9bdb3e18c3ab06f98cca847" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>waterSolenoidPub</name></member>
+      <member refid="classPhysicsSimNode_1abe26e3bd541266c977ee5ca8d935e66f" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>waterSolenoidSub</name></member>
+      <member refid="classPhysicsSimNode_1a26718f7c1e9fc9cf0bcd374c3c0e1cd3" prot="private" virt="non-virtual"><scope>PhysicsSimNode</scope><name>waterSubCb</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

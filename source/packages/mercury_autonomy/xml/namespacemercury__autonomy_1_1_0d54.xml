@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacemercury__autonomy_1_1_0d54" kind="namespace" language="C++">
+    <compoundname>mercury_autonomy::@54</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>TreeStatus</name>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7aec0fc0100c4fc1ce4eea230c3dc10360" prot="public">
+          <name>Undefined</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7a5706de961fb376d701be6e7762d8b09c" prot="public">
+          <name>Waiting</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7ac2efe4bbd13e6cb0db293e72884273c0" prot="public">
+          <name>Starting</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7adefe967ad0373b2274fc298f19125ca7" prot="public">
+          <name>Moving</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7a843627586c62e389041a4d8800143974" prot="public">
+          <name>Searching</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7a8c5da05f74ecb045d6ca746373aec07d" prot="public">
+          <name>Aligning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7aa13692fe9acc59d44fd5399f245180c7" prot="public">
+          <name>Performing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7a505a83f220c02df2f85c3810cd9ceb38" prot="public">
+          <name>Success</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7ae139a585510a502bbf1841cf589f5086" prot="public">
+          <name>Failure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacemercury__autonomy_1_1_0d54_1a376d06f2634df7f7e251ebc8c0cdd4b7ad4dbdf6f8e0aa2f9cb0e0efa247d4762" prot="public">
+          <name>Panic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/bt_actions/set_status.cpp" line="12" column="1" bodyfile="src/bt_actions/set_status.cpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/bt_actions/set_status.cpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

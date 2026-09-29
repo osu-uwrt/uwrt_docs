@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic" kind="class" language="Python" prot="public">
+    <compoundname>mercury_launch::launcher::LaunchData::LaunchTopic</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a8aea690f5a0fe89489e9b591e36dbd5f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData.LaunchTopic::topic_re</definition>
+        <argsstring></argsstring>
+        <name>topic_re</name>
+        <initializer>=  re.compile(r&quot;^(\/\w+)+$&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="307" column="1" bodyfile="mercury_launch/launcher.py" bodystart="307" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a3a09c93885782cc3a09ec8ceab67e90e" compoundref="launcher_8py" startline="311" endline="331">mercury_launch.launcher.LaunchData.LaunchTopic.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1aaeb2e6b016cf7677d1ecb3d7a7f249c0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData.LaunchTopic::type_re</definition>
+        <argsstring></argsstring>
+        <name>type_re</name>
+        <initializer>=  re.compile(r&quot;^[a-zA-Z]\w*\/msg\/[a-zA-Z]\w*$&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="309" column="1" bodyfile="mercury_launch/launcher.py" bodystart="309" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a3a09c93885782cc3a09ec8ceab67e90e" compoundref="launcher_8py" startline="311" endline="331">mercury_launch.launcher.LaunchData.LaunchTopic.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1ab11fcd2cabd3f88193d7c138913cdaae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData.LaunchTopic::is_sensor_data</definition>
+        <argsstring></argsstring>
+        <name>is_sensor_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="322" column="1" bodyfile="mercury_launch/launcher.py" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a6e190e27b1d4e3b4cee9e5f76e01effc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData.LaunchTopic::seen</definition>
+        <argsstring></argsstring>
+        <name>seen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="329" column="1" bodyfile="mercury_launch/launcher.py" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a3a09c93885782cc3a09ec8ceab67e90e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.LaunchTopic.__init__</definition>
+        <argsstring>(self, topic_data)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>topic_data</type>
+          <defname>topic_data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="311" column="1" bodyfile="mercury_launch/launcher.py" bodystart="311" bodyend="331"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a8aea690f5a0fe89489e9b591e36dbd5f" compoundref="launcher_8py" startline="307">mercury_launch.launcher.LaunchData.LaunchTopic.topic_re</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1aaeb2e6b016cf7677d1ecb3d7a7f249c0" compoundref="launcher_8py" startline="309">mercury_launch.launcher.LaunchData.LaunchTopic.type_re</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_launch.launcher.LaunchData.LaunchTopic</label>
+        <link refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic"/>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_launch/launcher.py" line="305" column="1" bodyfile="mercury_launch/launcher.py" bodystart="305" bodyend="330"/>
+    <listofallmembers>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a3a09c93885782cc3a09ec8ceab67e90e" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData::LaunchTopic</scope><name>__init__</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1ab11fcd2cabd3f88193d7c138913cdaae" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData::LaunchTopic</scope><name>is_sensor_data</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a6e190e27b1d4e3b4cee9e5f76e01effc" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData::LaunchTopic</scope><name>seen</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1a8aea690f5a0fe89489e9b591e36dbd5f" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData::LaunchTopic</scope><name>topic_re</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic_1aaeb2e6b016cf7677d1ecb3d7a7f249c0" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData::LaunchTopic</scope><name>type_re</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

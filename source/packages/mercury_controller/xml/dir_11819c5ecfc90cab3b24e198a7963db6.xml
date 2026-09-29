@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_11819c5ecfc90cab3b24e198a7963db6" kind="dir">
+    <compoundname>mercury_controller</compoundname>
+    <innerfile refid="calibrate__drag_8py">calibrate_drag.py</innerfile>
+    <innerfile refid="calibrate__thruster_8py">calibrate_thruster.py</innerfile>
+    <innerfile refid="controller__overseer_8py">controller_overseer.py</innerfile>
+    <innerfile refid="load__cell__reader_8py">load_cell_reader.py</innerfile>
+    <innerfile refid="RocketLeague_8py">RocketLeague.py</innerfile>
+    <innerfile refid="thruster__test__dshot_8py">thruster_test_dshot.py</innerfile>
+    <innerfile refid="thruster__wrench__publisher_8py">thruster_wrench_publisher.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_controller/"/>
+  </compounddef>
+</doxygen>

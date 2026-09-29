@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_4289907cc49c824377cfdf18319c347d" kind="dir">
+    <compoundname>include/mercury_autonomy/bt_decorators</compoundname>
+    <innerfile refid="example__decorator_8hpp">example_decorator.hpp</innerfile>
+    <innerfile refid="retry__until__successful__or__timeout_8hpp">retry_until_successful_or_timeout.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_autonomy/bt_decorators/"/>
+  </compounddef>
+</doxygen>

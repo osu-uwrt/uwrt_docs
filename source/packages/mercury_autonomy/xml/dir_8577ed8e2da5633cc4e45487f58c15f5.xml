@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_8577ed8e2da5633cc4e45487f58c15f5" kind="dir">
+    <compoundname>include/mercury_autonomy/bt_actions</compoundname>
+    <innerfile refid="apply__feedforward__force_8hpp">apply_feedforward_force.hpp</innerfile>
+    <innerfile refid="call__set__bool__service_8hpp">call_set_bool_service.hpp</innerfile>
+    <innerfile refid="call__trigger__service_8hpp">call_trigger_service.hpp</innerfile>
+    <innerfile refid="compute__frame__alignment_8hpp">compute_frame_alignment.hpp</innerfile>
+    <innerfile refid="example__action_8hpp">example_action.hpp</innerfile>
+    <innerfile refid="get__bool__topic_8hpp">get_bool_topic.hpp</innerfile>
+    <innerfile refid="get__covariance_8hpp">get_covariance.hpp</innerfile>
+    <innerfile refid="get__float__topic_8hpp">get_float_topic.hpp</innerfile>
+    <innerfile refid="get__imu__orientation_8hpp">get_imu_orientation.hpp</innerfile>
+    <innerfile refid="get__mapping__state_8hpp">get_mapping_state.hpp</innerfile>
+    <innerfile refid="get__odometry_8hpp">get_odometry.hpp</innerfile>
+    <innerfile refid="get__twist__topic_8hpp">get_twist_topic.hpp</innerfile>
+    <innerfile refid="publish__bool_8hpp">publish_bool.hpp</innerfile>
+    <innerfile refid="publish__ekf__pose_8hpp">publish_ekf_pose.hpp</innerfile>
+    <innerfile refid="publish__int8_8hpp">publish_int8.hpp</innerfile>
+    <innerfile refid="publish__to__controller_8hpp">publish_to_controller.hpp</innerfile>
+    <innerfile refid="publish__twist_8hpp">publish_twist.hpp</innerfile>
+    <innerfile refid="set__feedforward__mode_8hpp">set_feedforward_mode.hpp</innerfile>
+    <innerfile refid="set__mapping__target_8hpp">set_mapping_target.hpp</innerfile>
+    <innerfile refid="set__status_8hpp">set_status.hpp</innerfile>
+    <innerfile refid="transform__pose_8hpp">transform_pose.hpp</innerfile>
+    <innerfile refid="wait__for__detection_8hpp">wait_for_detection.hpp</innerfile>
+    <innerfile refid="wait__for__kill__switch_8hpp">wait_for_kill_switch.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_autonomy/bt_actions/"/>
+  </compounddef>
+</doxygen>

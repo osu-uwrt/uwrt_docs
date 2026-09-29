@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structMonitoredServiceClient_1_1servicePair" kind="struct" language="C++" prot="private">
+    <compoundname>MonitoredServiceClient::servicePair</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMonitoredServiceClient_1_1servicePair_1a571f8cda94448aa03f48f122f99fc545" prot="public" static="no" mutable="no">
+        <type><ref refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" kindref="member">Request</ref></type>
+        <definition>Request MonitoredServiceClient&lt; ServiceT &gt;::servicePair::request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="30" column="17" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMonitoredServiceClient_1_1servicePair_1a95c5ae2dfa8940452681b31fd5a7d629" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(<ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref>)&gt;</type>
+        <definition>std::function&lt;void(Response)&gt; MonitoredServiceClient&lt; ServiceT &gt;::servicePair::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="31" column="23" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" compoundref="monitored__service__client_8hpp" startline="96" endline="106">MonitoredServiceClient&lt; ServiceT &gt;::serviceCallback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structMonitoredServiceClient_1_1servicePair_1aaae38710157c3aaf7c0056a3d3f9b5a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MonitoredServiceClient&lt; ServiceT &gt;::servicePair::servicePair</definition>
+        <argsstring>()=default</argsstring>
+        <name>servicePair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="32" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structMonitoredServiceClient_1_1servicePair_1a628d93697b38245549ce6a426a57a5c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MonitoredServiceClient&lt; ServiceT &gt;::servicePair::servicePair</definition>
+        <argsstring>(Request req, std::function&lt; void(Response)&gt; cb)</argsstring>
+        <name>servicePair</name>
+        <param>
+          <type><ref refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" kindref="member">Request</ref></type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>std::function&lt; void(<ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref>)&gt;</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="33" column="9" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MonitoredServiceClient&lt; ServiceT &gt;::servicePair</label>
+        <link refid="structMonitoredServiceClient_1_1servicePair"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_controller/monitored_service_client.hpp" line="29" column="5" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="29" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structMonitoredServiceClient_1_1servicePair_1a95c5ae2dfa8940452681b31fd5a7d629" prot="public" virt="non-virtual"><scope>MonitoredServiceClient::servicePair</scope><name>callback</name></member>
+      <member refid="structMonitoredServiceClient_1_1servicePair_1a571f8cda94448aa03f48f122f99fc545" prot="public" virt="non-virtual"><scope>MonitoredServiceClient::servicePair</scope><name>request</name></member>
+      <member refid="structMonitoredServiceClient_1_1servicePair_1aaae38710157c3aaf7c0056a3d3f9b5a1" prot="public" virt="non-virtual"><scope>MonitoredServiceClient::servicePair</scope><name>servicePair</name></member>
+      <member refid="structMonitoredServiceClient_1_1servicePair_1a628d93697b38245549ce6a426a57a5c1" prot="public" virt="non-virtual"><scope>MonitoredServiceClient::servicePair</scope><name>servicePair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

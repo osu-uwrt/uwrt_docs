@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceRocketLeague" kind="namespace" language="Python">
+    <compoundname>RocketLeague</compoundname>
+    <innerclass refid="classRocketLeague_1_1RocketLeague" prot="public">RocketLeague::RocketLeague</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceRocketLeague_1aa75203fba0cc898a63a1c839b465e5a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.eventQueue</definition>
+        <argsstring></argsstring>
+        <name>eventQueue</name>
+        <initializer>=  Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="20" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceRocketLeague_1a3296e771d9f73bfadb252d9ad97c3aba" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.typeQueue</definition>
+        <argsstring></argsstring>
+        <name>typeQueue</name>
+        <initializer>=  Queue()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="21" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceRocketLeague_1aa6ffb0da8fa218c2612208a1486a141d" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary RocketLeague.mappings</definition>
+        <argsstring></argsstring>
+        <name>mappings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="24" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceRocketLeague_1a057aeec3fb78d7d585c230960f88e8e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.loop</definition>
+        <argsstring></argsstring>
+        <name>loop</name>
+        <initializer>=  asyncio.get_event_loop()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="422" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceRocketLeague_1ab832192773f6a0006774275778868a00" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <initializer>=  Thread(target=<ref refid="namespaceRocketLeague_1a87abf1cd00ee1f619ba44c5992b2d546" kindref="member">main</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="438" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceRocketLeague_1a415081973eb42a27cbf0607a59a11c0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RocketLeague.read_controller_events</definition>
+        <argsstring>()</argsstring>
+        <name>read_controller_events</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="380" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="380" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceRocketLeague_1a87abf1cd00ee1f619ba44c5992b2d546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RocketLeague.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="427" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="427" bodyend="435"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_controller/RocketLeague.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

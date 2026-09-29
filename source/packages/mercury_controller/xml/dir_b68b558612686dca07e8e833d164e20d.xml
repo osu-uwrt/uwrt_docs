@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_b68b558612686dca07e8e833d164e20d" kind="dir">
+    <compoundname>include/mercury_controller</compoundname>
+    <innerfile refid="controller__overseer_8hpp">controller_overseer.hpp</innerfile>
+    <innerfile refid="monitored__service__client_8hpp">monitored_service_client.hpp</innerfile>
+    <innerfile refid="overseer__util_8hpp">overseer_util.hpp</innerfile>
+    <innerfile refid="simulink__model_8hpp">simulink_model.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_controller/"/>
+  </compounddef>
+</doxygen>

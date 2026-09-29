@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacecalibrate__thruster" kind="namespace" language="Python">
+    <compoundname>calibrate_thruster</compoundname>
+    <innerclass refid="classcalibrate__thruster_1_1CalibrateThrusterAction" prot="public">calibrate_thruster::CalibrateThrusterAction</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a0b231cde4c87ca45795f124ac57919d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrate_thruster.NUETRAL_DSHOT</definition>
+        <argsstring></argsstring>
+        <name>NUETRAL_DSHOT</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="30" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a89830b5e5103a96f9fb6a64e1bf13070" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float calibrate_thruster.DSHOT_PUB_PERIOD</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_PUB_PERIOD</name>
+        <initializer>=  0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="31" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a93247d86a434937e4578685da586783c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrate_thruster.DELAY_TIME</definition>
+        <argsstring></argsstring>
+        <name>DELAY_TIME</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="32" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a2912ada391fe597f06261ed9d7cd9f04" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrate_thruster.N_SAMPLES</definition>
+        <argsstring></argsstring>
+        <name>N_SAMPLES</name>
+        <initializer>=  15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="33" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a05865a4c9addfe2d3672aa437782190a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrate_thruster.COLLECTION_TIMEOUT</definition>
+        <argsstring></argsstring>
+        <name>COLLECTION_TIMEOUT</name>
+        <initializer>=  15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="34" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a89e50aeaff03ad7661236086988fea52" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrate_thruster.DSHOT_MIN</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_MIN</name>
+        <initializer>=  20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="37" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a6f1bfe9f8e5cdefc406c6980011c3a90" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int calibrate_thruster.DSHOT_MAX</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_MAX</name>
+        <initializer>=  725</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="38" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacecalibrate__thruster_1a4e4ead26572ed1b753666ba52fb7d619" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool calibrate_thruster.NEGATIVE</definition>
+        <argsstring></argsstring>
+        <name>NEGATIVE</name>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="40" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecalibrate__thruster_1a4c75549a2b2e864f48bbce87e921b8e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="327" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="327" bodyend="338"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>NOTES FROM NATHAN:
+- Need to change RPM subscriber name and type on line 59; I don&apos;t know what it&apos;s supposed to be
+- I assumed the RPM message was stored as a list, so I accessed the correct thruster in callback with index, change if assumption was garbo
+- Change constants as desired
+- I have a MATLAB script to curve fit the data to any function imaginable and to do other data processing from csv file. Please send me data once collected
+- Pizza is delecious
+</verbatim> </para>
+    </detaileddescription>
+    <location file="mercury_controller/calibrate_thruster.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

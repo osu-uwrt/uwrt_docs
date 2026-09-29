@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmapping_1_1MappingNode" kind="class" language="Python" prot="public">
+    <compoundname>mapping::MappingNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="56" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a7455e2d48c6dc8ad2902c1857f45c708" compoundref="mapping_8py" startline="172" endline="175">mapping.MappingNode.add_publisher</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a16780664c08cb266769b1696b44b759a" compoundref="mapping_8py" startline="325" endline="346">mapping.MappingNode.closest_object</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1ab056a5be2a4bd999db8157c7c933ab1e" compoundref="mapping_8py" startline="144" endline="170">mapping.MappingNode.create_location</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1acdbe98da819ce9081731777ec21b4736" compoundref="mapping_8py" startline="187" endline="197">mapping.MappingNode.target_callback</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" compoundref="mapping_8py" startline="267" endline="324">mapping.MappingNode.try_update_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1a3c39931c81161984226c587dd9df170a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::downwards_objects</definition>
+        <argsstring></argsstring>
+        <name>downwards_objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="79" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" compoundref="mapping_8py" startline="267" endline="324">mapping.MappingNode.try_update_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1a57ef822601ae8904749dd1cf3edd5064" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::tf_buffer</definition>
+        <argsstring></argsstring>
+        <name>tf_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="120" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" compoundref="mapping_8py" startline="267" endline="324">mapping.MappingNode.try_update_pose</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1ad2ad52064a1e243e0cd275a53e96157a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::tf_listener</definition>
+        <argsstring></argsstring>
+        <name>tf_listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="121" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1a4d2c431f9e1b7096f79c02c5ff27566f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::tf_brod</definition>
+        <argsstring></argsstring>
+        <name>tf_brod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="122" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1a42ba4ab73668ad0bfd04bf42288dd4b9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::target_object</definition>
+        <argsstring></argsstring>
+        <name>target_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="124" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1acdbe98da819ce9081731777ec21b4736" compoundref="mapping_8py" startline="187" endline="197">mapping.MappingNode.target_callback</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" compoundref="mapping_8py" startline="267" endline="324">mapping.MappingNode.try_update_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1af121cae18c5a797f02af4f4d4cf1edf2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::lock_map</definition>
+        <argsstring></argsstring>
+        <name>lock_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="125" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1acdbe98da819ce9081731777ec21b4736" compoundref="mapping_8py" startline="187" endline="197">mapping.MappingNode.target_callback</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1ad7fdc775193ab18914e42b43c309791c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="126" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1acdbe98da819ce9081731777ec21b4736" compoundref="mapping_8py" startline="187" endline="197">mapping.MappingNode.target_callback</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" compoundref="mapping_8py" startline="267" endline="324">mapping.MappingNode.try_update_pose</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1aace0b37c40e400d75e2b610ecaacf04c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::status_pub</definition>
+        <argsstring></argsstring>
+        <name>status_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="132" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="132" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1aecc5c77f48f02715a49983b36838ce37" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::led_pulse_pub</definition>
+        <argsstring></argsstring>
+        <name>led_pulse_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="136" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="136" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1a1e423045d6d58abe360c9a7c16938501" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::last_pub_time</definition>
+        <argsstring></argsstring>
+        <name>last_pub_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="139" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="139" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1ae5c280be36a1982f7e229fb7edca2ff5" compoundref="mapping_8py" startline="347" endline="354">mapping.MappingNode.update_oustanding_items</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1ab7597f2a8057f7efc301565906eca0ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::publish_timer</definition>
+        <argsstring></argsstring>
+        <name>publish_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="141" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1MappingNode_1ae46f85796911ab4b3dc46b7a23f4ebab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.MappingNode::outstanding_detections</definition>
+        <argsstring></argsstring>
+        <name>outstanding_detections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="265" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="265" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a0c020a197b4724ed277647d9d9a1e2d1" compoundref="mapping_8py" startline="247" endline="266">mapping.MappingNode.update_outstanding_detections</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1aaef2f29bdb67919d06797a6f7dcdf606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="52" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="52" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1ab056a5be2a4bd999db8157c7c933ab1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.create_location</definition>
+        <argsstring>(self, str object)</argsstring>
+        <name>create_location</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="144" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="144" bodyend="170"/>
+        <references refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" compoundref="mapping_8py" startline="56">mapping.MappingNode.objects</references>
+        <referencedby refid="classmapping_1_1MappingNode_1ad5637f596de02e95ff30bc404078f823" compoundref="mapping_8py" startline="177" endline="186">mapping.MappingNode.param_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1a7455e2d48c6dc8ad2902c1857f45c708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.add_publisher</definition>
+        <argsstring>(self, str object)</argsstring>
+        <name>add_publisher</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="172" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="172" bodyend="175"/>
+        <references refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" compoundref="mapping_8py" startline="56">mapping.MappingNode.objects</references>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1ad5637f596de02e95ff30bc404078f823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.param_callback</definition>
+        <argsstring>(self, params)</argsstring>
+        <name>param_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="177" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="177" bodyend="186"/>
+        <references refid="classmapping_1_1MappingNode_1ab056a5be2a4bd999db8157c7c933ab1e" compoundref="mapping_8py" startline="144" endline="170">mapping.MappingNode.create_location</references>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1acdbe98da819ce9081731777ec21b4736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.target_callback</definition>
+        <argsstring>(self, MappingTarget.Request request, MappingTarget.Response response)</argsstring>
+        <name>target_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>MappingTarget.Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>MappingTarget.Response</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="187" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="187" bodyend="197"/>
+        <references refid="classmapping_1_1MappingNode_1af121cae18c5a797f02af4f4d4cf1edf2" compoundref="mapping_8py" startline="125">mapping.MappingNode.lock_map</references>
+        <references refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" compoundref="mapping_8py" startline="56">mapping.MappingNode.objects</references>
+        <references refid="classmapping_1_1MappingNode_1ad7fdc775193ab18914e42b43c309791c" compoundref="mapping_8py" startline="126">mapping.MappingNode.offset</references>
+        <references refid="classmapping_1_1MappingNode_1a42ba4ab73668ad0bfd04bf42288dd4b9" compoundref="mapping_8py" startline="124">mapping.MappingNode.target_object</references>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.vision_callback</definition>
+        <argsstring>(self, Detection3DArray detections)</argsstring>
+        <name>vision_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Detection3DArray</type>
+          <declname>detections</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="198" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="198" bodyend="246"/>
+        <references refid="classmapping_1_1OutstandingDetectionInfo_1a58f6954709ece7c667703637b793be0a" compoundref="mapping_8py" startline="44">mapping.OutstandingDetectionInfo.closest_object</references>
+        <references refid="classmapping_1_1MappingNode_1a16780664c08cb266769b1696b44b759a" compoundref="mapping_8py" startline="325" endline="346">mapping.MappingNode.closest_object</references>
+        <references refid="classmapping_1_1MappingNode_1a3c39931c81161984226c587dd9df170a" compoundref="mapping_8py" startline="79">mapping.MappingNode.downwards_objects</references>
+        <references refid="classmapping_1_1MappingNode_1aecc5c77f48f02715a49983b36838ce37" compoundref="mapping_8py" startline="136">mapping.MappingNode.led_pulse_pub</references>
+        <references refid="classmapping_1_1MappingNode_1af121cae18c5a797f02af4f4d4cf1edf2" compoundref="mapping_8py" startline="125">mapping.MappingNode.lock_map</references>
+        <references refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" compoundref="mapping_8py" startline="56">mapping.MappingNode.objects</references>
+        <references refid="classmapping_1_1MappingNode_1ae46f85796911ab4b3dc46b7a23f4ebab" compoundref="mapping_8py" startline="265">mapping.MappingNode.outstanding_detections</references>
+        <references refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</references>
+        <references refid="classmapping_1_1MappingNode_1a42ba4ab73668ad0bfd04bf42288dd4b9" compoundref="mapping_8py" startline="124">mapping.MappingNode.target_object</references>
+        <references refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" compoundref="mapping_8py" startline="267" endline="324">mapping.MappingNode.try_update_pose</references>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1a0c020a197b4724ed277647d9d9a1e2d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.update_outstanding_detections</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_outstanding_detections</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="247" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="247" bodyend="266"/>
+        <references refid="classmapping_1_1MappingNode_1ae46f85796911ab4b3dc46b7a23f4ebab" compoundref="mapping_8py" startline="265">mapping.MappingNode.outstanding_detections</references>
+        <references refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" compoundref="mapping_8py" startline="267" endline="324">mapping.MappingNode.try_update_pose</references>
+        <referencedby refid="classmapping_1_1MappingNode_1ae5c280be36a1982f7e229fb7edca2ff5" compoundref="mapping_8py" startline="347" endline="354">mapping.MappingNode.update_oustanding_items</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.try_update_pose</definition>
+        <argsstring>(self, ObjectHypothesisWithPose result, Header detection_header, str closest_object)</argsstring>
+        <name>try_update_pose</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ObjectHypothesisWithPose</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>Header</type>
+          <declname>detection_header</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>closest_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="267" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="267" bodyend="324"/>
+        <references refid="classmapping_1_1MappingNode_1a3c39931c81161984226c587dd9df170a" compoundref="mapping_8py" startline="79">mapping.MappingNode.downwards_objects</references>
+        <references refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" compoundref="mapping_8py" startline="56">mapping.MappingNode.objects</references>
+        <references refid="classmapping_1_1MappingNode_1ad7fdc775193ab18914e42b43c309791c" compoundref="mapping_8py" startline="126">mapping.MappingNode.offset</references>
+        <references refid="classmapping_1_1MappingNode_1a42ba4ab73668ad0bfd04bf42288dd4b9" compoundref="mapping_8py" startline="124">mapping.MappingNode.target_object</references>
+        <references refid="classmapping_1_1MappingNode_1a57ef822601ae8904749dd1cf3edd5064" compoundref="mapping_8py" startline="120">mapping.MappingNode.tf_buffer</references>
+        <referencedby refid="classmapping_1_1MappingNode_1a0c020a197b4724ed277647d9d9a1e2d1" compoundref="mapping_8py" startline="247" endline="266">mapping.MappingNode.update_outstanding_detections</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1a16780664c08cb266769b1696b44b759a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str mapping.MappingNode.closest_object</definition>
+        <argsstring>(self, Detection3DArray detections)</argsstring>
+        <name>closest_object</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Detection3DArray</type>
+          <declname>detections</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="325" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="325" bodyend="346"/>
+        <references refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" compoundref="mapping_8py" startline="56">mapping.MappingNode.objects</references>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1ae5c280be36a1982f7e229fb7edca2ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.update_oustanding_items</definition>
+        <argsstring>(self)</argsstring>
+        <name>update_oustanding_items</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="347" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="347" bodyend="354"/>
+        <references refid="classmapping_1_1MappingNode_1a1e423045d6d58abe360c9a7c16938501" compoundref="mapping_8py" startline="139">mapping.MappingNode.last_pub_time</references>
+        <references refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" compoundref="mapping_8py" startline="356" endline="445">mapping.MappingNode.publish_pose</references>
+        <references refid="classmapping_1_1MappingNode_1a0c020a197b4724ed277647d9d9a1e2d1" compoundref="mapping_8py" startline="247" endline="266">mapping.MappingNode.update_outstanding_detections</references>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.MappingNode.publish_pose</definition>
+        <argsstring>(self)</argsstring>
+        <name>publish_pose</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="356" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="356" bodyend="445"/>
+        <references refid="classmapping_1_1MappingNode_1a1e423045d6d58abe360c9a7c16938501" compoundref="mapping_8py" startline="139">mapping.MappingNode.last_pub_time</references>
+        <references refid="classmapping_1_1MappingNode_1af121cae18c5a797f02af4f4d4cf1edf2" compoundref="mapping_8py" startline="125">mapping.MappingNode.lock_map</references>
+        <references refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" compoundref="mapping_8py" startline="56">mapping.MappingNode.objects</references>
+        <references refid="classmapping_1_1MappingNode_1ad7fdc775193ab18914e42b43c309791c" compoundref="mapping_8py" startline="126">mapping.MappingNode.offset</references>
+        <references refid="classmapping_1_1MappingNode_1aace0b37c40e400d75e2b610ecaacf04c" compoundref="mapping_8py" startline="132">mapping.MappingNode.status_pub</references>
+        <references refid="classmapping_1_1MappingNode_1a42ba4ab73668ad0bfd04bf42288dd4b9" compoundref="mapping_8py" startline="124">mapping.MappingNode.target_object</references>
+        <references refid="classmapping_1_1MappingNode_1a4d2c431f9e1b7096f79c02c5ff27566f" compoundref="mapping_8py" startline="122">mapping.MappingNode.tf_brod</references>
+        <references refid="classmapping_1_1MappingNode_1a57ef822601ae8904749dd1cf3edd5064" compoundref="mapping_8py" startline="120">mapping.MappingNode.tf_buffer</references>
+        <referencedby refid="classmapping_1_1MappingNode_1ae5c280be36a1982f7e229fb7edca2ff5" compoundref="mapping_8py" startline="347" endline="354">mapping.MappingNode.update_oustanding_items</referencedby>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>mapping.MappingNode</label>
+        <link refid="classmapping_1_1MappingNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>mapping.MappingNode</label>
+        <link refid="classmapping_1_1MappingNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_mapping/mapping.py" line="50" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="50" bodyend="446"/>
+    <listofallmembers>
+      <member refid="classmapping_1_1MappingNode_1aaef2f29bdb67919d06797a6f7dcdf606" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>__init__</name></member>
+      <member refid="classmapping_1_1MappingNode_1a7455e2d48c6dc8ad2902c1857f45c708" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>add_publisher</name></member>
+      <member refid="classmapping_1_1MappingNode_1a16780664c08cb266769b1696b44b759a" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>closest_object</name></member>
+      <member refid="classmapping_1_1MappingNode_1ab056a5be2a4bd999db8157c7c933ab1e" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>create_location</name></member>
+      <member refid="classmapping_1_1MappingNode_1a3c39931c81161984226c587dd9df170a" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>downwards_objects</name></member>
+      <member refid="classmapping_1_1MappingNode_1a1e423045d6d58abe360c9a7c16938501" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>last_pub_time</name></member>
+      <member refid="classmapping_1_1MappingNode_1aecc5c77f48f02715a49983b36838ce37" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>led_pulse_pub</name></member>
+      <member refid="classmapping_1_1MappingNode_1af121cae18c5a797f02af4f4d4cf1edf2" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>lock_map</name></member>
+      <member refid="classmapping_1_1MappingNode_1afc88bac2a6db02acb6e5fbc8b5843664" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>objects</name></member>
+      <member refid="classmapping_1_1MappingNode_1ad7fdc775193ab18914e42b43c309791c" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>offset</name></member>
+      <member refid="classmapping_1_1MappingNode_1ae46f85796911ab4b3dc46b7a23f4ebab" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>outstanding_detections</name></member>
+      <member refid="classmapping_1_1MappingNode_1ad5637f596de02e95ff30bc404078f823" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>param_callback</name></member>
+      <member refid="classmapping_1_1MappingNode_1a606c1bb453d30b4cecb805f6ca582b9d" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>publish_pose</name></member>
+      <member refid="classmapping_1_1MappingNode_1ab7597f2a8057f7efc301565906eca0ab" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>publish_timer</name></member>
+      <member refid="classmapping_1_1MappingNode_1aace0b37c40e400d75e2b610ecaacf04c" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>status_pub</name></member>
+      <member refid="classmapping_1_1MappingNode_1acdbe98da819ce9081731777ec21b4736" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>target_callback</name></member>
+      <member refid="classmapping_1_1MappingNode_1a42ba4ab73668ad0bfd04bf42288dd4b9" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>target_object</name></member>
+      <member refid="classmapping_1_1MappingNode_1a4d2c431f9e1b7096f79c02c5ff27566f" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>tf_brod</name></member>
+      <member refid="classmapping_1_1MappingNode_1a57ef822601ae8904749dd1cf3edd5064" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>tf_buffer</name></member>
+      <member refid="classmapping_1_1MappingNode_1ad2ad52064a1e243e0cd275a53e96157a" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>tf_listener</name></member>
+      <member refid="classmapping_1_1MappingNode_1a21e7ae19aa5ba6ab062c9bbb23993ec4" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>try_update_pose</name></member>
+      <member refid="classmapping_1_1MappingNode_1ae5c280be36a1982f7e229fb7edca2ff5" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>update_oustanding_items</name></member>
+      <member refid="classmapping_1_1MappingNode_1a0c020a197b4724ed277647d9d9a1e2d1" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>update_outstanding_detections</name></member>
+      <member refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" prot="public" virt="non-virtual"><scope>mapping::MappingNode</scope><name>vision_callback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

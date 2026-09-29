@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structActiveBallastStates" kind="struct" language="C++" prot="public">
+    <compoundname>ActiveBallastStates</compoundname>
+    <includes refid="RobotClass_8h" local="no">RobotClass.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structActiveBallastStates_1a3736e22906a4c5d41b9714dbcc8ce6e4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ActiveBallastStates::exhaustState</definition>
+        <argsstring></argsstring>
+        <name>exhaustState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="36" column="10" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classPhysicsSimNode_1af356c3090d3e63cdf746527c0bc55256" compoundref="physics__simulator_8cpp" startline="895" endline="899">PhysicsSimNode::exhaustSubCb</referencedby>
+        <referencedby refid="classPhysicsSimNode_1ac88c6b497e03cdc8b0060ac5cc2fab37" compoundref="physics__simulator_8cpp" startline="913" endline="924">PhysicsSimNode::publishSolenoidStates</referencedby>
+        <referencedby refid="classRobot_1a77eb23b4bc37a03524a32a021aa800f2" compoundref="robot__class_8cpp" startline="481" endline="520">Robot::updateActiveBallast</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structActiveBallastStates_1a2e7ff8e4d29cc75057d82c4eee14cc44" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ActiveBallastStates::pressureState</definition>
+        <argsstring></argsstring>
+        <name>pressureState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="36" column="23" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classPhysicsSimNode_1ada97a9eda940bdb68c0bf40560cd35e9" compoundref="physics__simulator_8cpp" startline="901" endline="905">PhysicsSimNode::pressureSubCb</referencedby>
+        <referencedby refid="classPhysicsSimNode_1ac88c6b497e03cdc8b0060ac5cc2fab37" compoundref="physics__simulator_8cpp" startline="913" endline="924">PhysicsSimNode::publishSolenoidStates</referencedby>
+        <referencedby refid="classRobot_1a77eb23b4bc37a03524a32a021aa800f2" compoundref="robot__class_8cpp" startline="481" endline="520">Robot::updateActiveBallast</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structActiveBallastStates_1ac9054bc77df085e108344580a6e07616" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ActiveBallastStates::waterState</definition>
+        <argsstring></argsstring>
+        <name>waterState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/RobotClass.h" line="36" column="37" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classPhysicsSimNode_1ac88c6b497e03cdc8b0060ac5cc2fab37" compoundref="physics__simulator_8cpp" startline="913" endline="924">PhysicsSimNode::publishSolenoidStates</referencedby>
+        <referencedby refid="classRobot_1a77eb23b4bc37a03524a32a021aa800f2" compoundref="robot__class_8cpp" startline="481" endline="520">Robot::updateActiveBallast</referencedby>
+        <referencedby refid="classPhysicsSimNode_1a26718f7c1e9fc9cf0bcd374c3c0e1cd3" compoundref="physics__simulator_8cpp" startline="907" endline="911">PhysicsSimNode::waterSubCb</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ActiveBallastStates</label>
+        <link refid="structActiveBallastStates"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_simulator/RobotClass.h" line="35" column="1" bodyfile="include/mercury_simulator/RobotClass.h" bodystart="35" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structActiveBallastStates_1a3736e22906a4c5d41b9714dbcc8ce6e4" prot="public" virt="non-virtual"><scope>ActiveBallastStates</scope><name>exhaustState</name></member>
+      <member refid="structActiveBallastStates_1a2e7ff8e4d29cc75057d82c4eee14cc44" prot="public" virt="non-virtual"><scope>ActiveBallastStates</scope><name>pressureState</name></member>
+      <member refid="structActiveBallastStates_1ac9054bc77df085e108344580a6e07616" prot="public" virt="non-virtual"><scope>ActiveBallastStates</scope><name>waterState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

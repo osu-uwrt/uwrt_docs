@@ -1,0 +1,43 @@
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classVectornav" kind="class"><name>Vectornav</name>
+    <member refid="classVectornav_1ab9cb7f01650a7fe58f8948f5d9774374" kind="typedef"><name>MagCal</name></member>
+    <member refid="classVectornav_1a91de1295178f8696d9dcb39f2fcea0b6" kind="typedef"><name>MagCalGH</name></member>
+    <member refid="classVectornav_1acfa7289699314b5363f9c6a5f4361375" kind="variable"><name>vs</name></member>
+    <member refid="classVectornav_1a3b76743ec72f6820ce11ca720f77b074" kind="variable"><name>reconnectTimer</name></member>
+    <member refid="classVectornav_1aa7212b80dde0dd020319d5fbb9019779" kind="variable"><name>imuPub</name></member>
+    <member refid="classVectornav_1abae27e23afdac7d95e1ed78314d8eca3" kind="variable"><name>magPub</name></member>
+    <member refid="classVectornav_1af5648611756bf9a893da23da9d49fb30" kind="variable"><name>magHeadingPub</name></member>
+    <member refid="classVectornav_1a0b0aed0a266216ebcc8b6b94b069098a" kind="variable"><name>pressurePub</name></member>
+    <member refid="classVectornav_1a5064d3b055090e38525082415b6f970a" kind="variable"><name>magCalServer</name></member>
+    <member refid="classVectornav_1a36414f344eddbb9d8c720325e787e90e" kind="variable"><name>magCalThread</name></member>
+    <member refid="classVectornav_1aa2f2574e98745380ece19e78775d836b" kind="variable"><name>doMonitorConnection</name></member>
+    <member refid="classVectornav_1aff76284b463487a6c8926a6b99574cd2" kind="function"><name>Vectornav</name></member>
+    <member refid="classVectornav_1a477f7b2c8c6108487a7d1d306923d876" kind="function"><name>~Vectornav</name></member>
+    <member refid="classVectornav_1abbcc4df11ff12c539e3dcdcf54d45c0e" kind="function"><name>optimizeSerialConnection</name></member>
+    <member refid="classVectornav_1a59db74c34d7f6e23d500d5bf8a76b043" kind="function"><name>vnConnect</name></member>
+    <member refid="classVectornav_1a08977ad5e7b03ead257927f35ff3ba73" kind="function"><name>monitorConnection</name></member>
+    <member refid="classVectornav_1afbe946f8ffb1b93915a40bb003644458" kind="function"><name>getTimeStamp</name></member>
+    <member refid="classVectornav_1a8d2cef77a10b06ddb33a70bf7dff9940" kind="function"><name>fillCovarianceFromParam</name></member>
+    <member refid="classVectornav_1aeecd3b42dcb42b717f19ceb2a5eb9d42" kind="function"><name>calculateMagnetHeading</name></member>
+    <member refid="classVectornav_1a631ecdde4669b85f29467821e558e46f" kind="function"><name>handleCalGoal</name></member>
+    <member refid="classVectornav_1a9f660e3d6d4930af0303c2ada811a8b1" kind="function"><name>handleCalCancel</name></member>
+    <member refid="classVectornav_1ad463dba169f4aa5f7b39374fac381457" kind="function"><name>handleCalAccept</name></member>
+    <member refid="classVectornav_1a43e6efe3ea29f5995be2ef5f769eeac5" kind="function"><name>executeMagCal</name></member>
+    <member refid="classVectornav_1a417946943720d443145953fe00051448" kind="function"><name>executeConfigRequest</name></member>
+    <member refid="classVectornav_1a010b68d019f518d98eb8d63bf5fd7233" kind="function"><name>asyncPacketReceivedHandler</name></member>
+    <member refid="classVectornav_1ab18f57cbc8d00c771ae1274f619cda1c" kind="function"><name>errorPacketReceivedHandler</name></member>
+    <member refid="classVectornav_1aed382016a6caa2ab5550abf41ee22b3d" kind="function"><name>toMsg</name></member>
+    <member refid="classVectornav_1aa66ae3dbadfcad213cca7ffc2edd62ea" kind="function"><name>toMsg</name></member>
+  </compound>
+  <compound refid="namespacestd_1_1chrono__literals" kind="namespace"><name>std::chrono_literals</name>
+  </compound>
+  <compound refid="namespacestd_1_1placeholders" kind="namespace"><name>std::placeholders</name>
+  </compound>
+  <compound refid="namespacevn_1_1sensors" kind="namespace"><name>vn::sensors</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

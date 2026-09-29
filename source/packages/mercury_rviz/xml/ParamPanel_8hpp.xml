@@ -1,19 +1,35 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="ParamPanel_8hpp" kind="file" language="C++">
     <compoundname>ParamPanel.hpp</compoundname>
-    <includes local="no">rclcpp/rclcpp.hpp</includes>
-    <includes local="no">rviz_common/panel.hpp</includes>
-    <includes local="no">geometry_msgs/msg/twist.hpp</includes>
-    <includes local="no">QGridLayout</includes>
-    <includes local="no">QPushButton</includes>
-    <includes local="no">QDoubleSpinBox</includes>
     <includes local="no">QComboBox</includes>
+    <includes local="no">QDoubleSpinBox</includes>
+    <includes local="no">QGridLayout</includes>
     <includes local="no">QLineEdit</includes>
     <includes local="no">QMap</includes>
-    <includes local="no">QVariant</includes>
+    <includes local="no">QPushButton</includes>
     <includes local="no">QStatusBar</includes>
+    <includes local="no">QVariant</includes>
+    <includes local="no">geometry_msgs/msg/twist.hpp</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">rviz_common/panel.hpp</includes>
+    <includedby refid="ParamPanel_8cpp" local="yes">src/ParamPanel.cpp</includedby>
     <incdepgraph>
+      <node id="6">
+        <label>QMap</label>
+      </node>
+      <node id="10">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="8">
+        <label>QStatusBar</label>
+      </node>
+      <node id="3">
+        <label>QDoubleSpinBox</label>
+      </node>
+      <node id="11">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
       <node id="1">
         <label>include/mercury_rviz/ParamPanel.hpp</label>
         <link refid="ParamPanel_8hpp"/>
@@ -40,104 +56,101 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="8">
-        <label>QComboBox</label>
-      </node>
-      <node id="7">
-        <label>QDoubleSpinBox</label>
+      <node id="12">
+        <label>rviz_common/panel.hpp</label>
       </node>
       <node id="5">
+        <label>QLineEdit</label>
+      </node>
+      <node id="7">
+        <label>QPushButton</label>
+      </node>
+      <node id="2">
+        <label>QComboBox</label>
+      </node>
+      <node id="4">
         <label>QGridLayout</label>
       </node>
       <node id="9">
-        <label>QLineEdit</label>
-      </node>
-      <node id="10">
-        <label>QMap</label>
-      </node>
-      <node id="6">
-        <label>QPushButton</label>
-      </node>
-      <node id="12">
-        <label>QStatusBar</label>
-      </node>
-      <node id="11">
         <label>QVariant</label>
       </node>
-      <node id="4">
-        <label>geometry_msgs/msg/twist.hpp</label>
-      </node>
-      <node id="2">
-        <label>rclcpp/rclcpp.hpp</label>
-      </node>
-      <node id="3">
-        <label>rviz_common/panel.hpp</label>
-      </node>
     </incdepgraph>
-    <innerclass refid="classriptide__rviz_1_1ParamPanel" prot="public">riptide_rviz::ParamPanel</innerclass>
-    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/ParamPanel.cpp</label>
+        <link refid="ParamPanel_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/mercury_rviz/ParamPanel.hpp</label>
+        <link refid="ParamPanel_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmercury__rviz_1_1ParamPanel" prot="public">mercury_rviz::ParamPanel</innerclass>
+    <innernamespace refid="namespacemercury__rviz">mercury_rviz</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;geometry_msgs/msg/twist.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGridLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDoubleSpinBox&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QComboBox&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLineEdit&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMap&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStatusBar&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QComboBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDoubleSpinBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QGridLayout&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QLineEdit&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMap&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QPushButton&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStatusBar&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;geometry_msgs/msg/twist.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
-<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="16" refid="classriptide__rviz_1_1ParamPanel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" kindref="member">ParamPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a6dcc466737fad212d401475a4c7d7892" kindref="member">ParamPanel</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a6c9a63791333d6e58ca2c7610be4dd03" kindref="member">~ParamPanel</ref>();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a9978cfc3da607112f87cb1ccbf3c8b30" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a261d98729fc1711d70a402f8ebed7343" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a73211a2f1e88e92e24aacfa0bdc0456b" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a69b82a54cd65f03693deb92ef357cb9b" kindref="member">apply</ref>();</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a25a3b6a2fb84847c64624de390e3a17d" kindref="member">setNode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;text);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1afc4fae58b2bc7a191126f4fb0aeb1b6d" kindref="member">refresh</ref>();</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a3a706a0b7b7c2a4454e37ef8dc519e61" kindref="member">filterParameters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>text);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1aea605fbc50e08180a046c0d1c607d012" kindref="member">parameterValueChanged</ref>();</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a06a8fda506bbeb15d53efdc9e792064f" kindref="member">showStatusMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>message,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout<sp/>=<sp/>3000);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a11eca7ee885184e2516ab84cceb4a4f0" kindref="member">getNodes</ref>();</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;rclcpp::Parameter&gt;<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a5ca57aa8e1ebcba77e7f7d3c0f23d1e5" kindref="member">getParams</ref>();</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1ab16133c42789f3d4c77d1a720d080aee" kindref="member">createParams</ref>(std::vector&lt;rclcpp::Parameter&gt;<sp/>params);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a18db0c032135c58e67a167ad77926f8c" kindref="member">eraseLayout</ref>(QLayout*<sp/>layout);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1ab705bb053485ef548fb620e4bda8fcab" kindref="member">storeOriginalValue</ref>(QWidget*<sp/>widget,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1acfc20413b8201d5bb7e4b2d45c8b303f" kindref="member">highlightChanges</ref>(QWidget*<sp/>widget,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString&amp;<sp/>name);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVariant<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a8cd90cb9ea3c6de8bdb3c6ca764860b2" kindref="member">getCurrentValue</ref>(QWidget*<sp/>widget);</highlight></codeline>
-<codeline lineno="42" refid="classriptide__rviz_1_1ParamPanel_1a96a85038bbd99d9670cb00a2b08f98e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a812c111147b5fe3703658db2f7ab8fa4" kindref="member">loaded</ref><sp/>=<sp/>0,<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a96a85038bbd99d9670cb00a2b08f98e2" kindref="member">connected</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="43" refid="classriptide__rviz_1_1ParamPanel_1a81d7c7a722a017ac632d5fd86e718fed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;rclcpp::Node&gt;<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a81d7c7a722a017ac632d5fd86e718fed" kindref="member">node</ref>;</highlight></codeline>
-<codeline lineno="44" refid="classriptide__rviz_1_1ParamPanel_1ac572f278f6b2bdeb8fee58a9d148a869" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;rclcpp::SyncParametersClient&gt;<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1ac572f278f6b2bdeb8fee58a9d148a869" kindref="member">param_client</ref>;</highlight></codeline>
-<codeline lineno="45" refid="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QComboBox*<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1ad7d15bd683e27f8a121d1b88957f60b1" kindref="member">nodes</ref>;</highlight></codeline>
-<codeline lineno="46" refid="classriptide__rviz_1_1ParamPanel_1af33a6d53ee83e3a427bc268440979488" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QLineEdit*<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1af33a6d53ee83e3a427bc268440979488" kindref="member">searchBox</ref>;</highlight></codeline>
-<codeline lineno="47" refid="classriptide__rviz_1_1ParamPanel_1aa772e3a1f58a3ef7916174420c57ffb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QWidget*<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1aa772e3a1f58a3ef7916174420c57ffb2" kindref="member">searchContainer</ref>;</highlight></codeline>
-<codeline lineno="48" refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QVBoxLayout*<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a2d42a3cee0ce4242a9b725ba43bb71dc" kindref="member">paramLayout</ref>;</highlight></codeline>
-<codeline lineno="49" refid="classriptide__rviz_1_1ParamPanel_1a592fb67905b78df3e1396e1aae6a3f93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPushButton*<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a592fb67905b78df3e1396e1aae6a3f93" kindref="member">applyButton</ref>;</highlight></codeline>
-<codeline lineno="50" refid="classriptide__rviz_1_1ParamPanel_1a3c7a47fdb672845a07b436e5342f2b22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QPushButton*<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a3c7a47fdb672845a07b436e5342f2b22" kindref="member">refreshButton</ref>;</highlight></codeline>
-<codeline lineno="51" refid="classriptide__rviz_1_1ParamPanel_1ac6c15f0b7cf1f968b56f884ef31a20d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStatusBar*<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1ac6c15f0b7cf1f968b56f884ef31a20d5" kindref="member">statusBar</ref>;</highlight></codeline>
-<codeline lineno="52" refid="classriptide__rviz_1_1ParamPanel_1a531c57f0a6235197f0a5db357802945b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a531c57f0a6235197f0a5db357802945b" kindref="member">robotNs</ref>;</highlight></codeline>
-<codeline lineno="53" refid="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>QVariant&gt;<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a1f3204a190155799edf8d9bbe0db9f4f" kindref="member">originalValues</ref>;</highlight></codeline>
-<codeline lineno="54" refid="classriptide__rviz_1_1ParamPanel_1a09a1ef0bbab5ac127e21a91b49f0dd46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>QWidget*&gt;<sp/><ref refid="classriptide__rviz_1_1ParamPanel_1a09a1ef0bbab5ac127e21a91b49f0dd46" kindref="member">arrayContainers</ref>;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ParamPanel_1ab27e5a732a2261aea03dea364a8f574c" kindref="member">eventFilter</ref>(QObject*<sp/>obj,<sp/>QEvent*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemercury__rviz" kindref="compound">mercury_rviz</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classmercury__rviz_1_1ParamPanel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmercury__rviz_1_1ParamPanel" kindref="compound">ParamPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1ac4b635cd157cc7cbbf08b4e4317a17b8" kindref="member">ParamPanel</ref>(QWidget<sp/>*<sp/>parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a62c6d59da753f5f0fbb507ea30238139" kindref="member">~ParamPanel</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a8af4671cb61aab5a885ebf90e68fe056" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;<sp/>config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1ac634392b3e57fc4962f738957f8d4bf4" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a4d0d7c605400471f906b2d80fb538538" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a97366dcff7ad74486adeaeda9449300a" kindref="member">apply</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a537197879b2a953ffe6ff696b2772a27" kindref="member">setNode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1aa08a47803c50b9dcd489d4aa6c564bc0" kindref="member">refresh</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a8b8fbaf617f1352a8abb018e2e124217" kindref="member">filterParameters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;<sp/>text);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a45856e9e8ec7dfeba941bc8fb56d1250" kindref="member">parameterValueChanged</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a710d6b9b3264358add1a227e905e3570" kindref="member">showStatusMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;<sp/>message,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout<sp/>=<sp/>3000);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1af67ef1fb5cb636530336421dc3c16ac9" kindref="member">getNodes</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;rclcpp::Parameter&gt;<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a4d054e7e4a43c93f294f432c6d481908" kindref="member">getParams</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a62a9ce8ae269ec3f5c89c2a109dcb61e" kindref="member">createParams</ref>(std::vector&lt;rclcpp::Parameter&gt;<sp/>params);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1aa2fdfcc88799eb970fcd27a36da6ee36" kindref="member">eraseLayout</ref>(QLayout<sp/>*<sp/>layout);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1adc3493c7d82e96f35bbbae42852e0773" kindref="member">storeOriginalValue</ref>(QWidget<sp/>*<sp/>widget,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1ae4aa86f59c59c9a29359c2b5cb156232" kindref="member">highlightChanges</ref>(QWidget<sp/>*<sp/>widget,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariant<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a5a5ca9bcbe71fda605f377abb56cee23" kindref="member">getCurrentValue</ref>(QWidget<sp/>*<sp/>widget);</highlight></codeline>
+<codeline lineno="41" refid="classmercury__rviz_1_1ParamPanel_1afb70a542f84c979cf22f0914f3b39264" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1aef23f4217dc6551e1bce206a461fb336" kindref="member">loaded</ref><sp/>=<sp/>0,<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1afb70a542f84c979cf22f0914f3b39264" kindref="member">connected</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42" refid="classmercury__rviz_1_1ParamPanel_1ac41318bf7df986504b133b00e8babf40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;rclcpp::Node&gt;<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1ac41318bf7df986504b133b00e8babf40" kindref="member">node</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classmercury__rviz_1_1ParamPanel_1a8681aa6ae538a0cc7932aae763fd37de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;rclcpp::SyncParametersClient&gt;<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a8681aa6ae538a0cc7932aae763fd37de" kindref="member">param_client</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classmercury__rviz_1_1ParamPanel_1a57064468de3a252e676d799234784e4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QComboBox<sp/>*<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a57064468de3a252e676d799234784e4e" kindref="member">nodes</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classmercury__rviz_1_1ParamPanel_1ab90dcbb0550ebc1b25454dced683f2d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QLineEdit<sp/>*<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1ab90dcbb0550ebc1b25454dced683f2d5" kindref="member">searchBox</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classmercury__rviz_1_1ParamPanel_1ad22e4c745cde3a493444328cb22cd065" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1ad22e4c745cde3a493444328cb22cd065" kindref="member">searchContainer</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classmercury__rviz_1_1ParamPanel_1aa9eb5c71d0513f3111907a6e980f7bf7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QVBoxLayout<sp/>*<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1aa9eb5c71d0513f3111907a6e980f7bf7" kindref="member">paramLayout</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classmercury__rviz_1_1ParamPanel_1ab6d548dd64f96ff7714adc8509f9c372" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1ab6d548dd64f96ff7714adc8509f9c372" kindref="member">applyButton</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classmercury__rviz_1_1ParamPanel_1a1cb0e4e47bb8c85f116a2a1a07a11756" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QPushButton<sp/>*<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a1cb0e4e47bb8c85f116a2a1a07a11756" kindref="member">refreshButton</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classmercury__rviz_1_1ParamPanel_1a00bfd0bceaecb15fd923f44ca4164481" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStatusBar<sp/>*<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a00bfd0bceaecb15fd923f44ca4164481" kindref="member">statusBar</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classmercury__rviz_1_1ParamPanel_1a89bc086c0df6bbf76eff9dfb98cfa364" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a89bc086c0df6bbf76eff9dfb98cfa364" kindref="member">robotNs</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classmercury__rviz_1_1ParamPanel_1a504575bcb611e2a56ee3f8b79748d0e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>QVariant&gt;<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a504575bcb611e2a56ee3f8b79748d0e2" kindref="member">originalValues</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classmercury__rviz_1_1ParamPanel_1aefef7c1c6224480cc7d1957ce5d1ffd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QMap&lt;QString,<sp/>QWidget<sp/>*&gt;<sp/><ref refid="classmercury__rviz_1_1ParamPanel_1aefef7c1c6224480cc7d1957ce5d1ffd7" kindref="member">arrayContainers</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ParamPanel_1a4c20e0754918b1d63104e7370ae78bbb" kindref="member">eventFilter</ref>(QObject<sp/>*<sp/>obj,<sp/>QEvent<sp/>*<sp/>event)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mercury_rviz</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/mercury_rviz/ParamPanel.hpp"/>
   </compounddef>

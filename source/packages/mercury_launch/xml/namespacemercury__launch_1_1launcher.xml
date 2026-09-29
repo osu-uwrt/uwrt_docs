@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacemercury__launch_1_1launcher" kind="namespace" language="Python">
+    <compoundname>mercury_launch::launcher</compoundname>
+    <innerclass refid="classmercury__launch_1_1launcher_1_1SDNotify" prot="public">mercury_launch::launcher::SDNotify</innerclass>
+    <innerclass refid="classmercury__launch_1_1launcher_1_1LinuxProcess" prot="public">mercury_launch::launcher::LinuxProcess</innerclass>
+    <innerclass refid="classmercury__launch_1_1launcher_1_1LaunchState" prot="public">mercury_launch::launcher::LaunchState</innerclass>
+    <innerclass refid="classmercury__launch_1_1launcher_1_1LaunchData" prot="public">mercury_launch::launcher::LaunchData</innerclass>
+    <innerclass refid="classmercury__launch_1_1launcher_1_1LaunchServer" prot="public">mercury_launch::launcher::LaunchServer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a1160a3acbd836081072cc80237a148e0" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch::launcher.SUPER_SECRET_LAUNCH_FLAG</definition>
+        <argsstring></argsstring>
+        <name>SUPER_SECRET_LAUNCH_FLAG</name>
+        <initializer>=  &quot;--super-secret-forking-flag&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="23" column="1" bodyfile="mercury_launch/launcher.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a92c3d70c1160c60d7cc8a58723c1a84e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch::launcher.SUPER_SECRET_MONITOR_FLAG</definition>
+        <argsstring></argsstring>
+        <name>SUPER_SECRET_MONITOR_FLAG</name>
+        <initializer>=  &quot;--super-secret-monitoring-flag&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="24" column="1" bodyfile="mercury_launch/launcher.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1ac2de887fb37b78da4aaf2be4e8f22e8d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch::launcher.log_format</definition>
+        <argsstring></argsstring>
+        <name>log_format</name>
+        <initializer>=  &quot;[%(name)s] %(message)s&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="26" column="1" bodyfile="mercury_launch/launcher.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a411b776888e39419496a1b4a55e8d871" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.log_level</definition>
+        <argsstring></argsstring>
+        <name>log_level</name>
+        <initializer>=  logging.INFO</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="27" column="1" bodyfile="mercury_launch/launcher.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a1d8b62ed9fc15663177c170dd8411805" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.serverPort</definition>
+        <argsstring></argsstring>
+        <name>serverPort</name>
+        <initializer>=  int(os.environ.get(&quot;SERVER_PORT&quot;, &quot;8080&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="28" column="1" bodyfile="mercury_launch/launcher.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a50dc6d01def1a290e47e680d3dd681d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.self_hosted_discovery_server_cmd</definition>
+        <argsstring></argsstring>
+        <name>self_hosted_discovery_server_cmd</name>
+        <initializer>=  os.environ.get(&quot;DISCOVERY_SERVER_CMD&quot;,
+                                                  &quot;ros2 run rmw_zenoh_cpp rmw_zenohd --config=/home/ros/osu-uwrt/release/scripts/dds_scripts/zenoh/zenoh_router_test.json5&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="29" column="1" bodyfile="mercury_launch/launcher.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1aab90b082d218252f27235b988c5b1817" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch::launcher.self_hosted_discovery_server_addr</definition>
+        <argsstring></argsstring>
+        <name>self_hosted_discovery_server_addr</name>
+        <initializer>=  &quot;tcp/localhost:7447&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="31" column="1" bodyfile="mercury_launch/launcher.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a8ff7d05310429e0b2ec3040fe7a11aad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.HTML_SERVER_ROOT</definition>
+        <argsstring></argsstring>
+        <name>HTML_SERVER_ROOT</name>
+        <initializer>=  os.path.join(
+    get_package_share_directory(&quot;mercury_launch&quot;), &quot;pages&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="33" column="1" bodyfile="mercury_launch/launcher.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a2d9cd3f361c84c72b961d69cb97502f4" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary mercury_launch::launcher.monitor_env</definition>
+        <argsstring></argsstring>
+        <name>monitor_env</name>
+        <initializer>=  {
+    **os.environ,
+    # COMMENT THESE OUT FOR FASTDDS
+    &quot;RMW_IMPLEMENTATION&quot;: &quot;rmw_zenoh_cpp&quot;,
+    # make sure it still finds your discovery server:
+    &quot;ZENOH_ROUTER_CONFIG_URI&quot;: os.environ.get(&quot;ZENOH_ROUTER_CONFIG_URI&quot;, &quot;tcp/localhost:7447&quot;),
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="35" column="1" bodyfile="mercury_launch/launcher.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a6d20f15bfd626c405ba1da5de421f6b1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="1215" column="1" bodyfile="mercury_launch/launcher.py" bodystart="1215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a5dfb7a5ef0549bcfb55be8f8e81fe888" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="1216" column="1" bodyfile="mercury_launch/launcher.py" bodystart="1216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1ae7bd085aa7811c78b4ec77ec4ac9d396" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.has_called</definition>
+        <argsstring></argsstring>
+        <name>has_called</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="1217" column="1" bodyfile="mercury_launch/launcher.py" bodystart="1217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a17137c3b33e458dbf9c0312e8fbe5c8d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.monitor_subs</definition>
+        <argsstring></argsstring>
+        <name>monitor_subs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="1232" column="1" bodyfile="mercury_launch/launcher.py" bodystart="1232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemercury__launch_1_1launcher_1a73c8c5dcee402e9dcff9a30cf982cbef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch::launcher.remaining_topics</definition>
+        <argsstring></argsstring>
+        <name>remaining_topics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="1235" column="1" bodyfile="mercury_launch/launcher.py" bodystart="1235" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemercury__launch_1_1launcher_1a32ec24ba9a8c892149cae02f3208bbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.get_service_cgroup</definition>
+        <argsstring>()</argsstring>
+        <name>get_service_cgroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="217" column="1" bodyfile="mercury_launch/launcher.py" bodystart="217" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__launch_1_1launcher_1a329155ed195d98833122c72bc4cadc33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.get_cgroup_processes</definition>
+        <argsstring>(cgroup_path)</argsstring>
+        <name>get_cgroup_processes</name>
+        <param>
+          <type>cgroup_path</type>
+          <defname>cgroup_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="255" column="1" bodyfile="mercury_launch/launcher.py" bodystart="255" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__launch_1_1launcher_1a907fe6a665b9a33f451828b6d3c6dd58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.json_encode_default</definition>
+        <argsstring>(o)</argsstring>
+        <name>json_encode_default</name>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="647" column="1" bodyfile="mercury_launch/launcher.py" bodystart="647" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__launch_1_1launcher_1a5bb8f3cece9642b4855139386ddd6bb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.event_wait</definition>
+        <argsstring>(evt, timeout)</argsstring>
+        <name>event_wait</name>
+        <param>
+          <type>evt</type>
+          <defname>evt</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="684" column="1" bodyfile="mercury_launch/launcher.py" bodystart="684" bodyend="690"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1abc2bd712ac9958a48abe51bf50de9d67" compoundref="launcher_8py" startline="1175" endline="1198">mercury_launch.launcher.LaunchServer.cleanup_launches</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a9b88d03d5f12fb9e6b5476e38c9ab237" compoundref="launcher_8py" startline="794" endline="853">mercury_launch.launcher.LaunchServer.run_discovery_server</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1acf19273ea3103ca389cd7bc9492ec2c9" compoundref="launcher_8py" startline="1009" endline="1043">mercury_launch.launcher.LaunchServer.status_broadcast_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__launch_1_1launcher_1a80c3760db7651cb239706a93d327c679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.do_child_monitor</definition>
+        <argsstring>()</argsstring>
+        <name>do_child_monitor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="1204" column="1" bodyfile="mercury_launch/launcher.py" bodystart="1204" bodyend="1285"/>
+        <referencedby refid="namespacemercury__launch_1_1launcher_1a1e67032caa0fa6a2d19830c53bbe701b" compoundref="launcher_8py" startline="1286" endline="1340">mercury_launch.launcher.main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacemercury__launch_1_1launcher_1a1e67032caa0fa6a2d19830c53bbe701b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="1286" column="1" bodyfile="mercury_launch/launcher.py" bodystart="1286" bodyend="1340"/>
+        <references refid="namespacemercury__launch_1_1launcher_1a80c3760db7651cb239706a93d327c679" compoundref="launcher_8py" startline="1204" endline="1285">mercury_launch.launcher.do_child_monitor</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_launch/launcher.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

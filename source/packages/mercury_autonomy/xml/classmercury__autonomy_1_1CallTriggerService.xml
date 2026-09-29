@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1CallTriggerService" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::CallTriggerService</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="call__trigger__service_8hpp" local="no">call_trigger_service.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classmercury__autonomy_1_1CallTriggerService_1a7306b638fbfac055e018abf72a5e7c66" prot="private" static="no">
+        <type>std_srvs::srv::Trigger</type>
+        <definition>using mercury_autonomy::CallTriggerService::Trigger =  std_srvs::srv::Trigger</definition>
+        <argsstring></argsstring>
+        <name>Trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="35" column="5" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classmercury__autonomy_1_1CallTriggerService_1a831bbabba7db16d111710d0aaafe813b" prot="private" static="no">
+        <type>rclcpp::Client&lt; <ref refid="classmercury__autonomy_1_1CallTriggerService_1a7306b638fbfac055e018abf72a5e7c66" kindref="member">Trigger</ref> &gt;::FutureAndRequestId</type>
+        <definition>using mercury_autonomy::CallTriggerService::FutureAndId =  rclcpp::Client&lt;Trigger&gt;::FutureAndRequestId</definition>
+        <argsstring></argsstring>
+        <name>FutureAndId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="36" column="5" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1CallTriggerService_1aaa29b89f83b21226f4c60929164af612" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::CallTriggerService::srv_name_</definition>
+        <argsstring></argsstring>
+        <name>srv_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="38" column="17" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1a997355bd7d9f2ef8e4412298447e709a" compoundref="call__trigger__service_8cpp" startline="36" endline="63">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" compoundref="call__trigger__service_8cpp" startline="11" endline="34">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1CallTriggerService_1af33c863224735954ea803b3236ef7f10" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; <ref refid="classmercury__autonomy_1_1CallTriggerService_1a7306b638fbfac055e018abf72a5e7c66" kindref="member">Trigger</ref> &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;Trigger&gt;::SharedPtr mercury_autonomy::CallTriggerService::client_</definition>
+        <argsstring></argsstring>
+        <name>client_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="39" column="32" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1a8cfb7ac973b75e63ec06e693fc8de513" compoundref="call__trigger__service_8cpp" startline="65" endline="68">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" compoundref="call__trigger__service_8cpp" startline="11" endline="34">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1CallTriggerService_1af6c3c17b9b1a876dcd06fa5122d58bcc" prot="private" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="classmercury__autonomy_1_1CallTriggerService_1a831bbabba7db16d111710d0aaafe813b" kindref="member">FutureAndId</ref> &gt;</type>
+        <definition>std::optional&lt;FutureAndId&gt; mercury_autonomy::CallTriggerService::result_</definition>
+        <argsstring></argsstring>
+        <name>result_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="40" column="19" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1a8cfb7ac973b75e63ec06e693fc8de513" compoundref="call__trigger__service_8cpp" startline="65" endline="68">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1a997355bd7d9f2ef8e4412298447e709a" compoundref="call__trigger__service_8cpp" startline="36" endline="63">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" compoundref="call__trigger__service_8cpp" startline="11" endline="34">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1CallTriggerService_1a5747044e5c628152a67df676f93c7393" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::CallTriggerService::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="41" column="18" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1a997355bd7d9f2ef8e4412298447e709a" compoundref="call__trigger__service_8cpp" startline="36" endline="63">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" compoundref="call__trigger__service_8cpp" startline="11" endline="34">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1CallTriggerService_1a30b9b18d7f30e49e66e7d9c6834b6696" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::CallTriggerService::timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>timeout_sec_</name>
+        <initializer>= 3.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="42" column="12" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1a997355bd7d9f2ef8e4412298447e709a" compoundref="call__trigger__service_8cpp" startline="36" endline="63">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" compoundref="call__trigger__service_8cpp" startline="11" endline="34">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1CallTriggerService_1acca52ac21697ea163a77c7e87ed97724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::CallTriggerService::CallTriggerService</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>CallTriggerService</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="17" column="5" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::CallTriggerService::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="27" column="20" bodyfile="src/bt_actions/call_trigger_service.cpp" bodystart="11" bodyend="34"/>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1af33c863224735954ea803b3236ef7f10" compoundref="call__trigger__service_8hpp" startline="39">client_</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1af6c3c17b9b1a876dcd06fa5122d58bcc" compoundref="call__trigger__service_8hpp" startline="40">result_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1aaa29b89f83b21226f4c60929164af612" compoundref="call__trigger__service_8hpp" startline="38">srv_name_</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1a5747044e5c628152a67df676f93c7393" compoundref="call__trigger__service_8hpp" startline="41">start_time_</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1a30b9b18d7f30e49e66e7d9c6834b6696" compoundref="call__trigger__service_8hpp" startline="42">timeout_sec_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1CallTriggerService_1a997355bd7d9f2ef8e4412298447e709a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::CallTriggerService::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="28" column="20" bodyfile="src/bt_actions/call_trigger_service.cpp" bodystart="36" bodyend="63"/>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1af6c3c17b9b1a876dcd06fa5122d58bcc" compoundref="call__trigger__service_8hpp" startline="40">result_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1aaa29b89f83b21226f4c60929164af612" compoundref="call__trigger__service_8hpp" startline="38">srv_name_</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1a5747044e5c628152a67df676f93c7393" compoundref="call__trigger__service_8hpp" startline="41">start_time_</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1a30b9b18d7f30e49e66e7d9c6834b6696" compoundref="call__trigger__service_8hpp" startline="42">timeout_sec_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1CallTriggerService_1a8cfb7ac973b75e63ec06e693fc8de513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::CallTriggerService::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="29" column="10" bodyfile="src/bt_actions/call_trigger_service.cpp" bodystart="65" bodyend="68"/>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1af33c863224735954ea803b3236ef7f10" compoundref="call__trigger__service_8hpp" startline="39">client_</references>
+        <references refid="classmercury__autonomy_1_1CallTriggerService_1af6c3c17b9b1a876dcd06fa5122d58bcc" compoundref="call__trigger__service_8hpp" startline="40">result_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1CallTriggerService_1a42ce7ced6850d0b12534e2a6100b571f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::CallTriggerService::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="20" column="26" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1CallTriggerService_1aff19535fab3fd27dfc941319f29dc461" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::CallTriggerService::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="32" column="10" bodyfile="src/bt_actions/call_trigger_service.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::CallTriggerService</label>
+        <link refid="classmercury__autonomy_1_1CallTriggerService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::CallTriggerService</label>
+        <link refid="classmercury__autonomy_1_1CallTriggerService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" line="15" column="1" bodyfile="include/mercury_autonomy/bt_actions/call_trigger_service.hpp" bodystart="15" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1acca52ac21697ea163a77c7e87ed97724" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>CallTriggerService</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1af33c863224735954ea803b3236ef7f10" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>client_</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1a831bbabba7db16d111710d0aaafe813b" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>FutureAndId</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1a8cfb7ac973b75e63ec06e693fc8de513" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1a997355bd7d9f2ef8e4412298447e709a" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1a42ce7ced6850d0b12534e2a6100b571f" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1af6c3c17b9b1a876dcd06fa5122d58bcc" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>result_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1aff19535fab3fd27dfc941319f29dc461" prot="protected" virt="virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1aaa29b89f83b21226f4c60929164af612" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>srv_name_</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1a5747044e5c628152a67df676f93c7393" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1a30b9b18d7f30e49e66e7d9c6834b6696" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>timeout_sec_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1CallTriggerService_1a7306b638fbfac055e018abf72a5e7c66" prot="private" virt="non-virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>Trigger</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::CallTriggerService</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

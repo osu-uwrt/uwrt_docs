@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structcollisionResult" kind="struct" language="C++" prot="public">
+    <compoundname>collisionResult</compoundname>
+    <includes refid="collisionBox_8h" local="no">collisionBox.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcollisionResult_1a618d958aa5082aeec0a5a8fc208d7ea1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double collisionResult::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="56" column="12" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="structcollisionResult_1a1ccb11ebbbefd1ad45a3ae5549453d52" compoundref="collisionBox__class_8cpp" startline="96" endline="101">collisionResult</referencedby>
+        <referencedby refid="classPhysicsSimNode_1affcc31a3c56fb9d309244fb7b9e944af" compoundref="physics__simulator_8cpp" startline="391" endline="485">PhysicsSimNode::computeCollision</referencedby>
+        <referencedby refid="classPhysicsSimNode_1a9f95f97957d32ae0ad6b5f81d399e8d7" compoundref="physics__simulator_8cpp" startline="339" endline="381">PhysicsSimNode::handleCollisions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcollisionResult_1a39fbed4c731ea28e2f1d36e0e676d2cd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool collisionResult::collided</definition>
+        <argsstring></argsstring>
+        <name>collided</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="57" column="10" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="structcollisionResult_1a1ccb11ebbbefd1ad45a3ae5549453d52" compoundref="collisionBox__class_8cpp" startline="96" endline="101">collisionResult</referencedby>
+        <referencedby refid="classPhysicsSimNode_1affcc31a3c56fb9d309244fb7b9e944af" compoundref="physics__simulator_8cpp" startline="391" endline="485">PhysicsSimNode::computeCollision</referencedby>
+        <referencedby refid="classPhysicsSimNode_1a9f95f97957d32ae0ad6b5f81d399e8d7" compoundref="physics__simulator_8cpp" startline="339" endline="381">PhysicsSimNode::handleCollisions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcollisionResult_1a436412ea808cb34c8bc4468038913ef8" prot="public" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d collisionResult::unitDirection</definition>
+        <argsstring></argsstring>
+        <name>unitDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="58" column="9" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="structcollisionResult_1a1ccb11ebbbefd1ad45a3ae5549453d52" compoundref="collisionBox__class_8cpp" startline="96" endline="101">collisionResult</referencedby>
+        <referencedby refid="classPhysicsSimNode_1affcc31a3c56fb9d309244fb7b9e944af" compoundref="physics__simulator_8cpp" startline="391" endline="485">PhysicsSimNode::computeCollision</referencedby>
+        <referencedby refid="classPhysicsSimNode_1a9f95f97957d32ae0ad6b5f81d399e8d7" compoundref="physics__simulator_8cpp" startline="339" endline="381">PhysicsSimNode::handleCollisions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcollisionResult_1ae60606e71f9fb13944847203b804b76e" prot="public" static="no" mutable="no">
+        <type><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref></type>
+        <definition>v3d collisionResult::collisionPoint</definition>
+        <argsstring></argsstring>
+        <name>collisionPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="59" column="9" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="structcollisionResult_1a1ccb11ebbbefd1ad45a3ae5549453d52" compoundref="collisionBox__class_8cpp" startline="96" endline="101">collisionResult</referencedby>
+        <referencedby refid="classPhysicsSimNode_1affcc31a3c56fb9d309244fb7b9e944af" compoundref="physics__simulator_8cpp" startline="391" endline="485">PhysicsSimNode::computeCollision</referencedby>
+        <referencedby refid="classPhysicsSimNode_1a9f95f97957d32ae0ad6b5f81d399e8d7" compoundref="physics__simulator_8cpp" startline="339" endline="381">PhysicsSimNode::handleCollisions</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structcollisionResult_1a1ccb11ebbbefd1ad45a3ae5549453d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>collisionResult::collisionResult</definition>
+        <argsstring>()</argsstring>
+        <name>collisionResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="60" column="5" bodyfile="src/collisionBox_class.cpp" bodystart="96" bodyend="101"/>
+        <references refid="structcollisionResult_1a39fbed4c731ea28e2f1d36e0e676d2cd" compoundref="collisionBox_8h" startline="57">collided</references>
+        <references refid="structcollisionResult_1ae60606e71f9fb13944847203b804b76e" compoundref="collisionBox_8h" startline="59">collisionPoint</references>
+        <references refid="structcollisionResult_1a618d958aa5082aeec0a5a8fc208d7ea1" compoundref="collisionBox_8h" startline="56">depth</references>
+        <references refid="structcollisionResult_1a436412ea808cb34c8bc4468038913ef8" compoundref="collisionBox_8h" startline="58">unitDirection</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>collisionResult</label>
+        <link refid="structcollisionResult"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_simulator/collisionBox.h" line="55" column="1" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="55" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structcollisionResult_1a39fbed4c731ea28e2f1d36e0e676d2cd" prot="public" virt="non-virtual"><scope>collisionResult</scope><name>collided</name></member>
+      <member refid="structcollisionResult_1ae60606e71f9fb13944847203b804b76e" prot="public" virt="non-virtual"><scope>collisionResult</scope><name>collisionPoint</name></member>
+      <member refid="structcollisionResult_1a1ccb11ebbbefd1ad45a3ae5549453d52" prot="public" virt="non-virtual"><scope>collisionResult</scope><name>collisionResult</name></member>
+      <member refid="structcollisionResult_1a618d958aa5082aeec0a5a8fc208d7ea1" prot="public" virt="non-virtual"><scope>collisionResult</scope><name>depth</name></member>
+      <member refid="structcollisionResult_1a436412ea808cb34c8bc4468038913ef8" prot="public" virt="non-virtual"><scope>collisionResult</scope><name>unitDirection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

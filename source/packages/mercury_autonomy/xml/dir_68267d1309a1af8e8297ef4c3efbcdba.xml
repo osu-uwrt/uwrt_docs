@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_38c6bc6e090adba43acb8f232409242c">src/bt_actions</innerdir>
+    <innerdir refid="dir_e828c6d872a24b3e6ad133d9647132e5">src/bt_conditions</innerdir>
+    <innerdir refid="dir_e59a54c8b0de33db05d9000b8e4fc286">src/bt_decorators</innerdir>
+    <innerfile refid="autonomy__util_8cpp">autonomy_util.cpp</innerfile>
+    <innerfile refid="mercury__bt__node_8cpp">mercury_bt_node.cpp</innerfile>
+    <innerfile refid="register__actions_8cpp">register_actions.cpp</innerfile>
+    <innerfile refid="register__conditions_8cpp">register_conditions.cpp</innerfile>
+    <innerfile refid="register__decorators_8cpp">register_decorators.cpp</innerfile>
+    <innerfile refid="tree__executor_8cpp">tree_executor.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

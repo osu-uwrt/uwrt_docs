@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmapping_1_1OutstandingDetectionInfo" kind="class" language="Python" prot="public">
+    <compoundname>mapping::OutstandingDetectionInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmapping_1_1OutstandingDetectionInfo_1ae6322a5140ea70ae323781e883346c92" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.OutstandingDetectionInfo::det_result</definition>
+        <argsstring></argsstring>
+        <name>det_result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="42" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1OutstandingDetectionInfo_1ad8cccc3b41f3e45f3914c333d209a922" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.OutstandingDetectionInfo::det_header</definition>
+        <argsstring></argsstring>
+        <name>det_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="43" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmapping_1_1OutstandingDetectionInfo_1a58f6954709ece7c667703637b793be0a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.OutstandingDetectionInfo::closest_object</definition>
+        <argsstring></argsstring>
+        <name>closest_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="44" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1MappingNode_1a82298363cf7950ce50e1557ad234d56b" compoundref="mapping_8py" startline="198" endline="246">mapping.MappingNode.vision_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmapping_1_1OutstandingDetectionInfo_1aede2e75e04677dd8cb270f0440a2ebbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.OutstandingDetectionInfo.__init__</definition>
+        <argsstring>(self, ObjectHypothesisWithPose det_result, Header det_header, str closest_object)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ObjectHypothesisWithPose</type>
+          <declname>det_result</declname>
+        </param>
+        <param>
+          <type>Header</type>
+          <declname>det_header</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>closest_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="41" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="41" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mapping.OutstandingDetectionInfo</label>
+        <link refid="classmapping_1_1OutstandingDetectionInfo"/>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_mapping/mapping.py" line="40" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="40" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classmapping_1_1OutstandingDetectionInfo_1aede2e75e04677dd8cb270f0440a2ebbe" prot="public" virt="non-virtual"><scope>mapping::OutstandingDetectionInfo</scope><name>__init__</name></member>
+      <member refid="classmapping_1_1OutstandingDetectionInfo_1a58f6954709ece7c667703637b793be0a" prot="public" virt="non-virtual"><scope>mapping::OutstandingDetectionInfo</scope><name>closest_object</name></member>
+      <member refid="classmapping_1_1OutstandingDetectionInfo_1ad8cccc3b41f3e45f3914c333d209a922" prot="public" virt="non-virtual"><scope>mapping::OutstandingDetectionInfo</scope><name>det_header</name></member>
+      <member refid="classmapping_1_1OutstandingDetectionInfo_1ae6322a5140ea70ae323781e883346c92" prot="public" virt="non-virtual"><scope>mapping::OutstandingDetectionInfo</scope><name>det_result</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1PublishToController" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::PublishToController</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="publish__to__controller_8hpp" local="no">publish_to_controller.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishToController_1aeb4bdc86db8172e14743022793ad4b60" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; mercury_msgs::msg::ControllerCommand &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;mercury_msgs::msg::ControllerCommand&gt;::SharedPtr mercury_autonomy::PublishToController::position_pub_</definition>
+        <argsstring></argsstring>
+        <name>position_pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="39" column="35" bodyfile="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishToController_1a0fccd8af8decdfc980a9cd37ba92b528" compoundref="publish__to__controller_8cpp" startline="19" endline="48">onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishToController_1a6d8962ab8e67dd357b9d07fe4d570c24" compoundref="publish__to__controller_8cpp" startline="12" endline="17">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishToController_1a7fc674cff54ee0b99e5bbfb3d9cfccd4" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; mercury_msgs::msg::ControllerCommand &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;mercury_msgs::msg::ControllerCommand&gt;::SharedPtr mercury_autonomy::PublishToController::orientation_pub_</definition>
+        <argsstring></argsstring>
+        <name>orientation_pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="40" column="35" bodyfile="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishToController_1a0fccd8af8decdfc980a9cd37ba92b528" compoundref="publish__to__controller_8cpp" startline="19" endline="48">onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishToController_1a6d8962ab8e67dd357b9d07fe4d570c24" compoundref="publish__to__controller_8cpp" startline="12" endline="17">rosInit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishToController_1aac872907ade28b1a8d8357b873624794" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::PublishToController::PublishToController</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>PublishToController</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="18" column="5" bodyfile="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" bodystart="18" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishToController_1a0fccd8af8decdfc980a9cd37ba92b528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::PublishToController::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="31" column="20" bodyfile="src/bt_actions/publish_to_controller.cpp" bodystart="19" bodyend="48"/>
+        <references refid="classmercury__autonomy_1_1PublishToController_1a7fc674cff54ee0b99e5bbfb3d9cfccd4" compoundref="publish__to__controller_8hpp" startline="40">orientation_pub_</references>
+        <references refid="classmercury__autonomy_1_1PublishToController_1aeb4bdc86db8172e14743022793ad4b60" compoundref="publish__to__controller_8hpp" startline="39">position_pub_</references>
+        <references refid="namespacemercury__autonomy_1af20362dbd9637713653dc7064b5403f5" compoundref="autonomy__util_8cpp" startline="77" endline="82">mercury_autonomy::toQuat</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishToController_1a028dd0b6a3ffa9faae9128179d302a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::PublishToController::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="32" column="20" bodyfile="src/bt_actions/publish_to_controller.cpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishToController_1a901778ab193c6e7138d624a724be1718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::PublishToController::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="33" column="10" bodyfile="src/bt_actions/publish_to_controller.cpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishToController_1acc1681855f716f2412a5203de597e01a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::PublishToController::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="21" column="26" bodyfile="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" bodystart="21" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishToController_1a6d8962ab8e67dd357b9d07fe4d570c24" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::PublishToController::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="36" column="10" bodyfile="src/bt_actions/publish_to_controller.cpp" bodystart="12" bodyend="17"/>
+        <references refid="classmercury__autonomy_1_1PublishToController_1a7fc674cff54ee0b99e5bbfb3d9cfccd4" compoundref="publish__to__controller_8hpp" startline="40">orientation_pub_</references>
+        <references refid="classmercury__autonomy_1_1PublishToController_1aeb4bdc86db8172e14743022793ad4b60" compoundref="publish__to__controller_8hpp" startline="39">position_pub_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_autonomy::PublishToController</label>
+        <link refid="classmercury__autonomy_1_1PublishToController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::PublishToController</label>
+        <link refid="classmercury__autonomy_1_1PublishToController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" line="16" column="1" bodyfile="include/mercury_autonomy/bt_actions/publish_to_controller.hpp" bodystart="16" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1a901778ab193c6e7138d624a724be1718" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1a028dd0b6a3ffa9faae9128179d302a97" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1a0fccd8af8decdfc980a9cd37ba92b528" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1a7fc674cff54ee0b99e5bbfb3d9cfccd4" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>orientation_pub_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1aeb4bdc86db8172e14743022793ad4b60" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>position_pub_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1acc1681855f716f2412a5203de597e01a" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1aac872907ade28b1a8d8357b873624794" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>PublishToController</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishToController_1a6d8962ab8e67dd357b9d07fe4d570c24" prot="protected" virt="virtual"><scope>mercury_autonomy::PublishToController</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishToController</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::PublishToController</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::PublishToController</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

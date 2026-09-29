@@ -1,0 +1,40 @@
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classmercury__hardware_1_1depth__converter_1_1depthConverter" kind="class"><name>mercury_hardware::depth_converter::depthConverter</name>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a16ae7a6a006296126aff475cd1925e8a" kind="variable"><name>sub</name></member>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a933848464d94201305ffd2a29a92ae59" kind="variable"><name>pub</name></member>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a5e9a8f59a958779047ab8c60cec9031e" kind="variable"><name>namespace</name></member>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1aef871fbab4f67883364cc667978b64f1" kind="variable"><name>tfBuffer</name></member>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a2069f4b14f01a3c937adef5c4b6c41b5" kind="variable"><name>listener</name></member>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a6ce85a992cb382477493bf8eca7df05b" kind="variable"><name>b2pVector</name></member>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a9b84afde40517216e43a55bda10843f5" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" kind="function"><name>depthCb</name></member>
+  </compound>
+  <compound refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher" kind="class"><name>mercury_hardware::tag_odom::TagOdomPublisher</name>
+    <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1ab6c60c962604c89b1da162deb376ac2c" kind="variable"><name>robotName</name></member>
+    <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1af36b8a4d7675b412a808277b27610ee1" kind="variable"><name>pub</name></member>
+    <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1ae086355e3f1709212542826a3b824507" kind="variable"><name>buffer</name></member>
+    <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a75978aa1bf498bf3a8f918bbb6c7f23c" kind="variable"><name>listener</name></member>
+    <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a10b4c9df313c28146d7cc5f9a0e9a52a" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a38871485fd849544923f624ba3694019" kind="function"><name>timerCb</name></member>
+  </compound>
+  <compound refid="namespacemercury__hardware" kind="namespace"><name>mercury_hardware</name>
+  </compound>
+  <compound refid="namespacemercury__hardware_1_1depth__converter" kind="namespace"><name>mercury_hardware::depth_converter</name>
+    <member refid="namespacemercury__hardware_1_1depth__converter_1afbaa302ada18caa5a69b58260a668a35" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacemercury__hardware_1_1tag__odom" kind="namespace"><name>mercury_hardware::tag_odom</name>
+    <member refid="namespacemercury__hardware_1_1tag__odom_1acfdf976f081cab15ebd689c3612e4996" kind="variable"><name>RATE_HZ</name></member>
+    <member refid="namespacemercury__hardware_1_1tag__odom_1a54d11b04082b833eaab27702376cf8fe" kind="variable"><name>VARIANCE</name></member>
+    <member refid="namespacemercury__hardware_1_1tag__odom_1a018d0aaae615bdaf9a0ee829053261ac" kind="variable"><name>TOPIC_NAME</name></member>
+    <member refid="namespacemercury__hardware_1_1tag__odom_1a78a46f6df58e60b23c10df5db92454b4" kind="function"><name>v3ToPoint</name></member>
+    <member refid="namespacemercury__hardware_1_1tag__odom_1a610b710f90e9b5ee2f21b2248a6040f2" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="depth__converter_8py" kind="file"><name>depth_converter.py</name>
+  </compound>
+  <compound refid="tag__odom_8py" kind="file"><name>tag_odom.py</name>
+  </compound>
+  <compound refid="dir_f85ce9a0faecaa3bbad7c612ef94c0d3" kind="dir"><name>mercury_hardware</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classcalibrate__thruster_1_1CalibrateThrusterAction" kind="class" language="Python" prot="public">
+    <compoundname>calibrate_thruster::CalibrateThrusterAction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="50" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a0e6cf543f5a3f7b1c3b15ec6317e2959" compoundref="calibrate__drag_8py" startline="86" endline="90">calibrate_drag.CalibrateDragNewActionServer.cancel_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" compoundref="calibrate__drag_8py" startline="163" endline="185">calibrate_drag.CalibrateDragNewActionServer.collect_data</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" compoundref="calibrate__drag_8py" startline="126" endline="161">calibrate_drag.CalibrateDragNewActionServer.execute_cb</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac279db84ab96d8c461667b29eb76e4f5" compoundref="calibrate__drag_8py" startline="78" endline="85">calibrate_drag.CalibrateDragNewActionServer.goal_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a46f957c31f09fcb1f816128e6c8e28ec" compoundref="calibrate__thruster_8py" startline="311" endline="318">calibrate_thruster.CalibrateThrusterAction.goal_callback</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a2f17d9a6289d50b1f07417bbd18a637f" compoundref="thruster__test__dshot_8py" startline="67" endline="74">thruster_test_dshot.ThrusterTestActionServer.goal_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" compoundref="calibrate__drag_8py" startline="187" endline="230">calibrate_drag.CalibrateDragNewActionServer.run_until_stable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa345f6ecb55c04fd95e3f4902d3d9470" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::collecting_data</definition>
+        <argsstring></argsstring>
+        <name>collecting_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="51" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" compoundref="calibrate__thruster_8py" startline="290" endline="306">calibrate_thruster.CalibrateThrusterAction.electrical_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a2f2cf491cf70000a355d05d54c22ac7b" compoundref="calibrate__thruster_8py" startline="285" endline="289">calibrate_thruster.CalibrateThrusterAction.force_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a80adad36b7cfdd08d4f7dd31cd1609d5" compoundref="calibrate__thruster_8py" startline="280" endline="284">calibrate_thruster.CalibrateThrusterAction.rpm_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a8430b9a8b5ea97f96835ced49792c0f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::triggered</definition>
+        <argsstring></argsstring>
+        <name>triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="52" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a37c3ed994223225c8e64ee604e6b70ab" compoundref="calibrate__thruster_8py" startline="276" endline="279">calibrate_thruster.CalibrateThrusterAction.trigger_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a18903fabc1f9755cff4c71af07d86ba2" compoundref="calibrate__thruster_8py" startline="252" endline="257">calibrate_thruster.CalibrateThrusterAction.wait_for_input</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a08911cb24ef5c1af6620273ea0e58bb8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::dshot</definition>
+        <argsstring></argsstring>
+        <name>dshot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="53" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a850afcc3d40b2b91402cf064abe6e53c" compoundref="calibrate__thruster_8py" startline="262" endline="275">calibrate_thruster.CalibrateThrusterAction.publish_dshot_command</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a4126214f02a97e426acdede6a5d4665b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::thruster_length</definition>
+        <argsstring></argsstring>
+        <name>thruster_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="54" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a850afcc3d40b2b91402cf064abe6e53c" compoundref="calibrate__thruster_8py" startline="262" endline="275">calibrate_thruster.CalibrateThrusterAction.publish_dshot_command</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa1766298ce70bdc5ac7ac543b9d97951" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::thruster_num</definition>
+        <argsstring></argsstring>
+        <name>thruster_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="55" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a850afcc3d40b2b91402cf064abe6e53c" compoundref="calibrate__thruster_8py" startline="262" endline="275">calibrate_thruster.CalibrateThrusterAction.publish_dshot_command</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a80adad36b7cfdd08d4f7dd31cd1609d5" compoundref="calibrate__thruster_8py" startline="280" endline="284">calibrate_thruster.CalibrateThrusterAction.rpm_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac0bf1aa7255fc7be9d9b924b1ef7a6cb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::idle_current</definition>
+        <argsstring></argsstring>
+        <name>idle_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="56" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" compoundref="calibrate__thruster_8py" startline="290" endline="306">calibrate_thruster.CalibrateThrusterAction.electrical_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a284dc76b6ed918784d1a7a99763375a5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::present_current</definition>
+        <argsstring></argsstring>
+        <name>present_current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="57" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" compoundref="calibrate__thruster_8py" startline="290" endline="306">calibrate_thruster.CalibrateThrusterAction.electrical_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a5339ba4957cf6e005f6cf63ba7359105" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::battery_serial</definition>
+        <argsstring></argsstring>
+        <name>battery_serial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="58" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" compoundref="calibrate__thruster_8py" startline="290" endline="306">calibrate_thruster.CalibrateThrusterAction.electrical_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1ab815000ec83e821b6f2b20324733d542" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::rpm</definition>
+        <argsstring></argsstring>
+        <name>rpm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="59" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a717b4cd8b1064616768026cc6f64d576" compoundref="calibrate__thruster_8py" startline="178" endline="200">calibrate_thruster.CalibrateThrusterAction.get_data</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a80adad36b7cfdd08d4f7dd31cd1609d5" compoundref="calibrate__thruster_8py" startline="280" endline="284">calibrate_thruster.CalibrateThrusterAction.rpm_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1af96f53483e03cc10d7ca2e589d3c8795" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::force</definition>
+        <argsstring></argsstring>
+        <name>force</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="60" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a2f2cf491cf70000a355d05d54c22ac7b" compoundref="calibrate__thruster_8py" startline="285" endline="289">calibrate_thruster.CalibrateThrusterAction.force_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa696269dd16f2e5326562333054ac6d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="61" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a9114a765aa2ac2c8968e683a4ab0172e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::dshot_pub</definition>
+        <argsstring></argsstring>
+        <name>dshot_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="64" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a850afcc3d40b2b91402cf064abe6e53c" compoundref="calibrate__thruster_8py" startline="262" endline="275">calibrate_thruster.CalibrateThrusterAction.publish_dshot_command</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a72b5f50b4458597c4174436c674c14ed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::trigger_sub</definition>
+        <argsstring></argsstring>
+        <name>trigger_sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="66" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a1b20da4a63e0aad627c365fdfb35601a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::thruster_rpm_sub</definition>
+        <argsstring></argsstring>
+        <name>thruster_rpm_sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="68" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a75f0d3967fae9f8134b5818c829a1d95" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::thruster_force_sub</definition>
+        <argsstring></argsstring>
+        <name>thruster_force_sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="70" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a9e58f6b6a07da0ed4d9aa4eb72e23cd1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::electrical_sub</definition>
+        <argsstring></argsstring>
+        <name>electrical_sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="72" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a5c97daf3a5f58ceee26ca89c492b7532" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="86" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a07cff56b1ba56a958a3665bde1d1d76e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="184" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="184" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" compoundref="calibrate__thruster_8py" startline="290" endline="306">calibrate_thruster.CalibrateThrusterAction.electrical_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a0ac85b9328558ff93f7f6591a2284a68" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::voltage</definition>
+        <argsstring></argsstring>
+        <name>voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="185" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="185" bodyend="-1"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" compoundref="calibrate__thruster_8py" startline="290" endline="306">calibrate_thruster.CalibrateThrusterAction.electrical_callback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a7c040496bda0368a09208426db0a14ae" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>calibrate_thruster.CalibrateThrusterAction::_action_server</definition>
+        <argsstring></argsstring>
+        <name>_action_server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="76" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a1ca38436b272ab3afe47176e3a1f6d8c" compoundref="calibrate__drag_8py" startline="74" endline="77">calibrate_drag.CalibrateDragNewActionServer.destroy</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a501aaba996f219c4aa102b7d8fa4f220" compoundref="calibrate__thruster_8py" startline="322" endline="326">calibrate_thruster.CalibrateThrusterAction.destroy</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0d55cd2d5af7a43c7146f76c43134d5d" compoundref="thruster__test__dshot_8py" startline="63" endline="66">thruster_test_dshot.ThrusterTestActionServer.destroy</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a8ec617a1ea4f78084ae3059652fb8ac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="45" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="45" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.collect_data_callback</definition>
+        <argsstring>(self, goal_handle)</argsstring>
+        <name>collect_data_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal_handle</type>
+          <defname>goal_handle</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="89" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="89" bodyend="177"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a08911cb24ef5c1af6620273ea0e58bb8" compoundref="calibrate__thruster_8py" startline="53">calibrate_thruster.CalibrateThrusterAction.dshot</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a717b4cd8b1064616768026cc6f64d576" compoundref="calibrate__thruster_8py" startline="178" endline="200">calibrate_thruster.CalibrateThrusterAction.get_data</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac0bf1aa7255fc7be9d9b924b1ef7a6cb" compoundref="calibrate__thruster_8py" startline="56">calibrate_thruster.CalibrateThrusterAction.idle_current</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a284dc76b6ed918784d1a7a99763375a5" compoundref="calibrate__thruster_8py" startline="57">calibrate_thruster.CalibrateThrusterAction.present_current</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a850afcc3d40b2b91402cf064abe6e53c" compoundref="calibrate__thruster_8py" startline="262" endline="275">calibrate_thruster.CalibrateThrusterAction.publish_dshot_command</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a10c79828df08777c9b253f7fae569239" compoundref="calibrate__thruster_8py" startline="201" endline="221">calibrate_thruster.CalibrateThrusterAction.save_data</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa1766298ce70bdc5ac7ac543b9d97951" compoundref="calibrate__thruster_8py" startline="55">calibrate_thruster.CalibrateThrusterAction.thruster_num</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a18903fabc1f9755cff4c71af07d86ba2" compoundref="calibrate__thruster_8py" startline="252" endline="257">calibrate_thruster.CalibrateThrusterAction.wait_for_input</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a717b4cd8b1064616768026cc6f64d576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.get_data</definition>
+        <argsstring>(self, N_samples)</argsstring>
+        <name>get_data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>N_samples</type>
+          <defname>N_samples</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="178" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="178" bodyend="200"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ab815000ec83e821b6f2b20324733d542" compoundref="calibrate__thruster_8py" startline="59">calibrate_thruster.CalibrateThrusterAction.rpm</references>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a10c79828df08777c9b253f7fae569239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str calibrate_thruster.CalibrateThrusterAction.save_data</definition>
+        <argsstring>(self, data)</argsstring>
+        <name>save_data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="201" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="201" bodyend="221"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a405ba8b3cb7cde4e54c1da459fada08e" compoundref="calibrate__thruster_8py" startline="222" endline="237">calibrate_thruster.CalibrateThrusterAction.create_filename</references>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a405ba8b3cb7cde4e54c1da459fada08e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str calibrate_thruster.CalibrateThrusterAction.create_filename</definition>
+        <argsstring>(self)</argsstring>
+        <name>create_filename</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="222" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="222" bodyend="237"/>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a10c79828df08777c9b253f7fae569239" compoundref="calibrate__thruster_8py" startline="201" endline="221">calibrate_thruster.CalibrateThrusterAction.save_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1abd7cbf5e75efff1e912796bf7de47dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int calibrate_thruster.CalibrateThrusterAction.get_thruster_length</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_thruster_length</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="238" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="238" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a18903fabc1f9755cff4c71af07d86ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.wait_for_input</definition>
+        <argsstring>(self)</argsstring>
+        <name>wait_for_input</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="252" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="252" bodyend="257"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a8430b9a8b5ea97f96835ced49792c0f7" compoundref="calibrate__thruster_8py" startline="52">calibrate_thruster.CalibrateThrusterAction.triggered</references>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a850afcc3d40b2b91402cf064abe6e53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.publish_dshot_command</definition>
+        <argsstring>(self)</argsstring>
+        <name>publish_dshot_command</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Callback and timer functions #. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="262" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="262" bodyend="275"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a08911cb24ef5c1af6620273ea0e58bb8" compoundref="calibrate__thruster_8py" startline="53">calibrate_thruster.CalibrateThrusterAction.dshot</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a9114a765aa2ac2c8968e683a4ab0172e" compoundref="calibrate__thruster_8py" startline="64">calibrate_thruster.CalibrateThrusterAction.dshot_pub</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a4126214f02a97e426acdede6a5d4665b" compoundref="calibrate__thruster_8py" startline="54">calibrate_thruster.CalibrateThrusterAction.thruster_length</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa1766298ce70bdc5ac7ac543b9d97951" compoundref="calibrate__thruster_8py" startline="55">calibrate_thruster.CalibrateThrusterAction.thruster_num</references>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a37c3ed994223225c8e64ee604e6b70ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.trigger_callback</definition>
+        <argsstring>(self, Empty msg)</argsstring>
+        <name>trigger_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Empty</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="276" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="276" bodyend="279"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a8430b9a8b5ea97f96835ced49792c0f7" compoundref="calibrate__thruster_8py" startline="52">calibrate_thruster.CalibrateThrusterAction.triggered</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a80adad36b7cfdd08d4f7dd31cd1609d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.rpm_callback</definition>
+        <argsstring>(self, DshotRPMFeedback msg)</argsstring>
+        <name>rpm_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>DshotRPMFeedback</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="280" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="280" bodyend="284"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa345f6ecb55c04fd95e3f4902d3d9470" compoundref="calibrate__thruster_8py" startline="51">calibrate_thruster.CalibrateThrusterAction.collecting_data</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ab815000ec83e821b6f2b20324733d542" compoundref="calibrate__thruster_8py" startline="59">calibrate_thruster.CalibrateThrusterAction.rpm</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa1766298ce70bdc5ac7ac543b9d97951" compoundref="calibrate__thruster_8py" startline="55">calibrate_thruster.CalibrateThrusterAction.thruster_num</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a2f2cf491cf70000a355d05d54c22ac7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.force_callback</definition>
+        <argsstring>(self, Float32 msg)</argsstring>
+        <name>force_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Float32</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="285" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="285" bodyend="289"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa345f6ecb55c04fd95e3f4902d3d9470" compoundref="calibrate__thruster_8py" startline="51">calibrate_thruster.CalibrateThrusterAction.collecting_data</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1af96f53483e03cc10d7ca2e589d3c8795" compoundref="calibrate__thruster_8py" startline="60">calibrate_thruster.CalibrateThrusterAction.force</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.electrical_callback</definition>
+        <argsstring>(self, BatteryStatus msg)</argsstring>
+        <name>electrical_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>BatteryStatus</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="290" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="290" bodyend="306"/>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a5339ba4957cf6e005f6cf63ba7359105" compoundref="calibrate__thruster_8py" startline="58">calibrate_thruster.CalibrateThrusterAction.battery_serial</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa345f6ecb55c04fd95e3f4902d3d9470" compoundref="calibrate__thruster_8py" startline="51">calibrate_thruster.CalibrateThrusterAction.collecting_data</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a07cff56b1ba56a958a3665bde1d1d76e" compoundref="calibrate__thruster_8py" startline="184">calibrate_thruster.CalibrateThrusterAction.current</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac0bf1aa7255fc7be9d9b924b1ef7a6cb" compoundref="calibrate__thruster_8py" startline="56">calibrate_thruster.CalibrateThrusterAction.idle_current</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a284dc76b6ed918784d1a7a99763375a5" compoundref="calibrate__thruster_8py" startline="57">calibrate_thruster.CalibrateThrusterAction.present_current</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a0ac85b9328558ff93f7f6591a2284a68" compoundref="calibrate__thruster_8py" startline="185">calibrate_thruster.CalibrateThrusterAction.voltage</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a46f957c31f09fcb1f816128e6c8e28ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.goal_callback</definition>
+        <argsstring>(self, goal_request)</argsstring>
+        <name>goal_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal_request</type>
+          <defname>goal_request</defname>
+        </param>
+        <briefdescription>
+<para>Boiler plate action functions #. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="311" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="311" bodyend="318"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac6937a1102dedf70c4daa92b6508a2de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.cancel_callback</definition>
+        <argsstring>(self, goal)</argsstring>
+        <name>cancel_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal</type>
+          <defname>goal</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="319" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="319" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classcalibrate__thruster_1_1CalibrateThrusterAction_1a501aaba996f219c4aa102b7d8fa4f220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_thruster.CalibrateThrusterAction.destroy</definition>
+        <argsstring>(self)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_thruster.py" line="322" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="322" bodyend="326"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad42c7af576e5f142d9fc9c169cab0ff8" compoundref="calibrate__drag_8py" startline="65">calibrate_drag.CalibrateDragNewActionServer._action_server</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a7c040496bda0368a09208426db0a14ae" compoundref="calibrate__thruster_8py" startline="76">calibrate_thruster.CalibrateThrusterAction._action_server</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aff3995cfeb94a0d5cbc6653639a3a130" compoundref="thruster__test__dshot_8py" startline="51">thruster_test_dshot.ThrusterTestActionServer._action_server</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>calibrate_thruster.CalibrateThrusterAction</label>
+        <link refid="classcalibrate__thruster_1_1CalibrateThrusterAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>calibrate_thruster.CalibrateThrusterAction</label>
+        <link refid="classcalibrate__thruster_1_1CalibrateThrusterAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_controller/calibrate_thruster.py" line="43" column="1" bodyfile="mercury_controller/calibrate_thruster.py" bodystart="43" bodyend="327"/>
+    <listofallmembers>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a8ec617a1ea4f78084ae3059652fb8ac7" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>__init__</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a7c040496bda0368a09208426db0a14ae" prot="private" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>_action_server</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a5339ba4957cf6e005f6cf63ba7359105" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>battery_serial</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac6937a1102dedf70c4daa92b6508a2de" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>cancel_callback</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>collect_data_callback</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa345f6ecb55c04fd95e3f4902d3d9470" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>collecting_data</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a405ba8b3cb7cde4e54c1da459fada08e" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>create_filename</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a07cff56b1ba56a958a3665bde1d1d76e" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>current</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a501aaba996f219c4aa102b7d8fa4f220" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>destroy</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a08911cb24ef5c1af6620273ea0e58bb8" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>dshot</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a9114a765aa2ac2c8968e683a4ab0172e" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>dshot_pub</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac47d3af5bd67ebf47b6e19230d76cdd7" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>electrical_callback</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a9e58f6b6a07da0ed4d9aa4eb72e23cd1" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>electrical_sub</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1af96f53483e03cc10d7ca2e589d3c8795" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>force</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a2f2cf491cf70000a355d05d54c22ac7b" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>force_callback</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a717b4cd8b1064616768026cc6f64d576" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>get_data</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1abd7cbf5e75efff1e912796bf7de47dd4" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>get_thruster_length</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a46f957c31f09fcb1f816128e6c8e28ec" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>goal_callback</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ac0bf1aa7255fc7be9d9b924b1ef7a6cb" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>idle_current</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa696269dd16f2e5326562333054ac6d3" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>power</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a284dc76b6ed918784d1a7a99763375a5" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>present_current</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a850afcc3d40b2b91402cf064abe6e53c" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>publish_dshot_command</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1ab815000ec83e821b6f2b20324733d542" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>rpm</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a80adad36b7cfdd08d4f7dd31cd1609d5" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>rpm_callback</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>running</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a10c79828df08777c9b253f7fae569239" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>save_data</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a75f0d3967fae9f8134b5818c829a1d95" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>thruster_force_sub</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a4126214f02a97e426acdede6a5d4665b" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>thruster_length</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1aa1766298ce70bdc5ac7ac543b9d97951" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>thruster_num</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a1b20da4a63e0aad627c365fdfb35601a" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>thruster_rpm_sub</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a5c97daf3a5f58ceee26ca89c492b7532" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>timer</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a37c3ed994223225c8e64ee604e6b70ab" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>trigger_callback</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a72b5f50b4458597c4174436c674c14ed" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>trigger_sub</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a8430b9a8b5ea97f96835ced49792c0f7" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>triggered</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a0ac85b9328558ff93f7f6591a2284a68" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>voltage</name></member>
+      <member refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a18903fabc1f9755cff4c71af07d86ba2" prot="public" virt="non-virtual"><scope>calibrate_thruster::CalibrateThrusterAction</scope><name>wait_for_input</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

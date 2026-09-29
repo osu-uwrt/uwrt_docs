@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="overlay__utils_8hpp" kind="file" language="C++">
     <compoundname>overlay_utils.hpp</compoundname>
     <includes local="no">OgreHardwarePixelBuffer.h</includes>
@@ -16,7 +16,51 @@
     <includes local="no">QImage</includes>
     <includes local="no">memory</includes>
     <includes local="no">string</includes>
+    <includedby refid="OverlayDisplay_8hpp" local="yes">include/mercury_rviz/OverlayDisplay.hpp</includedby>
+    <includedby refid="overlay__utils_8cpp" local="yes">src/overlay_utils.cpp</includedby>
     <incdepgraph>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>Overlay/OgreOverlayManager.h</label>
+      </node>
+      <node id="11">
+        <label>Overlay/OgrePanelOverlayElement.h</label>
+      </node>
+      <node id="13">
+        <label>QImage</label>
+      </node>
+      <node id="8">
+        <label>Overlay/OgreOverlayContainer.h</label>
+      </node>
+      <node id="5">
+        <label>OgreTexture.h</label>
+      </node>
+      <node id="12">
+        <label>QColor</label>
+      </node>
+      <node id="7">
+        <label>Overlay/OgreOverlay.h</label>
+      </node>
+      <node id="3">
+        <label>OgreMaterialManager.h</label>
+      </node>
+      <node id="9">
+        <label>Overlay/OgreOverlayElement.h</label>
+      </node>
+      <node id="4">
+        <label>OgreTechnique.h</label>
+      </node>
+      <node id="6">
+        <label>OgreTextureManager.h</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="2">
+        <label>OgreHardwarePixelBuffer.h</label>
+      </node>
       <node id="1">
         <label>include/mercury_rviz/overlay_utils.hpp</label>
         <link refid="overlay__utils_8hpp"/>
@@ -49,52 +93,46 @@
         <childnode refid="15" relation="include">
         </childnode>
       </node>
+    </incdepgraph>
+    <invincdepgraph>
       <node id="2">
-        <label>OgreHardwarePixelBuffer.h</label>
+        <label>include/mercury_rviz/OverlayDisplay.hpp</label>
+        <link refid="OverlayDisplay_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="3">
-        <label>OgreMaterialManager.h</label>
-      </node>
-      <node id="4">
-        <label>OgreTechnique.h</label>
+        <label>include/mercury_rviz/DiagnosticOverlay.hpp</label>
+        <link refid="DiagnosticOverlay_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="5">
-        <label>OgreTexture.h</label>
+        <label>src/OverlayDisplay.cpp</label>
+        <link refid="OverlayDisplay_8cpp"/>
       </node>
       <node id="6">
-        <label>OgreTextureManager.h</label>
+        <label>src/overlay_utils.cpp</label>
+        <link refid="overlay__utils_8cpp"/>
       </node>
-      <node id="7">
-        <label>Overlay/OgreOverlay.h</label>
+      <node id="4">
+        <label>src/DiagnosticOverlay.cpp</label>
+        <link refid="DiagnosticOverlay_8cpp"/>
       </node>
-      <node id="8">
-        <label>Overlay/OgreOverlayContainer.h</label>
+      <node id="1">
+        <label>include/mercury_rviz/overlay_utils.hpp</label>
+        <link refid="overlay__utils_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
-      <node id="9">
-        <label>Overlay/OgreOverlayElement.h</label>
-      </node>
-      <node id="10">
-        <label>Overlay/OgreOverlayManager.h</label>
-      </node>
-      <node id="11">
-        <label>Overlay/OgrePanelOverlayElement.h</label>
-      </node>
-      <node id="12">
-        <label>QColor</label>
-      </node>
-      <node id="13">
-        <label>QImage</label>
-      </node>
-      <node id="14">
-        <label>memory</label>
-      </node>
-      <node id="15">
-        <label>string</label>
-      </node>
-    </incdepgraph>
-    <innerclass refid="classriptide__rviz_1_1ScopedPixelBuffer" prot="public">riptide_rviz::ScopedPixelBuffer</innerclass>
-    <innerclass refid="classriptide__rviz_1_1OverlayObject" prot="public">riptide_rviz::OverlayObject</innerclass>
-    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    </invincdepgraph>
+    <innerclass refid="classmercury__rviz_1_1ScopedPixelBuffer" prot="public">mercury_rviz::ScopedPixelBuffer</innerclass>
+    <innerclass refid="classmercury__rviz_1_1OverlayObject" prot="public">mercury_rviz::OverlayObject</innerclass>
+    <innernamespace refid="namespacemercury__rviz">mercury_rviz</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -148,77 +186,69 @@
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Overlay/OgreOverlayElement.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Overlay/OgreOverlayManager.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Overlay/OgrePanelOverlayElement.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QColor&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref><sp/>{</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QColor&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QImage&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemercury__rviz" kindref="compound">mercury_rviz</ref><sp/>{</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57" refid="classriptide__rviz_1_1ScopedPixelBuffer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a20079badc6961857788a91fb5cf1d079" kindref="member">ScopedPixelBuffer</ref><sp/>{</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a20079badc6961857788a91fb5cf1d079" kindref="member">ScopedPixelBuffer</ref>(Ogre::HardwarePixelBufferSharedPtr<sp/>pixel_buffer);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2bb5ff3cc269cc56647416fdb0ed7429" kindref="member">~ScopedPixelBuffer</ref>();</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Ogre::HardwarePixelBufferSharedPtr<sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a35ff8fd54134610f5553c090b76c6c4d" kindref="member">getPixelBuffer</ref>();</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" kindref="member">getQImage</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" kindref="member">getQImage</ref>(<ref refid="classriptide__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref><sp/>&amp;overlay);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" kindref="member">getQImage</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>QColor<sp/>&amp;bg_color);</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a2219257506d62f97700041371b10f569" kindref="member">getQImage</ref>(<ref refid="classriptide__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref><sp/>&amp;overlay,<sp/>QColor<sp/>&amp;bg_color);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="68" refid="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ogre::HardwarePixelBufferSharedPtr<sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer_1a80badadf67f406034fe0660ea84f338c" kindref="member">pixel_buffer_</ref>;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/>uint8<sp/>LEFT<sp/>=<sp/>0</highlight></codeline>
-<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/>uint8<sp/>RIGHT<sp/>=<sp/>1</highlight></codeline>
-<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>uint8<sp/>CENTER<sp/>=<sp/>2</highlight></codeline>
-<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/>uint8<sp/>TOP<sp/>=<sp/>3</highlight></codeline>
-<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/>uint8<sp/>BOTTOM<sp/>=<sp/>4</highlight></codeline>
-<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">OverlayObject;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classmercury__rviz_1_1ScopedPixelBuffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmercury__rviz_1_1ScopedPixelBuffer" kindref="compound">ScopedPixelBuffer</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1adab3fdc111aaa7c62734c6f83d6c6239" kindref="member">ScopedPixelBuffer</ref>(Ogre::HardwarePixelBufferSharedPtr<sp/>pixel_buffer);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1a94c24063a14e6f233355f3abd7eca3bc" kindref="member">~ScopedPixelBuffer</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>Ogre::HardwarePixelBufferSharedPtr<sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1acb79bfc8ecd2a73a4d3c46860a23a29c" kindref="member">getPixelBuffer</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1a22e1d882ae63513920ce627b1aa9fb12" kindref="member">getQImage</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1a22e1d882ae63513920ce627b1aa9fb12" kindref="member">getQImage</ref>(<ref refid="classmercury__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref><sp/>&amp;<sp/>overlay);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1a22e1d882ae63513920ce627b1aa9fb12" kindref="member">getQImage</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>QColor<sp/>&amp;<sp/>bg_color);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QImage<sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1a22e1d882ae63513920ce627b1aa9fb12" kindref="member">getQImage</ref>(<ref refid="classmercury__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref><sp/>&amp;<sp/>overlay,<sp/>QColor<sp/>&amp;<sp/>bg_color);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70" refid="classmercury__rviz_1_1ScopedPixelBuffer_1a79679108c12c1b88401dcc85998f3f65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ogre::HardwarePixelBufferSharedPtr<sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer_1a79679108c12c1b88401dcc85998f3f65" kindref="member">pixel_buffer_</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526ee" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526ee" kindref="member">VerticalAlignment</ref><sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eeac397289ee45877be0cd49811fe245b4e" kindref="member">CENTER</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eea6705777b712ee811e76fb07162081d63" kindref="member">TOP</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eea1fabf63de5c96c78e2a40805bcdeb73b" kindref="member">BOTTOM</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79" refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966c" kindref="member">VerticalAlignment</ref><sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
-<codeline lineno="80" refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966cac397289ee45877be0cd49811fe245b4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966cac397289ee45877be0cd49811fe245b4e" kindref="member">CENTER</ref><sp/>=<sp/>2,</highlight></codeline>
-<codeline lineno="81" refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966ca6705777b712ee811e76fb07162081d63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966ca6705777b712ee811e76fb07162081d63" kindref="member">TOP</ref><sp/>=<sp/>3,</highlight></codeline>
-<codeline lineno="82" refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966ca1fabf63de5c96c78e2a40805bcdeb73b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966ca1fabf63de5c96c78e2a40805bcdeb73b" kindref="member">BOTTOM</ref><sp/>=<sp/>4,</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232e" kindref="member">HorizontalAlignment</ref><sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
-<codeline lineno="86" refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232ea684d325a7303f52e64011467ff5c5758" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232ea684d325a7303f52e64011467ff5c5758" kindref="member">LEFT</ref><sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="87" refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232ea21507b40c80068eda19865706fdc2403" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232ea21507b40c80068eda19865706fdc2403" kindref="member">RIGHT</ref><sp/>=<sp/>1,</highlight></codeline>
-<codeline lineno="88" refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232eac397289ee45877be0cd49811fe245b4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966cac397289ee45877be0cd49811fe245b4e" kindref="member">CENTER</ref><sp/>=<sp/>2</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="79" refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38" kindref="member">HorizontalAlignment</ref><sp/>:<sp/>uint8_t<sp/>{<sp/><ref refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38a684d325a7303f52e64011467ff5c5758" kindref="member">LEFT</ref><sp/>=<sp/>0,<sp/><ref refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38a21507b40c80068eda19865706fdc2403" kindref="member">RIGHT</ref><sp/>=<sp/>1,<sp/><ref refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38ac397289ee45877be0cd49811fe245b4e" kindref="member">CENTER</ref><sp/>=<sp/>2<sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classmercury__rviz_1_1OverlayObject" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmercury__rviz_1_1OverlayObject" kindref="compound">OverlayObject</ref><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89" refid="classmercury__rviz_1_1OverlayObject_1a27bc0986981154a7d619bb1b5e11c0b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a27bc0986981154a7d619bb1b5e11c0b1" kindref="member">SharedPtr</ref><sp/>=<sp/>std::shared_ptr&lt;OverlayObject&gt;;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97" refid="classriptide__rviz_1_1OverlayObject" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1OverlayObject_1ae416b8bbf0ceb3f375692ab532a37eb8" kindref="member">OverlayObject</ref><sp/>{</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="99" refid="classriptide__rviz_1_1OverlayObject_1ac5ed893b3416917220d93a49726c1435" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1OverlayObject_1ac5ed893b3416917220d93a49726c1435" kindref="member">SharedPtr</ref><sp/>=<sp/>std::shared_ptr&lt;OverlayObject&gt;;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1ae416b8bbf0ceb3f375692ab532a37eb8" kindref="member">OverlayObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name);</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a59e626d93618124746960016f4eaa826" kindref="member">~OverlayObject</ref>();</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1OverlayObject_1affa7d61e65585e2926c270d1e3f67148" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a18f19830f0d2db136bd86a77d4822fa8" kindref="member">hide</ref>();</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a768f02850d669804a7a176658a195b18" kindref="member">show</ref>();</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1af608bb8a1aba88616f7e5eee0cc4b9a6" kindref="member">isTextureReady</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a5c4a77d363a1489413daf8d3676e8b18" kindref="member">updateTextureSize</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1ScopedPixelBuffer" kindref="compound">ScopedPixelBuffer</ref><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a7c3539e64be14c87707d8de6ab708623" kindref="member">getBuffer</ref>();</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a8997839b6600069476d5322cfc3f9e62" kindref="member">setPosition</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hor_dist,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ver_dist,</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232e" kindref="member">HorizontalAlignment</ref><sp/>hor_alignment<sp/>=<sp/><ref refid="namespaceriptide__rviz_1a33284c42b2f6959cf67b9251a681232ea684d325a7303f52e64011467ff5c5758" kindref="member">HorizontalAlignment::LEFT</ref>,</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966c" kindref="member">VerticalAlignment</ref><sp/>ver_alignment<sp/>=<sp/><ref refid="namespaceriptide__rviz_1a6469b2f2fe21690d7ca5976c921c966ca6705777b712ee811e76fb07162081d63" kindref="member">VerticalAlignment::TOP</ref>);</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a9df7656619a3259806d2541f6c8b978b" kindref="member">setDimensions</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a89e2345c13722f4d7009989c5b28f5aa" kindref="member">isVisible</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1aa0c3fc241c102a67e7c9b764fe653f60" kindref="member">getTextureWidth</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a4cc55b896ffaf01cec44d9f8f878cb8c" kindref="member">getTextureHeight</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="119" refid="classriptide__rviz_1_1OverlayObject_1a50cf9fa8f0fbcf6a9d897f7312732492" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a50cf9fa8f0fbcf6a9d897f7312732492" kindref="member">name_</ref>;</highlight></codeline>
-<codeline lineno="120" refid="classriptide__rviz_1_1OverlayObject_1a2e1f6b51d6f7c6535e626ce45b27e755" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ogre::Overlay<sp/>*<ref refid="classriptide__rviz_1_1OverlayObject_1a2e1f6b51d6f7c6535e626ce45b27e755" kindref="member">overlay_</ref>;</highlight></codeline>
-<codeline lineno="121" refid="classriptide__rviz_1_1OverlayObject_1a70e47a825db12e216ebd994d7e3d44a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ogre::PanelOverlayElement<sp/>*<ref refid="classriptide__rviz_1_1OverlayObject_1a70e47a825db12e216ebd994d7e3d44a1" kindref="member">panel_</ref>;</highlight></codeline>
-<codeline lineno="122" refid="classriptide__rviz_1_1OverlayObject_1acafbfbeb7b2a6790ed70e85e0180a70e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ogre::MaterialPtr<sp/><ref refid="classriptide__rviz_1_1OverlayObject_1acafbfbeb7b2a6790ed70e85e0180a70e" kindref="member">panel_material_</ref>;</highlight></codeline>
-<codeline lineno="123" refid="classriptide__rviz_1_1OverlayObject_1a11af552139b198c9e0ec6c87c093859d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ogre::TexturePtr<sp/><ref refid="classriptide__rviz_1_1OverlayObject_1a11af552139b198c9e0ec6c87c093859d" kindref="member">texture_</ref>;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="125"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rviz_2d_overlay_plugins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1aee862d22cf8b8b43a7809ea45a5c3e57" kindref="member">OverlayObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>name);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a8eb4c85645b5ae812f9bc3e06161b5db" kindref="member">~OverlayObject</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a1254998f5e84328f64eee23fa7758a7c" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1aafa1b6a607aa70d0902fdccc823e02e2" kindref="member">hide</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a7589a00345fb7a3f6d5a24f9266d6c0e" kindref="member">show</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a20963ef0e78ebfe9f5f9b9ab83adc964" kindref="member">isTextureReady</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1ada9dec72eb746c92d1bff22bc0c80ea6" kindref="member">updateTextureSize</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1ScopedPixelBuffer" kindref="compound">ScopedPixelBuffer</ref><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1ae832b5176ebea892e99c6aa1f76d971f" kindref="member">getBuffer</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1aa7fb577614fd1d416632f11907fdb1e7" kindref="member">setPosition</ref>(</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hor_dist,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ver_dist,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38" kindref="member">HorizontalAlignment</ref><sp/>hor_alignment<sp/>=<sp/><ref refid="namespacemercury__rviz_1a5a41219ada98382428c718e55b96fb38a684d325a7303f52e64011467ff5c5758" kindref="member">HorizontalAlignment::LEFT</ref>,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526ee" kindref="member">VerticalAlignment</ref><sp/>ver_alignment<sp/>=<sp/><ref refid="namespacemercury__rviz_1ae654cb3191b3f0b9f082a10e536526eea6705777b712ee811e76fb07162081d63" kindref="member">VerticalAlignment::TOP</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a53e9ab26c1a9463bb97e3d85de28a5f3" kindref="member">setDimensions</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1ae065f1c76589873d265ecd67b2028b5b" kindref="member">isVisible</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a21591a40bb7d0b0977deca1405e61c04" kindref="member">getTextureWidth</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1OverlayObject_1ad7ac9aec7f27c488c0919196f231539e" kindref="member">getTextureHeight</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110" refid="classmercury__rviz_1_1OverlayObject_1ab5dfcbd90807b038f5c7581d46a2c4a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classmercury__rviz_1_1OverlayObject_1ab5dfcbd90807b038f5c7581d46a2c4a2" kindref="member">name_</ref>;</highlight></codeline>
+<codeline lineno="111" refid="classmercury__rviz_1_1OverlayObject_1aee543d339fb025f2fbde60f991d5e5c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ogre::Overlay<sp/>*<sp/><ref refid="classmercury__rviz_1_1OverlayObject_1aee543d339fb025f2fbde60f991d5e5c3" kindref="member">overlay_</ref>;</highlight></codeline>
+<codeline lineno="112" refid="classmercury__rviz_1_1OverlayObject_1a4d35e686d5d4ca4ce5bd93a9d5784837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ogre::PanelOverlayElement<sp/>*<sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a4d35e686d5d4ca4ce5bd93a9d5784837" kindref="member">panel_</ref>;</highlight></codeline>
+<codeline lineno="113" refid="classmercury__rviz_1_1OverlayObject_1a7611de97a525b1aa68120880b3dc3fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ogre::MaterialPtr<sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a7611de97a525b1aa68120880b3dc3fcc" kindref="member">panel_material_</ref>;</highlight></codeline>
+<codeline lineno="114" refid="classmercury__rviz_1_1OverlayObject_1a39f7a37db4ce2e9bfd509e5ad65bbdaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ogre::TexturePtr<sp/><ref refid="classmercury__rviz_1_1OverlayObject_1a39f7a37db4ce2e9bfd509e5ad65bbdaf" kindref="member">texture_</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mercury_rviz</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/mercury_rviz/overlay_utils.hpp"/>
   </compounddef>

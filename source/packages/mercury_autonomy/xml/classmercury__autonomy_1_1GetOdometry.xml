@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1GetOdometry" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::GetOdometry</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="get__odometry_8hpp" local="no">get_odometry.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetOdometry_1a80ff88ca2b69206c720edafc06aecb5b" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;nav_msgs::msg::Odometry&gt;::SharedPtr mercury_autonomy::GetOdometry::sub_</definition>
+        <argsstring></argsstring>
+        <name>sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="41" column="38" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a4d3780ad0ab0afb2939566493e500c07" compoundref="get__odometry_8cpp" startline="57" endline="60">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" compoundref="get__odometry_8cpp" startline="32" endline="55">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" compoundref="get__odometry_8cpp" startline="11" endline="30">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetOdometry_1aad56a96a84d3d63a810b4bec0d3bde26" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::GetOdometry::msg_received_</definition>
+        <argsstring></argsstring>
+        <name>msg_received_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="42" column="10" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a4d3780ad0ab0afb2939566493e500c07" compoundref="get__odometry_8cpp" startline="57" endline="60">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" compoundref="get__odometry_8cpp" startline="32" endline="55">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" compoundref="get__odometry_8cpp" startline="11" endline="30">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetOdometry_1a240eaf1dab13e3053b38d7e47fee1873" prot="private" static="no" mutable="no">
+        <type>nav_msgs::msg::Odometry</type>
+        <definition>nav_msgs::msg::Odometry mercury_autonomy::GetOdometry::odom_</definition>
+        <argsstring></argsstring>
+        <name>odom_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="43" column="29" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" compoundref="get__odometry_8cpp" startline="32" endline="55">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" compoundref="get__odometry_8cpp" startline="11" endline="30">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetOdometry_1a1ab6e96468496179b44ea824b02d7b6a" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::GetOdometry::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="44" column="18" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" compoundref="get__odometry_8cpp" startline="32" endline="55">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" compoundref="get__odometry_8cpp" startline="11" endline="30">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetOdometry_1afb998702a296e3116014b5c842f67c85" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::GetOdometry::timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>timeout_sec_</name>
+        <initializer>= 3.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="45" column="12" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" compoundref="get__odometry_8cpp" startline="32" endline="55">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" compoundref="get__odometry_8cpp" startline="11" endline="30">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetOdometry_1adf03b474f6cff1f85493e9e879b51f26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::GetOdometry::GetOdometry</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>GetOdometry</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="17" column="5" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetOdometry::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="33" column="20" bodyfile="src/bt_actions/get_odometry.cpp" bodystart="11" bodyend="30"/>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1aad56a96a84d3d63a810b4bec0d3bde26" compoundref="get__odometry_8hpp" startline="42">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1a240eaf1dab13e3053b38d7e47fee1873" compoundref="get__odometry_8hpp" startline="43">odom_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1a1ab6e96468496179b44ea824b02d7b6a" compoundref="get__odometry_8hpp" startline="44">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1a80ff88ca2b69206c720edafc06aecb5b" compoundref="get__odometry_8hpp" startline="41">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1afb998702a296e3116014b5c842f67c85" compoundref="get__odometry_8hpp" startline="45">timeout_sec_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetOdometry::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="34" column="20" bodyfile="src/bt_actions/get_odometry.cpp" bodystart="32" bodyend="55"/>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1aad56a96a84d3d63a810b4bec0d3bde26" compoundref="get__odometry_8hpp" startline="42">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1a240eaf1dab13e3053b38d7e47fee1873" compoundref="get__odometry_8hpp" startline="43">odom_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1a1ab6e96468496179b44ea824b02d7b6a" compoundref="get__odometry_8hpp" startline="44">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1a80ff88ca2b69206c720edafc06aecb5b" compoundref="get__odometry_8hpp" startline="41">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1afb998702a296e3116014b5c842f67c85" compoundref="get__odometry_8hpp" startline="45">timeout_sec_</references>
+        <references refid="namespacemercury__autonomy_1ab533b7063c3bd94aab6546b3e8657260" compoundref="autonomy__util_8cpp" startline="68" endline="75">mercury_autonomy::toRPY</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetOdometry_1a4d3780ad0ab0afb2939566493e500c07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetOdometry::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="35" column="10" bodyfile="src/bt_actions/get_odometry.cpp" bodystart="57" bodyend="60"/>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1aad56a96a84d3d63a810b4bec0d3bde26" compoundref="get__odometry_8hpp" startline="42">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1GetOdometry_1a80ff88ca2b69206c720edafc06aecb5b" compoundref="get__odometry_8hpp" startline="41">sub_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetOdometry_1a2480df2ed5dd4bc7be8b69f1aaab0e6a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::GetOdometry::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="20" column="26" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetOdometry_1ad0ce432455765eae2be21ac0f372835f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetOdometry::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="38" column="10" bodyfile="src/bt_actions/get_odometry.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::GetOdometry</label>
+        <link refid="classmercury__autonomy_1_1GetOdometry"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::GetOdometry</label>
+        <link refid="classmercury__autonomy_1_1GetOdometry"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp" line="15" column="1" bodyfile="include/mercury_autonomy/bt_actions/get_odometry.hpp" bodystart="15" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1adf03b474f6cff1f85493e9e879b51f26" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>GetOdometry</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1aad56a96a84d3d63a810b4bec0d3bde26" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>msg_received_</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1a240eaf1dab13e3053b38d7e47fee1873" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>odom_</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1a4d3780ad0ab0afb2939566493e500c07" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1a2480df2ed5dd4bc7be8b69f1aaab0e6a" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1ad0ce432455765eae2be21ac0f372835f" prot="protected" virt="virtual"><scope>mercury_autonomy::GetOdometry</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1a1ab6e96468496179b44ea824b02d7b6a" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1a80ff88ca2b69206c720edafc06aecb5b" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>sub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1GetOdometry_1afb998702a296e3116014b5c842f67c85" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetOdometry</scope><name>timeout_sec_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::GetOdometry</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::GetOdometry</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classRocketLeague_1_1RocketLeague" kind="class" language="Python" prot="public">
+    <compoundname>RocketLeague::RocketLeague</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a978ac31f312627cd6aa07e3a32f32829" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool RocketLeague.RocketLeague::boost_triggered</definition>
+        <argsstring></argsstring>
+        <name>boost_triggered</name>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="83" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a716ff0eccba7b913a09995dcd0e0f7c5" compoundref="RocketLeague_8py" startline="357" endline="366">RocketLeague.RocketLeague.detriggerBoost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a14bb8a758541bce2c64654d3f80f3d4f" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool RocketLeague.RocketLeague::stunt_triggered</definition>
+        <argsstring></argsstring>
+        <name>stunt_triggered</name>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="84" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1ade4ac34c9bdea215757dc1a803a8bffe" compoundref="RocketLeague_8py" startline="367" endline="379">RocketLeague.RocketLeague.detriggerStunt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a947d3838678d9c84ffe7b9917086a2dc" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float RocketLeague.RocketLeague::current_target_depth</definition>
+        <argsstring></argsstring>
+        <name>current_target_depth</name>
+        <initializer>=  0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="85" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a20bbfb8acd0b5cd2e15c9bcf5d6d7c9a" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float RocketLeague.RocketLeague::x_nudge</definition>
+        <argsstring></argsstring>
+        <name>x_nudge</name>
+        <initializer>=  0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="86" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a68d40522a3b9230cd5bf83648790ae9b" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float RocketLeague.RocketLeague::y_nudge</definition>
+        <argsstring></argsstring>
+        <name>y_nudge</name>
+        <initializer>=  0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="87" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a0a99734d5eb25ec5925931e3a3ecb7bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::event_queue</definition>
+        <argsstring></argsstring>
+        <name>event_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="94" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="94" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a1cf45076cf23308f3b6f7372f4eb2f50" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::type_queue</definition>
+        <argsstring></argsstring>
+        <name>type_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="95" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="95" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a8212caab1514c6958a4659167ff83ec6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::controller_type</definition>
+        <argsstring></argsstring>
+        <name>controller_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="96" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1af7209e50e505865850d84e9f5e2713bf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::left_joy_x</definition>
+        <argsstring></argsstring>
+        <name>left_joy_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="98" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a312127a7388bdd893266b61b4393bace" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::left_joy_y</definition>
+        <argsstring></argsstring>
+        <name>left_joy_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="99" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="99" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a4e979b5701d3d739266579daeccad807" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::left_trigger</definition>
+        <argsstring></argsstring>
+        <name>left_trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="100" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a94d30142f3c81c8d75c5304be7bf4658" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::right_joy_x</definition>
+        <argsstring></argsstring>
+        <name>right_joy_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="101" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1ada2f1fc5b509bdb719e47877ce88bf34" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::right_joy_y</definition>
+        <argsstring></argsstring>
+        <name>right_joy_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="102" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a56fad74d99c135290230955270d6eaa1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::right_trigger</definition>
+        <argsstring></argsstring>
+        <name>right_trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="103" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a06b320c9ad54ca94b55891a24b81c3c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::throttle_pub</definition>
+        <argsstring></argsstring>
+        <name>throttle_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="106" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a22013d00f1130d9c003f3dd1dd56b6e2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::reverse_pub</definition>
+        <argsstring></argsstring>
+        <name>reverse_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="108" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a55309b21627f5d4844d3a37eaf258cae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::joy_L_X_pub</definition>
+        <argsstring></argsstring>
+        <name>joy_L_X_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="110" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1ad58c375a5f5e37420a8f531f2f7f69e2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::set_point_pub_linear</definition>
+        <argsstring></argsstring>
+        <name>set_point_pub_linear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="112" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1ac6bffaa7afb21c79ca9a484243948801" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::set_point_pub_angular</definition>
+        <argsstring></argsstring>
+        <name>set_point_pub_angular</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="114" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a21efc500eac76e531d8e51e485cc5f0c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::apply_nudge_pub</definition>
+        <argsstring></argsstring>
+        <name>apply_nudge_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="116" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1aca1449288b7fec64a6bb94e6c164c926" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::boost_trigger_pub</definition>
+        <argsstring></argsstring>
+        <name>boost_trigger_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="120" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a716ff0eccba7b913a09995dcd0e0f7c5" compoundref="RocketLeague_8py" startline="357" endline="366">RocketLeague.RocketLeague.detriggerBoost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1adec0c742df4d6d76b0c4d748b401ec67" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::stunt_trigger_pub</definition>
+        <argsstring></argsstring>
+        <name>stunt_trigger_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="122" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1ade4ac34c9bdea215757dc1a803a8bffe" compoundref="RocketLeague_8py" startline="367" endline="379">RocketLeague.RocketLeague.detriggerStunt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1abbd037d01dbc1757d0a7418cf3f5cd73" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::torpedo_trigger_pub</definition>
+        <argsstring></argsstring>
+        <name>torpedo_trigger_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="124" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a68cfe363cda9174a00a3788ba61b140f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::dropper_trigger_pub</definition>
+        <argsstring></argsstring>
+        <name>dropper_trigger_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="126" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a3311713d70a6885db0329994fe602d37" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::default_depth</definition>
+        <argsstring></argsstring>
+        <name>default_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="144" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a6aca3ae5de3a0711d711d97d49834f80" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::depth_increment</definition>
+        <argsstring></argsstring>
+        <name>depth_increment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="145" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a8d31520a2c0f9547dee13d99dc580e83" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::roll_max</definition>
+        <argsstring></argsstring>
+        <name>roll_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="146" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a0029fcf2964d62defc5cf31e9784bb1c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::pitch_max</definition>
+        <argsstring></argsstring>
+        <name>pitch_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="147" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1abbc8867242a8313842a2c4c9a43509b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::stunt_triggered</definition>
+        <argsstring></argsstring>
+        <name>stunt_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="208" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="208" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1ade4ac34c9bdea215757dc1a803a8bffe" compoundref="RocketLeague_8py" startline="367" endline="379">RocketLeague.RocketLeague.detriggerStunt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a23954c1d5f14824965bbd7fc9066ebda" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::stunt_cancel_timer</definition>
+        <argsstring></argsstring>
+        <name>stunt_cancel_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="214" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="214" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1ade4ac34c9bdea215757dc1a803a8bffe" compoundref="RocketLeague_8py" startline="367" endline="379">RocketLeague.RocketLeague.detriggerStunt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a1666523dd6ab8933bdbcd8ab099b488b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::current_target_depth</definition>
+        <argsstring></argsstring>
+        <name>current_target_depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="248" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1afd955ef39977682357d77b523fbaff01" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::boost_triggered</definition>
+        <argsstring></argsstring>
+        <name>boost_triggered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="268" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="268" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a716ff0eccba7b913a09995dcd0e0f7c5" compoundref="RocketLeague_8py" startline="357" endline="366">RocketLeague.RocketLeague.detriggerBoost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1ab3f8b50f8bd46be987053c533c1e8313" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::boost_cancel_timer</definition>
+        <argsstring></argsstring>
+        <name>boost_cancel_timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="277" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="277" bodyend="-1"/>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1a716ff0eccba7b913a09995dcd0e0f7c5" compoundref="RocketLeague_8py" startline="357" endline="366">RocketLeague.RocketLeague.detriggerBoost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a3157b1d51ec1eccbdc0786ebc788b70e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::x_nudge</definition>
+        <argsstring></argsstring>
+        <name>x_nudge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="283" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRocketLeague_1_1RocketLeague_1a07b3ca475fada8f9c918711c55dfb4a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>RocketLeague.RocketLeague::y_nudge</definition>
+        <argsstring></argsstring>
+        <name>y_nudge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="299" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRocketLeague_1_1RocketLeague_1afc7bb9c8326399ec18c00b7c1b781c7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RocketLeague.RocketLeague.__init__</definition>
+        <argsstring>(self, Queue queue, Queue typeQueue)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Queue</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>Queue</type>
+          <declname>typeQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="89" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="89" bodyend="140"/>
+        <references refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" compoundref="RocketLeague_8py" startline="149" endline="356">RocketLeague.RocketLeague.handleEvents</references>
+      </memberdef>
+      <memberdef kind="function" id="classRocketLeague_1_1RocketLeague_1ab1a60333ebdd4853fcfbca0b4e890186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RocketLeague.RocketLeague.load_parameters</definition>
+        <argsstring>(self)</argsstring>
+        <name>load_parameters</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="141" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="141" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RocketLeague.RocketLeague.handleEvents</definition>
+        <argsstring>(self)</argsstring>
+        <name>handleEvents</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="149" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="149" bodyend="356"/>
+        <references refid="classRocketLeague_1_1RocketLeague_1a8212caab1514c6958a4659167ff83ec6" compoundref="RocketLeague_8py" startline="96">RocketLeague.RocketLeague.controller_type</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a68cfe363cda9174a00a3788ba61b140f" compoundref="RocketLeague_8py" startline="126">RocketLeague.RocketLeague.dropper_trigger_pub</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a0a99734d5eb25ec5925931e3a3ecb7bc" compoundref="RocketLeague_8py" startline="94">RocketLeague.RocketLeague.event_queue</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1af7209e50e505865850d84e9f5e2713bf" compoundref="RocketLeague_8py" startline="98">RocketLeague.RocketLeague.left_joy_x</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a312127a7388bdd893266b61b4393bace" compoundref="RocketLeague_8py" startline="99">RocketLeague.RocketLeague.left_joy_y</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a4e979b5701d3d739266579daeccad807" compoundref="RocketLeague_8py" startline="100">RocketLeague.RocketLeague.left_trigger</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a94d30142f3c81c8d75c5304be7bf4658" compoundref="RocketLeague_8py" startline="101">RocketLeague.RocketLeague.right_joy_x</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1ada2f1fc5b509bdb719e47877ce88bf34" compoundref="RocketLeague_8py" startline="102">RocketLeague.RocketLeague.right_joy_y</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a56fad74d99c135290230955270d6eaa1" compoundref="RocketLeague_8py" startline="103">RocketLeague.RocketLeague.right_trigger</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a1cf45076cf23308f3b6f7372f4eb2f50" compoundref="RocketLeague_8py" startline="95">RocketLeague.RocketLeague.type_queue</references>
+        <referencedby refid="classRocketLeague_1_1RocketLeague_1afc7bb9c8326399ec18c00b7c1b781c7a" compoundref="RocketLeague_8py" startline="89" endline="140">RocketLeague.RocketLeague.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classRocketLeague_1_1RocketLeague_1a716ff0eccba7b913a09995dcd0e0f7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RocketLeague.RocketLeague.detriggerBoost</definition>
+        <argsstring>(self)</argsstring>
+        <name>detriggerBoost</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="357" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="357" bodyend="366"/>
+        <references refid="classRocketLeague_1_1RocketLeague_1ab3f8b50f8bd46be987053c533c1e8313" compoundref="RocketLeague_8py" startline="277">RocketLeague.RocketLeague.boost_cancel_timer</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1aca1449288b7fec64a6bb94e6c164c926" compoundref="RocketLeague_8py" startline="120">RocketLeague.RocketLeague.boost_trigger_pub</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a978ac31f312627cd6aa07e3a32f32829" compoundref="RocketLeague_8py" startline="83">RocketLeague.RocketLeague.boost_triggered</references>
+      </memberdef>
+      <memberdef kind="function" id="classRocketLeague_1_1RocketLeague_1ade4ac34c9bdea215757dc1a803a8bffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def RocketLeague.RocketLeague.detriggerStunt</definition>
+        <argsstring>(self)</argsstring>
+        <name>detriggerStunt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/RocketLeague.py" line="367" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="367" bodyend="379"/>
+        <references refid="classRocketLeague_1_1RocketLeague_1a23954c1d5f14824965bbd7fc9066ebda" compoundref="RocketLeague_8py" startline="214">RocketLeague.RocketLeague.stunt_cancel_timer</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1adec0c742df4d6d76b0c4d748b401ec67" compoundref="RocketLeague_8py" startline="122">RocketLeague.RocketLeague.stunt_trigger_pub</references>
+        <references refid="classRocketLeague_1_1RocketLeague_1a14bb8a758541bce2c64654d3f80f3d4f" compoundref="RocketLeague_8py" startline="84">RocketLeague.RocketLeague.stunt_triggered</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>RocketLeague.RocketLeague</label>
+        <link refid="classRocketLeague_1_1RocketLeague"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>RocketLeague.RocketLeague</label>
+        <link refid="classRocketLeague_1_1RocketLeague"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_controller/RocketLeague.py" line="81" column="1" bodyfile="mercury_controller/RocketLeague.py" bodystart="81" bodyend="380"/>
+    <listofallmembers>
+      <member refid="classRocketLeague_1_1RocketLeague_1afc7bb9c8326399ec18c00b7c1b781c7a" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>__init__</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a21efc500eac76e531d8e51e485cc5f0c" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>apply_nudge_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1ab3f8b50f8bd46be987053c533c1e8313" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>boost_cancel_timer</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1aca1449288b7fec64a6bb94e6c164c926" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>boost_trigger_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a978ac31f312627cd6aa07e3a32f32829" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>boost_triggered</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1afd955ef39977682357d77b523fbaff01" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>boost_triggered</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a8212caab1514c6958a4659167ff83ec6" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>controller_type</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a947d3838678d9c84ffe7b9917086a2dc" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>current_target_depth</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a1666523dd6ab8933bdbcd8ab099b488b" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>current_target_depth</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a3311713d70a6885db0329994fe602d37" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>default_depth</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a6aca3ae5de3a0711d711d97d49834f80" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>depth_increment</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a716ff0eccba7b913a09995dcd0e0f7c5" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>detriggerBoost</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1ade4ac34c9bdea215757dc1a803a8bffe" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>detriggerStunt</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a68cfe363cda9174a00a3788ba61b140f" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>dropper_trigger_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a0a99734d5eb25ec5925931e3a3ecb7bc" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>event_queue</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a3825347a72df70eb43cfb3ed5821f080" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>handleEvents</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a55309b21627f5d4844d3a37eaf258cae" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>joy_L_X_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1af7209e50e505865850d84e9f5e2713bf" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>left_joy_x</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a312127a7388bdd893266b61b4393bace" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>left_joy_y</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a4e979b5701d3d739266579daeccad807" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>left_trigger</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1ab1a60333ebdd4853fcfbca0b4e890186" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>load_parameters</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a0029fcf2964d62defc5cf31e9784bb1c" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>pitch_max</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a22013d00f1130d9c003f3dd1dd56b6e2" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>reverse_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a94d30142f3c81c8d75c5304be7bf4658" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>right_joy_x</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1ada2f1fc5b509bdb719e47877ce88bf34" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>right_joy_y</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a56fad74d99c135290230955270d6eaa1" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>right_trigger</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a8d31520a2c0f9547dee13d99dc580e83" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>roll_max</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1ac6bffaa7afb21c79ca9a484243948801" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>set_point_pub_angular</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1ad58c375a5f5e37420a8f531f2f7f69e2" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>set_point_pub_linear</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a23954c1d5f14824965bbd7fc9066ebda" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>stunt_cancel_timer</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1adec0c742df4d6d76b0c4d748b401ec67" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>stunt_trigger_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a14bb8a758541bce2c64654d3f80f3d4f" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>stunt_triggered</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1abbc8867242a8313842a2c4c9a43509b5" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>stunt_triggered</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a06b320c9ad54ca94b55891a24b81c3c4" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>throttle_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1abbd037d01dbc1757d0a7418cf3f5cd73" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>torpedo_trigger_pub</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a1cf45076cf23308f3b6f7372f4eb2f50" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>type_queue</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a20bbfb8acd0b5cd2e15c9bcf5d6d7c9a" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>x_nudge</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a3157b1d51ec1eccbdc0786ebc788b70e" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>x_nudge</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a68d40522a3b9230cd5bf83648790ae9b" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>y_nudge</name></member>
+      <member refid="classRocketLeague_1_1RocketLeague_1a07b3ca475fada8f9c918711c55dfb4a1" prot="public" virt="non-virtual"><scope>RocketLeague::RocketLeague</scope><name>y_nudge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

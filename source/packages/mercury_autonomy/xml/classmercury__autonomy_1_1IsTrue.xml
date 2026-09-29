@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1IsTrue" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::IsTrue</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryConditionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryConditionNode</basecompoundref>
+    <includes refid="is__true_8hpp" local="no">is_true.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1IsTrue_1a7a36212e0e05d00e9d9595f1f2d59511" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::IsTrue::IsTrue</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>IsTrue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/is_true.hpp" line="16" column="5" bodyfile="include/mercury_autonomy/bt_conditions/is_true.hpp" bodystart="16" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1IsTrue_1a650bcab920da0bfc6da66108f5f04c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::IsTrue::tick</definition>
+        <argsstring>() override</argsstring>
+        <name>tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/is_true.hpp" line="25" column="20" bodyfile="src/bt_conditions/is_true.cpp" bodystart="11" bodyend="20"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1IsTrue_1a6c9f83716a569e5522e459fb346ee5ad" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::IsTrue::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/is_true.hpp" line="19" column="26" bodyfile="include/mercury_autonomy/bt_conditions/is_true.hpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1IsTrue_1a833cfea5089d84a577270fedfb781488" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::IsTrue::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/is_true.hpp" line="28" column="10" bodyfile="src/bt_conditions/is_true.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>BT::ConditionNode</label>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::IsTrue</label>
+        <link refid="classmercury__autonomy_1_1IsTrue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryConditionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryConditionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>BT::ConditionNode</label>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::IsTrue</label>
+        <link refid="classmercury__autonomy_1_1IsTrue"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryConditionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryConditionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_conditions/is_true.hpp" line="14" column="1" bodyfile="include/mercury_autonomy/bt_conditions/is_true.hpp" bodystart="14" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1IsTrue_1a7a36212e0e05d00e9d9595f1f2d59511" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>IsTrue</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryConditionNode_1ab7fa033ce1832f7975b5d860efd7caf7" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>MercuryConditionNode</name></member>
+      <member refid="classmercury__autonomy_1_1IsTrue_1a6c9f83716a569e5522e459fb346ee5ad" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1IsTrue_1a833cfea5089d84a577270fedfb781488" prot="protected" virt="virtual"><scope>mercury_autonomy::IsTrue</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1IsTrue_1a650bcab920da0bfc6da66108f5f04c56" prot="public" virt="non-virtual"><scope>mercury_autonomy::IsTrue</scope><name>tick</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryConditionNode_1ac411a93cd70cb78cf714656c402e6b32" prot="public" virt="virtual"><scope>mercury_autonomy::IsTrue</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::IsTrue</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

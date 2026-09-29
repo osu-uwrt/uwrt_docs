@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="overseer__util_8cpp" kind="file" language="C++">
+    <compoundname>overseer_util.cpp</compoundname>
+    <includes refid="overseer__util_8hpp" local="no">overseer_util.hpp</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>overseer_util.hpp</label>
+        <link refid="overseer__util_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="3">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+      <node id="1">
+        <label>src/overseer_util.cpp</label>
+        <link refid="overseer__util_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="overseer__util_8cpp_1aaf6b0d0c004f0595c8ed00771151ab36" prot="public" static="no">
+        <type>Eigen::Vector3d</type>
+        <definition>using v3d =  Eigen::Vector3d</definition>
+        <argsstring></argsstring>
+        <name>v3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overseer_util.cpp" line="2" column="1" bodyfile="src/overseer_util.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="overseer__util_8cpp_1ad6ab8f1b7402063f1cd8281f51792cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d std2v3d</definition>
+        <argsstring>(std::vector&lt; double &gt; stdVect)</argsstring>
+        <name>std2v3d</name>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>stdVect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/overseer_util.cpp" line="7" column="17" bodyfile="src/overseer_util.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="overseer__util_8hpp" kindref="compound">overseer_util.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="overseer__util_8cpp_1aaf6b0d0c004f0595c8ed00771151ab36" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="overseer__util_8hpp_1aaf6b0d0c004f0595c8ed00771151ab36" kindref="member">v3d</ref><sp/>=<sp/>Eigen::Vector3d;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Helper<sp/>function<sp/>to<sp/>quickly<sp/>go<sp/>to<sp/>Eigen<sp/>3d<sp/>vector<sp/>object</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="overseer__util_8hpp_1ad6ab8f1b7402063f1cd8281f51792cbc" refkind="member"><highlight class="normal">Eigen::Vector3d<sp/><ref refid="overseer__util_8cpp_1ad6ab8f1b7402063f1cd8281f51792cbc" kindref="member">std2v3d</ref>(std::vector&lt;double&gt;<sp/>stdVect)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="overseer__util_8cpp_1aaf6b0d0c004f0595c8ed00771151ab36" kindref="member">v3d</ref>(stdVect[0],<sp/>stdVect[1],<sp/>stdVect[2]);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/overseer_util.cpp"/>
+  </compounddef>
+</doxygen>

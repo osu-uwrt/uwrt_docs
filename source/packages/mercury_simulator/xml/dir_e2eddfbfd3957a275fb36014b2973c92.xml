@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e2eddfbfd3957a275fb36014b2973c92" kind="dir">
+    <compoundname>include/mercury_simulator</compoundname>
+    <innerfile refid="Claw__Object_8h">Claw_Object.h</innerfile>
+    <innerfile refid="collisionBox_8h">collisionBox.h</innerfile>
+    <innerfile refid="RobotClass_8h">RobotClass.h</innerfile>
+    <innerfile refid="settings_8h">settings.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_simulator/"/>
+  </compounddef>
+</doxygen>

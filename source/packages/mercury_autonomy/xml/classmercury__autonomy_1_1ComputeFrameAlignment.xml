@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1ComputeFrameAlignment" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::ComputeFrameAlignment</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="compute__frame__alignment_8hpp" local="no">compute_frame_alignment.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a0fa714dacb5abc69c93930243076a7a9" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::ComputeFrameAlignment::reference_frame_</definition>
+        <argsstring></argsstring>
+        <name>reference_frame_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="51" column="17" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a3adbfa6ceb0c82d2b8ac909e69575076" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::ComputeFrameAlignment::link_frame_</definition>
+        <argsstring></argsstring>
+        <name>link_frame_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="52" column="17" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1acf37a0c62d1be07f8520b37f5fd631a1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::ComputeFrameAlignment::base_frame_</definition>
+        <argsstring></argsstring>
+        <name>base_frame_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="53" column="17" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a24f10b3d36aa58e3504a1b5840cee6d7" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::TransformStamped</type>
+        <definition>geometry_msgs::msg::TransformStamped mercury_autonomy::ComputeFrameAlignment::input_pose_</definition>
+        <argsstring></argsstring>
+        <name>input_pose_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="54" column="42" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1ac2b6354e8080651cdfe909e17abebae4" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::TransformStamped</type>
+        <definition>geometry_msgs::msg::TransformStamped mercury_autonomy::ComputeFrameAlignment::geom_ttb_</definition>
+        <argsstring></argsstring>
+        <name>geom_ttb_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="55" column="42" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a0f27c269d5f16713979909b871c2ceba" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::TransformStamped</type>
+        <definition>geometry_msgs::msg::TransformStamped mercury_autonomy::ComputeFrameAlignment::geom_twr_</definition>
+        <argsstring></argsstring>
+        <name>geom_twr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="56" column="42" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1acff2af2254103e8ddd64ab4479e23c6d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::ComputeFrameAlignment::have_ttb_</definition>
+        <argsstring></argsstring>
+        <name>have_ttb_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="57" column="10" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a1e71bfa1f5066157f8a832bd99261099" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::ComputeFrameAlignment::have_twr_</definition>
+        <argsstring></argsstring>
+        <name>have_twr_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="58" column="10" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1ComputeFrameAlignment_1ad7d15d143d863384e982540f6ddd9723" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::ComputeFrameAlignment::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="59" column="18" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1ComputeFrameAlignment_1aa1827ce9b9ad351615d7a1f8b84cec91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::ComputeFrameAlignment::ComputeFrameAlignment</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>ComputeFrameAlignment</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="20" column="5" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::ComputeFrameAlignment::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="43" column="20" bodyfile="src/bt_actions/compute_frame_alignment.cpp" bodystart="9" bodyend="28"/>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1acf37a0c62d1be07f8520b37f5fd631a1" compoundref="compute__frame__alignment_8hpp" startline="53">base_frame_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1acff2af2254103e8ddd64ab4479e23c6d" compoundref="compute__frame__alignment_8hpp" startline="57">have_ttb_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a1e71bfa1f5066157f8a832bd99261099" compoundref="compute__frame__alignment_8hpp" startline="58">have_twr_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a24f10b3d36aa58e3504a1b5840cee6d7" compoundref="compute__frame__alignment_8hpp" startline="54">input_pose_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a3adbfa6ceb0c82d2b8ac909e69575076" compoundref="compute__frame__alignment_8hpp" startline="52">link_frame_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a0fa714dacb5abc69c93930243076a7a9" compoundref="compute__frame__alignment_8hpp" startline="51">reference_frame_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ad7d15d143d863384e982540f6ddd9723" compoundref="compute__frame__alignment_8hpp" startline="59">start_time_</references>
+        <references refid="namespacemercury__autonomy_1af20362dbd9637713653dc7064b5403f5" compoundref="autonomy__util_8cpp" startline="77" endline="82">mercury_autonomy::toQuat</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::ComputeFrameAlignment::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="44" column="20" bodyfile="src/bt_actions/compute_frame_alignment.cpp" bodystart="30" bodyend="71"/>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1acf37a0c62d1be07f8520b37f5fd631a1" compoundref="compute__frame__alignment_8hpp" startline="53">base_frame_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ac2b6354e8080651cdfe909e17abebae4" compoundref="compute__frame__alignment_8hpp" startline="55">geom_ttb_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a0f27c269d5f16713979909b871c2ceba" compoundref="compute__frame__alignment_8hpp" startline="56">geom_twr_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1acff2af2254103e8ddd64ab4479e23c6d" compoundref="compute__frame__alignment_8hpp" startline="57">have_ttb_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a1e71bfa1f5066157f8a832bd99261099" compoundref="compute__frame__alignment_8hpp" startline="58">have_twr_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a24f10b3d36aa58e3504a1b5840cee6d7" compoundref="compute__frame__alignment_8hpp" startline="54">input_pose_</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a3adbfa6ceb0c82d2b8ac909e69575076" compoundref="compute__frame__alignment_8hpp" startline="52">link_frame_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" compoundref="mercury__bt__node_8cpp" startline="30" endline="44">mercury_autonomy::MercuryBtNode::lookupTransform</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a0fa714dacb5abc69c93930243076a7a9" compoundref="compute__frame__alignment_8hpp" startline="51">reference_frame_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ad7d15d143d863384e982540f6ddd9723" compoundref="compute__frame__alignment_8hpp" startline="59">start_time_</references>
+        <references refid="namespacemercury__autonomy_1ab533b7063c3bd94aab6546b3e8657260" compoundref="autonomy__util_8cpp" startline="68" endline="75">mercury_autonomy::toRPY</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a0fce5b5c85d493f2af6ea5a2a191da6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::ComputeFrameAlignment::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="45" column="10" bodyfile="src/bt_actions/compute_frame_alignment.cpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1ComputeFrameAlignment_1afd6b227b9e0ea46473a46070081ff6b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::ComputeFrameAlignment::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="23" column="26" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="23" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1ComputeFrameAlignment_1a134b060ab6c828cebc70237b755228c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::ComputeFrameAlignment::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="48" column="10" bodyfile="src/bt_actions/compute_frame_alignment.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_autonomy::ComputeFrameAlignment</label>
+        <link refid="classmercury__autonomy_1_1ComputeFrameAlignment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::ComputeFrameAlignment</label>
+        <link refid="classmercury__autonomy_1_1ComputeFrameAlignment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" line="18" column="1" bodyfile="include/mercury_autonomy/bt_actions/compute_frame_alignment.hpp" bodystart="18" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1acf37a0c62d1be07f8520b37f5fd631a1" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>base_frame_</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1aa1827ce9b9ad351615d7a1f8b84cec91" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>ComputeFrameAlignment</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ac2b6354e8080651cdfe909e17abebae4" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>geom_ttb_</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a0f27c269d5f16713979909b871c2ceba" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>geom_twr_</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1acff2af2254103e8ddd64ab4479e23c6d" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>have_ttb_</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a1e71bfa1f5066157f8a832bd99261099" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>have_twr_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a24f10b3d36aa58e3504a1b5840cee6d7" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>input_pose_</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a3adbfa6ceb0c82d2b8ac909e69575076" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>link_frame_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a0fce5b5c85d493f2af6ea5a2a191da6f" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1afd6b227b9e0ea46473a46070081ff6b6" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a0fa714dacb5abc69c93930243076a7a9" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>reference_frame_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a134b060ab6c828cebc70237b755228c1" prot="protected" virt="virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ad7d15d143d863384e982540f6ddd9723" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::ComputeFrameAlignment</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

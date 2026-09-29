@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacethruster__test__dshot" kind="namespace" language="Python">
+    <compoundname>thruster_test_dshot</compoundname>
+    <innerclass refid="classthruster__test__dshot_1_1ThrusterTestActionServer" prot="public">thruster_test_dshot::ThrusterTestActionServer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacethruster__test__dshot_1ac5bc9ad6dc40855e02a3ba7e49b346db" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float thruster_test_dshot.THRUSTER_NEUTRAL_FORCE</definition>
+        <argsstring></argsstring>
+        <name>THRUSTER_NEUTRAL_FORCE</name>
+        <initializer>=  0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="21" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacethruster__test__dshot_1adc97900533a27ab2f4a5a44efb47d528" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float thruster_test_dshot.THRUSTER_TEST_FORCE</definition>
+        <argsstring></argsstring>
+        <name>THRUSTER_TEST_FORCE</name>
+        <initializer>=  1.3333</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="22" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacethruster__test__dshot_1a3ed3dabade71a6761498f70ec5676782" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int thruster_test_dshot.DSHOT_NEUTRAL_VALUE</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_NEUTRAL_VALUE</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="24" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacethruster__test__dshot_1a989521c38fa02e90fdad32031bd5b28b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float thruster_test_dshot.DSHOT_TEST_FACTOR</definition>
+        <argsstring></argsstring>
+        <name>DSHOT_TEST_FACTOR</name>
+        <initializer>=  0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="25" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacethruster__test__dshot_1af4c9566f1d21599a0cc9de614f61579a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="142" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="142" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_controller/thruster_test_dshot.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_08723c9bd0e05a8563c17771fe389ef7" kind="dir">
+    <compoundname>include/mercury_autonomy/bt_conditions</compoundname>
+    <innerfile refid="approx__equal__to_8hpp">approx_equal_to.hpp</innerfile>
+    <innerfile refid="approx__equal__to__angle_8hpp">approx_equal_to_angle.hpp</innerfile>
+    <innerfile refid="compare__nums_8hpp">compare_nums.hpp</innerfile>
+    <innerfile refid="example__condition_8hpp">example_condition.hpp</innerfile>
+    <innerfile refid="is__true_8hpp">is_true.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mercury_autonomy/bt_conditions/"/>
+  </compounddef>
+</doxygen>

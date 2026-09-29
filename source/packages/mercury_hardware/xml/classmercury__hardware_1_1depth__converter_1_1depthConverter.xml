@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__hardware_1_1depth__converter_1_1depthConverter" kind="class" language="Python" prot="public">
+    <compoundname>mercury_hardware::depth_converter::depthConverter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a16ae7a6a006296126aff475cd1925e8a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.depth_converter.depthConverter::sub</definition>
+        <argsstring></argsstring>
+        <name>sub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="17" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a933848464d94201305ffd2a29a92ae59" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.depth_converter.depthConverter::pub</definition>
+        <argsstring></argsstring>
+        <name>pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="19" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" compoundref="depth__converter_8py" startline="26" endline="57">mercury_hardware.depth_converter.depthConverter.depthCb</referencedby>
+        <referencedby refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1a38871485fd849544923f624ba3694019" compoundref="tag__odom_8py" startline="47" endline="72">mercury_hardware.tag_odom.TagOdomPublisher.timerCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a5e9a8f59a958779047ab8c60cec9031e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.depth_converter.depthConverter::namespace</definition>
+        <argsstring></argsstring>
+        <name>namespace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="21" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" compoundref="depth__converter_8py" startline="26" endline="57">mercury_hardware.depth_converter.depthConverter.depthCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1aef871fbab4f67883364cc667978b64f1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.depth_converter.depthConverter::tfBuffer</definition>
+        <argsstring></argsstring>
+        <name>tfBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="22" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" compoundref="depth__converter_8py" startline="26" endline="57">mercury_hardware.depth_converter.depthConverter.depthCb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a2069f4b14f01a3c937adef5c4b6c41b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.depth_converter.depthConverter::listener</definition>
+        <argsstring></argsstring>
+        <name>listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="23" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a6ce85a992cb382477493bf8eca7df05b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_hardware.depth_converter.depthConverter::b2pVector</definition>
+        <argsstring></argsstring>
+        <name>b2pVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="24" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" compoundref="depth__converter_8py" startline="26" endline="57">mercury_hardware.depth_converter.depthConverter.depthCb</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a9b84afde40517216e43a55bda10843f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_hardware.depth_converter.depthConverter.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="15" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="15" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_hardware.depth_converter.depthConverter.depthCb</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>depthCb</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_hardware/depth_converter.py" line="26" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="26" bodyend="57"/>
+        <references refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a6ce85a992cb382477493bf8eca7df05b" compoundref="depth__converter_8py" startline="24">mercury_hardware.depth_converter.depthConverter.b2pVector</references>
+        <references refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a5e9a8f59a958779047ab8c60cec9031e" compoundref="depth__converter_8py" startline="21">mercury_hardware.depth_converter.depthConverter.namespace</references>
+        <references refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a933848464d94201305ffd2a29a92ae59" compoundref="depth__converter_8py" startline="19">mercury_hardware.depth_converter.depthConverter.pub</references>
+        <references refid="classmercury__hardware_1_1tag__odom_1_1TagOdomPublisher_1af36b8a4d7675b412a808277b27610ee1" compoundref="tag__odom_8py" startline="37">mercury_hardware.tag_odom.TagOdomPublisher.pub</references>
+        <references refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1aef871fbab4f67883364cc667978b64f1" compoundref="depth__converter_8py" startline="22">mercury_hardware.depth_converter.depthConverter.tfBuffer</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_hardware.depth_converter.depthConverter</label>
+        <link refid="classmercury__hardware_1_1depth__converter_1_1depthConverter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_hardware.depth_converter.depthConverter</label>
+        <link refid="classmercury__hardware_1_1depth__converter_1_1depthConverter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_hardware/depth_converter.py" line="14" column="1" bodyfile="mercury_hardware/depth_converter.py" bodystart="14" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a9b84afde40517216e43a55bda10843f5" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>__init__</name></member>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a6ce85a992cb382477493bf8eca7df05b" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>b2pVector</name></member>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1acf30738b49aebdce08c8c56f83f47f08" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>depthCb</name></member>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a2069f4b14f01a3c937adef5c4b6c41b5" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>listener</name></member>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a5e9a8f59a958779047ab8c60cec9031e" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>namespace</name></member>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a933848464d94201305ffd2a29a92ae59" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>pub</name></member>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1a16ae7a6a006296126aff475cd1925e8a" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>sub</name></member>
+      <member refid="classmercury__hardware_1_1depth__converter_1_1depthConverter_1aef871fbab4f67883364cc667978b64f1" prot="public" virt="non-virtual"><scope>mercury_hardware::depth_converter::depthConverter</scope><name>tfBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

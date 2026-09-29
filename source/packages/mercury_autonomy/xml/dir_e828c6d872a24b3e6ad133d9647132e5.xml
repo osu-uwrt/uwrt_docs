@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e828c6d872a24b3e6ad133d9647132e5" kind="dir">
+    <compoundname>src/bt_conditions</compoundname>
+    <innerfile refid="approx__equal__to_8cpp">approx_equal_to.cpp</innerfile>
+    <innerfile refid="approx__equal__to__angle_8cpp">approx_equal_to_angle.cpp</innerfile>
+    <innerfile refid="compare__nums_8cpp">compare_nums.cpp</innerfile>
+    <innerfile refid="example__condition_8cpp">example_condition.cpp</innerfile>
+    <innerfile refid="is__true_8cpp">is_true.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/bt_conditions/"/>
+  </compounddef>
+</doxygen>

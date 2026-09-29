@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="thruster__wrench__publisher_8py" kind="file" language="Python">
+    <compoundname>thruster_wrench_publisher.py</compoundname>
+    <innerclass refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher" prot="public">thruster_wrench_publisher::ThrusterWrenchPublisher</innerclass>
+    <innernamespace refid="namespacethruster__wrench__publisher">thruster_wrench_publisher</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacethruster__wrench__publisher" refkind="compound"><highlight class="comment">#!/usr/bin/env<sp/>python3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>thruster_wrench_publisher<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Input<sp/>topics:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/>thruster_forces:<sp/>Array<sp/>containing<sp/>how<sp/>hard<sp/>each<sp/>thruster<sp/>will<sp/>push.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Output<sp/>topics:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/>thruster_wrenches/thruster_0...n:<sp/>A<sp/>WrenchStamped<sp/>in<sp/>the<sp/>thruster<sp/>frame<sp/>with<sp/>the<sp/>thruster&apos;s<sp/>force<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>node<sp/>republishes<sp/>the<sp/>thruster_forces<sp/>as<sp/>individual<sp/>WrenchStamped<sp/>topics<sp/>so</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>thruster<sp/>force<sp/>vectors<sp/>can<sp/>be<sp/>visualized<sp/>in<sp/>rviz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>rclpy</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>rclpy.publisher<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Publisher</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>rclpy.time<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Time</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>rclpy.node<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Node</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>rclpy.qos<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>qos_profile_system_default<sp/><sp/></highlight><highlight class="comment">#<sp/>can<sp/>replace<sp/>this<sp/>with<sp/>others</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>geometry_msgs.msg<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>WrenchStamped</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>std_msgs.msg<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Float32MultiArray</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>yaml</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher" kindref="compound">ThrusterWrenchPublisher</ref>(Node):</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a64751336c6ebc3613dd38063c5debcf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a64751336c6ebc3613dd38063c5debcf4" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a64751336c6ebc3613dd38063c5debcf4" kindref="member">__init__</ref>(</highlight><highlight class="stringliteral">&apos;thruster_wrench_publisher&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.create_subscription(</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Float32MultiArray,<sp/></highlight><highlight class="stringliteral">&quot;thruster_forces&quot;</highlight><highlight class="normal">,<sp/>self.<ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a8f7e6da2bffaaf745c45382c9c43d793" kindref="member">force_cb</ref>force_cb,<sp/>qos_profile_system_default)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.declare_parameter(</highlight><highlight class="stringliteral">&quot;robot&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35" refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1aab3cf7034af745f68c141b0dfd8b559f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1aab3cf7034af745f68c141b0dfd8b559f" kindref="member">tf_namespace</ref>tf_namespace<sp/>=<sp/>self.get_parameter(</highlight><highlight class="stringliteral">&quot;robot&quot;</highlight><highlight class="normal">).value</highlight></codeline>
+<codeline lineno="36" refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a5548990e6d0dfca8e0ebc024e007fdd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a5548990e6d0dfca8e0ebc024e007fdd5" kindref="member">stamp</ref>stamp<sp/>=<sp/>Time()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Load<sp/>thruster<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.declare_parameter(</highlight><highlight class="stringliteral">&quot;vehicle_config&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config_path<sp/>=<sp/>self.get_parameter(</highlight><highlight class="stringliteral">&quot;vehicle_config&quot;</highlight><highlight class="normal">).value</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(config_path<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.get_logger().fatal(</highlight><highlight class="stringliteral">&quot;vehicle<sp/>config<sp/>file<sp/>param<sp/>not<sp/>set<sp/>or<sp/>empty,<sp/>exiting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>open(config_path,<sp/></highlight><highlight class="stringliteral">&apos;r&apos;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>stream:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>config_file<sp/>=<sp/>yaml.safe_load(stream)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thruster_info<sp/>=<sp/>config_file[</highlight><highlight class="stringliteral">&apos;thrusters&apos;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.thruster_wrench_publishers:<sp/></highlight><highlight class="stringliteral">&apos;list[Publisher]&apos;</highlight><highlight class="normal"><sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(len(thruster_info)):</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wrench_pub<sp/>=<sp/>self.create_publisher(</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WrenchStamped,<sp/>f</highlight><highlight class="stringliteral">&apos;thruster_wrenches/thruster_{i}&apos;</highlight><highlight class="normal">,<sp/>qos_profile_system_default)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.thruster_wrench_publishers.append(wrench_pub)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a8f7e6da2bffaaf745c45382c9c43d793" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a8f7e6da2bffaaf745c45382c9c43d793" kindref="member">force_cb</ref>(self,<sp/>msg:<sp/>Float32MultiArray):</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(msg.data)<sp/>!=<sp/>len(self.thruster_wrench_publishers):</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.get_logger().error(</highlight><highlight class="stringliteral">&quot;thruster_forces<sp/>message<sp/>length<sp/>({0})<sp/>does<sp/>not<sp/>match<sp/>expected<sp/>number<sp/>of<sp/>thrusters<sp/>({1})&quot;</highlight><highlight class="normal">.format(</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len(msg),<sp/>len(self.thruster_wrench_publishers)))</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(len(self.thruster_wrench_publishers)):</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wrench_msg<sp/>=<sp/>WrenchStamped()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wrench_msg.header.frame_id<sp/>=<sp/>f</highlight><highlight class="stringliteral">&apos;{self.tf_namespace}/thruster_{i}&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wrench_msg.header.stamp<sp/>=<sp/>self.<ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher_1a5548990e6d0dfca8e0ebc024e007fdd5" kindref="member">stamp</ref>stamp.to_msg()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wrench_msg.wrench.force.x<sp/>=<sp/>msg.data[i]</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.thruster_wrench_publishers[i].publish(wrench_msg)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="namespacethruster__wrench__publisher_1a0ac821dffb4a283bb32d9e08f92fbd71" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacethruster__wrench__publisher_1a0ac821dffb4a283bb32d9e08f92fbd71" kindref="member">main</ref>(args=None):</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>rclpy.init(args=args)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>node<sp/>=<sp/><ref refid="classthruster__wrench__publisher_1_1ThrusterWrenchPublisher" kindref="compound">ThrusterWrenchPublisher</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>rclpy.spin(node)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;__main__&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacethruster__wrench__publisher_1a0ac821dffb4a283bb32d9e08f92fbd71" kindref="member">main</ref>()</highlight></codeline>
+    </programlisting>
+    <location file="mercury_controller/thruster_wrench_publisher.py"/>
+  </compounddef>
+</doxygen>

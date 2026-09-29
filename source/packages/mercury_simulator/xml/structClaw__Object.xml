@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structClaw__Object" kind="struct" language="C++" prot="public">
+    <compoundname>Claw_Object</compoundname>
+    <includes refid="Claw__Object_8h" local="no">Claw_Object.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structClaw__Object_1a8c476318fb90376143ebb0a731403a96" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Claw_Object::net_buoyancy</definition>
+        <argsstring></argsstring>
+        <name>net_buoyancy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/Claw_Object.h" line="8" column="12" bodyfile="include/mercury_simulator/Claw_Object.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structClaw__Object_1aa55c4115940eb7f55563291f2058ee5d" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d Claw_Object::com</definition>
+        <argsstring></argsstring>
+        <name>com</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/Claw_Object.h" line="9" column="21" bodyfile="include/mercury_simulator/Claw_Object.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Claw_Object</label>
+        <link refid="structClaw__Object"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_simulator/Claw_Object.h" line="7" column="1" bodyfile="include/mercury_simulator/Claw_Object.h" bodystart="7" bodyend="10"/>
+    <listofallmembers>
+      <member refid="structClaw__Object_1aa55c4115940eb7f55563291f2058ee5d" prot="public" virt="non-virtual"><scope>Claw_Object</scope><name>com</name></member>
+      <member refid="structClaw__Object_1a8c476318fb90376143ebb0a731403a96" prot="public" virt="non-virtual"><scope>Claw_Object</scope><name>net_buoyancy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

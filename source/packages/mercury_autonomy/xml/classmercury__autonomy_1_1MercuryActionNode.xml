@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1MercuryActionNode" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::MercuryActionNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BT::StatefulActionNode</basecompoundref>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryBtNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryBtNode</basecompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1ApplyFeedforwardForce" prot="public" virt="non-virtual">mercury_autonomy::ApplyFeedforwardForce</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1CallSetBoolService" prot="public" virt="non-virtual">mercury_autonomy::CallSetBoolService</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1CallTriggerService" prot="public" virt="non-virtual">mercury_autonomy::CallTriggerService</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1ComputeFrameAlignment" prot="public" virt="non-virtual">mercury_autonomy::ComputeFrameAlignment</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1ExampleAction" prot="public" virt="non-virtual">mercury_autonomy::ExampleAction</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1GetBoolTopic" prot="public" virt="non-virtual">mercury_autonomy::GetBoolTopic</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1GetCovariance" prot="public" virt="non-virtual">mercury_autonomy::GetCovariance</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1GetFloatTopic" prot="public" virt="non-virtual">mercury_autonomy::GetFloatTopic</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1GetImuOrientation" prot="public" virt="non-virtual">mercury_autonomy::GetImuOrientation</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1GetMappingState" prot="public" virt="non-virtual">mercury_autonomy::GetMappingState</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1GetOdometry" prot="public" virt="non-virtual">mercury_autonomy::GetOdometry</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1GetTwistTopic" prot="public" virt="non-virtual">mercury_autonomy::GetTwistTopic</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1PublishBool" prot="public" virt="non-virtual">mercury_autonomy::PublishBool</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1PublishEKFPose" prot="public" virt="non-virtual">mercury_autonomy::PublishEKFPose</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1PublishInt8" prot="public" virt="non-virtual">mercury_autonomy::PublishInt8</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1PublishToController" prot="public" virt="non-virtual">mercury_autonomy::PublishToController</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1PublishTwist" prot="public" virt="non-virtual">mercury_autonomy::PublishTwist</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1SetFeedforwardMode" prot="public" virt="non-virtual">mercury_autonomy::SetFeedforwardMode</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1SetMappingTarget" prot="public" virt="non-virtual">mercury_autonomy::SetMappingTarget</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1SetStatus" prot="public" virt="non-virtual">mercury_autonomy::SetStatus</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1TransformPose" prot="public" virt="non-virtual">mercury_autonomy::TransformPose</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1WaitForDetection" prot="public" virt="non-virtual">mercury_autonomy::WaitForDetection</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1WaitForKillSwitch" prot="public" virt="non-virtual">mercury_autonomy::WaitForKillSwitch</derivedcompoundref>
+    <includes refid="mercury__bt__node_8hpp" local="no">mercury_bt_node.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::MercuryActionNode::MercuryActionNode</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>MercuryActionNode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="61" column="5" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="61" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>BT::TreeNode *</type>
+        <definition>BT::TreeNode* mercury_autonomy::MercuryActionNode::treeNode</definition>
+        <argsstring>() override</argsstring>
+        <name>treeNode</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a9dd6095556c4dcce73d6e78d615735e4">treeNode</reimplements>
+        <briefdescription>
+<para>Access the underlying BT TreeNode (implemented by each subclass). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="64" column="19" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for custom BT action nodes with ROS2 access. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>mercury_autonomy::PublishToController</label>
+        <link refid="classmercury__autonomy_1_1PublishToController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mercury_autonomy::WaitForDetection</label>
+        <link refid="classmercury__autonomy_1_1WaitForDetection"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mercury_autonomy::ComputeFrameAlignment</label>
+        <link refid="classmercury__autonomy_1_1ComputeFrameAlignment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mercury_autonomy::GetCovariance</label>
+        <link refid="classmercury__autonomy_1_1GetCovariance"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mercury_autonomy::ExampleAction</label>
+        <link refid="classmercury__autonomy_1_1ExampleAction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mercury_autonomy::PublishBool</label>
+        <link refid="classmercury__autonomy_1_1PublishBool"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mercury_autonomy::SetMappingTarget</label>
+        <link refid="classmercury__autonomy_1_1SetMappingTarget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>mercury_autonomy::WaitForKillSwitch</label>
+        <link refid="classmercury__autonomy_1_1WaitForKillSwitch"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::ApplyFeedforwardForce</label>
+        <link refid="classmercury__autonomy_1_1ApplyFeedforwardForce"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mercury_autonomy::GetTwistTopic</label>
+        <link refid="classmercury__autonomy_1_1GetTwistTopic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mercury_autonomy::GetFloatTopic</label>
+        <link refid="classmercury__autonomy_1_1GetFloatTopic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="2">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="24">
+        <label>mercury_autonomy::TransformPose</label>
+        <link refid="classmercury__autonomy_1_1TransformPose"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mercury_autonomy::GetOdometry</label>
+        <link refid="classmercury__autonomy_1_1GetOdometry"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mercury_autonomy::SetStatus</label>
+        <link refid="classmercury__autonomy_1_1SetStatus"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mercury_autonomy::PublishTwist</label>
+        <link refid="classmercury__autonomy_1_1PublishTwist"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mercury_autonomy::CallSetBoolService</label>
+        <link refid="classmercury__autonomy_1_1CallSetBoolService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>mercury_autonomy::PublishInt8</label>
+        <link refid="classmercury__autonomy_1_1PublishInt8"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mercury_autonomy::CallTriggerService</label>
+        <link refid="classmercury__autonomy_1_1CallTriggerService"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mercury_autonomy::PublishEKFPose</label>
+        <link refid="classmercury__autonomy_1_1PublishEKFPose"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mercury_autonomy::GetMappingState</label>
+        <link refid="classmercury__autonomy_1_1GetMappingState"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mercury_autonomy::GetImuOrientation</label>
+        <link refid="classmercury__autonomy_1_1GetImuOrientation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mercury_autonomy::GetBoolTopic</label>
+        <link refid="classmercury__autonomy_1_1GetBoolTopic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mercury_autonomy::SetFeedforwardMode</label>
+        <link refid="classmercury__autonomy_1_1SetFeedforwardMode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="2">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="59" column="1" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="59" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30" prot="protected" virt="pure-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::MercuryActionNode</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

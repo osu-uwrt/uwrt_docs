@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structmercury__rviz_1_1PaintedTextConfig" kind="struct" language="C++" prot="public">
+    <compoundname>mercury_rviz::PaintedTextConfig</compoundname>
+    <includes refid="OverlayDisplay_8hpp" local="no">OverlayDisplay.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1ad00b6f38926598d36aac4f3765f126a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedTextConfig::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="55" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1a29facc1a5e2e457ffe14a3d49f9a397f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedTextConfig::y_</definition>
+        <argsstring></argsstring>
+        <name>y_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="55" column="12" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1adc5187baa937046f11e37e944768368f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedTextConfig::height_</definition>
+        <argsstring></argsstring>
+        <name>height_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="55" column="15" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1ab10d28711ee4b0e3ad321492ee104714" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedTextConfig::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="55" column="23" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1ac870433e5b39f5f43040a74066fa631d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_rviz::PaintedTextConfig::text_</definition>
+        <argsstring></argsstring>
+        <name>text_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="56" column="17" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1a2851a8eed6f2b82f67b1076b835eaa22" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_rviz::PaintedTextConfig::font_name_</definition>
+        <argsstring></argsstring>
+        <name>font_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="56" column="23" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1a91543dec0f30b7f046beb98c78b3337f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::PaintedTextConfig::invert_shadow_</definition>
+        <argsstring></argsstring>
+        <name>invert_shadow_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="57" column="10" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1a48a3e9b472f0d87ee87003b7e269fdb8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedTextConfig::line_width_</definition>
+        <argsstring></argsstring>
+        <name>line_width_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="58" column="9" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1a3499eecb3b4f185661cff13ff95cab7a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::PaintedTextConfig::font_size_</definition>
+        <argsstring></argsstring>
+        <name>font_size_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="58" column="21" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmercury__rviz_1_1PaintedTextConfig_1aab24406e3a71d9955ed78067c56140d7" prot="public" static="no" mutable="no">
+        <type>QColor</type>
+        <definition>QColor mercury_rviz::PaintedTextConfig::text_color_</definition>
+        <argsstring></argsstring>
+        <name>text_color_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/OverlayDisplay.hpp" line="59" column="12" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" compoundref="OverlayDisplay_8cpp" startline="186" endline="242">mercury_rviz::OverlayDisplay::paintText</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_rviz::PaintedTextConfig</label>
+        <link refid="structmercury__rviz_1_1PaintedTextConfig"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/OverlayDisplay.hpp" line="54" column="1" bodyfile="include/mercury_rviz/OverlayDisplay.hpp" bodystart="54" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1a2851a8eed6f2b82f67b1076b835eaa22" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>font_name_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1a3499eecb3b4f185661cff13ff95cab7a" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>font_size_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1adc5187baa937046f11e37e944768368f" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>height_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1a91543dec0f30b7f046beb98c78b3337f" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>invert_shadow_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1a48a3e9b472f0d87ee87003b7e269fdb8" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>line_width_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1ac870433e5b39f5f43040a74066fa631d" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>text_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1aab24406e3a71d9955ed78067c56140d7" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>text_color_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1ab10d28711ee4b0e3ad321492ee104714" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>width_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1ad00b6f38926598d36aac4f3765f126a9" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>x_</name></member>
+      <member refid="structmercury__rviz_1_1PaintedTextConfig_1a29facc1a5e2e457ffe14a3d49f9a397f" prot="public" virt="non-virtual"><scope>mercury_rviz::PaintedTextConfig</scope><name>y_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

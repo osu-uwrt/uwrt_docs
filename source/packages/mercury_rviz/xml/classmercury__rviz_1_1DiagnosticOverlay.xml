@@ -1,0 +1,1203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__rviz_1_1DiagnosticOverlay" kind="class" language="C++" prot="public">
+    <compoundname>mercury_rviz::DiagnosticOverlay</compoundname>
+    <basecompoundref refid="classmercury__rviz_1_1OverlayDisplay" prot="public" virt="non-virtual">mercury_rviz::OverlayDisplay</basecompoundref>
+    <includes refid="DiagnosticOverlay_8hpp" local="no">DiagnosticOverlay.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a2d9acc155e07faad2059248dd752a5ec" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr mercury_rviz::DiagnosticOverlay::checkTimer</definition>
+        <argsstring></argsstring>
+        <name>checkTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="45" column="34" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aa5177c1f300bacbc344e25ee0317e2e2" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_rviz::DiagnosticOverlay::lastDiag</definition>
+        <argsstring></argsstring>
+        <name>lastDiag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="48" column="18" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a45c20e32e9fbe79ecdc80f3f07d53ca8" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_rviz::DiagnosticOverlay::lastKill</definition>
+        <argsstring></argsstring>
+        <name>lastKill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="48" column="27" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a7b2699898cd702c5e5a0cfa5f9dcefbc" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_rviz::DiagnosticOverlay::lastZed</definition>
+        <argsstring></argsstring>
+        <name>lastZed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="48" column="36" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aeb68ae1841c5f48c9d141813168fbe56" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_rviz::DiagnosticOverlay::lastLeak</definition>
+        <argsstring></argsstring>
+        <name>lastLeak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="48" column="44" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1adc870b747a4702127ec73d4113e5920c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_rviz::DiagnosticOverlay::lastCpuTemp</definition>
+        <argsstring></argsstring>
+        <name>lastCpuTemp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="48" column="53" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a986a61ff9b4d1dabd33e679975633e85" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_rviz::DiagnosticOverlay::stbdlastBattery</definition>
+        <argsstring></argsstring>
+        <name>stbdlastBattery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="48" column="65" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a20827f9fa92c5ed938eb669772f5a224" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_rviz::DiagnosticOverlay::portlastBattery</definition>
+        <argsstring></argsstring>
+        <name>portlastBattery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="49" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ae3525cdc052d36ae7543dc4c79e51f0d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::diagsTimedOut</definition>
+        <argsstring></argsstring>
+        <name>diagsTimedOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="50" column="10" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ad5272a77401538a4477e037a0698b86e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::killTimedOut</definition>
+        <argsstring></argsstring>
+        <name>killTimedOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="50" column="24" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aab9d86d4d3fe8bca1896af35b094e812" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::zedTimedOut</definition>
+        <argsstring></argsstring>
+        <name>zedTimedOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="50" column="37" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a0d9b5917d0fc946308680866b3fe2062" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::leakTimedOut</definition>
+        <argsstring></argsstring>
+        <name>leakTimedOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="50" column="49" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ac9b3c08eacd5d38424d37421c6212b5c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::cpuTempTimedOut</definition>
+        <argsstring></argsstring>
+        <name>cpuTempTimedOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="50" column="62" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a8e2a0c07b78c6152e1d2cbdb34a886ac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::stbdBatteryTimedOut</definition>
+        <argsstring></argsstring>
+        <name>stbdBatteryTimedOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="51" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a82c137fd4d25b21264dd60152e11cc5b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::portBatteryTimedOut</definition>
+        <argsstring></argsstring>
+        <name>portBatteryTimedOut</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="51" column="29" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a7c82800f53578f3da37731f897f745d7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::startedLeaking</definition>
+        <argsstring></argsstring>
+        <name>startedLeaking</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="53" column="10" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a9cf345362920ff81f143b020889bf21a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_rviz::DiagnosticOverlay::redFlash</definition>
+        <argsstring></argsstring>
+        <name>redFlash</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="54" column="10" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a763103f7def0424a5f5b6f866711c59c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; diagnostic_msgs::msg::DiagnosticArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;diagnostic_msgs::msg::DiagnosticArray&gt;::SharedPtr mercury_rviz::DiagnosticOverlay::diagSub</definition>
+        <argsstring></argsstring>
+        <name>diagSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="57" column="38" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a1f38657981c201f2ab9acd7352992368" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr mercury_rviz::DiagnosticOverlay::killSub</definition>
+        <argsstring></argsstring>
+        <name>killSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="58" column="38" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a3b3764f3e212187bda89dac441a19560" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; sensor_msgs::msg::Temperature &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;sensor_msgs::msg::Temperature&gt;::SharedPtr mercury_rviz::DiagnosticOverlay::zedSub</definition>
+        <argsstring></argsstring>
+        <name>zedSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="59" column="38" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aae0ccab57fd6cdf36d5622cf68f9ed1f" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr mercury_rviz::DiagnosticOverlay::leakSub</definition>
+        <argsstring></argsstring>
+        <name>leakSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="60" column="38" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a58870dcd47dc336a33a27e63b5ec5f90" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; mercury_msgs::msg::BatteryStatus &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;mercury_msgs::msg::BatteryStatus&gt;::SharedPtr mercury_rviz::DiagnosticOverlay::batterySub</definition>
+        <argsstring></argsstring>
+        <name>batterySub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="61" column="38" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a468f1ed8a835b07bbef576278b6e2872" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::diagLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>diagLedConfigId</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="64" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a76338ea156753eefdaf50298a6c50fa6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::killLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>killLedConfigId</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="65" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a00c2b5964334cfaba6b4cf70328405cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::zedLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>zedLedConfigId</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="66" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a357258cdcee0a8db2eb387b21de879a0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::leakLedConfigId</definition>
+        <argsstring></argsstring>
+        <name>leakLedConfigId</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="67" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aeacc9ee8aa7841792fd4bccee26d0960" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::portBatterySocTextId</definition>
+        <argsstring></argsstring>
+        <name>portBatterySocTextId</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="68" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ab4c98563e3ec96bd84cfc6f4125fdd58" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::stbdBatterySocTextId</definition>
+        <argsstring></argsstring>
+        <name>stbdBatterySocTextId</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="69" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a2548808fec731707f79bdca9e2aef7de" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList mercury_rviz::DiagnosticOverlay::fontFamilies</definition>
+        <argsstring></argsstring>
+        <name>fontFamilies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="72" column="17" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a83ae699627625d4822476f6e5081b28d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_rviz::DiagnosticOverlay::fontName</definition>
+        <argsstring></argsstring>
+        <name>fontName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="73" column="17" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a81866dd64ff4a3713e824e5412587e22" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_rviz::DiagnosticOverlay::tempMin</definition>
+        <argsstring></argsstring>
+        <name>tempMin</name>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="76" column="12" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a6eafa6f737eef30be0486ba727410596" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_rviz::DiagnosticOverlay::tempMax</definition>
+        <argsstring></argsstring>
+        <name>tempMax</name>
+        <initializer>{100.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="77" column="12" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a9d0f4a73772d0bfe5e5ae6672d372b5e" prot="private" static="no" mutable="no">
+        <type>rviz_common::properties::EnumProperty *</type>
+        <definition>rviz_common::properties::EnumProperty* mercury_rviz::DiagnosticOverlay::fontProperty</definition>
+        <argsstring></argsstring>
+        <name>fontProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="80" column="44" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a2046b3d34080351d77a23eeb68a7780a" prot="private" static="no" mutable="no">
+        <type>rviz_common::properties::StringProperty *</type>
+        <definition>rviz_common::properties::StringProperty* mercury_rviz::DiagnosticOverlay::robotNsProperty</definition>
+        <argsstring></argsstring>
+        <name>robotNsProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="81" column="46" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aff25ab987e658b5c781f5a4a03d8d926" prot="private" static="no" mutable="no">
+        <type>rviz_common::properties::FloatProperty *</type>
+        <definition>rviz_common::properties::FloatProperty* mercury_rviz::DiagnosticOverlay::timeoutProperty</definition>
+        <argsstring></argsstring>
+        <name>timeoutProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="82" column="45" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ab697caa179357add60f13fb7c732ded7" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig mercury_rviz::DiagnosticOverlay::diagLedConfig</definition>
+        <argsstring></argsstring>
+        <name>diagLedConfig</name>
+        <initializer>= {
+        20, 50, 0, 0, 7, 9, QColor(255, 0, 255, 255), QColor(0, 0, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="85" column="25" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a65c0e7aa68c6b145366a115edcf8d051" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig mercury_rviz::DiagnosticOverlay::killLedConfig</definition>
+        <argsstring></argsstring>
+        <name>killLedConfig</name>
+        <initializer>= {
+        60, 50, 0, 0, 7, 9, QColor(255, 0, 255, 255), QColor(0, 0, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="87" column="25" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a010865e994eb40f6949cbd28fa825114" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig mercury_rviz::DiagnosticOverlay::zedLedConfig</definition>
+        <argsstring></argsstring>
+        <name>zedLedConfig</name>
+        <initializer>= {
+        100, 50, 0, 0, 7, 9, QColor(255, 0, 255, 255), QColor(0, 0, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="89" column="25" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ac9b1d453fb56ed114c024268446b6962" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig mercury_rviz::DiagnosticOverlay::leakLedConfig</definition>
+        <argsstring></argsstring>
+        <name>leakLedConfig</name>
+        <initializer>= {
+        20, 100, 0, 0, 7, 9, QColor(255, 0, 255, 255), QColor(0, 0, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="91" column="25" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ac6bf7262e8e9613806b3bf7c40d1ce7a" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedCircleConfig" kindref="compound">PaintedCircleConfig</ref></type>
+        <definition>PaintedCircleConfig mercury_rviz::DiagnosticOverlay::pressureLedConfig</definition>
+        <argsstring></argsstring>
+        <name>pressureLedConfig</name>
+        <initializer>= {
+        180, 50, 0, 0, 7, 9, QColor(255, 0, 255, 255), QColor(0, 0, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="93" column="25" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a24a4567b9c41e3ffed16161758a00203" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig mercury_rviz::DiagnosticOverlay::stbdBatterySocConfig</definition>
+        <argsstring></argsstring>
+        <name>stbdBatterySocConfig</name>
+        <initializer>= {70,       0,     0, 0,  &quot;S:0%&quot;,
+                                              fontName, false, 2, 12, QColor(255, 0, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="96" column="23" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ad244d7fb07fa6fa908f8a5ea4547eede" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig mercury_rviz::DiagnosticOverlay::portBatterySocConfig</definition>
+        <argsstring></argsstring>
+        <name>portBatterySocConfig</name>
+        <initializer>= {12,       0,     0, 0,  &quot;P:0%&quot;,
+                                              fontName, false, 2, 12, QColor(255, 0, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="99" column="23" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a9a1e46e004ba1bbb87dded157fcc6a02" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig mercury_rviz::DiagnosticOverlay::tempGaugeArc</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeArc</name>
+        <initializer>{
+        60,
+        100,  
+        10,   
+        90,   
+        -270, 
+        2,    
+        QColor(40, 40, 40, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="103" column="22" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a8b7890b3f3f04ee20c13d1ed34110df1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::tempGaugeArcId</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeArcId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="111" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aa49e99350b49dfa87b46df082a67a05b" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig mercury_rviz::DiagnosticOverlay::tempGaugeIndicator</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeIndicator</name>
+        <initializer>{
+        60,
+        100, 
+        10,  
+        90,  
+        90,  
+        3,   
+        QColor(0, 255, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="113" column="22" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ada4599c32f75ad9756e4518ccf6bc5f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::tempGaugeIndicatorId</definition>
+        <argsstring></argsstring>
+        <name>tempGaugeIndicatorId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="121" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1aa78327f5769803a1c7626b66f45c3394" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig mercury_rviz::DiagnosticOverlay::tempTextConfig</definition>
+        <argsstring></argsstring>
+        <name>tempTextConfig</name>
+        <initializer>{
+        45,
+        115, 
+        0,
+        0,       
+        &quot;0.0°C&quot;, 
+        fontName,
+        false,                     
+        2,                         
+        9,                         
+        QColor(255, 255, 255, 255) 
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="123" column="23" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ab0dfd7b35c39cefbceaf41106ad10b65" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::tempTextId</definition>
+        <argsstring></argsstring>
+        <name>tempTextId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="135" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a75e636fd0a556a283cb61ea9848b7106" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig mercury_rviz::DiagnosticOverlay::cpuTempGaugeArc</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeArc</name>
+        <initializer>{
+        100,
+        100,  
+        10,   
+        90,   
+        -270, 
+        2,    
+        QColor(40, 40, 40, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="138" column="22" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ad279261ba42c90c462d2f4c154579eba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::cpuTempGaugeArcId</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeArcId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="146" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a62af3e715c8b38baf5b8c837bace4e0f" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedArcConfig" kindref="compound">PaintedArcConfig</ref></type>
+        <definition>PaintedArcConfig mercury_rviz::DiagnosticOverlay::cpuTempGaugeIndicator</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeIndicator</name>
+        <initializer>{
+        100,
+        100, 
+        10,  
+        90,  
+        90,  
+        3,   
+        QColor(0, 255, 0, 255)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="148" column="22" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a26728478f1f6ae52e5722dd801e9f0e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::cpuTempGaugeIndicatorId</definition>
+        <argsstring></argsstring>
+        <name>cpuTempGaugeIndicatorId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="156" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1a4f33b17f8b85b92de1384d0d1412281e" prot="private" static="no" mutable="no">
+        <type><ref refid="structmercury__rviz_1_1PaintedTextConfig" kindref="compound">PaintedTextConfig</ref></type>
+        <definition>PaintedTextConfig mercury_rviz::DiagnosticOverlay::cpuTempTextConfig</definition>
+        <argsstring></argsstring>
+        <name>cpuTempTextConfig</name>
+        <initializer>{
+        85,
+        115, 
+        0,
+        0,       
+        &quot;0.0°C&quot;, 
+        fontName,
+        false,                     
+        2,                         
+        9,                         
+        QColor(255, 255, 255, 255) 
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="158" column="23" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__rviz_1_1DiagnosticOverlay_1ae2b4936543320ef31498d49ca3ee9b62" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mercury_rviz::DiagnosticOverlay::cpuTempTextId</definition>
+        <argsstring></argsstring>
+        <name>cpuTempTextId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="170" column="9" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a9ee08bff45dc2842c81d578a48d2903e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::DiagnosticOverlay::DiagnosticOverlay</definition>
+        <argsstring>()</argsstring>
+        <name>DiagnosticOverlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="20" column="5" bodyfile="src/DiagnosticOverlay.cpp" bodystart="13" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a11b5d4f99a181377eaa14cc7ec0fc7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mercury_rviz::DiagnosticOverlay::~DiagnosticOverlay</definition>
+        <argsstring>()</argsstring>
+        <name>~DiagnosticOverlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="22" column="5" bodyfile="src/DiagnosticOverlay.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1ae9660070a60aa516ab24fe36a811b5fd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::onInitialize</definition>
+        <argsstring>() override</argsstring>
+        <name>onInitialize</name>
+        <reimplements refid="classmercury__rviz_1_1OverlayDisplay_1a80d839d78b8927ccc6e007cc4c9a1403">onInitialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="25" column="18" bodyfile="src/DiagnosticOverlay.cpp" bodystart="35" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a4fc327a3f5ad2f70f46fb5bb66af19b9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::onEnable</definition>
+        <argsstring>() override</argsstring>
+        <name>onEnable</name>
+        <reimplements refid="classmercury__rviz_1_1OverlayDisplay_1aad22a5738665413153d16bd6901bcff4">onEnable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="26" column="18" bodyfile="src/DiagnosticOverlay.cpp" bodystart="350" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a7eaf3158988951ca2598bb8cc8d1ebde" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::onDisable</definition>
+        <argsstring>() override</argsstring>
+        <name>onDisable</name>
+        <reimplements refid="classmercury__rviz_1_1OverlayDisplay_1a54a0be4624d24587f3256d768e585ae5">onDisable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="27" column="18" bodyfile="src/DiagnosticOverlay.cpp" bodystart="352" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a6fcc6212b71f9bcb4723550471411db7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::update</definition>
+        <argsstring>(float wall_dt, float ros_dt) override</argsstring>
+        <name>update</name>
+        <reimplements refid="classmercury__rviz_1_1OverlayDisplay_1a591ba290c8e0336ce6c77bab9f62bb69">update</reimplements>
+        <param>
+          <type>float</type>
+          <declname>wall_dt</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ros_dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="28" column="18" bodyfile="src/DiagnosticOverlay.cpp" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1afdc0dc3e04c8d5ca138bcf01622eadcc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <reimplements refid="classmercury__rviz_1_1OverlayDisplay_1af5a1f685600c8bea5e095a56713b2df0">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="29" column="18" bodyfile="src/DiagnosticOverlay.cpp" bodystart="450" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a428674dafd1060e553dc112993f47666" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::diagnosticCallback</definition>
+        <argsstring>(const diagnostic_msgs::msg::DiagnosticArray &amp;msg)</argsstring>
+        <name>diagnosticCallback</name>
+        <param>
+          <type>const diagnostic_msgs::msg::DiagnosticArray &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="31" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="136" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1aefda1740772a535ec058a928d9252e28" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::killCallback</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>killCallback</name>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="32" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="277" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1af5af19b64e6f7efc141616bd85a5be90" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::zedCallback</definition>
+        <argsstring>(const sensor_msgs::msg::Temperature &amp;msg)</argsstring>
+        <name>zedCallback</name>
+        <param>
+          <type>const sensor_msgs::msg::Temperature &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="33" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="215" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a60e297bfa34648d9e2a26f203b49d9db" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::leakCallback</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>leakCallback</name>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="34" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="228" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1ab040f26b972839de9d793235cbe487f2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::batteryCallback</definition>
+        <argsstring>(const mercury_msgs::msg::BatteryStatus &amp;msg)</argsstring>
+        <name>batteryCallback</name>
+        <param>
+          <type>const mercury_msgs::msg::BatteryStatus &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="35" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="306" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__rviz_1_1DiagnosticOverlay_1a3dbc05b7fd89a2860879017e6d4764db" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::checkTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>checkTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="37" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="358" bodyend="448"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-slot">
+      <memberdef kind="slot" id="classmercury__rviz_1_1DiagnosticOverlay_1a82e74cd832a1e2ddb500e2a2be59a3c2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::updateFont</definition>
+        <argsstring>()</argsstring>
+        <name>updateFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="40" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="293" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="slot" id="classmercury__rviz_1_1DiagnosticOverlay_1aa1b28eca2bb496aabb39078ed0dbadd3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_rviz::DiagnosticOverlay::updateNS</definition>
+        <argsstring>()</argsstring>
+        <name>updateNS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="41" column="10" bodyfile="src/DiagnosticOverlay.cpp" bodystart="123" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>mercury_rviz::OverlayDisplay</label>
+        <link refid="classmercury__rviz_1_1OverlayDisplay"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::DiagnosticOverlay</label>
+        <link refid="classmercury__rviz_1_1DiagnosticOverlay"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rviz_common::Display</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>mercury_rviz::PaintedCircleConfig</label>
+        <link refid="structmercury__rviz_1_1PaintedCircleConfig"/>
+      </node>
+      <node id="2">
+        <label>mercury_rviz::OverlayDisplay</label>
+        <link refid="classmercury__rviz_1_1OverlayDisplay"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_rviz::DiagnosticOverlay</label>
+        <link refid="classmercury__rviz_1_1DiagnosticOverlay"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-cpuTempGaugeArc</edgelabel>
+          <edgelabel>-cpuTempGaugeIndicator</edgelabel>
+          <edgelabel>-tempGaugeArc</edgelabel>
+          <edgelabel>-tempGaugeIndicator</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-diagLedConfig</edgelabel>
+          <edgelabel>-killLedConfig</edgelabel>
+          <edgelabel>-leakLedConfig</edgelabel>
+          <edgelabel>-pressureLedConfig</edgelabel>
+          <edgelabel>-zedLedConfig</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-cpuTempTextConfig</edgelabel>
+          <edgelabel>-portBatterySocConfig</edgelabel>
+          <edgelabel>-stbdBatterySocConfig</edgelabel>
+          <edgelabel>-tempTextConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mercury_rviz::PaintedTextConfig</label>
+        <link refid="structmercury__rviz_1_1PaintedTextConfig"/>
+      </node>
+      <node id="3">
+        <label>rviz_common::Display</label>
+      </node>
+      <node id="4">
+        <label>mercury_rviz::PaintedArcConfig</label>
+        <link refid="structmercury__rviz_1_1PaintedArcConfig"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_rviz/DiagnosticOverlay.hpp" line="17" column="1" bodyfile="include/mercury_rviz/DiagnosticOverlay.hpp" bodystart="17" bodyend="171"/>
+    <listofallmembers>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ac754cb05f0c673e61ddcbaf30b0cf0a0" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>addArc</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1af4f406ea25dd51d737135a84d876d118" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>addCircle</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a69de904b4a18f5c55c181962ac252141" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>addText</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ad12520705c0b8bb8b391799b8a90f826" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>arc_vector_</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ab040f26b972839de9d793235cbe487f2" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>batteryCallback</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a58870dcd47dc336a33a27e63b5ec5f90" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>batterySub</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ae66e7a008990a2e75397fae71b21bf2e" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>bg_color_</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a3dbc05b7fd89a2860879017e6d4764db" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>checkTimeout</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a2d9acc155e07faad2059248dd752a5ec" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>checkTimer</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ada9c0bf967ff6d28a9872ca5b6cde4ca" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>circle_vector_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a8f0a458d008cd9713a97992cf15f5c80" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>clearElements</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a75e636fd0a556a283cb61ea9848b7106" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeArc</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ad279261ba42c90c462d2f4c154579eba" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeArcId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a62af3e715c8b38baf5b8c837bace4e0f" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeIndicator</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a26728478f1f6ae52e5722dd801e9f0e4" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>cpuTempGaugeIndicatorId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a4f33b17f8b85b92de1384d0d1412281e" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>cpuTempTextConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ae2b4936543320ef31498d49ca3ee9b62" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>cpuTempTextId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ac9b3c08eacd5d38424d37421c6212b5c" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>cpuTempTimedOut</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ab697caa179357add60f13fb7c732ded7" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>diagLedConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a468f1ed8a835b07bbef576278b6e2872" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>diagLedConfigId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a428674dafd1060e553dc112993f47666" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>diagnosticCallback</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a9ee08bff45dc2842c81d578a48d2903e" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>DiagnosticOverlay</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ae3525cdc052d36ae7543dc4c79e51f0d" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>diagsTimedOut</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a763103f7def0424a5f5b6f866711c59c" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>diagSub</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a2548808fec731707f79bdca9e2aef7de" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>fontFamilies</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a83ae699627625d4822476f6e5081b28d" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>fontName</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a9d0f4a73772d0bfe5e5ae6672d372b5e" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>fontProperty</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a31a38b955269f850a9457c9e4d29c901" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>height_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a1b2fffc9609ad487569f922b0cb256f5" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>hor_alignment_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9f3a82664e3ad8f1694502843a575672" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>hor_dist_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a93c2bdaef64c5bf49d2713f12c97b4b6" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>horizontal_alignment_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a6b5bf2063185a88a64df99dc2f7963b9" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>horizontal_dist_</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aefda1740772a535ec058a928d9252e28" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>killCallback</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a65c0e7aa68c6b145366a115edcf8d051" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>killLedConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a76338ea156753eefdaf50298a6c50fa6" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>killLedConfigId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a1f38657981c201f2ab9acd7352992368" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>killSub</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ad5272a77401538a4477e037a0698b86e" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>killTimedOut</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1adc870b747a4702127ec73d4113e5920c" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>lastCpuTemp</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aa5177c1f300bacbc344e25ee0317e2e2" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>lastDiag</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a45c20e32e9fbe79ecdc80f3f07d53ca8" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>lastKill</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aeb68ae1841c5f48c9d141813168fbe56" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>lastLeak</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a7b2699898cd702c5e5a0cfa5f9dcefbc" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>lastZed</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a60e297bfa34648d9e2a26f203b49d9db" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>leakCallback</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ac9b1d453fb56ed114c024268446b6962" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>leakLedConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a357258cdcee0a8db2eb387b21de879a0" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>leakLedConfigId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aae0ccab57fd6cdf36d5622cf68f9ed1f" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>leakSub</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a0d9b5917d0fc946308680866b3fe2062" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>leakTimedOut</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a7eaf3158988951ca2598bb8cc8d1ebde" prot="protected" virt="virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>onDisable</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a4fc327a3f5ad2f70f46fb5bb66af19b9" prot="protected" virt="virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>onEnable</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ae9660070a60aa516ab24fe36a811b5fd" prot="protected" virt="virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>onInitialize</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ab6a98e93f45bf3c028194236391d66e7" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>overlay_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a79b62ecc09332a53d040394fb7b845ee" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>OverlayDisplay</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a3c35c759cbd1a1005c9a549d892b2646" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>paintArc</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1aa58366b903cc5b93dca550898cb6aa9c" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>paintCircle</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a0f11bdf97099b99bac97310b09d0e6bc" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>paintText</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ad244d7fb07fa6fa908f8a5ea4547eede" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>portBatterySocConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aeacc9ee8aa7841792fd4bccee26d0960" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>portBatterySocTextId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a82c137fd4d25b21264dd60152e11cc5b" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>portBatteryTimedOut</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a20827f9fa92c5ed938eb669772f5a224" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>portlastBattery</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ac6bf7262e8e9613806b3bf7c40d1ce7a" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>pressureLedConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a9cf345362920ff81f143b020889bf21a" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>redFlash</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ad030ec6aa81356fc6bb2fe110104a276" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>require_update_texture_</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1afdc0dc3e04c8d5ca138bcf01622eadcc" prot="protected" virt="virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>reset</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a2046b3d34080351d77a23eeb68a7780a" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>robotNsProperty</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a7c82800f53578f3da37731f897f745d7" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>startedLeaking</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a24a4567b9c41e3ffed16161758a00203" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>stbdBatterySocConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ab4c98563e3ec96bd84cfc6f4125fdd58" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>stbdBatterySocTextId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a8e2a0c07b78c6152e1d2cbdb34a886ac" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>stbdBatteryTimedOut</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a986a61ff9b4d1dabd33e679975633e85" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>stbdlastBattery</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a9a1e46e004ba1bbb87dded157fcc6a02" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempGaugeArc</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a8b7890b3f3f04ee20c13d1ed34110df1" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempGaugeArcId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aa49e99350b49dfa87b46df082a67a05b" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempGaugeIndicator</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ada4599c32f75ad9756e4518ccf6bc5f6" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempGaugeIndicatorId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a6eafa6f737eef30be0486ba727410596" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempMax</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a81866dd64ff4a3713e824e5412587e22" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempMin</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aa78327f5769803a1c7626b66f45c3394" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempTextConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1ab0dfd7b35c39cefbceaf41106ad10b65" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>tempTextId</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a42c733fad2b91d5ffecd325a3c43e19c" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>text_vector_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a35b1a42f19c3d47d5aabe3eb7b17f40d" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>texture_height_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a28d8b2f6bee9a979e064ea9834d6c53c" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>texture_width_</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aff25ab987e658b5c781f5a4a03d8d926" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>timeoutProperty</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a6fcc6212b71f9bcb4723550471411db7" prot="protected" virt="virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>update</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a0c70c376b0545ea71060d78ed86d6dbc" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateArc</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9ec171be2d77d1db970eb09c35cd01ae" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateCircle</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a82e74cd832a1e2ddb500e2a2be59a3c2" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateFont</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a36619a574d5c42ae87f28a701aa97f01" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateHeight</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ad46bee5f4643ce1d1beed5b0d4ee4d66" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateHorizontalAlignment</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a698e183e4d89ff37d0fbe5dfa9f2d36e" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateHorizontalDistance</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aa1b28eca2bb496aabb39078ed0dbadd3" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateNS</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a2111aca80a32f107ec4abe8cddec612e" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateText</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a33e4f0dfa5f0e26175531d866b5a4ed0" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateVerticalAlignment</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a67451760a22fcafdd321407ae21fa7ae" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateVerticalDistance</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a5d141da88d70aaa574676d8f6c8f407d" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>updateWidth</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9fe4b57f93cd5924c1551f846ed77957" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>ver_alignment_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ab35c74f095a4673d7d6a36c27fd505c6" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>ver_dist_property_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a6915f02d22a83e669820935cfb944c68" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>vertical_alignment_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1ab4655a6a5f8f00221da680ae085e898d" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>vertical_dist_</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a69671fa516d8de4cbfac5a3b8def593e" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>width_property_</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1af5af19b64e6f7efc141616bd85a5be90" prot="protected" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>zedCallback</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a010865e994eb40f6949cbd28fa825114" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>zedLedConfig</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a00c2b5964334cfaba6b4cf70328405cd" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>zedLedConfigId</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a3b3764f3e212187bda89dac441a19560" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>zedSub</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1aab9d86d4d3fe8bca1896af35b094e812" prot="private" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>zedTimedOut</name></member>
+      <member refid="classmercury__rviz_1_1DiagnosticOverlay_1a11b5d4f99a181377eaa14cc7ec0fc7b4" prot="public" virt="non-virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>~DiagnosticOverlay</name></member>
+      <member refid="classmercury__rviz_1_1OverlayDisplay_1a9fb5b3b2e5bb50330bf983e51c26f4d6" prot="public" virt="virtual"><scope>mercury_rviz::DiagnosticOverlay</scope><name>~OverlayDisplay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

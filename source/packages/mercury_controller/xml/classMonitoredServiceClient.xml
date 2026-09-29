@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classMonitoredServiceClient" kind="class" language="C++" prot="public">
+    <compoundname>MonitoredServiceClient</compoundname>
+    <includes refid="monitored__service__client_8hpp" local="no">monitored_service_client.hpp</includes>
+    <innerclass refid="structMonitoredServiceClient_1_1servicePair" prot="private">MonitoredServiceClient::servicePair</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename ServiceT</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" prot="private" static="no">
+        <type>typename ServiceT::Request::SharedPtr</type>
+        <definition>using MonitoredServiceClient&lt; ServiceT &gt;::Request =  typename ServiceT::Request::SharedPtr</definition>
+        <argsstring></argsstring>
+        <name>Request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="24" column="5" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" prot="private" static="no">
+        <type>typename ServiceT::Response::SharedPtr</type>
+        <definition>using MonitoredServiceClient&lt; ServiceT &gt;::Response =  typename ServiceT::Response::SharedPtr</definition>
+        <argsstring></argsstring>
+        <name>Response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="25" column="5" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMonitoredServiceClient_1ae2429d3f56781c61c8e72ab02be82700" prot="private" static="no">
+        <type>typename rclcpp::Client&lt; ServiceT &gt;::SharedFutureWithRequest</type>
+        <definition>using MonitoredServiceClient&lt; ServiceT &gt;::Future =  typename rclcpp::Client&lt;ServiceT&gt;::SharedFutureWithRequest</definition>
+        <argsstring></argsstring>
+        <name>Future</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="26" column="5" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classMonitoredServiceClient_1a0bba8d5ae36388a9c0e97572c8c836cb" prot="private" static="no">
+        <type>typename rclcpp::Client&lt; ServiceT &gt;::SharedFutureWithRequestAndRequestId</type>
+        <definition>using MonitoredServiceClient&lt; ServiceT &gt;::FutureAndId =  typename rclcpp::Client&lt;ServiceT&gt;::SharedFutureWithRequestAndRequestId</definition>
+        <argsstring></argsstring>
+        <name>FutureAndId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="27" column="5" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node *</type>
+        <definition>rclcpp::Node* MonitoredServiceClient&lt; ServiceT &gt;::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="17" column="19" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1afc32e9b41e1e13fc3e4eb10691de1c53" compoundref="controller__overseer_8py" startline="102" endline="114">controller_overseer.MonitoredServiceClient._srv_callback</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1acc7cccf9387e4477089b2f6cf2a1eb03" compoundref="monitored__service__client_8hpp" startline="112" endline="118">MonitoredServiceClient&lt; ServiceT &gt;::MonitoredServiceClient</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1abb748d873dbc94258a3bb075715cc8c2" compoundref="controller__overseer_8py" startline="70" endline="78">controller_overseer.MonitoredServiceClient.schedule_call</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a2bde116e0c2fd8464f54b8ccf6680266" compoundref="monitored__service__client_8hpp" startline="51" endline="62">MonitoredServiceClient&lt; ServiceT &gt;::scheduleCall</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" compoundref="monitored__service__client_8hpp" startline="96" endline="106">MonitoredServiceClient&lt; ServiceT &gt;::serviceCallback</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; ServiceT &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;ServiceT&gt;::SharedPtr MonitoredServiceClient&lt; ServiceT &gt;::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="18" column="41" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1MonitoredServiceClient_1adff2259bfc02f5b8e305a4ae70b24a52" compoundref="controller__overseer_8py" startline="79" endline="101">controller_overseer.MonitoredServiceClient._timer_callback</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1acc7cccf9387e4477089b2f6cf2a1eb03" compoundref="monitored__service__client_8hpp" startline="112" endline="118">MonitoredServiceClient&lt; ServiceT &gt;::MonitoredServiceClient</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a2bde116e0c2fd8464f54b8ccf6680266" compoundref="monitored__service__client_8hpp" startline="51" endline="62">MonitoredServiceClient&lt; ServiceT &gt;::scheduleCall</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMonitoredServiceClient_1a10489ed3001a234e373a6acac43c6996" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr MonitoredServiceClient&lt; ServiceT &gt;::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="21" column="34" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classMonitoredServiceClient_1acc7cccf9387e4477089b2f6cf2a1eb03" compoundref="monitored__service__client_8hpp" startline="112" endline="118">MonitoredServiceClient&lt; ServiceT &gt;::MonitoredServiceClient</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMonitoredServiceClient_1a8dd0ca4262f7dc02ffbb688799c4fc6e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time MonitoredServiceClient&lt; ServiceT &gt;::startTime</definition>
+        <argsstring></argsstring>
+        <name>startTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="22" column="18" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a62c5282fc8445ebd032422fcc0c3886c" compoundref="controller__overseer_8py" startline="709" endline="736">controller_overseer.ControllerOverseer.odometryCB</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structMonitoredServiceClient_1_1servicePair" kindref="compound">servicePair</ref> &gt;</type>
+        <definition>std::deque&lt;servicePair&gt; MonitoredServiceClient&lt; ServiceT &gt;::waitingRequests</definition>
+        <argsstring></argsstring>
+        <name>waitingRequests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="37" column="16" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classMonitoredServiceClient_1a59e49061c9b4c4cddd6889cb86350ca7" compoundref="monitored__service__client_8hpp" startline="109" endline="109">MonitoredServiceClient&lt; ServiceT &gt;::isIdle</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a2bde116e0c2fd8464f54b8ccf6680266" compoundref="monitored__service__client_8hpp" startline="51" endline="62">MonitoredServiceClient&lt; ServiceT &gt;::scheduleCall</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MonitoredServiceClient&lt; ServiceT &gt;::waitingForClient</definition>
+        <argsstring></argsstring>
+        <name>waitingForClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="40" column="10" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classMonitoredServiceClient_1a59e49061c9b4c4cddd6889cb86350ca7" compoundref="monitored__service__client_8hpp" startline="109" endline="109">MonitoredServiceClient&lt; ServiceT &gt;::isIdle</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" compoundref="monitored__service__client_8hpp" startline="96" endline="106">MonitoredServiceClient&lt; ServiceT &gt;::serviceCallback</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" prot="private" static="no" mutable="no">
+        <type><ref refid="structMonitoredServiceClient_1_1servicePair" kindref="compound">servicePair</ref></type>
+        <definition>servicePair MonitoredServiceClient&lt; ServiceT &gt;::activeClient</definition>
+        <argsstring></argsstring>
+        <name>activeClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="41" column="17" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" compoundref="monitored__service__client_8hpp" startline="96" endline="106">MonitoredServiceClient&lt; ServiceT &gt;::serviceCallback</referencedby>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMonitoredServiceClient_1ade14c2944bf45995505f4020a4119240" prot="private" static="no" mutable="no">
+        <type>std::optional&lt; <ref refid="classMonitoredServiceClient_1a0bba8d5ae36388a9c0e97572c8c836cb" kindref="member">FutureAndId</ref> &gt;</type>
+        <definition>std::optional&lt;FutureAndId&gt; MonitoredServiceClient&lt; ServiceT &gt;::activeFuture</definition>
+        <argsstring></argsstring>
+        <name>activeFuture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="44" column="19" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" compoundref="monitored__service__client_8hpp" startline="68" endline="90">MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMonitoredServiceClient_1a2bde116e0c2fd8464f54b8ccf6680266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MonitoredServiceClient&lt; ServiceT &gt;::scheduleCall</definition>
+        <argsstring>(Request request, std::function&lt; void(Response)&gt; callback)</argsstring>
+        <name>scheduleCall</name>
+        <param>
+          <type><ref refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" kindref="member">Request</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::function&lt; void(<ref refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" kindref="member">Response</ref>)&gt;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="51" column="10" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="51" bodyend="62"/>
+        <references refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" compoundref="monitored__service__client_8hpp" startline="18">MonitoredServiceClient&lt; ServiceT &gt;::client</references>
+        <references refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" compoundref="monitored__service__client_8hpp" startline="17">MonitoredServiceClient&lt; ServiceT &gt;::node</references>
+        <references refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" compoundref="monitored__service__client_8hpp" startline="37">MonitoredServiceClient&lt; ServiceT &gt;::waitingRequests</references>
+      </memberdef>
+      <memberdef kind="function" id="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitoredServiceClient&lt; ServiceT &gt;::timerCallback</definition>
+        <argsstring>()</argsstring>
+        <name>timerCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="68" column="10" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="68" bodyend="90"/>
+        <references refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" compoundref="monitored__service__client_8hpp" startline="41">MonitoredServiceClient&lt; ServiceT &gt;::activeClient</references>
+        <references refid="classMonitoredServiceClient_1ade14c2944bf45995505f4020a4119240" compoundref="monitored__service__client_8hpp" startline="44">MonitoredServiceClient&lt; ServiceT &gt;::activeFuture</references>
+        <references refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" compoundref="monitored__service__client_8hpp" startline="18">MonitoredServiceClient&lt; ServiceT &gt;::client</references>
+        <references refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" compoundref="monitored__service__client_8hpp" startline="17">MonitoredServiceClient&lt; ServiceT &gt;::node</references>
+        <references refid="structMonitoredServiceClient_1_1servicePair_1a571f8cda94448aa03f48f122f99fc545" compoundref="monitored__service__client_8hpp" startline="30">MonitoredServiceClient&lt; ServiceT &gt;::servicePair::request</references>
+        <references refid="classMonitoredServiceClient_1a8dd0ca4262f7dc02ffbb688799c4fc6e" compoundref="monitored__service__client_8hpp" startline="22">MonitoredServiceClient&lt; ServiceT &gt;::startTime</references>
+        <references refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" compoundref="monitored__service__client_8hpp" startline="40">MonitoredServiceClient&lt; ServiceT &gt;::waitingForClient</references>
+        <references refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" compoundref="monitored__service__client_8hpp" startline="37">MonitoredServiceClient&lt; ServiceT &gt;::waitingRequests</references>
+      </memberdef>
+      <memberdef kind="function" id="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MonitoredServiceClient&lt; ServiceT &gt;::serviceCallback</definition>
+        <argsstring>(Future future)</argsstring>
+        <name>serviceCallback</name>
+        <param>
+          <type><ref refid="classMonitoredServiceClient_1ae2429d3f56781c61c8e72ab02be82700" kindref="member">Future</ref></type>
+          <declname>future</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="96" column="10" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="96" bodyend="106"/>
+        <references refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" compoundref="monitored__service__client_8hpp" startline="41">MonitoredServiceClient&lt; ServiceT &gt;::activeClient</references>
+        <references refid="structMonitoredServiceClient_1_1servicePair_1a95c5ae2dfa8940452681b31fd5a7d629" compoundref="monitored__service__client_8hpp" startline="31">MonitoredServiceClient&lt; ServiceT &gt;::servicePair::callback</references>
+        <references refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" compoundref="monitored__service__client_8hpp" startline="17">MonitoredServiceClient&lt; ServiceT &gt;::node</references>
+        <references refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" compoundref="monitored__service__client_8hpp" startline="40">MonitoredServiceClient&lt; ServiceT &gt;::waitingForClient</references>
+      </memberdef>
+      <memberdef kind="function" id="classMonitoredServiceClient_1a59e49061c9b4c4cddd6889cb86350ca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MonitoredServiceClient&lt; ServiceT &gt;::isIdle</definition>
+        <argsstring>()</argsstring>
+        <name>isIdle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="109" column="10" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="109" bodyend="109"/>
+        <references refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" compoundref="monitored__service__client_8hpp" startline="40">MonitoredServiceClient&lt; ServiceT &gt;::waitingForClient</references>
+        <references refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" compoundref="monitored__service__client_8hpp" startline="37">MonitoredServiceClient&lt; ServiceT &gt;::waitingRequests</references>
+      </memberdef>
+      <memberdef kind="function" id="classMonitoredServiceClient_1acc7cccf9387e4477089b2f6cf2a1eb03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MonitoredServiceClient&lt; ServiceT &gt;::MonitoredServiceClient</definition>
+        <argsstring>(rclcpp::Node *node, std::string serviceName)</argsstring>
+        <name>MonitoredServiceClient</name>
+        <param>
+          <type>rclcpp::Node *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref></type>
+          <declname>serviceName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/monitored_service_client.hpp" line="112" column="5" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="112" bodyend="118"/>
+        <references refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" compoundref="monitored__service__client_8hpp" startline="18">MonitoredServiceClient&lt; ServiceT &gt;::client</references>
+        <references refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" compoundref="monitored__service__client_8hpp" startline="17">MonitoredServiceClient&lt; ServiceT &gt;::node</references>
+        <references refid="classMonitoredServiceClient_1a10489ed3001a234e373a6acac43c6996" compoundref="monitored__service__client_8hpp" startline="21">MonitoredServiceClient&lt; ServiceT &gt;::timer</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MonitoredServiceClient&lt; ServiceT &gt;</label>
+        <link refid="classMonitoredServiceClient"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-activeClient</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonitoredServiceClient&lt; ServiceT &gt;::servicePair</label>
+        <link refid="structMonitoredServiceClient_1_1servicePair"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_controller/monitored_service_client.hpp" line="13" column="1" bodyfile="include/mercury_controller/monitored_service_client.hpp" bodystart="13" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classMonitoredServiceClient_1aea1bb0e0d49bc34031bdb787cfe96dd2" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>activeClient</name></member>
+      <member refid="classMonitoredServiceClient_1ade14c2944bf45995505f4020a4119240" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>activeFuture</name></member>
+      <member refid="classMonitoredServiceClient_1a595649b87202b29ae0a7a0e9b656e774" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>client</name></member>
+      <member refid="classMonitoredServiceClient_1ae2429d3f56781c61c8e72ab02be82700" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>Future</name></member>
+      <member refid="classMonitoredServiceClient_1a0bba8d5ae36388a9c0e97572c8c836cb" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>FutureAndId</name></member>
+      <member refid="classMonitoredServiceClient_1a59e49061c9b4c4cddd6889cb86350ca7" prot="public" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>isIdle</name></member>
+      <member refid="classMonitoredServiceClient_1acc7cccf9387e4477089b2f6cf2a1eb03" prot="public" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>MonitoredServiceClient</name></member>
+      <member refid="classMonitoredServiceClient_1a0396f70ec5ce73a021a41da22f8959a6" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>node</name></member>
+      <member refid="classMonitoredServiceClient_1ad787937220c214dd3def414413917ff0" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>Request</name></member>
+      <member refid="classMonitoredServiceClient_1a91b96cd1ba78c376e08405b75e62d6c7" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>Response</name></member>
+      <member refid="classMonitoredServiceClient_1a2bde116e0c2fd8464f54b8ccf6680266" prot="public" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>scheduleCall</name></member>
+      <member refid="classMonitoredServiceClient_1a3a76d229033f397c365396084b56b206" prot="public" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>serviceCallback</name></member>
+      <member refid="classMonitoredServiceClient_1a8dd0ca4262f7dc02ffbb688799c4fc6e" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>startTime</name></member>
+      <member refid="classMonitoredServiceClient_1a10489ed3001a234e373a6acac43c6996" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>timer</name></member>
+      <member refid="classMonitoredServiceClient_1a36acf77e5146364b2ceb33f71b2a5ebf" prot="public" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>timerCallback</name></member>
+      <member refid="classMonitoredServiceClient_1a33c2f8b12a52085dc106454fbd8e069f" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>waitingForClient</name></member>
+      <member refid="classMonitoredServiceClient_1a45276231efa91c4c1fc511e9a55191cf" prot="private" virt="non-virtual"><scope>MonitoredServiceClient</scope><name>waitingRequests</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

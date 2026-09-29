@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classthruster__test__dshot_1_1ThrusterTestActionServer" kind="class" language="Python" prot="public">
+    <compoundname>thruster_test_dshot::ThrusterTestActionServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a3c02c019b4ef06fda521aa8e33452251" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float thruster_test_dshot.ThrusterTestActionServer::THRUSTER_PERCENT</definition>
+        <argsstring></argsstring>
+        <name>THRUSTER_PERCENT</name>
+        <initializer>=  0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="29" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a5c844370be18511b0b161410607d3d74" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::Dshot_pub</definition>
+        <argsstring></argsstring>
+        <name>Dshot_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="35" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1ab3cec93a079b45bb7ac1e54cebf26758" compoundref="thruster__test__dshot_8py" startline="78" endline="83">thruster_test_dshot.ThrusterTestActionServer.publish_dshot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0b034aef9455ce2109ebad0e80d7d7f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::thruster_forces_pub</definition>
+        <argsstring></argsstring>
+        <name>thruster_forces_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="37" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a8ae7566d0c17c3fa01d77aac88d1834e" compoundref="thruster__test__dshot_8py" startline="84" endline="88">thruster_test_dshot.ThrusterTestActionServer.publish_forces</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1aef186033481cc9c5200b76d5a7a254e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::dshot_mode_pub</definition>
+        <argsstring></argsstring>
+        <name>dshot_mode_pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="39" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1acc2834a669bf304316e3557844c745f6" compoundref="thruster__test__dshot_8py" startline="89" endline="93">thruster_test_dshot.ThrusterTestActionServer.publish_dshot_mode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1ab25dee19e6e4d25c7fbb999f4d90b80a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::vehicle_file</definition>
+        <argsstring></argsstring>
+        <name>vehicle_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="44" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a66ced8f771d168703b60291538888cbc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::num_thrusters</definition>
+        <argsstring></argsstring>
+        <name>num_thrusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="45" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a9606820d315d26fd7b8a182f23ff71a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::Dshot_max</definition>
+        <argsstring></argsstring>
+        <name>Dshot_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="48" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="49" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a0e6cf543f5a3f7b1c3b15ec6317e2959" compoundref="calibrate__drag_8py" startline="86" endline="90">calibrate_drag.CalibrateDragNewActionServer.cancel_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1acf7458b3edf632da610ed1fe18fa038c" compoundref="calibrate__drag_8py" startline="163" endline="185">calibrate_drag.CalibrateDragNewActionServer.collect_data</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a326b14e878e92a271e05142c260bb4b5" compoundref="calibrate__thruster_8py" startline="89" endline="177">calibrate_thruster.CalibrateThrusterAction.collect_data_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1af8af17863fd36bc831e962dc985c1af7" compoundref="calibrate__drag_8py" startline="126" endline="161">calibrate_drag.CalibrateDragNewActionServer.execute_cb</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ac279db84ab96d8c461667b29eb76e4f5" compoundref="calibrate__drag_8py" startline="78" endline="85">calibrate_drag.CalibrateDragNewActionServer.goal_callback</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a46f957c31f09fcb1f816128e6c8e28ec" compoundref="calibrate__thruster_8py" startline="311" endline="318">calibrate_thruster.CalibrateThrusterAction.goal_callback</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a2f17d9a6289d50b1f07417bbd18a637f" compoundref="thruster__test__dshot_8py" startline="67" endline="74">thruster_test_dshot.ThrusterTestActionServer.goal_callback</referencedby>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a95e9bdd40f9d351b265533c672f49c50" compoundref="calibrate__drag_8py" startline="187" endline="230">calibrate_drag.CalibrateDragNewActionServer.run_until_stable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1aff3995cfeb94a0d5cbc6653639a3a130" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>thruster_test_dshot.ThrusterTestActionServer::_action_server</definition>
+        <argsstring></argsstring>
+        <name>_action_server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="51" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a1ca38436b272ab3afe47176e3a1f6d8c" compoundref="calibrate__drag_8py" startline="74" endline="77">calibrate_drag.CalibrateDragNewActionServer.destroy</referencedby>
+        <referencedby refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a501aaba996f219c4aa102b7d8fa4f220" compoundref="calibrate__thruster_8py" startline="322" endline="326">calibrate_thruster.CalibrateThrusterAction.destroy</referencedby>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0d55cd2d5af7a43c7146f76c43134d5d" compoundref="thruster__test__dshot_8py" startline="63" endline="66">thruster_test_dshot.ThrusterTestActionServer.destroy</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a3ca55110ce767a536ecdaeab1db6ed48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="31" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="31" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0d55cd2d5af7a43c7146f76c43134d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.destroy</definition>
+        <argsstring>(self)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Protections. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="63" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="63" bodyend="66"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1ad42c7af576e5f142d9fc9c169cab0ff8" compoundref="calibrate__drag_8py" startline="65">calibrate_drag.CalibrateDragNewActionServer._action_server</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a7c040496bda0368a09208426db0a14ae" compoundref="calibrate__thruster_8py" startline="76">calibrate_thruster.CalibrateThrusterAction._action_server</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aff3995cfeb94a0d5cbc6653639a3a130" compoundref="thruster__test__dshot_8py" startline="51">thruster_test_dshot.ThrusterTestActionServer._action_server</references>
+      </memberdef>
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a2f17d9a6289d50b1f07417bbd18a637f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.goal_callback</definition>
+        <argsstring>(self, goal_request)</argsstring>
+        <name>goal_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal_request</type>
+          <defname>goal_request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Accept or reject a client request to begin an action.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="67" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="67" bodyend="74"/>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+      </memberdef>
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1ad82ed1411dfd1ab7488a09822418a5f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.cancel_callback</definition>
+        <argsstring>(self, goal)</argsstring>
+        <name>cancel_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>goal</type>
+          <defname>goal</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="75" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1ab3cec93a079b45bb7ac1e54cebf26758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.publish_dshot</definition>
+        <argsstring>(self, values)</argsstring>
+        <name>publish_dshot</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>values</type>
+          <defname>values</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="78" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="78" bodyend="83"/>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a5c844370be18511b0b161410607d3d74" compoundref="thruster__test__dshot_8py" startline="35">thruster_test_dshot.ThrusterTestActionServer.Dshot_pub</references>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a8ae7566d0c17c3fa01d77aac88d1834e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.publish_forces</definition>
+        <argsstring>(self, forces)</argsstring>
+        <name>publish_forces</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>forces</type>
+          <defname>forces</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="84" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="84" bodyend="88"/>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0b034aef9455ce2109ebad0e80d7d7f7" compoundref="thruster__test__dshot_8py" startline="37">thruster_test_dshot.ThrusterTestActionServer.thruster_forces_pub</references>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1acc2834a669bf304316e3557844c745f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.publish_dshot_mode</definition>
+        <argsstring>(self, mode)</argsstring>
+        <name>publish_dshot_mode</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>mode</type>
+          <defname>mode</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="89" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="89" bodyend="93"/>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aef186033481cc9c5200b76d5a7a254e7" compoundref="thruster__test__dshot_8py" startline="39">thruster_test_dshot.ThrusterTestActionServer.dshot_mode_pub</references>
+        <referencedby refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" compoundref="thruster__test__dshot_8py" startline="94" endline="141">thruster_test_dshot.ThrusterTestActionServer.execute_cb</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def thruster_test_dshot.ThrusterTestActionServer.execute_cb</definition>
+        <argsstring>(self, ServerGoalHandle goal_handle)</argsstring>
+        <name>execute_cb</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ServerGoalHandle</type>
+          <declname>goal_handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/thruster_test_dshot.py" line="94" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="94" bodyend="141"/>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a9606820d315d26fd7b8a182f23ff71a8" compoundref="thruster__test__dshot_8py" startline="48">thruster_test_dshot.ThrusterTestActionServer.Dshot_max</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a66ced8f771d168703b60291538888cbc" compoundref="thruster__test__dshot_8py" startline="45">thruster_test_dshot.ThrusterTestActionServer.num_thrusters</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1ab3cec93a079b45bb7ac1e54cebf26758" compoundref="thruster__test__dshot_8py" startline="78" endline="83">thruster_test_dshot.ThrusterTestActionServer.publish_dshot</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1acc2834a669bf304316e3557844c745f6" compoundref="thruster__test__dshot_8py" startline="89" endline="93">thruster_test_dshot.ThrusterTestActionServer.publish_dshot_mode</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a8ae7566d0c17c3fa01d77aac88d1834e" compoundref="thruster__test__dshot_8py" startline="84" endline="88">thruster_test_dshot.ThrusterTestActionServer.publish_forces</references>
+        <references refid="classcalibrate__drag_1_1CalibrateDragNewActionServer_1a6d2146710b328c21fdb5110ad44e4341" compoundref="calibrate__drag_8py" startline="53">calibrate_drag.CalibrateDragNewActionServer.running</references>
+        <references refid="classcalibrate__thruster_1_1CalibrateThrusterAction_1a3420109e427798d2852106f7db11de7a" compoundref="calibrate__thruster_8py" startline="50">calibrate_thruster.CalibrateThrusterAction.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" compoundref="thruster__test__dshot_8py" startline="49">thruster_test_dshot.ThrusterTestActionServer.running</references>
+        <references refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1ab25dee19e6e4d25c7fbb999f4d90b80a" compoundref="thruster__test__dshot_8py" startline="44">thruster_test_dshot.ThrusterTestActionServer.vehicle_file</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>thruster_test_dshot.ThrusterTestActionServer</label>
+        <link refid="classthruster__test__dshot_1_1ThrusterTestActionServer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Node</label>
+      </node>
+      <node id="1">
+        <label>thruster_test_dshot.ThrusterTestActionServer</label>
+        <link refid="classthruster__test__dshot_1_1ThrusterTestActionServer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_controller/thruster_test_dshot.py" line="28" column="1" bodyfile="mercury_controller/thruster_test_dshot.py" bodystart="28" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a3ca55110ce767a536ecdaeab1db6ed48" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>__init__</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aff3995cfeb94a0d5cbc6653639a3a130" prot="private" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>_action_server</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1ad82ed1411dfd1ab7488a09822418a5f0" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>cancel_callback</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0d55cd2d5af7a43c7146f76c43134d5d" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>destroy</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a9606820d315d26fd7b8a182f23ff71a8" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>Dshot_max</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aef186033481cc9c5200b76d5a7a254e7" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>dshot_mode_pub</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a5c844370be18511b0b161410607d3d74" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>Dshot_pub</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a964866b12c032fe210b7b1b8055debb7" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>execute_cb</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a2f17d9a6289d50b1f07417bbd18a637f" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>goal_callback</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a66ced8f771d168703b60291538888cbc" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>num_thrusters</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1ab3cec93a079b45bb7ac1e54cebf26758" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>publish_dshot</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1acc2834a669bf304316e3557844c745f6" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>publish_dshot_mode</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a8ae7566d0c17c3fa01d77aac88d1834e" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>publish_forces</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1aebde0b762de50db18f97e48d42943707" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>running</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a0b034aef9455ce2109ebad0e80d7d7f7" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>thruster_forces_pub</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1a3c02c019b4ef06fda521aa8e33452251" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>THRUSTER_PERCENT</name></member>
+      <member refid="classthruster__test__dshot_1_1ThrusterTestActionServer_1ab25dee19e6e4d25c7fbb999f4d90b80a" prot="public" virt="non-virtual"><scope>thruster_test_dshot::ThrusterTestActionServer</scope><name>vehicle_file</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

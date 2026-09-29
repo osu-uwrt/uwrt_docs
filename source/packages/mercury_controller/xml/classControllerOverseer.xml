@@ -1,0 +1,1272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classControllerOverseer" kind="class" language="C++" prot="public">
+    <compoundname>ControllerOverseer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
+    <includes refid="controller__overseer_8hpp" local="no">controller_overseer.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classControllerOverseer_1afd464dfd0ffe6f5809873431abeecbe5" prot="private" static="no">
+        <type>Eigen::Vector3d</type>
+        <definition>using ControllerOverseer::v3d =  Eigen::Vector3d</definition>
+        <argsstring></argsstring>
+        <name>v3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="46" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a3a401c9abbdd71abd84d5d01c27d81d4" prot="private" static="no">
+        <type>Eigen::Matrix3d</type>
+        <definition>using ControllerOverseer::m3d =  Eigen::Matrix3d</definition>
+        <argsstring></argsstring>
+        <name>m3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="47" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1af60c07475247380fe791607887c79ac0" prot="private" static="no">
+        <type>rcl_interfaces::srv::SetParameters</type>
+        <definition>using ControllerOverseer::SetParams =  rcl_interfaces::srv::SetParameters</definition>
+        <argsstring></argsstring>
+        <name>SetParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="49" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a291582bb394257bac85648db50cf36d9" prot="private" static="no">
+        <type>rcl_interfaces::msg::SetParametersResult</type>
+        <definition>using ControllerOverseer::SetParamsResult =  rcl_interfaces::msg::SetParametersResult</definition>
+        <argsstring></argsstring>
+        <name>SetParamsResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="50" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a5c034404b85ed797bf4f6226993a8b15" prot="private" static="no">
+        <type>rcl_interfaces::msg::Parameter</type>
+        <definition>using ControllerOverseer::Parameter =  rcl_interfaces::msg::Parameter</definition>
+        <argsstring></argsstring>
+        <name>Parameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="51" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a5430fcb94b425316a5ba006e69747200" prot="private" static="no">
+        <type>rclcpp::ParameterType</type>
+        <definition>using ControllerOverseer::ParameterType =  rclcpp::ParameterType</definition>
+        <argsstring></argsstring>
+        <name>ParameterType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="52" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a4d6b8e732d859a553f1e6142d91b0330" prot="private" static="no">
+        <type>rcl_interfaces::msg::ParameterValue</type>
+        <definition>using ControllerOverseer::ParameterValue =  rcl_interfaces::msg::ParameterValue</definition>
+        <argsstring></argsstring>
+        <name>ParameterValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="53" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1afd982e530173fea3ee714b3ae1326135" prot="private" static="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>, int64_t &gt; &gt;</type>
+        <definition>using ControllerOverseer::int_vector =  std::vector&lt;std::pair&lt;std::string, int64_t&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>int_vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="55" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a493f69df07b252ce6a8c3b0f3d44c4d0" prot="private" static="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>, bool &gt; &gt;</type>
+        <definition>using ControllerOverseer::bool_vector =  std::vector&lt;std::pair&lt;std::string, bool&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>bool_vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="56" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a09002a0a98d75ea112cd72ffe5bfd0e7" prot="private" static="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>, std::vector&lt; int64_t &gt; &gt;&gt;</type>
+        <definition>using ControllerOverseer::array_vector =  std::vector&lt;std::pair&lt;std::string, std::vector&lt;int64_t&gt; &gt;&gt;</definition>
+        <argsstring></argsstring>
+        <name>array_vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="57" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" prot="private" static="no">
+        <type>std::string</type>
+        <definition>using ControllerOverseer::string =  std::string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="59" column="5" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classControllerOverseer_1aee4f242b91b581021d7f3fa9c1f2adfc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ControllerOverseer::waitingOnInit</definition>
+        <argsstring></argsstring>
+        <name>waitingOnInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="139" column="10" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="139" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a49861135549889da7233a67fd57a7e2e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ControllerOverseer::escPowerStopsLow</definition>
+        <argsstring></argsstring>
+        <name>escPowerStopsLow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="142" column="9" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="142" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a15bb8aac24a43b32e75595c7913a662a" compoundref="controller__overseer_8py" startline="621" endline="685">controller_overseer.ControllerOverseer.thrusterTelemetryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1aa35bec7a0a7636519bedeff12a4a5601" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ControllerOverseer::escPowerStopsHigh</definition>
+        <argsstring></argsstring>
+        <name>escPowerStopsHigh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="142" column="26" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="142" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a15bb8aac24a43b32e75595c7913a662a" compoundref="controller__overseer_8py" startline="621" endline="685">controller_overseer.ControllerOverseer.thrusterTelemetryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a7bd430f6c2b89df1550794b7fe4e06d2" prot="public" static="no" mutable="no">
+        <type>std::array&lt; bool, 8 &gt;</type>
+        <definition>std::array&lt;bool, 8&gt; ControllerOverseer::activeThrusters</definition>
+        <argsstring></argsstring>
+        <name>activeThrusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="143" column="16" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="143" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a15bb8aac24a43b32e75595c7913a662a" compoundref="controller__overseer_8py" startline="621" endline="685">controller_overseer.ControllerOverseer.thrusterTelemetryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ad3af3518d879f753b3932660722aa88b" prot="public" static="no" mutable="no">
+        <type>std::array&lt; bool, 8 &gt;</type>
+        <definition>std::array&lt;bool, 8&gt; ControllerOverseer::submergedThrusters</definition>
+        <argsstring></argsstring>
+        <name>submergedThrusters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="144" column="16" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="144" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a62c5282fc8445ebd032422fcc0c3886c" compoundref="controller__overseer_8py" startline="709" endline="736">controller_overseer.ControllerOverseer.odometryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1abc169450a4579dc8aa6b77409f5aaf89" prot="public" static="no" mutable="no">
+        <type>std::array&lt; double, 8 &gt;</type>
+        <definition>std::array&lt;double, 8&gt; ControllerOverseer::thrusterWeights</definition>
+        <argsstring></argsstring>
+        <name>thrusterWeights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="145" column="16" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" prot="public" static="no" mutable="no">
+        <type>YAML::Node</type>
+        <definition>YAML::Node ControllerOverseer::controllerTree</definition>
+        <argsstring></argsstring>
+        <name>controllerTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="148" column="16" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="148" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</referencedby>
+        <referencedby refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+        <referencedby refid="classControllerOverseer_1aab6d2bb349aa9f8afd2e726528de1e45" compoundref="controller__overseer_8cpp" startline="501" endline="540">setTeleopCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1acbf250075614641c4b9563be9977b947" prot="public" static="no" mutable="no">
+        <type>YAML::Node</type>
+        <definition>YAML::Node ControllerOverseer::autoffTree</definition>
+        <argsstring></argsstring>
+        <name>autoffTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="149" column="16" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="149" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ae1cb9c9caf3c0c0ad4fc2157dc928c67" prot="public" static="no" mutable="no">
+        <type>YAML::Node</type>
+        <definition>YAML::Node ControllerOverseer::thrusterInfo</definition>
+        <argsstring></argsstring>
+        <name>thrusterInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="150" column="16" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="150" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" compoundref="controller__overseer_8cpp" startline="276" endline="313">generateThrusterForceMatrix</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a401de1c3e1cf16bfd4d57a89c35dc3a8" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; ControllerOverseer::com</definition>
+        <argsstring></argsstring>
+        <name>com</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="153" column="17" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="153" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" compoundref="controller__overseer_8cpp" startline="276" endline="313">generateThrusterForceMatrix</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a094f4c5af306c85fc0fb0251bac524a2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ControllerOverseer::thrusterMode</definition>
+        <argsstring></argsstring>
+        <name>thrusterMode</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="156" column="9" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="156" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a3101e20f1571a70a9a3a4a47e510422b" compoundref="controller__overseer_8py" startline="696" endline="708">controller_overseer.ControllerOverseer.setThrusterModeCB</referencedby>
+        <referencedby refid="classControllerOverseer_1ab3848c32cb43ac81d0e142df67fac773" compoundref="controller__overseer_8cpp" startline="403" endline="408">setThrusterModeCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ad41348479f67a263d0f229a6c9a3dad7" prot="public" static="no" mutable="no">
+        <type><ref refid="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" kindref="member">string</ref></type>
+        <definition>string ControllerOverseer::autoffConfigPath</definition>
+        <argsstring></argsstring>
+        <name>autoffConfigPath</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="159" column="12" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="159" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+        <referencedby refid="classControllerOverseer_1a97f4de68650bd78742d627fab24e830a" compoundref="controller__overseer_8cpp" startline="153" endline="226">setConfigPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1abeb01acfbeeb512a8d363ee436d5eed4" prot="public" static="no" mutable="no">
+        <type><ref refid="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" kindref="member">string</ref></type>
+        <definition>string ControllerOverseer::configPath</definition>
+        <argsstring></argsstring>
+        <name>configPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="160" column="12" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="160" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a9c49b6b234bcaa1acf4f26e75ba5f1e4" compoundref="controller__overseer_8py" startline="556" endline="620">controller_overseer.ControllerOverseer.readConfig</referencedby>
+        <referencedby refid="classControllerOverseer_1a97f4de68650bd78742d627fab24e830a" compoundref="controller__overseer_8cpp" startline="153" endline="226">setConfigPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classSimulinkModelClass" kindref="compound">SimulinkModelClass</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;SimulinkModelClass&gt; ControllerOverseer::completeController</definition>
+        <argsstring></argsstring>
+        <name>completeController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="163" column="21" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="163" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" compoundref="controller__overseer_8cpp" startline="542" endline="588">doUpdate</referencedby>
+        <referencedby refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</referencedby>
+        <referencedby refid="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" compoundref="controller__overseer_8cpp" startline="276" endline="313">generateThrusterForceMatrix</referencedby>
+        <referencedby refid="classControllerOverseer_1a7517eeab986fbbc1303d2b54ea387abb" compoundref="controller__overseer_8cpp" startline="75" endline="81">init</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+        <referencedby refid="classControllerOverseer_1aab6d2bb349aa9f8afd2e726528de1e45" compoundref="controller__overseer_8cpp" startline="501" endline="540">setTeleopCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ac99190885877cdee496dcc3690faba3d" prot="public" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; mercury_msgs::msg::DshotPartialTelemetry &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;mercury_msgs::msg::DshotPartialTelemetry&gt;::SharedPtr ControllerOverseer::thrusterTelemetry</definition>
+        <argsstring></argsstring>
+        <name>thrusterTelemetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="166" column="38" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="166" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ac7199879a97d00b3a6f15c8dd32d67f6" prot="public" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr ControllerOverseer::motionEnabledPub</definition>
+        <argsstring></argsstring>
+        <name>motionEnabledPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="167" column="35" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="167" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1adfa1ac32cf6b5726a6b5d521a29d9a4c" compoundref="controller__overseer_8cpp" startline="388" endline="401">escPowerTimeout</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1ad8501f31074021658be08fc749b377d2" compoundref="controller__overseer_8py" startline="686" endline="695">controller_overseer.ControllerOverseer.escPowerTimeout</referencedby>
+        <referencedby refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a15bb8aac24a43b32e75595c7913a662a" compoundref="controller__overseer_8py" startline="621" endline="685">controller_overseer.ControllerOverseer.thrusterTelemetryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a4c267aa208369584040aad90705a64ca" prot="public" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Int16 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Int16&gt;::SharedPtr ControllerOverseer::thrusterModeSub</definition>
+        <argsstring></argsstring>
+        <name>thrusterModeSub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="168" column="38" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="168" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a7e6203c2c8039501406f308c43265117" prot="public" static="no" mutable="no">
+        <type>rclcpp::Client&lt; rcl_interfaces::srv::SetParameters &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;rcl_interfaces::srv::SetParameters&gt;::SharedPtr ControllerOverseer::setThrusterSolverParams</definition>
+        <argsstring></argsstring>
+        <name>setThrusterSolverParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="169" column="32" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="169" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a547701cc5a17146f220bc652e2c6c817" prot="public" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;nav_msgs::msg::Odometry&gt;::SharedPtr ControllerOverseer::odom</definition>
+        <argsstring></argsstring>
+        <name>odom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="170" column="38" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="170" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ac092f107b812521a1764d178f1524e71" prot="public" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Int32MultiArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Int32MultiArray&gt;::SharedPtr ControllerOverseer::weightsPub</definition>
+        <argsstring></argsstring>
+        <name>weightsPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="171" column="35" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="171" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1af185bb9fd21e310201fcf65801ec2526" prot="public" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; geometry_msgs::msg::Twist &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr ControllerOverseer::ffAutoTune</definition>
+        <argsstring></argsstring>
+        <name>ffAutoTune</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="174" column="38" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="174" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a67808b4a6ad21735951f8925fadcda72" prot="public" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::Twist &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::Twist&gt;::SharedPtr ControllerOverseer::ffPub</definition>
+        <argsstring></argsstring>
+        <name>ffPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="175" column="35" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="175" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" compoundref="controller__overseer_8cpp" startline="542" endline="588">doUpdate</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1aa6283a5baa5b269fc51051dfc5fb9f36" compoundref="controller__overseer_8py" startline="870" endline="909">controller_overseer.ControllerOverseer.doUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a6128f5eae3e7b9162a7fa4f050ae7345" prot="public" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Empty &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Empty&gt;::SharedPtr ControllerOverseer::reInitPub</definition>
+        <argsstring></argsstring>
+        <name>reInitPub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="176" column="35" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="176" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a74df42b12c1722e536dc79967d6c7e5e" prot="public" static="no" mutable="no">
+        <type>rclcpp::Service&lt; std_srvs::srv::SetBool &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;std_srvs::srv::SetBool&gt;::SharedPtr ControllerOverseer::setTeleop</definition>
+        <argsstring></argsstring>
+        <name>setTeleop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="179" column="33" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="179" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ae27fb87f76d0b76628e0b7d6dfafa14b" prot="public" static="no" mutable="no">
+        <type>std::unique_ptr&lt; tf2_ros::Buffer &gt;</type>
+        <definition>std::unique_ptr&lt;tf2_ros::Buffer&gt; ControllerOverseer::tfBuffer</definition>
+        <argsstring></argsstring>
+        <name>tfBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="183" column="9" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="183" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a62c5282fc8445ebd032422fcc0c3886c" compoundref="controller__overseer_8py" startline="709" endline="736">controller_overseer.ControllerOverseer.odometryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ae88f1df5dfa4958caf99c9eb89e47354" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; tf2_ros::TransformListener &gt;</type>
+        <definition>std::shared_ptr&lt;tf2_ros::TransformListener&gt; ControllerOverseer::tfListener</definition>
+        <argsstring></argsstring>
+        <name>tfListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="184" column="21" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="184" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a62d2c4a25caf649e8e3e70c1ccdafc3d" prot="public" static="no" mutable="no">
+        <type><ref refid="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" kindref="member">string</ref></type>
+        <definition>string ControllerOverseer::tfNamespace</definition>
+        <argsstring></argsstring>
+        <name>tfNamespace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="185" column="12" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="185" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ac06fe8815075e21ed55c79780bc04605" prot="public" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time ControllerOverseer::startTime</definition>
+        <argsstring></argsstring>
+        <name>startTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="188" column="18" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="188" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a62c5282fc8445ebd032422fcc0c3886c" compoundref="controller__overseer_8py" startline="709" endline="736">controller_overseer.ControllerOverseer.odometryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a72d3f9ca3c7117d89ccd34f5b4b94849" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ControllerOverseer::startTimeSet</definition>
+        <argsstring></argsstring>
+        <name>startTimeSet</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="189" column="10" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="189" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1acf346560d06c764b1dc8559397d19ac6" prot="public" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr ControllerOverseer::updateTimer</definition>
+        <argsstring></argsstring>
+        <name>updateTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="192" column="34" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="192" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a4d2bd8463367f0d6cdc4a519b314ce16" prot="public" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr ControllerOverseer::weightTimer</definition>
+        <argsstring></argsstring>
+        <name>weightTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="193" column="34" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="193" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a51a142839e0237f4fcd138133f04d578" prot="public" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr ControllerOverseer::escPowerCheckTimer</definition>
+        <argsstring></argsstring>
+        <name>escPowerCheckTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="194" column="34" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="194" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a15bb8aac24a43b32e75595c7913a662a" compoundref="controller__overseer_8py" startline="621" endline="685">controller_overseer.ControllerOverseer.thrusterTelemetryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a1f55e85ba0c46e060d896bb392dda0cd" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ControllerOverseer::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="197" column="10" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="197" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1adfa1ac32cf6b5726a6b5d521a29d9a4c" compoundref="controller__overseer_8cpp" startline="388" endline="401">escPowerTimeout</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1ad8501f31074021658be08fc749b377d2" compoundref="controller__overseer_8py" startline="686" endline="695">controller_overseer.ControllerOverseer.escPowerTimeout</referencedby>
+        <referencedby refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a15bb8aac24a43b32e75595c7913a662a" compoundref="controller__overseer_8py" startline="621" endline="685">controller_overseer.ControllerOverseer.thrusterTelemetryCB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a0f44cf960fda23a0d8212501f75fcfe3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ControllerOverseer::publishingFF</definition>
+        <argsstring></argsstring>
+        <name>publishingFF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="198" column="10" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="198" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" compoundref="controller__overseer_8cpp" startline="542" endline="588">doUpdate</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1aa6283a5baa5b269fc51051dfc5fb9f36" compoundref="controller__overseer_8py" startline="870" endline="909">controller_overseer.ControllerOverseer.doUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a14b43f8a7da5e359a3866de93416e5e3" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; ControllerOverseer::baseWrench</definition>
+        <argsstring></argsstring>
+        <name>baseWrench</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="201" column="17" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="201" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" compoundref="controller__overseer_8cpp" startline="542" endline="588">doUpdate</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a9cbf889bb42a67b25d3f3c8fa69c82bf" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; ControllerOverseer::currentInitFF</definition>
+        <argsstring></argsstring>
+        <name>currentInitFF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="202" column="17" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="202" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1ab9002cd665742e7a7639bbe796a4bbdc" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ControllerOverseer::defaultWeight</definition>
+        <argsstring></argsstring>
+        <name>defaultWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="205" column="12" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="205" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a975344ba4d920f5e52ff24290b8156a2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ControllerOverseer::surfaceWeight</definition>
+        <argsstring></argsstring>
+        <name>surfaceWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="205" column="26" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="205" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a4b0437f9515dabdeff17ec761615ae4f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ControllerOverseer::disabledWeight</definition>
+        <argsstring></argsstring>
+        <name>disabledWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="205" column="40" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="205" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a0617a481a744326feb2082f80cb6c969" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ControllerOverseer::lowDowndraftWeight</definition>
+        <argsstring></argsstring>
+        <name>lowDowndraftWeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="205" column="55" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="205" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a4138152fd2614c0f2fdea822723b1677" compoundref="controller__overseer_8py" startline="737" endline="796">controller_overseer.ControllerOverseer.adjustThrusterWeights</referencedby>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a8318627c3617dfc48e82e02fb50b47a7" prot="public" static="no" mutable="no">
+        <type><ref refid="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" kindref="member">string</ref></type>
+        <definition>string ControllerOverseer::robotName</definition>
+        <argsstring></argsstring>
+        <name>robotName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="208" column="12" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="208" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" compoundref="controller__overseer_8cpp" startline="276" endline="313">generateThrusterForceMatrix</referencedby>
+        <referencedby refid="classControllerOverseer_1a97f4de68650bd78742d627fab24e830a" compoundref="controller__overseer_8cpp" startline="153" endline="226">setConfigPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a58516897666b454442c8e4b2e4b55518" prot="public" static="no" mutable="no">
+        <type><ref refid="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" kindref="member">string</ref></type>
+        <definition>string ControllerOverseer::thrusterSolverName</definition>
+        <argsstring></argsstring>
+        <name>thrusterSolverName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="208" column="22" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="208" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classControllerOverseer_1a3984dbe58acd563523d6adc20bbb6732" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ControllerOverseer::writeAutoFF</definition>
+        <argsstring></argsstring>
+        <name>writeAutoFF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="209" column="10" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="209" bodyend="-1"/>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ControllerOverseer::ControllerOverseer</definition>
+        <argsstring>()</argsstring>
+        <name>ControllerOverseer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="63" column="5" bodyfile="src/controller_overseer.cpp" bodystart="3" bodyend="71"/>
+        <references refid="classControllerOverseer_1a7bd430f6c2b89df1550794b7fe4e06d2" compoundref="controller__overseer_8hpp" startline="143">activeThrusters</references>
+        <references refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</references>
+        <references refid="classControllerOverseer_1abeb01acfbeeb512a8d363ee436d5eed4" compoundref="controller__overseer_8hpp" startline="160">configPath</references>
+        <references refid="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" compoundref="controller__overseer_8cpp" startline="542" endline="588">doUpdate</references>
+        <references refid="classControllerOverseer_1a51a142839e0237f4fcd138133f04d578" compoundref="controller__overseer_8hpp" startline="194">escPowerCheckTimer</references>
+        <references refid="classControllerOverseer_1adfa1ac32cf6b5726a6b5d521a29d9a4c" compoundref="controller__overseer_8cpp" startline="388" endline="401">escPowerTimeout</references>
+        <references refid="classControllerOverseer_1af185bb9fd21e310201fcf65801ec2526" compoundref="controller__overseer_8hpp" startline="174">ffAutoTune</references>
+        <references refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" compoundref="controller__overseer_8cpp" startline="590" endline="636">ffAutoTuneCB</references>
+        <references refid="classControllerOverseer_1a67808b4a6ad21735951f8925fadcda72" compoundref="controller__overseer_8hpp" startline="175">ffPub</references>
+        <references refid="classControllerOverseer_1ac7199879a97d00b3a6f15c8dd32d67f6" compoundref="controller__overseer_8hpp" startline="167">motionEnabledPub</references>
+        <references refid="classControllerOverseer_1a547701cc5a17146f220bc652e2c6c817" compoundref="controller__overseer_8hpp" startline="170">odom</references>
+        <references refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</references>
+        <references refid="classControllerOverseer_1a6128f5eae3e7b9162a7fa4f050ae7345" compoundref="controller__overseer_8hpp" startline="176">reInitPub</references>
+        <references refid="classControllerOverseer_1a8318627c3617dfc48e82e02fb50b47a7" compoundref="controller__overseer_8hpp" startline="208">robotName</references>
+        <references refid="classControllerOverseer_1a74df42b12c1722e536dc79967d6c7e5e" compoundref="controller__overseer_8hpp" startline="179">setTeleop</references>
+        <references refid="classControllerOverseer_1aab6d2bb349aa9f8afd2e726528de1e45" compoundref="controller__overseer_8cpp" startline="501" endline="540">setTeleopCB</references>
+        <references refid="classControllerOverseer_1ab3848c32cb43ac81d0e142df67fac773" compoundref="controller__overseer_8cpp" startline="403" endline="408">setThrusterModeCB</references>
+        <references refid="classControllerOverseer_1a7e6203c2c8039501406f308c43265117" compoundref="controller__overseer_8hpp" startline="169">setThrusterSolverParams</references>
+        <references refid="classControllerOverseer_1ad3af3518d879f753b3932660722aa88b" compoundref="controller__overseer_8hpp" startline="144">submergedThrusters</references>
+        <references refid="classControllerOverseer_1ae27fb87f76d0b76628e0b7d6dfafa14b" compoundref="controller__overseer_8hpp" startline="183">tfBuffer</references>
+        <references refid="classControllerOverseer_1ae88f1df5dfa4958caf99c9eb89e47354" compoundref="controller__overseer_8hpp" startline="184">tfListener</references>
+        <references refid="classControllerOverseer_1a62d2c4a25caf649e8e3e70c1ccdafc3d" compoundref="controller__overseer_8hpp" startline="185">tfNamespace</references>
+        <references refid="classControllerOverseer_1a4c267aa208369584040aad90705a64ca" compoundref="controller__overseer_8hpp" startline="168">thrusterModeSub</references>
+        <references refid="classControllerOverseer_1a58516897666b454442c8e4b2e4b55518" compoundref="controller__overseer_8hpp" startline="208">thrusterSolverName</references>
+        <references refid="classControllerOverseer_1ac99190885877cdee496dcc3690faba3d" compoundref="controller__overseer_8hpp" startline="166">thrusterTelemetry</references>
+        <references refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</references>
+        <references refid="classControllerOverseer_1abc169450a4579dc8aa6b77409f5aaf89" compoundref="controller__overseer_8hpp" startline="145">thrusterWeights</references>
+        <references refid="classControllerOverseer_1acf346560d06c764b1dc8559397d19ac6" compoundref="controller__overseer_8hpp" startline="192">updateTimer</references>
+        <references refid="classControllerOverseer_1ac092f107b812521a1764d178f1524e71" compoundref="controller__overseer_8hpp" startline="171">weightsPub</references>
+        <references refid="classControllerOverseer_1a4d2bd8463367f0d6cdc4a519b314ce16" compoundref="controller__overseer_8hpp" startline="193">weightTimer</references>
+        <references refid="classControllerOverseer_1a3984dbe58acd563523d6adc20bbb6732" compoundref="controller__overseer_8hpp" startline="209">writeAutoFF</references>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a7517eeab986fbbc1303d2b54ea387abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::init</definition>
+        <argsstring>(std::shared_ptr&lt; ControllerOverseer &gt; node)</argsstring>
+        <name>init</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classControllerOverseer" kindref="compound">ControllerOverseer</ref> &gt;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="66" column="10" bodyfile="src/controller_overseer.cpp" bodystart="75" bodyend="81"/>
+        <references refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" compoundref="controller__overseer_8hpp" startline="163">completeController</references>
+        <references refid="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" compoundref="controller__overseer_8cpp" startline="276" endline="313">generateThrusterForceMatrix</references>
+        <references refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</references>
+        <references refid="classControllerOverseer_1a97f4de68650bd78742d627fab24e830a" compoundref="controller__overseer_8cpp" startline="153" endline="226">setConfigPath</references>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a11da1d3c6ce424e45d6cc80512a45a43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::traversal</definition>
+        <argsstring>(int_vector &amp;ints, bool_vector &amp;bools, array_vector &amp;arrays, const YAML::Node &amp;tree, const std::string path)</argsstring>
+        <name>traversal</name>
+        <param>
+          <type><ref refid="classControllerOverseer_1afd982e530173fea3ee714b3ae1326135" kindref="member">int_vector</ref> &amp;</type>
+          <declname>ints</declname>
+        </param>
+        <param>
+          <type><ref refid="classControllerOverseer_1a493f69df07b252ce6a8c3b0f3d44c4d0" kindref="member">bool_vector</ref> &amp;</type>
+          <declname>bools</declname>
+        </param>
+        <param>
+          <type><ref refid="classControllerOverseer_1a09002a0a98d75ea112cd72ffe5bfd0e7" kindref="member">array_vector</ref> &amp;</type>
+          <declname>arrays</declname>
+        </param>
+        <param>
+          <type>const YAML::Node &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <param>
+          <type>const <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref></type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="71" column="10" bodyfile="src/controller_overseer.cpp" bodystart="86" bodyend="151"/>
+        <references refid="controller__overseer_8hpp_1ab92daf40a5ebfb4e5894844f116512c2" compoundref="controller__overseer_8hpp" startline="39">PARAMETERSCALE</references>
+        <referencedby refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" compoundref="controller__overseer_8cpp" startline="231" endline="274">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::readConfig</definition>
+        <argsstring>()</argsstring>
+        <name>readConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="78" column="10" bodyfile="src/controller_overseer.cpp" bodystart="231" bodyend="274"/>
+        <references refid="classControllerOverseer_1ad41348479f67a263d0f229a6c9a3dad7" compoundref="controller__overseer_8hpp" startline="159">autoffConfigPath</references>
+        <references refid="classControllerOverseer_1acbf250075614641c4b9563be9977b947" compoundref="controller__overseer_8hpp" startline="149">autoffTree</references>
+        <references refid="classControllerOverseer_1a14b43f8a7da5e359a3866de93416e5e3" compoundref="controller__overseer_8hpp" startline="201">baseWrench</references>
+        <references refid="classControllerOverseer_1a401de1c3e1cf16bfd4d57a89c35dc3a8" compoundref="controller__overseer_8hpp" startline="153">com</references>
+        <references refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" compoundref="controller__overseer_8hpp" startline="163">completeController</references>
+        <references refid="classControllerOverseer_1abeb01acfbeeb512a8d363ee436d5eed4" compoundref="controller__overseer_8hpp" startline="160">configPath</references>
+        <references refid="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" compoundref="controller__overseer_8hpp" startline="148">controllerTree</references>
+        <references refid="classControllerOverseer_1a9cbf889bb42a67b25d3f3c8fa69c82bf" compoundref="controller__overseer_8hpp" startline="202">currentInitFF</references>
+        <references refid="classControllerOverseer_1ab9002cd665742e7a7639bbe796a4bbdc" compoundref="controller__overseer_8hpp" startline="205">defaultWeight</references>
+        <references refid="classControllerOverseer_1a4b0437f9515dabdeff17ec761615ae4f" compoundref="controller__overseer_8hpp" startline="205">disabledWeight</references>
+        <references refid="classControllerOverseer_1a0617a481a744326feb2082f80cb6c969" compoundref="controller__overseer_8hpp" startline="205">lowDowndraftWeight</references>
+        <references refid="classControllerOverseer_1a975344ba4d920f5e52ff24290b8156a2" compoundref="controller__overseer_8hpp" startline="205">surfaceWeight</references>
+        <references refid="classControllerOverseer_1ae1cb9c9caf3c0c0ad4fc2157dc928c67" compoundref="controller__overseer_8hpp" startline="150">thrusterInfo</references>
+        <references refid="classControllerOverseer_1a11da1d3c6ce424e45d6cc80512a45a43" compoundref="controller__overseer_8cpp" startline="86" endline="151">traversal</references>
+        <referencedby refid="classControllerOverseer_1a7517eeab986fbbc1303d2b54ea387abb" compoundref="controller__overseer_8cpp" startline="75" endline="81">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::generateThrusterForceMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>generateThrusterForceMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="83" column="10" bodyfile="src/controller_overseer.cpp" bodystart="276" bodyend="313"/>
+        <references refid="classControllerOverseer_1a401de1c3e1cf16bfd4d57a89c35dc3a8" compoundref="controller__overseer_8hpp" startline="153">com</references>
+        <references refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" compoundref="controller__overseer_8hpp" startline="163">completeController</references>
+        <references refid="controller__overseer_8hpp_1ab92daf40a5ebfb4e5894844f116512c2" compoundref="controller__overseer_8hpp" startline="39">PARAMETERSCALE</references>
+        <references refid="classControllerOverseer_1a8318627c3617dfc48e82e02fb50b47a7" compoundref="controller__overseer_8hpp" startline="208">robotName</references>
+        <references refid="classControllerOverseer_1ae1cb9c9caf3c0c0ad4fc2157dc928c67" compoundref="controller__overseer_8hpp" startline="150">thrusterInfo</references>
+        <referencedby refid="classControllerOverseer_1a7517eeab986fbbc1303d2b54ea387abb" compoundref="controller__overseer_8cpp" startline="75" endline="81">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a97f4de68650bd78742d627fab24e830a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::setConfigPath</definition>
+        <argsstring>()</argsstring>
+        <name>setConfigPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="89" column="10" bodyfile="src/controller_overseer.cpp" bodystart="153" bodyend="226"/>
+        <references refid="classControllerOverseer_1ad41348479f67a263d0f229a6c9a3dad7" compoundref="controller__overseer_8hpp" startline="159">autoffConfigPath</references>
+        <references refid="classControllerOverseer_1abeb01acfbeeb512a8d363ee436d5eed4" compoundref="controller__overseer_8hpp" startline="160">configPath</references>
+        <references refid="classControllerOverseer_1a8318627c3617dfc48e82e02fb50b47a7" compoundref="controller__overseer_8hpp" startline="208">robotName</references>
+        <referencedby refid="classControllerOverseer_1a7517eeab986fbbc1303d2b54ea387abb" compoundref="controller__overseer_8cpp" startline="75" endline="81">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::thrusterTelemetryCB</definition>
+        <argsstring>(mercury_msgs::msg::DshotPartialTelemetry::SharedPtr msg)</argsstring>
+        <name>thrusterTelemetryCB</name>
+        <param>
+          <type>mercury_msgs::msg::DshotPartialTelemetry::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="94" column="10" bodyfile="src/controller_overseer.cpp" bodystart="315" bodyend="385"/>
+        <references refid="classControllerOverseer_1a7bd430f6c2b89df1550794b7fe4e06d2" compoundref="controller__overseer_8hpp" startline="143">activeThrusters</references>
+        <references refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</references>
+        <references refid="classControllerOverseer_1a1f55e85ba0c46e060d896bb392dda0cd" compoundref="controller__overseer_8hpp" startline="197">enabled</references>
+        <references refid="controller__overseer_8hpp_1ac815023dc490edabf536775f6d1adda9" compoundref="controller__overseer_8hpp" startline="41">ESC_POWER_STOP_TOLERANCE</references>
+        <references refid="classControllerOverseer_1a51a142839e0237f4fcd138133f04d578" compoundref="controller__overseer_8hpp" startline="194">escPowerCheckTimer</references>
+        <references refid="classControllerOverseer_1aa35bec7a0a7636519bedeff12a4a5601" compoundref="controller__overseer_8hpp" startline="142">escPowerStopsHigh</references>
+        <references refid="classControllerOverseer_1a49861135549889da7233a67fd57a7e2e" compoundref="controller__overseer_8hpp" startline="142">escPowerStopsLow</references>
+        <references refid="classControllerOverseer_1ac7199879a97d00b3a6f15c8dd32d67f6" compoundref="controller__overseer_8hpp" startline="167">motionEnabledPub</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1adfa1ac32cf6b5726a6b5d521a29d9a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::escPowerTimeout</definition>
+        <argsstring>()</argsstring>
+        <name>escPowerTimeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="100" column="10" bodyfile="src/controller_overseer.cpp" bodystart="388" bodyend="401"/>
+        <references refid="classControllerOverseer_1a1f55e85ba0c46e060d896bb392dda0cd" compoundref="controller__overseer_8hpp" startline="197">enabled</references>
+        <references refid="classControllerOverseer_1ac7199879a97d00b3a6f15c8dd32d67f6" compoundref="controller__overseer_8hpp" startline="167">motionEnabledPub</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1ab3848c32cb43ac81d0e142df67fac773" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::setThrusterModeCB</definition>
+        <argsstring>(std_msgs::msg::Int16::SharedPtr msg)</argsstring>
+        <name>setThrusterModeCB</name>
+        <param>
+          <type>std_msgs::msg::Int16::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="105" column="10" bodyfile="src/controller_overseer.cpp" bodystart="403" bodyend="408"/>
+        <references refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</references>
+        <references refid="classControllerOverseer_1a094f4c5af306c85fc0fb0251bac524a2" compoundref="controller__overseer_8hpp" startline="156">thrusterMode</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::odometryCB</definition>
+        <argsstring>(nav_msgs::msg::Odometry::SharedPtr msg)</argsstring>
+        <name>odometryCB</name>
+        <param>
+          <type>nav_msgs::msg::Odometry::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="111" column="10" bodyfile="src/controller_overseer.cpp" bodystart="410" bodyend="442"/>
+        <references refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" compoundref="controller__overseer_8cpp" startline="444" endline="499">adjustThrusterWeights</references>
+        <references refid="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" compoundref="controller__overseer_8hpp" startline="148">controllerTree</references>
+        <references refid="classControllerOverseer_1ac06fe8815075e21ed55c79780bc04605" compoundref="controller__overseer_8hpp" startline="188">startTime</references>
+        <references refid="classControllerOverseer_1a72d3f9ca3c7117d89ccd34f5b4b94849" compoundref="controller__overseer_8hpp" startline="189">startTimeSet</references>
+        <references refid="classControllerOverseer_1ad3af3518d879f753b3932660722aa88b" compoundref="controller__overseer_8hpp" startline="144">submergedThrusters</references>
+        <references refid="classControllerOverseer_1ae27fb87f76d0b76628e0b7d6dfafa14b" compoundref="controller__overseer_8hpp" startline="183">tfBuffer</references>
+        <references refid="classControllerOverseer_1a62d2c4a25caf649e8e3e70c1ccdafc3d" compoundref="controller__overseer_8hpp" startline="185">tfNamespace</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::adjustThrusterWeights</definition>
+        <argsstring>()</argsstring>
+        <name>adjustThrusterWeights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="117" column="10" bodyfile="src/controller_overseer.cpp" bodystart="444" bodyend="499"/>
+        <references refid="classControllerOverseer_1a7bd430f6c2b89df1550794b7fe4e06d2" compoundref="controller__overseer_8hpp" startline="143">activeThrusters</references>
+        <references refid="classControllerOverseer_1ab9002cd665742e7a7639bbe796a4bbdc" compoundref="controller__overseer_8hpp" startline="205">defaultWeight</references>
+        <references refid="classControllerOverseer_1a4b0437f9515dabdeff17ec761615ae4f" compoundref="controller__overseer_8hpp" startline="205">disabledWeight</references>
+        <references refid="classControllerOverseer_1a1f55e85ba0c46e060d896bb392dda0cd" compoundref="controller__overseer_8hpp" startline="197">enabled</references>
+        <references refid="classControllerOverseer_1a0617a481a744326feb2082f80cb6c969" compoundref="controller__overseer_8hpp" startline="205">lowDowndraftWeight</references>
+        <references refid="classControllerOverseer_1ad3af3518d879f753b3932660722aa88b" compoundref="controller__overseer_8hpp" startline="144">submergedThrusters</references>
+        <references refid="classControllerOverseer_1a975344ba4d920f5e52ff24290b8156a2" compoundref="controller__overseer_8hpp" startline="205">surfaceWeight</references>
+        <references refid="classControllerOverseer_1a094f4c5af306c85fc0fb0251bac524a2" compoundref="controller__overseer_8hpp" startline="156">thrusterMode</references>
+        <references refid="classControllerOverseer_1abc169450a4579dc8aa6b77409f5aaf89" compoundref="controller__overseer_8hpp" startline="145">thrusterWeights</references>
+        <references refid="classControllerOverseer_1ac092f107b812521a1764d178f1524e71" compoundref="controller__overseer_8hpp" startline="171">weightsPub</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+        <referencedby refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" compoundref="controller__overseer_8cpp" startline="410" endline="442">odometryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a62c5282fc8445ebd032422fcc0c3886c" compoundref="controller__overseer_8py" startline="709" endline="736">controller_overseer.ControllerOverseer.odometryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a3101e20f1571a70a9a3a4a47e510422b" compoundref="controller__overseer_8py" startline="696" endline="708">controller_overseer.ControllerOverseer.setThrusterModeCB</referencedby>
+        <referencedby refid="classControllerOverseer_1ab3848c32cb43ac81d0e142df67fac773" compoundref="controller__overseer_8cpp" startline="403" endline="408">setThrusterModeCB</referencedby>
+        <referencedby refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" compoundref="controller__overseer_8cpp" startline="315" endline="385">thrusterTelemetryCB</referencedby>
+        <referencedby refid="classcontroller__overseer_1_1ControllerOverseer_1a15bb8aac24a43b32e75595c7913a662a" compoundref="controller__overseer_8py" startline="621" endline="685">controller_overseer.ControllerOverseer.thrusterTelemetryCB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1aab6d2bb349aa9f8afd2e726528de1e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::setTeleopCB</definition>
+        <argsstring>(std_srvs::srv::SetBool::Request::SharedPtr req, std_srvs::srv::SetBool::Response::SharedPtr res)</argsstring>
+        <name>setTeleopCB</name>
+        <param>
+          <type>std_srvs::srv::SetBool::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>std_srvs::srv::SetBool::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="123" column="10" bodyfile="src/controller_overseer.cpp" bodystart="501" bodyend="540"/>
+        <references refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" compoundref="controller__overseer_8hpp" startline="163">completeController</references>
+        <references refid="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" compoundref="controller__overseer_8hpp" startline="148">controllerTree</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::doUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>doUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="131" column="10" bodyfile="src/controller_overseer.cpp" bodystart="542" bodyend="588"/>
+        <references refid="classControllerOverseer_1a14b43f8a7da5e359a3866de93416e5e3" compoundref="controller__overseer_8hpp" startline="201">baseWrench</references>
+        <references refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" compoundref="controller__overseer_8hpp" startline="163">completeController</references>
+        <references refid="classControllerOverseer_1a67808b4a6ad21735951f8925fadcda72" compoundref="controller__overseer_8hpp" startline="175">ffPub</references>
+        <references refid="classControllerOverseer_1a0f44cf960fda23a0d8212501f75fcfe3" compoundref="controller__overseer_8hpp" startline="198">publishingFF</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ControllerOverseer::ffAutoTuneCB</definition>
+        <argsstring>(geometry_msgs::msg::Twist::SharedPtr msg)</argsstring>
+        <name>ffAutoTuneCB</name>
+        <param>
+          <type>geometry_msgs::msg::Twist::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="136" column="10" bodyfile="src/controller_overseer.cpp" bodystart="590" bodyend="636"/>
+        <references refid="controller__overseer_8hpp_1a3ab686f8df34c746e258f92498ec29c6" compoundref="controller__overseer_8hpp" startline="40">AUTOFF_INIT_TOLERANCE</references>
+        <references refid="classControllerOverseer_1ad41348479f67a263d0f229a6c9a3dad7" compoundref="controller__overseer_8hpp" startline="159">autoffConfigPath</references>
+        <references refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" compoundref="controller__overseer_8hpp" startline="163">completeController</references>
+        <references refid="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" compoundref="controller__overseer_8hpp" startline="148">controllerTree</references>
+        <references refid="classControllerOverseer_1a9cbf889bb42a67b25d3f3c8fa69c82bf" compoundref="controller__overseer_8hpp" startline="202">currentInitFF</references>
+        <references refid="classControllerOverseer_1a6128f5eae3e7b9162a7fa4f050ae7345" compoundref="controller__overseer_8hpp" startline="176">reInitPub</references>
+        <references refid="classControllerOverseer_1aee4f242b91b581021d7f3fa9c1f2adfc" compoundref="controller__overseer_8hpp" startline="139">waitingOnInit</references>
+        <references refid="classControllerOverseer_1a3984dbe58acd563523d6adc20bbb6732" compoundref="controller__overseer_8hpp" startline="209">writeAutoFF</references>
+        <referencedby refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" compoundref="controller__overseer_8cpp" startline="3" endline="71">ControllerOverseer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>ControllerOverseer</label>
+        <link refid="classControllerOverseer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>ControllerOverseer</label>
+        <link refid="classControllerOverseer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_controller/controller_overseer.hpp" line="45" column="1" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="45" bodyend="210"/>
+    <listofallmembers>
+      <member refid="classControllerOverseer_1a7bd430f6c2b89df1550794b7fe4e06d2" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>activeThrusters</name></member>
+      <member refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>adjustThrusterWeights</name></member>
+      <member refid="classControllerOverseer_1a09002a0a98d75ea112cd72ffe5bfd0e7" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>array_vector</name></member>
+      <member refid="classControllerOverseer_1ad41348479f67a263d0f229a6c9a3dad7" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>autoffConfigPath</name></member>
+      <member refid="classControllerOverseer_1acbf250075614641c4b9563be9977b947" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>autoffTree</name></member>
+      <member refid="classControllerOverseer_1a14b43f8a7da5e359a3866de93416e5e3" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>baseWrench</name></member>
+      <member refid="classControllerOverseer_1a493f69df07b252ce6a8c3b0f3d44c4d0" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>bool_vector</name></member>
+      <member refid="classControllerOverseer_1a401de1c3e1cf16bfd4d57a89c35dc3a8" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>com</name></member>
+      <member refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>completeController</name></member>
+      <member refid="classControllerOverseer_1abeb01acfbeeb512a8d363ee436d5eed4" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>configPath</name></member>
+      <member refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>ControllerOverseer</name></member>
+      <member refid="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>controllerTree</name></member>
+      <member refid="classControllerOverseer_1a9cbf889bb42a67b25d3f3c8fa69c82bf" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>currentInitFF</name></member>
+      <member refid="classControllerOverseer_1ab9002cd665742e7a7639bbe796a4bbdc" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>defaultWeight</name></member>
+      <member refid="classControllerOverseer_1a4b0437f9515dabdeff17ec761615ae4f" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>disabledWeight</name></member>
+      <member refid="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>doUpdate</name></member>
+      <member refid="classControllerOverseer_1a1f55e85ba0c46e060d896bb392dda0cd" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>enabled</name></member>
+      <member refid="classControllerOverseer_1a51a142839e0237f4fcd138133f04d578" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>escPowerCheckTimer</name></member>
+      <member refid="classControllerOverseer_1aa35bec7a0a7636519bedeff12a4a5601" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>escPowerStopsHigh</name></member>
+      <member refid="classControllerOverseer_1a49861135549889da7233a67fd57a7e2e" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>escPowerStopsLow</name></member>
+      <member refid="classControllerOverseer_1adfa1ac32cf6b5726a6b5d521a29d9a4c" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>escPowerTimeout</name></member>
+      <member refid="classControllerOverseer_1af185bb9fd21e310201fcf65801ec2526" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>ffAutoTune</name></member>
+      <member refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>ffAutoTuneCB</name></member>
+      <member refid="classControllerOverseer_1a67808b4a6ad21735951f8925fadcda72" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>ffPub</name></member>
+      <member refid="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>generateThrusterForceMatrix</name></member>
+      <member refid="classControllerOverseer_1a7517eeab986fbbc1303d2b54ea387abb" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>init</name></member>
+      <member refid="classControllerOverseer_1afd982e530173fea3ee714b3ae1326135" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>int_vector</name></member>
+      <member refid="classControllerOverseer_1a0617a481a744326feb2082f80cb6c969" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>lowDowndraftWeight</name></member>
+      <member refid="classControllerOverseer_1a3a401c9abbdd71abd84d5d01c27d81d4" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>m3d</name></member>
+      <member refid="classControllerOverseer_1ac7199879a97d00b3a6f15c8dd32d67f6" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>motionEnabledPub</name></member>
+      <member refid="classControllerOverseer_1a547701cc5a17146f220bc652e2c6c817" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>odom</name></member>
+      <member refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>odometryCB</name></member>
+      <member refid="classControllerOverseer_1a5c034404b85ed797bf4f6226993a8b15" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>Parameter</name></member>
+      <member refid="classControllerOverseer_1a5430fcb94b425316a5ba006e69747200" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>ParameterType</name></member>
+      <member refid="classControllerOverseer_1a4d6b8e732d859a553f1e6142d91b0330" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>ParameterValue</name></member>
+      <member refid="classControllerOverseer_1a0f44cf960fda23a0d8212501f75fcfe3" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>publishingFF</name></member>
+      <member refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>readConfig</name></member>
+      <member refid="classControllerOverseer_1a6128f5eae3e7b9162a7fa4f050ae7345" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>reInitPub</name></member>
+      <member refid="classControllerOverseer_1a8318627c3617dfc48e82e02fb50b47a7" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>robotName</name></member>
+      <member refid="classControllerOverseer_1a97f4de68650bd78742d627fab24e830a" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>setConfigPath</name></member>
+      <member refid="classControllerOverseer_1af60c07475247380fe791607887c79ac0" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>SetParams</name></member>
+      <member refid="classControllerOverseer_1a291582bb394257bac85648db50cf36d9" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>SetParamsResult</name></member>
+      <member refid="classControllerOverseer_1a74df42b12c1722e536dc79967d6c7e5e" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>setTeleop</name></member>
+      <member refid="classControllerOverseer_1aab6d2bb349aa9f8afd2e726528de1e45" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>setTeleopCB</name></member>
+      <member refid="classControllerOverseer_1ab3848c32cb43ac81d0e142df67fac773" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>setThrusterModeCB</name></member>
+      <member refid="classControllerOverseer_1a7e6203c2c8039501406f308c43265117" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>setThrusterSolverParams</name></member>
+      <member refid="classControllerOverseer_1ac06fe8815075e21ed55c79780bc04605" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>startTime</name></member>
+      <member refid="classControllerOverseer_1a72d3f9ca3c7117d89ccd34f5b4b94849" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>startTimeSet</name></member>
+      <member refid="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>string</name></member>
+      <member refid="classControllerOverseer_1ad3af3518d879f753b3932660722aa88b" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>submergedThrusters</name></member>
+      <member refid="classControllerOverseer_1a975344ba4d920f5e52ff24290b8156a2" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>surfaceWeight</name></member>
+      <member refid="classControllerOverseer_1ae27fb87f76d0b76628e0b7d6dfafa14b" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>tfBuffer</name></member>
+      <member refid="classControllerOverseer_1ae88f1df5dfa4958caf99c9eb89e47354" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>tfListener</name></member>
+      <member refid="classControllerOverseer_1a62d2c4a25caf649e8e3e70c1ccdafc3d" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>tfNamespace</name></member>
+      <member refid="classControllerOverseer_1ae1cb9c9caf3c0c0ad4fc2157dc928c67" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>thrusterInfo</name></member>
+      <member refid="classControllerOverseer_1a094f4c5af306c85fc0fb0251bac524a2" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>thrusterMode</name></member>
+      <member refid="classControllerOverseer_1a4c267aa208369584040aad90705a64ca" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>thrusterModeSub</name></member>
+      <member refid="classControllerOverseer_1a58516897666b454442c8e4b2e4b55518" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>thrusterSolverName</name></member>
+      <member refid="classControllerOverseer_1ac99190885877cdee496dcc3690faba3d" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>thrusterTelemetry</name></member>
+      <member refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>thrusterTelemetryCB</name></member>
+      <member refid="classControllerOverseer_1abc169450a4579dc8aa6b77409f5aaf89" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>thrusterWeights</name></member>
+      <member refid="classControllerOverseer_1a11da1d3c6ce424e45d6cc80512a45a43" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>traversal</name></member>
+      <member refid="classControllerOverseer_1acf346560d06c764b1dc8559397d19ac6" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>updateTimer</name></member>
+      <member refid="classControllerOverseer_1afd464dfd0ffe6f5809873431abeecbe5" prot="private" virt="non-virtual"><scope>ControllerOverseer</scope><name>v3d</name></member>
+      <member refid="classControllerOverseer_1aee4f242b91b581021d7f3fa9c1f2adfc" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>waitingOnInit</name></member>
+      <member refid="classControllerOverseer_1ac092f107b812521a1764d178f1524e71" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>weightsPub</name></member>
+      <member refid="classControllerOverseer_1a4d2bd8463367f0d6cdc4a519b314ce16" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>weightTimer</name></member>
+      <member refid="classControllerOverseer_1a3984dbe58acd563523d6adc20bbb6732" prot="public" virt="non-virtual"><scope>ControllerOverseer</scope><name>writeAutoFF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

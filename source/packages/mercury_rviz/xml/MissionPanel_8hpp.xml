@@ -1,21 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="MissionPanel_8hpp" kind="file" language="C++">
     <compoundname>MissionPanel.hpp</compoundname>
+    <includes local="no">QStandardItemModel</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">ament_index_cpp/get_package_prefix.hpp</includes>
+    <includes local="no">ament_index_cpp/get_package_share_directory.hpp</includes>
+    <includes local="no">mercury_msgs/action/execute_tree.hpp</includes>
+    <includes local="no">mercury_msgs/msg/led_command.hpp</includes>
+    <includes local="no">mercury_msgs/msg/tree_stack.hpp</includes>
+    <includes local="no">mercury_msgs/srv/list_trees.hpp</includes>
     <includes local="no">rclcpp/rclcpp.hpp</includes>
     <includes local="no">rclcpp_action/rclcpp_action.hpp</includes>
-    <includes local="no">riptide_msgs2/srv/list_trees.hpp</includes>
-    <includes local="no">riptide_msgs2/action/execute_tree.hpp</includes>
-    <includes local="no">riptide_msgs2/msg/tree_stack.hpp</includes>
-    <includes local="no">riptide_msgs2/msg/led_command.hpp</includes>
-    <includes local="no">ament_index_cpp/get_package_share_directory.hpp</includes>
-    <includes local="no">ament_index_cpp/get_package_prefix.hpp</includes>
-    <includes local="no">rviz_common/panel.hpp</includes>
     <includes local="no">rviz_common/config.hpp</includes>
-    <includes local="no">QTimer</includes>
-    <includes local="no">QStandardItemModel</includes>
+    <includes local="no">rviz_common/panel.hpp</includes>
     <includes local="yes">ui_MissionPanel.h</includes>
+    <includedby refid="MissionPanel_8cpp" local="yes">src/MissionPanel.cpp</includedby>
     <incdepgraph>
+      <node id="11">
+        <label>rclcpp_action/rclcpp_action.hpp</label>
+      </node>
+      <node id="2">
+        <label>QStandardItemModel</label>
+      </node>
+      <node id="8">
+        <label>mercury_msgs/msg/tree_stack.hpp</label>
+      </node>
+      <node id="10">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="4">
+        <label>ament_index_cpp/get_package_prefix.hpp</label>
+      </node>
+      <node id="13">
+        <label>rviz_common/panel.hpp</label>
+      </node>
+      <node id="7">
+        <label>mercury_msgs/msg/led_command.hpp</label>
+      </node>
+      <node id="9">
+        <label>mercury_msgs/srv/list_trees.hpp</label>
+      </node>
+      <node id="14">
+        <label>ui_MissionPanel.h</label>
+      </node>
+      <node id="5">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="12">
+        <label>rviz_common/config.hpp</label>
+      </node>
+      <node id="3">
+        <label>QTimer</label>
+      </node>
+      <node id="6">
+        <label>mercury_msgs/action/execute_tree.hpp</label>
+      </node>
       <node id="1">
         <label>include/mercury_rviz/MissionPanel.hpp</label>
         <link refid="MissionPanel_8hpp"/>
@@ -46,143 +86,111 @@
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="13">
-        <label>QStandardItemModel</label>
-      </node>
-      <node id="12">
-        <label>QTimer</label>
-      </node>
-      <node id="9">
-        <label>ament_index_cpp/get_package_prefix.hpp</label>
-      </node>
-      <node id="8">
-        <label>ament_index_cpp/get_package_share_directory.hpp</label>
-      </node>
-      <node id="2">
-        <label>rclcpp/rclcpp.hpp</label>
-      </node>
-      <node id="3">
-        <label>rclcpp_action/rclcpp_action.hpp</label>
-      </node>
-      <node id="5">
-        <label>riptide_msgs2/action/execute_tree.hpp</label>
-      </node>
-      <node id="7">
-        <label>riptide_msgs2/msg/led_command.hpp</label>
-      </node>
-      <node id="6">
-        <label>riptide_msgs2/msg/tree_stack.hpp</label>
-      </node>
-      <node id="4">
-        <label>riptide_msgs2/srv/list_trees.hpp</label>
-      </node>
-      <node id="11">
-        <label>rviz_common/config.hpp</label>
-      </node>
-      <node id="10">
-        <label>rviz_common/panel.hpp</label>
-      </node>
-      <node id="14">
-        <label>ui_MissionPanel.h</label>
-      </node>
     </incdepgraph>
-    <innerclass refid="classriptide__rviz_1_1MissionPanel" prot="public">riptide_rviz::MissionPanel</innerclass>
-    <innernamespace refid="namespaceriptide__rviz">riptide_rviz</innernamespace>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/MissionPanel.cpp</label>
+        <link refid="MissionPanel_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/mercury_rviz/MissionPanel.hpp</label>
+        <link refid="MissionPanel_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmercury__rviz_1_1MissionPanel" prot="public">mercury_rviz::MissionPanel</innerclass>
+    <innernamespace refid="namespacemercury__rviz">mercury_rviz</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp_action/rclcpp_action.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/srv/list_trees.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/action/execute_tree.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/tree_stack.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;riptide_msgs2/msg/led_command.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_share_directory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_prefix.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_prefix.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_share_directory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mercury_msgs/action/execute_tree.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mercury_msgs/msg/led_command.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mercury_msgs/msg/tree_stack.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mercury_msgs/srv/list_trees.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp_action/rclcpp_action.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/config.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rviz_common/panel.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStandardItemModel&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_MissionPanel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz" kindref="compound">riptide_rviz</ref></highlight></codeline>
-<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="21" refid="namespaceriptide__rviz_1af1742ebb2a897f4829c108e353155a97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz_1af1742ebb2a897f4829c108e353155a97" kindref="member">ExecuteTree</ref><sp/>=<sp/>riptide_msgs2::action::ExecuteTree;</highlight></codeline>
-<codeline lineno="22" refid="namespaceriptide__rviz_1aa5b2892d0b79fc3ea8f574ba280bb8ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceriptide__rviz_1aa5b2892d0b79fc3ea8f574ba280bb8ef" kindref="member">GHExecuteTree</ref><sp/>=<sp/>rclcpp_action::ClientGoalHandle&lt;ExecuteTree&gt;;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="classriptide__rviz_1_1MissionPanel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classriptide__rviz_1_1MissionPanel_1a0f2597106fb90f8636d7a885c5cc9a0e" kindref="member">MissionPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Q_OBJECT<sp/>public<sp/>:<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a0f2597106fb90f8636d7a885c5cc9a0e" kindref="member">MissionPanel</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aaf157af0dfabf950a42ae780d666f23b" kindref="member">~MissionPanel</ref>();</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a57e48e4fd51d46cd6725720f346fd873" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a26a9b382b24152da12c484e783ad54d8" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a7146fca9fd6e361a20caa1d4b6edde2f" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>Q_SLOTS:</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>QT<sp/>slots<sp/>(function<sp/>callbacks)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a203f4dcaf787fea90378238c2b60ecb0" kindref="member">refresh</ref>();</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa20d044ed8753ef8003aba5b39da1b9e" kindref="member">handleSelectTree</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa74ee1eced126db8d73d789e6cfd1601" kindref="member">startTask</ref>();</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a34c1712d39789fbba9c2c91d91ea8603" kindref="member">cancelTask</ref>();</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a825bf757b31eb0c0edbedc4411c873a6" kindref="member">event</ref>(QEvent<sp/>*<ref refid="classriptide__rviz_1_1MissionPanel_1a825bf757b31eb0c0edbedc4411c873a6" kindref="member">event</ref>);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>action<sp/>server<sp/>callbacks</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1af96bde242802bfe99d8feb8c56677cd1" kindref="member">taskStartCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GHExecuteTree::SharedPtr<sp/>&amp;<sp/>goalHandle);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1acfb090ca92850e0e561bc8310cb4afe4" kindref="member">cancelAccept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>action_msgs::srv::CancelGoal::Response::SharedPtr<sp/>);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a19948786e2b9e311747afb46657a47d9" kindref="member">taskCompleteCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GHExecuteTree::WrappedResult<sp/>&amp;<sp/>result);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a52ff16a03b0e228b7227e38b834c7414" kindref="member">taskFeedbackCb</ref>(GHExecuteTree::SharedPtr<sp/>goalHandle,</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ExecuteTree::Feedback::ConstSharedPtr<sp/>feedback);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//subscriber<sp/>callback<sp/>on<sp/>the<sp/>tree<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1acab54f38b998b20183d6c84409ceb643" kindref="member">stackCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::TreeStack<sp/>&amp;<sp/>stack);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//subscriber<sp/>callback<sp/>for<sp/>led<sp/>commands</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a960ae68346241235d69139e6f78e8922" kindref="member">ledCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>riptide_msgs2::msg::LedCommand<sp/>&amp;<sp/>cmd);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timer<sp/>callabck<sp/>for<sp/>refresh<sp/>future</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1af1bf9d99265c027aba43e638252d0ef2" kindref="member">waitForRefresh</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_MissionPanel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemercury__rviz" kindref="compound">mercury_rviz</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacemercury__rviz_1a28d78b99a3929a78f47b0aa4a144c306" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacemercury__rviz_1a28d78b99a3929a78f47b0aa4a144c306" kindref="member">ExecuteTree</ref><sp/>=<sp/><ref refid="namespacemercury__rviz_1a28d78b99a3929a78f47b0aa4a144c306" kindref="member">mercury_msgs::action::ExecuteTree</ref>;</highlight></codeline>
+<codeline lineno="19" refid="namespacemercury__rviz_1acfea64254908de8a3a71d7afd6e991d5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacemercury__rviz_1acfea64254908de8a3a71d7afd6e991d5" kindref="member">GHExecuteTree</ref><sp/>=<sp/>rclcpp_action::ClientGoalHandle&lt;ExecuteTree&gt;;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classmercury__rviz_1_1MissionPanel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmercury__rviz_1_1MissionPanel" kindref="compound">MissionPanel</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rviz_common::Panel<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">Q_OBJECT<sp/>public<sp/>:<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ad9cf9cb59973c456e0065d4369212a03" kindref="member">MissionPanel</ref>(QWidget<sp/>*<sp/>parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a3a4846e0d9bd4474effb5195fbd61693" kindref="member">~MissionPanel</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a8678223ee97d0007d523388419b07bc5" kindref="member">load</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rviz_common::Config<sp/>&amp;<sp/>config)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1adfa44b694856dcbe7010cbbce9afd038" kindref="member">save</ref>(rviz_common::Config<sp/>config)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a3cce53c6f8a5275b4b2d8dd216de89c4" kindref="member">onInitialize</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>Q_SLOTS:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>QT<sp/>slots<sp/>(function<sp/>callbacks)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a1f6c25e92c72da0bd02ddc1bbadf70b3" kindref="member">refresh</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a5fb9004e1b68a7d85f772db9b727a729" kindref="member">handleSelectTree</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a47c2f7827243f4ccc68c46ea872de904" kindref="member">startTask</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ae3a19e5b2ca531b93608d9572b136ef7" kindref="member">cancelTask</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a28464a9a1dd3031ff36c5045ea23b698" kindref="member">event</ref>(QEvent<sp/>*<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a28464a9a1dd3031ff36c5045ea23b698" kindref="member">event</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>action<sp/>server<sp/>callbacks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1aa2ebadfcbac8ef84710e6d0adde0329d" kindref="member">taskStartCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GHExecuteTree::SharedPtr<sp/>&amp;<sp/>goalHandle);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ab1f42372c31947dc513fac1f0462dc40" kindref="member">cancelAccept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>action_msgs::srv::CancelGoal::Response::SharedPtr);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1af0717b841bcb703ded7e8029f76bcf82" kindref="member">taskCompleteCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GHExecuteTree::WrappedResult<sp/>&amp;<sp/>result);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a9e50130d7aca339bc064cb94a3dc2e81" kindref="member">taskFeedbackCb</ref>(</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GHExecuteTree::SharedPtr<sp/>goalHandle,<sp/>ExecuteTree::Feedback::ConstSharedPtr<sp/>feedback);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>subscriber<sp/>callback<sp/>on<sp/>the<sp/>tree<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ae5604bbd04557058e84687e17c04a812" kindref="member">stackCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mercury_msgs::msg::TreeStack<sp/>&amp;<sp/>stack);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>subscriber<sp/>callback<sp/>for<sp/>led<sp/>commands</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ad0c09cd328462193637f9a8f52620160" kindref="member">ledCb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mercury_msgs::msg::LedCommand<sp/>&amp;<sp/>cmd);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timer<sp/>callabck<sp/>for<sp/>refresh<sp/>future</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1aa4eeaec3bf1b3d23a49506f9e7425abf" kindref="member">waitForRefresh</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1aeb464a14ed0fac68c811a3afd2f455df" kindref="member">updateLedReadout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui_MissionPanel<sp/>*<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ab3a8bc9f14618de1615715e50ede8687" kindref="member">uiPanel</ref>;</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a687d709950dca8b8bf94e926a9f26ea7" kindref="member">updateLedReadout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tree<sp/>view<sp/>item<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classmercury__rviz_1_1MissionPanel_1a632a3290386dfa9d12a69ab6df062014" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QStandardItemModel<sp/>*<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a632a3290386dfa9d12a69ab6df062014" kindref="member">model</ref>;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63" refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ui_MissionPanel<sp/>*<ref refid="classriptide__rviz_1_1MissionPanel_1a433cacee34bfff7954deb4bd22e6429a" kindref="member">uiPanel</ref>;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tree<sp/>view<sp/>item<sp/>model</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66" refid="classriptide__rviz_1_1MissionPanel_1a61b9addffdcc5610cdf2e519546006ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QStandardItemModel<sp/>*<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a61b9addffdcc5610cdf2e519546006ba" kindref="member">model</ref>;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ac9ab1cafee9dbfaf3eebf1d9569ce6f0" kindref="member">treeList</ref>;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>led<sp/>command</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="classriptide__rviz_1_1MissionPanel_1a413757533620dd7864a85a0c2804b179" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>riptide_msgs2::msg::LedCommand<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a413757533620dd7864a85a0c2804b179" kindref="member">lastLedCommand</ref>;</highlight></codeline>
-<codeline lineno="73" refid="classriptide__rviz_1_1MissionPanel_1add79544becf1150fecf24385d52a17a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1add79544becf1150fecf24385d52a17a1" kindref="member">ledTimer</ref>;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75" refid="classriptide__rviz_1_1MissionPanel_1a73541a8e0d43209885e1aa61b5a1d5d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;riptide_msgs2::msg::TreeStack&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a73541a8e0d43209885e1aa61b5a1d5d9" kindref="member">stackSub</ref>;</highlight></codeline>
-<codeline lineno="76" refid="classriptide__rviz_1_1MissionPanel_1ae99ea4c8b3b69af4c1501e097edb6567" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;riptide_msgs2::msg::LedCommand&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ae99ea4c8b3b69af4c1501e097edb6567" kindref="member">ledSub</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classmercury__rviz_1_1MissionPanel_1a67f36231cf6d5e39146c6277343f28ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a67f36231cf6d5e39146c6277343f28ee" kindref="member">treeList</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>led<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classmercury__rviz_1_1MissionPanel_1ae575a33a5d4fd05fb11d1dcac854fbb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>mercury_msgs::msg::LedCommand<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ae575a33a5d4fd05fb11d1dcac854fbb0" kindref="member">lastLedCommand</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classmercury__rviz_1_1MissionPanel_1ab9ca957785371352ab2cf6be006e0c2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1ab9ca957785371352ab2cf6be006e0c2e" kindref="member">ledTimer</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classmercury__rviz_1_1MissionPanel_1aa6cd30be3e029ab970ce5bb13b553fc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;mercury_msgs::msg::TreeStack&gt;::SharedPtr<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1aa6cd30be3e029ab970ce5bb13b553fc1" kindref="member">stackSub</ref>;</highlight></codeline>
+<codeline lineno="71" refid="classmercury__rviz_1_1MissionPanel_1a5da9007a9690578a7460ac38295d9cbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;mercury_msgs::msg::LedCommand&gt;::SharedPtr<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a5da9007a9690578a7460ac38295d9cbd" kindref="member">ledSub</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>refresh<sp/>request<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Client&lt;mercury_msgs::srv::ListTrees&gt;::SharedPtr<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a9a728ded9fc9568862173d6a754e97a4" kindref="member">refreshClient</ref>;</highlight></codeline>
+<codeline lineno="75" refid="classmercury__rviz_1_1MissionPanel_1a4c517b4b19961f85028764f0a5de9ef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_future&lt;std::shared_ptr&lt;mercury_msgs::srv::ListTrees_Response&gt;&gt;<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a4c517b4b19961f85028764f0a5de9ef8" kindref="member">refreshFuture</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classmercury__rviz_1_1MissionPanel_1a6b157a5dcdfde5932d29a9e25718ca40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a6b157a5dcdfde5932d29a9e25718ca40" kindref="member">refreshFutureid</ref><sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>refresh<sp/>request<sp/>info</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79" refid="classriptide__rviz_1_1MissionPanel_1a9272d1be5100e4b809da84b12840683b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Client&lt;riptide_msgs2::srv::ListTrees&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a9272d1be5100e4b809da84b12840683b" kindref="member">refreshClient</ref>;</highlight></codeline>
-<codeline lineno="80" refid="classriptide__rviz_1_1MissionPanel_1aa6e86e1d1102484e01903d23389e47ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_future&lt;std::shared_ptr&lt;riptide_msgs2::srv::ListTrees_Response&gt;&gt;<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa6e86e1d1102484e01903d23389e47ac" kindref="member">refreshFuture</ref>;</highlight></codeline>
-<codeline lineno="81" refid="classriptide__rviz_1_1MissionPanel_1aa7a4b74b89c9da317d14a94823961a64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int64_t<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa7a4b74b89c9da317d14a94823961a64" kindref="member">refreshFutureid</ref><sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83" refid="classriptide__rviz_1_1MissionPanel_1a3353e34c87caf9822f0aad62121da12a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classriptide__rviz_1_1MissionPanel_1a3353e34c87caf9822f0aad62121da12a" kindref="member">timerTick</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="78" refid="classmercury__rviz_1_1MissionPanel_1a648509e469dd086c257dc4bf0a5efe1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a648509e469dd086c257dc4bf0a5efe1c" kindref="member">timerTick</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp_action::Client&lt;ExecuteTree&gt;::SharedPtr<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a5085c670e15eae546066585be426a80d" kindref="member">actionServer</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classmercury__rviz_1_1MissionPanel_1a883fa54a2164679a969b47bcbcae2a57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classmercury__rviz_1_1MissionPanel_1a883fa54a2164679a969b47bcbcae2a57" kindref="member">robot_ns</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="classriptide__rviz_1_1MissionPanel_1ad03f53b94a433da6274bf9c1f4e9cc57" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp_action::Client&lt;ExecuteTree&gt;::SharedPtr<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1ad03f53b94a433da6274bf9c1f4e9cc57" kindref="member">actionServer</ref>;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87" refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classriptide__rviz_1_1MissionPanel_1aa0b1357c0ba226af53f07b33aded5224" kindref="member">robot_ns</ref>;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>riptide_rviz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mercury_rviz</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/mercury_rviz/MissionPanel.hpp"/>
   </compounddef>

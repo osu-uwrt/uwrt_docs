@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__launch_1_1launcher_1_1SDNotify" kind="class" language="Python" prot="public">
+    <compoundname>mercury_launch::launcher::SDNotify</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1SDNotify_1a70b75f26a8fbca6b22ad81f6be514cde" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.SDNotify::_sock</definition>
+        <argsstring></argsstring>
+        <name>_sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="58" column="1" bodyfile="mercury_launch/launcher.py" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" compoundref="launcher_8py" startline="63" endline="67">mercury_launch.launcher.SDNotify._notify</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1SDNotify_1ab8c4e54634c846cd2ea55e3f88f2506b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.SDNotify.__init__</definition>
+        <argsstring>(self, bool systemd_mode)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>systemd_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="47" column="1" bodyfile="mercury_launch/launcher.py" bodystart="47" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1SDNotify_1a4620a95090a5736f4c7b67070934b238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.SDNotify.report_ready</definition>
+        <argsstring>(self)</argsstring>
+        <name>report_ready</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="68" column="1" bodyfile="mercury_launch/launcher.py" bodystart="68" bodyend="70"/>
+        <references refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" compoundref="launcher_8py" startline="63" endline="67">mercury_launch.launcher.SDNotify._notify</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1SDNotify_1a7689f88dea5979dff95ebfec356ca932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.SDNotify.report_stopping</definition>
+        <argsstring>(self)</argsstring>
+        <name>report_stopping</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="71" column="1" bodyfile="mercury_launch/launcher.py" bodystart="71" bodyend="73"/>
+        <references refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" compoundref="launcher_8py" startline="63" endline="67">mercury_launch.launcher.SDNotify._notify</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1SDNotify_1a71ffe9c3f5f45d2ed50d7a23e1f6b7be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.SDNotify.report_status</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>report_status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="74" column="1" bodyfile="mercury_launch/launcher.py" bodystart="74" bodyend="76"/>
+        <references refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" compoundref="launcher_8py" startline="63" endline="67">mercury_launch.launcher.SDNotify._notify</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1SDNotify_1a7f9cd264ef2fb2e3fe28f77366be51c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.SDNotify.trigger_watchdog</definition>
+        <argsstring>(self)</argsstring>
+        <name>trigger_watchdog</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="77" column="1" bodyfile="mercury_launch/launcher.py" bodystart="77" bodyend="79"/>
+        <references refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" compoundref="launcher_8py" startline="63" endline="67">mercury_launch.launcher.SDNotify._notify</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.SDNotify._notify</definition>
+        <argsstring>(self, str packet)</argsstring>
+        <name>_notify</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>packet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="63" column="1" bodyfile="mercury_launch/launcher.py" bodystart="63" bodyend="67"/>
+        <references refid="classmercury__launch_1_1launcher_1_1SDNotify_1a70b75f26a8fbca6b22ad81f6be514cde" compoundref="launcher_8py" startline="58">mercury_launch.launcher.SDNotify._sock</references>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1SDNotify_1a523a5b3c4a8bf9082091dd71cd55319b" compoundref="launcher_8py" startline="80" endline="88">mercury_launch.launcher.SDNotify._take_ownership</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1SDNotify_1a4620a95090a5736f4c7b67070934b238" compoundref="launcher_8py" startline="68" endline="70">mercury_launch.launcher.SDNotify.report_ready</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1SDNotify_1a71ffe9c3f5f45d2ed50d7a23e1f6b7be" compoundref="launcher_8py" startline="74" endline="76">mercury_launch.launcher.SDNotify.report_status</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1SDNotify_1a7689f88dea5979dff95ebfec356ca932" compoundref="launcher_8py" startline="71" endline="73">mercury_launch.launcher.SDNotify.report_stopping</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1SDNotify_1a7f9cd264ef2fb2e3fe28f77366be51c3" compoundref="launcher_8py" startline="77" endline="79">mercury_launch.launcher.SDNotify.trigger_watchdog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1SDNotify_1a523a5b3c4a8bf9082091dd71cd55319b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.SDNotify._take_ownership</definition>
+        <argsstring>(self)</argsstring>
+        <name>_take_ownership</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="80" column="1" bodyfile="mercury_launch/launcher.py" bodystart="80" bodyend="88"/>
+        <references refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" compoundref="launcher_8py" startline="63" endline="67">mercury_launch.launcher.SDNotify._notify</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_launch.launcher.SDNotify</label>
+        <link refid="classmercury__launch_1_1launcher_1_1SDNotify"/>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_launch/launcher.py" line="44" column="1" bodyfile="mercury_launch/launcher.py" bodystart="44" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1ab8c4e54634c846cd2ea55e3f88f2506b" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>__init__</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a382470b49aae1a5fbac5977b125f2a0e" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>_notify</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a70b75f26a8fbca6b22ad81f6be514cde" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>_sock</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a523a5b3c4a8bf9082091dd71cd55319b" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>_take_ownership</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a4620a95090a5736f4c7b67070934b238" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>report_ready</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a71ffe9c3f5f45d2ed50d7a23e1f6b7be" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>report_status</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a7689f88dea5979dff95ebfec356ca932" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>report_stopping</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1SDNotify_1a7f9cd264ef2fb2e3fe28f77366be51c3" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::SDNotify</scope><name>trigger_watchdog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1MercuryBtNode" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mercury_autonomy::MercuryBtNode</compoundname>
+    <derivedcompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1MercuryConditionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryConditionNode</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1MercuryDecoratorNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryDecoratorNode</derivedcompoundref>
+    <includes refid="mercury__bt__node_8hpp" local="no">mercury_bt_node.hpp</includes>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" static="yes" mutable="no">
+        <type>std::shared_ptr&lt; tf2_ros::Buffer &gt;</type>
+        <definition>std::shared_ptr&lt; tf2_ros::Buffer &gt; mercury_autonomy::MercuryBtNode::tf_buffer_</definition>
+        <argsstring></argsstring>
+        <name>tf_buffer_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Shared TF2 buffer (created once in staticInit). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="45" column="28" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" compoundref="mercury__bt__node_8cpp" startline="30" endline="44">lookupTransform</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" compoundref="mercury__bt__node_8cpp" startline="20" endline="23">staticDeinit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" compoundref="mercury__bt__node_8cpp" startline="11" endline="18">staticInit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr mercury_autonomy::MercuryBtNode::ros_node_</definition>
+        <argsstring></argsstring>
+        <name>ros_node_</name>
+        <briefdescription>
+<para>The ROS2 node handle for this BT node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="48" column="29" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" compoundref="mercury__bt__node_8cpp" startline="25" endline="28">init</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" compoundref="mercury__bt__node_8cpp" startline="30" endline="44">lookupTransform</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">rosNode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" static="yes" mutable="no">
+        <type>std::shared_ptr&lt; tf2_ros::TransformListener &gt;</type>
+        <definition>std::shared_ptr&lt; tf2_ros::TransformListener &gt; mercury_autonomy::MercuryBtNode::tf_listener_</definition>
+        <argsstring></argsstring>
+        <name>tf_listener_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="51" column="28" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" compoundref="mercury__bt__node_8cpp" startline="20" endline="23">staticDeinit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" compoundref="mercury__bt__node_8cpp" startline="11" endline="18">staticInit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual mercury_autonomy::MercuryBtNode::~MercuryBtNode</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MercuryBtNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="17" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::MercuryBtNode::init</definition>
+        <argsstring>(rclcpp::Node::SharedPtr node)</argsstring>
+        <name>init</name>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Per-node initialization <ndash/> gives this node a ROS handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="27" column="10" bodyfile="src/mercury_bt_node.cpp" bodystart="25" bodyend="28"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" compoundref="mercury__bt__node_8hpp" startline="48">ros_node_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr mercury_autonomy::MercuryBtNode::rosNode</definition>
+        <argsstring>() const</argsstring>
+        <name>rosNode</name>
+        <briefdescription>
+<para>Access the ROS node handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="30" column="29" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="30" bodyend="30"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" compoundref="mercury__bt__node_8hpp" startline="48">ros_node_</references>
+        <referencedby refid="classmercury__autonomy_1_1ApplyFeedforwardForce_1a3301783f6c6e1c65e042a54d367debce" compoundref="apply__feedforward__force_8cpp" startline="62" endline="66">mercury_autonomy::ApplyFeedforwardForce::onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ExampleAction_1a168ea2796e5b04b3db2b089f7aca9e09" compoundref="example__action_8cpp" startline="36" endline="39">mercury_autonomy::ExampleAction::onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ApplyFeedforwardForce_1a91d627ba7817af798ac154a14016d234" compoundref="apply__feedforward__force_8cpp" startline="47" endline="60">mercury_autonomy::ApplyFeedforwardForce::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallSetBoolService_1a96cc7150fcd6ef4bd381e740a15de3df" compoundref="call__set__bool__service_8cpp" startline="43" endline="72">mercury_autonomy::CallSetBoolService::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1a997355bd7d9f2ef8e4412298447e709a" compoundref="call__trigger__service_8cpp" startline="36" endline="63">mercury_autonomy::CallTriggerService::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">mercury_autonomy::ComputeFrameAlignment::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ExampleAction_1a55403d5ea6b5666e7f8e9b8146e488d4" compoundref="example__action_8cpp" startline="30" endline="34">mercury_autonomy::ExampleAction::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1aeeb66e65925d41ec8be568010d34dab1" compoundref="get__bool__topic_8cpp" startline="33" endline="48">mercury_autonomy::GetBoolTopic::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetCovariance_1ab480e1d2414695293468d83e588ebdbe" compoundref="get__covariance_8cpp" startline="29" endline="42">mercury_autonomy::GetCovariance::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" compoundref="get__float__topic_8cpp" startline="34" endline="49">mercury_autonomy::GetFloatTopic::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetImuOrientation_1a04542099a1ad20ad82824f6d09d89686" compoundref="get__imu__orientation_8cpp" startline="33" endline="51">mercury_autonomy::GetImuOrientation::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a9e11912568c7c5bf3bc12635692e09f5" compoundref="get__mapping__state_8cpp" startline="25" endline="41">mercury_autonomy::GetMappingState::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" compoundref="get__odometry_8cpp" startline="32" endline="55">mercury_autonomy::GetOdometry::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" compoundref="get__twist__topic_8cpp" startline="33" endline="53">mercury_autonomy::GetTwistTopic::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a935b5af4577ed12c75cd32fa5bf2db3c" compoundref="publish__ekf__pose_8cpp" startline="31" endline="88">mercury_autonomy::PublishEKFPose::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetMappingTarget_1a9e91202b4f7085b1410fbfaae17ba0df" compoundref="set__mapping__target_8cpp" startline="42" endline="60">mercury_autonomy::SetMappingTarget::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">mercury_autonomy::TransformPose::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a5fc5a2516064e803b5b534f6c598071a" compoundref="wait__for__detection_8cpp" startline="25" endline="35">mercury_autonomy::WaitForDetection::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1ae0cda3d44501786ad927fa90d7a62c3b" compoundref="wait__for__kill__switch_8cpp" startline="29" endline="39">mercury_autonomy::WaitForKillSwitch::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ApplyFeedforwardForce_1a7403710374a9006f270a13286be13ea6" compoundref="apply__feedforward__force_8cpp" startline="9" endline="45">mercury_autonomy::ApplyFeedforwardForce::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallSetBoolService_1abd11c8ee6fa1799b0b850e8f1324dbfd" compoundref="call__set__bool__service_8cpp" startline="11" endline="41">mercury_autonomy::CallSetBoolService::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CallTriggerService_1af63962ca85a0e5043b1dc4ee561f84b2" compoundref="call__trigger__service_8cpp" startline="11" endline="34">mercury_autonomy::CallTriggerService::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a54835cefbf0ae72c91c736c28dde3a33" compoundref="compute__frame__alignment_8cpp" startline="9" endline="28">mercury_autonomy::ComputeFrameAlignment::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ExampleAction_1affaebf9485eedb3bd54d18c719d2e5de" compoundref="example__action_8cpp" startline="15" endline="28">mercury_autonomy::ExampleAction::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetBoolTopic_1a28cb1767ce421f4fef5b7e4d7ae010c2" compoundref="get__bool__topic_8cpp" startline="11" endline="31">mercury_autonomy::GetBoolTopic::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetCovariance_1add50bc4848d1017f0bdf2448af4acc69" compoundref="get__covariance_8cpp" startline="11" endline="27">mercury_autonomy::GetCovariance::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" compoundref="get__float__topic_8cpp" startline="11" endline="32">mercury_autonomy::GetFloatTopic::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetImuOrientation_1af2c377e1d8ebee7d5ce86297ed21649b" compoundref="get__imu__orientation_8cpp" startline="11" endline="31">mercury_autonomy::GetImuOrientation::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1aae84337ee13904e93fd7774ca55f8912" compoundref="get__mapping__state_8cpp" startline="19" endline="23">mercury_autonomy::GetMappingState::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" compoundref="get__odometry_8cpp" startline="11" endline="30">mercury_autonomy::GetOdometry::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" compoundref="get__twist__topic_8cpp" startline="11" endline="31">mercury_autonomy::GetTwistTopic::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishBool_1ac4dcadd8d6f819ddfd5824d36f9f36c9" compoundref="publish__bool_8cpp" startline="11" endline="36">mercury_autonomy::PublishBool::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1aa5b6804db4fe0353e3331de33e13cd90" compoundref="publish__ekf__pose_8cpp" startline="18" endline="29">mercury_autonomy::PublishEKFPose::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishInt8_1a576ef08b72a3727e6f8fb3da7638e891" compoundref="publish__int8_8cpp" startline="9" endline="29">mercury_autonomy::PublishInt8::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishTwist_1ac92a920d2c1f4906a9f00a7f82a804d4" compoundref="publish__twist_8cpp" startline="11" endline="36">mercury_autonomy::PublishTwist::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1acd645ce81a9a7aea657ab498fea95408" compoundref="set__feedforward__mode_8cpp" startline="18" endline="53">mercury_autonomy::SetFeedforwardMode::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetMappingTarget_1ae1e4faa32bbf830e002c6e49bf6d07b1" compoundref="set__mapping__target_8cpp" startline="15" endline="40">mercury_autonomy::SetMappingTarget::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetStatus_1a9bb8c81258bd6b4cbdc30604c5cf14ff" compoundref="set__status_8cpp" startline="38" endline="122">mercury_autonomy::SetStatus::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a491ea9163a119952bcde231089510559" compoundref="transform__pose_8cpp" startline="11" endline="43">mercury_autonomy::TransformPose::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1af7f1d5ea21dc370487e63bd8d55cccc7" compoundref="wait__for__detection_8cpp" startline="17" endline="23">mercury_autonomy::WaitForDetection::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1af9c61d4f46fb489914a921dadd59862a" compoundref="wait__for__kill__switch_8cpp" startline="12" endline="27">mercury_autonomy::WaitForKillSwitch::onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ApplyFeedforwardForce_1a13935915e2e9f3bd6917fdb2f17d9657" compoundref="apply__feedforward__force_8cpp" startline="5" endline="7">mercury_autonomy::ApplyFeedforwardForce::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ExampleAction_1a8b84c5cce7ab1b830ed4943d4002f9f2" compoundref="example__action_8cpp" startline="8" endline="13">mercury_autonomy::ExampleAction::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a6bb6aad9588f5764017f76b18458ce73" compoundref="get__mapping__state_8cpp" startline="11" endline="17">mercury_autonomy::GetMappingState::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a32e755fc67582e24887d8cdc24dbd3f3" compoundref="publish__ekf__pose_8cpp" startline="12" endline="16">mercury_autonomy::PublishEKFPose::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishToController_1a6d8962ab8e67dd357b9d07fe4d570c24" compoundref="publish__to__controller_8cpp" startline="12" endline="17">mercury_autonomy::PublishToController::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1a7f1c0a49c0d05bd1a0e926f451e8a76c" compoundref="set__feedforward__mode_8cpp" startline="10" endline="16">mercury_autonomy::SetFeedforwardMode::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetMappingTarget_1a0d65208b55efffde88965c15050b15e1" compoundref="set__mapping__target_8cpp" startline="11" endline="13">mercury_autonomy::SetMappingTarget::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1SetStatus_1a03f633b8835b76393f08c595e6d4171f" compoundref="set__status_8cpp" startline="34" endline="36">mercury_autonomy::SetStatus::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForDetection_1a7bb43434764937fd2eddcb469a72872e" compoundref="wait__for__detection_8cpp" startline="11" endline="15">mercury_autonomy::WaitForDetection::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ExampleCondition_1ac005d021f6297d126a197062bad1a81e" compoundref="example__condition_8cpp" startline="8" endline="14">mercury_autonomy::ExampleCondition::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ExampleDecorator_1a66627fb053e47a6d0940fabb3bb6c263" compoundref="example__decorator_8cpp" startline="8" endline="11">mercury_autonomy::ExampleDecorator::rosInit</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ApproxEqualTo_1a6d0756845ec42b7144a4f19dfa978db4" compoundref="approx__equal__to_8cpp" startline="13" endline="33">mercury_autonomy::ApproxEqualTo::tick</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ApproxEqualToAngle_1a04a0363cf5b16fbe2330373bfe04e251" compoundref="approx__equal__to__angle_8cpp" startline="13" endline="43">mercury_autonomy::ApproxEqualToAngle::tick</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1CompareNums_1af22094154c7023584222fcdade178bb6" compoundref="compare__nums_8cpp" startline="11" endline="50">mercury_autonomy::CompareNums::tick</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1ExampleCondition_1a9cc539274e6749b22ec57a6ea0274a92" compoundref="example__condition_8cpp" startline="16" endline="26">mercury_autonomy::ExampleCondition::tick</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1IsTrue_1a650bcab920da0bfc6da66108f5f04c56" compoundref="is__true_8cpp" startline="11" endline="20">mercury_autonomy::IsTrue::tick</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1RetryUntilSuccessfulOrTimeout_1a4b07b9a1e2a8c8ff975ab2967c61c6cc" compoundref="retry__until__successful__or__timeout_8cpp" startline="11" endline="50">mercury_autonomy::RetryUntilSuccessfulOrTimeout::tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1a9dd6095556c4dcce73d6e78d615735e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BT::TreeNode *</type>
+        <definition>virtual BT::TreeNode* mercury_autonomy::MercuryBtNode::treeNode</definition>
+        <argsstring>()=0</argsstring>
+        <name>treeNode</name>
+        <reimplementedby refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b">treeNode</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1MercuryConditionNode_1ac411a93cd70cb78cf714656c402e6b32">treeNode</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1MercuryDecoratorNode_1a841f10853f25db57f66a2745a7697d2c">treeNode</reimplementedby>
+        <briefdescription>
+<para>Access the underlying BT TreeNode (implemented by each subclass). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="33" column="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::MercuryBtNode::staticInit</definition>
+        <argsstring>(rclcpp::Node::SharedPtr node)</argsstring>
+        <name>staticInit</name>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One-time static initialization (TF buffer / listener). Called once before a tree is executed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="21" column="17" bodyfile="src/mercury_bt_node.cpp" bodystart="11" bodyend="18"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" compoundref="mercury__bt__node_8hpp" startline="45">tf_buffer_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" compoundref="mercury__bt__node_8hpp" startline="51">tf_listener_</references>
+        <referencedby refid="namespacemercury__autonomy_1aaa458e83abff3a971eee37893794773a" compoundref="autonomy__util_8cpp" startline="21" endline="47">mercury_autonomy::initRosForTree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::MercuryBtNode::staticDeinit</definition>
+        <argsstring>()</argsstring>
+        <name>staticDeinit</name>
+        <briefdescription>
+<para>Tear down static resources (call when tree execution ends). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="24" column="17" bodyfile="src/mercury_bt_node.cpp" bodystart="20" bodyend="23"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" compoundref="mercury__bt__node_8hpp" startline="45">tf_buffer_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" compoundref="mercury__bt__node_8hpp" startline="51">tf_listener_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mercury_autonomy::MercuryBtNode::rosInit</definition>
+        <argsstring>()=0</argsstring>
+        <name>rosInit</name>
+        <reimplementedby refid="classmercury__autonomy_1_1ApplyFeedforwardForce_1a13935915e2e9f3bd6917fdb2f17d9657">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1CallSetBoolService_1a4d9c2e443c7a6e04e1f60dddda7235b6">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1CallTriggerService_1aff19535fab3fd27dfc941319f29dc461">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1a134b060ab6c828cebc70237b755228c1">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1ExampleAction_1a8b84c5cce7ab1b830ed4943d4002f9f2">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1GetBoolTopic_1a385e0dd5daa235af8e38351d4a26d27c">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1GetCovariance_1a929703df1a6b17534e363c6a9e82bc57">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1GetFloatTopic_1a48e9c273428e11035a9ebefac0c63b0c">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1GetImuOrientation_1a940cf898e23eb4f68fbe4b98ef1b4f16">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1GetMappingState_1a6bb6aad9588f5764017f76b18458ce73">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1GetOdometry_1ad0ce432455765eae2be21ac0f372835f">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1GetTwistTopic_1a9ab5936f95835b3dfc019e542a46ee1e">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1PublishBool_1ab9bad5f2221d52167c1a0313e20fda62">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1PublishEKFPose_1a32e755fc67582e24887d8cdc24dbd3f3">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1PublishInt8_1a75d90b59eaf89183ffc0bbaf730c29ab">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1PublishToController_1a6d8962ab8e67dd357b9d07fe4d570c24">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1PublishTwist_1a0bcc79d5388e07e5ae4302a3f5c207e6">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1SetFeedforwardMode_1a7f1c0a49c0d05bd1a0e926f451e8a76c">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1SetMappingTarget_1a0d65208b55efffde88965c15050b15e1">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1SetStatus_1a03f633b8835b76393f08c595e6d4171f">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1TransformPose_1aa2475addc195f7b31ae38125e143afcc">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1WaitForDetection_1a7bb43434764937fd2eddcb469a72872e">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1ac40cb2e447b29fcdc523074f0e71419c">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1ApproxEqualTo_1a9353509c2f0facd8e40b39cd16dae076">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1ApproxEqualToAngle_1a865ca536db5abdaa78d55938ded91e51">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1CompareNums_1a136fbd18357ad1e7faa0ba7d41211f12">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1ExampleCondition_1ac005d021f6297d126a197062bad1a81e">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1IsTrue_1a833cfea5089d84a577270fedfb781488">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1ExampleDecorator_1a66627fb053e47a6d0940fabb3bb6c263">rosInit</reimplementedby>
+        <reimplementedby refid="classmercury__autonomy_1_1RetryUntilSuccessfulOrTimeout_1aa24fbda1ac74c16bbf93383d11dc049f">rosInit</reimplementedby>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="37" column="18"/>
+        <referencedby refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" compoundref="mercury__bt__node_8cpp" startline="25" endline="28">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::MercuryBtNode::lookupTransform</definition>
+        <argsstring>(const std::string &amp;from_frame, const std::string &amp;to_frame, geometry_msgs::msg::TransformStamped &amp;transform, bool use_current_time=false)</argsstring>
+        <name>lookupTransform</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>from_frame</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>to_frame</declname>
+        </param>
+        <param>
+          <type>geometry_msgs::msg::TransformStamped &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>use_current_time</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Look up a TF2 transform. Returns true on success. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="40" column="10" bodyfile="src/mercury_bt_node.cpp" bodystart="30" bodyend="44"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" compoundref="mercury__bt__node_8hpp" startline="48">ros_node_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" compoundref="mercury__bt__node_8hpp" startline="45">tf_buffer_</references>
+        <referencedby refid="classmercury__autonomy_1_1ComputeFrameAlignment_1ae0078b0c044fcc21c5100795d929e93a" compoundref="compute__frame__alignment_8cpp" startline="30" endline="71">mercury_autonomy::ComputeFrameAlignment::onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1TransformPose_1a221f40ed5fb4f955837c9c5e2211aa3e" compoundref="transform__pose_8cpp" startline="45" endline="79">mercury_autonomy::TransformPose::onRunning</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Provides ROS2 integration for any custom BT node. Subclasses must implement <ref refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30" kindref="member">rosInit()</ref> for node-specific setup. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="18">
+        <label>mercury_autonomy::PublishToController</label>
+        <link refid="classmercury__autonomy_1_1PublishToController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>mercury_autonomy::ExampleCondition</label>
+        <link refid="classmercury__autonomy_1_1ExampleCondition"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>mercury_autonomy::WaitForDetection</label>
+        <link refid="classmercury__autonomy_1_1WaitForDetection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>mercury_autonomy::ExampleDecorator</label>
+        <link refid="classmercury__autonomy_1_1ExampleDecorator"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>mercury_autonomy::ComputeFrameAlignment</label>
+        <link refid="classmercury__autonomy_1_1ComputeFrameAlignment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mercury_autonomy::GetCovariance</label>
+        <link refid="classmercury__autonomy_1_1GetCovariance"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>mercury_autonomy::RetryUntilSuccessfulOrTimeout</label>
+        <link refid="classmercury__autonomy_1_1RetryUntilSuccessfulOrTimeout"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>mercury_autonomy::ApproxEqualTo</label>
+        <link refid="classmercury__autonomy_1_1ApproxEqualTo"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mercury_autonomy::ExampleAction</label>
+        <link refid="classmercury__autonomy_1_1ExampleAction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>mercury_autonomy::PublishBool</label>
+        <link refid="classmercury__autonomy_1_1PublishBool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>mercury_autonomy::SetMappingTarget</label>
+        <link refid="classmercury__autonomy_1_1SetMappingTarget"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>mercury_autonomy::WaitForKillSwitch</label>
+        <link refid="classmercury__autonomy_1_1WaitForKillSwitch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mercury_autonomy::ApplyFeedforwardForce</label>
+        <link refid="classmercury__autonomy_1_1ApplyFeedforwardForce"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>mercury_autonomy::GetTwistTopic</label>
+        <link refid="classmercury__autonomy_1_1GetTwistTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>mercury_autonomy::GetFloatTopic</label>
+        <link refid="classmercury__autonomy_1_1GetFloatTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="28">
+        <label>mercury_autonomy::ApproxEqualToAngle</label>
+        <link refid="classmercury__autonomy_1_1ApproxEqualToAngle"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>mercury_autonomy::TransformPose</label>
+        <link refid="classmercury__autonomy_1_1TransformPose"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mercury_autonomy::GetOdometry</label>
+        <link refid="classmercury__autonomy_1_1GetOdometry"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>mercury_autonomy::SetStatus</label>
+        <link refid="classmercury__autonomy_1_1SetStatus"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>mercury_autonomy::IsTrue</label>
+        <link refid="classmercury__autonomy_1_1IsTrue"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>mercury_autonomy::PublishTwist</label>
+        <link refid="classmercury__autonomy_1_1PublishTwist"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>mercury_autonomy::MercuryConditionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryConditionNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>mercury_autonomy::CompareNums</label>
+        <link refid="classmercury__autonomy_1_1CompareNums"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::CallSetBoolService</label>
+        <link refid="classmercury__autonomy_1_1CallSetBoolService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>mercury_autonomy::PublishInt8</label>
+        <link refid="classmercury__autonomy_1_1PublishInt8"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mercury_autonomy::CallTriggerService</label>
+        <link refid="classmercury__autonomy_1_1CallTriggerService"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>mercury_autonomy::PublishEKFPose</label>
+        <link refid="classmercury__autonomy_1_1PublishEKFPose"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mercury_autonomy::GetMappingState</label>
+        <link refid="classmercury__autonomy_1_1GetMappingState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>mercury_autonomy::GetImuOrientation</label>
+        <link refid="classmercury__autonomy_1_1GetImuOrientation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mercury_autonomy::GetBoolTopic</label>
+        <link refid="classmercury__autonomy_1_1GetBoolTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>mercury_autonomy::SetFeedforwardMode</label>
+        <link refid="classmercury__autonomy_1_1SetFeedforwardMode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>mercury_autonomy::MercuryDecoratorNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryDecoratorNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="15" column="1" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="15" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30" prot="protected" virt="pure-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9dd6095556c4dcce73d6e78d615735e4" prot="public" virt="pure-virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::MercuryBtNode</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

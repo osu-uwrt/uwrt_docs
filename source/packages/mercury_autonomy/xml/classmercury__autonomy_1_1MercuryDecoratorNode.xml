@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1MercuryDecoratorNode" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::MercuryDecoratorNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BT::DecoratorNode</basecompoundref>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryBtNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryBtNode</basecompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1ExampleDecorator" prot="public" virt="non-virtual">mercury_autonomy::ExampleDecorator</derivedcompoundref>
+    <derivedcompoundref refid="classmercury__autonomy_1_1RetryUntilSuccessfulOrTimeout" prot="public" virt="non-virtual">mercury_autonomy::RetryUntilSuccessfulOrTimeout</derivedcompoundref>
+    <includes refid="mercury__bt__node_8hpp" local="no">mercury_bt_node.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryDecoratorNode_1a9cbad04b261f98a5d3c6d719a5b67e3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::MercuryDecoratorNode::MercuryDecoratorNode</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>MercuryDecoratorNode</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="79" column="5" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="79" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1MercuryDecoratorNode_1a841f10853f25db57f66a2745a7697d2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>BT::TreeNode *</type>
+        <definition>BT::TreeNode* mercury_autonomy::MercuryDecoratorNode::treeNode</definition>
+        <argsstring>() override</argsstring>
+        <name>treeNode</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a9dd6095556c4dcce73d6e78d615735e4">treeNode</reimplements>
+        <briefdescription>
+<para>Access the underlying BT TreeNode (implemented by each subclass). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="82" column="19" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for custom BT decorator nodes with ROS2 access. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::ExampleDecorator</label>
+        <link refid="classmercury__autonomy_1_1ExampleDecorator"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mercury_autonomy::RetryUntilSuccessfulOrTimeout</label>
+        <link refid="classmercury__autonomy_1_1RetryUntilSuccessfulOrTimeout"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="2">
+        <label>BT::DecoratorNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::MercuryDecoratorNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryDecoratorNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="2">
+        <label>BT::DecoratorNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::MercuryDecoratorNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryDecoratorNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/mercury_bt_node.hpp" line="77" column="1" bodyfile="include/mercury_autonomy/mercury_bt_node.hpp" bodystart="77" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryDecoratorNode_1a9cbad04b261f98a5d3c6d719a5b67e3f" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>MercuryDecoratorNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30" prot="protected" virt="pure-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryDecoratorNode_1a841f10853f25db57f66a2745a7697d2c" prot="public" virt="virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::MercuryDecoratorNode</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

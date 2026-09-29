@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="controller__overseer_8hpp" kind="file" language="C++">
+    <compoundname>controller_overseer.hpp</compoundname>
+    <includes local="no">tf2/time.h</includes>
+    <includes local="no">tf2_ros/buffer.h</includes>
+    <includes local="no">tf2_ros/transform_listener.h</includes>
+    <includes local="no">yaml-cpp/yaml.h</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">ament_index_cpp/get_package_share_directory.hpp</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">eigen3/Eigen/Dense</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">filesystem</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">geometry_msgs/msg/transform_stamped.hpp</includes>
+    <includes local="no">geometry_msgs/msg/twist.hpp</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mercury_msgs/msg/dshot_partial_telemetry.hpp</includes>
+    <includes local="no">nav_msgs/msg/odometry.hpp</includes>
+    <includes local="no">rcl_interfaces/msg/parameter.hpp</includes>
+    <includes local="no">rcl_interfaces/msg/parameter_value.hpp</includes>
+    <includes local="no">rcl_interfaces/msg/set_parameters_result.hpp</includes>
+    <includes local="no">rcl_interfaces/srv/set_parameters.hpp</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">std_msgs/msg/bool.hpp</includes>
+    <includes local="no">std_msgs/msg/empty.hpp</includes>
+    <includes local="no">std_msgs/msg/int16.hpp</includes>
+    <includes local="no">std_msgs/msg/int32_multi_array.hpp</includes>
+    <includes local="no">std_srvs/srv/set_bool.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">vector</includes>
+    <includes refid="overseer__util_8hpp" local="yes">overseer_util.hpp</includes>
+    <includes refid="simulink__model_8hpp" local="yes">simulink_model.hpp</includes>
+    <includedby refid="controller__overseer_8cpp" local="yes">src/controller_overseer.cpp</includedby>
+    <includedby refid="simulink__model_8cpp" local="yes">src/simulink_model.cpp</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>rcl_interfaces/msg/parameter_value.hpp</label>
+      </node>
+      <node id="29">
+        <label>std_srvs/srv/set_bool.hpp</label>
+      </node>
+      <node id="33">
+        <label>overseer_util.hpp</label>
+        <link refid="overseer__util_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>functional</label>
+      </node>
+      <node id="27">
+        <label>std_msgs/msg/int16.hpp</label>
+      </node>
+      <node id="15">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="12">
+        <label>filesystem</label>
+      </node>
+      <node id="18">
+        <label>nav_msgs/msg/odometry.hpp</label>
+      </node>
+      <node id="34">
+        <label>simulink_model.hpp</label>
+        <link refid="simulink__model_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>geometry_msgs/msg/transform_stamped.hpp</label>
+      </node>
+      <node id="9">
+        <label>cmath</label>
+      </node>
+      <node id="10">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="21">
+        <label>rcl_interfaces/msg/set_parameters_result.hpp</label>
+      </node>
+      <node id="36">
+        <label>rcl_interfaces/srv/list_parameters.hpp</label>
+      </node>
+      <node id="30">
+        <label>string</label>
+      </node>
+      <node id="26">
+        <label>std_msgs/msg/empty.hpp</label>
+      </node>
+      <node id="28">
+        <label>std_msgs/msg/int32_multi_array.hpp</label>
+      </node>
+      <node id="38">
+        <label>unordered_set</label>
+      </node>
+      <node id="23">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="40">
+        <label>monitored_service_client.hpp</label>
+        <link refid="monitored__service__client_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>exception</label>
+      </node>
+      <node id="13">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+      <node id="25">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="7">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="37">
+        <label>std_srvs/srv/trigger.hpp</label>
+      </node>
+      <node id="19">
+        <label>rcl_interfaces/msg/parameter.hpp</label>
+      </node>
+      <node id="2">
+        <label>tf2/time.h</label>
+      </node>
+      <node id="43">
+        <label>optional</label>
+      </node>
+      <node id="32">
+        <label>vector</label>
+      </node>
+      <node id="22">
+        <label>rcl_interfaces/srv/set_parameters.hpp</label>
+      </node>
+      <node id="39">
+        <label>utility</label>
+      </node>
+      <node id="24">
+        <label>sstream</label>
+      </node>
+      <node id="35">
+        <label>rcl_interfaces/msg/parameter_type.hpp</label>
+      </node>
+      <node id="41">
+        <label>deque</label>
+      </node>
+      <node id="31">
+        <label>unordered_map</label>
+      </node>
+      <node id="4">
+        <label>tf2_ros/transform_listener.h</label>
+      </node>
+      <node id="8">
+        <label>chrono</label>
+      </node>
+      <node id="17">
+        <label>mercury_msgs/msg/dshot_partial_telemetry.hpp</label>
+      </node>
+      <node id="1">
+        <label>include/mercury_controller/controller_overseer.hpp</label>
+        <link refid="controller__overseer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tf2_ros/buffer.h</label>
+      </node>
+      <node id="6">
+        <label>algorithm</label>
+      </node>
+      <node id="16">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/simulink_model.cpp</label>
+        <link refid="simulink__model_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/mercury_controller/controller_overseer.hpp</label>
+        <link refid="controller__overseer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/controller_overseer.cpp</label>
+        <link refid="controller__overseer_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classControllerOverseer" prot="public">ControllerOverseer</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="controller__overseer_8hpp_1ab92daf40a5ebfb4e5894844f116512c2" prot="public" static="no">
+        <name>PARAMETERSCALE</name>
+        <initializer>1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="39" column="9" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="controller__overseer_8hpp_1a3ab686f8df34c746e258f92498ec29c6" prot="public" static="no">
+        <name>AUTOFF_INIT_TOLERANCE</name>
+        <initializer>.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="40" column="9" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="controller__overseer_8hpp_1ac815023dc490edabf536775f6d1adda9" prot="public" static="no">
+        <name>ESC_POWER_STOP_TOLERANCE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/controller_overseer.hpp" line="41" column="9" bodyfile="include/mercury_controller/controller_overseer.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tf2/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tf2_ros/buffer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tf2_ros/transform_listener.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;yaml-cpp/yaml.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ament_index_cpp/get_package_share_directory.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;eigen3/Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;filesystem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;geometry_msgs/msg/transform_stamped.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;geometry_msgs/msg/twist.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mercury_msgs/msg/dshot_partial_telemetry.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nav_msgs/msg/odometry.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rcl_interfaces/msg/parameter.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rcl_interfaces/msg/parameter_value.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rcl_interfaces/msg/set_parameters_result.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rcl_interfaces/srv/set_parameters.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/bool.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/empty.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/int16.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/int32_multi_array.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_srvs/srv/set_bool.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="overseer__util_8hpp" kindref="compound">overseer_util.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="simulink__model_8hpp" kindref="compound">simulink_model.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="controller__overseer_8hpp_1ab92daf40a5ebfb4e5894844f116512c2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARAMETERSCALE<sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="controller__overseer_8hpp_1a3ab686f8df34c746e258f92498ec29c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUTOFF_INIT_TOLERANCE<sp/>.01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="controller__overseer_8hpp_1ac815023dc490edabf536775f6d1adda9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESC_POWER_STOP_TOLERANCE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">fs<sp/>=<sp/>std::filesystem;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classControllerOverseer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classControllerOverseer" kindref="compound">ControllerOverseer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rclcpp::Node<sp/>{</highlight></codeline>
+<codeline lineno="46" refid="classControllerOverseer_1afd464dfd0ffe6f5809873431abeecbe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1afd464dfd0ffe6f5809873431abeecbe5" kindref="member">v3d</ref><sp/>=<sp/>Eigen::Vector3d;</highlight></codeline>
+<codeline lineno="47" refid="classControllerOverseer_1a3a401c9abbdd71abd84d5d01c27d81d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a3a401c9abbdd71abd84d5d01c27d81d4" kindref="member">m3d</ref><sp/>=<sp/>Eigen::Matrix3d;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classControllerOverseer_1af60c07475247380fe791607887c79ac0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1af60c07475247380fe791607887c79ac0" kindref="member">SetParams</ref><sp/>=<sp/>rcl_interfaces::srv::SetParameters;</highlight></codeline>
+<codeline lineno="50" refid="classControllerOverseer_1a291582bb394257bac85648db50cf36d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a291582bb394257bac85648db50cf36d9" kindref="member">SetParamsResult</ref><sp/>=<sp/>rcl_interfaces::msg::SetParametersResult;</highlight></codeline>
+<codeline lineno="51" refid="classControllerOverseer_1a5c034404b85ed797bf4f6226993a8b15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a5c034404b85ed797bf4f6226993a8b15" kindref="member">Parameter</ref><sp/>=<sp/><ref refid="simulink__model_8hpp_1a0fcabdc90a4a18ab27d92c458f15862f" kindref="member">rcl_interfaces::msg::Parameter</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classControllerOverseer_1a5430fcb94b425316a5ba006e69747200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a5430fcb94b425316a5ba006e69747200" kindref="member">ParameterType</ref><sp/>=<sp/><ref refid="simulink__model_8hpp_1aa651a99d68b55a38e78e9d6233991843" kindref="member">rclcpp::ParameterType</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classControllerOverseer_1a4d6b8e732d859a553f1e6142d91b0330" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a4d6b8e732d859a553f1e6142d91b0330" kindref="member">ParameterValue</ref><sp/>=<sp/><ref refid="simulink__model_8hpp_1a32e927d675b802910d4a3eebda1a4b85" kindref="member">rcl_interfaces::msg::ParameterValue</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classControllerOverseer_1afd982e530173fea3ee714b3ae1326135" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1afd982e530173fea3ee714b3ae1326135" kindref="member">int_vector</ref><sp/>=<sp/>std::vector&lt;std::pair&lt;std::string,<sp/>int64_t&gt;&gt;;</highlight></codeline>
+<codeline lineno="56" refid="classControllerOverseer_1a493f69df07b252ce6a8c3b0f3d44c4d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a493f69df07b252ce6a8c3b0f3d44c4d0" kindref="member">bool_vector</ref><sp/>=<sp/>std::vector&lt;std::pair&lt;std::string,<sp/>bool&gt;&gt;;</highlight></codeline>
+<codeline lineno="57" refid="classControllerOverseer_1a09002a0a98d75ea112cd72ffe5bfd0e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a09002a0a98d75ea112cd72ffe5bfd0e7" kindref="member">array_vector</ref><sp/>=<sp/>std::vector&lt;std::pair&lt;std::string,<sp/>std::vector&lt;int64_t&gt;&gt;&gt;;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classControllerOverseer_1a6a541594cdaa9a16fe5c9b1345e0e7d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classControllerOverseer_1a1790ec130fa65f76a5100e9ce81aeee8" kindref="member">ControllerOverseer</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>construct<sp/>the<sp/>complete<sp/>controller<sp/>class<sp/>using<sp/>the<sp/>pointer<sp/>for<sp/>&quot;this&quot;<sp/>instance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a7517eeab986fbbc1303d2b54ea387abb" kindref="member">init</ref>(std::shared_ptr&lt;ControllerOverseer&gt;<sp/>node);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/>Yaml<sp/>traversal<sp/>--<sp/>get<sp/>recursed</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a11da1d3c6ce424e45d6cc80512a45a43" kindref="member">traversal</ref>(</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classControllerOverseer_1afd982e530173fea3ee714b3ae1326135" kindref="member">int_vector</ref><sp/>&amp;<sp/>ints,<sp/><ref refid="classControllerOverseer_1a493f69df07b252ce6a8c3b0f3d44c4d0" kindref="member">bool_vector</ref><sp/>&amp;<sp/>bools,<sp/><ref refid="classControllerOverseer_1a09002a0a98d75ea112cd72ffe5bfd0e7" kindref="member">array_vector</ref><sp/>&amp;<sp/>arrays,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>YAML::Node<sp/>&amp;<sp/>tree,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref><sp/>path);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/>Read<sp/>both<sp/>autoff<sp/>and<sp/>regular<sp/>config<sp/>files<sp/>and<sp/>place<sp/>information<sp/>into<sp/>the<sp/>simulink<sp/>class</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a71d275232a475c324c98b59b4bedbb2c" kindref="member">readConfig</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/>From<sp/>thruster<sp/>and<sp/>com<sp/>portions<sp/>of<sp/>yaml<sp/>file,<sp/>set<sp/>wrench<sp/>matrix<sp/>based<sp/>on<sp/>thruster<sp/>positions.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1ade8dd4f634306cd9f0d1d6ea57a1b731" kindref="member">generateThrusterForceMatrix</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/>Set<sp/>yaml<sp/>file<sp/>config<sp/>paths,<sp/>right<sp/>now<sp/>this<sp/>is<sp/>just<sp/>talos.yaml<sp/>and<sp/>talos_autoff.yaml;<sp/>this<sp/>will</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/>change</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a97f4de68650bd78742d627fab24e830a" kindref="member">setConfigPath</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/>Callback<sp/>from<sp/>thruster<sp/>telemetry<sp/>subscriber,<sp/>checks<sp/>that<sp/>thrusters<sp/>are<sp/>still<sp/>working</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a47576da0f2e4ba5a2a4a3382e50079cd" kindref="member">thrusterTelemetryCB</ref>(mercury_msgs::msg::DshotPartialTelemetry::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/>Timer<sp/>callback<sp/>that<sp/>checks<sp/>if<sp/>esc<sp/>boards<sp/>are<sp/>publishing</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>is<sp/>ONLY<sp/>called<sp/>if<sp/>the<sp/>thruster<sp/>telemetry<sp/>subscriber<sp/>hasn&apos;t<sp/>recieved<sp/>a<sp/>message<sp/>in<sp/>2<sp/>seconds</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1adfa1ac32cf6b5726a6b5d521a29d9a4c" kindref="member">escPowerTimeout</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/>Callback<sp/>that<sp/>adjusts<sp/>thruster<sp/>weights<sp/>if<sp/>thruster<sp/>mode<sp/>changes<sp/>(low<sp/>downdraft<sp/>or<sp/>normal)</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1ab3848c32cb43ac81d0e142df67fac773" kindref="member">setThrusterModeCB</ref>(std_msgs::msg::Int16::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/>Callback<sp/>to<sp/>odometry<sp/>subscriber,<sp/>adjusts<sp/>thruster<sp/>weights<sp/>if<sp/>any<sp/>thrusters<sp/>are<sp/>no<sp/>longer</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/>submerged</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a8810813cda820f1a249e9cc2937f2e27" kindref="member">odometryCB</ref>(nav_msgs::msg::Odometry::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/>Checks<sp/>that<sp/>enough<sp/>thrusters<sp/>are<sp/>working<sp/>and<sp/>adjusts<sp/>weights<sp/>based<sp/>on<sp/>if<sp/>they<sp/>are<sp/>surfaced<sp/>or<sp/>if</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/><sp/><sp/>in<sp/>low<sp/>downdraft<sp/>mode</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a8a56aa9519053f4661d96187e38ff97e" kindref="member">adjustThrusterWeights</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/>Set<sp/>teleop<sp/>service<sp/>callback<sp/>that<sp/>sets<sp/>controller<sp/>mask<sp/>based<sp/>off<sp/>yaml<sp/>file<sp/>and<sp/>if<sp/>teleop<sp/>mode<sp/>is</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/>on.</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1aab6d2bb349aa9f8afd2e726528de1e45" kindref="member">setTeleopCB</ref>(</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std_srvs::srv::SetBool::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std_srvs::srv::SetBool::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>second<sp/>timer<sp/>callback<sp/>that<sp/>lists<sp/>and<sp/>sets<sp/>model<sp/>parameters<sp/>if<sp/>model<sp/>is<sp/>active<sp/>and<sp/>publishes</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/>feed<sp/>forward<sp/>message</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1aca161d37556c0b9a6e99b4707c8f25b7" kindref="member">doUpdate</ref>();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/><sp/><sp/>Rewrite<sp/>to<sp/>auto<sp/>tune<sp/>yaml<sp/>file<sp/>if<sp/>it<sp/>has<sp/>changed</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a84e6d09b803acb1501511ebad3164019" kindref="member">ffAutoTuneCB</ref>(geometry_msgs::msg::Twist::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>true<sp/>if<sp/>waiting<sp/>on<sp/>autoff<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classControllerOverseer_1aee4f242b91b581021d7f3fa9c1f2adfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1aee4f242b91b581021d7f3fa9c1f2adfc" kindref="member">waitingOnInit</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>thruster<sp/>status<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classControllerOverseer_1aa35bec7a0a7636519bedeff12a4a5601" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a49861135549889da7233a67fd57a7e2e" kindref="member">escPowerStopsLow</ref>,<sp/><ref refid="classControllerOverseer_1aa35bec7a0a7636519bedeff12a4a5601" kindref="member">escPowerStopsHigh</ref>;</highlight></codeline>
+<codeline lineno="143" refid="classControllerOverseer_1a7bd430f6c2b89df1550794b7fe4e06d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;bool,<sp/>8&gt;<sp/><ref refid="classControllerOverseer_1a7bd430f6c2b89df1550794b7fe4e06d2" kindref="member">activeThrusters</ref>;</highlight></codeline>
+<codeline lineno="144" refid="classControllerOverseer_1ad3af3518d879f753b3932660722aa88b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;bool,<sp/>8&gt;<sp/><ref refid="classControllerOverseer_1ad3af3518d879f753b3932660722aa88b" kindref="member">submergedThrusters</ref>;</highlight></codeline>
+<codeline lineno="145" refid="classControllerOverseer_1abc169450a4579dc8aa6b77409f5aaf89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;double,<sp/>8&gt;<sp/><ref refid="classControllerOverseer_1abc169450a4579dc8aa6b77409f5aaf89" kindref="member">thrusterWeights</ref>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>yaml<sp/>trees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>YAML::Node<sp/><ref refid="classControllerOverseer_1a7dbcad383397bb0126af680ca140ef65" kindref="member">controllerTree</ref>;</highlight></codeline>
+<codeline lineno="149" refid="classControllerOverseer_1acbf250075614641c4b9563be9977b947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>YAML::Node<sp/><ref refid="classControllerOverseer_1acbf250075614641c4b9563be9977b947" kindref="member">autoffTree</ref>;</highlight></codeline>
+<codeline lineno="150" refid="classControllerOverseer_1ae1cb9c9caf3c0c0ad4fc2157dc928c67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>YAML::Node<sp/><ref refid="classControllerOverseer_1ae1cb9c9caf3c0c0ad4fc2157dc928c67" kindref="member">thrusterInfo</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>position<sp/>of<sp/>center<sp/>of<sp/>mass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classControllerOverseer_1a401de1c3e1cf16bfd4d57a89c35dc3a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classControllerOverseer_1a401de1c3e1cf16bfd4d57a89c35dc3a8" kindref="member">com</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>thruster<sp/>mode,<sp/>1:<sp/>normal,<sp/>2:<sp/>low<sp/>downdraft</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classControllerOverseer_1a094f4c5af306c85fc0fb0251bac524a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a094f4c5af306c85fc0fb0251bac524a2" kindref="member">thrusterMode</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>path<sp/>to<sp/>config<sp/>yaml<sp/>files</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="classControllerOverseer_1ad41348479f67a263d0f229a6c9a3dad7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1ad41348479f67a263d0f229a6c9a3dad7" kindref="member">autoffConfigPath</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160" refid="classControllerOverseer_1abeb01acfbeeb512a8d363ee436d5eed4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1abeb01acfbeeb512a8d363ee436d5eed4" kindref="member">configPath</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pointer<sp/>to<sp/>simulink<sp/>model<sp/>class<sp/>which<sp/>calls<sp/>set<sp/>and<sp/>list<sp/>params<sp/>services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;SimulinkModelClass&gt;<sp/><ref refid="classControllerOverseer_1ace42733c420fb4a94af961aaa5390bb7" kindref="member">completeController</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>thruster<sp/>info<sp/>publishers<sp/>and<sp/>subscribers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classControllerOverseer_1ac99190885877cdee496dcc3690faba3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;mercury_msgs::msg::DshotPartialTelemetry&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1ac99190885877cdee496dcc3690faba3d" kindref="member">thrusterTelemetry</ref>;</highlight></codeline>
+<codeline lineno="167" refid="classControllerOverseer_1ac7199879a97d00b3a6f15c8dd32d67f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1ac7199879a97d00b3a6f15c8dd32d67f6" kindref="member">motionEnabledPub</ref>;</highlight></codeline>
+<codeline lineno="168" refid="classControllerOverseer_1a4c267aa208369584040aad90705a64ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int16&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1a4c267aa208369584040aad90705a64ca" kindref="member">thrusterModeSub</ref>;</highlight></codeline>
+<codeline lineno="169" refid="classControllerOverseer_1a7e6203c2c8039501406f308c43265117" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Client&lt;rcl_interfaces::srv::SetParameters&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1a7e6203c2c8039501406f308c43265117" kindref="member">setThrusterSolverParams</ref>;</highlight></codeline>
+<codeline lineno="170" refid="classControllerOverseer_1a547701cc5a17146f220bc652e2c6c817" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;nav_msgs::msg::Odometry&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1a547701cc5a17146f220bc652e2c6c817" kindref="member">odom</ref>;</highlight></codeline>
+<codeline lineno="171" refid="classControllerOverseer_1ac092f107b812521a1764d178f1524e71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Int32MultiArray&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1ac092f107b812521a1764d178f1524e71" kindref="member">weightsPub</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>feed<sp/>forward<sp/>publishersand<sp/>subscribers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="classControllerOverseer_1af185bb9fd21e310201fcf65801ec2526" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1af185bb9fd21e310201fcf65801ec2526" kindref="member">ffAutoTune</ref>;</highlight></codeline>
+<codeline lineno="175" refid="classControllerOverseer_1a67808b4a6ad21735951f8925fadcda72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;geometry_msgs::msg::Twist&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1a67808b4a6ad21735951f8925fadcda72" kindref="member">ffPub</ref>;</highlight></codeline>
+<codeline lineno="176" refid="classControllerOverseer_1a6128f5eae3e7b9162a7fa4f050ae7345" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Empty&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1a6128f5eae3e7b9162a7fa4f050ae7345" kindref="member">reInitPub</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sets<sp/>active<sp/>control<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="classControllerOverseer_1a74df42b12c1722e536dc79967d6c7e5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Service&lt;std_srvs::srv::SetBool&gt;::SharedPtr<sp/><ref refid="classControllerOverseer_1a74df42b12c1722e536dc79967d6c7e5e" kindref="member">setTeleop</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tf2<sp/>buffer<sp/>and<sp/>transform<sp/>listener<sp/>for<sp/>thruster<sp/>matrix<sp/>generation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;tf2_ros::Buffer&gt;</highlight></codeline>
+<codeline lineno="183" refid="classControllerOverseer_1ae27fb87f76d0b76628e0b7d6dfafa14b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classControllerOverseer_1ae27fb87f76d0b76628e0b7d6dfafa14b" kindref="member">tfBuffer</ref>;<sp/></highlight><highlight class="comment">//<sp/>unique<sp/>ptr<sp/>because<sp/>that&apos;s<sp/>how<sp/>ROS<sp/>documentation<sp/>has<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classControllerOverseer_1ae88f1df5dfa4958caf99c9eb89e47354" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;tf2_ros::TransformListener&gt;<sp/><ref refid="classControllerOverseer_1ae88f1df5dfa4958caf99c9eb89e47354" kindref="member">tfListener</ref>;</highlight></codeline>
+<codeline lineno="185" refid="classControllerOverseer_1a62d2c4a25caf649e8e3e70c1ccdafc3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a62d2c4a25caf649e8e3e70c1ccdafc3d" kindref="member">tfNamespace</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>time<sp/>that<sp/>odometry<sp/>msgs<sp/>began<sp/>flooding<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="classControllerOverseer_1ac06fe8815075e21ed55c79780bc04605" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Time<sp/><ref refid="classControllerOverseer_1ac06fe8815075e21ed55c79780bc04605" kindref="member">startTime</ref>;</highlight></codeline>
+<codeline lineno="189" refid="classControllerOverseer_1a72d3f9ca3c7117d89ccd34f5b4b94849" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a72d3f9ca3c7117d89ccd34f5b4b94849" kindref="member">startTimeSet</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>timers<sp/>for<sp/>doUpdate,<sp/>adjustThrusterWeights,<sp/>and<sp/>escPowerTimeouts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="classControllerOverseer_1acf346560d06c764b1dc8559397d19ac6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classControllerOverseer_1acf346560d06c764b1dc8559397d19ac6" kindref="member">updateTimer</ref>;</highlight></codeline>
+<codeline lineno="193" refid="classControllerOverseer_1a4d2bd8463367f0d6cdc4a519b314ce16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classControllerOverseer_1a4d2bd8463367f0d6cdc4a519b314ce16" kindref="member">weightTimer</ref>;</highlight></codeline>
+<codeline lineno="194" refid="classControllerOverseer_1a51a142839e0237f4fcd138133f04d578" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/><ref refid="classControllerOverseer_1a51a142839e0237f4fcd138133f04d578" kindref="member">escPowerCheckTimer</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bool<sp/>for<sp/>if<sp/>still<sp/>fully<sp/>acutated,<sp/>and<sp/>if<sp/>feed<sp/>forward<sp/>is<sp/>being<sp/>pubilshed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="classControllerOverseer_1a1f55e85ba0c46e060d896bb392dda0cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a1f55e85ba0c46e060d896bb392dda0cd" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="198" refid="classControllerOverseer_1a0f44cf960fda23a0d8212501f75fcfe3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a0f44cf960fda23a0d8212501f75fcfe3" kindref="member">publishingFF</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>base<sp/>feed<sp/>forward<sp/>wrench<sp/>and<sp/>current<sp/>initial<sp/>feed<sp/>forward</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="classControllerOverseer_1a14b43f8a7da5e359a3866de93416e5e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classControllerOverseer_1a14b43f8a7da5e359a3866de93416e5e3" kindref="member">baseWrench</ref>;</highlight></codeline>
+<codeline lineno="202" refid="classControllerOverseer_1a9cbf889bb42a67b25d3f3c8fa69c82bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classControllerOverseer_1a9cbf889bb42a67b25d3f3c8fa69c82bf" kindref="member">currentInitFF</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>different<sp/>weight<sp/>values<sp/>for<sp/>thrusters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="classControllerOverseer_1ab9002cd665742e7a7639bbe796a4bbdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1ab9002cd665742e7a7639bbe796a4bbdc" kindref="member">defaultWeight</ref>,<sp/><ref refid="classControllerOverseer_1a975344ba4d920f5e52ff24290b8156a2" kindref="member">surfaceWeight</ref>,<sp/><ref refid="classControllerOverseer_1a4b0437f9515dabdeff17ec761615ae4f" kindref="member">disabledWeight</ref>,<sp/><ref refid="classControllerOverseer_1a0617a481a744326feb2082f80cb6c969" kindref="member">lowDowndraftWeight</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="classControllerOverseer_1a8318627c3617dfc48e82e02fb50b47a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a8318627c3617dfc48e82e02fb50b47a7" kindref="member">robotName</ref>,<sp/><ref refid="classControllerOverseer_1a58516897666b454442c8e4b2e4b55518" kindref="member">thrusterSolverName</ref>;</highlight></codeline>
+<codeline lineno="209" refid="classControllerOverseer_1a3984dbe58acd563523d6adc20bbb6732" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classControllerOverseer_1a3984dbe58acd563523d6adc20bbb6732" kindref="member">writeAutoFF</ref>;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_controller/controller_overseer.hpp"/>
+  </compounddef>
+</doxygen>

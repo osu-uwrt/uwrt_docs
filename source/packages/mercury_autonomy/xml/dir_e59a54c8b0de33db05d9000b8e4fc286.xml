@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e59a54c8b0de33db05d9000b8e4fc286" kind="dir">
+    <compoundname>src/bt_decorators</compoundname>
+    <innerfile refid="example__decorator_8cpp">example_decorator.cpp</innerfile>
+    <innerfile refid="retry__until__successful__or__timeout_8cpp">retry_until_successful_or_timeout.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/bt_decorators/"/>
+  </compounddef>
+</doxygen>

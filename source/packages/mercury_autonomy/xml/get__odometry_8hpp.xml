@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="get__odometry_8hpp" kind="file" language="C++">
+    <compoundname>get_odometry.hpp</compoundname>
+    <includes refid="autonomy__lib_8hpp" local="yes">mercury_autonomy/autonomy_lib.hpp</includes>
+    <includedby refid="get__odometry_8cpp" local="yes">src/bt_actions/get_odometry.cpp</includedby>
+    <includedby refid="register__actions_8cpp" local="yes">src/register_actions.cpp</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>std_srvs/srv/set_bool.hpp</label>
+      </node>
+      <node id="29">
+        <label>mercury_autonomy/autonomy_util.hpp</label>
+        <link refid="autonomy__util_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="21">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="3">
+        <label>mercury_autonomy/autonomy_base.hpp</label>
+        <link refid="autonomy__base_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>nav_msgs/msg/odometry.hpp</label>
+      </node>
+      <node id="19">
+        <label>geometry_msgs/msg/pose.hpp</label>
+      </node>
+      <node id="20">
+        <label>geometry_msgs/msg/transform_stamped.hpp</label>
+      </node>
+      <node id="13">
+        <label>rclcpp_action/rclcpp_action.hpp</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>include/mercury_autonomy/bt_actions/get_odometry.hpp</label>
+        <link refid="get__odometry_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="14">
+        <label>ament_index_cpp/get_package_prefix.hpp</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy/autonomy_lib.hpp</label>
+        <link refid="autonomy__lib_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>geometry_msgs/msg/vector3.hpp</label>
+      </node>
+      <node id="25">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="15">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="28">
+        <label>std_srvs/srv/trigger.hpp</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>behaviortree_cpp/loggers/groot2_publisher.h</label>
+      </node>
+      <node id="9">
+        <label>behaviortree_cpp/behavior_tree.h</label>
+      </node>
+      <node id="18">
+        <label>tf2_geometry_msgs/tf2_geometry_msgs.hpp</label>
+      </node>
+      <node id="10">
+        <label>behaviortree_cpp/bt_factory.h</label>
+      </node>
+      <node id="17">
+        <label>tf2_ros/transform_listener.h</label>
+      </node>
+      <node id="4">
+        <label>chrono</label>
+      </node>
+      <node id="16">
+        <label>tf2_ros/buffer.h</label>
+      </node>
+      <node id="26">
+        <label>std_msgs/msg/string.hpp</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="30">
+        <label>mercury_autonomy/mercury_bt_node.hpp</label>
+        <link refid="mercury__bt__node_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>sensor_msgs/msg/imu.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/mercury_autonomy/bt_actions/get_odometry.hpp</label>
+        <link refid="get__odometry_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/register_actions.cpp</label>
+        <link refid="register__actions_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/bt_actions/get_odometry.cpp</label>
+        <link refid="get__odometry_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmercury__autonomy_1_1GetOdometry" prot="public">mercury_autonomy::GetOdometry</innerclass>
+    <innernamespace refid="namespacemercury__autonomy">mercury_autonomy</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>GetOdometry<sp/>--<sp/>subscribes<sp/>to<sp/>a<sp/>nav_msgs/Odometry<sp/>topic<sp/>and<sp/>outputs<sp/>pose<sp/>components.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Ports:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Input:<sp/><sp/>topic<sp/><sp/><sp/>--<sp/>Odometry<sp/>topic<sp/>name.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Input:<sp/><sp/>timeout<sp/>--<sp/>Timeout<sp/>in<sp/>seconds<sp/>(default<sp/>3.0).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Output:<sp/>x,<sp/>y,<sp/>z<sp/>--<sp/>Position<sp/>components.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Output:<sp/>roll,<sp/>pitch,<sp/>yaw<sp/>--<sp/>Orientation<sp/>components<sp/>(radians).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="autonomy__lib_8hpp" kindref="compound">mercury_autonomy/autonomy_lib.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemercury__autonomy" kindref="compound">mercury_autonomy</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classmercury__autonomy_1_1GetOdometry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmercury__autonomy_1_1GetOdometry" kindref="compound">GetOdometry</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmercury__autonomy_1_1MercuryActionNode" kindref="compound">MercuryActionNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classmercury__autonomy_1_1GetOdometry_1adf03b474f6cff1f85493e9e879b51f26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1adf03b474f6cff1f85493e9e879b51f26" kindref="member">GetOdometry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BT::NodeConfig<sp/>&amp;<sp/>config)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classmercury__autonomy_1_1MercuryActionNode" kindref="compound">MercuryActionNode</ref>(name,<sp/>config)<sp/>{}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classmercury__autonomy_1_1GetOdometry_1a2480df2ed5dd4bc7be8b69f1aaab0e6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>BT::PortsList<sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1a2480df2ed5dd4bc7be8b69f1aaab0e6a" kindref="member">providedPorts</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::InputPort&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;topic&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Odometry<sp/>topic<sp/>name&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::InputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;timeout&quot;</highlight><highlight class="normal">,<sp/>3.0,<sp/></highlight><highlight class="stringliteral">&quot;Timeout<sp/>in<sp/>seconds&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::OutputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Position<sp/>X&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::OutputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Position<sp/>Y&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::OutputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;z&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Position<sp/>Z&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::OutputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;roll&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Orientation<sp/>roll<sp/>(rad)&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::OutputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;pitch&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Orientation<sp/>pitch<sp/>(rad)&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT::OutputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;yaw&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Orientation<sp/>yaw<sp/>(rad)&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>BT::NodeStatus<sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1a079beb602b4147daf6662c8df4d5d5bf" kindref="member">onStart</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>BT::NodeStatus<sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1ac71e81fe2455b95f463cd2fe536b5ffb" kindref="member">onRunning</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1a4d3780ad0ab0afb2939566493e500c07" kindref="member">onHalted</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1ad0ce432455765eae2be21ac0f372835f" kindref="member">rosInit</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classmercury__autonomy_1_1GetOdometry_1a80ff88ca2b69206c720edafc06aecb5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Subscription&lt;nav_msgs::msg::Odometry&gt;::SharedPtr<sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1a80ff88ca2b69206c720edafc06aecb5b" kindref="member">sub_</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classmercury__autonomy_1_1GetOdometry_1aad56a96a84d3d63a810b4bec0d3bde26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1aad56a96a84d3d63a810b4bec0d3bde26" kindref="member">msg_received_</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="classmercury__autonomy_1_1GetOdometry_1a240eaf1dab13e3053b38d7e47fee1873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>nav_msgs::msg::Odometry<sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1a240eaf1dab13e3053b38d7e47fee1873" kindref="member">odom_</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classmercury__autonomy_1_1GetOdometry_1a1ab6e96468496179b44ea824b02d7b6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Time<sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1a1ab6e96468496179b44ea824b02d7b6a" kindref="member">start_time_</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classmercury__autonomy_1_1GetOdometry_1afb998702a296e3116014b5c842f67c85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classmercury__autonomy_1_1GetOdometry_1afb998702a296e3116014b5c842f67c85" kindref="member">timeout_sec_</ref><sp/>=<sp/>3.0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mercury_autonomy</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_autonomy/bt_actions/get_odometry.hpp"/>
+  </compounddef>
+</doxygen>

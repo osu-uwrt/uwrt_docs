@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1CompareNums" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::CompareNums</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryConditionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryConditionNode</basecompoundref>
+    <includes refid="compare__nums_8hpp" local="no">compare_nums.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1CompareNums_1a61d9d89f118f1544ae7e75ec204db646" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::CompareNums::CompareNums</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>CompareNums</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/compare_nums.hpp" line="19" column="5" bodyfile="include/mercury_autonomy/bt_conditions/compare_nums.hpp" bodystart="19" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1CompareNums_1af22094154c7023584222fcdade178bb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::CompareNums::tick</definition>
+        <argsstring>() override</argsstring>
+        <name>tick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/compare_nums.hpp" line="30" column="20" bodyfile="src/bt_conditions/compare_nums.cpp" bodystart="11" bodyend="50"/>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1CompareNums_1a2abf53ade35abe62149aad95ee13beeb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::CompareNums::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/compare_nums.hpp" line="22" column="26" bodyfile="include/mercury_autonomy/bt_conditions/compare_nums.hpp" bodystart="22" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1CompareNums_1a136fbd18357ad1e7faa0ba7d41211f12" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::CompareNums::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_conditions/compare_nums.hpp" line="33" column="10" bodyfile="src/bt_conditions/compare_nums.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>BT::ConditionNode</label>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryConditionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryConditionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::CompareNums</label>
+        <link refid="classmercury__autonomy_1_1CompareNums"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>BT::ConditionNode</label>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryConditionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryConditionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::CompareNums</label>
+        <link refid="classmercury__autonomy_1_1CompareNums"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_conditions/compare_nums.hpp" line="17" column="1" bodyfile="include/mercury_autonomy/bt_conditions/compare_nums.hpp" bodystart="17" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1CompareNums_1a61d9d89f118f1544ae7e75ec204db646" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>CompareNums</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryConditionNode_1ab7fa033ce1832f7975b5d860efd7caf7" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>MercuryConditionNode</name></member>
+      <member refid="classmercury__autonomy_1_1CompareNums_1a2abf53ade35abe62149aad95ee13beeb" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1CompareNums_1a136fbd18357ad1e7faa0ba7d41211f12" prot="protected" virt="virtual"><scope>mercury_autonomy::CompareNums</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1CompareNums_1af22094154c7023584222fcdade178bb6" prot="public" virt="non-virtual"><scope>mercury_autonomy::CompareNums</scope><name>tick</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryConditionNode_1ac411a93cd70cb78cf714656c402e6b32" prot="public" virt="virtual"><scope>mercury_autonomy::CompareNums</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::CompareNums</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

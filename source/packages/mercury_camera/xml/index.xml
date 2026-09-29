@@ -1,0 +1,36 @@
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode" kind="class"><name>mercury_camera::picture_taker::ImageCaptureNode</name>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2c55af9a615cd4a39c10164e66639c13" kind="variable"><name>robot_namespace</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abb3e894578c47aa7362e67ab622ff53e" kind="variable"><name>camera_name</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2a4b20adc4dc932c793319e39d99ab57" kind="variable"><name>save_directory</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aef5247ba8c71b6b2d8d30c3ecc88ea49" kind="variable"><name>subscription_enabled</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1ae9553ba9c55f130417ba6d96355e43b8" kind="variable"><name>save_stereo</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a24b5b4e8e0497d83c419e31652647937" kind="variable"><name>save_split</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a7370e77ba9498dba790a75d5d1922065" kind="variable"><name>image_topic</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1adfbb4160db343a2955cedf8dc6bcf95d" kind="variable"><name>bridge</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a83ed7c4a507fb15274e9e02638fdfe99" kind="variable"><name>latest_image</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abd65bc66f19a605f4515cd2f572542e9" kind="variable"><name>image_subscriber</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a58bce883454839abc3ee962ebcbce7f5" kind="variable"><name>capture_service</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a0f1bd0b0e31835da94fd159599f2495a" kind="variable"><name>enable_subscription_service</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a999f585899d31d020856c5ef6d83c865" kind="function"><name>__init__</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a5b82c9a9153f386c13c6ceefb6b7080b" kind="function"><name>create_save_dir</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1add176b23e0fab9dcdb86184ec6fed12b" kind="function"><name>on_param_change</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" kind="function"><name>handle_param_update</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" kind="function"><name>create_image_subscriber</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1afe2dc5f349d67a1c883ebd9325a80614" kind="function"><name>destroy_image_subscriber</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aeef0faf4d91fe23c104e9367112f2a81" kind="function"><name>image_callback</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" kind="function"><name>capture_image_callback</name></member>
+    <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a552f2afdf3947b3f720b5cdf19d1f0b9" kind="function"><name>enable_subscription_callback</name></member>
+  </compound>
+  <compound refid="namespacemercury__camera" kind="namespace"><name>mercury_camera</name>
+  </compound>
+  <compound refid="namespacemercury__camera_1_1picture__taker" kind="namespace"><name>mercury_camera::picture_taker</name>
+    <member refid="namespacemercury__camera_1_1picture__taker_1a50dfd2cd9d11100920bd82ad51a0128e" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="picture__taker_8py" kind="file"><name>picture_taker.py</name>
+  </compound>
+  <compound refid="dir_b9e5246d1e59d037298f85ba6374fbcc" kind="dir"><name>mercury_camera</name>
+  </compound>
+</doxygenindex>

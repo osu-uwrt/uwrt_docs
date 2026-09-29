@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1PublishEKFPose" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::PublishEKFPose</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="publish__ekf__pose_8hpp" local="no">publish_ekf_pose.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishEKFPose_1ab71a76cab19f8012372835987ef4d52d" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; robot_localization::srv::SetPose &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;robot_localization::srv::SetPose&gt;::SharedPtr mercury_autonomy::PublishEKFPose::pose_client_</definition>
+        <argsstring></argsstring>
+        <name>pose_client_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="47" column="32" bodyfile="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a935b5af4577ed12c75cd32fa5bf2db3c" compoundref="publish__ekf__pose_8cpp" startline="31" endline="88">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1aa5b6804db4fe0353e3331de33e13cd90" compoundref="publish__ekf__pose_8cpp" startline="18" endline="29">onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a32e755fc67582e24887d8cdc24dbd3f3" compoundref="publish__ekf__pose_8cpp" startline="12" endline="16">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishEKFPose_1ae4154ac7f65878197a356d17f3304f36" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;nav_msgs::msg::Odometry&gt;::SharedPtr mercury_autonomy::PublishEKFPose::odom_sub_</definition>
+        <argsstring></argsstring>
+        <name>odom_sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="48" column="38" bodyfile="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a32e755fc67582e24887d8cdc24dbd3f3" compoundref="publish__ekf__pose_8cpp" startline="12" endline="16">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishEKFPose_1a5918684b45ec722cfe0eebe8c5abe910" prot="private" static="no" mutable="no">
+        <type>nav_msgs::msg::Odometry</type>
+        <definition>nav_msgs::msg::Odometry mercury_autonomy::PublishEKFPose::odom_msg_</definition>
+        <argsstring></argsstring>
+        <name>odom_msg_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="49" column="29" bodyfile="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a87bb0887a777a2c670f13da3d282bf14" compoundref="publish__ekf__pose_8cpp" startline="92" endline="95">odomCallback</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a935b5af4577ed12c75cd32fa5bf2db3c" compoundref="publish__ekf__pose_8cpp" startline="31" endline="88">onRunning</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishEKFPose_1a66d654764b33a7557744ac7b0c365f44" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::PublishEKFPose::odom_received_</definition>
+        <argsstring></argsstring>
+        <name>odom_received_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="50" column="10" bodyfile="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a87bb0887a777a2c670f13da3d282bf14" compoundref="publish__ekf__pose_8cpp" startline="92" endline="95">odomCallback</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a935b5af4577ed12c75cd32fa5bf2db3c" compoundref="publish__ekf__pose_8cpp" startline="31" endline="88">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1aa5b6804db4fe0353e3331de33e13cd90" compoundref="publish__ekf__pose_8cpp" startline="18" endline="29">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishEKFPose_1ade46843b5d853fcaf495a6c5cb3d9d01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::PublishEKFPose::PublishEKFPose</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>PublishEKFPose</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="19" column="5" bodyfile="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" bodystart="19" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishEKFPose_1aa5b6804db4fe0353e3331de33e13cd90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::PublishEKFPose::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="37" column="20" bodyfile="src/bt_actions/publish_ekf_pose.cpp" bodystart="18" bodyend="29"/>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1a66d654764b33a7557744ac7b0c365f44" compoundref="publish__ekf__pose_8hpp" startline="50">odom_received_</references>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1ab71a76cab19f8012372835987ef4d52d" compoundref="publish__ekf__pose_8hpp" startline="47">pose_client_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishEKFPose_1a935b5af4577ed12c75cd32fa5bf2db3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::PublishEKFPose::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="38" column="20" bodyfile="src/bt_actions/publish_ekf_pose.cpp" bodystart="31" bodyend="88"/>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1a5918684b45ec722cfe0eebe8c5abe910" compoundref="publish__ekf__pose_8hpp" startline="49">odom_msg_</references>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1a66d654764b33a7557744ac7b0c365f44" compoundref="publish__ekf__pose_8hpp" startline="50">odom_received_</references>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1ab71a76cab19f8012372835987ef4d52d" compoundref="publish__ekf__pose_8hpp" startline="47">pose_client_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="namespacemercury__autonomy_1af20362dbd9637713653dc7064b5403f5" compoundref="autonomy__util_8cpp" startline="77" endline="82">mercury_autonomy::toQuat</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishEKFPose_1a03e84fcf653a4c60f5679e0bb246170e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::PublishEKFPose::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="39" column="10" bodyfile="src/bt_actions/publish_ekf_pose.cpp" bodystart="90" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishEKFPose_1a1ab230c22fc7419feacdbe40a0ced2bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::PublishEKFPose::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="22" column="26" bodyfile="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" bodystart="22" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishEKFPose_1a32e755fc67582e24887d8cdc24dbd3f3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::PublishEKFPose::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="42" column="10" bodyfile="src/bt_actions/publish_ekf_pose.cpp" bodystart="12" bodyend="16"/>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1ae4154ac7f65878197a356d17f3304f36" compoundref="publish__ekf__pose_8hpp" startline="48">odom_sub_</references>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1a87bb0887a777a2c670f13da3d282bf14" compoundref="publish__ekf__pose_8cpp" startline="92" endline="95">odomCallback</references>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1ab71a76cab19f8012372835987ef4d52d" compoundref="publish__ekf__pose_8hpp" startline="47">pose_client_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishEKFPose_1a87bb0887a777a2c670f13da3d282bf14" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::PublishEKFPose::odomCallback</definition>
+        <argsstring>(const nav_msgs::msg::Odometry::SharedPtr msg)</argsstring>
+        <name>odomCallback</name>
+        <param>
+          <type>const nav_msgs::msg::Odometry::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="45" column="10" bodyfile="src/bt_actions/publish_ekf_pose.cpp" bodystart="92" bodyend="95"/>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1a5918684b45ec722cfe0eebe8c5abe910" compoundref="publish__ekf__pose_8hpp" startline="49">odom_msg_</references>
+        <references refid="classmercury__autonomy_1_1PublishEKFPose_1a66d654764b33a7557744ac7b0c365f44" compoundref="publish__ekf__pose_8hpp" startline="50">odom_received_</references>
+        <referencedby refid="classmercury__autonomy_1_1PublishEKFPose_1a32e755fc67582e24887d8cdc24dbd3f3" compoundref="publish__ekf__pose_8cpp" startline="12" endline="16">rosInit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::PublishEKFPose</label>
+        <link refid="classmercury__autonomy_1_1PublishEKFPose"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::PublishEKFPose</label>
+        <link refid="classmercury__autonomy_1_1PublishEKFPose"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" line="17" column="1" bodyfile="include/mercury_autonomy/bt_actions/publish_ekf_pose.hpp" bodystart="17" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1a5918684b45ec722cfe0eebe8c5abe910" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>odom_msg_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1a66d654764b33a7557744ac7b0c365f44" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>odom_received_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1ae4154ac7f65878197a356d17f3304f36" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>odom_sub_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1a87bb0887a777a2c670f13da3d282bf14" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>odomCallback</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1a03e84fcf653a4c60f5679e0bb246170e" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1a935b5af4577ed12c75cd32fa5bf2db3c" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1aa5b6804db4fe0353e3331de33e13cd90" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1ab71a76cab19f8012372835987ef4d52d" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>pose_client_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1a1ab230c22fc7419feacdbe40a0ced2bb" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1ade46843b5d853fcaf495a6c5cb3d9d01" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>PublishEKFPose</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishEKFPose_1a32e755fc67582e24887d8cdc24dbd3f3" prot="protected" virt="virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::PublishEKFPose</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

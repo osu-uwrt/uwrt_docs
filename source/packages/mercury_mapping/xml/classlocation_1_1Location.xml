@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classlocation_1_1Location" kind="class" language="Python" prot="public">
+    <compoundname>location::Location</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlocation_1_1Location_1af9a18a8b4f0b925aacc72c01f98c050b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::initial_pose_xyz</definition>
+        <argsstring></argsstring>
+        <name>initial_pose_xyz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="16" column="1" bodyfile="mercury_mapping/location.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1a32b8da6067cfeb870e9700bf6ea8ac2b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::initial_pose_rpy</definition>
+        <argsstring></argsstring>
+        <name>initial_pose_rpy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="17" column="1" bodyfile="mercury_mapping/location.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1a2d6f759539b3143d16e3f5a1fbfbc373" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::buffer_size</definition>
+        <argsstring></argsstring>
+        <name>buffer_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="18" column="1" bodyfile="mercury_mapping/location.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" compoundref="location_8py" startline="52" endline="89">location.Location.add_pose</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1a0e5230ff8e4691d1cbd40ec364a08c14" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::quantile</definition>
+        <argsstring></argsstring>
+        <name>quantile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="19" column="1" bodyfile="mercury_mapping/location.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" compoundref="location_8py" startline="90" endline="148">location.Location.get_pose</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1a13b19385aae5d49407c5af5a6d126eed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="21" column="1" bodyfile="mercury_mapping/location.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" compoundref="location_8py" startline="52" endline="89">location.Location.add_pose</referencedby>
+        <referencedby refid="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" compoundref="location_8py" startline="90" endline="148">location.Location.get_pose</referencedby>
+        <referencedby refid="classlocation_1_1Location_1a2d815e1b05b88314512a0a7c8b926ef9" compoundref="location_8py" startline="36" endline="51">location.Location.reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1ab1c2186154dcc17c731f71ee70fcece7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::orientation</definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="27" column="1" bodyfile="mercury_mapping/location.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" compoundref="location_8py" startline="52" endline="89">location.Location.add_pose</referencedby>
+        <referencedby refid="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" compoundref="location_8py" startline="90" endline="148">location.Location.get_pose</referencedby>
+        <referencedby refid="classlocation_1_1Location_1a2d815e1b05b88314512a0a7c8b926ef9" compoundref="location_8py" startline="36" endline="51">location.Location.reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1a0919f3f09ab1da235b4836bdc47c7abd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::buffer_warm</definition>
+        <argsstring></argsstring>
+        <name>buffer_warm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="33" column="1" bodyfile="mercury_mapping/location.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" compoundref="location_8py" startline="52" endline="89">location.Location.add_pose</referencedby>
+        <referencedby refid="classlocation_1_1Location_1accdf07a1d5282431edfbe34f9c1dc0c1" compoundref="location_8py" startline="149" endline="153">location.Location.cool_buffer</referencedby>
+        <referencedby refid="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" compoundref="location_8py" startline="90" endline="148">location.Location.get_pose</referencedby>
+        <referencedby refid="classlocation_1_1Location_1a2d815e1b05b88314512a0a7c8b926ef9" compoundref="location_8py" startline="36" endline="51">location.Location.reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1a986c83694798f149efc2a67bf50891ee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::position_location</definition>
+        <argsstring></argsstring>
+        <name>position_location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="49" column="1" bodyfile="mercury_mapping/location.py" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" compoundref="location_8py" startline="52" endline="89">location.Location.add_pose</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classlocation_1_1Location_1a83fe20b69165db8156d2ce055512b726" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>location.Location::orientation_location</definition>
+        <argsstring></argsstring>
+        <name>orientation_location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="50" column="1" bodyfile="mercury_mapping/location.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" compoundref="location_8py" startline="52" endline="89">location.Location.add_pose</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlocation_1_1Location_1a0218575c63caef7653b4fba203040a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def location.Location.__init__</definition>
+        <argsstring>(self, Point inital_pose_xyz, Vector3 initial_pose_rpy, int buffer_size, &apos;tuple[float, float]&apos; quantile)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Point</type>
+          <declname>inital_pose_xyz</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>initial_pose_rpy</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buffer_size</declname>
+        </param>
+        <param>
+          <type>&apos;tuple&apos;</type>
+          <declname>quantile</declname>
+          <array>[float, float]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="13" column="1" bodyfile="mercury_mapping/location.py" bodystart="13" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classlocation_1_1Location_1a2d815e1b05b88314512a0a7c8b926ef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def location.Location.reset</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="36" column="1" bodyfile="mercury_mapping/location.py" bodystart="36" bodyend="51"/>
+        <references refid="classlocation_1_1Location_1a0919f3f09ab1da235b4836bdc47c7abd" compoundref="location_8py" startline="33">location.Location.buffer_warm</references>
+        <references refid="classlocation_1_1Location_1ab1c2186154dcc17c731f71ee70fcece7" compoundref="location_8py" startline="27">location.Location.orientation</references>
+        <references refid="classlocation_1_1Location_1a13b19385aae5d49407c5af5a6d126eed" compoundref="location_8py" startline="21">location.Location.position</references>
+      </memberdef>
+      <memberdef kind="function" id="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def location.Location.add_pose</definition>
+        <argsstring>(self, Pose pose, bool update_position, bool update_orientation)</argsstring>
+        <name>add_pose</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Pose</type>
+          <declname>pose</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update_position</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update_orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="52" column="1" bodyfile="mercury_mapping/location.py" bodystart="52" bodyend="89"/>
+        <references refid="classlocation_1_1Location_1a2d6f759539b3143d16e3f5a1fbfbc373" compoundref="location_8py" startline="18">location.Location.buffer_size</references>
+        <references refid="classlocation_1_1Location_1a0919f3f09ab1da235b4836bdc47c7abd" compoundref="location_8py" startline="33">location.Location.buffer_warm</references>
+        <references refid="classlocation_1_1Location_1ab1c2186154dcc17c731f71ee70fcece7" compoundref="location_8py" startline="27">location.Location.orientation</references>
+        <references refid="classlocation_1_1Location_1a83fe20b69165db8156d2ce055512b726" compoundref="location_8py" startline="50">location.Location.orientation_location</references>
+        <references refid="classlocation_1_1Location_1a13b19385aae5d49407c5af5a6d126eed" compoundref="location_8py" startline="21">location.Location.position</references>
+        <references refid="classlocation_1_1Location_1a986c83694798f149efc2a67bf50891ee" compoundref="location_8py" startline="49">location.Location.position_location</references>
+      </memberdef>
+      <memberdef kind="function" id="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>PoseWithCovariance</type>
+        <definition> PoseWithCovariance location.Location.get_pose</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_pose</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="90" column="1" bodyfile="mercury_mapping/location.py" bodystart="90" bodyend="148"/>
+        <references refid="classlocation_1_1Location_1a0919f3f09ab1da235b4836bdc47c7abd" compoundref="location_8py" startline="33">location.Location.buffer_warm</references>
+        <references refid="classlocation_1_1Location_1ab1c2186154dcc17c731f71ee70fcece7" compoundref="location_8py" startline="27">location.Location.orientation</references>
+        <references refid="classlocation_1_1Location_1a13b19385aae5d49407c5af5a6d126eed" compoundref="location_8py" startline="21">location.Location.position</references>
+        <references refid="classlocation_1_1Location_1a0e5230ff8e4691d1cbd40ec364a08c14" compoundref="location_8py" startline="19">location.Location.quantile</references>
+        <references refid="namespacelocation_1a458865b076a0273ae53af0a64aa9a744" compoundref="location_8py" startline="154" endline="159">location.remove_outliers</references>
+      </memberdef>
+      <memberdef kind="function" id="classlocation_1_1Location_1accdf07a1d5282431edfbe34f9c1dc0c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def location.Location.cool_buffer</definition>
+        <argsstring>(self)</argsstring>
+        <name>cool_buffer</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/location.py" line="149" column="1" bodyfile="mercury_mapping/location.py" bodystart="149" bodyend="153"/>
+        <references refid="classlocation_1_1Location_1a0919f3f09ab1da235b4836bdc47c7abd" compoundref="location_8py" startline="33">location.Location.buffer_warm</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>location.Location</label>
+        <link refid="classlocation_1_1Location"/>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_mapping/location.py" line="11" column="1" bodyfile="mercury_mapping/location.py" bodystart="11" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classlocation_1_1Location_1a0218575c63caef7653b4fba203040a90" prot="public" virt="non-virtual"><scope>location::Location</scope><name>__init__</name></member>
+      <member refid="classlocation_1_1Location_1ad0794d4f787a4de6cf0f0e2470c8a197" prot="public" virt="non-virtual"><scope>location::Location</scope><name>add_pose</name></member>
+      <member refid="classlocation_1_1Location_1a2d6f759539b3143d16e3f5a1fbfbc373" prot="public" virt="non-virtual"><scope>location::Location</scope><name>buffer_size</name></member>
+      <member refid="classlocation_1_1Location_1a0919f3f09ab1da235b4836bdc47c7abd" prot="public" virt="non-virtual"><scope>location::Location</scope><name>buffer_warm</name></member>
+      <member refid="classlocation_1_1Location_1accdf07a1d5282431edfbe34f9c1dc0c1" prot="public" virt="non-virtual"><scope>location::Location</scope><name>cool_buffer</name></member>
+      <member refid="classlocation_1_1Location_1a4411346ca727b210fb832e6ffb2311a1" prot="public" virt="non-virtual"><scope>location::Location</scope><name>get_pose</name></member>
+      <member refid="classlocation_1_1Location_1a32b8da6067cfeb870e9700bf6ea8ac2b" prot="public" virt="non-virtual"><scope>location::Location</scope><name>initial_pose_rpy</name></member>
+      <member refid="classlocation_1_1Location_1af9a18a8b4f0b925aacc72c01f98c050b" prot="public" virt="non-virtual"><scope>location::Location</scope><name>initial_pose_xyz</name></member>
+      <member refid="classlocation_1_1Location_1ab1c2186154dcc17c731f71ee70fcece7" prot="public" virt="non-virtual"><scope>location::Location</scope><name>orientation</name></member>
+      <member refid="classlocation_1_1Location_1a83fe20b69165db8156d2ce055512b726" prot="public" virt="non-virtual"><scope>location::Location</scope><name>orientation_location</name></member>
+      <member refid="classlocation_1_1Location_1a13b19385aae5d49407c5af5a6d126eed" prot="public" virt="non-virtual"><scope>location::Location</scope><name>position</name></member>
+      <member refid="classlocation_1_1Location_1a986c83694798f149efc2a67bf50891ee" prot="public" virt="non-virtual"><scope>location::Location</scope><name>position_location</name></member>
+      <member refid="classlocation_1_1Location_1a0e5230ff8e4691d1cbd40ec364a08c14" prot="public" virt="non-virtual"><scope>location::Location</scope><name>quantile</name></member>
+      <member refid="classlocation_1_1Location_1a2d815e1b05b88314512a0a7c8b926ef9" prot="public" virt="non-virtual"><scope>location::Location</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1GetTwistTopic" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::GetTwistTopic</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="get__twist__topic_8hpp" local="no">get_twist_topic.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetTwistTopic_1a1f10cd47ccd2d9409229995cd7d45bbc" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; geometry_msgs::msg::Twist &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr mercury_autonomy::GetTwistTopic::sub_</definition>
+        <argsstring></argsstring>
+        <name>sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="41" column="38" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1a79759b7b870fdae8a2b0edd1e3efc5fc" compoundref="get__twist__topic_8cpp" startline="55" endline="58">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" compoundref="get__twist__topic_8cpp" startline="33" endline="53">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" compoundref="get__twist__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetTwistTopic_1a6285620c2d7d22ac9dcb604fd50f9734" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::GetTwistTopic::msg_received_</definition>
+        <argsstring></argsstring>
+        <name>msg_received_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="42" column="10" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1a79759b7b870fdae8a2b0edd1e3efc5fc" compoundref="get__twist__topic_8cpp" startline="55" endline="58">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" compoundref="get__twist__topic_8cpp" startline="33" endline="53">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" compoundref="get__twist__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetTwistTopic_1aaeb09f1907c94e1569a48414862a8119" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::Twist</type>
+        <definition>geometry_msgs::msg::Twist mercury_autonomy::GetTwistTopic::twist_</definition>
+        <argsstring></argsstring>
+        <name>twist_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="43" column="31" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" compoundref="get__twist__topic_8cpp" startline="33" endline="53">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" compoundref="get__twist__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetTwistTopic_1a6fff1e64c7c855fa1ec6aac01de6fa55" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::GetTwistTopic::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="44" column="18" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" compoundref="get__twist__topic_8cpp" startline="33" endline="53">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" compoundref="get__twist__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetTwistTopic_1aa444d8baeede28e3cc234dc4bf8cf8cd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::GetTwistTopic::timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>timeout_sec_</name>
+        <initializer>= 3.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="45" column="12" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" compoundref="get__twist__topic_8cpp" startline="33" endline="53">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" compoundref="get__twist__topic_8cpp" startline="11" endline="31">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetTwistTopic_1ac47884c25823820254360e302d5edbfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::GetTwistTopic::GetTwistTopic</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>GetTwistTopic</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="17" column="5" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetTwistTopic::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="33" column="20" bodyfile="src/bt_actions/get_twist_topic.cpp" bodystart="11" bodyend="31"/>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a6285620c2d7d22ac9dcb604fd50f9734" compoundref="get__twist__topic_8hpp" startline="42">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a6fff1e64c7c855fa1ec6aac01de6fa55" compoundref="get__twist__topic_8hpp" startline="44">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a1f10cd47ccd2d9409229995cd7d45bbc" compoundref="get__twist__topic_8hpp" startline="41">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1aa444d8baeede28e3cc234dc4bf8cf8cd" compoundref="get__twist__topic_8hpp" startline="45">timeout_sec_</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1aaeb09f1907c94e1569a48414862a8119" compoundref="get__twist__topic_8hpp" startline="43">twist_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetTwistTopic::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="34" column="20" bodyfile="src/bt_actions/get_twist_topic.cpp" bodystart="33" bodyend="53"/>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a6285620c2d7d22ac9dcb604fd50f9734" compoundref="get__twist__topic_8hpp" startline="42">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a6fff1e64c7c855fa1ec6aac01de6fa55" compoundref="get__twist__topic_8hpp" startline="44">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a1f10cd47ccd2d9409229995cd7d45bbc" compoundref="get__twist__topic_8hpp" startline="41">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1aa444d8baeede28e3cc234dc4bf8cf8cd" compoundref="get__twist__topic_8hpp" startline="45">timeout_sec_</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1aaeb09f1907c94e1569a48414862a8119" compoundref="get__twist__topic_8hpp" startline="43">twist_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetTwistTopic_1a79759b7b870fdae8a2b0edd1e3efc5fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetTwistTopic::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="35" column="10" bodyfile="src/bt_actions/get_twist_topic.cpp" bodystart="55" bodyend="58"/>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a6285620c2d7d22ac9dcb604fd50f9734" compoundref="get__twist__topic_8hpp" startline="42">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1GetTwistTopic_1a1f10cd47ccd2d9409229995cd7d45bbc" compoundref="get__twist__topic_8hpp" startline="41">sub_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetTwistTopic_1a922aaab3dc1fd4fc69e290bf4266583c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::GetTwistTopic::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="20" column="26" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="20" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetTwistTopic_1a9ab5936f95835b3dfc019e542a46ee1e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetTwistTopic::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="38" column="10" bodyfile="src/bt_actions/get_twist_topic.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_autonomy::GetTwistTopic</label>
+        <link refid="classmercury__autonomy_1_1GetTwistTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::GetTwistTopic</label>
+        <link refid="classmercury__autonomy_1_1GetTwistTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" line="15" column="1" bodyfile="include/mercury_autonomy/bt_actions/get_twist_topic.hpp" bodystart="15" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1ac47884c25823820254360e302d5edbfa" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>GetTwistTopic</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1a6285620c2d7d22ac9dcb604fd50f9734" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>msg_received_</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1a79759b7b870fdae8a2b0edd1e3efc5fc" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1ad80a565a6582db5997ede1cbc7de9d44" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1afa45501dcd8c60386c694d22fc1e6efb" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1a922aaab3dc1fd4fc69e290bf4266583c" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1a9ab5936f95835b3dfc019e542a46ee1e" prot="protected" virt="virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1a6fff1e64c7c855fa1ec6aac01de6fa55" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1a1f10cd47ccd2d9409229995cd7d45bbc" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>sub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1aa444d8baeede28e3cc234dc4bf8cf8cd" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>timeout_sec_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetTwistTopic_1aaeb09f1907c94e1569a48414862a8119" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>twist_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::GetTwistTopic</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

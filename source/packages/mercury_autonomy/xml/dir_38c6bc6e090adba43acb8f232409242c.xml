@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_38c6bc6e090adba43acb8f232409242c" kind="dir">
+    <compoundname>src/bt_actions</compoundname>
+    <innerfile refid="apply__feedforward__force_8cpp">apply_feedforward_force.cpp</innerfile>
+    <innerfile refid="call__set__bool__service_8cpp">call_set_bool_service.cpp</innerfile>
+    <innerfile refid="call__trigger__service_8cpp">call_trigger_service.cpp</innerfile>
+    <innerfile refid="compute__frame__alignment_8cpp">compute_frame_alignment.cpp</innerfile>
+    <innerfile refid="example__action_8cpp">example_action.cpp</innerfile>
+    <innerfile refid="get__bool__topic_8cpp">get_bool_topic.cpp</innerfile>
+    <innerfile refid="get__covariance_8cpp">get_covariance.cpp</innerfile>
+    <innerfile refid="get__float__topic_8cpp">get_float_topic.cpp</innerfile>
+    <innerfile refid="get__imu__orientation_8cpp">get_imu_orientation.cpp</innerfile>
+    <innerfile refid="get__mapping__state_8cpp">get_mapping_state.cpp</innerfile>
+    <innerfile refid="get__odometry_8cpp">get_odometry.cpp</innerfile>
+    <innerfile refid="get__twist__topic_8cpp">get_twist_topic.cpp</innerfile>
+    <innerfile refid="publish__bool_8cpp">publish_bool.cpp</innerfile>
+    <innerfile refid="publish__ekf__pose_8cpp">publish_ekf_pose.cpp</innerfile>
+    <innerfile refid="publish__int8_8cpp">publish_int8.cpp</innerfile>
+    <innerfile refid="publish__to__controller_8cpp">publish_to_controller.cpp</innerfile>
+    <innerfile refid="publish__twist_8cpp">publish_twist.cpp</innerfile>
+    <innerfile refid="set__feedforward__mode_8cpp">set_feedforward_mode.cpp</innerfile>
+    <innerfile refid="set__mapping__target_8cpp">set_mapping_target.cpp</innerfile>
+    <innerfile refid="set__status_8cpp">set_status.cpp</innerfile>
+    <innerfile refid="transform__pose_8cpp">transform_pose.cpp</innerfile>
+    <innerfile refid="wait__for__detection_8cpp">wait_for_detection.cpp</innerfile>
+    <innerfile refid="wait__for__kill__switch_8cpp">wait_for_kill_switch.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/bt_actions/"/>
+  </compounddef>
+</doxygen>

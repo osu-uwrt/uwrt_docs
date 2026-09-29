@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Claw__Object_8h" kind="file" language="C++">
+    <compoundname>Claw_Object.h</compoundname>
+    <includes local="no">eigen3/Eigen/Dense</includes>
+    <includedby refid="RobotClass_8h" local="yes">include/mercury_simulator/RobotClass.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="1">
+        <label>include/mercury_simulator/Claw_Object.h</label>
+        <link refid="Claw__Object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/physics_simulator.cpp</label>
+        <link refid="physics__simulator_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/mercury_simulator/Claw_Object.h</label>
+        <link refid="Claw__Object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/robot_class.cpp</label>
+        <link refid="robot__class_8cpp"/>
+      </node>
+      <node id="2">
+        <label>include/mercury_simulator/RobotClass.h</label>
+        <link refid="RobotClass_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structClaw__Object" prot="public">Claw_Object</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>struct<sp/>defining<sp/>a<sp/>UWRT<sp/>claw<sp/>prop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;eigen3/Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="structClaw__Object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structClaw__Object" kindref="compound">Claw_Object</ref><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="structClaw__Object_1a8c476318fb90376143ebb0a731403a96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structClaw__Object_1a8c476318fb90376143ebb0a731403a96" kindref="member">net_buoyancy</ref>;</highlight></codeline>
+<codeline lineno="9" refid="structClaw__Object_1aa55c4115940eb7f55563291f2058ee5d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structClaw__Object_1aa55c4115940eb7f55563291f2058ee5d" kindref="member">com</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_simulator/Claw_Object.h"/>
+  </compounddef>
+</doxygen>

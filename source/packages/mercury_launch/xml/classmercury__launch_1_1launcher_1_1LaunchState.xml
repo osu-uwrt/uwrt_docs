@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__launch_1_1launcher_1_1LaunchState" kind="class" language="Python" prot="public">
+    <compoundname>mercury_launch::launcher::LaunchState</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">enum.Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchState_1a42006bdc1cf95807935b9c56827d3f1a" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch.launcher.LaunchState::STOPPED</definition>
+        <argsstring></argsstring>
+        <name>STOPPED</name>
+        <initializer>=  &quot;stopped&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="296" column="1" bodyfile="mercury_launch/launcher.py" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchState_1ac08f19b04b16d513ccd78baf5d145158" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch.launcher.LaunchState::STARTING</definition>
+        <argsstring></argsstring>
+        <name>STARTING</name>
+        <initializer>=  &quot;starting&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="297" column="1" bodyfile="mercury_launch/launcher.py" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchState_1aabc47e7d752665ef645a7351e64b9d8e" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch.launcher.LaunchState::RUNNING</definition>
+        <argsstring></argsstring>
+        <name>RUNNING</name>
+        <initializer>=  &quot;running&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="298" column="1" bodyfile="mercury_launch/launcher.py" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchState_1ad0795d07507955d513a814054a8cb9b7" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch.launcher.LaunchState::STOPPING</definition>
+        <argsstring></argsstring>
+        <name>STOPPING</name>
+        <initializer>=  &quot;stopping&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="299" column="1" bodyfile="mercury_launch/launcher.py" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchState_1aef6114eaca5ad35a400b68c178e09b4d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch.launcher.LaunchState::STOPPING_ERROR</definition>
+        <argsstring></argsstring>
+        <name>STOPPING_ERROR</name>
+        <initializer>=  &quot;stopping_error&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="300" column="1" bodyfile="mercury_launch/launcher.py" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchState_1ae686a28fb3baf3a762d54e8a3ddc60ab" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string mercury_launch.launcher.LaunchState::ERROR</definition>
+        <argsstring></argsstring>
+        <name>ERROR</name>
+        <initializer>=  &quot;error&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="301" column="1" bodyfile="mercury_launch/launcher.py" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>enum::Enum</label>
+      </node>
+      <node id="1">
+        <label>mercury_launch.launcher.LaunchState</label>
+        <link refid="classmercury__launch_1_1launcher_1_1LaunchState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>enum::Enum</label>
+      </node>
+      <node id="1">
+        <label>mercury_launch.launcher.LaunchState</label>
+        <link refid="classmercury__launch_1_1launcher_1_1LaunchState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_launch/launcher.py" line="295" column="1" bodyfile="mercury_launch/launcher.py" bodystart="295" bodyend="304"/>
+    <listofallmembers>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1ae686a28fb3baf3a762d54e8a3ddc60ab" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchState</scope><name>ERROR</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1aabc47e7d752665ef645a7351e64b9d8e" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchState</scope><name>RUNNING</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1ac08f19b04b16d513ccd78baf5d145158" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchState</scope><name>STARTING</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1a42006bdc1cf95807935b9c56827d3f1a" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchState</scope><name>STOPPED</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1ad0795d07507955d513a814054a8cb9b7" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchState</scope><name>STOPPING</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchState_1aef6114eaca5ad35a400b68c178e09b4d" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchState</scope><name>STOPPING_ERROR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

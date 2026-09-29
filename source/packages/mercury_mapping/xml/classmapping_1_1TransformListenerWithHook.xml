@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmapping_1_1TransformListenerWithHook" kind="class" language="Python" prot="public">
+    <compoundname>mapping::TransformListenerWithHook</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">tf2_ros.TransformListener</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmapping_1_1TransformListenerWithHook_1a9300e36e2267e3c8457ee884966c4a42" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mapping.TransformListenerWithHook::hook</definition>
+        <argsstring></argsstring>
+        <name>hook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="33" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classmapping_1_1TransformListenerWithHook_1a1884a38fe0207b05468196eb730a51dd" compoundref="mapping_8py" startline="35" endline="39">mapping.TransformListenerWithHook.callback</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmapping_1_1TransformListenerWithHook_1a0bd0420c0e772e31c266a6cf9b2129a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mapping.TransformListenerWithHook.__init__</definition>
+        <argsstring>(self, tf2_ros.buffer.Buffer buffer, Node node, hook)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tf2_ros.buffer.Buffer</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>Node</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classmapping_1_1TransformListenerWithHook_1a9300e36e2267e3c8457ee884966c4a42" kindref="member">hook</ref></type>
+          <defname>hook</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="31" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classmapping_1_1TransformListenerWithHook_1a1884a38fe0207b05468196eb730a51dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None mapping.TransformListenerWithHook.callback</definition>
+        <argsstring>(self, TFMessage data)</argsstring>
+        <name>callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>TFMessage</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_mapping/mapping.py" line="35" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="35" bodyend="39"/>
+        <references refid="classmapping_1_1TransformListenerWithHook_1a9300e36e2267e3c8457ee884966c4a42" compoundref="mapping_8py" startline="33">mapping.TransformListenerWithHook.hook</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>tf2_ros::TransformListener</label>
+      </node>
+      <node id="1">
+        <label>mapping.TransformListenerWithHook</label>
+        <link refid="classmapping_1_1TransformListenerWithHook"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>tf2_ros::TransformListener</label>
+      </node>
+      <node id="1">
+        <label>mapping.TransformListenerWithHook</label>
+        <link refid="classmapping_1_1TransformListenerWithHook"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_mapping/mapping.py" line="30" column="1" bodyfile="mercury_mapping/mapping.py" bodystart="30" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classmapping_1_1TransformListenerWithHook_1a0bd0420c0e772e31c266a6cf9b2129a7" prot="public" virt="non-virtual"><scope>mapping::TransformListenerWithHook</scope><name>__init__</name></member>
+      <member refid="classmapping_1_1TransformListenerWithHook_1a1884a38fe0207b05468196eb730a51dd" prot="public" virt="non-virtual"><scope>mapping::TransformListenerWithHook</scope><name>callback</name></member>
+      <member refid="classmapping_1_1TransformListenerWithHook_1a9300e36e2267e3c8457ee884966c4a42" prot="public" virt="non-virtual"><scope>mapping::TransformListenerWithHook</scope><name>hook</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

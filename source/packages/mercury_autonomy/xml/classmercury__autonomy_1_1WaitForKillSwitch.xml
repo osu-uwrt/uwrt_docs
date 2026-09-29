@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1WaitForKillSwitch" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::WaitForKillSwitch</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="wait__for__kill__switch_8hpp" local="no">wait_for_kill_switch.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForKillSwitch_1a17439aa978aee0e96b50a82aca3675ee" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr mercury_autonomy::WaitForKillSwitch::sub_</definition>
+        <argsstring></argsstring>
+        <name>sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="33" column="38" bodyfile="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1a691bc6149ac0989ac22c999e44b81e61" compoundref="wait__for__kill__switch_8cpp" startline="41" endline="44">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1ae0cda3d44501786ad927fa90d7a62c3b" compoundref="wait__for__kill__switch_8cpp" startline="29" endline="39">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1af9c61d4f46fb489914a921dadd59862a" compoundref="wait__for__kill__switch_8cpp" startline="12" endline="27">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForKillSwitch_1aa8d8a9eb7c97e4ee25fb52856b862cd0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::WaitForKillSwitch::has_status_</definition>
+        <argsstring></argsstring>
+        <name>has_status_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="34" column="10" bodyfile="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1a691bc6149ac0989ac22c999e44b81e61" compoundref="wait__for__kill__switch_8cpp" startline="41" endline="44">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1ae0cda3d44501786ad927fa90d7a62c3b" compoundref="wait__for__kill__switch_8cpp" startline="29" endline="39">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1af9c61d4f46fb489914a921dadd59862a" compoundref="wait__for__kill__switch_8cpp" startline="12" endline="27">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1WaitForKillSwitch_1a3bd294293e76c637e20361b753bb20cc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::WaitForKillSwitch::is_killed_</definition>
+        <argsstring></argsstring>
+        <name>is_killed_</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="35" column="10" bodyfile="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1ae0cda3d44501786ad927fa90d7a62c3b" compoundref="wait__for__kill__switch_8cpp" startline="29" endline="39">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1WaitForKillSwitch_1af9c61d4f46fb489914a921dadd59862a" compoundref="wait__for__kill__switch_8cpp" startline="12" endline="27">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForKillSwitch_1a314951b4799692198695b8e91ff5ee5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::WaitForKillSwitch::WaitForKillSwitch</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>WaitForKillSwitch</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="15" column="5" bodyfile="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" bodystart="15" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForKillSwitch_1af9c61d4f46fb489914a921dadd59862a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::WaitForKillSwitch::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="25" column="20" bodyfile="src/bt_actions/wait_for_kill_switch.cpp" bodystart="12" bodyend="27"/>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1aa8d8a9eb7c97e4ee25fb52856b862cd0" compoundref="wait__for__kill__switch_8hpp" startline="34">has_status_</references>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1a3bd294293e76c637e20361b753bb20cc" compoundref="wait__for__kill__switch_8hpp" startline="35">is_killed_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1a17439aa978aee0e96b50a82aca3675ee" compoundref="wait__for__kill__switch_8hpp" startline="33">sub_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForKillSwitch_1ae0cda3d44501786ad927fa90d7a62c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::WaitForKillSwitch::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="26" column="20" bodyfile="src/bt_actions/wait_for_kill_switch.cpp" bodystart="29" bodyend="39"/>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1aa8d8a9eb7c97e4ee25fb52856b862cd0" compoundref="wait__for__kill__switch_8hpp" startline="34">has_status_</references>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1a3bd294293e76c637e20361b753bb20cc" compoundref="wait__for__kill__switch_8hpp" startline="35">is_killed_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1a17439aa978aee0e96b50a82aca3675ee" compoundref="wait__for__kill__switch_8hpp" startline="33">sub_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForKillSwitch_1a691bc6149ac0989ac22c999e44b81e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::WaitForKillSwitch::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="27" column="10" bodyfile="src/bt_actions/wait_for_kill_switch.cpp" bodystart="41" bodyend="44"/>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1aa8d8a9eb7c97e4ee25fb52856b862cd0" compoundref="wait__for__kill__switch_8hpp" startline="34">has_status_</references>
+        <references refid="classmercury__autonomy_1_1WaitForKillSwitch_1a17439aa978aee0e96b50a82aca3675ee" compoundref="wait__for__kill__switch_8hpp" startline="33">sub_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForKillSwitch_1ae0e21a9b221e3faeb90dc92beca02514" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::WaitForKillSwitch::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="18" column="26" bodyfile="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1WaitForKillSwitch_1ac40cb2e447b29fcdc523074f0e71419c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::WaitForKillSwitch::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="30" column="10" bodyfile="src/bt_actions/wait_for_kill_switch.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_autonomy::WaitForKillSwitch</label>
+        <link refid="classmercury__autonomy_1_1WaitForKillSwitch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::WaitForKillSwitch</label>
+        <link refid="classmercury__autonomy_1_1WaitForKillSwitch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" line="13" column="1" bodyfile="include/mercury_autonomy/bt_actions/wait_for_kill_switch.hpp" bodystart="13" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1aa8d8a9eb7c97e4ee25fb52856b862cd0" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>has_status_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1a3bd294293e76c637e20361b753bb20cc" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>is_killed_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1a691bc6149ac0989ac22c999e44b81e61" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1ae0cda3d44501786ad927fa90d7a62c3b" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1af9c61d4f46fb489914a921dadd59862a" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1ae0e21a9b221e3faeb90dc92beca02514" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1ac40cb2e447b29fcdc523074f0e71419c" prot="protected" virt="virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1a17439aa978aee0e96b50a82aca3675ee" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>sub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1WaitForKillSwitch_1a314951b4799692198695b8e91ff5ee5e" prot="public" virt="non-virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>WaitForKillSwitch</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::WaitForKillSwitch</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

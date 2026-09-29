@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1GetFloatTopic" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::GetFloatTopic</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="get__float__topic_8hpp" local="no">get_float_topic.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetFloatTopic_1a07ba5081852e6a1a7cb15817b2003551" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Float64 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Float64&gt;::SharedPtr mercury_autonomy::GetFloatTopic::sub_</definition>
+        <argsstring></argsstring>
+        <name>sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="37" column="38" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1af32d79527596fc2784b76d92941d7b4c" compoundref="get__float__topic_8cpp" startline="51" endline="54">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" compoundref="get__float__topic_8cpp" startline="34" endline="49">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" compoundref="get__float__topic_8cpp" startline="11" endline="32">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetFloatTopic_1a6856cdda991c83d163ca9de34677bc5a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::GetFloatTopic::data_received_</definition>
+        <argsstring></argsstring>
+        <name>data_received_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="38" column="10" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1af32d79527596fc2784b76d92941d7b4c" compoundref="get__float__topic_8cpp" startline="51" endline="54">onHalted</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" compoundref="get__float__topic_8cpp" startline="34" endline="49">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" compoundref="get__float__topic_8cpp" startline="11" endline="32">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetFloatTopic_1a50bae1120c2ad3ef581ec6a6bc5c23fe" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::GetFloatTopic::received_value_</definition>
+        <argsstring></argsstring>
+        <name>received_value_</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="39" column="12" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" compoundref="get__float__topic_8cpp" startline="34" endline="49">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" compoundref="get__float__topic_8cpp" startline="11" endline="32">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetFloatTopic_1af2dbee18c5569f86c0d60f427cb934d6" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::GetFloatTopic::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="40" column="18" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" compoundref="get__float__topic_8cpp" startline="34" endline="49">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" compoundref="get__float__topic_8cpp" startline="11" endline="32">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetFloatTopic_1a8132dd412e28f34ce1b89bbc03206a73" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mercury_autonomy::GetFloatTopic::timeout_sec_</definition>
+        <argsstring></argsstring>
+        <name>timeout_sec_</name>
+        <initializer>= 3.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="41" column="12" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" compoundref="get__float__topic_8cpp" startline="34" endline="49">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" compoundref="get__float__topic_8cpp" startline="11" endline="32">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetFloatTopic_1a679b15a8f79dad53e3e05ff42b810aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::GetFloatTopic::GetFloatTopic</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>GetFloatTopic</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="18" column="5" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="18" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetFloatTopic::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="29" column="20" bodyfile="src/bt_actions/get_float_topic.cpp" bodystart="11" bodyend="32"/>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a6856cdda991c83d163ca9de34677bc5a" compoundref="get__float__topic_8hpp" startline="38">data_received_</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a50bae1120c2ad3ef581ec6a6bc5c23fe" compoundref="get__float__topic_8hpp" startline="39">received_value_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1af2dbee18c5569f86c0d60f427cb934d6" compoundref="get__float__topic_8hpp" startline="40">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a07ba5081852e6a1a7cb15817b2003551" compoundref="get__float__topic_8hpp" startline="37">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a8132dd412e28f34ce1b89bbc03206a73" compoundref="get__float__topic_8hpp" startline="41">timeout_sec_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetFloatTopic::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="30" column="20" bodyfile="src/bt_actions/get_float_topic.cpp" bodystart="34" bodyend="49"/>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a6856cdda991c83d163ca9de34677bc5a" compoundref="get__float__topic_8hpp" startline="38">data_received_</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a50bae1120c2ad3ef581ec6a6bc5c23fe" compoundref="get__float__topic_8hpp" startline="39">received_value_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1af2dbee18c5569f86c0d60f427cb934d6" compoundref="get__float__topic_8hpp" startline="40">start_time_</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a07ba5081852e6a1a7cb15817b2003551" compoundref="get__float__topic_8hpp" startline="37">sub_</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a8132dd412e28f34ce1b89bbc03206a73" compoundref="get__float__topic_8hpp" startline="41">timeout_sec_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetFloatTopic_1af32d79527596fc2784b76d92941d7b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetFloatTopic::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="31" column="10" bodyfile="src/bt_actions/get_float_topic.cpp" bodystart="51" bodyend="54"/>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a6856cdda991c83d163ca9de34677bc5a" compoundref="get__float__topic_8hpp" startline="38">data_received_</references>
+        <references refid="classmercury__autonomy_1_1GetFloatTopic_1a07ba5081852e6a1a7cb15817b2003551" compoundref="get__float__topic_8hpp" startline="37">sub_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetFloatTopic_1aa860b1e27c458015d427484e4f0db9b8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::GetFloatTopic::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="21" column="26" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="21" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetFloatTopic_1a48e9c273428e11035a9ebefac0c63b0c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetFloatTopic::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="34" column="10" bodyfile="src/bt_actions/get_float_topic.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_autonomy::GetFloatTopic</label>
+        <link refid="classmercury__autonomy_1_1GetFloatTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_autonomy::GetFloatTopic</label>
+        <link refid="classmercury__autonomy_1_1GetFloatTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/get_float_topic.hpp" line="16" column="1" bodyfile="include/mercury_autonomy/bt_actions/get_float_topic.hpp" bodystart="16" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a6856cdda991c83d163ca9de34677bc5a" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>data_received_</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a679b15a8f79dad53e3e05ff42b810aab" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>GetFloatTopic</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1af32d79527596fc2784b76d92941d7b4c" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a1d28b0f160ee7ea66f18b030c018fb5a" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a86d694a63525888ea4f8f1c18dca48e3" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1aa860b1e27c458015d427484e4f0db9b8" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a50bae1120c2ad3ef581ec6a6bc5c23fe" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>received_value_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a48e9c273428e11035a9ebefac0c63b0c" prot="protected" virt="virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1af2dbee18c5569f86c0d60f427cb934d6" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a07ba5081852e6a1a7cb15817b2003551" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>sub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1GetFloatTopic_1a8132dd412e28f34ce1b89bbc03206a73" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>timeout_sec_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::GetFloatTopic</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

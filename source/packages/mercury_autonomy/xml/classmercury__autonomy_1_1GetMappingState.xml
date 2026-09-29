@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1GetMappingState" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::GetMappingState</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="get__mapping__state_8hpp" local="no">get_mapping_state.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetMappingState_1a8e6247884383ed3fa04e056f99b99405" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; mercury_msgs::msg::MappingTargetInfo &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;mercury_msgs::msg::MappingTargetInfo&gt;::SharedPtr mercury_autonomy::GetMappingState::sub_</definition>
+        <argsstring></argsstring>
+        <name>sub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="35" column="38" bodyfile="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a6bb6aad9588f5764017f76b18458ce73" compoundref="get__mapping__state_8cpp" startline="11" endline="17">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetMappingState_1a1a21a461e201d5134b2c0001db44ea1c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mercury_autonomy::GetMappingState::msg_received_</definition>
+        <argsstring></argsstring>
+        <name>msg_received_</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="36" column="10" bodyfile="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a9e11912568c7c5bf3bc12635692e09f5" compoundref="get__mapping__state_8cpp" startline="25" endline="41">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1aae84337ee13904e93fd7774ca55f8912" compoundref="get__mapping__state_8cpp" startline="19" endline="23">onStart</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a6bb6aad9588f5764017f76b18458ce73" compoundref="get__mapping__state_8cpp" startline="11" endline="17">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetMappingState_1a3f3b1b2d9575ba53064bddce588de40c" prot="private" static="no" mutable="no">
+        <type>mercury_msgs::msg::MappingTargetInfo</type>
+        <definition>mercury_msgs::msg::MappingTargetInfo mercury_autonomy::GetMappingState::latest_msg_</definition>
+        <argsstring></argsstring>
+        <name>latest_msg_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="37" column="42" bodyfile="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a9e11912568c7c5bf3bc12635692e09f5" compoundref="get__mapping__state_8cpp" startline="25" endline="41">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a6bb6aad9588f5764017f76b18458ce73" compoundref="get__mapping__state_8cpp" startline="11" endline="17">rosInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1GetMappingState_1a9a8d8d7c16358e938b6c64df3c9214c4" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mercury_autonomy::GetMappingState::start_time_</definition>
+        <argsstring></argsstring>
+        <name>start_time_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="38" column="18" bodyfile="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1a9e11912568c7c5bf3bc12635692e09f5" compoundref="get__mapping__state_8cpp" startline="25" endline="41">onRunning</referencedby>
+        <referencedby refid="classmercury__autonomy_1_1GetMappingState_1aae84337ee13904e93fd7774ca55f8912" compoundref="get__mapping__state_8cpp" startline="19" endline="23">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetMappingState_1af123bb22a28b1057e0b33354ea395fc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::GetMappingState::GetMappingState</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>GetMappingState</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="17" column="5" bodyfile="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetMappingState_1aae84337ee13904e93fd7774ca55f8912" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetMappingState::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="27" column="20" bodyfile="src/bt_actions/get_mapping_state.cpp" bodystart="19" bodyend="23"/>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a1a21a461e201d5134b2c0001db44ea1c" compoundref="get__mapping__state_8hpp" startline="36">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a9a8d8d7c16358e938b6c64df3c9214c4" compoundref="get__mapping__state_8hpp" startline="38">start_time_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetMappingState_1a9e11912568c7c5bf3bc12635692e09f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::GetMappingState::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="28" column="20" bodyfile="src/bt_actions/get_mapping_state.cpp" bodystart="25" bodyend="41"/>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a3f3b1b2d9575ba53064bddce588de40c" compoundref="get__mapping__state_8hpp" startline="37">latest_msg_</references>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a1a21a461e201d5134b2c0001db44ea1c" compoundref="get__mapping__state_8hpp" startline="36">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a9a8d8d7c16358e938b6c64df3c9214c4" compoundref="get__mapping__state_8hpp" startline="38">start_time_</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetMappingState_1a30d4f0edd5edf612c198c4fc281d3eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetMappingState::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="29" column="10" bodyfile="src/bt_actions/get_mapping_state.cpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetMappingState_1a281b107c7d1c49b0c5a1711a3fa25751" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::GetMappingState::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="20" column="26" bodyfile="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1GetMappingState_1a6bb6aad9588f5764017f76b18458ce73" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::GetMappingState::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="32" column="10" bodyfile="src/bt_actions/get_mapping_state.cpp" bodystart="11" bodyend="17"/>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a3f3b1b2d9575ba53064bddce588de40c" compoundref="get__mapping__state_8hpp" startline="37">latest_msg_</references>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a1a21a461e201d5134b2c0001db44ea1c" compoundref="get__mapping__state_8hpp" startline="36">msg_received_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+        <references refid="classmercury__autonomy_1_1GetMappingState_1a8e6247884383ed3fa04e056f99b99405" compoundref="get__mapping__state_8hpp" startline="35">sub_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::GetMappingState</label>
+        <link refid="classmercury__autonomy_1_1GetMappingState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::GetMappingState</label>
+        <link refid="classmercury__autonomy_1_1GetMappingState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" line="15" column="1" bodyfile="include/mercury_autonomy/bt_actions/get_mapping_state.hpp" bodystart="15" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1af123bb22a28b1057e0b33354ea395fc4" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>GetMappingState</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a3f3b1b2d9575ba53064bddce588de40c" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>latest_msg_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a1a21a461e201d5134b2c0001db44ea1c" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>msg_received_</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a30d4f0edd5edf612c198c4fc281d3eb0" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a9e11912568c7c5bf3bc12635692e09f5" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1aae84337ee13904e93fd7774ca55f8912" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a281b107c7d1c49b0c5a1711a3fa25751" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a6bb6aad9588f5764017f76b18458ce73" prot="protected" virt="virtual"><scope>mercury_autonomy::GetMappingState</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a9a8d8d7c16358e938b6c64df3c9214c4" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>start_time_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1GetMappingState_1a8e6247884383ed3fa04e056f99b99405" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>sub_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::GetMappingState</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::GetMappingState</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::GetMappingState</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

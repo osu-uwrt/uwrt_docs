@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode" kind="class" language="Python" prot="public">
+    <compoundname>mercury_camera::picture_taker::ImageCaptureNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Node</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2c55af9a615cd4a39c10164e66639c13" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::robot_namespace</definition>
+        <argsstring></argsstring>
+        <name>robot_namespace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="28" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abb3e894578c47aa7362e67ab622ff53e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::camera_name</definition>
+        <argsstring></argsstring>
+        <name>camera_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="30" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2a4b20adc4dc932c793319e39d99ab57" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::save_directory</definition>
+        <argsstring></argsstring>
+        <name>save_directory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="32" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" compoundref="picture__taker_8py" startline="157" endline="242">mercury_camera.picture_taker.ImageCaptureNode.capture_image_callback</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a5b82c9a9153f386c13c6ceefb6b7080b" compoundref="picture__taker_8py" startline="74" endline="84">mercury_camera.picture_taker.ImageCaptureNode.create_save_dir</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aef5247ba8c71b6b2d8d30c3ecc88ea49" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::subscription_enabled</definition>
+        <argsstring></argsstring>
+        <name>subscription_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="34" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a552f2afdf3947b3f720b5cdf19d1f0b9" compoundref="picture__taker_8py" startline="243" endline="272">mercury_camera.picture_taker.ImageCaptureNode.enable_subscription_callback</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" compoundref="picture__taker_8py" startline="99" endline="129">mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1ae9553ba9c55f130417ba6d96355e43b8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::save_stereo</definition>
+        <argsstring></argsstring>
+        <name>save_stereo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="36" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" compoundref="picture__taker_8py" startline="157" endline="242">mercury_camera.picture_taker.ImageCaptureNode.capture_image_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a24b5b4e8e0497d83c419e31652647937" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::save_split</definition>
+        <argsstring></argsstring>
+        <name>save_split</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="38" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" compoundref="picture__taker_8py" startline="157" endline="242">mercury_camera.picture_taker.ImageCaptureNode.capture_image_callback</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a5b82c9a9153f386c13c6ceefb6b7080b" compoundref="picture__taker_8py" startline="74" endline="84">mercury_camera.picture_taker.ImageCaptureNode.create_save_dir</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a7370e77ba9498dba790a75d5d1922065" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::image_topic</definition>
+        <argsstring></argsstring>
+        <name>image_topic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="42" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" compoundref="picture__taker_8py" startline="130" endline="141">mercury_camera.picture_taker.ImageCaptureNode.create_image_subscriber</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" compoundref="picture__taker_8py" startline="99" endline="129">mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1adfbb4160db343a2955cedf8dc6bcf95d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::bridge</definition>
+        <argsstring></argsstring>
+        <name>bridge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="47" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aeef0faf4d91fe23c104e9367112f2a81" compoundref="picture__taker_8py" startline="149" endline="156">mercury_camera.picture_taker.ImageCaptureNode.image_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a83ed7c4a507fb15274e9e02638fdfe99" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::latest_image</definition>
+        <argsstring></argsstring>
+        <name>latest_image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="50" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" compoundref="picture__taker_8py" startline="157" endline="242">mercury_camera.picture_taker.ImageCaptureNode.capture_image_callback</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aeef0faf4d91fe23c104e9367112f2a81" compoundref="picture__taker_8py" startline="149" endline="156">mercury_camera.picture_taker.ImageCaptureNode.image_callback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abd65bc66f19a605f4515cd2f572542e9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::image_subscriber</definition>
+        <argsstring></argsstring>
+        <name>image_subscriber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="51" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" compoundref="picture__taker_8py" startline="130" endline="141">mercury_camera.picture_taker.ImageCaptureNode.create_image_subscriber</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1afe2dc5f349d67a1c883ebd9325a80614" compoundref="picture__taker_8py" startline="142" endline="148">mercury_camera.picture_taker.ImageCaptureNode.destroy_image_subscriber</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" compoundref="picture__taker_8py" startline="99" endline="129">mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a58bce883454839abc3ee962ebcbce7f5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::capture_service</definition>
+        <argsstring></argsstring>
+        <name>capture_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="61" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a0f1bd0b0e31835da94fd159599f2495a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_camera.picture_taker.ImageCaptureNode::enable_subscription_service</definition>
+        <argsstring></argsstring>
+        <name>enable_subscription_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="68" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a999f585899d31d020856c5ef6d83c865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="15" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="15" bodyend="73"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1add176b23e0fab9dcdb86184ec6fed12b" compoundref="picture__taker_8py" startline="85" endline="98">mercury_camera.picture_taker.ImageCaptureNode.on_param_change</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a5b82c9a9153f386c13c6ceefb6b7080b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.create_save_dir</definition>
+        <argsstring>(self)</argsstring>
+        <name>create_save_dir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="74" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="74" bodyend="84"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2a4b20adc4dc932c793319e39d99ab57" compoundref="picture__taker_8py" startline="32">mercury_camera.picture_taker.ImageCaptureNode.save_directory</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a24b5b4e8e0497d83c419e31652647937" compoundref="picture__taker_8py" startline="38">mercury_camera.picture_taker.ImageCaptureNode.save_split</references>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" compoundref="picture__taker_8py" startline="157" endline="242">mercury_camera.picture_taker.ImageCaptureNode.capture_image_callback</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" compoundref="picture__taker_8py" startline="99" endline="129">mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1add176b23e0fab9dcdb86184ec6fed12b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.on_param_change</definition>
+        <argsstring>(self, params)</argsstring>
+        <name>on_param_change</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="85" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="85" bodyend="98"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" compoundref="picture__taker_8py" startline="99" endline="129">mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</references>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a999f585899d31d020856c5ef6d83c865" compoundref="picture__taker_8py" startline="15" endline="73">mercury_camera.picture_taker.ImageCaptureNode.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</definition>
+        <argsstring>(self, params)</argsstring>
+        <name>handle_param_update</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>params</type>
+          <defname>params</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="99" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="99" bodyend="129"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" compoundref="picture__taker_8py" startline="130" endline="141">mercury_camera.picture_taker.ImageCaptureNode.create_image_subscriber</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a5b82c9a9153f386c13c6ceefb6b7080b" compoundref="picture__taker_8py" startline="74" endline="84">mercury_camera.picture_taker.ImageCaptureNode.create_save_dir</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1afe2dc5f349d67a1c883ebd9325a80614" compoundref="picture__taker_8py" startline="142" endline="148">mercury_camera.picture_taker.ImageCaptureNode.destroy_image_subscriber</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abd65bc66f19a605f4515cd2f572542e9" compoundref="picture__taker_8py" startline="51">mercury_camera.picture_taker.ImageCaptureNode.image_subscriber</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a7370e77ba9498dba790a75d5d1922065" compoundref="picture__taker_8py" startline="42">mercury_camera.picture_taker.ImageCaptureNode.image_topic</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aef5247ba8c71b6b2d8d30c3ecc88ea49" compoundref="picture__taker_8py" startline="34">mercury_camera.picture_taker.ImageCaptureNode.subscription_enabled</references>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1add176b23e0fab9dcdb86184ec6fed12b" compoundref="picture__taker_8py" startline="85" endline="98">mercury_camera.picture_taker.ImageCaptureNode.on_param_change</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.create_image_subscriber</definition>
+        <argsstring>(self)</argsstring>
+        <name>create_image_subscriber</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create the image subscriber</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="130" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="130" bodyend="141"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aeef0faf4d91fe23c104e9367112f2a81" compoundref="picture__taker_8py" startline="149" endline="156">mercury_camera.picture_taker.ImageCaptureNode.image_callback</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abd65bc66f19a605f4515cd2f572542e9" compoundref="picture__taker_8py" startline="51">mercury_camera.picture_taker.ImageCaptureNode.image_subscriber</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a7370e77ba9498dba790a75d5d1922065" compoundref="picture__taker_8py" startline="42">mercury_camera.picture_taker.ImageCaptureNode.image_topic</references>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a552f2afdf3947b3f720b5cdf19d1f0b9" compoundref="picture__taker_8py" startline="243" endline="272">mercury_camera.picture_taker.ImageCaptureNode.enable_subscription_callback</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" compoundref="picture__taker_8py" startline="99" endline="129">mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1afe2dc5f349d67a1c883ebd9325a80614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.destroy_image_subscriber</definition>
+        <argsstring>(self)</argsstring>
+        <name>destroy_image_subscriber</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Destroy the image subscriber</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="142" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="142" bodyend="148"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abd65bc66f19a605f4515cd2f572542e9" compoundref="picture__taker_8py" startline="51">mercury_camera.picture_taker.ImageCaptureNode.image_subscriber</references>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a552f2afdf3947b3f720b5cdf19d1f0b9" compoundref="picture__taker_8py" startline="243" endline="272">mercury_camera.picture_taker.ImageCaptureNode.enable_subscription_callback</referencedby>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" compoundref="picture__taker_8py" startline="99" endline="129">mercury_camera.picture_taker.ImageCaptureNode.handle_param_update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aeef0faf4d91fe23c104e9367112f2a81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.image_callback</definition>
+        <argsstring>(self, msg)</argsstring>
+        <name>image_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="149" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="149" bodyend="156"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1adfbb4160db343a2955cedf8dc6bcf95d" compoundref="picture__taker_8py" startline="47">mercury_camera.picture_taker.ImageCaptureNode.bridge</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a83ed7c4a507fb15274e9e02638fdfe99" compoundref="picture__taker_8py" startline="50">mercury_camera.picture_taker.ImageCaptureNode.latest_image</references>
+        <referencedby refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" compoundref="picture__taker_8py" startline="130" endline="141">mercury_camera.picture_taker.ImageCaptureNode.create_image_subscriber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.capture_image_callback</definition>
+        <argsstring>(self, request, response)</argsstring>
+        <name>capture_image_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <param>
+          <type>response</type>
+          <defname>response</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="157" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="157" bodyend="242"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a5b82c9a9153f386c13c6ceefb6b7080b" compoundref="picture__taker_8py" startline="74" endline="84">mercury_camera.picture_taker.ImageCaptureNode.create_save_dir</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a83ed7c4a507fb15274e9e02638fdfe99" compoundref="picture__taker_8py" startline="50">mercury_camera.picture_taker.ImageCaptureNode.latest_image</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2a4b20adc4dc932c793319e39d99ab57" compoundref="picture__taker_8py" startline="32">mercury_camera.picture_taker.ImageCaptureNode.save_directory</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a24b5b4e8e0497d83c419e31652647937" compoundref="picture__taker_8py" startline="38">mercury_camera.picture_taker.ImageCaptureNode.save_split</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1ae9553ba9c55f130417ba6d96355e43b8" compoundref="picture__taker_8py" startline="36">mercury_camera.picture_taker.ImageCaptureNode.save_stereo</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a552f2afdf3947b3f720b5cdf19d1f0b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_camera.picture_taker.ImageCaptureNode.enable_subscription_callback</definition>
+        <argsstring>(self, request, response)</argsstring>
+        <name>enable_subscription_callback</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <param>
+          <type>response</type>
+          <defname>response</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle enable/disable subscription service calls</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_camera/picture_taker.py" line="243" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="243" bodyend="272"/>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" compoundref="picture__taker_8py" startline="130" endline="141">mercury_camera.picture_taker.ImageCaptureNode.create_image_subscriber</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1afe2dc5f349d67a1c883ebd9325a80614" compoundref="picture__taker_8py" startline="142" endline="148">mercury_camera.picture_taker.ImageCaptureNode.destroy_image_subscriber</references>
+        <references refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aef5247ba8c71b6b2d8d30c3ecc88ea49" compoundref="picture__taker_8py" startline="34">mercury_camera.picture_taker.ImageCaptureNode.subscription_enabled</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mercury_camera.picture_taker.ImageCaptureNode</label>
+        <link refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_camera.picture_taker.ImageCaptureNode</label>
+        <link refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_camera/picture_taker.py" line="14" column="1" bodyfile="mercury_camera/picture_taker.py" bodystart="14" bodyend="273"/>
+    <listofallmembers>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a999f585899d31d020856c5ef6d83c865" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>__init__</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1adfbb4160db343a2955cedf8dc6bcf95d" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>bridge</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abb3e894578c47aa7362e67ab622ff53e" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>camera_name</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1af8c8e0e62c9075f747e689e080ea5c0d" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>capture_image_callback</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a58bce883454839abc3ee962ebcbce7f5" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>capture_service</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a144ae5661ff73b0cf6cb6df804e289ef" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>create_image_subscriber</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a5b82c9a9153f386c13c6ceefb6b7080b" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>create_save_dir</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1afe2dc5f349d67a1c883ebd9325a80614" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>destroy_image_subscriber</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a552f2afdf3947b3f720b5cdf19d1f0b9" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>enable_subscription_callback</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a0f1bd0b0e31835da94fd159599f2495a" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>enable_subscription_service</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a8bbe6175084fa0d450d633fce71c52de" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>handle_param_update</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aeef0faf4d91fe23c104e9367112f2a81" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>image_callback</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1abd65bc66f19a605f4515cd2f572542e9" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>image_subscriber</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a7370e77ba9498dba790a75d5d1922065" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>image_topic</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a83ed7c4a507fb15274e9e02638fdfe99" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>latest_image</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1add176b23e0fab9dcdb86184ec6fed12b" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>on_param_change</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2c55af9a615cd4a39c10164e66639c13" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>robot_namespace</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a2a4b20adc4dc932c793319e39d99ab57" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>save_directory</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1a24b5b4e8e0497d83c419e31652647937" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>save_split</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1ae9553ba9c55f130417ba6d96355e43b8" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>save_stereo</name></member>
+      <member refid="classmercury__camera_1_1picture__taker_1_1ImageCaptureNode_1aef5247ba8c71b6b2d8d30c3ecc88ea49" prot="public" virt="non-virtual"><scope>mercury_camera::picture_taker::ImageCaptureNode</scope><name>subscription_enabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

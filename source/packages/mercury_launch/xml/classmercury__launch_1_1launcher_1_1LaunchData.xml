@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__launch_1_1launcher_1_1LaunchData" kind="class" language="Python" prot="public">
+    <compoundname>mercury_launch::launcher::LaunchData</compoundname>
+    <innerclass refid="classmercury__launch_1_1launcher_1_1LaunchData_1_1LaunchTopic" prot="public">mercury_launch::launcher::LaunchData::LaunchTopic</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1ab35074ce4f8b8dd713e6d7de80b323cd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::output_websockets</definition>
+        <argsstring></argsstring>
+        <name>output_websockets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="332" column="1" bodyfile="mercury_launch/launcher.py" bodystart="332" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" compoundref="launcher_8py" startline="392" endline="426">mercury_launch.launcher.LaunchData._launch_monitor_task</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a37c7e6d4241011a77869fa91dded3012" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="335" column="1" bodyfile="mercury_launch/launcher.py" bodystart="335" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" compoundref="launcher_8py" startline="626" endline="638">mercury_launch.launcher.LaunchData.perform_launch</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="342" column="1" bodyfile="mercury_launch/launcher.py" bodystart="342" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" compoundref="launcher_8py" startline="392" endline="426">mercury_launch.launcher.LaunchData._launch_monitor_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ac5e4de6d24880ee13cdbd3b47231c365" compoundref="launcher_8py" startline="600" endline="602">mercury_launch.launcher.LaunchData.can_launch</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a78bad27c82fdc837745cff6492a809eb" compoundref="launcher_8py" startline="604" endline="606">mercury_launch.launcher.LaunchData.can_terminate</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" compoundref="launcher_8py" startline="626" endline="638">mercury_launch.launcher.LaunchData.perform_launch</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a2da9fbb09c69f6347ba416c9bda84e0f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::is_zombie</definition>
+        <argsstring></argsstring>
+        <name>is_zombie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="343" column="1" bodyfile="mercury_launch/launcher.py" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a77c3ac26b428d5684e66312532f98f64" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="354" column="1" bodyfile="mercury_launch/launcher.py" bodystart="354" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1ac916dcee34a4804d7e05532cb30ecc0f" compoundref="launcher_8py" startline="1124" endline="1134">mercury_launch.launcher.LaunchServer._keyboard_int_handler</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1adc347c7bffa9f5033fa7bccb281058e2" compoundref="launcher_8py" startline="372" endline="391">mercury_launch.launcher.LaunchData._monitor_monitor_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1abc2bd712ac9958a48abe51bf50de9d67" compoundref="launcher_8py" startline="1175" endline="1198">mercury_launch.launcher.LaunchServer.cleanup_launches</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a14a87d1380c7ff1c90380e6286aa19d9" compoundref="launcher_8py" startline="883" endline="909">mercury_launch.launcher.LaunchServer.handle_ws_connect_msg</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1ae8a130f43986c0c34ce53dbe4a059875" compoundref="launcher_8py" startline="910" endline="1008">mercury_launch.launcher.LaunchServer.handle_ws_msg</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1aa445725c39cdd2610218c68e288a1848" compoundref="launcher_8py" startline="766" endline="786">mercury_launch.launcher.LaunchServer.load_file</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a9b88d03d5f12fb9e6b5476e38c9ab237" compoundref="launcher_8py" startline="794" endline="853">mercury_launch.launcher.LaunchServer.run_discovery_server</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1adec91bac96e5dea2236d13c42e1ad0ee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::launch_procinfo</definition>
+        <argsstring></argsstring>
+        <name>launch_procinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="584" column="1" bodyfile="mercury_launch/launcher.py" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1ac86b3843cb69cb4e876244c6dca94877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::monitor_procinfo</definition>
+        <argsstring></argsstring>
+        <name>monitor_procinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="589" column="1" bodyfile="mercury_launch/launcher.py" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a01743398716d6929f0e94459a6461ff5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::_monitor_subproc</definition>
+        <argsstring></argsstring>
+        <name>_monitor_subproc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="357" column="1" bodyfile="mercury_launch/launcher.py" bodystart="357" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" compoundref="launcher_8py" startline="392" endline="426">mercury_launch.launcher.LaunchData._launch_monitor_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1adc347c7bffa9f5033fa7bccb281058e2" compoundref="launcher_8py" startline="372" endline="391">mercury_launch.launcher.LaunchData._monitor_monitor_task</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a8bc5dd3f425900b92a17ce7ca09f47a7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::_launch_subproc</definition>
+        <argsstring></argsstring>
+        <name>_launch_subproc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="358" column="1" bodyfile="mercury_launch/launcher.py" bodystart="358" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" compoundref="launcher_8py" startline="392" endline="426">mercury_launch.launcher.LaunchData._launch_monitor_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a6cdec7135fe7aed044ea93e87b2ee222" compoundref="launcher_8py" startline="581" endline="592">mercury_launch.launcher.LaunchData.update_process_map</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a55b538f76284fc0038eab7eeef7896d1" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::_broadcast_refresh_event</definition>
+        <argsstring></argsstring>
+        <name>_broadcast_refresh_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="366" column="1" bodyfile="mercury_launch/launcher.py" bodystart="366" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1adc347c7bffa9f5033fa7bccb281058e2" compoundref="launcher_8py" startline="372" endline="391">mercury_launch.launcher.LaunchData._monitor_monitor_task</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a433acd35868daa18ec8ca7c7bc1e0f7a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::_stop_launch_event</definition>
+        <argsstring></argsstring>
+        <name>_stop_launch_event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="464" column="1" bodyfile="mercury_launch/launcher.py" bodystart="464" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a7250da16b4328bea20d56729b9dfb3bf" compoundref="launcher_8py" startline="639" endline="646">mercury_launch.launcher.LaunchData.term_launch</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__launch_1_1launcher_1_1LaunchData_1a8e4f778c5eea42a4082d6102664ee4c5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>mercury_launch.launcher.LaunchData::_launch_task_inst</definition>
+        <argsstring></argsstring>
+        <name>_launch_task_inst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="618" column="1" bodyfile="mercury_launch/launcher.py" bodystart="618" bodyend="-1"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a29674076a80ec64e7ee07de113ea67bb" compoundref="launcher_8py" startline="608" endline="610">mercury_launch.launcher.LaunchData.is_alive</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1ad0dbd51e3b1d1cc0733270b3af315e90" compoundref="launcher_8py" startline="612" endline="625">mercury_launch.launcher.LaunchData.is_dead_zombie</referencedby>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" compoundref="launcher_8py" startline="626" endline="638">mercury_launch.launcher.LaunchData.perform_launch</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a31ebc408507de694869307221470b63e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.__init__</definition>
+        <argsstring>(self, dict launch, &apos;logging.Logger&apos; parent_logger, &apos;asyncio.Event&apos; broadcast_refresh_event)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>launch</declname>
+        </param>
+        <param>
+          <type>&apos;logging.Logger&apos;</type>
+          <declname>parent_logger</declname>
+        </param>
+        <param>
+          <type>&apos;asyncio.Event&apos;</type>
+          <declname>broadcast_refresh_event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="331" column="1" bodyfile="mercury_launch/launcher.py" bodystart="331" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a6cdec7135fe7aed044ea93e87b2ee222" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.update_process_map</definition>
+        <argsstring>(self, &apos;dict[int, LinuxProcess]&apos; process_map)</argsstring>
+        <name>update_process_map</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&apos;dict&apos;</type>
+          <declname>process_map</declname>
+          <array>[int, LinuxProcess]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="581" column="1" bodyfile="mercury_launch/launcher.py" bodystart="581" bodyend="592"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8bc5dd3f425900b92a17ce7ca09f47a7" compoundref="launcher_8py" startline="358">mercury_launch.launcher.LaunchData._launch_subproc</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1ac5e4de6d24880ee13cdbd3b47231c365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.can_launch</definition>
+        <argsstring>(self)</argsstring>
+        <name>can_launch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="600" column="1" bodyfile="mercury_launch/launcher.py" bodystart="600" bodyend="602"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" compoundref="launcher_8py" startline="123">mercury_launch.launcher.LinuxProcess.state</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" compoundref="launcher_8py" startline="342">mercury_launch.launcher.LaunchData.state</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a78bad27c82fdc837745cff6492a809eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.can_terminate</definition>
+        <argsstring>(self)</argsstring>
+        <name>can_terminate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="604" column="1" bodyfile="mercury_launch/launcher.py" bodystart="604" bodyend="606"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" compoundref="launcher_8py" startline="123">mercury_launch.launcher.LinuxProcess.state</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" compoundref="launcher_8py" startline="342">mercury_launch.launcher.LaunchData.state</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a29674076a80ec64e7ee07de113ea67bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.is_alive</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_alive</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="608" column="1" bodyfile="mercury_launch/launcher.py" bodystart="608" bodyend="610"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8e4f778c5eea42a4082d6102664ee4c5" compoundref="launcher_8py" startline="618">mercury_launch.launcher.LaunchData._launch_task_inst</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1ad0dbd51e3b1d1cc0733270b3af315e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool mercury_launch.launcher.LaunchData.is_dead_zombie</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_dead_zombie</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="612" column="1" bodyfile="mercury_launch/launcher.py" bodystart="612" bodyend="625"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8e4f778c5eea42a4082d6102664ee4c5" compoundref="launcher_8py" startline="618">mercury_launch.launcher.LaunchData._launch_task_inst</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.perform_launch</definition>
+        <argsstring>(self)</argsstring>
+        <name>perform_launch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="626" column="1" bodyfile="mercury_launch/launcher.py" bodystart="626" bodyend="638"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8e4f778c5eea42a4082d6102664ee4c5" compoundref="launcher_8py" startline="618">mercury_launch.launcher.LaunchData._launch_task_inst</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a37c7e6d4241011a77869fa91dded3012" compoundref="launcher_8py" startline="335">mercury_launch.launcher.LaunchData.id</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" compoundref="launcher_8py" startline="123">mercury_launch.launcher.LinuxProcess.state</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" compoundref="launcher_8py" startline="342">mercury_launch.launcher.LaunchData.state</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a7250da16b4328bea20d56729b9dfb3bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData.term_launch</definition>
+        <argsstring>(self)</argsstring>
+        <name>term_launch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="639" column="1" bodyfile="mercury_launch/launcher.py" bodystart="639" bodyend="646"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a433acd35868daa18ec8ca7c7bc1e0f7a" compoundref="launcher_8py" startline="464">mercury_launch.launcher.LaunchData._stop_launch_event</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a133f1096c812c10f2bb40c2f8fec5184" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData._clear_monitored_topics</definition>
+        <argsstring>(self)</argsstring>
+        <name>_clear_monitored_topics</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="368" column="1" bodyfile="mercury_launch/launcher.py" bodystart="368" bodyend="371"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1adc347c7bffa9f5033fa7bccb281058e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData._monitor_monitor_task</definition>
+        <argsstring>(self)</argsstring>
+        <name>_monitor_monitor_task</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="372" column="1" bodyfile="mercury_launch/launcher.py" bodystart="372" bodyend="391"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a55b538f76284fc0038eab7eeef7896d1" compoundref="launcher_8py" startline="366">mercury_launch.launcher.LaunchData._broadcast_refresh_event</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a01743398716d6929f0e94459a6461ff5" compoundref="launcher_8py" startline="357">mercury_launch.launcher.LaunchData._monitor_subproc</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a77c3ac26b428d5684e66312532f98f64" compoundref="launcher_8py" startline="354">mercury_launch.launcher.LaunchData.logger</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a724e35d0827d9c57e2a87df63d074a54" compoundref="launcher_8py" startline="723">mercury_launch.launcher.LaunchServer.logger</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData._launch_monitor_task</definition>
+        <argsstring>(self)</argsstring>
+        <name>_launch_monitor_task</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="392" column="1" bodyfile="mercury_launch/launcher.py" bodystart="392" bodyend="426"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8bc5dd3f425900b92a17ce7ca09f47a7" compoundref="launcher_8py" startline="358">mercury_launch.launcher.LaunchData._launch_subproc</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a01743398716d6929f0e94459a6461ff5" compoundref="launcher_8py" startline="357">mercury_launch.launcher.LaunchData._monitor_subproc</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1ab35074ce4f8b8dd713e6d7de80b323cd" compoundref="launcher_8py" startline="332">mercury_launch.launcher.LaunchData.output_websockets</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" compoundref="launcher_8py" startline="123">mercury_launch.launcher.LinuxProcess.state</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" compoundref="launcher_8py" startline="342">mercury_launch.launcher.LaunchData.state</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData._launch_task</definition>
+        <argsstring>(self)</argsstring>
+        <name>_launch_task</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="427" column="1" bodyfile="mercury_launch/launcher.py" bodystart="427" bodyend="580"/>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a55b538f76284fc0038eab7eeef7896d1" compoundref="launcher_8py" startline="366">mercury_launch.launcher.LaunchData._broadcast_refresh_event</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a133f1096c812c10f2bb40c2f8fec5184" compoundref="launcher_8py" startline="368" endline="371">mercury_launch.launcher.LaunchData._clear_monitored_topics</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a26f5fa946db8b36d81e07a482960dc75" compoundref="launcher_8py" startline="593" endline="598">mercury_launch.launcher.LaunchData._gen_monitor_cmd_args</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8bc5dd3f425900b92a17ce7ca09f47a7" compoundref="launcher_8py" startline="358">mercury_launch.launcher.LaunchData._launch_subproc</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a01743398716d6929f0e94459a6461ff5" compoundref="launcher_8py" startline="357">mercury_launch.launcher.LaunchData._monitor_subproc</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a77c3ac26b428d5684e66312532f98f64" compoundref="launcher_8py" startline="354">mercury_launch.launcher.LaunchData.logger</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchServer_1a724e35d0827d9c57e2a87df63d074a54" compoundref="launcher_8py" startline="723">mercury_launch.launcher.LaunchServer.logger</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LinuxProcess_1a1dfccf09080c8f6901b80069ca7f24f3" compoundref="launcher_8py" startline="123">mercury_launch.launcher.LinuxProcess.state</references>
+        <references refid="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" compoundref="launcher_8py" startline="342">mercury_launch.launcher.LaunchData.state</references>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" compoundref="launcher_8py" startline="626" endline="638">mercury_launch.launcher.LaunchData.perform_launch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__launch_1_1launcher_1_1LaunchData_1a26f5fa946db8b36d81e07a482960dc75" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def mercury_launch.launcher.LaunchData._gen_monitor_cmd_args</definition>
+        <argsstring>(self)</argsstring>
+        <name>_gen_monitor_cmd_args</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_launch/launcher.py" line="593" column="1" bodyfile="mercury_launch/launcher.py" bodystart="593" bodyend="598"/>
+        <referencedby refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" compoundref="launcher_8py" startline="427" endline="580">mercury_launch.launcher.LaunchData._launch_task</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mercury_launch.launcher.LaunchData</label>
+        <link refid="classmercury__launch_1_1launcher_1_1LaunchData"/>
+      </node>
+    </collaborationgraph>
+    <location file="mercury_launch/launcher.py" line="304" column="1" bodyfile="mercury_launch/launcher.py" bodystart="304" bodyend="647"/>
+    <listofallmembers>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a31ebc408507de694869307221470b63e" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>__init__</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a55b538f76284fc0038eab7eeef7896d1" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_broadcast_refresh_event</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a133f1096c812c10f2bb40c2f8fec5184" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_clear_monitored_topics</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a26f5fa946db8b36d81e07a482960dc75" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_gen_monitor_cmd_args</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ae71456252e72624040c27228b0e03908" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_launch_monitor_task</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8bc5dd3f425900b92a17ce7ca09f47a7" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_launch_subproc</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a359c1a88a7c6352023432fb03483dcc3" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_launch_task</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a8e4f778c5eea42a4082d6102664ee4c5" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_launch_task_inst</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1adc347c7bffa9f5033fa7bccb281058e2" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_monitor_monitor_task</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a01743398716d6929f0e94459a6461ff5" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_monitor_subproc</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a433acd35868daa18ec8ca7c7bc1e0f7a" prot="private" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>_stop_launch_event</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ac5e4de6d24880ee13cdbd3b47231c365" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>can_launch</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a78bad27c82fdc837745cff6492a809eb" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>can_terminate</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a37c7e6d4241011a77869fa91dded3012" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>id</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a29674076a80ec64e7ee07de113ea67bb" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>is_alive</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ad0dbd51e3b1d1cc0733270b3af315e90" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>is_dead_zombie</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a2da9fbb09c69f6347ba416c9bda84e0f" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>is_zombie</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1adec91bac96e5dea2236d13c42e1ad0ee" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>launch_procinfo</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a77c3ac26b428d5684e66312532f98f64" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>logger</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ac86b3843cb69cb4e876244c6dca94877" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>monitor_procinfo</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1ab35074ce4f8b8dd713e6d7de80b323cd" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>output_websockets</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a19b3fa535329f9bb51a7c35fdcdcff21" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>perform_launch</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a60e9635634a18befdf38370bc7a8de98" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>state</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a7250da16b4328bea20d56729b9dfb3bf" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>term_launch</name></member>
+      <member refid="classmercury__launch_1_1launcher_1_1LaunchData_1a6cdec7135fe7aed044ea93e87b2ee222" prot="public" virt="non-virtual"><scope>mercury_launch::launcher::LaunchData</scope><name>update_process_map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

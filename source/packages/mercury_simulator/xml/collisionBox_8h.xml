@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="collisionBox_8h" kind="file" language="C++">
+    <compoundname>collisionBox.h</compoundname>
+    <includes local="no">eigen3/Eigen/Dense</includes>
+    <includes local="no">eigen3/Eigen/Geometry</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="settings_8h" local="yes">mercury_simulator/settings.h</includes>
+    <includedby refid="collisionBox__class_8cpp" local="yes">src/collisionBox_class.cpp</includedby>
+    <includedby refid="physics__simulator_8cpp" local="yes">src/physics_simulator.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>mercury_simulator/settings.h</label>
+        <link refid="settings_8h"/>
+      </node>
+      <node id="2">
+        <label>eigen3/Eigen/Dense</label>
+      </node>
+      <node id="1">
+        <label>include/mercury_simulator/collisionBox.h</label>
+        <link refid="collisionBox_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>eigen3/Eigen/Geometry</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>src/physics_simulator.cpp</label>
+        <link refid="physics__simulator_8cpp"/>
+      </node>
+      <node id="1">
+        <label>include/mercury_simulator/collisionBox.h</label>
+        <link refid="collisionBox_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/collisionBox_class.cpp</label>
+        <link refid="collisionBox__class_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcollisionBox" prot="public">collisionBox</innerclass>
+    <innerclass refid="structcollisionResult" prot="public">collisionResult</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" prot="public" static="no">
+        <type>Eigen::Vector3d</type>
+        <definition>typedef Eigen::Vector3d v3d</definition>
+        <argsstring></argsstring>
+        <name>v3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="9" column="25" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="collisionBox_8h_1ad5927ba2ed6ed21c343fdcbeeb2e85a1" prot="public" static="no">
+        <type>Eigen::Vector4d</type>
+        <definition>typedef Eigen::Vector4d v4d</definition>
+        <argsstring></argsstring>
+        <name>v4d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="10" column="25" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" prot="public" static="no">
+        <type>Eigen::VectorXd</type>
+        <definition>typedef Eigen::VectorXd vXd</definition>
+        <argsstring></argsstring>
+        <name>vXd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="11" column="25" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="collisionBox_8h_1aebfa12b5a94afd60212025aea8e8e836" prot="public" static="no">
+        <type>Eigen::Matrix3d</type>
+        <definition>typedef Eigen::Matrix3d m3d</definition>
+        <argsstring></argsstring>
+        <name>m3d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="12" column="25" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="collisionBox_8h_1a060ff75b25756b9e4f860d907c7728f2" prot="public" static="no">
+        <type>Eigen::MatrixXd</type>
+        <definition>typedef Eigen::MatrixXd mXd</definition>
+        <argsstring></argsstring>
+        <name>mXd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="13" column="25" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" prot="public" static="no">
+        <type>Eigen::Quaterniond</type>
+        <definition>typedef Eigen::Quaterniond quat</definition>
+        <argsstring></argsstring>
+        <name>quat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_simulator/collisionBox.h" line="14" column="28" bodyfile="include/mercury_simulator/collisionBox.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;eigen3/Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;eigen3/Eigen/Geometry&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="settings_8h" kindref="compound">mercury_simulator/settings.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::string,<sp/>std::cout,<sp/>std::endl;</highlight></codeline>
+<codeline lineno="9" refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Vector3d<sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref>;</highlight></codeline>
+<codeline lineno="10" refid="collisionBox_8h_1ad5927ba2ed6ed21c343fdcbeeb2e85a1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Vector4d<sp/><ref refid="collisionBox_8h_1ad5927ba2ed6ed21c343fdcbeeb2e85a1" kindref="member">v4d</ref>;</highlight></codeline>
+<codeline lineno="11" refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::VectorXd<sp/><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref>;</highlight></codeline>
+<codeline lineno="12" refid="collisionBox_8h_1aebfa12b5a94afd60212025aea8e8e836" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Matrix3d<sp/><ref refid="collisionBox_8h_1aebfa12b5a94afd60212025aea8e8e836" kindref="member">m3d</ref>;</highlight></codeline>
+<codeline lineno="13" refid="collisionBox_8h_1a060ff75b25756b9e4f860d907c7728f2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::MatrixXd<sp/><ref refid="collisionBox_8h_1a060ff75b25756b9e4f860d907c7728f2" kindref="member">mXd</ref>;</highlight></codeline>
+<codeline lineno="14" refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>Eigen::Quaterniond<sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classcollisionBox" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcollisionBox" kindref="compound">collisionBox</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcollisionBox_1a85fdb996b2e72410f8d7309e3c981ba5" kindref="member">collisionBox</ref>(</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name_,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>length_,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>width_,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>height_,<sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>baseCenter,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>baseOffset_<sp/>=<sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref>(0,<sp/>0,<sp/>0),<sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref><sp/>baseOrientation<sp/>=<sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref>(1,<sp/>0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref><sp/>baseOrientationOffset_<sp/>=<sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref>(1,<sp/>0,<sp/>0,<sp/>0));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="classcollisionBox_1ae4bfcce5d557b544ad97969e26008d93" kindref="member">getCenter</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1a3bc9ac05e20acd083fad2484866aaba9" kindref="member">getWidth</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1a442146d26324fefe3c3c991a47426994" kindref="member">getHeight</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1a41f32e2cb5f933a52d731cbba6d446b5" kindref="member">getLength</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1aebfa12b5a94afd60212025aea8e8e836" kindref="member">m3d</ref><sp/><ref refid="classcollisionBox_1a2caba1de4c223d44a39e0ddd122530ec" kindref="member">rotationMatrix</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref><sp/><ref refid="classcollisionBox_1ad63fda60bff8e750d7a750a91df064f7" kindref="member">getOrientation</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcollisionBox_1a4bce5a1daf7f3b34cecf9a7bb6358362" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="classcollisionBox_1aa9e71845bd9009ed44c6a25c1bc30bcf" kindref="member">getAxis</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="31" refid="classcollisionBox_1ad6640e855f037acb74b3e785784d1b0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1ad6640e855f037acb74b3e785784d1b0a" kindref="member">setCenter</ref>(<ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>center_);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="classcollisionBox_1afe5111420fbc377f6917f156a4a3011c" kindref="member">maxVertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>&amp;<sp/>axis);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="classcollisionBox_1a32db73fc2fe9e591718f7078d4e70738" kindref="member">minVertex</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>&amp;<sp/>axis);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1a7eea4febc2bc6926feba87453991be4a" kindref="member">isInBox</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>&amp;<sp/>point);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="classcollisionBox_1a00e2dc02f4aac6958fa7583bd984966c" kindref="member">moveInBox</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>&amp;<sp/>point);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1abbd721f8fe9c4d41eef0ae9ee9c943cc" kindref="member">updateLocation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="collisionBox_8h_1ab0d2b060915be998c84ea23fc2e72120" kindref="member">vXd</ref><sp/>&amp;<sp/>state);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1ad0f782b7078fa2a13b780dd29521759a" kindref="member">maxProjection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>&amp;<sp/>axis);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1a65a8f2dc5a62a854b0505d6e8843c3be" kindref="member">minProjection</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/>&amp;<sp/>axis);</highlight></codeline>
+<codeline lineno="39" refid="classcollisionBox_1afff6d08dc699a95d9191fae608cef7d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1afff6d08dc699a95d9191fae608cef7d1" kindref="member">setOrientation</ref>(<ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref><sp/>orientation_);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classcollisionBox_1a4e1064de5ec6a103028af705feca49fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1aebfa12b5a94afd60212025aea8e8e836" kindref="member">m3d</ref><sp/><ref refid="classcollisionBox_1a4e1064de5ec6a103028af705feca49fb" kindref="member">rotM</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classcollisionBox_1acdcc3b359f3c45cb0c48dcd26236b30e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="classcollisionBox_1acdcc3b359f3c45cb0c48dcd26236b30e" kindref="member">center</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classcollisionBox_1a8f3e69904df9dbe5f0a5c7518f1d88e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1a060ff75b25756b9e4f860d907c7728f2" kindref="member">mXd</ref><sp/><ref refid="classcollisionBox_1a8f3e69904df9dbe5f0a5c7518f1d88e6" kindref="member">vertices</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classcollisionBox_1a4d98aaa26935011f564ba08b3470bcda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1a4d98aaa26935011f564ba08b3470bcda" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classcollisionBox_1aa9c114c825e70a44870aec7d98f65513" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1aa9c114c825e70a44870aec7d98f65513" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classcollisionBox_1a00180f375e3269926e8a7729d52f8880" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1a00180f375e3269926e8a7729d52f8880" kindref="member">length</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classcollisionBox_1aea9e55e3be8bffb11f245e71c50e51c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="classcollisionBox_1aea9e55e3be8bffb11f245e71c50e51c5" kindref="member">baseOffset</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classcollisionBox_1a721bfd2c03ef415ee9c5c21563661b47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classcollisionBox_1a721bfd2c03ef415ee9c5c21563661b47" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classcollisionBox_1a626c6db73e1a9f9465334be9115ca95a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref><sp/><ref refid="classcollisionBox_1a626c6db73e1a9f9465334be9115ca95a" kindref="member">orientation</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcollisionBox_1ad5ddecf52b2cb3bd761e77e145164108" kindref="member">setVertices</ref>();</highlight></codeline>
+<codeline lineno="52" refid="classcollisionBox_1abf6730236a61fab3d6d7b6b00d55e0ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1abe8dad7f01a5aeac53ddffecdc16fbb5" kindref="member">quat</ref><sp/><ref refid="classcollisionBox_1abf6730236a61fab3d6d7b6b00d55e0ec" kindref="member">baseOrientationOffset</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structcollisionResult" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcollisionResult" kindref="compound">collisionResult</ref><sp/>{</highlight></codeline>
+<codeline lineno="56" refid="structcollisionResult_1a618d958aa5082aeec0a5a8fc208d7ea1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structcollisionResult_1a618d958aa5082aeec0a5a8fc208d7ea1" kindref="member">depth</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structcollisionResult_1a39fbed4c731ea28e2f1d36e0e676d2cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structcollisionResult_1a39fbed4c731ea28e2f1d36e0e676d2cd" kindref="member">collided</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structcollisionResult_1a436412ea808cb34c8bc4468038913ef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="structcollisionResult_1a436412ea808cb34c8bc4468038913ef8" kindref="member">unitDirection</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structcollisionResult_1ae60606e71f9fb13944847203b804b76e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="collisionBox_8h_1ae759807944b1131826acb7a6f126288d" kindref="member">v3d</ref><sp/><ref refid="structcollisionResult_1ae60606e71f9fb13944847203b804b76e" kindref="member">collisionPoint</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcollisionResult_1a1ccb11ebbbefd1ad45a3ae5549453d52" kindref="member">collisionResult</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/mercury_simulator/collisionBox.h"/>
+  </compounddef>
+</doxygen>

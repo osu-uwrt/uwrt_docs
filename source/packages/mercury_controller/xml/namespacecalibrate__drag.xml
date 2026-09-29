@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacecalibrate__drag" kind="namespace" language="Python">
+    <compoundname>calibrate_drag</compoundname>
+    <innerclass refid="classcalibrate__drag_1_1CalibrateDragNewActionServer" prot="public">calibrate_drag::CalibrateDragNewActionServer</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacecalibrate__drag_1ad103bee2159885ab49299f1401496a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def calibrate_drag.main</definition>
+        <argsstring>(args=None)</argsstring>
+        <name>main</name>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mercury_controller/calibrate_drag.py" line="231" column="1" bodyfile="mercury_controller/calibrate_drag.py" bodystart="231" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_controller/calibrate_drag.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

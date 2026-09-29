@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSimulinkModelClass" kind="class" language="C++" prot="public">
+    <compoundname>SimulinkModelClass</compoundname>
+    <includes refid="simulink__model_8hpp" local="no">simulink_model.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSimulinkModelClass_1afcf10e07484c47f1f22a40986a58eed5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SimulinkModelClass::modelActive</definition>
+        <argsstring></argsstring>
+        <name>modelActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="33" column="10" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" compoundref="simulink__model_8cpp" startline="69" endline="85">listAndSetModelParameters</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" compoundref="simulink__model_8cpp" startline="217" endline="247">reloadParametersCallback</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1aaf3fb17169f460ce16fd3b69c3fbea2e" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string SimulinkModelClass::fullNodeName</definition>
+        <argsstring></argsstring>
+        <name>fullNodeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="34" column="12" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classControllerOverseer" kindref="compound">ControllerOverseer</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ControllerOverseer&gt; SimulinkModelClass::overseer</definition>
+        <argsstring></argsstring>
+        <name>overseer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="37" column="21" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" compoundref="simulink__model_8cpp" startline="69" endline="85">listAndSetModelParameters</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" compoundref="simulink__model_8cpp" startline="217" endline="247">reloadParametersCallback</referencedby>
+        <referencedby refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a83ae069b25693abc76faadc1bb175a6d" compoundref="simulink__model_8cpp" startline="176" endline="201">setParametersDoneCallback</referencedby>
+        <referencedby refid="classSimulinkModelClass_1afd98e61b1d295379658cf24567247434" compoundref="simulink__model_8cpp" startline="8" endline="17">SimulinkModelClass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" prot="public" static="no" mutable="no">
+        <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+        <definition>string SimulinkModelClass::nodeName</definition>
+        <argsstring></argsstring>
+        <name>nodeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="38" column="12" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" compoundref="simulink__model_8cpp" startline="69" endline="85">listAndSetModelParameters</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" compoundref="simulink__model_8cpp" startline="217" endline="247">reloadParametersCallback</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a83ae069b25693abc76faadc1bb175a6d" compoundref="simulink__model_8cpp" startline="176" endline="201">setParametersDoneCallback</referencedby>
+        <referencedby refid="classSimulinkModelClass_1afd98e61b1d295379658cf24567247434" compoundref="simulink__model_8cpp" startline="8" endline="17">SimulinkModelClass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1aa7b56d379ace2a6451d2629137c76a2c" prot="public" static="no" mutable="no">
+        <type>std::unordered_set&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref> &gt;</type>
+        <definition>std::unordered_set&lt;string&gt; SimulinkModelClass::knownParams</definition>
+        <argsstring></argsstring>
+        <name>knownParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="41" column="24" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a91dcb6df75517d35d76e36a0f1089361" compoundref="simulink__model_8cpp" startline="87" endline="100">setModelParametersFromListCallback</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a83ae069b25693abc76faadc1bb175a6d" compoundref="simulink__model_8cpp" startline="176" endline="201">setParametersDoneCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1a389a5cbb0390fceb844ec109ccf8e196" prot="public" static="no" mutable="no">
+        <type>rclcpp::Service&lt; std_srvs::srv::Trigger &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;std_srvs::srv::Trigger&gt;::SharedPtr SimulinkModelClass::reloadParamService</definition>
+        <argsstring></argsstring>
+        <name>reloadParamService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="44" column="33" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1afd98e61b1d295379658cf24567247434" compoundref="simulink__model_8cpp" startline="8" endline="17">SimulinkModelClass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1a4e1fff710d98d21617972a796ab2b411" prot="public" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time SimulinkModelClass::lastReloadTime</definition>
+        <argsstring></argsstring>
+        <name>lastReloadTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="45" column="18" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" compoundref="simulink__model_8cpp" startline="217" endline="247">reloadParametersCallback</referencedby>
+        <referencedby refid="classSimulinkModelClass_1afd98e61b1d295379658cf24567247434" compoundref="simulink__model_8cpp" startline="8" endline="17">SimulinkModelClass</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1a65d0e598e893a9341552126f0f6f94a4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SimulinkModelClass::paramsLoaded</definition>
+        <argsstring></argsstring>
+        <name>paramsLoaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="48" column="10" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a83ae069b25693abc76faadc1bb175a6d" compoundref="simulink__model_8cpp" startline="176" endline="201">setParametersDoneCallback</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1a303784f76976a015d9b3ff69dfb53e8a" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classMonitoredServiceClient" kindref="compound">MonitoredServiceClient</ref>&lt; <ref refid="simulink__model_8hpp_1aa462efbcb16da6341a24e1cacbdeda68" kindref="member">ListParams</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;MonitoredServiceClient&lt;ListParams&gt; &gt; SimulinkModelClass::listParamClient</definition>
+        <argsstring></argsstring>
+        <name>listParamClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="51" column="21" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" compoundref="simulink__model_8cpp" startline="69" endline="85">listAndSetModelParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1a547c2252d0344e1796a26872721053a8" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classMonitoredServiceClient" kindref="compound">MonitoredServiceClient</ref>&lt; <ref refid="simulink__model_8hpp_1a2c353638a18cf996673b03300a0f42d5" kindref="member">SetParams</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;MonitoredServiceClient&lt;SetParams&gt; &gt; SimulinkModelClass::setParamClient</definition>
+        <argsstring></argsstring>
+        <name>setParamClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="52" column="21" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1a410a1167fec695ed077250c2a20eaa11" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>, int64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;std::string, int64_t&gt; &gt; SimulinkModelClass::intV</definition>
+        <argsstring></argsstring>
+        <name>intV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="54" column="17" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1aca76b58d81e0b097e121958db8602f16" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>, bool &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;std::string, bool&gt; &gt; SimulinkModelClass::boolV</definition>
+        <argsstring></argsstring>
+        <name>boolV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="55" column="17" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSimulinkModelClass_1a5a53b0ca72d063015a69157d7b5a2fdf" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">std::string</ref>, std::vector&lt; int64_t &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::pair&lt;std::string, std::vector&lt;int64_t&gt; &gt; &gt; SimulinkModelClass::arrayV</definition>
+        <argsstring></argsstring>
+        <name>arrayV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="56" column="17" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</referencedby>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSimulinkModelClass_1afd98e61b1d295379658cf24567247434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SimulinkModelClass::SimulinkModelClass</definition>
+        <argsstring>(std::shared_ptr&lt; ControllerOverseer &gt; overseerNode, string name)</argsstring>
+        <name>SimulinkModelClass</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classControllerOverseer" kindref="compound">ControllerOverseer</ref> &gt;</type>
+          <declname>overseerNode</declname>
+        </param>
+        <param>
+          <type><ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="59" column="5" bodyfile="src/simulink_model.cpp" bodystart="8" bodyend="17"/>
+        <references refid="classSimulinkModelClass_1a4e1fff710d98d21617972a796ab2b411" compoundref="simulink__model_8hpp" startline="45">lastReloadTime</references>
+        <references refid="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" compoundref="simulink__model_8hpp" startline="38">nodeName</references>
+        <references refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" compoundref="simulink__model_8hpp" startline="37">overseer</references>
+        <references refid="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" compoundref="simulink__model_8cpp" startline="217" endline="247">reloadParametersCallback</references>
+        <references refid="classSimulinkModelClass_1a389a5cbb0390fceb844ec109ccf8e196" compoundref="simulink__model_8hpp" startline="44">reloadParamService</references>
+      </memberdef>
+      <memberdef kind="function" id="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimulinkModelClass::checkIfActive</definition>
+        <argsstring>(const std::vector&lt; string &gt; &amp;activeNodes)</argsstring>
+        <name>checkIfActive</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref> &gt; &amp;</type>
+          <declname>activeNodes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="64" column="10" bodyfile="src/simulink_model.cpp" bodystart="22" bodyend="67"/>
+        <references refid="classSimulinkModelClass_1aaf3fb17169f460ce16fd3b69c3fbea2e" compoundref="simulink__model_8hpp" startline="34">fullNodeName</references>
+        <references refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" compoundref="simulink__model_8cpp" startline="69" endline="85">listAndSetModelParameters</references>
+        <references refid="classSimulinkModelClass_1a303784f76976a015d9b3ff69dfb53e8a" compoundref="simulink__model_8hpp" startline="51">listParamClient</references>
+        <references refid="classSimulinkModelClass_1afcf10e07484c47f1f22a40986a58eed5" compoundref="simulink__model_8hpp" startline="33">modelActive</references>
+        <references refid="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" compoundref="simulink__model_8hpp" startline="38">nodeName</references>
+        <references refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" compoundref="simulink__model_8hpp" startline="37">overseer</references>
+        <references refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</references>
+        <references refid="classSimulinkModelClass_1a547c2252d0344e1796a26872721053a8" compoundref="simulink__model_8hpp" startline="52">setParamClient</references>
+      </memberdef>
+      <memberdef kind="function" id="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimulinkModelClass::listAndSetModelParameters</definition>
+        <argsstring>()</argsstring>
+        <name>listAndSetModelParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="69" column="10" bodyfile="src/simulink_model.cpp" bodystart="69" bodyend="85"/>
+        <references refid="classSimulinkModelClass_1a303784f76976a015d9b3ff69dfb53e8a" compoundref="simulink__model_8hpp" startline="51">listParamClient</references>
+        <references refid="classSimulinkModelClass_1afcf10e07484c47f1f22a40986a58eed5" compoundref="simulink__model_8hpp" startline="33">modelActive</references>
+        <references refid="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" compoundref="simulink__model_8hpp" startline="38">nodeName</references>
+        <references refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" compoundref="simulink__model_8hpp" startline="37">overseer</references>
+        <references refid="classSimulinkModelClass_1a91dcb6df75517d35d76e36a0f1089361" compoundref="simulink__model_8cpp" startline="87" endline="100">setModelParametersFromListCallback</references>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+        <referencedby refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSimulinkModelClass_1a91dcb6df75517d35d76e36a0f1089361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimulinkModelClass::setModelParametersFromListCallback</definition>
+        <argsstring>(ListParams::Response::SharedPtr response)</argsstring>
+        <name>setModelParametersFromListCallback</name>
+        <param>
+          <type>ListParams::Response::SharedPtr</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="74" column="10" bodyfile="src/simulink_model.cpp" bodystart="87" bodyend="100"/>
+        <references refid="classSimulinkModelClass_1aa7b56d379ace2a6451d2629137c76a2c" compoundref="simulink__model_8hpp" startline="41">knownParams</references>
+        <references refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</references>
+        <referencedby refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" compoundref="simulink__model_8cpp" startline="69" endline="85">listAndSetModelParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimulinkModelClass::setModelParameters</definition>
+        <argsstring>(std::vector&lt; string &gt; paramsToSet)</argsstring>
+        <name>setModelParameters</name>
+        <param>
+          <type>std::vector&lt; <ref refid="simulink__model_8hpp_1aca454f84dd198a937af6499dd758aa3d" kindref="member">string</ref> &gt;</type>
+          <declname>paramsToSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="79" column="10" bodyfile="src/simulink_model.cpp" bodystart="102" bodyend="173"/>
+        <references refid="classSimulinkModelClass_1a5a53b0ca72d063015a69157d7b5a2fdf" compoundref="simulink__model_8hpp" startline="56">arrayV</references>
+        <references refid="classSimulinkModelClass_1aca76b58d81e0b097e121958db8602f16" compoundref="simulink__model_8hpp" startline="55">boolV</references>
+        <references refid="classSimulinkModelClass_1a410a1167fec695ed077250c2a20eaa11" compoundref="simulink__model_8hpp" startline="54">intV</references>
+        <references refid="classSimulinkModelClass_1aa7b56d379ace2a6451d2629137c76a2c" compoundref="simulink__model_8hpp" startline="41">knownParams</references>
+        <references refid="classSimulinkModelClass_1afcf10e07484c47f1f22a40986a58eed5" compoundref="simulink__model_8hpp" startline="33">modelActive</references>
+        <references refid="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" compoundref="simulink__model_8hpp" startline="38">nodeName</references>
+        <references refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" compoundref="simulink__model_8hpp" startline="37">overseer</references>
+        <references refid="classSimulinkModelClass_1a547c2252d0344e1796a26872721053a8" compoundref="simulink__model_8hpp" startline="52">setParamClient</references>
+        <references refid="classSimulinkModelClass_1a83ae069b25693abc76faadc1bb175a6d" compoundref="simulink__model_8cpp" startline="176" endline="201">setParametersDoneCallback</references>
+        <referencedby refid="classSimulinkModelClass_1a91dcb6df75517d35d76e36a0f1089361" compoundref="simulink__model_8cpp" startline="87" endline="100">setModelParametersFromListCallback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSimulinkModelClass_1a83ae069b25693abc76faadc1bb175a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimulinkModelClass::setParametersDoneCallback</definition>
+        <argsstring>(SetParams::Response::SharedPtr res, SetParams::Request::SharedPtr req)</argsstring>
+        <name>setParametersDoneCallback</name>
+        <param>
+          <type>SetParams::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>SetParams::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="84" column="10" bodyfile="src/simulink_model.cpp" bodystart="176" bodyend="201"/>
+        <references refid="classSimulinkModelClass_1aa7b56d379ace2a6451d2629137c76a2c" compoundref="simulink__model_8hpp" startline="41">knownParams</references>
+        <references refid="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" compoundref="simulink__model_8hpp" startline="38">nodeName</references>
+        <references refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" compoundref="simulink__model_8hpp" startline="37">overseer</references>
+        <references refid="classSimulinkModelClass_1a65d0e598e893a9341552126f0f6f94a4" compoundref="simulink__model_8hpp" startline="48">paramsLoaded</references>
+        <referencedby refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" compoundref="simulink__model_8cpp" startline="102" endline="173">setModelParameters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SimulinkModelClass::reloadParams</definition>
+        <argsstring>()</argsstring>
+        <name>reloadParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="90" column="10" bodyfile="src/simulink_model.cpp" bodystart="204" bodyend="214"/>
+        <references refid="classSimulinkModelClass_1a5a53b0ca72d063015a69157d7b5a2fdf" compoundref="simulink__model_8hpp" startline="56">arrayV</references>
+        <references refid="classSimulinkModelClass_1aca76b58d81e0b097e121958db8602f16" compoundref="simulink__model_8hpp" startline="55">boolV</references>
+        <references refid="classSimulinkModelClass_1a410a1167fec695ed077250c2a20eaa11" compoundref="simulink__model_8hpp" startline="54">intV</references>
+        <references refid="classSimulinkModelClass_1aa7b56d379ace2a6451d2629137c76a2c" compoundref="simulink__model_8hpp" startline="41">knownParams</references>
+        <references refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" compoundref="simulink__model_8cpp" startline="69" endline="85">listAndSetModelParameters</references>
+        <references refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" compoundref="simulink__model_8hpp" startline="37">overseer</references>
+        <referencedby refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" compoundref="simulink__model_8cpp" startline="22" endline="67">checkIfActive</referencedby>
+        <referencedby refid="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" compoundref="simulink__model_8cpp" startline="217" endline="247">reloadParametersCallback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SimulinkModelClass::reloadParametersCallback</definition>
+        <argsstring>(const std::shared_ptr&lt; std_srvs::srv::Trigger::Request &gt; req, std::shared_ptr&lt; std_srvs::srv::Trigger::Response &gt; res)</argsstring>
+        <name>reloadParametersCallback</name>
+        <param>
+          <type>const std::shared_ptr&lt; std_srvs::srv::Trigger::Request &gt;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; std_srvs::srv::Trigger::Response &gt;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_controller/simulink_model.hpp" line="95" column="10" bodyfile="src/simulink_model.cpp" bodystart="217" bodyend="247"/>
+        <references refid="classSimulinkModelClass_1a4e1fff710d98d21617972a796ab2b411" compoundref="simulink__model_8hpp" startline="45">lastReloadTime</references>
+        <references refid="classSimulinkModelClass_1afcf10e07484c47f1f22a40986a58eed5" compoundref="simulink__model_8hpp" startline="33">modelActive</references>
+        <references refid="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" compoundref="simulink__model_8hpp" startline="38">nodeName</references>
+        <references refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" compoundref="simulink__model_8hpp" startline="37">overseer</references>
+        <references refid="simulink__model_8hpp_1a2c5d34565edb5336d1fc9ce281562b14" compoundref="simulink__model_8hpp" startline="29">RELOAD_TIME</references>
+        <references refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" compoundref="simulink__model_8cpp" startline="204" endline="214">reloadParams</references>
+        <referencedby refid="classSimulinkModelClass_1afd98e61b1d295379658cf24567247434" compoundref="simulink__model_8cpp" startline="8" endline="17">SimulinkModelClass</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SimulinkModelClass</label>
+        <link refid="classSimulinkModelClass"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_controller/simulink_model.hpp" line="31" column="1" bodyfile="include/mercury_controller/simulink_model.hpp" bodystart="31" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classSimulinkModelClass_1a5a53b0ca72d063015a69157d7b5a2fdf" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>arrayV</name></member>
+      <member refid="classSimulinkModelClass_1aca76b58d81e0b097e121958db8602f16" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>boolV</name></member>
+      <member refid="classSimulinkModelClass_1a7b5efad21d7379762f4aa6978dc9f08c" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>checkIfActive</name></member>
+      <member refid="classSimulinkModelClass_1aaf3fb17169f460ce16fd3b69c3fbea2e" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>fullNodeName</name></member>
+      <member refid="classSimulinkModelClass_1a410a1167fec695ed077250c2a20eaa11" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>intV</name></member>
+      <member refid="classSimulinkModelClass_1aa7b56d379ace2a6451d2629137c76a2c" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>knownParams</name></member>
+      <member refid="classSimulinkModelClass_1a4e1fff710d98d21617972a796ab2b411" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>lastReloadTime</name></member>
+      <member refid="classSimulinkModelClass_1a58b935225f547c85d510fce15347aa2b" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>listAndSetModelParameters</name></member>
+      <member refid="classSimulinkModelClass_1a303784f76976a015d9b3ff69dfb53e8a" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>listParamClient</name></member>
+      <member refid="classSimulinkModelClass_1afcf10e07484c47f1f22a40986a58eed5" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>modelActive</name></member>
+      <member refid="classSimulinkModelClass_1ad43cae0fd02ca9275c010721b67fd1d8" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>nodeName</name></member>
+      <member refid="classSimulinkModelClass_1afb2fa98ebc61f12d8b4c81a333454171" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>overseer</name></member>
+      <member refid="classSimulinkModelClass_1a65d0e598e893a9341552126f0f6f94a4" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>paramsLoaded</name></member>
+      <member refid="classSimulinkModelClass_1a0c3a7e1a955e76aee1f1ea064e44ffeb" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>reloadParametersCallback</name></member>
+      <member refid="classSimulinkModelClass_1ac5eadcc3c584ffb774481c62f44dd901" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>reloadParams</name></member>
+      <member refid="classSimulinkModelClass_1a389a5cbb0390fceb844ec109ccf8e196" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>reloadParamService</name></member>
+      <member refid="classSimulinkModelClass_1aa4260a4613dde70d9d7fa65735719b57" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>setModelParameters</name></member>
+      <member refid="classSimulinkModelClass_1a91dcb6df75517d35d76e36a0f1089361" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>setModelParametersFromListCallback</name></member>
+      <member refid="classSimulinkModelClass_1a547c2252d0344e1796a26872721053a8" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>setParamClient</name></member>
+      <member refid="classSimulinkModelClass_1a83ae069b25693abc76faadc1bb175a6d" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>setParametersDoneCallback</name></member>
+      <member refid="classSimulinkModelClass_1afd98e61b1d295379658cf24567247434" prot="public" virt="non-virtual"><scope>SimulinkModelClass</scope><name>SimulinkModelClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacemercury__hardware" kind="namespace" language="Python">
+    <compoundname>mercury_hardware</compoundname>
+    <innernamespace refid="namespacemercury__hardware_1_1depth__converter">mercury_hardware::depth_converter</innernamespace>
+    <innernamespace refid="namespacemercury__hardware_1_1tag__odom">mercury_hardware::tag_odom</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="mercury_hardware/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

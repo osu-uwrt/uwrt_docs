@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classmercury__autonomy_1_1PublishInt8" kind="class" language="C++" prot="public">
+    <compoundname>mercury_autonomy::PublishInt8</compoundname>
+    <basecompoundref refid="classmercury__autonomy_1_1MercuryActionNode" prot="public" virt="non-virtual">mercury_autonomy::MercuryActionNode</basecompoundref>
+    <includes refid="publish__int8_8hpp" local="no">publish_int8.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishInt8_1a006b08f7217b1df92f729e9436251348" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::UInt16 &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::UInt16&gt;::SharedPtr mercury_autonomy::PublishInt8::pub_</definition>
+        <argsstring></argsstring>
+        <name>pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="35" column="35" bodyfile="include/mercury_autonomy/bt_actions/publish_int8.hpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishInt8_1a576ef08b72a3727e6f8fb3da7638e891" compoundref="publish__int8_8cpp" startline="9" endline="29">onStart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmercury__autonomy_1_1PublishInt8_1a43a15d75c162e48b7f9fc43c33b11319" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mercury_autonomy::PublishInt8::last_topic_</definition>
+        <argsstring></argsstring>
+        <name>last_topic_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="36" column="17" bodyfile="include/mercury_autonomy/bt_actions/publish_int8.hpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classmercury__autonomy_1_1PublishInt8_1a576ef08b72a3727e6f8fb3da7638e891" compoundref="publish__int8_8cpp" startline="9" endline="29">onStart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishInt8_1a9f30b8b91243f85fb5b5344a3dc1f367" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mercury_autonomy::PublishInt8::PublishInt8</definition>
+        <argsstring>(const std::string &amp;name, const BT::NodeConfig &amp;config)</argsstring>
+        <name>PublishInt8</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="17" column="5" bodyfile="include/mercury_autonomy/bt_actions/publish_int8.hpp" bodystart="17" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishInt8_1a576ef08b72a3727e6f8fb3da7638e891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::PublishInt8::onStart</definition>
+        <argsstring>() override</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="27" column="20" bodyfile="src/bt_actions/publish_int8.cpp" bodystart="9" bodyend="29"/>
+        <references refid="classmercury__autonomy_1_1PublishInt8_1a43a15d75c162e48b7f9fc43c33b11319" compoundref="publish__int8_8hpp" startline="36">last_topic_</references>
+        <references refid="classmercury__autonomy_1_1PublishInt8_1a006b08f7217b1df92f729e9436251348" compoundref="publish__int8_8hpp" startline="35">pub_</references>
+        <references refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" compoundref="mercury__bt__node_8hpp" startline="30" endline="30">mercury_autonomy::MercuryBtNode::rosNode</references>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishInt8_1adec2bc5d823e4f4c5acef38244c6d9cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus mercury_autonomy::PublishInt8::onRunning</definition>
+        <argsstring>() override</argsstring>
+        <name>onRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="28" column="20" bodyfile="src/bt_actions/publish_int8.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishInt8_1a0b6fc139f875064134606ce197747ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::PublishInt8::onHalted</definition>
+        <argsstring>() override</argsstring>
+        <name>onHalted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="29" column="10" bodyfile="src/bt_actions/publish_int8.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishInt8_1a53b671999eaa3509639f8d8773a76172" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList mercury_autonomy::PublishInt8::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="20" column="26" bodyfile="include/mercury_autonomy/bt_actions/publish_int8.hpp" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmercury__autonomy_1_1PublishInt8_1a75d90b59eaf89183ffc0bbaf730c29ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mercury_autonomy::PublishInt8::rosInit</definition>
+        <argsstring>() override</argsstring>
+        <name>rosInit</name>
+        <reimplements refid="classmercury__autonomy_1_1MercuryBtNode_1a6ac10c435c175c36df29a9996d677f30">rosInit</reimplements>
+        <briefdescription>
+<para>Override this to create subscriptions, publishers, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="32" column="10" bodyfile="src/bt_actions/publish_int8.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::PublishInt8</label>
+        <link refid="classmercury__autonomy_1_1PublishInt8"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>mercury_autonomy::MercuryBtNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryBtNode"/>
+      </node>
+      <node id="3">
+        <label>BT::StatefulActionNode</label>
+      </node>
+      <node id="1">
+        <label>mercury_autonomy::PublishInt8</label>
+        <link refid="classmercury__autonomy_1_1PublishInt8"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mercury_autonomy::MercuryActionNode</label>
+        <link refid="classmercury__autonomy_1_1MercuryActionNode"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mercury_autonomy/bt_actions/publish_int8.hpp" line="15" column="1" bodyfile="include/mercury_autonomy/bt_actions/publish_int8.hpp" bodystart="15" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a9e7427d525bed8d0e616948092670406" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>init</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1a43a15d75c162e48b7f9fc43c33b11319" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>last_topic_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aa6452c38cec178a25e2875e92400297a" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>lookupTransform</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1aadfd8d4bca2f98c4ef3fc28464ccf64c" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>MercuryActionNode</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1a0b6fc139f875064134606ce197747ca3" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>onHalted</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1adec2bc5d823e4f4c5acef38244c6d9cb" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>onRunning</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1a576ef08b72a3727e6f8fb3da7638e891" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>onStart</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1a53b671999eaa3509639f8d8773a76172" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>providedPorts</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1a006b08f7217b1df92f729e9436251348" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>pub_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1a9f30b8b91243f85fb5b5344a3dc1f367" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>PublishInt8</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a7bc9bd13665be1748948c3a5a3e4fe73" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>ros_node_</name></member>
+      <member refid="classmercury__autonomy_1_1PublishInt8_1a75d90b59eaf89183ffc0bbaf730c29ab" prot="protected" virt="virtual"><scope>mercury_autonomy::PublishInt8</scope><name>rosInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a49c52b60b32e6449d1ea6d7248e54158" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>rosNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1abc1cf4774a4bc39762225da28977aa82" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>staticDeinit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1aecb1a49e06221ebd9c0d72fef0fbd588" prot="public" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>staticInit</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1ad739bb849f1a0f5ac6855b543af8a990" prot="protected" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>tf_buffer_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1addb9c9c49234ce21871ad93edf743573" prot="private" virt="non-virtual"><scope>mercury_autonomy::PublishInt8</scope><name>tf_listener_</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryActionNode_1a940a4b08d3dd4785e84db369cf52fd8b" prot="public" virt="virtual"><scope>mercury_autonomy::PublishInt8</scope><name>treeNode</name></member>
+      <member refid="classmercury__autonomy_1_1MercuryBtNode_1a765502354381bcc15d4dcfabcb853b48" prot="public" virt="virtual"><scope>mercury_autonomy::PublishInt8</scope><name>~MercuryBtNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
